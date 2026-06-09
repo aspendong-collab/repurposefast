@@ -376,17 +376,19 @@ export default function SaveikDownloader() {
               transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
               className="container mx-auto px-4 py-8"
             >
-              <Card className="max-w-xl mx-auto overflow-hidden border-border/40 bg-card/70 backdrop-blur-sm">
+              <Card className="max-w-xl mx-auto border-border/40 bg-card/70 backdrop-blur-sm">
                 <CardContent className="p-0">
                   {/* Thumbnail + Info Row */}
                   <div className="flex flex-col sm:flex-row">
                     {/* Thumbnail */}
-                    <div className="sm:w-48 flex-shrink-0 bg-muted/30 flex items-center justify-center min-h-48 relative overflow-hidden">
+                    <div className="sm:w-48 flex-shrink-0 bg-muted/30 flex items-center justify-center min-h-48 sm:min-h-full relative overflow-hidden rounded-t-lg sm:rounded-l-lg sm:rounded-tr-none">
                       <Film className="h-10 w-10 text-muted-foreground/30 absolute" />
                       {currentResult.thumbnail && (
                         <img
-                          src={`/api/img?url=${encodeURIComponent(currentResult.thumbnail)}`}
+                          src={currentResult.thumbnail}
                           alt="Video thumbnail"
+                          referrerPolicy="no-referrer"
+                          crossOrigin="anonymous"
                           className="w-full h-48 sm:h-full object-cover relative z-10"
                           onError={(e) => {
                             (e.currentTarget as HTMLImageElement).style.display = "none"
@@ -396,7 +398,7 @@ export default function SaveikDownloader() {
                     </div>
 
                     {/* Info + Download */}
-                    <div className="flex-1 min-w-0 p-4 sm:p-5 flex flex-col gap-3">
+                    <div className="flex-1 min-w-0 p-4 sm:p-6 flex flex-col gap-3">
                       {/* Creator */}
                       {currentResult.creator && (
                         <p className="text-sm font-semibold text-violet-600 dark:text-violet-400 truncate">

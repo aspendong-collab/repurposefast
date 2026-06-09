@@ -1,275 +1,222 @@
 import { NextResponse } from "next/server"
-import * as cheerio from "cheerio"
-
-/**
- * TikTok Video Downloader — direct page scraping (ssstik.io approach)
- *
- * Fetches the TikTok video page, extracts the embedded JSON data,
- * and returns clean video/audio/thumbnail URLs.
- */
 
 // ============== Types ==============
 
-interface TikTokVideoData {
-  type: "video" | "image"
-  video: string | null
-  videos: string[] | null
-  images: string[] | null
-  music: string | null
-  description: string | null
-  creator: string | null
-  duration: string | null
-  thumbnail: string | null
+interface TikTokAuthor {
+  username?: string
+  nickname?: string
+  unique_id?: string
+}
+
+interface ZellResult {
+  title?: string
+  author?: TikTokAuthor
+  thumbnail?: string
+  video?: string
+  music?: { url?: string; duration?: number }
+  images?: unknown[]
+}
+interface ZellResponse { status: boolean; result?: ZellResult }
+
+interface SankaResult {
+  title?: string
+  author?: TikTokAuthor
+  cover?: string
+  play?: string
+  music?: string
+  music_info?: { play?: string; duration?: number }
+  images?: unknown[]
+  duration?: number
+}
+interface SankaResponse { status: boolean; result?: SankaResult }
+
+interface TikWMData {
+  code: number; msg?: string
+  data?: {
+    title?: string
+    author?: { nickname?: string; unique_id?: string }
+    cover?: string; origin_cover?: string
+    play?: string; hdplay?: string; wmplay?: string
+    music?: string; duration?: number; images?: unknown[]
+  }
+}
+
+interface TikTokData {
+  title: string; creator: string; thumbnail: string
+  videos: string[]; audio: string; slide: string[]; duration: string
 }
 
 // ============== Config ==============
 
-const UA =
-  "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1"
+const TIKTOK_REGEX = /^(https?:\/\/)?(www\.|m\.|vm\.|vt\.)?(tiktok\.com|douyin\.com)\//
 
-const TIKTOK_REGEX =
-  /^https?:\/\/(?:www\.|m\.|vm\.|vt\.)?(?:tiktok\.com|douyin\.com)\/(?:@[\w.-]+\/video\/\d+|\w+\/video\/\d+|v\/\d+|video\/\d+|[\w.-]+)[\w/?&=.-]*$/i
+// ============== Rate Limiting ==============
 
-// ============== Scraper ==============
+const rateLimitCache = new Map<string, { count: number; resetTime: number }>()
 
-async function scrapeTikTokPage(url: string): Promise<TikTokVideoData> {
-  // Step 1: Fetch the TikTok page
-  const response = await fetch(url, {
-    headers: {
-      "User-Agent": UA,
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-      "Accept-Language": "en-US,en;q=0.9",
-      "Sec-Fetch-Dest": "document",
-      "Sec-Fetch-Mode": "navigate",
-      "Sec-Fetch-Site": "none",
-    },
-    redirect: "follow",
-  })
-
-  if (!response.ok) {
-    throw new Error(`TikTok returned ${response.status}`)
+function checkRateLimit(ip: string): boolean {
+  const now = Date.now()
+  const windowMs = 60_000
+  const maxRequests = 10
+  const record = rateLimitCache.get(ip)
+  if (!record || now > record.resetTime) {
+    rateLimitCache.set(ip, { count: 1, resetTime: now + windowMs })
+    return true
   }
-
-  const html = await response.text()
-
-  if (html.length < 5000) {
-    throw new Error("TikTok returned an empty page")
-  }
-
-  // Step 2: Try __UNIVERSAL_DATA_FOR_REHYDRATION__ (desktop TikTok)
-  {
-    const match = html.match(
-      /<script[^>]*id="__UNIVERSAL_DATA_FOR_REHYDRATION__"[^>]*>([\s\S]*?)<\/script>/i
-    )
-    if (match) {
-      const result = extractFromUniversalData(match[1])
-      if (result) return result
-    }
-  }
-
-  // Step 3: Try SIGI_STATE (older TikTok page format)
-  {
-    const match = html.match(
-      /<script[^>]*id="SIGI_STATE"[^>]*>([\s\S]*?)<\/script>/i
-    )
-    if (match) {
-      const result = extractFromUniversalData(match[1])
-      if (result) return result
-    }
-  }
-
-  // Step 4: Try SEO meta tags (regex fallback)
-  {
-    const titleMatch = html.match(/<meta\s+property="og:title"\s+content="([^"]+)"/i)
-    const descMatch = html.match(/<meta\s+property="og:description"\s+content="([^"]+)"/i)
-    const imageMatch = html.match(/<meta\s+property="og:image"\s+content="([^"]+)"/i)
-    const videoMatch =
-      html.match(/<meta\s+property="og:video"\s+content="([^"]+)"/i) ||
-      html.match(/<meta\s+name="twitter:player:stream"\s+content="([^"]+)"/i)
-
-    const title = titleMatch?.[1] || ""
-    const description = descMatch?.[1] || ""
-    const thumbnail = imageMatch?.[1] || ""
-    const ogVideo = videoMatch?.[1] || ""
-
-    if (title || thumbnail) {
-      const creatorMatch = title.match(/^([^'s]+?)(?:'s)?\s*(?:on TikTok)?/)
-      const creator = creatorMatch ? creatorMatch[1].trim().replace(/^@/, "") : ""
-
-      return {
-        type: "video",
-        video: ogVideo || null,
-        videos: ogVideo ? [ogVideo] : null,
-        images: null,
-        music: null,
-        description: description || null,
-        creator: creator || null,
-        duration: null,
-        thumbnail: thumbnail || null,
-      }
-    }
-  }
-
-  throw new Error("Could not extract video data from TikTok page")
+  if (record.count >= maxRequests) return false
+  record.count += 1
+  return true
 }
 
-function extractFromUniversalData(
-  jsonText: string
-): TikTokVideoData | null {
-  try {
-    const data = JSON.parse(jsonText)
+setInterval(() => {
+  const now = Date.now()
+  for (const [k, v] of rateLimitCache) { if (now > v.resetTime) rateLimitCache.delete(k) }
+}, 60_000)
 
-    // Traverse to find video data
-    const findVideo = (obj: unknown): Record<string, unknown> | null => {
-      if (!obj || typeof obj !== "object") return null
-      const o = obj as Record<string, unknown>
+// ============== Provider: Zell ==============
 
-      // Found video container
-      if (o["video"] && (typeof o["desc"] === "string" || o["author"])) {
-        return o
-      }
-
-      // Search deeper
-      for (const v of Object.values(o)) {
-        const found = findVideo(v)
-        if (found) return found
-      }
-
-      return null
-    }
-
-    const container = findVideo(data)
-    if (!container) return null
-
-    const video = container["video"] as Record<string, unknown> | undefined
-    const author = container["author"] as Record<string, unknown> | undefined
-    const music = container["music"] as Record<string, unknown> | undefined
-    const imagePost = container["imagePost"] as Record<string, unknown> | undefined
-
-    // Video URL — prefer the highest quality one
-    let videoUrl = ""
-    let videoHdUrl = ""
-
-    if (video) {
-      const downloadAddr = video["downloadAddr"] as string | undefined
-      if (downloadAddr) videoUrl = downloadAddr
-
-      // Check bitrateInfo for HD video
-      const bitrateInfo = video["bitrateInfo"] as Array<Record<string, unknown>> | undefined
-      if (bitrateInfo && bitrateInfo.length > 0) {
-        const hd = bitrateInfo[bitrateInfo.length - 1]
-        const playAddr = hd?.["PlayAddr"] as Record<string, unknown> | undefined
-        const urlList = playAddr?.["UrlList"] as string[] | undefined
-        if (urlList && urlList.length > 1) {
-          videoHdUrl = urlList[1] || urlList[0]
-          if (!videoUrl) videoUrl = urlList[0]
-        } else if (urlList && urlList.length > 0) {
-          if (!videoUrl) videoUrl = urlList[0]
-        }
-      }
-    }
-
-    // Thumbnail
-    let thumbnail = ""
-    const cover = video?.["originCover"] || video?.["cover"] || video?.["dynamicCover"]
-    if (typeof cover === "string") {
-      thumbnail = cover
-    } else if (typeof cover === "object" && cover) {
-      const ul = (cover as Record<string, unknown>)["urlList"] as string[] | undefined
-      if (ul && ul.length > 0) thumbnail = ul[0]
-    }
-
-    // Description
-    const desc = typeof container["desc"] === "string" ? container["desc"] : ""
-
-    // Creator
-    let creator = ""
-    if (author) {
-      creator =
-        (typeof author["uniqueId"] === "string" ? author["uniqueId"] : "") ||
-        (typeof author["nickname"] === "string" ? author["nickname"] : "")
-    }
-
-    // Duration (in seconds)
-    let duration = ""
-    if (video && typeof video["duration"] === "number" && video["duration"] > 0) {
-      duration = String(video["duration"])
-    }
-
-    // Images (Photo Mode)
-    const images: string[] = []
-    if (imagePost) {
-      const imgs = imagePost["images"] as Array<Record<string, unknown>> | undefined
-      if (imgs) {
-        for (const img of imgs) {
-          const iu = img["imageURL"] as Record<string, unknown> | undefined
-          const urlList = iu?.["urlList"] as string[] | undefined
-          if (urlList && urlList.length > 0) images.push(urlList[0])
-        }
-      }
-    }
-
-    // Music URL
-    let musicUrl = ""
-    if (music) {
-      const playUrl = music["playUrl"] as Record<string, unknown> | undefined
-      const urlList = playUrl?.["urlList"] || playUrl?.["UrlList"]
-      if (Array.isArray(urlList) && urlList.length > 0) {
-        musicUrl = urlList[0] as string
-      }
-    }
-
-    const isPhoto = images.length > 0 && !videoUrl
-
-    return {
-      type: isPhoto ? "image" : "video",
-      video: videoHdUrl || videoUrl || null,
-      videos: videoUrl ? [videoUrl, ...(videoHdUrl ? [videoHdUrl] : [])] : null,
-      images: images.length > 0 ? images : null,
-      music: musicUrl || null,
-      description: desc || null,
-      creator: creator || null,
-      duration: duration || null,
-      thumbnail: thumbnail || null,
-    }
-  } catch {
-    return null
+async function fetchFromZell(url: string): Promise<TikTokData> {
+  const apiUrl = `https://apizell.web.id/download/tiktok?url=${encodeURIComponent(url)}`
+  const res = await fetch(apiUrl)
+  if (!res.ok) throw new Error(`Zell: HTTP ${res.status}`)
+  const json = (await res.json()) as ZellResponse
+  if (!json?.status || !json.result) throw new Error("Zell: invalid response")
+  const r = json.result
+  return {
+    title: r.title || "",
+    creator: r.author?.username || r.author?.nickname || "",
+    thumbnail: r.thumbnail || "",
+    videos: r.video ? [r.video] : [],
+    audio: r.music?.url || "",
+    slide: Array.isArray(r.images) ? r.images.filter((x): x is string => typeof x === "string") : [],
+    duration: r.music?.duration ? String(r.music.duration) : "",
   }
+}
+
+// ============== Provider: Sanka ==============
+
+async function fetchFromSanka(url: string): Promise<TikTokData> {
+  const apiUrl = `https://www.sankavollerei.com/download/tiktok?apikey=planaai&url=${encodeURIComponent(url)}`
+  const res = await fetch(apiUrl)
+  if (!res.ok) throw new Error(`Sanka: HTTP ${res.status}`)
+  const json = (await res.json()) as SankaResponse
+  if (!json?.status || !json.result) throw new Error("Sanka: invalid response")
+  const r = json.result
+  return {
+    title: r.title || "",
+    creator: r.author?.unique_id || r.author?.nickname || "",
+    thumbnail: r.cover || "",
+    videos: r.play ? [r.play] : [],
+    audio: (typeof r.music === "string" && r.music) ? r.music : r.music_info?.play || "",
+    slide: Array.isArray(r.images) ? r.images.filter((x): x is string => typeof x === "string") : [],
+    duration: (r.duration && r.duration > 0) ? String(r.duration) : r.music_info?.duration ? String(r.music_info.duration) : "",
+  }
+}
+
+// ============== Provider: TikWM ==============
+
+async function fetchFromTikWM(url: string): Promise<TikTokData> {
+  const body = new URLSearchParams({ url, hd: "1" })
+  const res = await fetch("https://tikwm.com/api/", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+      "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 Chrome/116 Mobile Safari/537.36",
+      Cookie: "current_language=en",
+    },
+    body: body.toString(),
+  })
+  if (!res.ok) throw new Error(`TikWM: HTTP ${res.status}`)
+  const json = (await res.json()) as TikWMData
+  if (json.code !== 0 || !json.data) throw new Error(`TikWM: ${json.msg || "invalid response"}`)
+  const d = json.data
+  const videos: string[] = []
+  if (d.hdplay) videos.push(d.hdplay)
+  if (d.play && d.play !== d.hdplay) videos.push(d.play)
+  if (videos.length === 0 && d.wmplay) videos.push(d.wmplay)
+  return {
+    title: d.title || "",
+    creator: d.author?.unique_id || d.author?.nickname || "",
+    thumbnail: d.origin_cover || d.cover || "",
+    videos,
+    audio: d.music || "",
+    slide: Array.isArray(d.images) ? d.images.filter((x): x is string => typeof x === "string") : [],
+    duration: d.duration ? String(d.duration) : "",
+  }
+}
+
+// ============== Core: Multi-provider fallback ==============
+
+async function fetchTikTok(url: string): Promise<TikTokData> {
+  // 1) Zell
+  try { return await fetchFromZell(url) } catch { /* fall through */ }
+  // 2) Sanka
+  try { return await fetchFromSanka(url) } catch { /* fall through */ }
+  // 3) TikWM
+  return fetchFromTikWM(url)
 }
 
 // ============== Route Handler ==============
 
 export async function POST(req: Request) {
-  // Parse body
+  // Origin check
+  const origin = req.headers.get("origin") || ""
+  const referer = req.headers.get("referer") || ""
+  const allowed = ["saveik.com", "localhost", "127.0.0.1"]
+  const isDev = process.env.NODE_ENV === "development" || origin.includes("localhost") || referer.includes("localhost")
+  if ((origin || referer) && !isDev && !allowed.some(d => origin.includes(d) || referer.includes(d))) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 403 })
+  }
+
+  // Rate limit
+  const ip = req.headers.get("x-forwarded-for") || req.headers.get("x-real-ip") || "unknown"
+  if (!checkRateLimit(ip)) {
+    return NextResponse.json({ error: "Too many requests. Please wait a minute." }, {
+      status: 429,
+      headers: { "Retry-After": "60", "X-RateLimit-Limit": "10", "X-RateLimit-Remaining": "0" },
+    })
+  }
+
+  // Parse URL
   let url: string
   try {
     const body = (await req.json()) as { url?: unknown }
     if (!body.url || typeof body.url !== "string") {
-      return NextResponse.json(
-        { error: "Please provide a TikTok video link." },
-        { status: 400 }
-      )
+      return NextResponse.json({ error: "Please provide a TikTok URL" }, { status: 400 })
     }
     url = body.url.trim()
   } catch {
-    return NextResponse.json({ error: "Invalid request." }, { status: 400 })
+    return NextResponse.json({ error: "Invalid request body" }, { status: 400 })
   }
 
-  // Validate URL
   if (!TIKTOK_REGEX.test(url)) {
-    return NextResponse.json(
-      { error: "Invalid TikTok URL. Please check the link and try again." },
-      { status: 400 }
-    )
+    return NextResponse.json({ error: "Invalid TikTok URL" }, { status: 400 })
   }
 
-  // Scrape TikTok
+  // Fetch
   try {
-    const result = await scrapeTikTokPage(url)
-    return NextResponse.json(result)
+    const result = await fetchTikTok(url)
+    if (!Array.isArray(result.videos)) result.videos = []
+    const isPhoto = result.slide.length > 0 && result.videos.length === 0
+
+    if (!isPhoto && result.videos.length === 0) {
+      return NextResponse.json({ error: "No video found. Please check the URL." }, { status: 500 })
+    }
+
+    return NextResponse.json({
+      type: isPhoto ? "image" : "video",
+      video: result.videos[0] || null,
+      videoHd: result.videos[0] || null,
+      videos: result.videos.length > 0 ? result.videos : null,
+      images: isPhoto ? result.slide : null,
+      music: result.audio || null,
+      description: result.title || null,
+      creator: result.creator || null,
+      duration: result.duration || null,
+      thumbnail: result.thumbnail || null,
+    })
   } catch (err) {
-    const message =
-      err instanceof Error ? err.message : "Download failed. Please try again."
+    const message = err instanceof Error ? err.message : "Download failed"
     return NextResponse.json({ error: message }, { status: 500 })
   }
 }
