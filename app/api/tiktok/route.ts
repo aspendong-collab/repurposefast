@@ -2,9 +2,9 @@ import { NextResponse } from "next/server"
 
 // ============== Config ==============
 
-// Cloudflare Worker proxy URL — deployed in your Cloudflare Workers dashboard
-// Change this to your actual Worker URL after deploying worker-proxy.js
-const PROXY_URL = process.env.TIKTOK_PROXY_URL || "https://tiktok-proxy.YOUR_SUBDOMAIN.workers.dev/proxy"
+// Cloudflare Worker proxy URL — deployed on Cloudflare Workers (Singapore edge)
+// Change this if you redeploy the Worker with a different name
+const PROXY_URL = "https://tiktok-proxy.aspendong.workers.dev/proxy"
 
 const PROVIDERS = {
   zell: "https://apizell.web.id/download/tiktok",
