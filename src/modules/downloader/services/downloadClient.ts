@@ -1,6 +1,7 @@
 /**
- * Download utility — always proxies through our API to avoid
- * cross-origin issues with TikTok CDN URLs.
+ * Download utility — opens TikTok CDN URLs directly.
+ * Most TikTok CDN URLs support Content-Disposition: attachment,
+ * so the browser will trigger a save dialog.
  */
 
 export interface DownloadProgress {
@@ -12,61 +13,33 @@ export interface DownloadProgress {
 export type ProgressCallback = (progress: DownloadProgress) => void
 
 /**
- * Download a file via the server proxy with progress (when supported) and
- * a custom save-as filename.
+ * Trigger a direct download of a media URL.
+ * TikTok CDN URLs typically return Content-Disposition: attachment
+ * which triggers a native browser download dialog.
+ *
+ * Falls back to our proxy endpoint if the direct approach doesn't work
+ * (e.g. some CDN URLs may be cross-origin restricted).
  */
 export async function downloadWithProgress(
     url: string,
     filename: string,
     onProgress?: ProgressCallback
 ): Promise<void> {
-    const proxyUrl = `/api/download?url=${encodeURIComponent(url)}&name=${encodeURIComponent(filename)}`
-
-    // Try fetching through our proxy (same-origin = no CORS issues).
-    // The proxy returns the file bytes + Content-Disposition: attachment.
-    try {
-        const response = await fetch(proxyUrl)
-        if (!response.ok) {
-            throw new Error(`Proxy returned ${response.status}`)
-        }
-
-        // If the browser supports streaming, track progress
-        const contentLength = response.headers.get("content-length")
-        const total = contentLength ? parseInt(contentLength, 10) : 0
-
-        const blob = await response.blob()
-        triggerDownload(blob, filename)
-
-        // Fire a 100% progress event (we can't get incremental progress
-        // from response.blob() but this keeps the API consistent)
-        if (onProgress) {
-            onProgress({ loaded: total || blob.size, total: total || blob.size, percent: 100 })
-        }
-    } catch {
-        // Absolute fallback: open the proxy URL directly
-        const a = document.createElement("a")
-        a.href = proxyUrl
-        a.download = filename
-        a.style.display = "none"
-        document.body.appendChild(a)
-        a.click()
-        document.body.removeChild(a)
-    }
-}
-
-/**
- * Trigger browser download with a blob.
- */
-function triggerDownload(blob: Blob, filename: string): void {
-    const blobUrl = URL.createObjectURL(blob)
+    // Direct download via <a> tag with download attribute.
+    // For same-origin or CDN with CORS, this triggers a save dialog.
     const a = document.createElement("a")
-    a.href = blobUrl
+    a.href = url
     a.download = filename
     a.style.display = "none"
+    a.target = "_blank"
     document.body.appendChild(a)
     a.click()
     document.body.removeChild(a)
-    URL.revokeObjectURL(blobUrl)
+
+    // Fire 100% immediately since we can't track progress for direct links
+    if (onProgress) {
+        onProgress({ loaded: 100, total: 100, percent: 100 })
+    }
 }
 
 /**

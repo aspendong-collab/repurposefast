@@ -143,10 +143,9 @@ export function VideoPreview({ result, onDownloadVideo, onDownloadAudio }: Video
   }, [emblaApi, onSelect])
 
   const isVideo = result.type === "video"
-  const mediaUrl = isVideo && result.videoUrl
-    ? `/api/media?url=${encodeURIComponent(result.videoUrl)}`
-    : result.imageUrls?.[0]
+  const mediaUrl = isVideo ? result.videoUrl : result.imageUrls?.[0]
   const imageCount = result.imageUrls?.length ?? 0
+  const [videoLoadError, setVideoLoadError] = useState(false)
 
   // ---- Video controls ----
 
@@ -294,7 +293,7 @@ export function VideoPreview({ result, onDownloadVideo, onDownloadAudio }: Video
         <CardContent className="space-y-6">
           {/* Video / Image Preview */}
           <div className="relative bg-black rounded-lg overflow-hidden">
-            {isVideo && mediaUrl ? (
+            {isVideo && mediaUrl && !videoLoadError ? (
               <div className="relative">
                 <video
                   ref={videoRef}
@@ -305,14 +304,7 @@ export function VideoPreview({ result, onDownloadVideo, onDownloadAudio }: Video
                   onTimeUpdate={handleTimeUpdate}
                   onLoadedMetadata={handleTimeUpdate}
                   onEnded={() => setIsPlaying(false)}
-                  onError={(e) => {
-                    // Show thumbnail fallback if video CDN URL is inaccessible
-                    const target = e.currentTarget
-                    if (result.thumbnail) {
-                      target.poster = result.thumbnail
-                    }
-                    target.style.display = "none"
-                  }}
+                  onError={() => setVideoLoadError(true)}
                   muted={isMuted}
                   loop
                 />
@@ -333,7 +325,8 @@ export function VideoPreview({ result, onDownloadVideo, onDownloadAudio }: Video
                   </Button>
                 </div>
 
-                {/* Progress bar */}
+                {/* Progress bar — only when video has loaded */}
+                {videoDuration > 0 && (
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
                   <div className="flex items-center gap-2 text-white text-sm">
                     <span>{formatTime(currentTime)}</span>
@@ -341,7 +334,7 @@ export function VideoPreview({ result, onDownloadVideo, onDownloadAudio }: Video
                       <div
                         className="bg-white rounded-full h-1 transition-all duration-300"
                         style={{
-                          width: `${videoDuration > 0 ? (currentTime / videoDuration) * 100 : 0}%`,
+                          width: `${(currentTime / videoDuration) * 100}%`,
                         }}
                       />
                     </div>
@@ -360,23 +353,30 @@ export function VideoPreview({ result, onDownloadVideo, onDownloadAudio }: Video
                     </Button>
                   </div>
                 </div>
+                )}
               </div>
-            ) : (
+            ) : isVideo && videoLoadError && result.thumbnail ? (
+              /* Thumbnail fallback when video CDN fails */
+              <img
+                src={result.thumbnail}
+                alt="Video thumbnail"
+                className="w-full h-auto max-h-96 object-contain"
+              />
+            ) : result.imageUrls && result.imageUrls.length > 0 ? (
+              /* Photo Mode carousel */
               <div className="relative bg-gray-100">
-                {result.imageUrls && result.imageUrls.length > 0 ? (
-                  <>
-                    {/* Embla Carousel */}
-                    <div className="overflow-hidden" ref={emblaRef}>
-                      <div className="flex">
-                        {result.imageUrls.map((imgUrl, index) => (
-                          <div
-                            key={index}
-                            className="flex-none w-full flex items-center justify-center min-h-64 max-h-96"
-                          >
-                            <img
-                              src={imgUrl}
-                              alt={`TikTok Image ${index + 1}`}
-                              className="max-h-96 w-full object-contain"
+                <>
+                  <div className="overflow-hidden" ref={emblaRef}>
+                    <div className="flex">
+                      {result.imageUrls.map((imgUrl, index) => (
+                        <div
+                          key={index}
+                          className="flex-none w-full flex items-center justify-center min-h-64 max-h-96"
+                        >
+                          <img
+                            src={imgUrl}
+                            alt={`TikTok Image ${index + 1}`}
+                            className="max-h-96 w-full object-contain"
                               onError={(e) => {
                                 if (result.thumbnail) {
                                   (e.target as HTMLImageElement).src = result.thumbnail
@@ -433,6 +433,7 @@ export function VideoPreview({ result, onDownloadVideo, onDownloadAudio }: Video
                       </>
                     )}
                   </>
+                  </div>
                 ) : result.thumbnail ? (
                   <div className="flex items-center justify-center min-h-64">
                     <img
@@ -446,8 +447,6 @@ export function VideoPreview({ result, onDownloadVideo, onDownloadAudio }: Video
                     No preview available
                   </div>
                 )}
-              </div>
-            )}
           </div>
 
           {/* Caption */}
