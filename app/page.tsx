@@ -386,10 +386,8 @@ export default function SaveikDownloader() {
                       <Film className="h-10 w-10 text-muted-foreground/30 absolute" />
                       {currentResult.thumbnail && (
                         <img
-                          src={currentResult.thumbnail}
+                          src={`/api/img?url=${encodeURIComponent(currentResult.thumbnail)}`}
                           alt="Video thumbnail"
-                          referrerPolicy="no-referrer"
-                          crossOrigin="anonymous"
                           className="w-full h-48 sm:h-full object-cover relative z-10"
                           onError={(e) => {
                             (e.currentTarget as HTMLImageElement).style.display = "none"
@@ -428,31 +426,31 @@ export default function SaveikDownloader() {
                       </div>
 
                       {/* Download Buttons */}
-                      <div className="flex flex-col sm:flex-row gap-2 mt-1">
+                      <div className="flex flex-wrap gap-2.5 mt-1">
                         {currentResult.videoUrl && (
                           <Button
-                            size="lg"
-                            className="flex-1 gap-2 bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 text-white font-semibold"
+                            size="default"
+                            className="gap-2 bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 text-white font-semibold"
                             onClick={() => downloadWithProgress(
                               currentResult.videoUrl!,
                               generateFilename("video", currentResult.creator)
                             )}
                           >
-                            <Download className="h-5 w-5" />
+                            <Download className="h-4 w-4" />
                             Download MP4
                           </Button>
                         )}
                         {currentResult.audioUrl && (
                           <Button
-                            size="lg"
+                            size="default"
                             variant="outline"
-                            className="flex-1 gap-2"
+                            className="gap-2"
                             onClick={() => downloadWithProgress(
                               currentResult.audioUrl!,
                               generateFilename("audio", currentResult.creator)
                             )}
                           >
-                            <Music className="h-5 w-5" />
+                            <Music className="h-4 w-4" />
                             Download MP3
                           </Button>
                         )}
