@@ -35,14 +35,33 @@ interface ProviderResponse {
 
 // ============== Proxy helper ==============
 
-async function proxyFetch(provider: keyof typeof PROVIDERS, tiktokUrl: string): Promise<ProviderResponse> {
+async function proxyFetch(
+  provider: keyof typeof PROVIDERS,
+  tiktokUrl: string,
+  method: "GET" | "POST" = "POST",
+  queryParams?: Record<string, string>
+): Promise<ProviderResponse> {
+  let fullUrl = PROVIDERS[provider]
+  let postBody: string | undefined
+
+  if (method === "GET" && queryParams) {
+    const qs = new URLSearchParams(queryParams).toString()
+    fullUrl = `${fullUrl}?${qs}`
+  } else if (method === "POST") {
+    const params = new URLSearchParams()
+    params.set("url", tiktokUrl)
+    if (provider === "tikwm") params.set("hd", "1")
+    postBody = params.toString()
+  }
+
   const res = await fetch(PROXY_URL, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       provider,
-      url: PROVIDERS[provider],
-      tiktokUrl,
+      url: fullUrl,
+      method,
+      body: postBody,
     }),
   })
 
@@ -222,17 +241,17 @@ type ProviderName = keyof typeof PROVIDERS
 async function fetchTikTok(url: string): Promise<TikTokData> {
   if (!tiktokRegex.test(url)) throw new Error("Invalid TikTok URL. Please check the link and try again.")
 
-  const chain: Array<{ name: ProviderName; parser: (d: ProviderResponse) => TikTokData }> = [
-    { name: "zell", parser: parseZell },
-    { name: "sanka", parser: parseSanka },
-    { name: "tikwm", parser: parseTikWM },
+  const chain: Array<{ name: ProviderName; parser: (d: ProviderResponse) => TikTokData; method: "GET" | "POST"; queryParams?: Record<string, string> }> = [
+    { name: "zell", parser: parseZell, method: "POST" },
+    { name: "sanka", parser: parseSanka, method: "GET", queryParams: { apikey: "planaai" } },
+    { name: "tikwm", parser: parseTikWM, method: "POST" },
   ]
 
   const errors: string[] = []
 
-  for (const { name, parser } of chain) {
+  for (const { name, parser, method, queryParams } of chain) {
     try {
-      const data = await proxyFetch(name, url)
+      const data = await proxyFetch(name, url, method, queryParams)
       return parser(data)
     } catch (err) {
       const msg = err instanceof Error ? err.message : "Unknown error"
