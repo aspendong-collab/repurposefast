@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { useState, useEffect, useRef, useCallback } from "react"
+import { useState, useEffect, useRef } from "react"
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 import {
   ArrowDownToLine,
@@ -17,13 +17,16 @@ import {
   X,
   Sparkles,
   ChevronDown,
+  Film,
+  Download,
+  Image,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 import { Navbar } from "@/components/navbar"
 import { useToast } from "@/hooks/use-toast"
-import { VideoPreview } from "@/modules/downloader/components/VideoPreview"
 import { downloadWithProgress, generateFilename } from "@/modules/downloader/services/downloadClient"
 
 // ============== Types ==============
@@ -372,20 +375,108 @@ export default function SaveikDownloader() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              className="container mx-auto px-4 py-12"
+              className="container mx-auto px-4 py-8"
             >
-              <VideoPreview
-                result={currentResult}
-                onDownloadVideo={() => {
-                  if (currentResult.videoUrl) downloadWithProgress(currentResult.videoUrl, generateFilename("video", currentResult.creator))
-                  else if (currentResult.imageUrls?.length) currentResult.imageUrls.forEach((img, i) => downloadWithProgress(img, generateFilename("image", currentResult.creator, i)))
-                }}
-                onDownloadAudio={() => {
-                  if (currentResult.audioUrl) downloadWithProgress(currentResult.audioUrl, generateFilename("audio", currentResult.creator))
-                }}
-              />
-              <div className="text-center mt-10">
-                <Button variant="outline" onClick={handleClear} className="text-muted-foreground">
+              <Card className="max-w-xl mx-auto overflow-hidden border-border/40 bg-card/70 backdrop-blur-sm">
+                <CardContent className="p-0">
+                  {/* Thumbnail + Info Row */}
+                  <div className="flex flex-col sm:flex-row">
+                    {/* Thumbnail */}
+                    {currentResult.thumbnail && (
+                      <div className="sm:w-48 flex-shrink-0 bg-black">
+                        <img
+                          src={currentResult.thumbnail}
+                          alt="Video thumbnail"
+                          className="w-full h-48 sm:h-full object-cover"
+                        />
+                      </div>
+                    )}
+
+                    {/* Info + Download */}
+                    <div className="flex-1 p-5 sm:p-6 flex flex-col justify-between gap-4">
+                      {/* Creator */}
+                      {currentResult.creator && (
+                        <p className="text-sm font-semibold text-violet-600 dark:text-violet-400">
+                          @{currentResult.creator}
+                        </p>
+                      )}
+
+                      {/* Description */}
+                      {currentResult.description && (
+                        <p className="text-sm text-muted-foreground line-clamp-3 leading-relaxed">
+                          {currentResult.description}
+                        </p>
+                      )}
+
+                      {/* Meta badges */}
+                      <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+                        <Badge variant="secondary" className="gap-1">
+                          <Film className="h-3 w-3" />
+                          {currentResult.type === "image" ? "Photo Mode" : "MP4 Video"}
+                        </Badge>
+                        {currentResult.duration && (
+                          <Badge variant="outline">
+                            {currentResult.duration}s
+                          </Badge>
+                        )}
+                      </div>
+
+                      {/* Download Buttons */}
+                      <div className="flex flex-col sm:flex-row gap-2 mt-1">
+                        {currentResult.videoUrl && (
+                          <Button
+                            size="lg"
+                            className="flex-1 gap-2 bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 text-white font-semibold"
+                            onClick={() => downloadWithProgress(
+                              currentResult.videoUrl!,
+                              generateFilename("video", currentResult.creator)
+                            )}
+                          >
+                            <Download className="h-5 w-5" />
+                            Download MP4
+                          </Button>
+                        )}
+                        {currentResult.audioUrl && (
+                          <Button
+                            size="lg"
+                            variant="outline"
+                            className="flex-1 gap-2"
+                            onClick={() => downloadWithProgress(
+                              currentResult.audioUrl!,
+                              generateFilename("audio", currentResult.creator)
+                            )}
+                          >
+                            <Music className="h-5 w-5" />
+                            Download MP3
+                          </Button>
+                        )}
+                      </div>
+
+                      {/* Photo mode: Download All */}
+                      {currentResult.imageUrls && currentResult.imageUrls.length > 0 && (
+                        <Button
+                          size="lg"
+                          className="gap-2 bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-semibold"
+                          onClick={() => {
+                            currentResult.imageUrls?.forEach((img, i) => {
+                              setTimeout(() => {
+                                downloadWithProgress(img, generateFilename("image", currentResult.creator, i))
+                              }, i * 300)
+                            })
+                          }}
+                        >
+                          <Download className="h-5 w-5" />
+                          Download {currentResult.imageUrls.length} Photos
+                        </Button>
+                      )}
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <div className="text-center mt-8">
+                <Button variant="outline" onClick={handleClear} className="text-muted-foreground gap-2">
+                  <X className="h-4 w-4" />
                   Download Another Video
                 </Button>
               </div>
