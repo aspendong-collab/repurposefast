@@ -18,8 +18,8 @@ export async function GET(req: Request) {
     return NextResponse.json({ error: "Missing url" }, { status: 400 })
   }
 
-  // Only allow TikTok CDN domains
-  const valid = /^https?:\/\/([a-z0-9.-]+\.)?(tiktokcdn\.com|tiktokcdn-us\.com|tiktok\.com|ibyteimg\.com|byteoversea\.com|tiktokv\.com)/i
+  // Allow any TikTok/ByteDance CDN domain
+  const valid = /^https?:\/\/([a-z0-9.-]+\.)?(tiktokcdn\.com|tiktokcdn-us\.com|tiktok\.com|ibyteimg\.com|byteoversea\.com|tiktokv\.com|musical\.ly|byteimg\.com|tiktok-.*\.com)/i
   if (!valid.test(imgUrl)) {
     return NextResponse.json({ error: "Invalid source" }, { status: 400 })
   }
@@ -29,7 +29,10 @@ export async function GET(req: Request) {
       headers: {
         "User-Agent": UA,
         Referer: "https://www.tiktok.com/",
+        Origin: "https://www.tiktok.com",
       },
+      // Allow redirects to get through
+      redirect: "follow",
     })
 
     if (!upstream.ok) {

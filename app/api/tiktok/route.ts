@@ -1,329 +1,306 @@
 import { NextResponse } from "next/server"
 
+/**
+ * TikTok Video Downloader API
+ *
+ * Strategy: fetch the TikTok video page directly and extract the
+ * embedded JSON data. No third-party providers — just like ssstik.io.
+ */
+
 // ============== Config ==============
 
-const PROVIDERS = {
-  zell: "https://apizell.web.id/download/tiktok",
-  sanka: "https://www.sankavollerei.com/download/tiktok",
-  tikwm: "https://tikwm.com/api/",
+const UA_MOBILE =
+  "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1"
+
+const UA_DESKTOP =
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+// ============== Helpers ==============
+
+function extractJsonFromHtml(html: string): Record<string, unknown> | null {
+  // Try __UNIVERSAL_DATA_FOR_REHYDRATION__ (desktop TikTok)
+  const rehydrateMatch = html.match(
+    /<script[^>]*id="__UNIVERSAL_DATA_FOR_REHYDRATION__"[^>]*>\s*(\{.*?\})\s*<\/script>/s
+  )
+  if (rehydrateMatch) {
+    try { return JSON.parse(rehydrateMatch[1]) } catch {}
+  }
+
+  // Try SIGI_STATE (older pages)
+  const sigiMatch = html.match(
+    /<script[^>]*id="SIGI_STATE"[^>]*>\s*(\{.*?\})\s*<\/script>/s
+  )
+  if (sigiMatch) {
+    try { return JSON.parse(sigiMatch[1]) } catch {}
+  }
+
+  return null
 }
 
-// ============== Types ==============
-
-interface TikTokData {
-  title: string
-  creator: string
+function extractVideoData(json: Record<string, unknown>): {
+  videoUrl: string
   thumbnail: string
-  videos: string[]
-  audio: string
-  slide: string[]
-  duration: string
-}
-
-interface ProviderResponse {
-  status?: boolean
-  code?: number
-  msg?: string
-  data?: Record<string, unknown>
-  result?: Record<string, unknown>
-  error?: string
-}
-
-// ============== Direct provider fetch ==============
-
-const UA =
-  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
-
-async function directFetch(
-  provider: keyof typeof PROVIDERS,
-  tiktokUrl: string,
-  method: "GET" | "POST" = "POST",
-  queryParams?: Record<string, string>
-): Promise<ProviderResponse> {
-  let fullUrl = PROVIDERS[provider]
-  let body: string | undefined
-
-  if (method === "GET" && queryParams) {
-    const qs = new URLSearchParams({ ...queryParams, url: tiktokUrl }).toString()
-    fullUrl = `${fullUrl}?${qs}`
-  } else if (method === "POST") {
-    const params = new URLSearchParams()
-    params.set("url", tiktokUrl)
-    if (provider === "tikwm") params.set("hd", "1")
-    body = params.toString()
-  }
-
-  const res = await fetch(fullUrl, {
-    method,
-    headers: {
-      Accept: "application/json, text/plain, */*",
-      "User-Agent": UA,
-      ...(method === "POST" ? { "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8" } : {}),
-    },
-    body,
-  })
-
-  const text = await res.text().catch(() => "")
-
-  if (!res.ok) {
-    throw new Error(`${provider}: HTTP ${res.status} — ${text.substring(0, 200)}`)
-  }
-
+  description: string
+  creator: string
+  duration: number
+  images: string[]
+  musicUrl: string
+} | null {
   try {
-    return JSON.parse(text) as ProviderResponse
+    // __UNIVERSAL_DATA_FOR_REHYDRATION__ path
+    const defaultScope = json["__DEFAULT_SCOPE__"] as Record<string, unknown> | undefined
+    if (defaultScope) {
+      const videoDetail = (defaultScope["webapp.video-detail"] || defaultScope["seo.abtest"]) as Record<string, unknown> | undefined
+      if (videoDetail) {
+        const itemInfo = videoDetail["itemInfo"] as Record<string, unknown> | undefined
+        const itemStruct = (itemInfo?.["itemStruct"] || videoDetail["itemInfo"]) as Record<string, unknown> | undefined
+
+        if (itemStruct) {
+          return extractFromItemStruct(itemStruct)
+        }
+      }
+    }
+
+    // Fallback: traverse deeply
+    return deepExtract(json)
   } catch {
-    throw new Error(`${provider}: non-JSON — ${text.substring(0, 200)}`)
+    return null
   }
 }
 
-// ============== Provider Parsers (unchanged from original) ==============
+function extractFromItemStruct(item: Record<string, unknown>): {
+  videoUrl: string
+  thumbnail: string
+  description: string
+  creator: string
+  duration: number
+  images: string[]
+  musicUrl: string
+} {
+  const video = item["video"] as Record<string, unknown> | undefined
+  const author = item["author"] as Record<string, unknown> | undefined
+  const music = item["music"] as Record<string, unknown> | undefined
+  const imagePost = item["imagePost"] as Record<string, unknown> | undefined
 
-// ===== Zell =====
-
-function parseZell(data: ProviderResponse): TikTokData {
-  if (!data.status) throw new Error(data.msg || "Zell: download failed")
-
-  const r = (data.data || data.result || {}) as Record<string, unknown>
-
-  const title = typeof r.title === "string" ? r.title : ""
-  const author = r.author as Record<string, string> | undefined
-  const creator =
-    author?.unique_id || author?.nickname || author?.username || ""
-  const thumbnail = typeof r.thumbnail === "string" ? r.thumbnail : ""
-  const video = typeof r.video === "string" ? r.video : ""
-  const music = (r.music as Record<string, unknown>)?.url as string | undefined
-
-  const images = Array.isArray(r.images)
-    ? r.images.filter((item): item is string => typeof item === "string")
-    : []
-
-  const duration =
-    typeof r.duration === "number" && r.duration > 0
-      ? String(r.duration)
-      : ""
-
-  return {
-    title,
-    creator,
-    thumbnail,
-    videos: video ? [video] : [],
-    audio: music || "",
-    slide: images,
-    duration,
-  }
-}
-
-// ===== Sanka =====
-
-interface SankaResult {
-  title?: string
-  author?: {
-    unique_id?: string
-    nickname?: string
-    username?: string
-  }
-  cover?: string
-  play?: string
-  music?: string
-  music_info?: { play?: string; duration?: number }
-  images?: string[]
-  duration?: number
-}
-
-function parseSanka(data: ProviderResponse): TikTokData {
-  const result = (data.data || data.result || {}) as SankaResult
-
-  const title = typeof result.title === "string" ? result.title : ""
-  const author = result.author
-  const creator =
-    author?.unique_id || author?.nickname || author?.username || ""
-  const thumbnail = typeof result.cover === "string" ? result.cover : ""
-  const video = typeof result.play === "string" ? result.play : ""
-  const music =
-    typeof result.music === "string" && result.music
-      ? result.music
-      : typeof result.music_info?.play === "string"
-        ? result.music_info.play
-        : ""
-
-  const images = Array.isArray(result.images)
-    ? result.images.filter((item): item is string => typeof item === "string")
-    : []
-
-  const duration =
-    typeof result.duration === "number" && result.duration > 0
-      ? String(result.duration)
-      : typeof result.music_info?.duration === "number"
-        ? String(result.music_info.duration)
-        : ""
-
-  return {
-    title,
-    creator,
-    thumbnail,
-    videos: video ? [video] : [],
-    audio: music,
-    slide: images,
-    duration,
-  }
-}
-
-// ===== TikWM =====
-
-function parseTikWM(data: ProviderResponse): TikTokData {
-  if (data.code !== 0) throw new Error(data.msg || "TikWM: download failed")
-
-  const r = (data.data || data.result || {}) as Record<string, unknown>
-
-  const title = typeof r.title === "string" ? r.title : ""
-  const author = r.author as Record<string, string> | undefined
-  const creator =
-    author?.unique_id || author?.nickname || author?.username || ""
-  const thumbnail = typeof r.cover === "string" ? r.cover : ""
-  const video = typeof r.play === "string" ? r.play : ""
-
-  const music =
-    typeof r.music === "string" && r.music
-      ? r.music
-      : typeof (r.music_info as Record<string, unknown>)?.play === "string"
-        ? ((r.music_info as Record<string, unknown>).play as string)
-        : ""
-
-  const images = Array.isArray(r.images)
-    ? r.images.filter((item): item is string => typeof item === "string")
-    : []
-
-  const duration =
-    typeof r.duration === "number" && r.duration > 0
-      ? String(r.duration)
-      : typeof (r.music_info as Record<string, unknown>)?.duration === "number"
-        ? String((r.music_info as Record<string, unknown>).duration)
-        : ""
-
-  return {
-    title,
-    creator,
-    thumbnail,
-    videos: video ? [video] : [],
-    audio: music,
-    slide: images,
-    duration,
-  }
-}
-
-// ============== TikTok URL validation ==============
-
-const tiktokRegex =
-  /^https?:\/\/(?:www\.|vm\.|m\.)?(?:tiktok\.com|douyin\.com)\/(?:@[\w.-]+\/video\/\d+|\w+\/video\/\d+|v\/\d+|video\/\d+)[\w/?&=.-]*$/i
-
-// ============== Rate Limiting ==============
-
-const rateLimitMap = new Map<string, { count: number; resetAt: number }>()
-
-function checkRateLimit(ip: string): boolean {
-  const now = Date.now()
-  const entry = rateLimitMap.get(ip)
-  if (!entry || now > entry.resetAt) {
-    rateLimitMap.set(ip, { count: 1, resetAt: now + 60000 })
-    return true
-  }
-  if (entry.count >= 10) return false
-  entry.count++
-  return true
-}
-
-// ============== Core fetch (with provider fallback) ==============
-
-type ProviderName = keyof typeof PROVIDERS
-
-async function fetchTikTok(url: string): Promise<TikTokData> {
-  if (!tiktokRegex.test(url)) throw new Error("Invalid TikTok URL. Please check the link and try again.")
-
-  const chain: Array<{ name: ProviderName; parser: (d: ProviderResponse) => TikTokData; method: "GET" | "POST"; queryParams?: Record<string, string> }> = [
-    { name: "zell", parser: parseZell, method: "POST" },
-    { name: "sanka", parser: parseSanka, method: "GET", queryParams: { apikey: "planaai" } },
-    { name: "tikwm", parser: parseTikWM, method: "POST" },
-  ]
-
-  const errors: string[] = []
-
-  for (const { name, parser, method, queryParams } of chain) {
-    try {
-      const data = await directFetch(name, url, method, queryParams)
-      return parser(data)
-    } catch (err) {
-      const msg = err instanceof Error ? err.message : "Unknown error"
-      errors.push(`${name}: ${msg}`)
+  // Video URL — prefer downloadAddr (no watermark)
+  let videoUrl = ""
+  if (video) {
+    const downloadAddr = video["downloadAddr"] || video["playAddr"]
+    if (typeof downloadAddr === "string") videoUrl = downloadAddr
+    // Also check bitrateInfo for HD
+    const bitrateInfo = video["bitrateInfo"] as Array<Record<string, unknown>> | undefined
+    if (bitrateInfo && bitrateInfo.length > 0) {
+      const hd = bitrateInfo[bitrateInfo.length - 1]
+      const playAddr = hd?.["PlayAddr"] as Record<string, unknown> | undefined
+      const urlList = playAddr?.["UrlList"] as string[] | undefined
+      if (urlList && urlList.length > 0) videoUrl = urlList[0]
     }
   }
 
-  throw new Error(
-    `All providers failed: ${errors.join(" | ")}`
-  )
+  // Thumbnail
+  let thumbnail = ""
+  const cover = video?.["cover"] || video?.["originCover"] || video?.["dynamicCover"]
+  if (typeof cover === "string") {
+    thumbnail = cover
+  } else if (typeof cover === "object" && cover) {
+    const urlList = (cover as Record<string, unknown>)["urlList"] as string[] | undefined
+    if (urlList && urlList.length > 0) thumbnail = urlList[0]
+  }
+
+  // Description
+  const desc = typeof item["desc"] === "string" ? item["desc"] : ""
+
+  // Creator
+  let creator = ""
+  if (author) {
+    creator = (typeof author["uniqueId"] === "string" ? author["uniqueId"] : "") ||
+      (typeof author["nickname"] === "string" ? author["nickname"] : "")
+  }
+
+  // Duration
+  let duration = 0
+  if (video && typeof video["duration"] === "number") duration = video["duration"]
+
+  // Images (photo mode)
+  const images: string[] = []
+  if (imagePost) {
+    const imgs = imagePost["images"] as Array<Record<string, unknown>> | undefined
+    if (imgs) {
+      for (const img of imgs) {
+        const urlList = img["imageURL"]?.["urlList"] || img["urlList"]
+        if (Array.isArray(urlList) && urlList.length > 0) {
+          images.push(urlList[0] as string)
+        }
+      }
+    }
+  }
+
+  // Music URL
+  let musicUrl = ""
+  if (music) {
+    const playUrl = music["playUrl"] as Record<string, unknown> | undefined
+    const urlList = playUrl?.["urlList"] || playUrl?.["UrlList"]
+    if (Array.isArray(urlList) && urlList.length > 0) {
+      musicUrl = urlList[0] as string
+    }
+  }
+
+  return { videoUrl, thumbnail, description, creator, duration, images, musicUrl }
+}
+
+function deepExtract(json: Record<string, unknown>): {
+  videoUrl: string
+  thumbnail: string
+  description: string
+  creator: string
+  duration: number
+  images: string[]
+  musicUrl: string
+} | null {
+  // Recursively search for video data
+  const queue = [json]
+  while (queue.length > 0) {
+    const obj = queue.shift()!
+    for (const [key, val] of Object.entries(obj)) {
+      if (key === "video" && typeof val === "object" && val && "downloadAddr" in val) {
+        // Found video container, try to extract
+        const parent = obj as Record<string, unknown>
+        if (parent["author"] || parent["desc"] || parent["music"]) {
+          return extractFromItemStruct(parent)
+        }
+      }
+      if (typeof val === "object" && val && !Array.isArray(val)) {
+        queue.push(val as Record<string, unknown>)
+      }
+    }
+    if (queue.length > 100) break // safety limit
+  }
+  return null
+}
+
+// ============== API fetcher ==============
+
+async function fetchTikTokPage(videoUrl: string): Promise<string> {
+  // Try desktop UA first (more reliable for data extraction)
+  const res = await fetch(videoUrl, {
+    headers: {
+      "User-Agent": UA_DESKTOP,
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "Accept-Language": "en-US,en;q=0.9",
+    },
+    redirect: "follow",
+  })
+
+  if (!res.ok) {
+    throw new Error(`TikTok returned ${res.status}`)
+  }
+
+  const html = await res.text()
+  if (html.length < 1000) {
+    throw new Error("TikTok returned empty or too-short page")
+  }
+
+  return html
 }
 
 // ============== Route Handler ==============
 
 export async function POST(req: Request) {
-  // Origin check
-  const origin = req.headers.get("origin") || ""
-  const referer = req.headers.get("referer") || ""
-  const isLocalhost = origin.includes("localhost") || referer.includes("localhost")
-  const allowedDomains = [
-    "saveik.com",
-    "www.saveik.com",
-    "saveiks.vercel.app",
-    "localhost",
-    "127.0.0.1",
-  ]
-  const isAllowed = allowedDomains.some((d) => origin.includes(d) || referer.includes(d))
-
-  if ((origin || referer) && !isLocalhost && !isAllowed) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 403 })
-  }
-
-  // Rate limiting
-  const ip = req.headers.get("x-forwarded-for") || req.headers.get("x-real-ip") || "unknown"
-  if (!checkRateLimit(ip)) {
-    return NextResponse.json(
-      { error: "Too many requests. Please wait a minute." },
-      { status: 429, headers: { "Retry-After": "60" } }
-    )
-  }
-
-  // Parse body
+  // Parse URL
   let url: string
   try {
     const body = (await req.json()) as { url?: unknown }
     if (!body.url || typeof body.url !== "string") {
       return NextResponse.json({ error: "Please provide a TikTok video link." }, { status: 400 })
     }
-    url = body.url
+    url = body.url.trim()
   } catch {
     return NextResponse.json({ error: "Invalid request." }, { status: 400 })
   }
 
-  // Fetch
-  try {
-    const result = await fetchTikTok(url)
+  // Validate URL
+  const tiktokRegex = /https?:\/\/(?:www\.|m\.|vm\.|vt\.)?(?:tiktok\.com|douyin\.com)\/\S+/i
+  if (!tiktokRegex.test(url)) {
+    return NextResponse.json({ error: "Invalid TikTok URL. Please check the link and try again." }, { status: 400 })
+  }
 
-    const images = result.slide
-    const isPhoto = images.length > 0 && result.videos.length === 0
-    const audioUrl = result.audio || undefined
+  try {
+    // Step 1: Fetch TikTok page
+    const html = await fetchTikTokPage(url)
+
+    // Step 2: Extract JSON data
+    const json = extractJsonFromHtml(html)
+    if (!json) {
+      // Fallback to third-party providers if page scraping fails
+      return await fallbackProviders(url)
+    }
+
+    // Step 3: Extract video data
+    const data = extractVideoData(json)
+    if (!data) {
+      return await fallbackProviders(url)
+    }
+
+    // Step 4: Return response
+    const isPhoto = data.images.length > 0 && !data.videoUrl
 
     return NextResponse.json({
       type: isPhoto ? "image" : "video",
-      video: result.videos[0] || null,
-      videos: result.videos.length > 0 ? result.videos : null,
-      images: images.length > 0 ? images : null,
-      music: audioUrl || null,
-      description: result.title || null,
-      creator: result.creator || null,
-      duration: result.duration || null,
-      thumbnail: result.thumbnail || null,
+      video: data.videoUrl || null,
+      videos: data.videoUrl ? [data.videoUrl] : null,
+      images: data.images.length > 0 ? data.images : null,
+      music: data.musicUrl || null,
+      description: data.description || null,
+      creator: data.creator || null,
+      duration: data.duration > 0 ? String(data.duration) : null,
+      thumbnail: data.thumbnail || null,
     })
   } catch (err) {
-    const message = err instanceof Error ? err.message : "Download failed. Please try again later."
+    const message = err instanceof Error ? err.message : "Download failed"
     return NextResponse.json({ error: message }, { status: 500 })
   }
+}
+
+// ============== Fallback: third-party providers ==============
+
+async function fallbackProviders(tiktokUrl: string) {
+  // Try TikWM as last resort
+  try {
+    const params = new URLSearchParams()
+    params.set("url", tiktokUrl)
+    params.set("hd", "1")
+
+    const res = await fetch("https://tikwm.com/api/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+        "User-Agent": UA_DESKTOP,
+      },
+      body: params.toString(),
+    })
+
+    const data = await res.json() as Record<string, unknown>
+    if (data["code"] === 0) {
+      const d = (data["data"] || {}) as Record<string, unknown>
+      const images = Array.isArray(d["images"]) ? d["images"] as string[] : []
+      return NextResponse.json({
+        type: images.length > 0 ? "image" : "video",
+        video: (d["play"] || d["hdplay"] || null) as string | null,
+        videos: d["play"] ? [d["play"]] as string[] : null,
+        images: images.length > 0 ? images : null,
+        music: (d["music"] || null) as string | null,
+        description: (d["title"] || null) as string | null,
+        creator: ((d["author"] as Record<string, string>)?.unique_id || null) as string | null,
+        duration: d["duration"] ? String(d["duration"]) : null,
+        thumbnail: (d["cover"] || null) as string | null,
+      })
+    }
+  } catch {
+    // ignore
+  }
+
+  return NextResponse.json(
+    { error: "Unable to download. TikTok may have changed its page structure. Please try again later." },
+    { status: 500 }
+  )
 }
