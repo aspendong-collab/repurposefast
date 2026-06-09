@@ -382,15 +382,21 @@ export default function SaveikDownloader() {
                   {/* Thumbnail + Info Row */}
                   <div className="flex flex-col sm:flex-row">
                     {/* Thumbnail */}
-                    {currentResult.thumbnail && (
-                      <div className="sm:w-48 flex-shrink-0 bg-black">
+                    <div className="sm:w-48 flex-shrink-0 bg-muted/30 flex items-center justify-center min-h-48 relative overflow-hidden">
+                      <Film className="h-10 w-10 text-muted-foreground/30 absolute" />
+                      {currentResult.thumbnail && (
                         <img
                           src={currentResult.thumbnail}
                           alt="Video thumbnail"
-                          className="w-full h-48 sm:h-full object-cover"
+                          referrerPolicy="no-referrer"
+                          crossOrigin="anonymous"
+                          className="w-full h-48 sm:h-full object-cover relative z-10"
+                          onError={(e) => {
+                            (e.currentTarget as HTMLImageElement).style.display = "none"
+                          }}
                         />
-                      </div>
-                    )}
+                      )}
+                    </div>
 
                     {/* Info + Download */}
                     <div className="flex-1 p-5 sm:p-6 flex flex-col justify-between gap-4">
