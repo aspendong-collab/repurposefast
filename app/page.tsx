@@ -396,40 +396,40 @@ export default function SaveikDownloader() {
                     </div>
 
                     {/* Info + Download */}
-                    <div className="flex-1 p-5 sm:p-6 flex flex-col justify-between gap-4">
+                    <div className="flex-1 min-w-0 p-4 sm:p-5 flex flex-col gap-3">
                       {/* Creator */}
                       {currentResult.creator && (
-                        <p className="text-sm font-semibold text-violet-600 dark:text-violet-400">
+                        <p className="text-sm font-semibold text-violet-600 dark:text-violet-400 truncate">
                           @{currentResult.creator}
                         </p>
                       )}
 
                       {/* Description */}
                       {currentResult.description && (
-                        <p className="text-sm text-muted-foreground line-clamp-3 leading-relaxed">
+                        <p className="text-xs sm:text-sm text-muted-foreground line-clamp-2 leading-relaxed">
                           {currentResult.description}
                         </p>
                       )}
 
                       {/* Meta badges */}
-                      <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
-                        <Badge variant="secondary" className="gap-1">
+                      <div className="flex flex-wrap items-center gap-1.5">
+                        <Badge variant="secondary" className="gap-1 text-xs">
                           <Film className="h-3 w-3" />
-                          {currentResult.type === "image" ? "Photo Mode" : "MP4 Video"}
+                          {currentResult.type === "image" ? "Photo Mode" : "MP4"}
                         </Badge>
                         {currentResult.duration && (
-                          <Badge variant="outline">
+                          <Badge variant="outline" className="text-xs">
                             {currentResult.duration}s
                           </Badge>
                         )}
                       </div>
 
-                      {/* Download Buttons */}
-                      <div className="flex flex-wrap gap-2.5 mt-1">
+                      {/* Download Buttons — always stacked, full width */}
+                      <div className="flex flex-col gap-2 pt-1">
                         {currentResult.videoUrl && (
                           <Button
                             size="default"
-                            className="gap-2 bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 text-white font-semibold"
+                            className="w-full gap-2 bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 text-white font-semibold"
                             onClick={() => downloadWithProgress(
                               currentResult.videoUrl!,
                               generateFilename("video", currentResult.creator)
@@ -443,7 +443,7 @@ export default function SaveikDownloader() {
                           <Button
                             size="default"
                             variant="outline"
-                            className="gap-2"
+                            className="w-full gap-2"
                             onClick={() => downloadWithProgress(
                               currentResult.audioUrl!,
                               generateFilename("audio", currentResult.creator)
