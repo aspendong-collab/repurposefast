@@ -1,28 +1,20 @@
 /**
  * Cloudflare Worker — TikTok API Proxy
- *
- * Deploy at: https://dash.cloudflare.com → Workers & Pages → Create
- *
- * What it does:
- *   Receives requests from Vercel (US), relays them from Cloudflare's
- *   Singapore edge node to Indonesian TikTok downloader APIs,
- *   bypassing geo-based Cloudflare challenges.
- *
- * Usage from route.ts:
- *   fetch("https://tiktok-proxy.YOUR-DOMAIN.workers.dev/proxy", {
- *     method: "POST",
- *     body: JSON.stringify({
- *       provider: "zell",    // or "sanka" or "tikwm"
- *       url: "https://tikwm.com/api/"
- *     }),
- *   })
+ * Deploy at: https://dash.cloudflare.com → Workers & Pages → tiktok-proxy
  */
 
 export default {
   async fetch(request) {
     const url = new URL(request.url)
 
-    // Allow only POST to /proxy
+    // Health check
+    if (request.method === "GET" && url.pathname === "/health") {
+      return new Response(JSON.stringify({ ok: true, region: request.cf?.colo || "unknown" }), {
+        headers: { "Content-Type": "application/json" },
+      })
+    }
+
+    // Proxy endpoint
     if (request.method !== "POST" || url.pathname !== "/proxy") {
       return new Response("Not Found", { status: 404 })
     }
@@ -37,59 +29,59 @@ export default {
       })
     }
 
-    const { provider, url: targetUrl } = body
-
+    const { provider, url: targetUrl, tiktokUrl } = body
     if (!provider || !targetUrl) {
-      return new Response(
-        JSON.stringify({ error: "Missing provider or url" }),
-        { status: 400, headers: { "Content-Type": "application/json" } }
-      )
+      return new Response(JSON.stringify({ error: "Missing provider or url" }), {
+        status: 400,
+        headers: { "Content-Type": "application/json" },
+      })
     }
 
-    // Build the provider-specific request
-    const headers = {
-      "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-      "Accept": "application/json, text/plain, */*",
-      "User-Agent":
-        "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36",
-    }
-
-    // Build the body for the provider
     const params = new URLSearchParams()
-    params.set("url", body.tiktokUrl || "")
+    params.set("url", tiktokUrl || "")
     if (provider === "tikwm") params.set("hd", "1")
+
+    const colo = request.cf?.colo || "unknown"
 
     try {
       const res = await fetch(targetUrl, {
         method: "POST",
-        headers,
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+          Accept: "application/json, text/plain, */*",
+          "User-Agent":
+            "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 Chrome/124.0.0.0 Mobile Safari/537.36",
+        },
         body: params.toString(),
       })
 
-      const contentType = res.headers.get("content-type") || ""
-      const text = await res.text()
+      const resText = await res.text()
 
-      // Try to parse as JSON
-      if (contentType.includes("json")) {
-        try {
-          const json = JSON.parse(text)
-          return new Response(JSON.stringify(json), {
-            status: res.status,
-            headers: { "Content-Type": "application/json" },
-          })
-        } catch {
-          // fall through
-        }
+      let json
+      try {
+        json = JSON.parse(resText)
+      } catch {
+        return new Response(
+          JSON.stringify({
+            error: `Provider returned non-JSON (HTTP ${res.status})`,
+            provider,
+            colo,
+            preview: resText.substring(0, 200),
+          }),
+          { status: 502, headers: { "Content-Type": "application/json" } }
+        )
       }
 
-      return new Response(text, {
+      return new Response(JSON.stringify({ ...json, _proxyColo: colo }), {
         status: res.status,
-        headers: { "Content-Type": contentType },
+        headers: { "Content-Type": "application/json" },
       })
     } catch (err) {
       return new Response(
         JSON.stringify({
-          error: "Proxy request failed",
+          error: "Proxy connection failed",
+          provider,
+          colo,
           detail: err.message,
         }),
         { status: 502, headers: { "Content-Type": "application/json" } }

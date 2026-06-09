@@ -46,17 +46,17 @@ async function proxyFetch(provider: keyof typeof PROVIDERS, tiktokUrl: string): 
     }),
   })
 
+  const text = await res.text().catch(() => "")
+
   if (!res.ok) {
-    const text = await res.text().catch(() => "")
-    throw new Error(`Proxy error ${res.status}: ${text}`)
+    throw new Error(`${provider}: Proxy ${res.status} — ${text.substring(0, 300)}`)
   }
 
-  const contentType = res.headers.get("content-type") || ""
-  if (contentType.includes("json")) {
-    return (await res.json()) as ProviderResponse
+  try {
+    return JSON.parse(text) as ProviderResponse
+  } catch {
+    throw new Error(`${provider}: non-JSON — ${text.substring(0, 200)}`)
   }
-
-  throw new Error("Proxy returned non-JSON response")
 }
 
 // ============== Provider Parsers (unchanged from original) ==============
@@ -241,7 +241,7 @@ async function fetchTikTok(url: string): Promise<TikTokData> {
   }
 
   throw new Error(
-    "All download providers are temporarily unavailable. Please try again in a few minutes."
+    `All providers failed: ${errors.join(" | ")}`
   )
 }
 
