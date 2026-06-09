@@ -1,18 +1,203 @@
 import { NextResponse } from "next/server"
 
+// ============== Config ==============
+
+// Cloudflare Worker proxy URL — deployed in your Cloudflare Workers dashboard
+// Change this to your actual Worker URL after deploying worker-proxy.js
+const PROXY_URL = process.env.TIKTOK_PROXY_URL || "https://tiktok-proxy.YOUR_SUBDOMAIN.workers.dev/proxy"
+
+const PROVIDERS = {
+  zell: "https://apizell.web.id/download/tiktok",
+  sanka: "https://www.sankavollerei.com/download/tiktok",
+  tikwm: "https://tikwm.com/api/",
+}
+
 // ============== Types ==============
 
-interface TikTokResult {
-  type: "video" | "image"
-  video?: string
-  videos?: string[]
-  images?: string[]
-  music?: string
-  description?: string
-  creator?: string
-  duration?: string
-  thumbnail?: string
+interface TikTokData {
+  title: string
+  creator: string
+  thumbnail: string
+  videos: string[]
+  audio: string
+  slide: string[]
+  duration: string
 }
+
+interface ProviderResponse {
+  status?: boolean
+  code?: number
+  msg?: string
+  data?: Record<string, unknown>
+  result?: Record<string, unknown>
+  error?: string
+}
+
+// ============== Proxy helper ==============
+
+async function proxyFetch(provider: keyof typeof PROVIDERS, tiktokUrl: string): Promise<ProviderResponse> {
+  const res = await fetch(PROXY_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      provider,
+      url: PROVIDERS[provider],
+      tiktokUrl,
+    }),
+  })
+
+  if (!res.ok) {
+    const text = await res.text().catch(() => "")
+    throw new Error(`Proxy error ${res.status}: ${text}`)
+  }
+
+  const contentType = res.headers.get("content-type") || ""
+  if (contentType.includes("json")) {
+    return (await res.json()) as ProviderResponse
+  }
+
+  throw new Error("Proxy returned non-JSON response")
+}
+
+// ============== Provider Parsers (unchanged from original) ==============
+
+// ===== Zell =====
+
+function parseZell(data: ProviderResponse): TikTokData {
+  if (!data.status) throw new Error(data.msg || "Zell: download failed")
+
+  const r = (data.data || data.result || {}) as Record<string, unknown>
+
+  const title = typeof r.title === "string" ? r.title : ""
+  const author = r.author as Record<string, string> | undefined
+  const creator =
+    author?.unique_id || author?.nickname || author?.username || ""
+  const thumbnail = typeof r.thumbnail === "string" ? r.thumbnail : ""
+  const video = typeof r.video === "string" ? r.video : ""
+  const music = (r.music as Record<string, unknown>)?.url as string | undefined
+
+  const images = Array.isArray(r.images)
+    ? r.images.filter((item): item is string => typeof item === "string")
+    : []
+
+  const duration =
+    typeof r.duration === "number" && r.duration > 0
+      ? String(r.duration)
+      : ""
+
+  return {
+    title,
+    creator,
+    thumbnail,
+    videos: video ? [video] : [],
+    audio: music || "",
+    slide: images,
+    duration,
+  }
+}
+
+// ===== Sanka =====
+
+interface SankaResult {
+  title?: string
+  author?: {
+    unique_id?: string
+    nickname?: string
+    username?: string
+  }
+  cover?: string
+  play?: string
+  music?: string
+  music_info?: { play?: string; duration?: number }
+  images?: string[]
+  duration?: number
+}
+
+function parseSanka(data: ProviderResponse): TikTokData {
+  const result = (data.data || data.result || {}) as SankaResult
+
+  const title = typeof result.title === "string" ? result.title : ""
+  const author = result.author
+  const creator =
+    author?.unique_id || author?.nickname || author?.username || ""
+  const thumbnail = typeof result.cover === "string" ? result.cover : ""
+  const video = typeof result.play === "string" ? result.play : ""
+  const music =
+    typeof result.music === "string" && result.music
+      ? result.music
+      : typeof result.music_info?.play === "string"
+        ? result.music_info.play
+        : ""
+
+  const images = Array.isArray(result.images)
+    ? result.images.filter((item): item is string => typeof item === "string")
+    : []
+
+  const duration =
+    typeof result.duration === "number" && result.duration > 0
+      ? String(result.duration)
+      : typeof result.music_info?.duration === "number"
+        ? String(result.music_info.duration)
+        : ""
+
+  return {
+    title,
+    creator,
+    thumbnail,
+    videos: video ? [video] : [],
+    audio: music,
+    slide: images,
+    duration,
+  }
+}
+
+// ===== TikWM =====
+
+function parseTikWM(data: ProviderResponse): TikTokData {
+  if (data.code !== 0) throw new Error(data.msg || "TikWM: download failed")
+
+  const r = (data.data || data.result || {}) as Record<string, unknown>
+
+  const title = typeof r.title === "string" ? r.title : ""
+  const author = r.author as Record<string, string> | undefined
+  const creator =
+    author?.unique_id || author?.nickname || author?.username || ""
+  const thumbnail = typeof r.cover === "string" ? r.cover : ""
+  const video = typeof r.play === "string" ? r.play : ""
+
+  const music =
+    typeof r.music === "string" && r.music
+      ? r.music
+      : typeof (r.music_info as Record<string, unknown>)?.play === "string"
+        ? ((r.music_info as Record<string, unknown>).play as string)
+        : ""
+
+  const images = Array.isArray(r.images)
+    ? r.images.filter((item): item is string => typeof item === "string")
+    : []
+
+  const duration =
+    typeof r.duration === "number" && r.duration > 0
+      ? String(r.duration)
+      : typeof (r.music_info as Record<string, unknown>)?.duration === "number"
+        ? String((r.music_info as Record<string, unknown>).duration)
+        : ""
+
+  return {
+    title,
+    creator,
+    thumbnail,
+    videos: video ? [video] : [],
+    audio: music,
+    slide: images,
+    duration,
+  }
+}
+
+// ============== TikTok URL validation ==============
+
+const tiktokRegex =
+  /^https?:\/\/(?:www\.|vm\.|m\.)?(?:tiktok\.com|douyin\.com)\/(?:@[\w.-]+\/video\/\d+|\w+\/video\/\d+|v\/\d+|video\/\d+)[\w/?&=.-]*$/i
 
 // ============== Rate Limiting ==============
 
@@ -21,117 +206,67 @@ const rateLimitMap = new Map<string, { count: number; resetAt: number }>()
 function checkRateLimit(ip: string): boolean {
   const now = Date.now()
   const entry = rateLimitMap.get(ip)
-
   if (!entry || now > entry.resetAt) {
     rateLimitMap.set(ip, { count: 1, resetAt: now + 60000 })
     return true
   }
-
   if (entry.count >= 10) return false
   entry.count++
   return true
 }
 
-// ============== TikTok URL validation ==============
+// ============== Core fetch (with provider fallback) ==============
 
-const tiktokRegex = /^https?:\/\/(?:www\.|vm\.|m\.)?(?:tiktok\.com|douyin\.com)\/(?:@[\w.-]+\/video\/\d+|\w+\/video\/\d+|v\/\d+|video\/\d+)[\w/?&=.-]*$/i
+type ProviderName = keyof typeof PROVIDERS
 
-function extractTikTokUrl(input: string): string | null {
-  const tiktokUrlRegex = /https?:\/\/(?:www\.|vm\.|m\.)?(?:tiktok\.com|douyin\.com)\/\S+/i
-  const match = input.match(tiktokUrlRegex)
-  if (!match) return null
-  try {
-    const url = new URL(match[0])
-    return url.origin + url.pathname
-  } catch {
-    return null
-  }
-}
+async function fetchTikTok(url: string): Promise<TikTokData> {
+  if (!tiktokRegex.test(url)) throw new Error("Invalid TikTok URL. Please check the link and try again.")
 
-// ============== Core Downloader ==============
+  const chain: Array<{ name: ProviderName; parser: (d: ProviderResponse) => TikTokData }> = [
+    { name: "zell", parser: parseZell },
+    { name: "sanka", parser: parseSanka },
+    { name: "tikwm", parser: parseTikWM },
+  ]
 
-interface TikTokDLResponse {
-  status: string
-  message?: string
-  result?: {
-    type?: string
-    video?: string[]
-    video2?: string[]
-    images?: string[]
-    music?: string[]
-    description?: string
-    author?: string
-    duration?: string
-    cover?: string
-    nickname?: string
-  }
-}
+  const errors: string[] = []
 
-async function fetchTikTok(url: string): Promise<TikTokResult> {
-  const cleanUrl = extractTikTokUrl(url)
-  if (!cleanUrl) throw new Error("Invalid TikTok URL")
-
-  // Try @tobyg74/tiktok-api-dl (primary provider)
-  try {
-    const { Downloader } = await import("@tobyg74/tiktok-api-dl")
-
-    // The package uses musicallydown, ssstik, and snaptik as sources
-    const result = await Downloader(cleanUrl, {
-      version: "v1",
-    }) as TikTokDLResponse
-
-    if (result.status === "error" || !result.result) {
-      throw new Error(result.message || "Provider returned error")
+  for (const { name, parser } of chain) {
+    try {
+      const data = await proxyFetch(name, url)
+      return parser(data)
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : "Unknown error"
+      errors.push(`${name}: ${msg}`)
     }
-
-    const r = result.result
-    const video = r.video?.[0] || r.video2?.[0] || ""
-    const videos = [...(r.video || []), ...(r.video2 || [])]
-    const images = r.images || []
-    const music = r.music?.[0] || ""
-    const isPhoto = images.length > 0 && !video
-
-    return {
-      type: isPhoto ? "image" : "video",
-      video: video || undefined,
-      videos: videos.length > 0 ? videos : undefined,
-      images: images.length > 0 ? images : undefined,
-      music: music || undefined,
-      description: r.description || r.nickname || "",
-      creator: r.author || r.nickname || "",
-      duration: r.duration || "",
-      thumbnail: r.cover || "",
-    }
-  } catch (err) {
-    // If the package fails, throw with detail
-    const message = err instanceof Error ? err.message : "Download failed"
-    throw new Error(message)
   }
+
+  throw new Error(
+    "All download providers are temporarily unavailable. Please try again in a few minutes."
+  )
 }
 
 // ============== Route Handler ==============
 
 export async function POST(req: Request) {
-  // 1. Origin check
+  // Origin check
   const origin = req.headers.get("origin") || ""
   const referer = req.headers.get("referer") || ""
   const isLocalhost = origin.includes("localhost") || referer.includes("localhost")
-
-  const allowedDomains = ["saveik.com", "saveiks.vercel.app", "localhost", "127.0.0.1"]
-
-  const isAllowed = allowedDomains.some(
-    (d) => origin.includes(d) || referer.includes(d)
-  )
+  const allowedDomains = [
+    "saveik.com",
+    "www.saveik.com",
+    "saveiks.vercel.app",
+    "localhost",
+    "127.0.0.1",
+  ]
+  const isAllowed = allowedDomains.some((d) => origin.includes(d) || referer.includes(d))
 
   if ((origin || referer) && !isLocalhost && !isAllowed) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 403 })
   }
 
-  // 2. Rate limiting
-  const ip =
-    req.headers.get("x-forwarded-for") ||
-    req.headers.get("x-real-ip") ||
-    "unknown"
+  // Rate limiting
+  const ip = req.headers.get("x-forwarded-for") || req.headers.get("x-real-ip") || "unknown"
   if (!checkRateLimit(ip)) {
     return NextResponse.json(
       { error: "Too many requests. Please wait a minute." },
@@ -139,35 +274,39 @@ export async function POST(req: Request) {
     )
   }
 
-  // 3. Parse body
+  // Parse body
   let url: string
   try {
     const body = (await req.json()) as { url?: unknown }
     if (!body.url || typeof body.url !== "string") {
-      return NextResponse.json({ error: "Missing TikTok URL" }, { status: 400 })
+      return NextResponse.json({ error: "Please provide a TikTok video link." }, { status: 400 })
     }
     url = body.url
   } catch {
-    return NextResponse.json({ error: "Invalid request" }, { status: 400 })
+    return NextResponse.json({ error: "Invalid request." }, { status: 400 })
   }
 
-  // 4. Fetch
+  // Fetch
   try {
     const result = await fetchTikTok(url)
 
+    const images = result.slide
+    const isPhoto = images.length > 0 && result.videos.length === 0
+    const audioUrl = result.audio || undefined
+
     return NextResponse.json({
-      type: result.type,
-      video: result.video || null,
-      videos: result.videos || null,
-      images: result.images || null,
-      music: result.music || null,
-      description: result.description || null,
+      type: isPhoto ? "image" : "video",
+      video: result.videos[0] || null,
+      videos: result.videos.length > 0 ? result.videos : null,
+      images: images.length > 0 ? images : null,
+      music: audioUrl || null,
+      description: result.title || null,
       creator: result.creator || null,
       duration: result.duration || null,
       thumbnail: result.thumbnail || null,
     })
   } catch (err) {
-    const message = err instanceof Error ? err.message : "Download failed"
+    const message = err instanceof Error ? err.message : "Download failed. Please try again later."
     return NextResponse.json({ error: message }, { status: 500 })
   }
 }
