@@ -2,10 +2,6 @@ import { NextResponse } from "next/server"
 
 // ============== Config ==============
 
-// Cloudflare Worker proxy URL — deployed on Cloudflare Workers (Singapore edge)
-// Change this if you redeploy the Worker with a different name
-const PROXY_URL = "https://tiktok-proxy.aspendong.workers.dev/proxy"
-
 const PROVIDERS = {
   zell: "https://apizell.web.id/download/tiktok",
   sanka: "https://www.sankavollerei.com/download/tiktok",
@@ -33,42 +29,44 @@ interface ProviderResponse {
   error?: string
 }
 
-// ============== Proxy helper ==============
+// ============== Direct provider fetch ==============
 
-async function proxyFetch(
+const UA =
+  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+async function directFetch(
   provider: keyof typeof PROVIDERS,
   tiktokUrl: string,
   method: "GET" | "POST" = "POST",
   queryParams?: Record<string, string>
 ): Promise<ProviderResponse> {
   let fullUrl = PROVIDERS[provider]
-  let postBody: string | undefined
+  let body: string | undefined
 
   if (method === "GET" && queryParams) {
-    const qs = new URLSearchParams(queryParams).toString()
+    const qs = new URLSearchParams({ ...queryParams, url: tiktokUrl }).toString()
     fullUrl = `${fullUrl}?${qs}`
   } else if (method === "POST") {
     const params = new URLSearchParams()
     params.set("url", tiktokUrl)
     if (provider === "tikwm") params.set("hd", "1")
-    postBody = params.toString()
+    body = params.toString()
   }
 
-  const res = await fetch(PROXY_URL, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      provider,
-      url: fullUrl,
-      method,
-      body: postBody,
-    }),
+  const res = await fetch(fullUrl, {
+    method,
+    headers: {
+      Accept: "application/json, text/plain, */*",
+      "User-Agent": UA,
+      ...(method === "POST" ? { "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8" } : {}),
+    },
+    body,
   })
 
   const text = await res.text().catch(() => "")
 
   if (!res.ok) {
-    throw new Error(`${provider}: Proxy ${res.status} — ${text.substring(0, 300)}`)
+    throw new Error(`${provider}: HTTP ${res.status} — ${text.substring(0, 200)}`)
   }
 
   try {
@@ -251,7 +249,7 @@ async function fetchTikTok(url: string): Promise<TikTokData> {
 
   for (const { name, parser, method, queryParams } of chain) {
     try {
-      const data = await proxyFetch(name, url, method, queryParams)
+      const data = await directFetch(name, url, method, queryParams)
       return parser(data)
     } catch (err) {
       const msg = err instanceof Error ? err.message : "Unknown error"
