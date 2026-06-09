@@ -4,43 +4,48 @@ import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
 const siteConfig = {
-  name: "FusionTik",
+  name: "Saveik",
   description:
-    "Download TikTok videos, images, and audio tanpa watermark. Free, cepat, dan berkualitas tinggi. TikTok downloader online untuk MP4, MP3, dan Photo Mode.",
-  url: "https://fusiontik.vercel.app",
-  ogImage: "https://fusiontik.vercel.app/og-image.png",
+    "Saveik is a free TikTok video downloader. Download TikTok videos without watermark in HD quality. Save as MP4 or MP3. No app installation, no registration required. Works on all devices.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://saveik.com",
+  ogImage: "/og-image.png",
   keywords: [
     "TikTok downloader",
     "download TikTok video",
     "TikTok no watermark",
-    "TikTok video download",
-    "download TikTok tanpa watermark",
-    "TikTok audio download",
-    "TikTok image download",
-    "TikTok downloader Indonesia",
-    "download video TikTok tanpa watermark",
-    "download TikTok MP4",
-    "download TikTok MP3",
-    "TikTok Photo Mode download",
-    "free TikTok downloader",
-    "TikTok MP4 download",
-    "TikTok MP3 download",
+    "TikTok video downloader",
+    "saveik",
+    "download TikTok without watermark",
+    "TikTok to MP4",
+    "TikTok to MP3",
     "save TikTok video",
-    "FusionTik"
+    "free TikTok downloader",
+    "TikTok video saver",
+    "online TikTok downloader",
+    "download TikTok HD",
+    "TikTok MP4 download",
+    "TikTok MP3 converter",
+    "TikTok photo download",
+    "remove TikTok watermark",
+    "download TikTok videos free",
+    "TikTok download without app",
+    "TikTok download for iPhone",
+    "TikTok download for Android",
+    "TikTok download for PC",
   ],
 }
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} - TikTok Downloader Tanpa Watermark (Video, Foto, MP3)`,
+    default: `${siteConfig.name} — Download TikTok Videos Without Watermark | Free HD TikTok Downloader`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: siteConfig.keywords,
-  authors: [{ name: "FusionTik Team" }],
-  creator: "FusionTik",
-  publisher: "FusionTik",
+  authors: [{ name: "Saveik" }],
+  creator: "Saveik",
+  publisher: "Saveik",
   formatDetection: {
     email: false,
     address: false,
@@ -49,9 +54,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    alternateLocale: "id_ID",
     url: siteConfig.url,
-    title: `${siteConfig.name} - TikTok Downloader Tanpa Watermark`,
+    title: `${siteConfig.name} — Download TikTok Videos Without Watermark`,
     description: siteConfig.description,
     siteName: siteConfig.name,
     images: [
@@ -59,16 +63,16 @@ export const metadata: Metadata = {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: "FusionTik - TikTok Downloader",
+        alt: "Saveik — TikTok Video Downloader Without Watermark",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} - TikTok Downloader Tanpa Watermark`,
+    title: `${siteConfig.name} — Download TikTok Videos Without Watermark`,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: "@fusiontik",
+    creator: "@saveik",
   },
   robots: {
     index: true,
@@ -84,14 +88,10 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "fUglujUhUECvyJy8o6Yo5hdrTmYUoP2zB_UtAKP6ZdM",
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || "",
   },
   alternates: {
     canonical: siteConfig.url,
-    languages: {
-      "en-US": siteConfig.url,
-      "id-ID": siteConfig.url,
-    },
   },
   category: "technology",
 }
@@ -106,7 +106,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta name="theme-color" content="#3b82f6" />
+        <meta name="theme-color" content="#7c3aed" />
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className="min-h-screen" suppressHydrationWarning>

@@ -2,8 +2,8 @@ import type { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Terms of Service | FusionTik",
-  description: "FusionTik Terms of Service - Read our terms and conditions",
+  title: "Terms of Service | Saveik",
+  description: "Saveik Terms of Service - Read our terms and conditions",
 }
 
 export default function TermsOfServicePage() {
@@ -17,7 +17,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-semibold mb-3">1. Acceptance of Terms</h2>
             <p className="text-muted-foreground leading-relaxed">
-              By accessing and using FusionTik, you accept and agree to be bound by these
+              By accessing and using Saveik, you accept and agree to be bound by these
               Terms of Service. If you do not agree to these terms, please do not use our service.
             </p>
           </section>
@@ -25,7 +25,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-semibold mb-3">2. Service Description</h2>
             <p className="text-muted-foreground leading-relaxed">
-              FusionTik is a free online tool that allows users to download TikTok videos,
+              Saveik is a free online tool that allows users to download TikTok videos,
               images, and audio without watermarks. We do not host any TikTok content on our
               servers - all content is fetched directly from TikTok.
             </p>
@@ -53,7 +53,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-semibold mb-3">4. Intellectual Property</h2>
             <p className="text-muted-foreground leading-relaxed">
-              All content downloaded through FusionTik remains the intellectual property of
+              All content downloaded through Saveik remains the intellectual property of
               the original creators. We do not claim ownership of any TikTok content. Users
               are responsible for respecting copyright laws.
             </p>
@@ -62,7 +62,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-semibold mb-3">5. Disclaimer</h2>
             <p className="text-muted-foreground leading-relaxed">
-              FusionTik is provided "as is" without warranties of any kind. We are not
+              Saveik is provided "as is" without warranties of any kind. We are not
               responsible for the content you download or how you use it. We reserve the
               right to modify or discontinue the service at any time.
             </p>
@@ -71,7 +71,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-semibold mb-3">6. Limitation of Liability</h2>
             <p className="text-muted-foreground leading-relaxed">
-              FusionTik and its operators shall not be liable for any damages arising from
+              Saveik and its operators shall not be liable for any damages arising from
               the use or inability to use our service, including but not limited to direct,
               indirect, incidental, or consequential damages.
             </p>

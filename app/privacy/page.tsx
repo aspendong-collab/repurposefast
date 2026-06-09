@@ -2,8 +2,8 @@ import type { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | FusionTik",
-  description: "FusionTik Privacy Policy - Learn how we protect your data and privacy",
+  title: "Privacy Policy | Saveik",
+  description: "Saveik Privacy Policy - Learn how we protect your data and privacy",
 }
 
 export default function PrivacyPolicyPage() {
@@ -17,7 +17,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-2xl font-semibold mb-3">1. Introduction</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Welcome to FusionTik. We are committed to protecting your privacy and ensuring
+              Welcome to Saveik. We are committed to protecting your privacy and ensuring
               you have a positive experience on our website. This Privacy Policy explains how
               we collect, use, and safeguard your information when you use our TikTok video
               downloading service.

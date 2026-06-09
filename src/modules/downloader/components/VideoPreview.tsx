@@ -34,7 +34,7 @@ function makeLinksClickable(text: string): string {
     .replace(/'/g, "&#039;")
 
   const linkClass =
-    "text-blue-500 hover:text-blue-700 hover:underline transition-colors"
+    "text-violet-500 hover:text-blue-700 hover:underline transition-colors"
 
   // URLs
   let processed = escaped.replace(/(https?:\/\/[^\s]+)/g, (url) => {
@@ -264,11 +264,11 @@ export function VideoPreview({ result, onDownloadVideo, onDownloadAudio }: Video
       <Card className="overflow-hidden">
         <CardHeader className="pb-4">
           <div className="text-center space-y-2">
-            <h2 className="text-2xl font-bold text-blue-600">Download Ready!</h2>
+            <h2 className="text-3xl font-black gradient-premium-text">Download Ready!</h2>
             {result.creator && (
               <p className="text-muted-foreground">
                 Video by{" "}
-                <span className="font-medium text-blue-600">@{result.creator}</span>
+                <span className="font-semibold gradient-premium-text">@{result.creator}</span>
               </p>
             )}
             <div className="flex items-center justify-center gap-3">
@@ -459,41 +459,41 @@ export function VideoPreview({ result, onDownloadVideo, onDownloadAudio }: Video
             {isVideo && result.videos && result.videos.length > 0 ? (
               <div className="space-y-2">
                 {renderDownloadButton(
-                  "UNDUH MP4 [1]",
+                  "DOWNLOAD MP4 [1]",
                   result.videos[0],
                   "video",
                   "video1",
-                  "bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600",
+                  "gradient-premium hover:opacity-90",
                   <Download className="mr-2 h-5 w-5" />,
                 )}
 
                 {result.videoHdUrl &&
                   renderDownloadButton(
-                    "UNDUH MP4 [2]",
+                    "DOWNLOAD MP4 [2]",
                     result.videoHdUrl,
                     "video",
                     "videoHd",
-                    "bg-gradient-to-r from-red-600 to-pink-500 hover:from-red-700 hover:to-pink-600",
+                    "gradient-premium hover:opacity-90",
                     <Download className="mr-2 h-5 w-5" />,
                   )}
 
                 {result.videos.length > 1 &&
                   renderDownloadButton(
-                    "UNDUH MP4 HD",
+                    "DOWNLOAD MP4 HD",
                     result.videos[1],
                     "video",
                     "video2",
-                    "bg-gradient-to-r from-green-600 to-emerald-500 hover:from-green-700 hover:to-emerald-600",
+                    "gradient-premium hover:opacity-90",
                     <Download className="mr-2 h-5 w-5" />,
                   )}
               </div>
             ) : isVideo ? (
               renderDownloadButton(
-                "UNDUH MP4",
+                "DOWNLOAD MP4",
                 result.videoUrl ?? "",
                 "video",
                 "video1",
-                "bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600",
+                "gradient-premium hover:opacity-90",
                 <Download className="mr-2 h-5 w-5" />,
               )
             ) : (
@@ -501,7 +501,7 @@ export function VideoPreview({ result, onDownloadVideo, onDownloadAudio }: Video
                 size="lg"
                 onClick={handleDownloadAllImages}
                 disabled={!!downloading}
-                className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white font-semibold py-4"
+                className="w-full gradient-premium hover:opacity-90 text-white font-semibold py-4"
               >
                 {downloading === "image" ? (
                   <>
@@ -511,7 +511,7 @@ export function VideoPreview({ result, onDownloadVideo, onDownloadAudio }: Video
                 ) : (
                   <>
                     <Download className="mr-2 h-5 w-5" />
-                    UNDUH GAMBAR ({result.imageUrls?.length ?? 0})
+                    DOWNLOAD IMAGES ({result.imageUrls?.length ?? 0})
                   </>
                 )}
               </Button>
@@ -519,11 +519,11 @@ export function VideoPreview({ result, onDownloadVideo, onDownloadAudio }: Video
 
             {result.audioUrl &&
               renderDownloadButton(
-                "UNDUH MP3",
+                "DOWNLOAD MP3",
                 result.audioUrl,
                 "audio",
                 "audio",
-                "bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600",
+                "bg-gradient-to-r from-violet-600 to-rose-400 hover:from-violet-700 hover:to-rose-500",
                 <Music className="mr-2 h-5 w-5" />,
               )}
           </div>
@@ -536,7 +536,7 @@ export function VideoPreview({ result, onDownloadVideo, onDownloadAudio }: Video
                 href={result.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-500 hover:underline truncate"
+                className="text-violet-500 hover:underline truncate"
               >
                 {result.url}
               </a>

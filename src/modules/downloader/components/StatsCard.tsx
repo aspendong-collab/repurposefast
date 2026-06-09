@@ -1,13 +1,13 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { 
-  Download, 
-  Video, 
-  Image, 
-  Music, 
-  Calendar, 
-  TrendingUp, 
+import {
+  Download,
+  Video,
+  Image,
+  Music,
+  Calendar,
+  TrendingUp,
   Clock,
   BarChart3,
   Trash2
@@ -54,7 +54,7 @@ export function StatsCard({ onResetStats }: StatsCardProps) {
       <div className="flex items-center justify-between">
         <div>
           <h2 className="text-2xl font-bold">Your Personal Stats</h2>
-          <p className="text-muted-foreground">Track your personal FusionTik activity</p>
+          <p className="text-muted-foreground">Track your personal Saveik activity</p>
         </div>
         <Badge className={`${activityLevel.color} text-white`}>
           {activityLevel.level}
@@ -189,8 +189,8 @@ export function StatsCard({ onResetStats }: StatsCardProps) {
             <CardTitle className="text-sm font-medium">Quick Actions</CardTitle>
           </CardHeader>
           <CardContent className="space-y-2">
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               className="w-full justify-start"
               onClick={() => window.location.reload()}
             >
@@ -198,8 +198,8 @@ export function StatsCard({ onResetStats }: StatsCardProps) {
               Refresh Stats
             </Button>
             {onResetStats && (
-            <Button 
-              variant="destructive" 
+            <Button
+              variant="destructive"
               className="w-full justify-start"
               onClick={onResetStats}
             >

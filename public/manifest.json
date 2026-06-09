@@ -1,6 +1,6 @@
 {
-    "name": "FusionTik - TikTok Downloader",
-    "short_name": "FusionTik",
+    "name": "Saveik - TikTok Video Downloader",
+    "short_name": "Saveik",
     "description": "Download TikTok videos, images, and audio without watermark",
     "start_url": "/",
     "display": "standalone",

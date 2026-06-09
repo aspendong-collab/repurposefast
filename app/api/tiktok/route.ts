@@ -324,7 +324,7 @@ async function notifyProviderFailure(url: string, error: string): Promise<void> 
   if (!hasWebhook && !hasTelegram && !hasEmail) return
 
   const payload: AlertPayload = {
-    source: "fusiontik",
+    source: "saveik",
     event: "tiktok_downloader_error",
     url,
     error,
@@ -345,7 +345,7 @@ async function notifyProviderFailure(url: string, error: string): Promise<void> 
 
   if (hasTelegram) {
     const text =
-      `⚠️ FusionTik downloader error\n` +
+      `⚠️ Saveik downloader error\n` +
       `URL: ${url}\n` +
       `Error: ${error}\n` +
       `Time: ${payload.timestamp}`
@@ -370,11 +370,11 @@ async function notifyProviderFailure(url: string, error: string): Promise<void> 
         })
 
         await transporter.sendMail({
-          from: `"FusionTik Alert" <${smtpUser}>`,
+          from: `"Saveik Alert" <${smtpUser}>`,
           to: alertEmailTo,
-          subject: "FusionTik TikTok downloader error",
+          subject: "Saveik TikTok downloader error",
           text:
-            `FusionTik downloader error\n\n` +
+            `Saveik downloader error\n\n` +
             `URL: ${url}\n` +
             `Error: ${error}\n` +
             `Time: ${payload.timestamp}\n`,
@@ -426,19 +426,21 @@ export async function POST(req: Request) {
   const origin = req.headers.get("origin") || ""
   const referer = req.headers.get("referer") || ""
   const isLocalhost = origin.includes("localhost") || referer.includes("localhost")
-  
+
   const allowedDomains = [
-    "fusiontik.vercel.app",
-    "fusiontik.fusionify.biz.id",
-    "fusiontik.fusionifydgital.com",
-    "fusiontik.fusionifydigital.com", // Adding the correctly spelled version just in case
-    "fusiontik.premiumify.my.id"
+    "saveik.com",
+    "localhost",
+    "127.0.0.1",
   ]
-  
+
   const isAllowedDomain = allowedDomains.some(domain => origin.includes(domain) || referer.includes(domain))
-  
+
+  // Allow localhost/development origins in addition to production domains
+  const isDev = process.env.NODE_ENV === "development" || isLocalhost
+  const isAllowedOrigin = isDev || isAllowedDomain
+
   // Require requests to come from our frontend (if origin/referer is present)
-  if ((origin || referer) && !isLocalhost && !isAllowedDomain) {
+  if ((origin || referer) && !isAllowedOrigin) {
     return NextResponse.json(
       { error: "Unauthorized cross-origin request" },
       { status: 403 }
@@ -450,7 +452,7 @@ export async function POST(req: Request) {
   if (!checkRateLimit(ip)) {
     return NextResponse.json(
       { error: "Too many requests. Please try again in a minute." },
-      { 
+      {
         status: 429,
         headers: {
           "Retry-After": "60",

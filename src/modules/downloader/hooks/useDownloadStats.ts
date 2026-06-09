@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useMemo } from "react"
 
-const STORAGE_KEY = "fusiontik-download-stats"
+const STORAGE_KEY = "saveik-download-stats"
 
 export interface DownloadStats {
   totalDownloads: number

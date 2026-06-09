@@ -1,9 +1,9 @@
 {
-  "name": "fusiontik",
+  "name": "saveik",
   "version": "2.1.0",
   "private": true,
   "license": "Apache-2.0",
-  "author": "Fusionify.ID",
+  "author": "Saveik",
   "description": "A modern TikTok downloader web application",
   "scripts": {
     "build": "next build",

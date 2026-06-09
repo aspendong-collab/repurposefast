@@ -125,7 +125,7 @@ export function generateFilename(
     const extension = extensions[type] || 'mp4'
     const indexSuffix = index !== undefined ? `_${index + 1}` : ''
 
-    return `FusionTik_${creatorSlug}${indexSuffix}_${timestamp}.${extension}`
+    return `Saveik_${creatorSlug}${indexSuffix}_${timestamp}.${extension}`
 }
 
 /**
