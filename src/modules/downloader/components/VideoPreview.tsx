@@ -143,7 +143,9 @@ export function VideoPreview({ result, onDownloadVideo, onDownloadAudio }: Video
   }, [emblaApi, onSelect])
 
   const isVideo = result.type === "video"
-  const mediaUrl = isVideo ? result.videoUrl : result.imageUrls?.[0]
+  const mediaUrl = isVideo && result.videoUrl
+    ? `/api/media?url=${encodeURIComponent(result.videoUrl)}`
+    : result.imageUrls?.[0]
   const imageCount = result.imageUrls?.length ?? 0
 
   // ---- Video controls ----
@@ -297,11 +299,20 @@ export function VideoPreview({ result, onDownloadVideo, onDownloadAudio }: Video
                 <video
                   ref={videoRef}
                   src={mediaUrl}
+                  crossOrigin="anonymous"
                   poster={result.thumbnail || undefined}
                   className="w-full h-auto max-h-96 object-contain"
                   onTimeUpdate={handleTimeUpdate}
                   onLoadedMetadata={handleTimeUpdate}
                   onEnded={() => setIsPlaying(false)}
+                  onError={(e) => {
+                    // Show thumbnail fallback if video CDN URL is inaccessible
+                    const target = e.currentTarget
+                    if (result.thumbnail) {
+                      target.poster = result.thumbnail
+                    }
+                    target.style.display = "none"
+                  }}
                   muted={isMuted}
                   loop
                 />
