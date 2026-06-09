@@ -1,3 +1,6 @@
+/**
+ * TikTok API — Multi-provider fallback: Zell → Sanka → TikWM
+ */
 import { NextResponse } from "next/server"
 
 // ============== Types ==============
