@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Saveik — 下载无水印TikTok视频 | 免费高清TikTok下载器 | Saveik",
+    "description": "Saveik是一款免费的TikTok视频下载器。可下载无水印的高清TikTok视频，保存为MP4或MP3格式。无需安装应用，无需注册，适用于所有设备。",
+    "keywords": "TikTok下载器,下载TikTok视频,TikTok无水印,TikTok视频下载器,saveik,下载TikTok无水印,TikTok转MP4,TikTok转MP3,保存TikTok视频,免费TikTok下载器,TikTok视频保存器,在线TikTok下载器,下载TikTok高清,TikTok MP4下载,TikTok MP3转换器,TikTok图片下载,去除TikTok水印,免费下载TikTok视频,无需应用下载TikTok,iPhone下载TikTok,Android下载TikTok,PC下载TikTok"
+  },
+  "hero": {
+    "badge": "无水印 • 高清画质 • 完全免费",
+    "title": "下载TikTok视频",
+    "titleHighlight": "无水印",
+    "subtitle": "粘贴任意TikTok链接，即可在数秒内下载无水印高清视频。无需注册。",
+    "placeholder": "在此粘贴TikTok链接...",
+    "cta": "下载",
+    "trust": "全球数百万用户使用 • 无需注册"
+  },
+  "download": {
+    "title": "您的下载已就绪",
+    "mp4": "下载MP4",
+    "mp3": "下载MP3",
+    "hd": "高清",
+    "copyLink": "复制链接",
+    "pasteAgain": "粘贴另一个链接",
+    "loading": "正在获取视频...",
+    "error": "无法下载。请检查您的链接后重试。",
+    "noVideo": "该URL未找到视频。"
+  },
+  "features": {
+    "title": "为什么选择Saveik？",
+    "subtitle": "网络上最快、最简单的TikTok下载器。",
+    "items": [
+      {
+        "title": "无水印",
+        "desc": "干净、无水印的视频，可随时用于任何平台。"
+      },
+      {
+        "title": "高清画质",
+        "desc": "以清晰的1080p高清分辨率下载TikTok视频。"
+      },
+      {
+        "title": "MP3音频",
+        "desc": "从任意TikTok视频中提取高质量MP3音频。"
+      },
+      {
+        "title": "全设备支持",
+        "desc": "适用于iPhone、Android、Windows和Mac，无需安装应用。"
+      },
+      {
+        "title": "即时下载",
+        "desc": "无需排队，无需等待。数秒内获取视频。"
+      },
+      {
+        "title": "完全免费",
+        "desc": "无隐藏费用，无订阅。永久无限下载。"
+      }
+    ]
+  },
+  "stats": {
+    "videos": "已下载视频数",
+    "users": "满意用户数",
+    "countries": "覆盖国家数"
+  },
+  "howTo": {
+    "title": "如何下载",
+    "subtitle": "三步保存任意TikTok视频。",
+    "steps": [
+      {
+        "title": "复制链接",
+        "desc": "打开TikTok，找到喜欢的视频，点击分享 → 复制链接。"
+      },
+      {
+        "title": "粘贴并下载",
+        "desc": "将链接粘贴到上方，点击下载。我们即时处理。"
+      },
+      {
+        "title": "保存到设备",
+        "desc": "点击下载MP4，将视频保存到您的设备。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "关于Saveik您需要了解的一切。",
+    "questions": [
+      {
+        "q": "Saveik免费使用吗？",
+        "a": "是的。Saveik完全免费，无需注册或订阅。无限下载。"
+      },
+      {
+        "q": "可以下载无水印的TikTok视频吗？",
+        "a": "当然可以。Saveik自动去除TikTok水印，提供干净视频，适用于任何平台。"
+      },
+      {
+        "q": "Saveik支持哪些格式？",
+        "a": "MP4视频（高清）、MP3音频，以及来自TikTok图片模式的JPG/PNG图片。"
+      },
+      {
+        "q": "需要安装任何软件吗？",
+        "a": "不需要。在iPhone、Android、Windows、Mac的浏览器中即可使用，无需安装应用。"
+      },
+      {
+        "q": "可以下载私密账号的视频吗？",
+        "a": "不可以。Saveik尊重隐私——仅可访问公开的TikTok视频。"
+      },
+      {
+        "q": "文件保存到哪里？",
+        "a": "您设备的默认下载文件夹。在iPhone上，使用“保存到文件”功能。"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2025 Saveik。保留所有权利。",
+    "links": {
+      "faq": "常见问题",
+      "privacy": "隐私政策",
+      "terms": "服务条款",
+      "feedback": "反馈",
+      "help": "帮助中心"
+    }
+  },
+  "language": "语言",
+  "ui": {
+    "privacyFirst": "隐私优先",
+    "noRegistration": "无需注册",
+    "allDevices": "全设备支持",
+    "discover": "发现",
+    "processing": "处理中",
+    "processingVideo": "正在处理您的视频...",
+    "photoMode": "图片模式",
+    "photos": "图片",
+    "downloadVerb": "下载",
+    "downloadAnother": "下载另一个视频",
+    "builtDifferent": "与众不同",
+    "builtDifferentSub": "专为一件事情而生——让您快速获取最干净的TikTok下载。",
+    "threeSteps": "三步操作。",
+    "thatsIt": "就这么简单。",
+    "noComplexity": "无复杂性，无学习曲线。只需粘贴即可开始。",
+    "everyScreen": "每个屏幕。",
+    "sameExperience": "相同体验。",
+    "iphoneAndroid": "iPhone和Android",
+    "downloadMobile": "在手机上下载",
+    "windowsMacLinux": "Windows、Mac和Linux",
+    "downloadDesktop": "在电脑上下载",
+    "freeForever": "永久免费",
+    "downloadsToday": "今日下载量",
+    "languages": "语言",
+    "youAsk": "您提问。",
+    "weAnswer": "我们回答。",
+    "readyToDownload": "准备好下载了吗？",
+    "ctaSubtitle": "粘贴任意TikTok链接，数秒内获取干净的高清视频。无任何附加条件。",
+    "startDownloading": "立即开始下载",
+    "footerPitch": "网络上最快、最干净的TikTok下载器。无水印。无限制。无废话。",
+    "legal": "法律信息",
+    "support": "支持",
+    "terms": "条款",
+    "privacy": "隐私",
+    "disclaimer": "Saveik是独立工具。与TikTok、抖音或字节跳动无关联。",
+    "forPersonalUse": "仅供个人使用。",
+    "stepMobile1": "打开TikTok应用，找到视频",
+    "stepMobile2": "点击分享 → 复制链接",
+    "stepMobile3": "打开浏览器，访问Saveik",
+    "stepMobile4": "粘贴链接，点击下载",
+    "stepMobile5": "保存到照片或文件应用",
+    "stepDesktop1": "访问tiktok.com，找到视频",
+    "stepDesktop2": "从地址栏复制URL",
+    "stepDesktop3": "粘贴到上方的Saveik",
+    "stepDesktop4": "点击下载，选择MP4或MP3",
+    "stepDesktop5": "文件保存到下载文件夹"
+  }
+}

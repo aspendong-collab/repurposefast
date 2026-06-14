@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Saveik — Muat Turun Video TikTok Tanpa Watermark | Pemuat Turun TikTok HD Percuma | Saveik",
+    "description": "Saveik adalah pemuat turun video TikTok percuma. Muat turun video TikTok tanpa watermark dalam kualiti HD. Simpan sebagai MP4 atau MP3. Tiada pemasangan aplikasi, tiada pendaftaran diperlukan. Berfungsi pada semua peranti.",
+    "keywords": "pemuat turun TikTok,muat turun video TikTok,TikTok tanpa watermark,pemuat turun video TikTok,saveik,muat turun TikTok tanpa watermark,TikTok ke MP4,TikTok ke MP3,simpan video TikTok,pemuat turun TikTok percuma,penyimpan video TikTok,pemuat turun TikTok dalam talian,muat turun TikTok HD,muat turun TikTok MP4,penukar TikTok MP3,muat turun foto TikTok,buang watermark TikTok,muat turun video TikTok percuma,muat turun TikTok tanpa aplikasi,muat turun TikTok untuk iPhone,muat turun TikTok untuk Android,muat turun TikTok untuk PC"
+  },
+  "hero": {
+    "badge": "Tiada Watermark • Kualiti HD • 100% Percuma",
+    "title": "Muat Turun Video TikTok",
+    "titleHighlight": "Tanpa Watermark",
+    "subtitle": "Tampal mana-mana pautan TikTok di bawah dan muat turun video dalam HD, tanpa watermark, dalam beberapa saat. Tiada pendaftaran diperlukan.",
+    "placeholder": "Tampal pautan TikTok di sini...",
+    "cta": "Muat Turun",
+    "trust": "Digunakan oleh berjuta-juta di seluruh dunia • Tiada pendaftaran diperlukan"
+  },
+  "download": {
+    "title": "Muat Turun Anda Sedia",
+    "mp4": "Muat Turun MP4",
+    "mp3": "Muat Turun MP3",
+    "hd": "HD",
+    "copyLink": "Salin Pautan",
+    "pasteAgain": "Tampal pautan lain",
+    "loading": "Mendapatkan video...",
+    "error": "Tidak dapat memuat turun. Sila semak pautan anda dan cuba lagi.",
+    "noVideo": "Tiada video ditemui pada URL ini."
+  },
+  "features": {
+    "title": "Mengapa Pilih Saveik?",
+    "subtitle": "Pemuat turun TikTok terpantas dan termudah di web.",
+    "items": [
+      {
+        "title": "Tiada Watermark",
+        "desc": "Video bersih tanpa watermark sedia untuk digunakan semula di mana-mana."
+      },
+      {
+        "title": "Kualiti HD",
+        "desc": "Muat turun video TikTok dalam resolusi HD 1080p yang tajam."
+      },
+      {
+        "title": "Audio MP3",
+        "desc": "Ekstrak audio dari mana-mana video TikTok sebagai MP3 berkualiti tinggi."
+      },
+      {
+        "title": "Semua Peranti",
+        "desc": "Berfungsi pada iPhone, Android, Windows, dan Mac — tiada aplikasi diperlukan."
+      },
+      {
+        "title": "Muat Turun Segera",
+        "desc": "Tiada giliran, tiada menunggu. Dapatkan video anda dalam beberapa saat."
+      },
+      {
+        "title": "100% Percuma",
+        "desc": "Tiada yuran tersembunyi, tiada langganan. Muat turun tanpa had selama-lamanya."
+      }
+    ]
+  },
+  "stats": {
+    "videos": "Video Dimuat Turun",
+    "users": "Pengguna Gembira",
+    "countries": "Negara"
+  },
+  "howTo": {
+    "title": "Cara Muat Turun",
+    "subtitle": "Tiga langkah mudah untuk menyimpan mana-mana video TikTok.",
+    "steps": [
+      {
+        "title": "Salin Pautan",
+        "desc": "Buka TikTok, cari video yang anda suka, ketik Kongsi → Salin Pautan."
+      },
+      {
+        "title": "Tampal & Muat Turun",
+        "desc": "Tampal pautan di atas dan klik Muat Turun. Kami memprosesnya dengan serta-merta."
+      },
+      {
+        "title": "Simpan ke Peranti",
+        "desc": "Klik Muat Turun MP4 untuk menyimpan video ke peranti anda."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Soalan Lazim",
+    "subtitle": "Semua yang anda perlu tahu tentang Saveik.",
+    "questions": [
+      {
+        "q": "Adakah Saveik percuma untuk digunakan?",
+        "a": "Ya. Saveik adalah percuma sepenuhnya tanpa pendaftaran atau langganan. Muat turun tanpa had."
+      },
+      {
+        "q": "Bolehkah saya memuat turun video TikTok tanpa watermark?",
+        "a": "Semestinya. Saveik membuang watermark TikTok secara automatik — video bersih sedia untuk mana-mana platform."
+      },
+      {
+        "q": "Apakah format yang disokong oleh Saveik?",
+        "a": "Video MP4 (HD), audio MP3, serta imej JPG/PNG dari Mod Foto TikTok."
+      },
+      {
+        "q": "Adakah saya perlu memasang apa-apa?",
+        "a": "Tidak. Berfungsi dalam pelayar anda pada iPhone, Android, Windows, Mac — tiada aplikasi diperlukan."
+      },
+      {
+        "q": "Bolehkah saya memuat turun dari akaun peribadi?",
+        "a": "Tidak. Saveik menghormati privasi — hanya video TikTok awam yang boleh diakses."
+      },
+      {
+        "q": "Di mana fail disimpan?",
+        "a": "Folder Muat Turun lalai peranti anda. Pada iPhone, gunakan Simpan ke Fail."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2025 Saveik. Hak cipta terpelihara.",
+    "links": {
+      "faq": "Soalan Lazim",
+      "privacy": "Dasar Privasi",
+      "terms": "Syarat Perkhidmatan",
+      "feedback": "Maklum Balas",
+      "help": "Pusat Bantuan"
+    }
+  },
+  "language": "Bahasa",
+  "ui": {
+    "privacyFirst": "Utamakan Privasi",
+    "noRegistration": "Tiada Pendaftaran",
+    "allDevices": "Semua Peranti",
+    "discover": "Terokai",
+    "processing": "Memproses",
+    "processingVideo": "Memproses video anda...",
+    "photoMode": "Mod Foto",
+    "photos": "Foto",
+    "downloadVerb": "Muat Turun",
+    "downloadAnother": "Muat Turun Video Lain",
+    "builtDifferent": "Dibina Berbeza",
+    "builtDifferentSub": "Dibina khusus untuk satu perkara — memberikan anda muat turun TikTok yang paling bersih, pantas.",
+    "threeSteps": "Tiga Langkah.",
+    "thatsIt": "Itu Sahaja.",
+    "noComplexity": "Tiada kerumitan. Tiada keluk pembelajaran. Hanya tampal dan pergi.",
+    "everyScreen": "Setiap Skrin.",
+    "sameExperience": "Pengalaman Sama.",
+    "iphoneAndroid": "iPhone & Android",
+    "downloadMobile": "Muat turun pada mudah alih",
+    "windowsMacLinux": "Windows, Mac & Linux",
+    "downloadDesktop": "Muat turun pada desktop",
+    "freeForever": "Percuma Selamanya",
+    "downloadsToday": "Muat Turun Hari Ini",
+    "languages": "Bahasa",
+    "youAsk": "Anda Tanya.",
+    "weAnswer": "Kami Jawab.",
+    "readyToDownload": "Sedia untuk Muat Turun?",
+    "ctaSubtitle": "Tampal mana-mana pautan TikTok dan dapatkan video HD yang bersih dalam beberapa saat. Tiada tangkapan.",
+    "startDownloading": "Mula Muat Turun Sekarang",
+    "footerPitch": "Pemuai turun TikTok terpantas dan paling bersih di web. Tiada watermark. Tiada had. Tiada karut.",
+    "legal": "Perundangan",
+    "support": "Sokongan",
+    "terms": "Syarat",
+    "privacy": "Privasi",
+    "disclaimer": "Saveik adalah bebas. Tidak berafiliasi dengan TikTok, Douyin, atau ByteDance.",
+    "forPersonalUse": "Untuk kegunaan peribadi.",
+    "stepMobile1": "Buka aplikasi TikTok, cari video",
+    "stepMobile2": "Ketik Kongsi → Salin Pautan",
+    "stepMobile3": "Buka pelayar, pergi ke Saveik",
+    "stepMobile4": "Tampal pautan, ketik Muat Turun",
+    "stepMobile5": "Simpan ke aplikasi Foto atau Fail",
+    "stepDesktop1": "Pergi ke tiktok.com, cari video",
+    "stepDesktop2": "Salin URL dari bar alamat",
+    "stepDesktop3": "Tampal ke Saveik di atas",
+    "stepDesktop4": "Klik Muat Turun, pilih MP4 atau MP3",
+    "stepDesktop5": "Fail disimpan ke folder Muat Turun"
+  }
+}

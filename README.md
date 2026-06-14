@@ -5,7 +5,28 @@
 
 <br/>
 
-_⚡ FusionTik_
+_⚡ FusionTik — Powering saveik.com_
+
+<!-- MULTI-LANGUAGE SEO HEADER -->
+<p align="center">
+  <a href="https://www.saveik.com">🌐 saveik.com</a> •
+  <a href="https://www.saveik.com/id">🇮🇩 Indonesia</a> •
+  <a href="https://www.saveik.com/vi">🇻🇳 Việt Nam</a> •
+  <a href="https://www.saveik.com/th">🇹🇭 ไทย</a> •
+  <a href="https://www.saveik.com/es">🇪🇸 Español</a> •
+  <a href="https://www.saveik.com/pt-br">🇧🇷 Português</a> •
+  <a href="https://www.saveik.com/ja">🇯🇵 日本語</a> •
+  <a href="https://www.saveik.com/ko">🇰🇷 한국어</a> •
+  <a href="https://www.saveik.com/ar">🇸🇦 العربية</a>
+</p>
+
+<p align="center">
+  <strong>🇺🇸 <a href="https://www.saveik.com">Saveik</a> — Free TikTok Video Downloader, No Watermark, HD Quality, 20 Languages</strong><br/>
+  <strong>🇮🇩 <a href="https://www.saveik.com/id">Pengunduh Video TikTok</a> Tanpa Watermark Gratis</strong><br/>
+  <strong>🇻🇳 <a href="https://www.saveik.com/vi">Tải Video TikTok</a> Không Logo Miễn Phí</strong><br/>
+  <strong>🇹🇭 <a href="https://www.saveik.com/th">ดาวน์โหลดวิดีโอ TikTok</a> ฟรี ไม่มีลายน้ำ</strong><br/>
+  <strong>🇧🇷 <a href="https://www.saveik.com/pt-br">Baixar Vídeos TikTok</a> Sem Marca D'água</strong>
+</p>
 
 **Modern TikTok Downloader — Video · Photo Mode · MP3**
 
@@ -61,11 +82,17 @@ _⚡ FusionTik_
 
 _🌸 Overview_
 
-**FusionTik** adalah web application modern untuk mendownload konten TikTok tanpa watermark. Dibangun dengan **Next.js 15 App Router**, **TypeScript**, dan **Tailwind CSS** — FusionTik menawarkan pengalaman download yang cepat, bersih, dan responsif di semua perangkat.
+**FusionTik** is the open-source engine powering **[saveik.com](https://www.saveik.com)** — a modern TikTok downloader web application serving users in **20 languages** across the globe. Built with **Next.js 15 App Router**, **TypeScript**, and **Tailwind CSS**, FusionTik delivers fast, watermark-free TikTok downloads on any device.
 
-Tidak perlu install aplikasi. Tidak perlu login. Cukup **paste link TikTok**, klik **Download**, dan simpan konten ke perangkatmu.
+No app installation. No registration. Just **paste a TikTok link**, click **Download**, and save content to your device.
 
-Built on Next.js • Powered by Supabase • Written in TypeScript
+**Key SEO features built in:**
+- 🌐 20-language i18n with proper hreflang tags
+- 📊 JSON-LD structured data (Organization, WebApplication, HowTo, FAQ, BreadcrumbList)
+- 📝 AI-assisted content generation pipeline (42+ blog posts across locales)
+- 🗺️ Dynamic sitemap.xml with all localized URLs
+- 📄 `llms.txt` for AI crawler directives
+- 📍 Local SEO landing pages for 14 countries
 
 <!-- Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">

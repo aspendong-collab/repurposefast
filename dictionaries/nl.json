@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Saveik — TikTok-video's downloaden zonder watermerk | Gratis HD TikTok-downloader | Saveik",
+    "description": "Saveik is een gratis TikTok-video-downloader. Download TikTok-video's zonder watermerk in HD-kwaliteit. Opslaan als MP4 of MP3. Geen app-installatie, geen registratie vereist. Werkt op alle apparaten.",
+    "keywords": "TikTok-downloader,TikTok-video downloaden,TikTok zonder watermerk,TikTok-video-downloader,saveik,TikTok downloaden zonder watermerk,TikTok naar MP4,TikTok naar MP3,TikTok-video opslaan,gratis TikTok-downloader,TikTok-video-opslagsite,online TikTok-downloader,TikTok HD downloaden,TikTok MP4 downloaden,TikTok MP3 converteren,TikTok-foto downloaden,TikTok-watermerk verwijderen,TikTok-video's gratis downloaden,TikTok downloaden zonder app,TikTok downloaden voor iPhone,TikTok downloaden voor Android,TikTok downloaden voor pc"
+  },
+  "hero": {
+    "badge": "Geen watermerk • HD-kwaliteit • 100% gratis",
+    "title": "TikTok-video's downloaden",
+    "titleHighlight": "Zonder watermerk",
+    "subtitle": "Plak hieronder elke TikTok-link en download video's in HD, zonder watermerk, binnen enkele seconden. Geen aanmelding nodig.",
+    "placeholder": "Plak hier de TikTok-link...",
+    "cta": "Downloaden",
+    "trust": "Gebruikt door miljoenen wereldwijd • Geen registratie vereist"
+  },
+  "download": {
+    "title": "Je download is klaar",
+    "mp4": "MP4 downloaden",
+    "mp3": "MP3 downloaden",
+    "hd": "HD",
+    "copyLink": "Link kopiëren",
+    "pasteAgain": "Nog een link plakken",
+    "loading": "Video ophalen...",
+    "error": "Kan niet downloaden. Controleer je link en probeer het opnieuw.",
+    "noVideo": "Geen video gevonden op deze URL."
+  },
+  "features": {
+    "title": "Waarom Saveik kiezen?",
+    "subtitle": "De snelste, eenvoudigste TikTok-downloader op het web.",
+    "items": [
+      {
+        "title": "Geen watermerk",
+        "desc": "Schone, watermerkloze video's klaar om overal te hergebruiken."
+      },
+      {
+        "title": "HD-kwaliteit",
+        "desc": "Download TikTok-video's in scherpe 1080p HD-resolutie."
+      },
+      {
+        "title": "MP3-audio",
+        "desc": "Haal audio uit elke TikTok-video als hoogwaardige MP3."
+      },
+      {
+        "title": "Alle apparaten",
+        "desc": "Werkt op iPhone, Android, Windows en Mac — geen app nodig."
+      },
+      {
+        "title": "Direct downloaden",
+        "desc": "Geen wachtrijen, geen wachttijd. Ontvang je video binnen enkele seconden."
+      },
+      {
+        "title": "100% gratis",
+        "desc": "Geen verborgen kosten, geen abonnementen. Onbeperkt downloaden voor altijd."
+      }
+    ]
+  },
+  "stats": {
+    "videos": "Gedownloade video's",
+    "users": "Tevreden gebruikers",
+    "countries": "Landen"
+  },
+  "howTo": {
+    "title": "Hoe te downloaden",
+    "subtitle": "Drie eenvoudige stappen om elke TikTok-video op te slaan.",
+    "steps": [
+      {
+        "title": "Link kopiëren",
+        "desc": "Open TikTok, zoek een video die je leuk vindt, tik op Delen → Link kopiëren."
+      },
+      {
+        "title": "Plakken en downloaden",
+        "desc": "Plak de link hierboven en klik op Downloaden. Wij verwerken het direct."
+      },
+      {
+        "title": "Opslaan op apparaat",
+        "desc": "Klik op MP4 downloaden om de video op je apparaat op te slaan."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "subtitle": "Alles wat je moet weten over Saveik.",
+    "questions": [
+      {
+        "q": "Is Saveik gratis te gebruiken?",
+        "a": "Ja. Saveik is volledig gratis, zonder registratie of abonnement. Onbeperkt downloaden."
+      },
+      {
+        "q": "Kan ik TikTok-video's downloaden zonder watermerk?",
+        "a": "Absoluut. Saveik verwijdert het TikTok-watermerk automatisch — schone video klaar voor elk platform."
+      },
+      {
+        "q": "Welke formaten ondersteunt Saveik?",
+        "a": "MP4-video (HD), MP3-audio, plus JPG/PNG-afbeeldingen van TikTok-fotomodus."
+      },
+      {
+        "q": "Moet ik iets installeren?",
+        "a": "Nee. Werkt in je browser op iPhone, Android, Windows, Mac — geen app nodig."
+      },
+      {
+        "q": "Kan ik downloaden van privéaccounts?",
+        "a": "Nee. Saveik respecteert privacy — alleen openbare TikTok-video's zijn toegankelijk."
+      },
+      {
+        "q": "Waar worden bestanden opgeslagen?",
+        "a": "In de standaardmap Downloads van je apparaat. Op iPhone gebruik je Opslaan in Bestanden."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2025 Saveik. Alle rechten voorbehouden.",
+    "links": {
+      "faq": "FAQ",
+      "privacy": "Privacybeleid",
+      "terms": "Servicevoorwaarden",
+      "feedback": "Feedback",
+      "help": "Helpcentrum"
+    }
+  },
+  "language": "Taal",
+  "ui": {
+    "privacyFirst": "Privacy eerst",
+    "noRegistration": "Geen registratie",
+    "allDevices": "Alle apparaten",
+    "discover": "Ontdekken",
+    "processing": "Verwerken",
+    "processingVideo": "Je video wordt verwerkt...",
+    "photoMode": "Fotomodus",
+    "photos": "Foto's",
+    "downloadVerb": "Downloaden",
+    "downloadAnother": "Nog een video downloaden",
+    "builtDifferent": "Anders gebouwd",
+    "builtDifferentSub": "Speciaal gebouwd voor één ding — jou de schoonste TikTok-downloads bezorgen, snel.",
+    "threeSteps": "Drie stappen.",
+    "thatsIt": "Dat is het.",
+    "noComplexity": "Geen complexiteit. Geen leercurve. Gewoon plakken en gaan.",
+    "everyScreen": "Elk scherm.",
+    "sameExperience": "Dezelfde ervaring.",
+    "iphoneAndroid": "iPhone en Android",
+    "downloadMobile": "Downloaden op mobiel",
+    "windowsMacLinux": "Windows, Mac en Linux",
+    "downloadDesktop": "Downloaden op desktop",
+    "freeForever": "Altijd gratis",
+    "downloadsToday": "Downloads vandaag",
+    "languages": "Talen",
+    "youAsk": "Jij vraagt.",
+    "weAnswer": "Wij antwoorden.",
+    "readyToDownload": "Klaar om te downloaden?",
+    "ctaSubtitle": "Plak elke TikTok-link en ontvang binnen enkele seconden een schone HD-video. Geen addertjes.",
+    "startDownloading": "Nu beginnen met downloaden",
+    "footerPitch": "De snelste, schoonste TikTok-downloader op het web. Geen watermerken. Geen limieten. Geen onzin.",
+    "legal": "Juridisch",
+    "support": "Ondersteuning",
+    "terms": "Voorwaarden",
+    "privacy": "Privacy",
+    "disclaimer": "Saveik is onafhankelijk. Niet gelieerd aan TikTok, Douyin of ByteDance.",
+    "forPersonalUse": "Voor persoonlijk gebruik.",
+    "stepMobile1": "Open de TikTok-app, vind de video",
+    "stepMobile2": "Tik op Delen → Link kopiëren",
+    "stepMobile3": "Open browser, ga naar Saveik",
+    "stepMobile4": "Plak link, tik op Downloaden",
+    "stepMobile5": "Opslaan in Foto's of Bestanden-app",
+    "stepDesktop1": "Ga naar tiktok.com, vind de video",
+    "stepDesktop2": "Kopieer URL uit adresbalk",
+    "stepDesktop3": "Plak in Saveik hierboven",
+    "stepDesktop4": "Klik op Downloaden, kies MP4 of MP3",
+    "stepDesktop5": "Bestand wordt opgeslagen in Downloads-map"
+  }
+}

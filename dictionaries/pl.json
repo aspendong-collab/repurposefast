@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Saveik — Pobieraj filmy z TikTok bez znaku wodnego | Darmowy HD TikTok Downloader | Saveik",
+    "description": "Saveik to darmowy downloader filmów z TikTok. Pobieraj filmy z TikTok bez znaku wodnego w jakości HD. Zapisz jako MP4 lub MP3. Bez instalacji aplikacji, bez rejestracji. Działa na wszystkich urządzeniach.",
+    "keywords": "TikTok downloader,pobierz film TikTok,TikTok bez znaku wodnego,TikTok video downloader,saveik,pobierz TikTok bez znaku wodnego,TikTok na MP4,TikTok na MP3,zapisz film TikTok,darmowy TikTok downloader,TikTok video saver,online TikTok downloader,pobierz TikTok HD,TikTok MP4 download,TikTok MP3 konwerter,pobierz zdjęcie TikTok,usuń znak wodny TikTok,pobierz filmy TikTok za darmo,TikTok download bez aplikacji,TikTok download na iPhone,TikTok download na Android,TikTok download na PC"
+  },
+  "hero": {
+    "badge": "Bez znaku wodnego • Jakość HD • 100% za darmo",
+    "title": "Pobieraj filmy z TikTok",
+    "titleHighlight": "Bez znaku wodnego",
+    "subtitle": "Wklej dowolny link z TikTok poniżej i pobieraj filmy w HD, bez znaku wodnego, w kilka sekund. Bez rejestracji.",
+    "placeholder": "Wklej link z TikTok tutaj...",
+    "cta": "Pobierz",
+    "trust": "Używany przez miliony na całym świecie • Bez rejestracji"
+  },
+  "download": {
+    "title": "Twój plik jest gotowy do pobrania",
+    "mp4": "Pobierz MP4",
+    "mp3": "Pobierz MP3",
+    "hd": "HD",
+    "copyLink": "Kopiuj link",
+    "pasteAgain": "Wklej inny link",
+    "loading": "Pobieranie filmu...",
+    "error": "Nie można pobrać. Sprawdź link i spróbuj ponownie.",
+    "noVideo": "Nie znaleziono filmu pod tym adresem URL."
+  },
+  "features": {
+    "title": "Dlaczego Saveik?",
+    "subtitle": "Najszybszy i najprostszy downloader TikTok w sieci.",
+    "items": [
+      {
+        "title": "Bez znaku wodnego",
+        "desc": "Czyste filmy bez znaku wodnego, gotowe do ponownego wykorzystania gdziekolwiek."
+      },
+      {
+        "title": "Jakość HD",
+        "desc": "Pobieraj filmy z TikTok w ostrej rozdzielczości 1080p HD."
+      },
+      {
+        "title": "Audio MP3",
+        "desc": "Wyodrębnij dźwięk z dowolnego filmu TikTok jako wysokiej jakości MP3."
+      },
+      {
+        "title": "Wszystkie urządzenia",
+        "desc": "Działa na iPhone, Android, Windows i Mac — bez potrzeby instalacji aplikacji."
+      },
+      {
+        "title": "Natychmiastowe pobieranie",
+        "desc": "Bez kolejek, bez czekania. Otrzymasz film w kilka sekund."
+      },
+      {
+        "title": "100% za darmo",
+        "desc": "Brak ukrytych opłat, brak subskrypcji. Nieograniczone pobieranie na zawsze."
+      }
+    ]
+  },
+  "stats": {
+    "videos": "Pobranych filmów",
+    "users": "Zadowolonych użytkowników",
+    "countries": "Krajów"
+  },
+  "howTo": {
+    "title": "Jak pobierać",
+    "subtitle": "Trzy proste kroki, aby zapisać dowolny film z TikTok.",
+    "steps": [
+      {
+        "title": "Skopiuj link",
+        "desc": "Otwórz TikTok, znajdź film, który Ci się podoba, dotknij Udostępnij → Kopiuj link."
+      },
+      {
+        "title": "Wklej i pobierz",
+        "desc": "Wklej link powyżej i kliknij Pobierz. Przetwarzamy go natychmiast."
+      },
+      {
+        "title": "Zapisz na urządzeniu",
+        "desc": "Kliknij Pobierz MP4, aby zapisać film na swoim urządzeniu."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Często zadawane pytania",
+    "subtitle": "Wszystko, co musisz wiedzieć o Saveik.",
+    "questions": [
+      {
+        "q": "Czy Saveik jest darmowy?",
+        "a": "Tak. Saveik jest całkowicie darmowy, bez rejestracji ani subskrypcji. Nieograniczone pobieranie."
+      },
+      {
+        "q": "Czy mogę pobierać filmy z TikTok bez znaku wodnego?",
+        "a": "Oczywiście. Saveik automatycznie usuwa znak wodny TikTok — czysty film gotowy na każdą platformę."
+      },
+      {
+        "q": "Jakie formaty obsługuje Saveik?",
+        "a": "Wideo MP4 (HD), audio MP3 oraz obrazy JPG/PNG z trybu zdjęć TikTok."
+      },
+      {
+        "q": "Czy muszę coś instalować?",
+        "a": "Nie. Działa w przeglądarce na iPhone, Android, Windows, Mac — bez potrzeby instalacji aplikacji."
+      },
+      {
+        "q": "Czy mogę pobierać z prywatnych kont?",
+        "a": "Nie. Saveik szanuje prywatność — dostępne są tylko publiczne filmy z TikTok."
+      },
+      {
+        "q": "Gdzie zapisują się pliki?",
+        "a": "W domyślnym folderze Pobrane na urządzeniu. Na iPhone użyj opcji Zapisz w plikach."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2025 Saveik. Wszelkie prawa zastrzeżone.",
+    "links": {
+      "faq": "FAQ",
+      "privacy": "Polityka prywatności",
+      "terms": "Warunki korzystania",
+      "feedback": "Opinia",
+      "help": "Centrum pomocy"
+    }
+  },
+  "language": "Język",
+  "ui": {
+    "privacyFirst": "Prywatność przede wszystkim",
+    "noRegistration": "Bez rejestracji",
+    "allDevices": "Wszystkie urządzenia",
+    "discover": "Odkryj",
+    "processing": "Przetwarzanie",
+    "processingVideo": "Przetwarzanie Twojego filmu...",
+    "photoMode": "Tryb zdjęć",
+    "photos": "Zdjęcia",
+    "downloadVerb": "Pobierz",
+    "downloadAnother": "Pobierz inny film",
+    "builtDifferent": "Zbudowany inaczej",
+    "builtDifferentSub": "Stworzony do jednego — szybkiego dostarczania najczystszych plików z TikTok.",
+    "threeSteps": "Trzy kroki.",
+    "thatsIt": "To wszystko.",
+    "noComplexity": "Bez skomplikowania. Bez krzywej uczenia się. Wklej i gotowe.",
+    "everyScreen": "Każdy ekran.",
+    "sameExperience": "To samo doświadczenie.",
+    "iphoneAndroid": "iPhone i Android",
+    "downloadMobile": "Pobieraj na telefonie",
+    "windowsMacLinux": "Windows, Mac i Linux",
+    "downloadDesktop": "Pobieraj na komputerze",
+    "freeForever": "Zawsze za darmo",
+    "downloadsToday": "Pobrań dzisiaj",
+    "languages": "Języki",
+    "youAsk": "Ty pytasz.",
+    "weAnswer": "My odpowiadamy.",
+    "readyToDownload": "Gotowy do pobrania?",
+    "ctaSubtitle": "Wklej dowolny link z TikTok i otrzymaj czysty film w HD w kilka sekund. Bez haczyków.",
+    "startDownloading": "Zacznij pobierać teraz",
+    "footerPitch": "Najszybszy i najczystszy downloader TikTok w sieci. Bez znaków wodnych. Bez limitów. Bez bzdur.",
+    "legal": "Informacje prawne",
+    "support": "Wsparcie",
+    "terms": "Warunki",
+    "privacy": "Prywatność",
+    "disclaimer": "Saveik jest niezależny. Nie jest powiązany z TikTok, Douyin ani ByteDance.",
+    "forPersonalUse": "Do użytku osobistego.",
+    "stepMobile1": "Otwórz aplikację TikTok, znajdź film",
+    "stepMobile2": "Dotknij Udostępnij → Kopiuj link",
+    "stepMobile3": "Otwórz przeglądarkę, wejdź na Saveik",
+    "stepMobile4": "Wklej link, dotknij Pobierz",
+    "stepMobile5": "Zapisz w Zdjęciach lub w aplikacji Pliki",
+    "stepDesktop1": "Wejdź na tiktok.com, znajdź film",
+    "stepDesktop2": "Skopiuj URL z paska adresu",
+    "stepDesktop3": "Wklej do Saveik powyżej",
+    "stepDesktop4": "Kliknij Pobierz, wybierz MP4 lub MP3",
+    "stepDesktop5": "Plik zapisze się w folderze Pobrane"
+  }
+}

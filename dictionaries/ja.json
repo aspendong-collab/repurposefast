@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Saveik — TikTok動画を透かしなしでダウンロード | 無料HD TikTokダウンローダー | Saveik",
+    "description": "Saveikは無料のTikTok動画ダウンローダーです。透かしなしでHD品質のTikTok動画をダウンロードできます。MP4またはMP3として保存。アプリのインストール不要、登録不要。すべてのデバイスで動作します。",
+    "keywords": "TikTokダウンローダー,TikTok動画ダウンロード,TikTok透かしなし,TikTok動画ダウンローダー,saveik,TikTok透かしなしダウンロード,TikTokからMP4,TikTokからMP3,TikTok動画保存,無料TikTokダウンローダー,TikTok動画セーバー,オンラインTikTokダウンローダー,TikTok HDダウンロード,TikTok MP4ダウンロード,TikTok MP3変換,TikTok写真ダウンロード,TikTok透かし除去,TikTok動画無料ダウンロード,TikTokアプリなしダウンロード,iPhone用TikTokダウンロード,Android用TikTokダウンロード,PC用TikTokダウンロード"
+  },
+  "hero": {
+    "badge": "透かしなし • HD品質 • 100%無料",
+    "title": "TikTok動画をダウンロード",
+    "titleHighlight": "透かしなしで",
+    "subtitle": "以下のTikTokリンクを貼り付けて、HD品質で透かしなしの動画を数秒でダウンロード。サインアップ不要。",
+    "placeholder": "TikTokリンクをここに貼り付け...",
+    "cta": "ダウンロード",
+    "trust": "世界中の何百万人ものユーザーが利用 • 登録不要"
+  },
+  "download": {
+    "title": "ダウンロード準備完了",
+    "mp4": "MP4をダウンロード",
+    "mp3": "MP3をダウンロード",
+    "hd": "HD",
+    "copyLink": "リンクをコピー",
+    "pasteAgain": "別のリンクを貼り付け",
+    "loading": "動画を取得中...",
+    "error": "ダウンロードできません。リンクを確認して再試行してください。",
+    "noVideo": "このURLに動画が見つかりません。"
+  },
+  "features": {
+    "title": "Saveikを選ぶ理由",
+    "subtitle": "ウェブ最速・最シンプルなTikTokダウンローダー。",
+    "items": [
+      {
+        "title": "透かしなし",
+        "desc": "クリーンで透かしのない動画を、どこでも再利用可能。"
+      },
+      {
+        "title": "HD品質",
+        "desc": "鮮明な1080p HD解像度でTikTok動画をダウンロード。"
+      },
+      {
+        "title": "MP3オーディオ",
+        "desc": "TikTok動画から高品質MP3として音声を抽出。"
+      },
+      {
+        "title": "全デバイス対応",
+        "desc": "iPhone、Android、Windows、Macで動作。アプリ不要。"
+      },
+      {
+        "title": "即時ダウンロード",
+        "desc": "待ち時間なし。数秒で動画を取得。"
+      },
+      {
+        "title": "100%無料",
+        "desc": "隠れた料金やサブスクリプションなし。無制限に永久ダウンロード。"
+      }
+    ]
+  },
+  "stats": {
+    "videos": "ダウンロードされた動画",
+    "users": "満足ユーザー数",
+    "countries": "対応国数"
+  },
+  "howTo": {
+    "title": "ダウンロード方法",
+    "subtitle": "3つの簡単なステップでTikTok動画を保存。",
+    "steps": [
+      {
+        "title": "リンクをコピー",
+        "desc": "TikTokを開き、気に入った動画を見つけて、共有→リンクをコピーをタップ。"
+      },
+      {
+        "title": "貼り付けてダウンロード",
+        "desc": "上のリンクを貼り付け、ダウンロードをクリック。すぐに処理します。"
+      },
+      {
+        "title": "デバイスに保存",
+        "desc": "MP4をダウンロードをクリックして、動画をデバイスに保存。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "よくある質問",
+    "subtitle": "Saveikについて知っておくべきことすべて。",
+    "questions": [
+      {
+        "q": "Saveikは無料で使えますか？",
+        "a": "はい。Saveikは完全無料で、登録やサブスクリプションは不要です。無制限にダウンロードできます。"
+      },
+      {
+        "q": "透かしなしでTikTok動画をダウンロードできますか？",
+        "a": "もちろん。Saveikが自動的にTikTokの透かしを除去し、どのプラットフォームでも使えるクリーンな動画を提供します。"
+      },
+      {
+        "q": "Saveikはどのフォーマットに対応していますか？",
+        "a": "MP4動画（HD）、MP3オーディオ、さらにTikTokフォトモードからのJPG/PNG画像に対応。"
+      },
+      {
+        "q": "何かをインストールする必要がありますか？",
+        "a": "いいえ。ブラウザ上で動作し、iPhone、Android、Windows、Macで使用可能。アプリは不要です。"
+      },
+      {
+        "q": "非公開アカウントからダウンロードできますか？",
+        "a": "いいえ。Saveikはプライバシーを尊重します。公開TikTok動画のみアクセス可能です。"
+      },
+      {
+        "q": "ファイルはどこに保存されますか？",
+        "a": "デバイスのデフォルトのダウンロードフォルダ。iPhoneの場合は「ファイルに保存」を使用します。"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2025 Saveik. All rights reserved.",
+    "links": {
+      "faq": "FAQ",
+      "privacy": "プライバシーポリシー",
+      "terms": "利用規約",
+      "feedback": "フィードバック",
+      "help": "ヘルプセンター"
+    }
+  },
+  "language": "言語",
+  "ui": {
+    "privacyFirst": "プライバシー第一",
+    "noRegistration": "登録不要",
+    "allDevices": "全デバイス対応",
+    "discover": "発見",
+    "processing": "処理中",
+    "processingVideo": "動画を処理中...",
+    "photoMode": "フォトモード",
+    "photos": "写真",
+    "downloadVerb": "ダウンロード",
+    "downloadAnother": "別の動画をダウンロード",
+    "builtDifferent": "他とは違う",
+    "builtDifferentSub": "一つの目的に特化——最もクリーンなTikTokダウンロードを迅速に。",
+    "threeSteps": "3ステップ。",
+    "thatsIt": "それだけ。",
+    "noComplexity": "複雑さなし。学習曲線なし。貼り付けて進むだけ。",
+    "everyScreen": "あらゆる画面で。",
+    "sameExperience": "同じ体験。",
+    "iphoneAndroid": "iPhone & Android",
+    "downloadMobile": "モバイルでダウンロード",
+    "windowsMacLinux": "Windows、Mac & Linux",
+    "downloadDesktop": "デスクトップでダウンロード",
+    "freeForever": "永久無料",
+    "downloadsToday": "本日のダウンロード数",
+    "languages": "言語",
+    "youAsk": "あなたが質問。",
+    "weAnswer": "私たちが回答。",
+    "readyToDownload": "ダウンロードの準備はできましたか？",
+    "ctaSubtitle": "任意のTikTokリンクを貼り付けて、クリーンなHD動画を数秒で取得。裏はありません。",
+    "startDownloading": "今すぐダウンロード開始",
+    "footerPitch": "ウェブ最速・最クリーンなTikTokダウンローダー。透かしなし。制限なし。無駄なし。",
+    "legal": "法的情報",
+    "support": "サポート",
+    "terms": "利用規約",
+    "privacy": "プライバシー",
+    "disclaimer": "Saveikは独立したサービスです。TikTok、Douyin、ByteDanceとは提携していません。",
+    "forPersonalUse": "個人利用向け。",
+    "stepMobile1": "TikTokアプリを開き、動画を見つける",
+    "stepMobile2": "共有→リンクをコピーをタップ",
+    "stepMobile3": "ブラウザを開き、Saveikにアクセス",
+    "stepMobile4": "リンクを貼り付け、ダウンロードをタップ",
+    "stepMobile5": "写真またはファイルアプリに保存",
+    "stepDesktop1": "tiktok.comにアクセスし、動画を見つける",
+    "stepDesktop2": "アドレスバーからURLをコピー",
+    "stepDesktop3": "上のSaveikに貼り付け",
+    "stepDesktop4": "ダウンロードをクリックし、MP4またはMP3を選択",
+    "stepDesktop5": "ファイルはダウンロードフォルダに保存"
+  }
+}

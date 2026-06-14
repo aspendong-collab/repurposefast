@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Saveik — 워터마크 없는 틱톡 동영상 다운로드 | 무료 HD 틱톡 다운로더 | Saveik",
+    "description": "Saveik은 무료 틱톡 동영상 다운로더입니다. 워터마크 없이 HD 화질로 틱톡 동영상을 다운로드하세요. MP4 또는 MP3로 저장 가능합니다. 앱 설치나 회원가입이 필요 없으며 모든 기기에서 작동합니다.",
+    "keywords": "틱톡 다운로더,틱톡 동영상 다운로드,틱톡 워터마크 제거,틱톡 동영상 다운로더,세이빅,워터마크 없는 틱톡 다운로드,틱톡 MP4 변환,틱톡 MP3 변환,틱톡 동영상 저장,무료 틱톡 다운로더,틱톡 동영상 저장,온라인 틱톡 다운로더,HD 틱톡 다운로드,틱톡 MP4 다운로드,틱톡 MP3 변환기,틱톡 사진 다운로드,틱톡 워터마크 제거,틱톡 동영상 무료 다운로드,앱 없이 틱톡 다운로드,iPhone 틱톡 다운로드,Android 틱톡 다운로드,PC 틱톡 다운로드"
+  },
+  "hero": {
+    "badge": "워터마크 없음 • HD 화질 • 100% 무료",
+    "title": "틱톡 동영상 다운로드",
+    "titleHighlight": "워터마크 없이",
+    "subtitle": "아래에 틱톡 링크를 붙여넣고 HD 화질의 워터마크 없는 동영상을 몇 초 안에 다운로드하세요. 회원가입이 필요 없습니다.",
+    "placeholder": "여기에 틱톡 링크 붙여넣기...",
+    "cta": "다운로드",
+    "trust": "전 세계 수백만 명이 사용 • 회원가입 불필요"
+  },
+  "download": {
+    "title": "다운로드 준비 완료",
+    "mp4": "MP4 다운로드",
+    "mp3": "MP3 다운로드",
+    "hd": "HD",
+    "copyLink": "링크 복사",
+    "pasteAgain": "다른 링크 붙여넣기",
+    "loading": "동영상 가져오는 중...",
+    "error": "다운로드할 수 없습니다. 링크를 확인하고 다시 시도해 주세요.",
+    "noVideo": "이 URL에서 동영상을 찾을 수 없습니다."
+  },
+  "features": {
+    "title": "Saveik을 선택해야 하는 이유",
+    "subtitle": "웹상에서 가장 빠르고 간편한 틱톡 다운로더입니다.",
+    "items": [
+      {
+        "title": "워터마크 없음",
+        "desc": "깔끔하고 워터마크 없는 동영상을 어디서든 재사용하세요."
+      },
+      {
+        "title": "HD 화질",
+        "desc": "선명한 1080p HD 해상도로 틱톡 동영상을 다운로드하세요."
+      },
+      {
+        "title": "MP3 오디오",
+        "desc": "모든 틱톡 동영상에서 고품질 MP3 오디오를 추출하세요."
+      },
+      {
+        "title": "모든 기기 지원",
+        "desc": "iPhone, Android, Windows, Mac에서 작동하며 앱이 필요 없습니다."
+      },
+      {
+        "title": "즉시 다운로드",
+        "desc": "대기열 없이 기다림 없이 몇 초 만에 동영상을 받아보세요."
+      },
+      {
+        "title": "100% 무료",
+        "desc": "숨은 비용이나 구독 없이 영원히 무제한 다운로드하세요."
+      }
+    ]
+  },
+  "stats": {
+    "videos": "다운로드된 동영상",
+    "users": "만족한 사용자",
+    "countries": "국가"
+  },
+  "howTo": {
+    "title": "다운로드 방법",
+    "subtitle": "세 가지 간단한 단계로 모든 틱톡 동영상을 저장하세요.",
+    "steps": [
+      {
+        "title": "링크 복사",
+        "desc": "틱톡을 열고 마음에 드는 동영상을 찾은 후 공유 → 링크 복사를 탭하세요."
+      },
+      {
+        "title": "붙여넣기 및 다운로드",
+        "desc": "위의 링크를 붙여넣고 다운로드를 클릭하세요. 즉시 처리됩니다."
+      },
+      {
+        "title": "기기에 저장",
+        "desc": "MP4 다운로드를 클릭하여 동영상을 기기에 저장하세요."
+      }
+    ]
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "subtitle": "Saveik에 대해 알아야 할 모든 것.",
+    "questions": [
+      {
+        "q": "Saveik은 무료인가요?",
+        "a": "네. Saveik은 완전 무료이며 회원가입이나 구독이 필요 없습니다. 무제한 다운로드가 가능합니다."
+      },
+      {
+        "q": "워터마크 없이 틱톡 동영상을 다운로드할 수 있나요?",
+        "a": "물론입니다. Saveik이 틱톡 워터마크를 자동으로 제거하여 어떤 플랫폼에서든 사용할 수 있는 깔끔한 동영상을 제공합니다."
+      },
+      {
+        "q": "Saveik은 어떤 형식을 지원하나요?",
+        "a": "MP4 동영상(HD), MP3 오디오, 그리고 틱톡 포토 모드의 JPG/PNG 이미지를 지원합니다."
+      },
+      {
+        "q": "무언가 설치해야 하나요?",
+        "a": "아니요. iPhone, Android, Windows, Mac의 브라우저에서 바로 작동하며 앱이 필요 없습니다."
+      },
+      {
+        "q": "비공개 계정에서도 다운로드할 수 있나요?",
+        "a": "아니요. Saveik은 개인정보를 존중하며 공개 틱톡 동영상만 접근 가능합니다."
+      },
+      {
+        "q": "파일은 어디에 저장되나요?",
+        "a": "기기의 기본 다운로드 폴더에 저장됩니다. iPhone의 경우 '파일에 저장'을 사용하세요."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2025 Saveik. All rights reserved.",
+    "links": {
+      "faq": "FAQ",
+      "privacy": "개인정보처리방침",
+      "terms": "이용약관",
+      "feedback": "피드백",
+      "help": "고객센터"
+    }
+  },
+  "language": "언어",
+  "ui": {
+    "privacyFirst": "개인정보 우선",
+    "noRegistration": "회원가입 불필요",
+    "allDevices": "모든 기기",
+    "discover": "둘러보기",
+    "processing": "처리 중",
+    "processingVideo": "동영상 처리 중...",
+    "photoMode": "포토 모드",
+    "photos": "사진",
+    "downloadVerb": "다운로드",
+    "downloadAnother": "다른 동영상 다운로드",
+    "builtDifferent": "차별화된 설계",
+    "builtDifferentSub": "오직 한 가지를 위해 설계되었습니다 — 가장 깔끔한 틱톡 다운로드를 빠르게 제공합니다.",
+    "threeSteps": "세 단계.",
+    "thatsIt": "그게 전부입니다.",
+    "noComplexity": "복잡함 없음, 학습 곡선 없음. 그냥 붙여넣고 시작하세요.",
+    "everyScreen": "모든 화면.",
+    "sameExperience": "동일한 경험.",
+    "iphoneAndroid": "iPhone 및 Android",
+    "downloadMobile": "모바일에서 다운로드",
+    "windowsMacLinux": "Windows, Mac 및 Linux",
+    "downloadDesktop": "데스크톱에서 다운로드",
+    "freeForever": "영원히 무료",
+    "downloadsToday": "오늘의 다운로드",
+    "languages": "언어",
+    "youAsk": "질문하세요.",
+    "weAnswer": "답변해 드립니다.",
+    "readyToDownload": "다운로드할 준비가 되셨나요?",
+    "ctaSubtitle": "틱톡 링크를 붙여넣고 깔끔한 HD 동영상을 몇 초 만에 받아보세요. 조건 없습니다.",
+    "startDownloading": "지금 다운로드 시작",
+    "footerPitch": "웹상에서 가장 빠르고 깔끔한 틱톡 다운로더. 워터마크 없음. 제한 없음. 불필요한 것 없음.",
+    "legal": "법적 고지",
+    "support": "지원",
+    "terms": "이용약관",
+    "privacy": "개인정보처리방침",
+    "disclaimer": "Saveik은 독립 서비스입니다. TikTok, Douyin 또는 ByteDance와 제휴 관계가 아닙니다.",
+    "forPersonalUse": "개인 용도로만 사용하세요.",
+    "stepMobile1": "틱톡 앱을 열고 동영상을 찾으세요",
+    "stepMobile2": "공유 → 링크 복사 탭",
+    "stepMobile3": "브라우저를 열고 Saveik에 접속하세요",
+    "stepMobile4": "링크를 붙여넣고 다운로드 탭",
+    "stepMobile5": "사진 또는 파일 앱에 저장",
+    "stepDesktop1": "tiktok.com에 접속하여 동영상을 찾으세요",
+    "stepDesktop2": "주소창에서 URL 복사",
+    "stepDesktop3": "위의 Saveik에 붙여넣기",
+    "stepDesktop4": "다운로드 클릭 후 MP4 또는 MP3 선택",
+    "stepDesktop5": "파일이 다운로드 폴더에 저장됩니다"
+  }
+}

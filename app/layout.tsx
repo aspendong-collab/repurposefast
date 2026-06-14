@@ -2,12 +2,18 @@ import type React from "react"
 import type { Metadata } from "next"
 import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import { DefaultLocaleProvider } from "@/components/default-locale-provider"
+import { defaultLocale, locales } from "@/lib/i18n"
+
+const isProduction = process.env.VERCEL_ENV === "production" || !process.env.VERCEL
 
 const siteConfig = {
   name: "Saveik",
   description:
     "Saveik is a free TikTok video downloader. Download TikTok videos without watermark in HD quality. Save as MP4 or MP3. No app installation, no registration required. Works on all devices.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://saveik.com",
+  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://www.saveik.com")
+    .replace(/。/g, ".").replace(/．/g, ".").replace(/：/g, ":").replace(/／/g, "/")
+    .replace(/\/\/saveik\.com/, "//www.saveik.com"),
   ogImage: "/og-image.png",
   keywords: [
     "TikTok downloader",
@@ -34,6 +40,15 @@ const siteConfig = {
     "TikTok download for PC",
   ],
 }
+
+// Build hreflang map: en → https://www.saveik.com, id → https://www.saveik.com/id, ...
+const hreflangLanguages: Record<string, string> = Object.fromEntries(
+  locales.map((l) => [
+    l,
+    l === defaultLocale ? siteConfig.url : `${siteConfig.url}/${l}`,
+  ])
+) as Record<string, string>
+hreflangLanguages["x-default"] = siteConfig.url
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -74,19 +89,24 @@ export const metadata: Metadata = {
     images: [siteConfig.ogImage],
     creator: "@saveik",
   },
-  robots: {
-    index: true,
-    follow: true,
-    nocache: false,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: false,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
+  robots: isProduction
+    ? {
+        index: true,
+        follow: true,
+        nocache: false,
+        googleBot: {
+          index: true,
+          follow: true,
+          noimageindex: false,
+          "max-video-preview": -1,
+          "max-image-preview": "large",
+          "max-snippet": -1,
+        },
+      }
+    : {
+        index: false,
+        follow: false,
+      },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || "",
   },
@@ -104,14 +124,31 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#7c3aed" />
         <link rel="manifest" href="/manifest.json" />
+        {/* Hreflang — use lowercase attr via spread (React19 passes through arbitrary lowercase attrs). Google/Bing require lowercase. */}
+        {locales.map((l) => (
+          <link
+            key={l}
+            rel="alternate"
+            {...({ hreflang: l } as React.LinkHTMLAttributes<HTMLLinkElement>)}
+            href={l === defaultLocale ? siteConfig.url : `${siteConfig.url}/${l}`}
+          />
+        ))}
+        <link
+          rel="alternate"
+          {...({ hreflang: "x-default" } as React.LinkHTMLAttributes<HTMLLinkElement>)}
+          href={siteConfig.url}
+        />
       </head>
       <body className="min-h-screen" suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          {children}
+          <DefaultLocaleProvider>
+            {children}
+          </DefaultLocaleProvider>
         </ThemeProvider>
       </body>
     </html>

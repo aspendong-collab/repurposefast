@@ -1,15 +1,16 @@
 /**
- * TikTok API — delegates to Cloudflare Worker
+ * TikTok API — calls RapidAPI directly (workers.dev blocked in China)
  *
- * Vercel IPs are blocked by TikTok → scraping runs on CF edge instead.
- * CF Worker URL: https://api.saveik.com (set up CNAME in Cloudflare DNS)
+ * Architecture:   Vercel (saveik.com) → RapidAPI → TikTok
+ * Download:       Browser → robotilab.online (direct, if available)
+ *                 Fallback: /api/download → Vercel proxies the video
  */
 import { NextResponse } from "next/server"
 
 const TIKTOK_REGEX = /^(https?:\/\/)?(www\.|m\.|vm\.|vt\.)?(tiktok\.com|douyin\.com)\//
 
-// Cloudflare Worker URL
-const WORKER_URL = process.env.TIKTOK_WORKER_URL || "https://api.saveik.com"
+const RAPIDAPI_HOST = process.env.TIKTOK_API_HOST || "tiktok-video-downloader-api.p.rapidapi.com"
+const RAPIDAPI_KEY = process.env.TIKTOK_API_KEY || ""
 
 export async function POST(req: Request) {
   // Parse URL
@@ -28,38 +29,43 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Invalid TikTok URL" }, { status: 400 })
   }
 
-  // Forward to Cloudflare Worker
+  // Call RapidAPI directly (workers.dev blocked in China)
   try {
-    const workerRes = await fetch(WORKER_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ url }),
+    const apiUrl = `https://${RAPIDAPI_HOST}/media?videoUrl=${encodeURIComponent(url)}`
+    const apiResp = await fetch(apiUrl, {
+      headers: {
+        "x-rapidapi-host": RAPIDAPI_HOST,
+        "x-rapidapi-key": RAPIDAPI_KEY,
+      },
+      signal: AbortSignal.timeout(15000),
     })
 
-    const data = (await workerRes.json()) as Record<string, unknown>
-
-    if (!workerRes.ok || data.error) {
-      return NextResponse.json(
-        { error: data.error || "Download failed" },
-        { status: workerRes.status || 500 }
-      )
+    if (!apiResp.ok) {
+      return NextResponse.json({ error: `RapidAPI returned ${apiResp.status}` }, { status: 502 })
     }
 
-    // Transform worker response → frontend-expected format
+    const raw = (await apiResp.json()) as Record<string, unknown>
+    if (raw.error) {
+      return NextResponse.json({ error: raw.error as string }, { status: 502 })
+    }
+
+    const author = (raw.author as Record<string, string>) || {}
+    const videoUrl = (raw.downloadUrl as string) || ""
+
     return NextResponse.json({
-      type: data.type || "video",
-      video: data.video || null,
-      videoHd: data.video || null,
-      videos: data.video ? [data.video] : null,
-      images: data.images || null,
-      music: data.music || null,
-      description: data.description || null,
-      creator: data.creator || null,
-      duration: data.duration || null,
-      thumbnail: data.thumbnail || null,
+      type: "video",
+      video: videoUrl,
+      videoHd: videoUrl,
+      videos: videoUrl ? [videoUrl] : null,
+      images: null,
+      music: null,
+      description: raw.description || null,
+      creator: author.username || author.nickname || null,
+      duration: raw.duration || null,
+      thumbnail: raw.cover || null,
     })
   } catch (err) {
-    const message = err instanceof Error ? err.message : "Worker connection failed"
+    const message = err instanceof Error ? err.message : "API call failed"
     return NextResponse.json({ error: message }, { status: 500 })
   }
 }

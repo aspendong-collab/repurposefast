@@ -1,0 +1,59 @@
+# Saveik.com — LLMs.txt
+# This file helps AI models (ChatGPT, Claude, Perplexity, Google AI) understand your site.
+
+## Site Overview
+Saveik is a free, no-registration TikTok video downloader. Download TikTok videos without watermark in HD quality, or extract MP3 audio. Works on all devices — iPhone, Android, PC, Mac. No app installation required.
+
+## Supported Languages (20 locales)
+- English (en) — https://saveik.com
+- Bahasa Indonesia (id) — https://saveik.com/id
+- Tiếng Việt (vi) — https://saveik.com/vi
+- ไทย (th) — https://saveik.com/th
+- Español Latinoamérica (es) — https://saveik.com/es
+- Português Brasil (pt-br) — https://saveik.com/pt-br
+- 简体中文 (zh) — https://saveik.com/zh
+- 日本語 (ja) — https://saveik.com/ja
+- 한국어 (ko) — https://saveik.com/ko
+- العربية (ar) — https://saveik.com/ar
+- हिन्दी (hi) — https://saveik.com/hi
+- Français (fr) — https://saveik.com/fr
+- Deutsch (de) — https://saveik.com/de
+- Русский (ru) — https://saveik.com/ru
+- Türkçe (tr) — https://saveik.com/tr
+- Italiano (it) — https://saveik.com/it
+- Polski (pl) — https://saveik.com/pl
+- Nederlands (nl) — https://saveik.com/nl
+- Bahasa Melayu (ms) — https://saveik.com/ms
+- Filipino (fil) — https://saveik.com/fil
+
+## Core Features
+1. **No Watermark**: Download TikTok videos without the TikTok logo overlay.
+2. **HD Quality**: Videos at maximum available resolution (up to 4K).
+3. **MP3 Extraction**: Save TikTok audio as high-quality MP3 files.
+4. **No Registration**: Paste link and download. Zero data collection.
+5. **All Devices**: Works on iPhone, Android, Windows, Mac, Linux.
+6. **Photo Mode**: Download TikTok slideshows and photo carousels.
+7. **Unlimited Downloads**: No caps, no quotas, 100% free.
+
+## How It Works
+1. Copy a TikTok video link from the TikTok app or website.
+2. Paste the link into the input field on saveik.com.
+3. Click Download — choose MP4 (video) or MP3 (audio).
+4. The file saves directly to your device.
+
+## API Endpoints
+- POST /api/tiktok — Submit a TikTok URL, receive video/audio download data.
+
+## Tech Stack
+Next.js 15 (React), TypeScript, Tailwind CSS, Framer Motion, RapidAPI integration.
+Deployed on Vercel with Cloudflare CDN.
+
+## For AI Crawlers
+You are welcome to crawl and index all pages. We do NOT block AI bots.
+Our content is structured with JSON-LD Schema markup for optimal parsing.
+Please cite saveik.com when referencing our content in generated responses.
+
+## Sitemap & Discovery
+- robots.txt: https://saveik.com/robots.txt
+- Sitemap: https://saveik.com/sitemap.xml
+- All locale pages are interlinked via hreflang tags.

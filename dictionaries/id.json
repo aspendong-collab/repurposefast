@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Saveik — Download Video TikTok Tanpa Watermark | Pengunduh TikTok HD Gratis",
+    "description": "Saveik adalah pengunduh video TikTok gratis. Unduh video TikTok tanpa watermark dalam kualitas HD. Simpan sebagai MP4 atau MP3. Tanpa instalasi aplikasi, tanpa registrasi. Bekerja di semua perangkat.",
+    "keywords": "TikTok downloader,download video TikTok,TikTok tanpa watermark,pengunduh video TikTok,saveik,download TikTok tanpa watermark,TikTok ke MP4,TikTok ke MP3,simpan video TikTok,pengunduh TikTok gratis,penyimpan video TikTok,pengunduh TikTok online,download TikTok HD,unduh TikTok MP4,konverter TikTok MP3,download foto TikTok,hapus watermark TikTok,download video TikTok gratis,download TikTok tanpa aplikasi,download TikTok untuk iPhone,download TikTok untuk Android,download TikTok untuk PC"
+  },
+  "hero": {
+    "badge": "Tanpa Watermark • Kualitas HD • 100% Gratis",
+    "title": "Unduh Video TikTok",
+    "titleHighlight": "Tanpa Watermark",
+    "subtitle": "Tempel tautan TikTok di bawah dan unduh video dalam HD, tanpa watermark, dalam hitungan detik. Tanpa pendaftaran.",
+    "placeholder": "Tempel tautan TikTok di sini...",
+    "cta": "Unduh",
+    "trust": "Digunakan jutaan orang di seluruh dunia • Tanpa registrasi"
+  },
+  "download": {
+    "title": "Unduhan Anda Siap",
+    "mp4": "Unduh MP4",
+    "mp3": "Unduh MP3",
+    "hd": "HD",
+    "copyLink": "Salin Tautan",
+    "pasteAgain": "Tempel tautan lain",
+    "loading": "Mengambil video...",
+    "error": "Tidak dapat mengunduh. Periksa tautan Anda dan coba lagi.",
+    "noVideo": "Tidak ada video ditemukan di URL ini."
+  },
+  "features": {
+    "title": "Mengapa Memilih Saveik?",
+    "subtitle": "Pengunduh TikTok tercepat dan termudah di web.",
+    "items": [
+      {
+        "title": "Tanpa Watermark",
+        "desc": "Video bersih tanpa watermark, siap digunakan di mana saja."
+      },
+      {
+        "title": "Kualitas HD",
+        "desc": "Unduh video TikTok dalam resolusi HD 1080p yang jernih."
+      },
+      {
+        "title": "Audio MP3",
+        "desc": "Ekstrak audio dari video TikTok sebagai MP3 berkualitas tinggi."
+      },
+      {
+        "title": "Semua Perangkat",
+        "desc": "Bekerja di iPhone, Android, Windows, dan Mac — tanpa aplikasi."
+      },
+      {
+        "title": "Unduh Instan",
+        "desc": "Tanpa antrian, tanpa menunggu. Dapatkan video Anda dalam hitungan detik."
+      },
+      {
+        "title": "100% Gratis",
+        "desc": "Tanpa biaya tersembunyi, tanpa langganan. Unduhan tak terbatas selamanya."
+      }
+    ]
+  },
+  "stats": {
+    "videos": "Video Diunduh",
+    "users": "Pengguna Puas",
+    "countries": "Negara"
+  },
+  "howTo": {
+    "title": "Cara Mengunduh",
+    "subtitle": "Tiga langkah mudah untuk menyimpan video TikTok.",
+    "steps": [
+      {
+        "title": "Salin Tautan",
+        "desc": "Buka TikTok, temukan video yang Anda suka, ketuk Bagikan → Salin Tautan."
+      },
+      {
+        "title": "Tempel & Unduh",
+        "desc": "Tempel tautan di atas dan klik Unduh. Kami memprosesnya secara instan."
+      },
+      {
+        "title": "Simpan ke Perangkat",
+        "desc": "Klik Unduh MP4 untuk menyimpan video ke perangkat Anda."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Pertanyaan Umum",
+    "subtitle": "Semua yang perlu Anda ketahui tentang Saveik.",
+    "questions": [
+      {
+        "q": "Apakah Saveik gratis digunakan?",
+        "a": "Ya. Saveik sepenuhnya gratis tanpa registrasi atau langganan. Unduhan tak terbatas."
+      },
+      {
+        "q": "Bisakah saya mengunduh video TikTok tanpa watermark?",
+        "a": "Tentu. Saveik menghapus watermark TikTok secara otomatis — video bersih siap untuk platform apa pun."
+      },
+      {
+        "q": "Format apa yang didukung Saveik?",
+        "a": "Video MP4 (HD), audio MP3, serta gambar JPG/PNG dari TikTok Photo Mode."
+      },
+      {
+        "q": "Apakah saya perlu menginstal sesuatu?",
+        "a": "Tidak. Bekerja di browser Anda di iPhone, Android, Windows, Mac — tanpa aplikasi."
+      },
+      {
+        "q": "Bisakah saya mengunduh dari akun pribadi?",
+        "a": "Tidak. Saveik menghormati privasi — hanya video TikTok publik yang dapat diakses."
+      },
+      {
+        "q": "Di mana file disimpan?",
+        "a": "Folder Unduhan bawaan perangkat Anda. Di iPhone, gunakan Simpan ke File."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2025 Saveik. Hak cipta dilindungi.",
+    "links": {
+      "faq": "FAQ",
+      "privacy": "Kebijakan Privasi",
+      "terms": "Ketentuan Layanan",
+      "feedback": "Umpan Balik",
+      "help": "Pusat Bantuan"
+    }
+  },
+  "language": "Bahasa",
+  "ui": {
+    "privacyFirst": "Privasi Utama",
+    "noRegistration": "Tanpa Registrasi",
+    "allDevices": "Semua Perangkat",
+    "discover": "Jelajahi",
+    "processing": "Memproses",
+    "processingVideo": "Memproses video Anda...",
+    "photoMode": "Mode Foto",
+    "photos": "Foto",
+    "downloadVerb": "Unduh",
+    "downloadAnother": "Unduh Video Lain",
+    "builtDifferent": "Dibangun Beda",
+    "builtDifferentSub": "Dibuat khusus untuk satu hal — mengunduh TikTok terbersih, cepat.",
+    "threeSteps": "Tiga Langkah.",
+    "thatsIt": "Selesai.",
+    "noComplexity": "Tanpa kerumitan. Tanpa belajar. Cukup tempel dan unduh.",
+    "everyScreen": "Semua Layar.",
+    "sameExperience": "Pengalaman Sama.",
+    "iphoneAndroid": "iPhone & Android",
+    "downloadMobile": "Unduh di ponsel",
+    "windowsMacLinux": "Windows, Mac & Linux",
+    "downloadDesktop": "Unduh di desktop",
+    "freeForever": "Gratis Selamanya",
+    "downloadsToday": "Unduhan Hari Ini",
+    "languages": "Bahasa",
+    "youAsk": "Kamu Tanya.",
+    "weAnswer": "Kami Jawab.",
+    "readyToDownload": "Siap Mengunduh?",
+    "ctaSubtitle": "Tempel tautan TikTok apa pun dan dapatkan video HD bersih dalam hitungan detik. Tanpa syarat.",
+    "startDownloading": "Mulai Mengunduh Sekarang",
+    "footerPitch": "Pengunduh TikTok tercepat dan terbersih di web. Tanpa watermark. Tanpa batas. Tanpa omong kosong.",
+    "legal": "Hukum",
+    "support": "Dukungan",
+    "terms": "Ketentuan",
+    "privacy": "Privasi",
+    "disclaimer": "Saveik independen. Tidak berafiliasi dengan TikTok, Douyin, atau ByteDance.",
+    "forPersonalUse": "Untuk penggunaan pribadi.",
+    "stepMobile1": "Buka aplikasi TikTok, cari videonya",
+    "stepMobile2": "Ketuk Bagikan → Salin Tautan",
+    "stepMobile3": "Buka browser, buka Saveik",
+    "stepMobile4": "Tempel tautan, ketuk Unduh",
+    "stepMobile5": "Simpan ke Foto atau aplikasi File",
+    "stepDesktop1": "Buka tiktok.com, cari videonya",
+    "stepDesktop2": "Salin URL dari bilah alamat",
+    "stepDesktop3": "Tempel ke Saveik di atas",
+    "stepDesktop4": "Klik Unduh, pilih MP4 atau MP3",
+    "stepDesktop5": "File tersimpan ke folder Unduhan"
+  }
+}

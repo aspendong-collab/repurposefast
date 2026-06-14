@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Saveik — Mag-download ng TikTok Video na Walang Watermark | Libreng HD TikTok Downloader | Saveik",
+    "description": "Ang Saveik ay isang libreng TikTok video downloader. Mag-download ng TikTok video na walang watermark sa HD quality. I-save bilang MP4 o MP3. Walang kailangang i-install na app, walang rehistrasyon. Gumagana sa lahat ng device.",
+    "keywords": "TikTok downloader,download TikTok video,TikTok walang watermark,TikTok video downloader,saveik,download TikTok na walang watermark,TikTok to MP4,TikTok to MP3,i-save ang TikTok video,libreng TikTok downloader,TikTok video saver,online TikTok downloader,download TikTok HD,TikTok MP4 download,TikTok MP3 converter,TikTok photo download,alisin ang TikTok watermark,download TikTok video libre,TikTok download na walang app,TikTok download para sa iPhone,TikTok download para sa Android,TikTok download para sa PC"
+  },
+  "hero": {
+    "badge": "Walang Watermark • HD Quality • 100% Libre",
+    "title": "Mag-download ng TikTok Video",
+    "titleHighlight": "Walang Watermark",
+    "subtitle": "I-paste ang anumang TikTok link sa ibaba at mag-download ng video sa HD, walang watermark, sa ilang segundo. Hindi kailangan ng sign-up.",
+    "placeholder": "I-paste ang TikTok link dito...",
+    "cta": "I-download",
+    "trust": "Ginagamit ng milyun-milyon sa buong mundo • Walang kailangang rehistrasyon"
+  },
+  "download": {
+    "title": "Handa na ang Iyong Download",
+    "mp4": "I-download ang MP4",
+    "mp3": "I-download ang MP3",
+    "hd": "HD",
+    "copyLink": "Kopyahin ang Link",
+    "pasteAgain": "Mag-paste ng ibang link",
+    "loading": "Kinukuha ang video...",
+    "error": "Hindi ma-download. Pakisuri ang iyong link at subukan muli.",
+    "noVideo": "Walang nakitang video sa URL na ito."
+  },
+  "features": {
+    "title": "Bakit Piliin ang Saveik?",
+    "subtitle": "Ang pinakamabilis at pinakasimpleng TikTok downloader sa web.",
+    "items": [
+      {
+        "title": "Walang Watermark",
+        "desc": "Malinis, walang watermark na video na handang gamitin saanman."
+      },
+      {
+        "title": "HD Quality",
+        "desc": "Mag-download ng TikTok video sa malinaw na 1080p HD resolution."
+      },
+      {
+        "title": "MP3 Audio",
+        "desc": "Kunin ang audio mula sa anumang TikTok video bilang mataas na kalidad na MP3."
+      },
+      {
+        "title": "Lahat ng Device",
+        "desc": "Gumagana sa iPhone, Android, Windows, at Mac — walang kailangang app."
+      },
+      {
+        "title": "Instant Download",
+        "desc": "Walang pila, walang paghihintay. Kunin ang iyong video sa ilang segundo."
+      },
+      {
+        "title": "100% Libre",
+        "desc": "Walang nakatagong bayad, walang subscription. Walang limitasyong download magpakailanman."
+      }
+    ]
+  },
+  "stats": {
+    "videos": "Mga Video na Na-download",
+    "users": "Masasayang User",
+    "countries": "Mga Bansa"
+  },
+  "howTo": {
+    "title": "Paano Mag-download",
+    "subtitle": "Tatlong simpleng hakbang para i-save ang anumang TikTok video.",
+    "steps": [
+      {
+        "title": "Kopyahin ang Link",
+        "desc": "Buksan ang TikTok, hanapin ang video na gusto mo, i-tap ang Share → Copy Link."
+      },
+      {
+        "title": "I-paste at I-download",
+        "desc": "I-paste ang link sa itaas at i-click ang Download. Pinoproseso namin ito agad."
+      },
+      {
+        "title": "I-save sa Device",
+        "desc": "I-click ang Download MP4 para i-save ang video sa iyong device."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Mga Madalas Itanong",
+    "subtitle": "Lahat ng kailangan mong malaman tungkol sa Saveik.",
+    "questions": [
+      {
+        "q": "Libre bang gamitin ang Saveik?",
+        "a": "Oo. Ang Saveik ay ganap na libre na walang rehistrasyon o subscription. Walang limitasyong download."
+      },
+      {
+        "q": "Maaari ba akong mag-download ng TikTok video na walang watermark?",
+        "a": "Talagang. Awtomatikong inaalis ng Saveik ang TikTok watermark — malinis na video na handa para sa anumang platform."
+      },
+      {
+        "q": "Anong mga format ang sinusuportahan ng Saveik?",
+        "a": "MP4 video (HD), MP3 audio, at JPG/PNG na mga imahe mula sa TikTok Photo Mode."
+      },
+      {
+        "q": "Kailangan ko bang mag-install ng kahit ano?",
+        "a": "Hindi. Gumagana ito sa iyong browser sa iPhone, Android, Windows, Mac — walang kailangang app."
+      },
+      {
+        "q": "Maaari ba akong mag-download mula sa mga pribadong account?",
+        "a": "Hindi. Nirerespeto ng Saveik ang privacy — tanging mga pampublikong TikTok video ang maa-access."
+      },
+      {
+        "q": "Saan nai-save ang mga file?",
+        "a": "Sa default na Downloads folder ng iyong device. Sa iPhone, gamitin ang Save to Files."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2025 Saveik. Lahat ng karapatan ay nakalaan.",
+    "links": {
+      "faq": "FAQ",
+      "privacy": "Patakaran sa Privacy",
+      "terms": "Mga Tuntunin ng Serbisyo",
+      "feedback": "Feedback",
+      "help": "Sentro ng Tulong"
+    }
+  },
+  "language": "Wika",
+  "ui": {
+    "privacyFirst": "Una ang Privacy",
+    "noRegistration": "Walang Rehistrasyon",
+    "allDevices": "Lahat ng Device",
+    "discover": "Tuklasin",
+    "processing": "Pinoproseso",
+    "processingVideo": "Pinoproseso ang iyong video...",
+    "photoMode": "Photo Mode",
+    "photos": "Mga Larawan",
+    "downloadVerb": "I-download",
+    "downloadAnother": "Mag-download ng Ibang Video",
+    "builtDifferent": "Ibang Klase",
+    "builtDifferentSub": "Ginawa para sa isang bagay — makuha ang pinakamalinis na TikTok download, mabilis.",
+    "threeSteps": "Tatlong Hakbang.",
+    "thatsIt": "Yun Lang.",
+    "noComplexity": "Walang komplikasyon. Walang learning curve. I-paste lang at go.",
+    "everyScreen": "Bawat Screen.",
+    "sameExperience": "Parehong Karanasan.",
+    "iphoneAndroid": "iPhone at Android",
+    "downloadMobile": "Mag-download sa mobile",
+    "windowsMacLinux": "Windows, Mac at Linux",
+    "downloadDesktop": "Mag-download sa desktop",
+    "freeForever": "Libre Magpakailanman",
+    "downloadsToday": "Mga Download Ngayon",
+    "languages": "Mga Wika",
+    "youAsk": "Ikaw ang Magtanong.",
+    "weAnswer": "Kami ang Sasagot.",
+    "readyToDownload": "Handa nang Mag-download?",
+    "ctaSubtitle": "I-paste ang anumang TikTok link at kumuha ng malinis, HD video sa ilang segundo. Walang catch.",
+    "startDownloading": "Simulan ang Pag-download Ngayon",
+    "footerPitch": "Ang pinakamabilis at pinakamalinis na TikTok downloader sa web. Walang watermark. Walang limitasyon. Walang kalokohan.",
+    "legal": "Legal",
+    "support": "Suporta",
+    "terms": "Mga Tuntunin",
+    "privacy": "Privacy",
+    "disclaimer": "Ang Saveik ay independiyente. Hindi kaakibat ng TikTok, Douyin, o ByteDance.",
+    "forPersonalUse": "Para sa personal na gamit.",
+    "stepMobile1": "Buksan ang TikTok app, hanapin ang video",
+    "stepMobile2": "I-tap ang Share → Copy Link",
+    "stepMobile3": "Buksan ang browser, pumunta sa Saveik",
+    "stepMobile4": "I-paste ang link, i-tap ang Download",
+    "stepMobile5": "I-save sa Photos o Files app",
+    "stepDesktop1": "Pumunta sa tiktok.com, hanapin ang video",
+    "stepDesktop2": "Kopyahin ang URL mula sa address bar",
+    "stepDesktop3": "I-paste sa Saveik sa itaas",
+    "stepDesktop4": "I-click ang Download, piliin ang MP4 o MP3",
+    "stepDesktop5": "Nai-save ang file sa Downloads folder"
+  }
+}

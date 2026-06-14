@@ -2,10 +2,5 @@ name = "saveik-tiktok"
 main = "worker-tiktok.js"
 compatibility_date = "2024-12-01"
 
-# Routes — bind to api.saveik.com in Cloudflare Dashboard
-routes = [
-  { pattern = "api.saveik.com/*", zone_name = "saveik.com" }
-]
-
-# Free plan limits: 100k req/day, 10ms CPU/req
-# This worker is a lightweight proxy — fits in free tier
+[vars]
+TIKTOK_API_HOST = "tiktok-video-downloader-api.p.rapidapi.com"

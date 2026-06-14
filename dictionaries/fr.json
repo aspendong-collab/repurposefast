@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Saveik — Téléchargez des vidéos TikTok sans filigrane | Téléchargeur HD gratuit pour TikTok | Saveik",
+    "description": "Saveik est un téléchargeur gratuit de vidéos TikTok. Téléchargez des vidéos TikTok sans filigrane en qualité HD. Enregistrez en MP4 ou MP3. Aucune installation d'application, aucune inscription requise. Fonctionne sur tous les appareils.",
+    "keywords": "téléchargeur TikTok,télécharger vidéo TikTok,TikTok sans filigrane,téléchargeur vidéo TikTok,saveik,télécharger TikTok sans filigrane,TikTok en MP4,TikTok en MP3,sauvegarder vidéo TikTok,téléchargeur TikTok gratuit,sauvegarde vidéo TikTok,téléchargeur TikTok en ligne,télécharger TikTok HD,téléchargement TikTok MP4,convertisseur TikTok MP3,téléchargement photo TikTok,supprimer filigrane TikTok,télécharger vidéos TikTok gratuitement,TikTok sans application,TikTok pour iPhone,TikTok pour Android,TikTok pour PC"
+  },
+  "hero": {
+    "badge": "Sans filigrane • Qualité HD • 100 % gratuit",
+    "title": "Téléchargez des vidéos TikTok",
+    "titleHighlight": "Sans filigrane",
+    "subtitle": "Collez n'importe quel lien TikTok ci-dessous et téléchargez des vidéos en HD, sans filigrane, en quelques secondes. Aucune inscription nécessaire.",
+    "placeholder": "Collez le lien TikTok ici...",
+    "cta": "Télécharger",
+    "trust": "Utilisé par des millions de personnes dans le monde • Aucune inscription requise"
+  },
+  "download": {
+    "title": "Votre téléchargement est prêt",
+    "mp4": "Télécharger MP4",
+    "mp3": "Télécharger MP3",
+    "hd": "HD",
+    "copyLink": "Copier le lien",
+    "pasteAgain": "Coller un autre lien",
+    "loading": "Récupération de la vidéo...",
+    "error": "Impossible de télécharger. Vérifiez votre lien et réessayez.",
+    "noVideo": "Aucune vidéo trouvée à cette URL."
+  },
+  "features": {
+    "title": "Pourquoi choisir Saveik ?",
+    "subtitle": "Le téléchargeur TikTok le plus rapide et le plus simple du Web.",
+    "items": [
+      {
+        "title": "Sans filigrane",
+        "desc": "Vidéos propres, sans filigrane, prêtes à être réutilisées n'importe où."
+      },
+      {
+        "title": "Qualité HD",
+        "desc": "Téléchargez des vidéos TikTok en résolution HD 1080p nette."
+      },
+      {
+        "title": "Audio MP3",
+        "desc": "Extrayez l'audio de n'importe quelle vidéo TikTok en MP3 de haute qualité."
+      },
+      {
+        "title": "Tous les appareils",
+        "desc": "Fonctionne sur iPhone, Android, Windows et Mac — aucune application nécessaire."
+      },
+      {
+        "title": "Téléchargement instantané",
+        "desc": "Pas de files d'attente, pas d'attente. Obtenez votre vidéo en quelques secondes."
+      },
+      {
+        "title": "100 % gratuit",
+        "desc": "Pas de frais cachés, pas d'abonnement. Téléchargements illimités pour toujours."
+      }
+    ]
+  },
+  "stats": {
+    "videos": "Vidéos téléchargées",
+    "users": "Utilisateurs satisfaits",
+    "countries": "Pays"
+  },
+  "howTo": {
+    "title": "Comment télécharger",
+    "subtitle": "Trois étapes simples pour enregistrer n'importe quelle vidéo TikTok.",
+    "steps": [
+      {
+        "title": "Copier le lien",
+        "desc": "Ouvrez TikTok, trouvez une vidéo que vous aimez, appuyez sur Partager → Copier le lien."
+      },
+      {
+        "title": "Coller et télécharger",
+        "desc": "Collez le lien ci-dessus et cliquez sur Télécharger. Nous le traitons instantanément."
+      },
+      {
+        "title": "Enregistrer sur l'appareil",
+        "desc": "Cliquez sur Télécharger MP4 pour enregistrer la vidéo sur votre appareil."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Tout ce que vous devez savoir sur Saveik.",
+    "questions": [
+      {
+        "q": "Saveik est-il gratuit ?",
+        "a": "Oui. Saveik est complètement gratuit, sans inscription ni abonnement. Téléchargements illimités."
+      },
+      {
+        "q": "Puis-je télécharger des vidéos TikTok sans filigrane ?",
+        "a": "Absolument. Saveik supprime automatiquement le filigrane TikTok — vidéo propre prête pour n'importe quelle plateforme."
+      },
+      {
+        "q": "Quels formats Saveik prend-il en charge ?",
+        "a": "Vidéo MP4 (HD), audio MP3, ainsi que des images JPG/PNG à partir du mode Photo TikTok."
+      },
+      {
+        "q": "Dois-je installer quelque chose ?",
+        "a": "Non. Fonctionne dans votre navigateur sur iPhone, Android, Windows, Mac — aucune application nécessaire."
+      },
+      {
+        "q": "Puis-je télécharger depuis des comptes privés ?",
+        "a": "Non. Saveik respecte la vie privée — seules les vidéos TikTok publiques sont accessibles."
+      },
+      {
+        "q": "Où les fichiers sont-ils enregistrés ?",
+        "a": "Dans le dossier Téléchargements par défaut de votre appareil. Sur iPhone, utilisez Enregistrer dans Fichiers."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2025 Saveik. Tous droits réservés.",
+    "links": {
+      "faq": "FAQ",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation",
+      "feedback": "Commentaires",
+      "help": "Centre d'aide"
+    }
+  },
+  "language": "Langue",
+  "ui": {
+    "privacyFirst": "Confidentialité d'abord",
+    "noRegistration": "Aucune inscription",
+    "allDevices": "Tous les appareils",
+    "discover": "Découvrir",
+    "processing": "Traitement",
+    "processingVideo": "Traitement de votre vidéo...",
+    "photoMode": "Mode Photo",
+    "photos": "Photos",
+    "downloadVerb": "Télécharger",
+    "downloadAnother": "Télécharger une autre vidéo",
+    "builtDifferent": "Conçu différemment",
+    "builtDifferentSub": "Conçu spécialement pour une seule chose : vous obtenir les téléchargements TikTok les plus propres, rapidement.",
+    "threeSteps": "Trois étapes.",
+    "thatsIt": "C'est tout.",
+    "noComplexity": "Pas de complexité. Pas de courbe d'apprentissage. Collez et c'est parti.",
+    "everyScreen": "Chaque écran.",
+    "sameExperience": "Même expérience.",
+    "iphoneAndroid": "iPhone et Android",
+    "downloadMobile": "Télécharger sur mobile",
+    "windowsMacLinux": "Windows, Mac et Linux",
+    "downloadDesktop": "Télécharger sur ordinateur",
+    "freeForever": "Gratuit pour toujours",
+    "downloadsToday": "Téléchargements aujourd'hui",
+    "languages": "Langues",
+    "youAsk": "Vous demandez.",
+    "weAnswer": "Nous répondons.",
+    "readyToDownload": "Prêt à télécharger ?",
+    "ctaSubtitle": "Collez n'importe quel lien TikTok et obtenez une vidéo propre en HD en quelques secondes. Sans piège.",
+    "startDownloading": "Commencez à télécharger maintenant",
+    "footerPitch": "Le téléchargeur TikTok le plus rapide et le plus propre du Web. Sans filigrane. Sans limites. Sans blague.",
+    "legal": "Mentions légales",
+    "support": "Assistance",
+    "terms": "Conditions",
+    "privacy": "Confidentialité",
+    "disclaimer": "Saveik est indépendant. Non affilié à TikTok, Douyin ou ByteDance.",
+    "forPersonalUse": "Pour usage personnel.",
+    "stepMobile1": "Ouvrez l'application TikTok, trouvez la vidéo",
+    "stepMobile2": "Appuyez sur Partager → Copier le lien",
+    "stepMobile3": "Ouvrez le navigateur, allez sur Saveik",
+    "stepMobile4": "Collez le lien, appuyez sur Télécharger",
+    "stepMobile5": "Enregistrez dans Photos ou Fichiers",
+    "stepDesktop1": "Allez sur tiktok.com, trouvez la vidéo",
+    "stepDesktop2": "Copiez l'URL depuis la barre d'adresse",
+    "stepDesktop3": "Collez dans Saveik ci-dessus",
+    "stepDesktop4": "Cliquez sur Télécharger, choisissez MP4 ou MP3",
+    "stepDesktop5": "Le fichier est enregistré dans le dossier Téléchargements"
+  }
+}

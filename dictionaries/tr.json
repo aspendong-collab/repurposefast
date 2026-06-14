@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Saveik — TikTok Videolarını Filigransız İndirin | Ücretsiz HD TikTok İndirici | Saveik",
+    "description": "Saveik, ücretsiz bir TikTok video indiricidir. TikTok videolarını filigransız, HD kalitesinde indirin. MP4 veya MP3 olarak kaydedin. Uygulama kurulumu veya kayıt gerektirmez. Tüm cihazlarda çalışır.",
+    "keywords": "TikTok indirici,TikTok video indir,TikTok filigransız,TikTok video indirici,saveik,TikTok filigransız indir,TikTok MP4'e çevir,TikTok MP3'e çevir,TikTok video kaydet,ücretsiz TikTok indirici,TikTok video kaydedici,çevrimiçi TikTok indirici,TikTok HD indir,TikTok MP4 indir,TikTok MP3 dönüştürücü,TikTok fotoğraf indir,TikTok filigran kaldır,TikTok videolarını ücretsiz indir,TikTok uygulamasız indir,iPhone için TikTok indir,Android için TikTok indir,PC için TikTok indir"
+  },
+  "hero": {
+    "badge": "Filigransız • HD Kalite • %100 Ücretsiz",
+    "title": "TikTok Videolarını İndirin",
+    "titleHighlight": "Filigransız",
+    "subtitle": "Aşağıya herhangi bir TikTok bağlantısını yapıştırın ve videoları HD kalitede, filigransız, saniyeler içinde indirin. Kayıt gerekmez.",
+    "placeholder": "TikTok bağlantısını buraya yapıştırın...",
+    "cta": "İndir",
+    "trust": "Dünya çapında milyonlarca kişi tarafından kullanılıyor • Kayıt gerekmez"
+  },
+  "download": {
+    "title": "İndirmeniz Hazır",
+    "mp4": "MP4 İndir",
+    "mp3": "MP3 İndir",
+    "hd": "HD",
+    "copyLink": "Bağlantıyı Kopyala",
+    "pasteAgain": "Başka bir bağlantı yapıştır",
+    "loading": "Video getiriliyor...",
+    "error": "İndirilemiyor. Lütfen bağlantınızı kontrol edip tekrar deneyin.",
+    "noVideo": "Bu URL'de video bulunamadı."
+  },
+  "features": {
+    "title": "Neden Saveik?",
+    "subtitle": "Web'deki en hızlı, en basit TikTok indirici.",
+    "items": [
+      {
+        "title": "Filigransız",
+        "desc": "Her yerde yeniden kullanıma hazır, temiz ve filigransız videolar."
+      },
+      {
+        "title": "HD Kalite",
+        "desc": "TikTok videolarını net 1080p HD çözünürlükte indirin."
+      },
+      {
+        "title": "MP3 Ses",
+        "desc": "Herhangi bir TikTok videosundan yüksek kaliteli MP3 olarak ses çıkarın."
+      },
+      {
+        "title": "Tüm Cihazlar",
+        "desc": "iPhone, Android, Windows ve Mac'te çalışır — uygulama gerekmez."
+      },
+      {
+        "title": "Anında İndirme",
+        "desc": "Sıra yok, bekleme yok. Videonuzu saniyeler içinde alın."
+      },
+      {
+        "title": "%100 Ücretsiz",
+        "desc": "Gizli ücret yok, abonelik yok. Sonsuza kadar sınırsız indirme."
+      }
+    ]
+  },
+  "stats": {
+    "videos": "İndirilen Video",
+    "users": "Mutlu Kullanıcı",
+    "countries": "Ülke"
+  },
+  "howTo": {
+    "title": "Nasıl İndirilir",
+    "subtitle": "Herhangi bir TikTok videosunu kaydetmek için üç basit adım.",
+    "steps": [
+      {
+        "title": "Bağlantıyı Kopyala",
+        "desc": "TikTok'u açın, sevdiğiniz bir videoyu bulun, Paylaş → Bağlantıyı Kopyala'ya dokunun."
+      },
+      {
+        "title": "Yapıştır ve İndir",
+        "desc": "Yukarıdaki bağlantıyı yapıştırın ve İndir'e tıklayın. Anında işleme alırız."
+      },
+      {
+        "title": "Cihaza Kaydet",
+        "desc": "Videoyu cihazınıza kaydetmek için MP4 İndir'e tıklayın."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Sıkça Sorulan Sorular",
+    "subtitle": "Saveik hakkında bilmeniz gereken her şey.",
+    "questions": [
+      {
+        "q": "Saveik ücretsiz mi?",
+        "a": "Evet. Saveik tamamen ücretsizdir, kayıt veya abonelik gerektirmez. Sınırsız indirme."
+      },
+      {
+        "q": "TikTok videolarını filigransız indirebilir miyim?",
+        "a": "Kesinlikle. Saveik, TikTok filigranını otomatik olarak kaldırır — her platform için temiz video."
+      },
+      {
+        "q": "Saveik hangi formatları destekliyor?",
+        "a": "MP4 video (HD), MP3 ses ve TikTok Fotoğraf Modu'ndan JPG/PNG görseller."
+      },
+      {
+        "q": "Bir şey yüklemem gerekiyor mu?",
+        "a": "Hayır. iPhone, Android, Windows, Mac'te tarayıcınızda çalışır — uygulama gerekmez."
+      },
+      {
+        "q": "Özel hesaplardan indirebilir miyim?",
+        "a": "Hayır. Saveik gizliliğe saygı duyar — yalnızca herkese açık TikTok videolarına erişilebilir."
+      },
+      {
+        "q": "Dosyalar nereye kaydediliyor?",
+        "a": "Cihazınızın varsayılan İndirilenler klasörüne. iPhone'da, Dosyalar'a Kaydet'i kullanın."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2025 Saveik. Tüm hakları saklıdır.",
+    "links": {
+      "faq": "SSS",
+      "privacy": "Gizlilik Politikası",
+      "terms": "Kullanım Koşulları",
+      "feedback": "Geri Bildirim",
+      "help": "Yardım Merkezi"
+    }
+  },
+  "language": "Dil",
+  "ui": {
+    "privacyFirst": "Önce Gizlilik",
+    "noRegistration": "Kayıt Gerekmez",
+    "allDevices": "Tüm Cihazlar",
+    "discover": "Keşfet",
+    "processing": "İşleniyor",
+    "processingVideo": "Videonuz işleniyor...",
+    "photoMode": "Fotoğraf Modu",
+    "photos": "Fotoğraflar",
+    "downloadVerb": "İndir",
+    "downloadAnother": "Başka Bir Video İndir",
+    "builtDifferent": "Farklı Tasarlandı",
+    "builtDifferentSub": "Tek bir amaç için özel olarak tasarlandı — size en temiz TikTok indirmelerini hızlıca sunmak.",
+    "threeSteps": "Üç Adım.",
+    "thatsIt": "Bu Kadar.",
+    "noComplexity": "Karmaşıklık yok. Öğrenme eğrisi yok. Sadece yapıştır ve git.",
+    "everyScreen": "Her Ekran.",
+    "sameExperience": "Aynı Deneyim.",
+    "iphoneAndroid": "iPhone ve Android",
+    "downloadMobile": "Mobilde indir",
+    "windowsMacLinux": "Windows, Mac ve Linux",
+    "downloadDesktop": "Masaüstünde indir",
+    "freeForever": "Sonsuza Kadar Ücretsiz",
+    "downloadsToday": "Bugünkü İndirme",
+    "languages": "Diller",
+    "youAsk": "Siz Sorun.",
+    "weAnswer": "Biz Cevaplayalım.",
+    "readyToDownload": "İndirmeye Hazır mısınız?",
+    "ctaSubtitle": "Herhangi bir TikTok bağlantısını yapıştırın ve saniyeler içinde temiz, HD video alın. Hiçbir hile yok.",
+    "startDownloading": "Şimdi İndirmeye Başlayın",
+    "footerPitch": "Web'deki en hızlı, en temiz TikTok indirici. Filigran yok. Sınır yok. Saçmalık yok.",
+    "legal": "Yasal",
+    "support": "Destek",
+    "terms": "Koşullar",
+    "privacy": "Gizlilik",
+    "disclaimer": "Saveik bağımsızdır. TikTok, Douyin veya ByteDance ile bağlantılı değildir.",
+    "forPersonalUse": "Kişisel kullanım içindir.",
+    "stepMobile1": "TikTok uygulamasını açın, videoyu bulun",
+    "stepMobile2": "Paylaş → Bağlantıyı Kopyala'ya dokunun",
+    "stepMobile3": "Tarayıcıyı açın, Saveik'e gidin",
+    "stepMobile4": "Bağlantıyı yapıştırın, İndir'e dokunun",
+    "stepMobile5": "Fotoğraflar veya Dosyalar uygulamasına kaydedin",
+    "stepDesktop1": "tiktok.com'a gidin, videoyu bulun",
+    "stepDesktop2": "Adres çubuğundan URL'yi kopyalayın",
+    "stepDesktop3": "Yukarıdaki Saveik'e yapıştırın",
+    "stepDesktop4": "İndir'e tıklayın, MP4 veya MP3 seçin",
+    "stepDesktop5": "Dosya İndirilenler klasörüne kaydedilir"
+  }
+}
