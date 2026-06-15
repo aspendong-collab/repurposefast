@@ -9,6 +9,7 @@ import { type MetadataRoute } from "next"
 import { locales, defaultLocale } from "@/lib/i18n"
 import { getAllBlogPosts } from "@/lib/blog"
 import { localPages } from "@/lib/local-seo-data"
+import { cityPages } from "@/lib/city-data"
 
 const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.saveik.com")
   .replace(/。/g, ".").replace(/．/g, ".").replace(/：/g, ":").replace(/／/g, "/")
@@ -102,6 +103,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: freq,
       priority,
     })
+  }
+
+  // ── City-Level Landing Pages (programmatic SEO) ──
+  for (const [locale, cities] of Object.entries(cityPages)) {
+    for (const city of cities) {
+      entries.push({
+        url: locale === defaultLocale
+          ? `${siteUrl}/city/${city.slug}`
+          : `${siteUrl}/${locale}/city/${city.slug}`,
+        lastModified: today,
+        changeFrequency: "monthly" as const,
+        priority: 0.6,
+      })
+    }
   }
 
   return entries
