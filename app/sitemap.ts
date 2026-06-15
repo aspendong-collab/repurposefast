@@ -10,6 +10,7 @@ import { locales, defaultLocale } from "@/lib/i18n"
 import { getAllBlogPosts } from "@/lib/blog"
 import { localPages } from "@/lib/local-seo-data"
 import { cityPages } from "@/lib/city-data"
+import { hashtagPages } from "@/lib/hashtag-data"
 
 const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.saveik.com")
   .replace(/。/g, ".").replace(/．/g, ".").replace(/：/g, ":").replace(/／/g, "/")
@@ -103,6 +104,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: freq,
       priority,
     })
+  }
+
+  // ── Hashtag Landing Pages (programmatic SEO) ──
+  const priorityLocales = ["en", "id", "vi", "th", "es", "pt-br", "zh", "ja", "ko", "ar"]
+  for (const locale of priorityLocales) {
+    for (const tag of hashtagPages) {
+      entries.push({
+        url: locale === defaultLocale
+          ? `${siteUrl}/hashtag/${tag.slug}`
+          : `${siteUrl}/${locale}/hashtag/${tag.slug}`,
+        lastModified: today,
+        changeFrequency: "weekly" as const,
+        priority: 0.6,
+      })
+    }
   }
 
   // ── City-Level Landing Pages (programmatic SEO) ──

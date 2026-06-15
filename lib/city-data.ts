@@ -91,4 +91,59 @@ export const cityPages: Record<string, CityPage[]> = {
     { slug: "seoul", cityName: "Seoul", localName: "서울", region: "수도권", population: "9.7M", headline: "서울에서 TikTok 동영상 다운로드 — 무료, 워터마크 없음, HD", subheadline: "서울에서 가장 빠른 TikTok 다운로더. 앱 불필요.", localKeywords: ["TikTok 다운로드 서울", "틱톡 동영상 저장 서울"] },
     { slug: "busan", cityName: "Busan", localName: "부산", region: "경상권", population: "3.4M", headline: "부산에서 TikTok 동영상 다운로드 — 무료, 워터마크 없음, HD", subheadline: "부산 TikTok 다운로더. 무료, 고화질.", localKeywords: ["TikTok 다운로드 부산"] },
   ],
+
+  // ── Remaining 10 locales (city data fills coverage gap) ──
+
+  fr: [
+    { slug: "paris", cityName: "Paris", localName: "Paris", region: "Île-de-France", population: "2.1M", headline: "Télécharger des Vidéos TikTok à Paris — Gratuit, Sans Filigrane, HD", subheadline: "Le meilleur téléchargeur TikTok à Paris. Sans application, sans inscription.", localKeywords: ["télécharger TikTok Paris", "télécharger vidéo TikTok Paris"] },
+    { slug: "marseille", cityName: "Marseille", localName: "Marseille", region: "Provence", population: "870K", headline: "Télécharger des Vidéos TikTok à Marseille — Gratuit HD", subheadline: "Téléchargeur TikTok à Marseille. Gratuit, rapide, sans filigrane.", localKeywords: ["télécharger TikTok Marseille"] },
+  ],
+
+  de: [
+    { slug: "berlin", cityName: "Berlin", localName: "Berlin", region: "Berlin", population: "3.6M", headline: "TikTok Videos in Berlin herunterladen — Kostenlos, Ohne Wasserzeichen, HD", subheadline: "Der beste TikTok Downloader in Berlin. Keine App nötig.", localKeywords: ["TikTok Downloader Berlin", "TikTok Videos herunterladen Berlin"] },
+    { slug: "munich", cityName: "Munich", localName: "München", region: "Bayern", population: "1.5M", headline: "TikTok Videos in München herunterladen — Kostenlos HD", subheadline: "TikTok Downloader München. Kostenlos, ohne Wasserzeichen.", localKeywords: ["TikTok Downloader München"] },
+    { slug: "hamburg", cityName: "Hamburg", localName: "Hamburg", region: "Hamburg", population: "1.8M", headline: "TikTok Videos in Hamburg herunterladen — Kostenlos HD", subheadline: "TikTok Downloader Hamburg. Gratis, HD Qualität.", localKeywords: ["TikTok Downloader Hamburg"] },
+  ],
+
+  ru: [
+    { slug: "moscow", cityName: "Moscow", localName: "Москва", region: "Центральный", population: "12.5M", headline: "Скачать Видео TikTok в Москве — Бесплатно, Без Водяного Знака, HD", subheadline: "Лучший загрузчик TikTok в Москве. Без приложения.", localKeywords: ["скачать TikTok Москва", "загрузчик TikTok Москва"] },
+    { slug: "saint-petersburg", cityName: "Saint Petersburg", localName: "Санкт-Петербург", region: "Северо-Западный", population: "5.4M", headline: "Скачать Видео TikTok в Санкт-Петербурге — Бесплатно HD", subheadline: "Загрузчик TikTok в СПб. Бесплатно, без регистрации.", localKeywords: ["скачать TikTok Санкт-Петербург", "загрузчик TikTok СПб"] },
+  ],
+
+  tr: [
+    { slug: "istanbul", cityName: "Istanbul", localName: "İstanbul", region: "Marmara", population: "15.5M", headline: "İstanbul'da TikTok Videolarını İndir — Ücretsiz, Filigransız, HD", subheadline: "İstanbul'un en iyi TikTok indiricisi. Uygulama gerekmez.", localKeywords: ["TikTok indirici İstanbul", "TikTok video indir İstanbul"] },
+    { slug: "ankara", cityName: "Ankara", localName: "Ankara", region: "İç Anadolu", population: "5.6M", headline: "Ankara'da TikTok Videolarını İndir — Ücretsiz HD", subheadline: "Ankara TikTok indirici. Ücretsiz, kayıt gerekmez.", localKeywords: ["TikTok indirici Ankara"] },
+    { slug: "izmir", cityName: "Izmir", localName: "İzmir", region: "Ege", population: "4.4M", headline: "İzmir'de TikTok Videolarını İndir — Ücretsiz HD", subheadline: "İzmir TikTok indirici. Filigransız, ücretsiz.", localKeywords: ["TikTok indirici İzmir"] },
+  ],
+
+  it: [
+    { slug: "rome", cityName: "Rome", localName: "Roma", region: "Lazio", population: "2.8M", headline: "Scaricare Video TikTok a Roma — Gratis, Senza Filigrana, HD", subheadline: "Il miglior downloader TikTok a Roma. Senza app, senza registrazione.", localKeywords: ["scaricare TikTok Roma", "download video TikTok Roma"] },
+    { slug: "milan", cityName: "Milan", localName: "Milano", region: "Lombardia", population: "1.4M", headline: "Scaricare Video TikTok a Milano — Gratis HD", subheadline: "Downloader TikTok Milano. Gratuito, senza filigrana.", localKeywords: ["scaricare TikTok Milano"] },
+  ],
+
+  pl: [
+    { slug: "warsaw", cityName: "Warsaw", localName: "Warszawa", region: "Mazowieckie", population: "1.8M", headline: "Pobieranie TikTok w Warszawie — Za Darmo, Bez Znaku Wodnego, HD", subheadline: "Najlepszy downloader TikTok w Warszawie. Bez aplikacji.", localKeywords: ["pobieranie TikTok Warszawa", "pobierz filmy TikTok Warszawa"] },
+    { slug: "krakow", cityName: "Krakow", localName: "Kraków", region: "Małopolskie", population: "780K", headline: "Pobieranie TikTok w Krakowie — Za Darmo HD", subheadline: "Pobierz TikTok w Krakowie. Bezpłatnie, bez znaku wodnego.", localKeywords: ["pobieranie TikTok Kraków"] },
+  ],
+
+  nl: [
+    { slug: "amsterdam", cityName: "Amsterdam", localName: "Amsterdam", region: "Noord-Holland", population: "920K", headline: "TikTok Video's Downloaden in Amsterdam — Gratis, Zonder Watermerk, HD", subheadline: "De beste TikTok downloader in Amsterdam. Geen app nodig.", localKeywords: ["TikTok downloaden Amsterdam", "TikTok video's gratis downloaden Amsterdam"] },
+    { slug: "rotterdam", cityName: "Rotterdam", localName: "Rotterdam", region: "Zuid-Holland", population: "650K", headline: "TikTok Video's Downloaden in Rotterdam — Gratis HD", subheadline: "TikTok downloader Rotterdam. Gratis, zonder watermerk.", localKeywords: ["TikTok downloaden Rotterdam"] },
+  ],
+
+  ms: [
+    { slug: "kuala-lumpur", cityName: "Kuala Lumpur", localName: "Kuala Lumpur", region: "Wilayah Persekutuan", population: "1.8M", headline: "Muat Turun Video TikTok di Kuala Lumpur — Percuma, Tanpa Watermark, HD", subheadline: "Pemuat turun TikTok terbaik di KL. Tanpa aplikasi.", localKeywords: ["muat turun TikTok KL", "download TikTok Kuala Lumpur"] },
+    { slug: "penang", cityName: "Penang", localName: "Pulau Pinang", region: "Pulau Pinang", population: "720K", headline: "Muat Turun Video TikTok di Penang — Percuma HD", subheadline: "Pemuat turun TikTok Penang. Percuma, mudah.", localKeywords: ["muat turun TikTok Penang"] },
+  ],
+
+  fil: [
+    { slug: "manila", cityName: "Manila", localName: "Maynila", region: "NCR", population: "1.8M", headline: "Mag-download ng TikTok Videos sa Manila — Libre, Walang Watermark, HD", subheadline: "Pinakamabilis na TikTok downloader sa Manila. Walang app.", localKeywords: ["TikTok downloader Manila", "mag-download ng TikTok Manila"] },
+    { slug: "cebu", cityName: "Cebu", localName: "Cebu", region: "Central Visayas", population: "960K", headline: "Mag-download ng TikTok Videos sa Cebu — Libre HD", subheadline: "TikTok downloader sa Cebu. Libre, walang watermark.", localKeywords: ["TikTok downloader Cebu"] },
+  ],
+
+  hi: [
+    { slug: "mumbai", cityName: "Mumbai", localName: "मुंबई", region: "Maharashtra", population: "20.7M", headline: "मुंबई में TikTok वीडियो डाउनलोड करें — मुफ़्त, बिना वॉटरमार्क, HD", subheadline: "मुंबई का सबसे तेज़ TikTok डाउनलोडर। बिना ऐप।", localKeywords: ["TikTok डाउनलोडर मुंबई", "TikTok वीडियो डाउनलोड मुंबई"] },
+    { slug: "delhi", cityName: "Delhi", localName: "दिल्ली", region: "Delhi NCR", population: "16.8M", headline: "दिल्ली में TikTok वीडियो डाउनलोड करें — मुफ़्त HD", subheadline: "दिल्ली TikTok डाउनलोडर। फ्री, बिना रजिस्ट्रेशन।", localKeywords: ["TikTok डाउनलोडर दिल्ली"] },
+    { slug: "bangalore", cityName: "Bangalore", localName: "बेंगलुरु", region: "Karnataka", population: "12.3M", headline: "बेंगलुरु में TikTok वीडियो डाउनलोड करें — मुफ़्त HD", subheadline: "बेंगलुरु TikTok डाउनलोडर। मुफ़्त, HD क्वालिटी।", localKeywords: ["TikTok डाउनलोडर बेंगलुरु"] },
+  ],
 }
