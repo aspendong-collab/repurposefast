@@ -2,6 +2,7 @@
 
 import type React from "react"
 import { useState, useEffect, useRef } from "react"
+import Image from "next/image"
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 import {
   ArrowDownToLine,
@@ -399,11 +400,13 @@ export default function SaveikDownloader() {
                     <div className="sm:w-48 sm:min-w-[12rem] flex-shrink-0 bg-muted/30 flex items-center justify-center h-48 sm:h-auto sm:min-h-0 relative overflow-hidden rounded-t-lg sm:rounded-l-lg sm:rounded-tr-none">
                       <Film className="h-12 w-12 text-muted-foreground/25" />
                       {currentResult.thumbnail && (
-                        <img
+                        <Image
                           src={currentResult.thumbnail}
-                          alt="Video thumbnail"
-                          referrerPolicy="no-referrer"
-                          className="absolute inset-0 w-full h-full object-cover"
+                          alt={currentResult.creator ? `TikTok video by ${currentResult.creator}` : "TikTok video thumbnail"}
+                          fill
+                          sizes="(max-width: 640px) 100vw, 192px"
+                          className="object-cover"
+                          unoptimized
                           onError={(e) => {
                             (e.currentTarget as HTMLImageElement).style.display = "none"
                           }}

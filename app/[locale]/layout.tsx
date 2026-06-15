@@ -49,13 +49,13 @@ export async function generateMetadata({
       title: dict.meta.title,
       description: dict.meta.description,
       siteName: "Saveik",
-      images: [{ url: "/logo.svg", width: 120, height: 120, alt: dict.meta.title }],
+      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: dict.meta.title }],
     },
     twitter: {
       card: "summary_large_image",
       title: dict.meta.title,
       description: dict.meta.description,
-      images: ["/logo.svg"],
+      images: ["/og-image.png"],
     },
     robots: process.env.VERCEL_ENV === "production" || !process.env.VERCEL
     ? {

@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { DefaultLocaleProvider } from "@/components/default-locale-provider"
@@ -49,6 +49,13 @@ const hreflangLanguages: Record<string, string> = Object.fromEntries(
   ])
 ) as Record<string, string>
 hreflangLanguages["x-default"] = siteConfig.url
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#7c3aed',
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
