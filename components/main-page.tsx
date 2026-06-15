@@ -26,6 +26,7 @@ import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Navbar } from "@/components/navbar"
+import { AdUnit } from "@/components/adsense"
 import { useToast } from "@/hooks/use-toast"
 import { useLocale } from "@/components/locale-provider"
 import { downloadWithProgress, generateFilename } from "@/modules/downloader/services/downloadClient"
@@ -365,6 +366,15 @@ export default function SaveikDownloader() {
             </motion.div>
           </motion.button>
         </section>
+
+        {/* Ad Placement 1: Between hero and content — horizontal banner */}
+        <div className="container mx-auto px-4">
+          <AdUnit
+            slot=""
+            format="horizontal"
+            className="my-6"
+          />
+        </div>
 
         {/* ===== LOADING STATE ===== */}
         <AnimatePresence>

@@ -15,6 +15,7 @@ import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import { Calendar, Clock, ArrowLeft, Zap, HelpCircle } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
+import { AdUnit } from "@/components/adsense"
 import { getBlogPost, getRelatedPosts, getBreadcrumbs, getAllBlogSlugs } from "@/lib/blog"
 import { getDictionary } from "@/lib/dictionaries"
 import { locales, defaultLocale, localeLabels, type Locale } from "@/lib/i18n"
@@ -130,7 +131,12 @@ export default async function BlogPostPage({
   const relatedPosts = getRelatedPosts(locale as Locale, slug)
   const breadcrumbs = getBreadcrumbs(locale as Locale, dict as any, post)
 
-  const contentHtml = renderMarkdown(post.content)
+  // Split content at midpoint for in-article ad placement
+  const blocks = post.content.split("\n\n").filter(b => b.trim())
+  const midPoint = Math.ceil(blocks.length / 2)
+  const contentFirstHalf = renderMarkdown(blocks.slice(0, midPoint).join("\n\n"))
+  const contentSecondHalf = renderMarkdown(blocks.slice(midPoint).join("\n\n"))
+
   const canonical =
     locale === defaultLocale
       ? `${siteUrl}/blog/${slug}`
@@ -228,7 +234,15 @@ export default async function BlogPostPage({
         {/* ===== Content ===== */}
         <div
           className="prose-custom"
-          dangerouslySetInnerHTML={{ __html: contentHtml }}
+          dangerouslySetInnerHTML={{ __html: contentFirstHalf }}
+        />
+
+        {/* In-article Ad */}
+        <AdUnit slot="" format="rectangle" className="my-8" />
+
+        <div
+          className="prose-custom"
+          dangerouslySetInnerHTML={{ __html: contentSecondHalf }}
         />
 
         {/* ===== FAQ Section (High GEO Citation Value) ===== */}

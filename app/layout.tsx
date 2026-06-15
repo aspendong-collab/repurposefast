@@ -1,5 +1,6 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
+import { AdSenseScript } from "@/components/adsense"
 import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { DefaultLocaleProvider } from "@/components/default-locale-provider"
@@ -156,6 +157,7 @@ export default function RootLayout({
           {...({ hreflang: "x-default" } as React.LinkHTMLAttributes<HTMLLinkElement>)}
           href={siteConfig.url}
         />
+        <AdSenseScript />
       </head>
       <body className="min-h-screen" suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
