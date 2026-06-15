@@ -63,23 +63,25 @@ export function middleware(request: NextRequest) {
   const detected = detectLocale(acceptLang)
   const targetLocale = hasLocalePrefix ? urlLocale : detected
 
-  // Root path: redirect non-English users
+  // Root path: redirect non-English users (307 — user language may change)
   if (isRoot) {
     if (detected === defaultLocale) return NextResponse.next()
     const newUrl = new URL(request.url)
     newUrl.pathname = `/${detected}`
-    return NextResponse.redirect(newUrl)
+    return NextResponse.redirect(newUrl, 307)
   }
 
-  // Non-root path without locale prefix (e.g., /blog, /terms):
-  // Redirect to en-prefixed path since en is default
+  // Non-root path without locale prefix (e.g., /blog, /about):
+  // Use INTERNAL REWRITE instead of redirect — keeps the URL clean for SEO.
+  // Google sees /blog (200 OK), contentcomes from /[defaultLocale]/blog.
+  // This breaks the redirect chain that was preventing indexing.
   if (!hasLocalePrefix) {
     const newUrl = new URL(request.url)
     newUrl.pathname = `/${defaultLocale}${pathname}`
-    return NextResponse.redirect(newUrl)
+    return NextResponse.rewrite(newUrl)
   }
 
-  // Has locale prefix but on en path — pass through
+  // Has locale prefix — pass through
   return NextResponse.next()
 }
 

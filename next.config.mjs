@@ -9,6 +9,20 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+
+  // ── Canonical Domain Redirects ──
+  // Non-www → www 301 permanent (consolidates all indexing signals)
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'saveik.com' }],
+        destination: 'https://www.saveik.com/:path*',
+        permanent: true,
+      },
+    ]
+  },
+
   async headers() {
     return [
       {
