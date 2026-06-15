@@ -6,6 +6,10 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  // Fix Turbopack workspace root in multi-project monorepos
+  turbopack: {
+    root: import.meta.dirname,
+  },
 
   // Bundle optimization: merge Radix UI + framer-motion into single chunks
   experimental: {
