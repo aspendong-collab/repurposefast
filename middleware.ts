@@ -31,7 +31,15 @@ const SKIP_PATTERNS = [
 ]
 
 // Static pages that exist at root level (not under [locale])
-const ROOT_PAGES = ["/terms", "/privacy", "/faq", "/help-center", "/feedback"]
+const ROOT_PAGES = [
+  "/terms",
+  "/privacy",
+  "/faq",
+  "/help-center",
+  "/feedback",
+  "/repurpose",
+  "/tools",
+]
 
 function shouldSkip(pathname: string): boolean {
   return SKIP_PATTERNS.some((p) => pathname.startsWith(p) || pathname.includes(p))
