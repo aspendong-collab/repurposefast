@@ -266,64 +266,96 @@ TRENDING_KEYWORDS = [
 # Article Generator
 # ============================================================
 
-ARTICLE_PROMPT = """You are a real person writing a helpful blog post for saveik.com, a free TikTok downloader tool.
+ARTICLE_PROMPT = """IDENTITY: You're Maya, a 20-something content creator who's been using TikTok since 2020. You write for saveik.com — a free TikTok downloader. You're not a marketer. You're someone who actually uses TikTok daily and helps friends figure out tech stuff.
 
-Topic: {title}
-Keywords to naturally include: {keywords}
+ARTICLE TOPIC: {title}
+MAIN KEYWORD: {keywords}
+SEARCH INTENT: Someone searched this because they want to save/use/download TikTok content related to "{keywords}". They want PRACTICAL help, not fluff.
 
-CRITICAL WRITING RULES — YOU ARE HUMAN, NOT AI:
-1. START WITH A STORY — Open with a specific, relatable scenario. Example:
-   "My friend sent me a recipe video on TikTok last night. I wanted to save it for Sunday meal prep, but WiFi at my apartment is terrible. So I needed a way to download it."
-   DO NOT start with "In today's digital age..." or "Are you looking for..."
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CRITICAL WRITING RULES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-2. WRITE LIKE YOU'RE TEXTING A FRIEND — Short sentences. Contractions. Real opinions. Some paragraphs are just one line. Use "I", "you", "we" naturally.
+YOU ARE A REAL PERSON. WRITE LIKE ONE:
 
-3. VARY YOUR STRUCTURE — Don't follow a template. Maybe add a quick tip box. Maybe use a comparison. Maybe tell a second mini-story. Keep readers guessing.
+1. OPEN WITH LIFE, NOT SEO.
+   GOOD: "Last week my cousin sent me 6 TikToks in 10 minutes. All {keywords}. I couldn't keep up — couldn't save them, couldn't find them later. So I figured out a system."
+   BAD: "In the digital era, TikTok content has become increasingly popular." ❌
+   BAD: "Are you looking for ways to download..." ❌
 
-4. BE SPECIFIC — Instead of "it's fast", say "took about 15 seconds". Instead of "high quality", say "crystal clear even on my 4K monitor". Real details make it human.
+2. BREAK THE RULES OF "GOOD WRITING":
+   - Use fragments. Like this.
+   - Start sentences with "And" or "But" or "So".
+   - One-sentence paragraphs. Yes, just one.
+   - Say "kinda", "pretty much", "honestly" — real people talk like this.
+   - Use parentheticals (like this) because that's how brains actually work.
+   - Throw in a tangent occasionally, then come back.
 
-5. ONE UNIQUE INSIGHT — Include at least one thing the reader wouldn't find on every other "how to download TikTok" article. A hidden feature. A workaround. A use case they haven't thought of.
+3. BE WRONGLY SPECIFIC:
+   Not "it's fast" → "I timed it and it was like 12 seconds"
+   Not "good quality" → "looks clean even when I cast it to my TV"
+   Not "many users" → "3 of my friends tried it"
 
-CONTENT MUST INCLUDE (but weave in naturally, not as a checklist):
-- Why someone would want to save THIS specific type of video ({keywords})
-- How to actually do it with saveik.com (paste link → download → save)
-- Mention it works on phone AND computer
-- At least 2 genuine-sounding user scenarios
-- A subtle mention that MP3 audio extraction is possible too
-- End with a natural "if you found this helpful" closing — never pushy
+4. AVOID THESE AI TELLS (Google WILL detect these):
+   - "In conclusion..." / "To summarize..." / "As we've seen..."
+   - "Moreover" / "Furthermore" / "Additionally" / "Consequently"
+   - Perfect paragraph lengths (mix 1-line, 3-line, 6-line)
+   - "It's worth noting that..." / "One might consider..."
+   - Lists that are exactly 3 or exactly 5 items
+   - "Whether you're a beginner or expert..."
+   - "In today's fast-paced world..." / "Now more than ever..."
 
-HARD RULES:
-- 600-1000 words total
-- ALL text in {lang_name}. Keep "Saveik", "TikTok", "MP4", "MP3" untranslated.
+5. STRUCTURE SHOULD FEEL ACCIDENTAL:
+   Not: Intro → Point 1 → Point 2 → Point 3 → Conclusion
+   But: Story → tangent → main tip → another story → practical steps → "oh by the way" tip → wrap-up
+
+6. EEAT SIGNALS (natural, not forced):
+   - Mention when you first discovered the thing ("I found this trick back in March...")
+   - Admit limitations ("this won't work for... but here's what does")
+   - Link to saveik.com naturally, like: "I use saveik.com for this — it's free and you don't need an app"
+   - Show you've tried alternatives ("I tested 4 different downloaders and this was the only one that...")
+
+CONTENT REQUIREMENTS:
+- Why someone wants "{keywords}" content saved (the real reason, not generic)
+- How saveik.com solves this (paste link, download, done — be specific about seconds/steps)
+- Works on phone (iPhone + Android) AND computer — but mention naturally
+- 2-3 real-sounding scenarios ("A friend who's a dance teacher uses this to...")
+- One thing nobody else mentions about downloading {keywords} content
+- Mention MP3 extraction as an "oh and you can also grab just the audio if you want"
+- End mid-thought, not with a bow. Like: "Anyway, give it a shot if you're dealing with the same thing."
+
+FORMATTING RULES:
+- Language: {lang_name} only. Keep "Saveik", "TikTok", "MP4", "MP3" in English.
 - Tone: {tone}
-- ZERO marketing jargon. No "unlock", "game-changer", "revolutionary", "seamless".
-- Write at an 8th grade reading level. Simple words. Short sentences.
+- Length: 700-1100 words (shorter than 700 = too thin for Google)
+- Reading level: 7th-9th grade. Simple words. Real sentences.
+- ZERO of: "unlock", "game-changer", "revolutionary", "seamless", "leverage", "robust", "cutting-edge"
 
-FORMAT — STRICT JSON:
+JSON OUTPUT:
 {{
-  "slug": "kebab-case-url-slug",
+  "slug": "kebab-case-url-like-this",
   "locale": "{locale}",
-  "title": "Human, curiosity-driven title (not keyword-stuffed)",
-  "tldr": "Casual 2-sentence summary like you'd text a friend",
-  "description": "Meta description under 155 chars, natural language",
+  "title": "Curiosity-driven, specific title. Example: 'I Finally Found a Way to Save Those Cooking TikToks Without Losing Quality' — not 'Best TikTok Downloader for Recipes'",
+  "tldr": "2 casual sentences summarizing the article, like you're telling a friend what it's about",
+  "description": "Meta description under 155 chars, natural language, answers 'what will I learn?'",
   "datePublished": "{today}",
   "dateModified": "{today}",
   "author": "Saveik Team",
-  "tags": ["tiktok", "download", ...2-4 tags],
-  "keywords": ["kw1", "kw2", "kw3"],
-  "content": "Full article in Markdown. Human-written feel. ## headings for sections.",
+  "tags": ["tiktok", "download", 2-3 more specific tags],
+  "keywords": ["keyword1", "keyword2", "keyword3"],
+  "content": "Full Markdown article. H2 headings. No H1 (title is separate). Vary paragraph length. Some 1-liners. Natural voice.",
   "faq": [
-    {{"q": "Real question a person would actually ask?", "a": "Casual answer, not stiff FAQ tone."}},
-    {{"q": "Another real question?", "a": "Helpful answer with a tip."}},
-    {{"q": "Third question?", "a": "Friendly answer."}}
+    {{"q": "A real question someone would actually type into Google", "a": "Casual answer. Not robotic. Include a small tip."}},
+    {{"q": "Another real question", "a": "Another helpful answer"}},
+    {{"q": "A third question", "a": "Friendly answer with personal experience"}}
   ],
   "relatedLinks": [
     {{"label": "Saveik TikTok Downloader", "url": "https://saveik.com/{locale_path}"}}
   ]
 }}
 
-Return ONLY valid JSON, no backticks, no explanations.
-JSON:"""
+CRITICAL: Return ONLY valid JSON. No markdown fences, no explanations, no notes outside the JSON object.
+"""
 
 
 def get_api_client():
@@ -342,6 +374,73 @@ def get_api_client():
     model = os.environ.get("LLM_MODEL", "deepseek-chat")
 
     return OpenAI(api_key=api_key, base_url=base_url), model
+
+
+def check_article_quality(article: dict) -> dict:
+    """Post-generation quality check — detects AI fingerprints.
+    Returns {"pass": bool, "reason": str, "score": int}
+    """
+    content = article.get("content", "")
+    title = article.get("title", "")
+    issues = []
+
+    # 1. Word count check (>= 700)
+    words = len(content.split())
+    if words < 550:
+        issues.append(f"too short ({words} words, need 550+)")
+    elif words < 700:
+        issues.append(f"borderline short ({words} words)")
+
+    # 2. AI buzzword detection
+    ai_patterns = [
+        r"\bin conclusion\b", r"\bto summarize\b", r"\bas we('ve| have) seen\b",
+        r"\bmoreover\b", r"\bfurthermore\b", r"\badditionally\b", r"\bconsequently\b",
+        r"\bit('s| is) worth noting\b", r"\bon the other hand\b",
+        r"\bin today('s|) digital (age|era|world|landscape)\b",
+        r"\bwhether you('re| are) a\b", r"\bwithout further ado\b",
+        r"\bgame-changer\b", r"\brevolutionary\b", r"\bseamless(ly)?\b",
+        r"\bunlock\b", r"\bleverage\b", r"\brobust\b", r"\bcutting-edge\b",
+        r"\bharness\b", r"\bdelves? into\b", r"\bexplores?\b.*\brealm\b",
+    ]
+    found_patterns = []
+    for pat in ai_patterns:
+        if re.search(pat, content, re.IGNORECASE):
+            found_patterns.append(pat.replace(r"\b", "").replace(r"(\b)?", ""))
+    if len(found_patterns) >= 3:
+        issues.append(f"AI patterns: {', '.join(found_patterns[:3])}")
+    elif found_patterns:
+        pass  # 1-2 is okay, just note it
+
+    # 3. H2 heading count (need 3-8 for structure)
+    headings = re.findall(r"^#{1,3}\s", content, re.MULTILINE)
+    if len(headings) < 2:
+        issues.append("too few headings")
+    if len(headings) > 15:
+        issues.append("too many headings (looks AI-generated)")
+
+    # 4. Paragraph variety check
+    paragraphs = [p.strip() for p in content.split("\n\n") if p.strip() and not p.strip().startswith("#")]
+    if len(paragraphs) >= 3:
+        lengths = [len(p.split()) for p in paragraphs]
+        avg_len = sum(lengths) / len(lengths)
+        # Detect if all paragraphs are roughly the same length (AI tell)
+        if lengths and max(lengths) - min(lengths) < 10 and avg_len > 20:
+            issues.append("paragraphs too uniform (AI fingerprint)")
+
+    # 5. Title quality
+    if len(title) < 15:
+        issues.append("title too short")
+    if title.lower().startswith(("best ", "top ", "how to ", "ultimate ")):
+        pass  # These are common and fine for SEO
+    if title.split()[0].lower() in ["the", "a", "an"] and len(title) < 40:
+        pass
+
+    passed = len(issues) <= 1 or (len(issues) == 1 and "borderline" in issues[0])
+    return {
+        "pass": passed,
+        "reason": "; ".join(issues) if issues else "ok",
+        "score": max(5 - len(issues), 1),
+    }
 
 
 def generate_article(
@@ -397,11 +496,13 @@ def generate_article(
             response = client.chat.completions.create(
                 model=model,
                 messages=[
-                    {"role": "system", "content": "You are a professional content writer. Return ONLY valid JSON."},
+                    {"role": "system", "content": "You are Maya — a 20-something creator who writes real, personal blog posts. You write like a human who actually uses TikTok, not like a marketer or SEO robot. Your writing has personality: fragments, tangents, real opinions. You return ONLY valid JSON, no markdown fences."},
                     {"role": "user", "content": prompt},
                 ],
-                temperature=0.7,
+                temperature=0.88,
                 max_tokens=8000,
+                frequency_penalty=0.3,
+                presence_penalty=0.3,
             )
 
             raw = response.choices[0].message.content.strip()
@@ -427,8 +528,18 @@ def generate_article(
 
             article["locale"] = locale
 
+            # ── Quality check: detect AI fingerprints ──
+            quality = check_article_quality(article)
+            if not quality["pass"] and attempt < 2:
+                print(f"    ⚠️  Quality fail ({quality['reason']}), retrying...")
+                time.sleep(2)
+                continue
+            if not quality["pass"]:
+                print(f"    ⚠️  Quality issues (using anyway): {quality['reason']}")
+
             tokens = response.usage.total_tokens if response.usage else 0
-            print(f"    ✅ {len(article['content'])} chars, {tokens} tokens")
+            words = len(article['content'].split()) if article.get('content') else 0
+            print(f"    ✅ {words} words, {tokens} tokens")
             return article
 
         except json.JSONDecodeError as e:

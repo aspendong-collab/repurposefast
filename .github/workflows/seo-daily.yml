@@ -52,15 +52,30 @@ jobs:
         env:
           PYTHONIOENCODING: utf-8
 
-      - name: Generate blog post with trending keywords
+      - name: Generate posts (priority lang + least-content lang)
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
+          # Post 1: Least-content language (balance coverage)
+          echo "📝 Post 1: Language = ${{ steps.pick-lang.outputs.lang }}"
           python3 scripts/auto_content.py \
             --lang ${{ steps.pick-lang.outputs.lang }} \
             --count 1 \
             --keywords-file data/trending_keywords.json
+
+          # Post 2: Priority market (higher traffic potential)
+          PRIORITY_LANGS=(id vi th es pt-br en)
+          PRIORITY=${PRIORITY_LANGS[$((RANDOM % ${#PRIORITY_LANGS[@]}))]}
+          echo ""
+          echo "📝 Post 2: Language = $PRIORITY (priority market)"
+          python3 scripts/auto_content.py \
+            --lang $PRIORITY \
+            --count 1 \
+            --keywords-file data/trending_keywords.json
+
+          echo ""
+          echo "✅ 2 posts generated today"
 
       - name: Rebuild blog index
         run: python3 scripts/gen_blog_index.py
