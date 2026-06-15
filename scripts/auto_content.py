@@ -465,6 +465,8 @@ def main():
     parser.add_argument("--lang", default="en", help="目标语种代码")
     parser.add_argument("--count", type=int, default=1, help="生成文章数量")
     parser.add_argument("--keywords", help="指定关键词，逗号分隔 (默认自动选择)")
+    parser.add_argument("--keywords-file", help="从 JSON 文件读取关键词（trend_hunter.py 输出）")
+    parser.add_argument("--today", action="store_true", help="使用今日热点关键词（自动调用 trend_hunter）")
     parser.add_argument("--all", action="store_true", help="为所有20语种各生成1篇")
     parser.add_argument("--dry-run", action="store_true", help="预览模式，不调API")
     args = parser.parse_args()
@@ -474,6 +476,37 @@ def main():
     # Get keywords
     if args.keywords:
         keywords = [k.strip() for k in args.keywords.split(",")]
+    elif args.keywords_file:
+        try:
+            with open(args.keywords_file) as f:
+                data = json.load(f)
+            keywords = data.get("keywords", [])
+            print(f"📂 Loaded {len(keywords)} keywords from {args.keywords_file}")
+        except Exception as e:
+            print(f"⚠️  Failed to load keywords file: {e}, using defaults")
+            keywords = random.sample(TRENDING_KEYWORDS, min(args.count * 2, len(TRENDING_KEYWORDS)))
+    elif args.today:
+        # Auto-run trend_hunter as subprocess
+        try:
+            trend_script = project_root / "scripts" / "trend_hunter.py"
+            import subprocess
+            result = subprocess.run(
+                ["python3", str(trend_script), "--json"],
+                capture_output=True, text=True, timeout=30,
+                cwd=str(project_root)
+            )
+            # Read the JSON output file
+            cache = project_root / "data" / "trending_keywords.json"
+            if cache.exists():
+                with open(cache) as f:
+                    data = json.load(f)
+                keywords = data.get("keywords", [])
+                print(f"🔥 Today's trending keywords: {len(keywords)}")
+            if not keywords:
+                keywords = random.sample(TRENDING_KEYWORDS, min(args.count * 2, len(TRENDING_KEYWORDS)))
+        except Exception as e:
+            print(f"⚠️  Trend hunter failed: {e}, using defaults")
+            keywords = random.sample(TRENDING_KEYWORDS, min(args.count * 2, len(TRENDING_KEYWORDS)))
     else:
         import random
         keywords = random.sample(TRENDING_KEYWORDS, min(args.count * 2, len(TRENDING_KEYWORDS)))
