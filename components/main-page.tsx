@@ -400,10 +400,10 @@ export default function SaveikDownloader() {
               />
               <p className="text-muted-foreground mt-8 text-lg">{_("ui.processingVideo", "Processing your video...")}</p>
 
-              {/* 🔑 下载等待页广告 — ssstik.io 模式，RPM 最高的广告位 */}
+              {/* 🔑 下载等待页广告 — RPM 最高的广告位 */}
               <div className="mt-8 w-full max-w-md">
                 <AdUnit
-                  slot="7781253833"
+                  slot="6523717335"
                   format="rectangle"
                   className="mx-auto"
                   fallback={
