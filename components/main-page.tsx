@@ -367,12 +367,22 @@ export default function SaveikDownloader() {
           </motion.button>
         </section>
 
-        {/* AdSense — 工具页面横幅 */}
+        {/* AdSense — 工具页面横幅 + 兜底推广 */}
         <div className="container mx-auto px-4">
           <AdUnit
             slot="7781253833"
             format="horizontal"
             className="my-6"
+            fallback={
+              <div className="my-6 rounded-xl border border-violet-500/20 bg-violet-500/5 p-4 text-center">
+                <p className="text-sm text-violet-400 font-semibold">
+                  🚀 Saveik — Free TikTok Downloader, No Watermark, HD Quality
+                </p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  Download any TikTok video free. No app needed.
+                </p>
+              </div>
+            }
           />
         </div>
 
@@ -381,7 +391,7 @@ export default function SaveikDownloader() {
           {isLoading && (
             <motion.section
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-              className="container mx-auto px-4 py-24 flex flex-col items-center"
+              className="container mx-auto px-4 py-16 flex flex-col items-center"
             >
               <motion.div
                 animate={{ rotate: 360 }}
@@ -389,6 +399,23 @@ export default function SaveikDownloader() {
                 className="w-20 h-20 rounded-full border-4 border-violet-500/20 border-t-violet-500"
               />
               <p className="text-muted-foreground mt-8 text-lg">{_("ui.processingVideo", "Processing your video...")}</p>
+
+              {/* 🔑 下载等待页广告 — ssstik.io 模式，RPM 最高的广告位 */}
+              <div className="mt-8 w-full max-w-md">
+                <AdUnit
+                  slot="7781253833"
+                  format="rectangle"
+                  className="mx-auto"
+                  fallback={
+                    <div className="rounded-xl border border-amber-500/20 bg-amber-500/5 p-5 text-center">
+                      <p className="text-sm font-semibold text-amber-400">⚡ While you wait...</p>
+                      <p className="text-xs text-muted-foreground mt-2">
+                        Saveik is 100% free. No registration, no limits, no watermark.
+                      </p>
+                    </div>
+                  }
+                />
+              </div>
             </motion.section>
           )}
         </AnimatePresence>
@@ -506,7 +533,23 @@ export default function SaveikDownloader() {
                 </CardContent>
               </Card>
 
-              <div className="text-center mt-8">
+              {/* Result-area ad — visible when user reviews download options */}
+              <div className="max-w-2xl mx-auto mt-4">
+                <AdUnit
+                  slot="7781253833"
+                  format="horizontal"
+                  className="mx-auto"
+                  fallback={
+                    <div className="rounded-lg border border-border/30 bg-card/50 p-3 text-center">
+                      <p className="text-xs text-muted-foreground">
+                        ✨ Download TikTok videos free with Saveik — no watermark, HD quality
+                      </p>
+                    </div>
+                  }
+                />
+              </div>
+
+              <div className="text-center mt-6">
                 <Button variant="outline" onClick={handleClear} className="text-muted-foreground gap-2">
                   <X className="h-4 w-4" />
                   {_("ui.downloadAnother", "Download Another Video")}

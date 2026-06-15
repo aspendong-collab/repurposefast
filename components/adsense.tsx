@@ -1,12 +1,11 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState, type ReactNode } from "react"
 
 const PUBLISHER_ID = "ca-pub-2085357111333686"
 
 /**
  * AdSense Auto Ads script — loads once in root layout.
- * Enables Google to automatically place ads in optimal positions.
  */
 export function AdSenseScript() {
   return (
@@ -19,51 +18,93 @@ export function AdSenseScript() {
 }
 
 /**
- * Manual ad unit — place this component wherever you want a fixed ad slot.
+ * Manual ad unit with optional fallback for unfilled slots.
+ *
+ * When AdSense doesn't fill the slot (data-ad-status="unfilled"),
+ * the fallback content is shown automatically — no wasted impressions.
  *
  * Props:
- *  - slot:    AdSense ad unit ID (from your AdSense dashboard → Ads → Ad units)
- *  - format:  "auto" | "rectangle" | "horizontal" | "vertical" (default: "auto")
- *  - className: optional wrapper styling
- *
- * Usage:
- *  <AdUnit slot="1234567890" format="rectangle" className="my-8" />
+ *  - slot:      AdSense ad unit ID
+ *  - format:    "auto" | "rectangle" | "horizontal" | "vertical"
+ *  - className: wrapper styling
+ *  - fallback:  ReactNode shown when ad is unfilled or blocked
  */
 export function AdUnit({
   slot,
   format = "auto",
   className = "",
+  fallback,
 }: {
   slot: string
   format?: "auto" | "rectangle" | "horizontal" | "vertical"
   className?: string
+  fallback?: ReactNode
 }) {
   const adRef = useRef<HTMLModElement>(null)
   const initialized = useRef(false)
+  const [showFallback, setShowFallback] = useState(false)
 
   useEffect(() => {
-    // Prevent double-init in React Strict Mode
     if (initialized.current || !adRef.current) return
     initialized.current = true
 
     try {
       ;(window.adsbygoogle = window.adsbygoogle || []).push({})
-    } catch (e) {
-      // AdSense blocked by ad-blocker — silently ignore
+    } catch {
+      // Ad blocker
+      if (fallback) setShowFallback(true)
     }
-  }, [])
+  }, [fallback])
 
-  // Re-initialize on route changes (Next.js client navigation)
+  // Watch for unfilled status (ssstik.io pattern)
   useEffect(() => {
-    const pushAd = () => {
-      try {
-        if (adRef.current && adRef.current.innerHTML === "") {
-          ;(window.adsbygoogle = window.adsbygoogle || []).push({})
-        }
-      } catch {}
+    if (!fallback || !adRef.current) return
+    const ins = adRef.current
+
+    if (ins.getAttribute("data-ad-status") === "unfilled") {
+      setShowFallback(true)
+      return
     }
-    pushAd()
+
+    const observer = new MutationObserver((mutations) => {
+      for (const m of mutations) {
+        if (
+          m.attributeName === "data-ad-status" &&
+          ins.getAttribute("data-ad-status") === "unfilled"
+        ) {
+          observer.disconnect()
+          setShowFallback(true)
+          return
+        }
+      }
+    })
+    observer.observe(ins, { attributes: true, attributeFilter: ["data-ad-status"] })
+
+    // Timeout: if no status after 3s, show fallback
+    const timer = setTimeout(() => {
+      if (!ins.getAttribute("data-ad-status")) {
+        setShowFallback(true)
+      }
+    }, 3000)
+
+    return () => {
+      observer.disconnect()
+      clearTimeout(timer)
+    }
+  }, [slot, fallback])
+
+  // Re-init on route changes
+  useEffect(() => {
+    try {
+      if (adRef.current && adRef.current.innerHTML === "") {
+        ;(window.adsbygoogle = window.adsbygoogle || []).push({})
+      }
+    } catch {}
   }, [slot])
+
+  if (showFallback && fallback) {
+    return <div className={className}>{fallback}</div>
+  }
 
   return (
     <div className={`ad-container overflow-hidden ${className}`}>
