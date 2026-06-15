@@ -17,11 +17,19 @@ Data stored in: data/rankings_history.csv
 import csv
 import json
 import os
+import ssl
 import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+
+# Prefer requests if available, fall back to urllib
+try:
+    import requests
+    HAS_REQUESTS = True
+except ImportError:
+    HAS_REQUESTS = False
 
 # ============================================================
 # 20 Core Keywords to Track
@@ -90,25 +98,38 @@ def check_rank_in_html(html: str, keyword: str) -> int | None:
 def search_keyword(keyword: str, locale: str = "en") -> dict[str, Any]:
     """Search keyword and find saveik.com ranking.
 
-    Uses Google via web_search — limited to ~20 calls/day for free.
+    Uses requests (with SSL verification) or urllib fallback.
+    Google may show a CAPTCHA for automated queries — this is expected.
     """
-    import urllib.request
     import urllib.parse
 
     query = urllib.parse.quote(keyword)
     url = f"https://www.google.com/search?q={query}&hl={locale}&num=20&gl={locale}"
 
     headers = {
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                       "AppleWebKit/537.36 (KHTML, like Gecko) "
-                       "Chrome/130.0.0.0 Safari/537.36",
+        "User-Agent": (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/131.0.0.0 Safari/537.36"
+        ),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
         "Accept-Language": f"{locale},en;q=0.9",
+        "Accept-Encoding": "gzip, deflate, br",
+        "DNT": "1",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
     }
 
     try:
-        req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            html = resp.read().decode("utf-8", errors="replace")
+        if HAS_REQUESTS:
+            resp = requests.get(url, headers=headers, timeout=15, verify=True)
+            html = resp.text
+        else:
+            import urllib.request
+            ctx = ssl.create_default_context()
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=15, context=ctx) as resp:
+                html = resp.read().decode("utf-8", errors="replace")
 
         rank = check_rank_in_html(html, keyword)
         return {
@@ -120,11 +141,17 @@ def search_keyword(keyword: str, locale: str = "en") -> dict[str, Any]:
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
     except Exception as e:
+        error_msg = str(e)[:120]
+        # Common Google blocks
+        if "429" in error_msg or "rate" in error_msg.lower():
+            error_msg = "rate_limited_by_google"
+        elif "certificate" in error_msg.lower() or "ssl" in error_msg.lower():
+            error_msg = f"ssl_error: {error_msg}"
         return {
             "keyword": keyword,
             "locale": locale,
             "rank": None,
-            "status": f"error: {str(e)[:80]}",
+            "status": f"error: {error_msg}",
             "position": None,
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }

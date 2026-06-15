@@ -2,10 +2,22 @@
 # P4 Content Matrix Expansion — Quick Start
 # ==========================================
 # Run this script to expand blog content across all 20 languages.
+#
+# Usage:
+#   export DEEPSEEK_API_KEY=sk-...
+#   bash scripts/expand_content.sh
 
-export DEEPSEEK_API_KEY="YOUR_DEEPSEEK_API_KEY_HERE"
+set -e
 
-cd /Users/aspendong/ssstik-clone/FusionTik
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+
+cd "$PROJECT_ROOT"
+
+if [ -z "$DEEPSEEK_API_KEY" ]; then
+  echo "❌ DEEPSEEK_API_KEY not set. Run: export DEEPSEEK_API_KEY=sk-..."
+  exit 1
+fi
 
 echo "📝 Phase 1: Add 1 post per language (20 new posts)"
 python3 scripts/auto_content.py --all --count 1
@@ -25,8 +37,9 @@ python3 scripts/gen_blog_index.py
 echo ""
 echo "📝 Phase 4: Build + deploy"
 npx next build
-npx vercel --prod --yes
 
 echo ""
 echo "✅ Content expansion complete!"
-echo "Expected: 42 + 20 + 10 = 72 blog posts across 20 languages"
+echo "Expected: +30 new blog posts across 20 languages"
+echo ""
+echo "Next: push to GitHub → Vercel auto-deploys"

@@ -370,4 +370,254 @@ export const localPages: Record<string, LocalLandingPage[]> = {
       ],
     },
   ],
+
+  hi: [
+    {
+      slug: "india",
+      countryName: "India",
+      localName: "भारत",
+      headline: "भारत में TikTok वीडियो डाउनलोड करें — मुफ़्त, बिना वॉटरमार्क, HD",
+      subheadline: "भारतीय उपयोगकर्ताओं के लिए सबसे तेज़ TikTok डाउनलोडर। बिना ऐप, बिना रजिस्ट्रेशन।",
+      localKeywords: ["TikTok डाउनलोडर भारत", "TikTok वीडियो डाउनलोड फ्री", "TikTok बिना वॉटरमार्क भारत"],
+      description: "भारत में TikTok वीडियो बिना वॉटरमार्क डाउनलोड करें। मुफ़्त HD डाउनलोडर। iPhone, Android, PC पर काम करता है। बिना रजिस्ट्रेशन।",
+      features: [
+        { title: "HD क्वालिटी", desc: "1080p में TikTok वीडियो डाउनलोड करें — बिना वॉटरमार्क।" },
+        { title: "कोई ऐप नहीं", desc: "सीधे ब्राउज़र में काम करता है — Chrome, Safari, कोई भी।" },
+        { title: "पूरी तरह मुफ़्त", desc: "असीमित डाउनलोड, कोई रजिस्ट्रेशन नहीं, कोई छिपी फीस नहीं।" },
+      ],
+      howToSteps: [
+        { step: 1, title: "लिंक कॉपी करें", desc: "TikTok पर शेयर → लिंक कॉपी करें।" },
+        { step: 2, title: "Saveik पर पेस्ट करें", desc: "saveik.com/hi पर जाएं, लिंक पेस्ट करें, डाउनलोड पर क्लिक करें।" },
+        { step: 3, title: "वीडियो सेव करें", desc: "MP4 या MP3 चुनें और फ़ाइल सेव करें।" },
+      ],
+      faq: [
+        { q: "क्या Saveik भारत में काम करता है?", a: "हाँ! Saveik पूरे भारत में — दिल्ली, मुंबई, बेंगलुरु और हर जगह काम करता है।" },
+      ],
+    },
+  ],
+
+  fr: [
+    {
+      slug: "france",
+      countryName: "France",
+      localName: "France",
+      headline: "Télécharger des Vidéos TikTok en France — Gratuit, Sans Filigrane, HD",
+      subheadline: "Le téléchargeur TikTok le plus rapide pour les utilisateurs français. Sans application, sans inscription.",
+      localKeywords: ["télécharger TikTok France", "télécharger vidéo TikTok gratuit", "TikTok sans filigrane France", "téléchargeur TikTok gratuit"],
+      description: "Téléchargez des vidéos TikTok sans filigrane en France. Téléchargeur HD gratuit. Compatible iPhone, Android, PC. Sans inscription, téléchargements illimités.",
+      features: [
+        { title: "Qualité HD", desc: "Téléchargez en 1080p — sans filigrane, sans perte de qualité." },
+        { title: "Sans Application", desc: "Fonctionne directement dans votre navigateur — Chrome, Safari, Firefox." },
+        { title: "Gratuit Illimité", desc: "Pas de limite, pas d'inscription, pas de frais cachés." },
+      ],
+      howToSteps: [
+        { step: 1, title: "Copier le Lien", desc: "Sur TikTok, appuyez sur Partager → Copier le Lien." },
+        { step: 2, title: "Coller sur Saveik", desc: "Allez sur saveik.com/fr, collez le lien, cliquez sur Télécharger." },
+        { step: 3, title: "Sauvegarder la Vidéo", desc: "Choisissez MP4 ou MP3 et enregistrez le fichier." },
+      ],
+      faq: [
+        { q: "Saveik fonctionne-t-il en France ?", a: "Oui ! Saveik fonctionne parfaitement partout en France — Paris, Lyon, Marseille et plus." },
+      ],
+    },
+  ],
+
+  de: [
+    {
+      slug: "germany",
+      countryName: "Germany",
+      localName: "Deutschland",
+      headline: "TikTok Videos in Deutschland herunterladen — Kostenlos, Ohne Wasserzeichen, HD",
+      subheadline: "Der schnellste TikTok Downloader für deutsche Nutzer. Keine App, keine Registrierung.",
+      localKeywords: ["TikTok Downloader Deutschland", "TikTok Videos herunterladen kostenlos", "TikTok ohne Wasserzeichen Deutschland"],
+      description: "TikTok Videos ohne Wasserzeichen in Deutschland herunterladen. Kostenloser HD Downloader. Funktioniert auf iPhone, Android, PC. Keine Registrierung.",
+      features: [
+        { title: "HD-Qualität", desc: "Laden Sie in 1080p herunter — ohne Wasserzeichen." },
+        { title: "Keine App nötig", desc: "Funktioniert direkt im Browser — Chrome, Safari, Firefox." },
+        { title: "Kostenlos & Unbegrenzt", desc: "Unbegrenzte Downloads, keine Registrierung, keine versteckten Kosten." },
+      ],
+      howToSteps: [
+        { step: 1, title: "Link kopieren", desc: "Auf TikTok Teilen → Link kopieren." },
+        { step: 2, title: "Bei Saveik einfügen", desc: "Gehen Sie zu saveik.com/de, fügen Sie den Link ein, klicken Sie auf Herunterladen." },
+        { step: 3, title: "Video speichern", desc: "Wählen Sie MP4 oder MP3 und speichern Sie die Datei." },
+      ],
+      faq: [
+        { q: "Funktioniert Saveik in Deutschland?", a: "Ja! Saveik funktioniert einwandfrei in ganz Deutschland — Berlin, München, Hamburg und mehr." },
+      ],
+    },
+  ],
+
+  ru: [
+    {
+      slug: "russia",
+      countryName: "Russia",
+      localName: "Россия",
+      headline: "Скачать Видео TikTok в России — Бесплатно, Без Водяного Знака, HD",
+      subheadline: "Самый быстрый загрузчик TikTok для российских пользователей. Без приложения, без регистрации.",
+      localKeywords: ["скачать TikTok Россия", "загрузчик TikTok бесплатно", "TikTok без водяного знака Россия"],
+      description: "Скачивайте видео TikTok без водяного знака в России. Бесплатный HD загрузчик. Работает на iPhone, Android, ПК. Без регистрации.",
+      features: [
+        { title: "HD Качество", desc: "Скачивайте в 1080p — без водяных знаков." },
+        { title: "Без Приложения", desc: "Работает прямо в браузере — Chrome, Safari, Яндекс." },
+        { title: "Полностью Бесплатно", desc: "Без ограничений, без регистрации, без скрытых платежей." },
+      ],
+      howToSteps: [
+        { step: 1, title: "Скопировать Ссылку", desc: "В TikTok нажмите Поделиться → Копировать Ссылку." },
+        { step: 2, title: "Вставить в Saveik", desc: "Перейдите на saveik.com/ru, вставьте ссылку, нажмите Скачать." },
+        { step: 3, title: "Сохранить Видео", desc: "Выберите MP4 или MP3 и сохраните файл." },
+      ],
+      faq: [
+        { q: "Saveik работает в России?", a: "Да! Saveik отлично работает по всей России — Москва, Санкт-Петербург и другие города." },
+      ],
+    },
+  ],
+
+  tr: [
+    {
+      slug: "turkey",
+      countryName: "Turkey",
+      localName: "Türkiye",
+      headline: "Türkiye'de TikTok Videolarını İndir — Ücretsiz, Filigransız, HD",
+      subheadline: "Türk kullanıcılar için en hızlı TikTok indirici. Uygulama gerekmez, kayıt gerekmez.",
+      localKeywords: ["TikTok indirici Türkiye", "TikTok video indir ücretsiz", "TikTok filigransız indir Türkiye"],
+      description: "Türkiye'de TikTok videolarını filigransız indirin. Ücretsiz HD indirici. iPhone, Android, PC'de çalışır. Kayıt gerekmez.",
+      features: [
+        { title: "HD Kalite", desc: "1080p kalitesinde indirin — filigransız." },
+        { title: "Uygulamasız", desc: "Doğrudan tarayıcıda çalışır — Chrome, Safari, herhangi biri." },
+        { title: "Tamamen Ücretsiz", desc: "Sınırsız indirme, kayıt yok, gizli ücret yok." },
+      ],
+      howToSteps: [
+        { step: 1, title: "Bağlantıyı Kopyala", desc: "TikTok'ta Paylaş → Bağlantıyı Kopyala." },
+        { step: 2, title: "Saveik'e Yapıştır", desc: "saveik.com/tr adresine git, bağlantıyı yapıştır, İndir'e tıkla." },
+        { step: 3, title: "Videoyu Kaydet", desc: "MP4 veya MP3 seç ve dosyayı kaydet." },
+      ],
+      faq: [
+        { q: "Saveik Türkiye'de çalışıyor mu?", a: "Evet! Saveik İstanbul, Ankara, İzmir ve tüm Türkiye'de sorunsuz çalışır." },
+      ],
+    },
+  ],
+
+  it: [
+    {
+      slug: "italy",
+      countryName: "Italy",
+      localName: "Italia",
+      headline: "Scaricare Video TikTok in Italia — Gratis, Senza Filigrana, HD",
+      subheadline: "Il downloader TikTok più veloce per utenti italiani. Senza app, senza registrazione.",
+      localKeywords: ["scaricare TikTok Italia", "download video TikTok gratis", "TikTok senza filigrana Italia"],
+      description: "Scarica video TikTok senza filigrana in Italia. Downloader HD gratuito. Funziona su iPhone, Android, PC. Senza registrazione.",
+      features: [
+        { title: "Qualità HD", desc: "Scarica in 1080p — senza filigrana." },
+        { title: "Senza App", desc: "Funziona direttamente nel browser — Chrome, Safari." },
+        { title: "Gratis Illimitato", desc: "Download illimitati, nessuna registrazione, nessun costo nascosto." },
+      ],
+      howToSteps: [
+        { step: 1, title: "Copia Link", desc: "Su TikTok, tocca Condividi → Copia Link." },
+        { step: 2, title: "Incolla su Saveik", desc: "Vai su saveik.com/it, incolla il link, clicca Scarica." },
+        { step: 3, title: "Salva Video", desc: "Scegli MP4 o MP3 e salva il file." },
+      ],
+      faq: [
+        { q: "Saveik funziona in Italia?", a: "Sì! Saveik funziona perfettamente in tutta Italia — Roma, Milano, Napoli e oltre." },
+      ],
+    },
+  ],
+
+  pl: [
+    {
+      slug: "poland",
+      countryName: "Poland",
+      localName: "Polska",
+      headline: "Pobieranie Filmów TikTok w Polsce — Za Darmo, Bez Znaku Wodnego, HD",
+      subheadline: "Najszybszy downloader TikTok dla polskich użytkowników. Bez aplikacji, bez rejestracji.",
+      localKeywords: ["pobieranie TikTok Polska", "pobierz filmy TikTok za darmo", "TikTok bez znaku wodnego Polska"],
+      description: "Pobieraj filmy TikTok bez znaku wodnego w Polsce. Darmowy downloader HD. Działa na iPhone, Android, PC. Bez rejestracji.",
+      features: [
+        { title: "Jakość HD", desc: "Pobieraj w 1080p — bez znaku wodnego." },
+        { title: "Bez Aplikacji", desc: "Działa bezpośrednio w przeglądarce — Chrome, Safari." },
+        { title: "Całkowicie Za Darmo", desc: "Bez ograniczeń, bez rejestracji, bez ukrytych opłat." },
+      ],
+      howToSteps: [
+        { step: 1, title: "Kopiuj Link", desc: "Na TikTok kliknij Udostępnij → Kopiuj Link." },
+        { step: 2, title: "Wklej na Saveik", desc: "Wejdź na saveik.com/pl, wklej link, kliknij Pobierz." },
+        { step: 3, title: "Zapisz Wideo", desc: "Wybierz MP4 lub MP3 i zapisz plik." },
+      ],
+      faq: [
+        { q: "Czy Saveik działa w Polsce?", a: "Tak! Saveik działa doskonale w całej Polsce — Warszawa, Kraków, Wrocław i więcej." },
+      ],
+    },
+  ],
+
+  nl: [
+    {
+      slug: "netherlands",
+      countryName: "Netherlands",
+      localName: "Nederland",
+      headline: "TikTok Video's Downloaden in Nederland — Gratis, Zonder Watermerk, HD",
+      subheadline: "De snelste TikTok downloader voor Nederlandse gebruikers. Geen app, geen registratie.",
+      localKeywords: ["TikTok downloaden Nederland", "TikTok video's gratis downloaden", "TikTok zonder watermerk Nederland"],
+      description: "Download TikTok video's zonder watermerk in Nederland. Gratis HD downloader. Werkt op iPhone, Android, PC. Geen registratie.",
+      features: [
+        { title: "HD Kwaliteit", desc: "Download in 1080p — zonder watermerk." },
+        { title: "Geen App Nodig", desc: "Werkt direct in je browser — Chrome, Safari." },
+        { title: "Helemaal Gratis", desc: "Onbeperkt downloaden, geen registratie, geen verborgen kosten." },
+      ],
+      howToSteps: [
+        { step: 1, title: "Link Kopiëren", desc: "Op TikTok, tik Delen → Link Kopiëren." },
+        { step: 2, title: "Plakken op Saveik", desc: "Ga naar saveik.com/nl, plak de link, klik op Downloaden." },
+        { step: 3, title: "Video Opslaan", desc: "Kies MP4 of MP3 en sla het bestand op." },
+      ],
+      faq: [
+        { q: "Werkt Saveik in Nederland?", a: "Ja! Saveik werkt uitstekend in heel Nederland — Amsterdam, Rotterdam, Utrecht en meer." },
+      ],
+    },
+  ],
+
+  ms: [
+    {
+      slug: "malaysia",
+      countryName: "Malaysia",
+      localName: "Malaysia",
+      headline: "Muat Turun Video TikTok di Malaysia — Percuma, Tanpa Watermark, HD",
+      subheadline: "Pemuat turun TikTok terpantas untuk pengguna Malaysia. Tanpa aplikasi, tanpa pendaftaran.",
+      localKeywords: ["muat turun TikTok Malaysia", "download video TikTok percuma", "TikTok tanpa watermark Malaysia"],
+      description: "Muat turun video TikTok tanpa watermark di Malaysia. Pemuat turun HD percuma. Berfungsi pada iPhone, Android, PC. Tanpa pendaftaran.",
+      features: [
+        { title: "Kualiti HD", desc: "Muat turun dalam 1080p — tanpa watermark." },
+        { title: "Tanpa Aplikasi", desc: "Berfungsi terus dalam pelayar — Chrome, Safari." },
+        { title: "Percuma Sepenuhnya", desc: "Muat turun tanpa had, tiada pendaftaran, tiada yuran tersembunyi." },
+      ],
+      howToSteps: [
+        { step: 1, title: "Salin Pautan", desc: "Di TikTok, ketik Kongsi → Salin Pautan." },
+        { step: 2, title: "Tampal di Saveik", desc: "Pergi ke saveik.com/ms, tampal pautan, klik Muat Turun." },
+        { step: 3, title: "Simpan Video", desc: "Pilih MP4 atau MP3 dan simpan fail." },
+      ],
+      faq: [
+        { q: "Adakah Saveik berfungsi di Malaysia?", a: "Ya! Saveik berfungsi dengan baik di seluruh Malaysia — KL, Penang, Johor dan banyak lagi." },
+      ],
+    },
+  ],
+
+  fil: [
+    {
+      slug: "philippines",
+      countryName: "Philippines",
+      localName: "Pilipinas",
+      headline: "Mag-download ng TikTok Videos sa Pilipinas — Libre, Walang Watermark, HD",
+      subheadline: "Ang pinakamabilis na TikTok downloader para sa mga Pilipino. Walang app, walang registration.",
+      localKeywords: ["TikTok downloader Pilipinas", "mag-download ng TikTok video libre", "TikTok walang watermark Pilipinas"],
+      description: "Mag-download ng TikTok videos nang walang watermark sa Pilipinas. Libreng HD downloader. Gumagana sa iPhone, Android, PC. Walang registration.",
+      features: [
+        { title: "HD Quality", desc: "I-download sa 1080p — walang watermark." },
+        { title: "Walang App", desc: "Direktang gumagana sa browser — Chrome, Safari." },
+        { title: "Libre Lang", desc: "Walang limit, walang registration, walang hidden fees." },
+      ],
+      howToSteps: [
+        { step: 1, title: "Kopyahin ang Link", desc: "Sa TikTok, i-tap ang Share → Copy Link." },
+        { step: 2, title: "I-paste sa Saveik", desc: "Pumunta sa saveik.com/fil, i-paste ang link, i-click ang Download." },
+        { step: 3, title: "I-save ang Video", desc: "Pumili ng MP4 o MP3 at i-save ang file." },
+      ],
+      faq: [
+        { q: "Gumagana ba ang Saveik sa Pilipinas?", a: "Oo! Gumagana ang Saveik sa buong Pilipinas — Manila, Cebu, Davao at higit pa." },
+      ],
+    },
+  ],
 }

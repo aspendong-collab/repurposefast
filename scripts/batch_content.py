@@ -1,17 +1,25 @@
 #!/usr/bin/env python3
 """Batch run auto_content.py for multiple languages in parallel."""
 import subprocess, sys, os
+from pathlib import Path
 
+# Auto-detect project root (scripts/../)
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 LANGUAGES = ["en","id","vi","th","es","pt-br","zh","ja","ko","ar","hi","fr","de","ru","tr","it","pl","nl","ms","fil"]
-KEY = os.environ.get("DEEPSEEK_API_KEY", "sk-95643c2d79da4cb785d941c84bdf3d7d")
+KEY = os.environ.get("DEEPSEEK_API_KEY", "")
 COUNT = int(sys.argv[1]) if len(sys.argv) > 1 else 1
+
+if not KEY:
+    print("❌ DEEPSEEK_API_KEY environment variable not set.")
+    print("   Set it: export DEEPSEEK_API_KEY=sk-...")
+    sys.exit(1)
 
 procs = []
 for lang in LANGUAGES:
     env = {**os.environ, "DEEPSEEK_API_KEY": KEY, "OPENAI_API_KEY": KEY}
     p = subprocess.Popen(
         ["python3", "scripts/auto_content.py", "--lang", lang, "--count", str(COUNT)],
-        cwd="/Users/aspendong/ssstik-clone/FusionTik", env=env,
+        cwd=str(PROJECT_ROOT), env=env,
         stdout=subprocess.PIPE, stderr=subprocess.STDOUT
     )
     procs.append((lang, p))
