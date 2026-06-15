@@ -237,8 +237,8 @@ export default async function BlogPostPage({
           dangerouslySetInnerHTML={{ __html: contentFirstHalf }}
         />
 
-        {/* In-article Ad */}
-        <AdUnit slot="" format="rectangle" className="my-8" />
+        {/* AdSense — 博客文章中部 */}
+        <AdUnit slot="2675971662" format="rectangle" className="my-8" />
 
         <div
           className="prose-custom"
