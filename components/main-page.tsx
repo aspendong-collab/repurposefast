@@ -367,10 +367,10 @@ export default function SaveikDownloader() {
           </motion.button>
         </section>
 
-        {/* Ad Placement 1: Between hero and content — horizontal banner */}
+        {/* AdSense — 工具页面横幅 */}
         <div className="container mx-auto px-4">
           <AdUnit
-            slot=""
+            slot="7781253833"
             format="horizontal"
             className="my-6"
           />
