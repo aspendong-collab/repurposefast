@@ -141,6 +141,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
         <link rel="icon" type="image/svg+xml" href="/logo.svg" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="alternate" type="application/rss+xml" title="Saveik Blog RSS" href="/feed.xml" />
         <meta name="theme-color" content="#7c3aed" />
         <link rel="manifest" href="/manifest.json" />
         {/* Hreflang — use lowercase attr via spread (React19 passes through arbitrary lowercase attrs). Google/Bing require lowercase. */}

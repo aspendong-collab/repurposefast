@@ -1,0 +1,51 @@
+# ============================================================
+# SEO Weekly: Health check + indexability audit
+# ============================================================
+# Runs every Monday at 08:00 UTC. Checks core pages,
+# sitemap, and pings Google with updated sitemap.
+# ============================================================
+
+name: SEO Weekly Audit
+
+on:
+  schedule:
+    - cron: "0 8 * * 1" # Every Monday 8 AM UTC
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check core pages
+        run: |
+          echo "=== SEO Health Check: $(date -u) ==="
+          for url in \
+            "https://www.saveik.com" \
+            "https://www.saveik.com/blog" \
+            "https://www.saveik.com/about" \
+            "https://www.saveik.com/sitemap.xml" \
+            "https://www.saveik.com/robots.txt" \
+            "https://www.saveik.com/ads.txt"; do
+            STATUS=$(curl -s -o /dev/null -w "%{http_code}" -L "$url")
+            if [ "$STATUS" = "200" ]; then
+              echo "  ✅ $url → $STATUS"
+            else
+              echo "  ❌ $url → $STATUS"
+            fi
+          done
+
+      - name: Check sitemap size
+        run: |
+          URLS=$(curl -s "https://www.saveik.com/sitemap.xml" | grep -c '<loc>')
+          echo "Sitemap contains $URLS URLs"
+
+      - name: Ping Google Sitemap
+        run: |
+          curl -s "https://www.google.com/ping?sitemap=https://www.saveik.com/sitemap.xml"
+
+      - name: Check GSC index status (manual hint)
+        run: |
+          echo "📌 Manual: Check GSC → Indexing → Pages for any new issues"
+          echo "📌 Manual: Check GSC → Sitemaps for last read date"

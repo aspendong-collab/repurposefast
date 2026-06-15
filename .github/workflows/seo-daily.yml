@@ -1,0 +1,78 @@
+# ============================================================
+# SEO Daily: Auto blog post generation + sitemap ping
+# ============================================================
+# Runs every day at 02:00 UTC, generates 1 blog post for the
+# language with fewest posts, rebuilds index, commits & pushes.
+# Vercel auto-deploys on push → new content live instantly.
+# ============================================================
+
+name: SEO Daily Content
+
+on:
+  schedule:
+    - cron: "0 2 * * *" # Every day at 2 AM UTC
+  workflow_dispatch:     # Allow manual trigger
+
+jobs:
+  generate-content:
+    runs-on: ubuntu-latest
+    if: ${{ secrets.DEEPSEEK_API_KEY != '' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip3 install openai
+
+      - name: Find language with fewest posts
+        id: pick-lang
+        run: |
+          # Count posts per language and pick the minimum
+          MIN_LANG="en"
+          MIN_COUNT=999
+          for dir in content/blog/*/; do
+            lang=$(basename "$dir")
+            count=$(ls "$dir"/*.json 2>/dev/null | wc -l)
+            echo "  $lang: $count posts"
+            if [ "$count" -lt "$MIN_COUNT" ]; then
+              MIN_COUNT=$count
+              MIN_LANG=$lang
+            fi
+          done
+          echo "lang=$MIN_LANG" >> $GITHUB_OUTPUT
+          echo "Selected: $MIN_LANG ($MIN_COUNT posts)"
+
+      - name: Generate blog post
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: |
+          python3 scripts/auto_content.py \
+            --lang ${{ steps.pick-lang.outputs.lang }} \
+            --count 1
+
+      - name: Rebuild blog index
+        run: python3 scripts/gen_blog_index.py
+
+      - name: Commit & push
+        run: |
+          git config user.name "SEO Bot"
+          git config user.email "seo-bot@saveik.com"
+          git add content/blog/ content/blog/index.ts 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No new content generated, skipping commit."
+          else
+            git commit -m "seo: auto-generate ${{ steps.pick-lang.outputs.lang }} blog post [skip ci]"
+            git push
+          fi
+
+      - name: Ping Google Sitemap
+        run: |
+          curl -s "https://www.google.com/ping?sitemap=https://www.saveik.com/sitemap.xml"
+          echo ""
+          echo "Sitemap pinged to Google"
