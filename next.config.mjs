@@ -43,6 +43,16 @@ const nextConfig = {
         source: '/:path*',
         headers: securityHeaders,
       },
+      // Cache static assets aggressively (filenames have content hashes)
+      {
+        source: '/_next/static/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
     ]
   },
 }
