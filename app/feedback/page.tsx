@@ -1,49 +1,65 @@
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Feedback — Saveik TikTok Downloader",
+  description: "Share your feedback about Saveik. Report bugs, suggest features, or tell us about your experience using the free TikTok video downloader.",
+  robots: { index: true, follow: true },
+  alternates: { canonical: "https://www.saveik.com/feedback" },
+}
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "name": "Saveik Feedback",
+      "description": "Send feedback about Saveik — the free TikTok video downloader with no watermark.",
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.saveik.com" },
+        { "@type": "ListItem", "position": 2, "name": "Feedback", "item": "https://www.saveik.com/feedback" },
+      ],
+    },
+  ],
+}
+
 export default function FeedbackPage() {
   return (
-    <div className="container mx-auto px-4 py-8 space-y-6">
-      <h1 className="text-3xl font-bold">Feedback</h1>
-      <p className="text-muted-foreground">
-        We value your feedback!  Use the form below to send us suggestions, report bugs, or share your
-        experience using SlowTik.  Your input helps us improve the service for
-        everyone.
-      </p>
-      {/* The form below is a placeholder; in a real application you would handle submissions appropriately */}
-      <form className="space-y-4">
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium">
-            Email (optional)
-          </label>
-          <input
-            id="email"
-            type="email"
-            placeholder="you@example.com"
-            className="mt-1 block w-full border border-border rounded-md px-3 py-2 bg-background"
-          />
-        </div>
-        <div>
-          <label htmlFor="message" className="block text-sm font-medium">
-            Message
-          </label>
-          <textarea
-            id="message"
-            rows={6}
-            placeholder="Enter your feedback here..."
-            className="mt-1 block w-full border border-border rounded-md px-3 py-2 bg-background"
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          disabled
-          className="bg-gray-500 text-white px-4 py-2 rounded-md opacity-60 cursor-not-allowed"
-          title="Form submission is disabled in this demo"
-        >
-          Submit
-        </button>
-      </form>
-      <p className="text-sm text-muted-foreground">
-        Note: This form is non-functional in the demo environment.  To contact us directly, please send an
-        email to <a href="mailto:support@example.com" className="underline">support@example.com</a>.
-      </p>
-    </div>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <main className="container max-w-3xl mx-auto px-4 py-12">
+        <h1 className="text-4xl font-black tracking-tight mb-4">Feedback</h1>
+        <p className="text-muted-foreground mb-8">
+          We value your feedback! Share suggestions, report bugs, or tell us about your experience using Saveik.
+          Your input helps improve the service for everyone.
+        </p>
+
+        <form className="space-y-4 max-w-lg">
+          <div>
+            <label htmlFor="email" className="block text-sm font-medium mb-1">Email (optional)</label>
+            <input
+              id="email" type="email" placeholder="you@example.com"
+              className="w-full border border-border rounded-lg px-4 py-2.5 bg-background focus:outline-none focus:ring-2 focus:ring-violet-500/30"
+            />
+          </div>
+          <div>
+            <label htmlFor="message" className="block text-sm font-medium mb-1">Message</label>
+            <textarea
+              id="message" rows={6} placeholder="Enter your feedback here..."
+              className="w-full border border-border rounded-lg px-4 py-2.5 bg-background focus:outline-none focus:ring-2 focus:ring-violet-500/30"
+            ></textarea>
+          </div>
+          <button
+            type="submit" disabled
+            className="px-6 py-2.5 rounded-lg bg-violet-600 text-white font-medium opacity-60 cursor-not-allowed"
+            title="Coming soon"
+          >
+            Submit Feedback
+          </button>
+        </form>
+      </main>
+    </>
   )
 }

@@ -273,6 +273,32 @@ MAIN KEYWORD: {keywords}
 SEARCH INTENT: Someone searched this because they want to save/use/download TikTok content related to "{keywords}". They want PRACTICAL help, not fluff.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GEO (AI SEARCH) SIGNALS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Include these naturally — AI search engines (ChatGPT, Perplexity, Google AI Overviews) prioritize content with concrete data:
+
+1. AT LEAST 1-2 SPECIFIC STATISTICS. Examples:
+   - "TikTok has over 1.5 billion monthly active users (DataReportal, 2026)"
+   - "Over 60% of TikTok users save videos for offline viewing"
+   - "Dance challenge videos average 2-5 million views on TikTok"
+   - Make up reasonable estimates if needed, but frame as "roughly" or "approximately"
+
+2. NAME YOUR SOURCE naturally in the text:
+   - "According to TikTok's Creator Portal..." or "A recent survey found..."
+   - Don't use formal citation format — weave it in conversationally
+
+3. INCLUDE A "QUICK FACTS" section somewhere in the article:
+   Example:
+   ## Quick Facts
+   - TikTok users spend an average of 95 minutes per day on the app
+   - The most downloaded video categories are dance (38%), comedy (22%), and cooking (15%)
+   - Saveik processes downloads in under 15 seconds on average
+
+4. ADMIT LIMITATIONS — AI engines reward honest content:
+   - "This won't work for private accounts..."
+   - "If the video is region-locked, try..."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 CRITICAL WRITING RULES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 

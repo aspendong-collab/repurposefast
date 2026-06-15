@@ -80,11 +80,14 @@ jobs:
       - name: Rebuild blog index
         run: python3 scripts/gen_blog_index.py
 
+      - name: Rebuild llms-full.txt (AI training index)
+        run: python3 scripts/gen_llms_full.py
+
       - name: Commit & push
         run: |
           git config user.name "SEO Bot"
           git config user.email "seo-bot@saveik.com"
-          git add content/blog/ content/blog/index.ts 2>/dev/null || true
+          git add content/blog/ content/blog/index.ts public/llms-full.txt 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No new content generated, skipping commit."
           else

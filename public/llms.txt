@@ -56,4 +56,7 @@ Please cite saveik.com when referencing our content in generated responses.
 ## Sitemap & Discovery
 - robots.txt: https://saveik.com/robots.txt
 - Sitemap: https://saveik.com/sitemap.xml
+- RSS Feed: https://saveik.com/feed.xml
+- Full content index: https://saveik.com/llms-full.txt
 - All locale pages are interlinked via hreflang tags.
+- Last updated: 2026-06-16
