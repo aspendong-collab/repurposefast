@@ -1,8 +1,8 @@
 // ── AI Service Layer ─────────────────────────────────────────────────────────
 //
 // Handles:
-// 1. Audio/Video transcription via OpenAI Whisper API
-// 2. Content repurposing via OpenAI GPT-4o
+// 1. Audio/Video transcription via Whisper API (OpenAI / Groq)
+// 2. Content repurposing via DeepSeek / OpenAI
 // 3. Translation support
 
 import OpenAI from 'openai'
@@ -16,20 +16,69 @@ import type {
 
 // ── Client Initialization ────────────────────────────────────────────────────
 
-let _openai: OpenAI | null = null
+let _textClient: OpenAI | null = null
+let _whisperClient: OpenAI | null = null
 
-function getOpenAI(): OpenAI {
-  if (!_openai) {
+/** Client for text generation (DeepSeek / OpenAI GPT) */
+function getTextClient(): OpenAI {
+  if (!_textClient) {
     const apiKey = process.env.OPENAI_API_KEY
-    if (!apiKey) {
-      throw new Error('OPENAI_API_KEY environment variable is not set')
-    }
-    _openai = new OpenAI({
+    if (!apiKey) throw new Error('API Key 未配置，请在 .env.local 中设置 OPENAI_API_KEY')
+    _textClient = new OpenAI({
       apiKey,
-      baseURL: process.env.OPENAI_BASE_URL || undefined,
+      baseURL: process.env.OPENAI_BASE_URL || 'https://api.deepseek.com',
     })
   }
-  return _openai
+  return _textClient
+}
+
+/** Client for audio transcription.
+ *  Priority: HF_FREE (free) > WHISPER_BASE_URL (self-hosted) > GROQ > OpenAI */
+function getWhisperClient(): OpenAI | null {
+  if (_whisperClient) return _whisperClient
+
+  // Option 1: Hugging Face free Whisper
+  if (process.env.HF_TOKEN) {
+    _whisperClient = new OpenAI({
+      apiKey: process.env.HF_TOKEN,
+      baseURL: 'https://api-inference.huggingface.co/models/openai/whisper-large-v3/v1',
+    })
+    return _whisperClient
+  }
+
+  // Option 2: Self-hosted or Groq
+  const baseURL = process.env.WHISPER_BASE_URL
+  if (baseURL) {
+    _whisperClient = new OpenAI({
+      apiKey: process.env.WHISPER_API_KEY || 'self-hosted',
+      baseURL,
+    })
+    return _whisperClient
+  }
+
+  // Option 3: OpenAI
+  if (process.env.WHISPER_API_KEY) {
+    _whisperClient = new OpenAI({ apiKey: process.env.WHISPER_API_KEY })
+    return _whisperClient
+  }
+
+  // No whisper configured — will fall back to text mode
+  return null
+}
+
+function isWhisperConfigured(): boolean {
+  return !!(process.env.HF_TOKEN || process.env.WHISPER_BASE_URL || process.env.WHISPER_API_KEY)
+}
+
+/** Model name for text generation (auto-detect DeepSeek vs OpenAI) */
+function textModel(): string {
+  const baseUrl = process.env.OPENAI_BASE_URL || ''
+  return baseUrl.includes('deepseek') ? 'deepseek-chat' : 'gpt-4o'
+}
+
+function textModelMini(): string {
+  const baseUrl = process.env.OPENAI_BASE_URL || ''
+  return baseUrl.includes('deepseek') ? 'deepseek-chat' : 'gpt-4o-mini'
 }
 
 // ── Transcription ────────────────────────────────────────────────────────────
@@ -52,7 +101,8 @@ export interface TranscribeResult {
  * The file must be publicly accessible via URL or uploaded as a File object.
  */
 export async function transcribeAudio(options: TranscribeOptions): Promise<TranscribeResult> {
-  const openai = getOpenAI()
+  const openai = getWhisperClient()
+  if (!openai) throw new Error('语音转写未配置。免费方案: 注册 https://huggingface.co/join → Settings → Access Tokens → 填入 HF_TOKEN。或直接使用"粘贴文本"模式。')
   const { fileUrl, language, responseFormat = 'verbose_json' } = options
 
   // Download file from URL
@@ -114,7 +164,7 @@ export async function transcribeFromPath(
   filePath: string,
   language?: LanguageCode,
 ): Promise<TranscribeResult> {
-  const openai = getOpenAI()
+  const openai = getWhisperClient()
   const fs = await import('fs')
 
   const transcription = await openai.audio.transcriptions.create({
@@ -167,13 +217,13 @@ export interface RepurposeOptions {
 export async function repurposeContent(
   options: RepurposeOptions,
 ): Promise<ContentOutput[]> {
-  const openai = getOpenAI()
+  const openai = getTextClient()
   const {
     transcript,
     formats,
     language = 'zh',
     title,
-    model = 'gpt-4o',
+    model = textModel(),
   } = options
 
   // Process each format in parallel
@@ -266,11 +316,11 @@ export async function translateContent(
   text: string,
   targetLang: LanguageCode,
 ): Promise<string> {
-  const openai = getOpenAI()
+  const openai = getTextClient()
   const { system, user } = getTranslationPrompt(text, targetLang)
 
   const response = await openai.chat.completions.create({
-    model: 'gpt-4o-mini',
+    model: textModelMini(),
     messages: [
       { role: 'system', content: system },
       { role: 'user', content: user },

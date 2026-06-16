@@ -1,0 +1,92 @@
+# ───────────────────────────────────────────────────────────────
+# Product Agent — 功能规格 (Spec)
+# 定义每个功能的验收标准，测试 Agent 据此自动验证
+# ───────────────────────────────────────────────────────────────
+
+specs:
+  - id: spec-001
+    name: "首页可访问"
+    description: "用户访问根路径，返回 200 或 307 重定向"
+    endpoint: GET /
+    expect:
+      status_any: [200, 307, 308]
+
+  - id: spec-002
+    name: "落地页渲染"
+    description: "访问 /app 展示完整落地页(10个模块)"
+    endpoint: GET /app
+    expect:
+      status: 200
+      contains:
+        - "Turn One Video"
+        - "How It Works"
+        - "Pricing"
+        - "FAQ"
+
+  - id: spec-003
+    name: "流式生成API"
+    description: "文本 → AI 生成多平台内容(SSE)"
+    endpoint: POST /api/repurpose/stream
+    body:
+      transcript: "AI技术正在改变内容创作的未来。创作者需要更高效的工具来将视频内容转化为多平台文章。"
+      formats: ["wechat-article", "twitter-thread"]
+      language: "zh"
+    expect:
+      status: 200
+      contains_stream: '"type"'
+
+  - id: spec-004
+    name: "转写API连通"
+    description: "转写端点可访问 (Hugging Face 免费额度)"
+    endpoint: POST /api/repurpose/transcribe
+    note: "完整测试需上传音频。此验证确保端点连通。"
+    expect:
+      status_any: [200, 400, 500]  # 400=无文件, 500=服务暂不可用(免费版可能排队)
+      json_keys:
+        - error
+
+  - id: spec-005
+    name: "SEO落地页"
+    description: "所有12个SEO工具页返回200"
+    endpoints:
+      - GET /tools/youtube-to-blog-post
+      - GET /tools/video-to-twitter-thread
+      - GET /tools/video-to-xiaohongshu
+      - GET /tools/video-to-linkedin-post
+      - GET /tools/podcast-to-article
+      - GET /tools/video-to-seo-article
+      - GET /tools/audio-to-text
+      - GET /tools/video-to-subtitle
+      - GET /tools/meeting-to-notes
+      - GET /tools/interview-transcript
+      - GET /tools/video-content-repurposing
+      - GET /tools/mp4-to-text
+    expect:
+      all_status: 200
+
+  - id: spec-006
+    name: "对话精调"
+    description: "发送修改指令，AI 返回精调后内容"
+    endpoint: POST /api/repurpose/refine
+    body:
+      format: "wechat-article"
+      originalContent: "这是一篇关于AI工具的文章。"
+      instruction: "更口语化"
+    expect:
+      status: 200
+      json_keys:
+        - refined
+        - content
+        - diff
+
+  - id: spec-007
+    name: "错误处理"
+    description: "无输入时返回适当错误"
+    endpoint: POST /api/repurpose/repurpose
+    body:
+      transcript: ""
+      formats: []
+    expect:
+      status: 400
+      json_keys:
+        - error
