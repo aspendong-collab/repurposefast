@@ -1,329 +1,329 @@
 {
   "nav": {
-    "features": "Features",
-    "howItWorks": "How It Works",
-    "pricing": "Pricing",
-    "faq": "FAQ",
-    "tryFree": "Try Free"
+    "features": "ฟีเจอร์",
+    "howItWorks": "วิธีการทำงาน",
+    "pricing": "ราคา",
+    "faq": "คำถามที่พบบ่อย",
+    "tryFree": "ทดลองใช้ฟรี"
   },
   "hero": {
-    "badge": "AI-Powered Content Repurposing",
-    "title": "Turn One Video Into",
-    "highlight": "Content Everywhere",
-    "subtitle": "Paste a YouTube link. Upload a podcast. Drop a text transcript.",
-    "accent": "ailomo instantly creates polished content for every platform.",
+    "badge": "การปรับเปลี่ยนเนื้อหาด้วย AI",
+    "title": "เปลี่ยนวิดีโอหนึ่งเป็น",
+    "highlight": "เนื้อหาทุกที่",
+    "subtitle": "วางลิงก์ YouTube อัปโหลดพอดแคสต์ หรือวางข้อความถอดเสียง",
+    "accent": "ailomo สร้างเนื้อหาที่สมบูรณ์แบบสำหรับทุกแพลตฟอร์มทันที",
     "stats": {
-      "languages": "Languages",
-      "formats": "Formats",
-      "speed": "Processing"
+      "languages": "ภาษา",
+      "formats": "รูปแบบ",
+      "speed": "ความเร็วในการประมวลผล"
     },
     "tabs": {
-      "url": "Paste Link",
-      "file": "Upload",
-      "text": "Text"
+      "url": "วางลิงก์",
+      "file": "อัปโหลด",
+      "text": "ข้อความ"
     },
-    "placeholder": "Paste a YouTube link, podcast URL, or any video...",
-    "generate": "Generate",
-    "fileDropTitle": "Drop your file here",
-    "fileDropSubtitle": "MP3, WAV, MP4, MOV — up to 500MB",
-    "textPlaceholder": "Paste your transcript or text — AI transforms it into platform-ready content...",
-    "noSignup": "No sign-up required. Free to start.",
-    "processing": "Processing...",
-    "error": "Something went wrong",
-    "tryAgain": "Try again",
-    "startOver": "Start over",
-    "formatsGenerated": "formats generated"
+    "placeholder": "วางลิงก์ YouTube, URL พอดแคสต์ หรือวิดีโอใดๆ...",
+    "generate": "สร้าง",
+    "fileDropTitle": "วางไฟล์ของคุณที่นี่",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — สูงสุด 500MB",
+    "textPlaceholder": "วางข้อความถอดเสียงหรือข้อความของคุณ — AI จะแปลงเป็นเนื้อหาที่พร้อมใช้บนแพลตฟอร์ม...",
+    "noSignup": "ไม่ต้องสมัครสมาชิก เริ่มต้นฟรี",
+    "processing": "กำลังประมวลผล...",
+    "error": "เกิดข้อผิดพลาด",
+    "tryAgain": "ลองอีกครั้ง",
+    "startOver": "เริ่มใหม่",
+    "formatsGenerated": "รูปแบบที่สร้าง"
   },
   "howItWorks": {
-    "label": "How It Works",
-    "title": "From Video to ",
-    "highlight": "Multi-Platform",
-    "suffix": "in 3 Steps",
+    "label": "วิธีการทำงาน",
+    "title": "จากวิดีโอสู่ ",
+    "highlight": "หลายแพลตฟอร์ม",
+    "suffix": "ใน 3 ขั้นตอน",
     "steps": [
       {
-        "title": "Paste or Upload",
-        "desc": "Drop a YouTube link, upload an audio file, or paste text. Zero configuration."
+        "title": "วางหรืออัปโหลด",
+        "desc": "วางลิงก์ YouTube อัปโหลดไฟล์เสียง หรือวางข้อความ ไม่ต้องตั้งค่าอะไร"
       },
       {
-        "title": "AI Transforms It",
-        "desc": "Your content is transcribed, understood, and rewritten for every platform's unique voice."
+        "title": "AI เปลี่ยนมัน",
+        "desc": "เนื้อหาของคุณถูกถอดเสียง ทำความเข้าใจ และเขียนใหม่ให้เหมาะกับเสียงของแต่ละแพลตฟอร์ม"
       },
       {
-        "title": "Publish Everywhere",
-        "desc": "Get blog posts, social threads, newsletters, and more. Copy, download, done."
+        "title": "เผยแพร่ทุกที่",
+        "desc": "รับโพสต์บล็อก โซเชียลเธรด จดหมายข่าว และอื่นๆ คัดลอก ดาวน์โหลด เสร็จ"
       }
     ]
   },
   "highlights": {
-    "label": "Why ailomo",
-    "title": "Built Different. ",
+    "label": "ทำไมต้อง ailomo",
+    "title": "สร้างแตกต่าง ",
     "highlight": "AI-Native",
     "items": [
       {
-        "badge": "Intelligence",
-        "title": "Not Just Transcription",
-        "desc": "Our AI analyzes context, extracts insights, and generates content optimized for each platform's audience."
+        "badge": "ความฉลาด",
+        "title": "ไม่ใช่แค่การถอดเสียง",
+        "desc": "AI ของเราวิเคราะห์บริบท ดึงข้อมูลเชิงลึก และสร้างเนื้อหาที่ปรับให้เหมาะสมกับผู้ชมของแต่ละแพลตฟอร์ม"
       },
       {
-        "badge": "Distribution",
-        "title": "One Click, Every Platform",
-        "desc": "All 10 formats generated simultaneously. From long-form blogs to social threads — everything ready in seconds."
+        "badge": "การกระจาย",
+        "title": "คลิกเดียว ทุกแพลตฟอร์ม",
+        "desc": "สร้างรูปแบบทั้งหมด 10 รูปแบบพร้อมกัน ตั้งแต่บล็อกยาวไปจนถึงโซเชียลเธรด — ทุกอย่างพร้อมในไม่กี่วินาที"
       },
       {
-        "badge": "Refinement",
-        "title": "Chat With Your Content",
-        "desc": "Every output has a built-in AI chat. \"Add more data\", \"make it punchier\" — changes applied instantly."
+        "badge": "การปรับแต่ง",
+        "title": "แชทกับเนื้อหาของคุณ",
+        "desc": "ทุกผลลัพธ์มีแชท AI ในตัว \"เพิ่มข้อมูลเพิ่ม\" \"ทำให้กระชับขึ้น\" — การเปลี่ยนแปลงถูกนำไปใช้ทันที"
       }
     ]
   },
   "features": {
-    "label": "Features",
-    "title": "Everything to ",
-    "highlight": "Scale Content",
-    "subtitle": "Built for creators who turn every piece of content into maximum impact.",
+    "label": "ฟีเจอร์",
+    "title": "ทุกอย่างเพื่อ ",
+    "highlight": "ขยายเนื้อหา",
+    "subtitle": "สร้างมาเพื่อครีเอเตอร์ที่เปลี่ยนทุกชิ้นเนื้อหาให้เกิดผลกระทบสูงสุด",
     "list": [
       {
-        "title": "AI-Powered Rewriting",
-        "desc": "Not just transcription — our AI understands context and rewrites for each platform's unique voice."
+        "title": "การเขียนใหม่ด้วย AI",
+        "desc": "ไม่ใช่แค่การถอดเสียง — AI ของเราเข้าใจบริบทและเขียนใหม่ให้เหมาะกับเสียงของแต่ละแพลตฟอร์ม"
       },
       {
-        "title": "10 Output Formats",
-        "desc": "Blog posts, Twitter threads, LinkedIn, Xiaohongshu, newsletters, SRT subtitles, SEO articles, more."
+        "title": "รูปแบบผลลัพธ์ 10 รูปแบบ",
+        "desc": "โพสต์บล็อก, Twitter threads, LinkedIn, Xiaohongshu, จดหมายข่าว, คำบรรยาย SRT, บทความ SEO, และอื่นๆ"
       },
       {
-        "title": "63+ Languages",
-        "desc": "Transcribe and generate in 63+ languages. Built for international creators."
+        "title": "63+ ภาษา",
+        "desc": "ถอดเสียงและสร้างเนื้อหาใน 63+ ภาษา สร้างมาเพื่อครีเอเตอร์ระดับนานาชาติ"
       },
       {
-        "title": "Streaming Generation",
-        "desc": "Content appears character by character in real-time. No waiting for spinners."
+        "title": "การสร้างแบบสตรีมมิ่ง",
+        "desc": "เนื้อหาปรากฏทีละตัวอักษรแบบเรียลไทม์ ไม่ต้องรอสปินเนอร์"
       },
       {
-        "title": "Conversational Refinement",
-        "desc": "Chat with each output to fine-tune it. \"Make it shorter\" — done."
+        "title": "การปรับแต่งแบบสนทนา",
+        "desc": "แชทกับแต่ละผลลัพธ์เพื่อปรับแต่ง \"ทำให้สั้นลง\" — เสร็จ"
       },
       {
-        "title": "6 Export Formats",
-        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Ready to publish instantly."
+        "title": "รูปแบบการส่งออก 6 รูปแบบ",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV พร้อมเผยแพร่ทันที"
       },
       {
-        "title": "Share & Collaborate",
-        "desc": "Generate links for teammates to view and collaborate on your content."
+        "title": "แชร์และทำงานร่วมกัน",
+        "desc": "สร้างลิงก์ให้เพื่อนร่วมทีมดูและทำงานร่วมกันในเนื้อหาของคุณ"
       },
       {
-        "title": "Private & Secure",
-        "desc": "Files deleted after processing. Your content is never used for training."
+        "title": "ส่วนตัวและปลอดภัย",
+        "desc": "ไฟล์ถูกลบหลังการประมวลผล เนื้อหาของคุณไม่ถูกใช้ในการฝึก"
       },
       {
-        "title": "Smart Detection",
-        "desc": "YouTube link? → Blog + Twitter. Bilibili? → WeChat + Xiaohongshu. Automatic."
+        "title": "การตรวจจับอัจฉริยะ",
+        "desc": "ลิงก์ YouTube? → บล็อก + Twitter Bilibili? → WeChat + Xiaohongshu อัตโนมัติ"
       }
     ]
   },
   "formats": {
-    "outputLabel": "Output Formats",
-    "outputTitle": "10 Formats, ",
-    "outputHighlight": "One Click",
-    "outputSubtitle": "Generate everything simultaneously — no need to run the tool multiple times.",
+    "outputLabel": "รูปแบบผลลัพธ์",
+    "outputTitle": "10 รูปแบบ ",
+    "outputHighlight": "คลิกเดียว",
+    "outputSubtitle": "สร้างทุกอย่างพร้อมกัน — ไม่ต้องรันเครื่องมือหลายครั้ง",
     "formatNames": [
-      "Blog Post",
+      "โพสต์บล็อก",
       "WeChat",
       "Xiaohongshu",
       "Twitter",
       "LinkedIn",
-      "SEO Article",
-      "Newsletter",
-      "SRT Subtitles",
-      "AI Summary",
-      "Mind Map"
+      "บทความ SEO",
+      "จดหมายข่าว",
+      "คำบรรยาย SRT",
+      "สรุป AI",
+      "แผนที่ความคิด"
     ],
-    "langLabel": "Global Reach",
-    "langTitle": "63+ Languages Supported",
-    "langSubtitle": "Transcribe and generate content in 63+ languages. Perfect for international creators and global audiences.",
-    "more": "+45 more"
+    "langLabel": "การเข้าถึงทั่วโลก",
+    "langTitle": "รองรับ 63+ ภาษา",
+    "langSubtitle": "ถอดเสียงและสร้างเนื้อหาใน 63+ ภาษา เหมาะสำหรับครีเอเตอร์นานาชาติและผู้ชมทั่วโลก",
+    "more": "+45 เพิ่มเติม"
   },
   "social": {
-    "label": "Trusted by Creators",
+    "label": "เชื่อถือโดยครีเอเตอร์",
     "stats": {
-      "users": "Active Users",
-      "videos": "Videos Processed",
-      "rating": "User Rating",
-      "languages": "Languages"
+      "users": "ผู้ใช้ที่ใช้งาน",
+      "videos": "วิดีโอที่ประมวลผล",
+      "rating": "คะแนนผู้ใช้",
+      "languages": "ภาษา"
     },
     "testimonials": [
       {
-        "text": "\"Finally a tool that understands content creation workflow. One video → all platforms in minutes. Game changer for my content schedule.\"",
+        "text": "\"ในที่สุดก็มีเครื่องมือที่เข้าใจขั้นตอนการทำงานสร้างเนื้อหา หนึ่งวิดีโอ → ทุกแพลตฟอร์มในไม่กี่นาที เปลี่ยนเกมสำหรับตารางเนื้อหาของฉัน\"",
         "author": "Sarah Chen",
-        "role": "Content Creator"
+        "role": "ครีเอเตอร์เนื้อหา"
       },
       {
-        "text": "\"The conversational refinement is brilliant. I can tweak each output by just chatting with it. Saves me hours every week.\"",
+        "text": "\"การปรับแต่งแบบสนทนายอดเยี่ยม ฉันสามารถปรับแต่ละผลลัพธ์โดยแค่แชทกับมัน ประหยัดเวลาหลายชั่วโมงทุกสัปดาห์\"",
         "author": "Marcus Rivera",
-        "role": "Marketing Lead"
+        "role": "หัวหน้าฝ่ายการตลาด"
       },
       {
-        "text": "\"I was skeptical about AI content, but the quality genuinely surprised me. The platform-specific formatting is spot on.\"",
+        "text": "\"ฉันเคยสงสัยเกี่ยวกับเนื้อหา AI แต่คุณภาพทำให้ฉันประหลาดใจจริงๆ การจัดรูปแบบเฉพาะแพลตฟอร์มตรงจุดมาก\"",
         "author": "Yuki Tanaka",
-        "role": "Podcast Host"
+        "role": "พิธีกรพอดแคสต์"
       },
       {
-        "text": "\"As a solo founder, this tool gives me a content team's output. LinkedIn posts, blogs, tweets — all from one video.\"",
+        "text": "\"ในฐานะผู้ก่อตั้งคนเดียว เครื่องมือนี้ให้ผลลัพธ์เท่ากับทีมเนื้อหา โพสต์ LinkedIn, บล็อก, ทวีต — ทั้งหมดจากวิดีโอเดียว\"",
         "author": "Alex Park",
-        "role": "Startup Founder"
+        "role": "ผู้ก่อตั้งสตาร์ทอัพ"
       }
     ]
   },
   "pricing": {
-    "label": "Pricing",
-    "title": "Simple, ",
-    "highlight": "Transparent",
-    "suffix": "Pricing",
-    "subtitle": "Start free, upgrade when you need more. No hidden fees. Cancel anytime.",
-    "enterprise": "Need more? ",
-    "enterpriseLink": "Contact us",
-    "enterpriseSuffix": " for enterprise pricing.",
+    "label": "ราคา",
+    "title": "ราคา ",
+    "highlight": "โปร่งใส",
+    "suffix": " ง่ายๆ",
+    "subtitle": "เริ่มฟรี อัปเกรดเมื่อต้องการเพิ่ม ไม่มีค่าธรรมเนียมแอบแฝง ยกเลิกได้ทุกเมื่อ",
+    "enterprise": "ต้องการเพิ่ม? ",
+    "enterpriseLink": "ติดต่อเรา",
+    "enterpriseSuffix": " สำหรับราคาองค์กร",
     "plans": {
       "free": {
-        "name": "Free",
-        "desc": "Perfect for trying it out",
-        "cta": "Get Started",
+        "name": "ฟรี",
+        "desc": "เหมาะสำหรับลองใช้",
+        "cta": "เริ่มต้น",
         "features": [
-          "3 videos/month",
-          "5 output formats",
-          "Basic AI model",
-          "120 mins transcription",
-          "Community support"
+          "3 วิดีโอ/เดือน",
+          "5 รูปแบบผลลัพธ์",
+          "โมเดล AI พื้นฐาน",
+          "ถอดเสียง 120 นาที",
+          "สนับสนุนชุมชน"
         ]
       },
       "creator": {
-        "name": "Creator",
-        "desc": "For serious content creators",
-        "cta": "Subscribe Now",
-        "badge": "Most Popular",
+        "name": "ครีเอเตอร์",
+        "desc": "สำหรับครีเอเตอร์เนื้อหาจริงจัง",
+        "cta": "สมัครตอนนี้",
+        "badge": "ได้รับความนิยมมากที่สุด",
         "features": [
-          "30 videos/month",
-          "All 10 output formats",
-          "Premium AI model",
-          "1,200 mins transcription",
-          "Conversational refinement",
-          "Priority support",
-          "API access"
+          "30 วิดีโอ/เดือน",
+          "รูปแบบผลลัพธ์ทั้งหมด 10 รูปแบบ",
+          "โมเดล AI พรีเมียม",
+          "ถอดเสียง 1,200 นาที",
+          "การปรับแต่งแบบสนทนา",
+          "สนับสนุนลำดับความสำคัญ",
+          "การเข้าถึง API"
         ]
       },
       "pro": {
-        "name": "Pro",
-        "desc": "For teams and agencies",
-        "cta": "Subscribe Now",
+        "name": "โปร",
+        "desc": "สำหรับทีมและเอเจนซี่",
+        "cta": "สมัครตอนนี้",
         "features": [
-          "Unlimited videos",
-          "All formats + custom",
-          "Premium AI + custom tone",
-          "6,000 mins transcription",
-          "Team collaboration",
-          "White-label export",
-          "Dedicated support",
-          "Analytics dashboard"
+          "วิดีโอไม่จำกัด",
+          "ทุกรูปแบบ + ปรับแต่ง",
+          "AI พรีเมียม + โทนเสียงที่กำหนดเอง",
+          "ถอดเสียง 6,000 นาที",
+          "การทำงานร่วมกันเป็นทีม",
+          "ส่งออกแบบ White-label",
+          "สนับสนุนเฉพาะ",
+          "แดชบอร์ดวิเคราะห์"
         ]
       }
     }
   },
   "cta": {
-    "title": "Ready to ",
-    "highlight": "10x Your Content",
-    "suffix": "Output?",
-    "subtitle": "Join thousands of creators who turn every video into a complete multi-platform content strategy. Start free — no credit card needed.",
-    "start": "Start for Free",
-    "pricing": "View Pricing"
+    "title": "พร้อม ",
+    "highlight": "เพิ่มเนื้อหาของคุณ 10 เท่า",
+    "suffix": " หรือยัง?",
+    "subtitle": "เข้าร่วมครีเอเตอร์หลายพันคนที่เปลี่ยนทุกวิดีโอเป็นกลยุทธ์เนื้อหาหลายแพลตฟอร์มที่สมบูรณ์ เริ่มฟรี — ไม่ต้องใช้บัตรเครดิต",
+    "start": "เริ่มต้นฟรี",
+    "pricing": "ดูราคา"
   },
   "faq": {
-    "label": "FAQ",
-    "title": "Frequently Asked ",
-    "highlight": "Questions",
+    "label": "คำถามที่พบบ่อย",
+    "title": "คำถามที่พบบ่อย",
+    "highlight": "คำถาม",
     "items": [
       {
-        "q": "Is it really free to start?",
-        "a": "Yes! Free plan gives you 3 videos/month with 5 output formats. No credit card required."
+        "q": "เริ่มต้นฟรีจริงหรือ?",
+        "a": "ใช่! แผนฟรีให้คุณ 3 วิดีโอ/เดือน พร้อม 5 รูปแบบผลลัพธ์ ไม่ต้องใช้บัตรเครดิต"
       },
       {
-        "q": "Which languages do you support?",
-        "a": "63+ languages for transcription and content generation."
+        "q": "รองรับภาษาใดบ้าง?",
+        "a": "63+ ภาษาสำหรับการถอดเสียงและสร้างเนื้อหา"
       },
       {
-        "q": "What platforms can I repurpose content for?",
-        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blogs, Medium, Substack, newsletters, and more."
+        "q": "สามารถปรับเปลี่ยนเนื้อหาสำหรับแพลตฟอร์มใดได้บ้าง?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, บล็อก, Medium, Substack, จดหมายข่าว และอื่นๆ"
       },
       {
-        "q": "How long does it take?",
-        "a": "Most videos processed in under 1 minute. Content streams in real-time."
+        "q": "ใช้เวลานานเท่าไหร่?",
+        "a": "วิดีโอส่วนใหญ่ประมวลผลภายใน 1 นาที เนื้อหาสตรีมแบบเรียลไทม์"
       },
       {
-        "q": "Can I refine AI-generated content?",
-        "a": "Yes! Chat with each output to adjust tone, length, style, or add elements."
+        "q": "สามารถปรับแต่งเนื้อหาที่ AI สร้างได้หรือไม่?",
+        "a": "ได้! แชทกับแต่ละผลลัพธ์เพื่อปรับโทนเสียง ความยาว สไตล์ หรือเพิ่มองค์ประกอบ"
       },
       {
-        "q": "What file formats can I upload?",
-        "a": "Audio: MP3, WAV, M4A, FLAC, OGG. Video: MP4, MOV, MKV, WEBM."
+        "q": "สามารถอัปโหลดไฟล์รูปแบบใดได้บ้าง?",
+        "a": "เสียง: MP3, WAV, M4A, FLAC, OGG วิดีโอ: MP4, MOV, MKV, WEBM"
       },
       {
-        "q": "Is my data safe?",
-        "a": "Yes. Files deleted after processing. Never used for training."
+        "q": "ข้อมูลของฉันปลอดภัยหรือไม่?",
+        "a": "ใช่ ไฟล์ถูกลบหลังการประมวลผล ไม่ถูกใช้ในการฝึก"
       },
       {
-        "q": "Can I cancel anytime?",
-        "a": "Yes, cancel anytime. No long-term contracts."
+        "q": "สามารถยกเลิกได้ทุกเมื่อหรือไม่?",
+        "a": "ได้ ยกเลิกได้ทุกเมื่อ ไม่มีสัญญาระยะยาว"
       }
     ]
   },
   "footer": {
-    "tagline": "AI-powered content repurposing. Turn one video into your entire multi-platform content strategy.",
-    "copyright": "All rights reserved.",
-    "builtWith": "Built for content creators worldwide",
+    "tagline": "การปรับเปลี่ยนเนื้อหาด้วย AI เปลี่ยนวิดีโอหนึ่งเป็นกลยุทธ์เนื้อหาหลายแพลตฟอร์มทั้งหมดของคุณ",
+    "copyright": "สงวนลิขสิทธิ์",
+    "builtWith": "สร้างมาเพื่อครีเอเตอร์เนื้อหาทั่วโลก",
     "sections": {
-      "product": "Product",
-      "tools": "Tools",
-      "legal": "Legal",
-      "company": "Company"
+      "product": "ผลิตภัณฑ์",
+      "tools": "เครื่องมือ",
+      "legal": "กฎหมาย",
+      "company": "บริษัท"
     },
     "links": {
-      "features": "Features",
-      "pricing": "Pricing",
-      "faq": "FAQ",
-      "yt2blog": "YouTube to Blog",
-      "vid2twitter": "Video to Twitter",
-      "vid2xhs": "Video to Xiaohongshu",
-      "podcast2article": "Podcast to Article",
-      "allTools": "All Tools →",
-      "privacy": "Privacy",
-      "terms": "Terms",
+      "features": "ฟีเจอร์",
+      "pricing": "ราคา",
+      "faq": "คำถามที่พบบ่อย",
+      "yt2blog": "YouTube เป็นบล็อก",
+      "vid2twitter": "วิดีโอเป็น Twitter",
+      "vid2xhs": "วิดีโอเป็น Xiaohongshu",
+      "podcast2article": "พอดแคสต์เป็นบทความ",
+      "allTools": "เครื่องมือทั้งหมด →",
+      "privacy": "ความเป็นส่วนตัว",
+      "terms": "ข้อกำหนด",
       "github": "GitHub",
-      "contact": "Contact"
+      "contact": "ติดต่อ"
     }
   },
   "workbench": {
-    "transcribing": "Transcribing",
-    "generating": "Generating Content",
-    "completed": "Complete",
-    "progress": "Progress",
-    "cancel": "Cancel",
-    "refineTitle": "Refine - ",
-    "refinePlaceholder": "Tell AI how to adjust this content...",
-    "send": "Send",
-    "copy": "Copy",
-    "copied": "Copied",
-    "download": "Download",
-    "refine": "Refine",
-    "elapsedPrefix": "Elapsed",
-    "elapsedFormat": "{elapsed}s",
-    "estimatedFormat": "~{seconds}s",
-    "transcribeStart": "Downloading and transcribing audio...",
-    "transcribeDone": "Transcription complete! Generating content...",
-    "transcribeFailed": "No transcript received. Check audio file.",
-    "streamError": "Stream read failed",
-    "timeoutError": "Processing timed out. Try a shorter audio.",
-    "generatingFormat": "Generating {format}...",
-    "formatComplete": "{format} complete",
-    "formatsProgress": "{done}/{total} formats",
-    "allDone": "All done! {count} formats generated",
-    "detectedLang": "Detected: {lang} · {chars} chars"
+    "transcribing": "กำลังถอดเสียง",
+    "generating": "กำลังสร้างเนื้อหา",
+    "completed": "เสร็จสมบูรณ์",
+    "progress": "ความคืบหน้า",
+    "cancel": "ยกเลิก",
+    "refineTitle": "ปรับแต่ง - ",
+    "refinePlaceholder": "บอก AI ว่าต้องการปรับเนื้อหานี้อย่างไร...",
+    "send": "ส่ง",
+    "copy": "คัดลอก",
+    "copied": "คัดลอกแล้ว",
+    "download": "ดาวน์โหลด",
+    "refine": "ปรับแต่ง",
+    "elapsedPrefix": "เวลาที่ใช้",
+    "elapsedFormat": "{elapsed}วินาที",
+    "estimatedFormat": "~{seconds}วินาที",
+    "transcribeStart": "กำลังดาวน์โหลดและถอดเสียง...",
+    "transcribeDone": "ถอดเสียงเสร็จ! กำลังสร้างเนื้อหา...",
+    "transcribeFailed": "ไม่ได้รับการถอดเสียง ตรวจสอบไฟล์เสียง",
+    "streamError": "การอ่านสตรีมล้มเหลว",
+    "timeoutError": "การประมวลผลหมดเวลา ลองใช้เสียงที่สั้นกว่า",
+    "generatingFormat": "กำลังสร้าง {format}...",
+    "formatComplete": "{format} เสร็จ",
+    "formatsProgress": "{done}/{total} รูปแบบ",
+    "allDone": "เสร็จทั้งหมด! สร้าง {count} รูปแบบ",
+    "detectedLang": "ตรวจพบ: {lang} · {chars} ตัวอักษร"
   }
 }
