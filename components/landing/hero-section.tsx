@@ -10,7 +10,7 @@ import type { Dictionary } from '@/lib/dictionary'
 const STATS = [{ value:'63+', icon:Globe },{ value:'10', icon:Layers },{ value:'<60s', icon:Zap }]
 
 export function HeroSection({ d }: { d: Dictionary }) {
-  const { state, setInputValue, setInputMode, startProcessing, cancelProcessing, openRefine, closeRefine, sendRefineMessage, reset } = useWorkbench()
+  const { state, setInputValue, setInputMode, startProcessing, cancelProcessing, openRefine, closeRefine, sendRefineMessage, reset } = useWorkbench(d)
   const busy = state.phase === 'transcribing' || state.phase === 'generating'
   const labels = [d.hero.stats.languages, d.hero.stats.formats, d.hero.stats.speed]
 

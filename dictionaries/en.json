@@ -153,6 +153,19 @@
     "copy": "Copy",
     "copied": "Copied",
     "download": "Download",
-    "refine": "Refine"
+    "refine": "Refine",
+    "elapsedPrefix": "Elapsed",
+    "elapsedFormat": "{elapsed}s",
+    "estimatedFormat": "~{seconds}s",
+    "transcribeStart": "Downloading and transcribing audio...",
+    "transcribeDone": "Transcription complete! Generating content...",
+    "transcribeFailed": "No transcript received. Check audio file.",
+    "streamError": "Stream read failed",
+    "timeoutError": "Processing timed out. Try a shorter audio.",
+    "generatingFormat": "Generating {format}...",
+    "formatComplete": "{format} complete",
+    "formatsProgress": "{done}/{total} formats",
+    "allDone": "All done! {count} formats generated",
+    "detectedLang": "Detected: {lang} · {chars} chars"
   }
 }
