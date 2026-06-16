@@ -1,329 +1,329 @@
 {
   "nav": {
-    "features": "Features",
-    "howItWorks": "How It Works",
-    "pricing": "Pricing",
-    "faq": "FAQ",
-    "tryFree": "Try Free"
+    "features": "功能",
+    "howItWorks": "工作原理",
+    "pricing": "定价",
+    "faq": "常见问题",
+    "tryFree": "免费试用"
   },
   "hero": {
-    "badge": "AI-Powered Content Repurposing",
-    "title": "Turn One Video Into",
-    "highlight": "Content Everywhere",
-    "subtitle": "Paste a YouTube link. Upload a podcast. Drop a text transcript.",
-    "accent": "ailomo instantly creates polished content for every platform.",
+    "badge": "AI 驱动的内容再利用",
+    "title": "将一个视频变成",
+    "highlight": "无处不在的内容",
+    "subtitle": "粘贴 YouTube 链接。上传播客。拖入文本转录。",
+    "accent": "ailomo 立即为每个平台创建精致内容。",
     "stats": {
-      "languages": "Languages",
-      "formats": "Formats",
-      "speed": "Processing"
+      "languages": "语言",
+      "formats": "格式",
+      "speed": "处理速度"
     },
     "tabs": {
-      "url": "Paste Link",
-      "file": "Upload",
-      "text": "Text"
+      "url": "粘贴链接",
+      "file": "上传",
+      "text": "文本"
     },
-    "placeholder": "Paste a YouTube link, podcast URL, or any video...",
-    "generate": "Generate",
-    "fileDropTitle": "Drop your file here",
-    "fileDropSubtitle": "MP3, WAV, MP4, MOV — up to 500MB",
-    "textPlaceholder": "Paste your transcript or text — AI transforms it into platform-ready content...",
-    "noSignup": "No sign-up required. Free to start.",
-    "processing": "Processing...",
-    "error": "Something went wrong",
-    "tryAgain": "Try again",
-    "startOver": "Start over",
-    "formatsGenerated": "formats generated"
+    "placeholder": "粘贴 YouTube 链接、播客 URL 或任何视频...",
+    "generate": "生成",
+    "fileDropTitle": "将文件拖放到此处",
+    "fileDropSubtitle": "MP3、WAV、MP4、MOV — 最大 500MB",
+    "textPlaceholder": "粘贴您的转录或文本 — AI 将其转换为平台就绪的内容...",
+    "noSignup": "无需注册。免费开始。",
+    "processing": "处理中...",
+    "error": "出了点问题",
+    "tryAgain": "重试",
+    "startOver": "重新开始",
+    "formatsGenerated": "格式已生成"
   },
   "howItWorks": {
-    "label": "How It Works",
-    "title": "From Video to ",
-    "highlight": "Multi-Platform",
-    "suffix": "in 3 Steps",
+    "label": "工作原理",
+    "title": "从视频到",
+    "highlight": "多平台",
+    "suffix": "只需 3 步",
     "steps": [
       {
-        "title": "Paste or Upload",
-        "desc": "Drop a YouTube link, upload an audio file, or paste text. Zero configuration."
+        "title": "粘贴或上传",
+        "desc": "放入 YouTube 链接、上传音频文件或粘贴文本。零配置。"
       },
       {
-        "title": "AI Transforms It",
-        "desc": "Your content is transcribed, understood, and rewritten for every platform's unique voice."
+        "title": "AI 转换",
+        "desc": "您的内容被转录、理解，并为每个平台的独特风格重写。"
       },
       {
-        "title": "Publish Everywhere",
-        "desc": "Get blog posts, social threads, newsletters, and more. Copy, download, done."
+        "title": "随处发布",
+        "desc": "获取博客文章、社交帖子、新闻通讯等。复制、下载，完成。"
       }
     ]
   },
   "highlights": {
-    "label": "Why ailomo",
-    "title": "Built Different. ",
-    "highlight": "AI-Native",
+    "label": "为什么选择 ailomo",
+    "title": "与众不同。",
+    "highlight": "AI 原生",
     "items": [
       {
-        "badge": "Intelligence",
-        "title": "Not Just Transcription",
-        "desc": "Our AI analyzes context, extracts insights, and generates content optimized for each platform's audience."
+        "badge": "智能",
+        "title": "不仅仅是转录",
+        "desc": "我们的 AI 分析上下文、提取见解，并生成针对每个平台受众优化的内容。"
       },
       {
-        "badge": "Distribution",
-        "title": "One Click, Every Platform",
-        "desc": "All 10 formats generated simultaneously. From long-form blogs to social threads — everything ready in seconds."
+        "badge": "分发",
+        "title": "一键，每个平台",
+        "desc": "所有 10 种格式同时生成。从长文博客到社交帖子 — 一切在几秒内就绪。"
       },
       {
-        "badge": "Refinement",
-        "title": "Chat With Your Content",
-        "desc": "Every output has a built-in AI chat. \"Add more data\", \"make it punchier\" — changes applied instantly."
+        "badge": "优化",
+        "title": "与您的内容对话",
+        "desc": "每个输出都内置 AI 聊天。\"添加更多数据\"、\"让它更犀利\" — 更改即时应用。"
       }
     ]
   },
   "features": {
-    "label": "Features",
-    "title": "Everything to ",
-    "highlight": "Scale Content",
-    "subtitle": "Built for creators who turn every piece of content into maximum impact.",
+    "label": "功能",
+    "title": "一切为了",
+    "highlight": "扩展内容",
+    "subtitle": "专为创作者打造，将每段内容转化为最大影响力。",
     "list": [
       {
-        "title": "AI-Powered Rewriting",
-        "desc": "Not just transcription — our AI understands context and rewrites for each platform's unique voice."
+        "title": "AI 驱动重写",
+        "desc": "不仅仅是转录 — 我们的 AI 理解上下文并为每个平台的独特风格重写。"
       },
       {
-        "title": "10 Output Formats",
-        "desc": "Blog posts, Twitter threads, LinkedIn, Xiaohongshu, newsletters, SRT subtitles, SEO articles, more."
+        "title": "10 种输出格式",
+        "desc": "博客文章、Twitter 帖子、LinkedIn、小红书、新闻通讯、SRT 字幕、SEO 文章等。"
       },
       {
-        "title": "63+ Languages",
-        "desc": "Transcribe and generate in 63+ languages. Built for international creators."
+        "title": "63+ 种语言",
+        "desc": "以 63+ 种语言转录和生成。专为国际创作者打造。"
       },
       {
-        "title": "Streaming Generation",
-        "desc": "Content appears character by character in real-time. No waiting for spinners."
+        "title": "流式生成",
+        "desc": "内容实时逐字符出现。无需等待旋转器。"
       },
       {
-        "title": "Conversational Refinement",
-        "desc": "Chat with each output to fine-tune it. \"Make it shorter\" — done."
+        "title": "对话式优化",
+        "desc": "与每个输出聊天以微调它。\"让它更短\" — 完成。"
       },
       {
-        "title": "6 Export Formats",
-        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Ready to publish instantly."
+        "title": "6 种导出格式",
+        "desc": "Markdown、TXT、PDF、DOCX、SRT、CSV。准备立即发布。"
       },
       {
-        "title": "Share & Collaborate",
-        "desc": "Generate links for teammates to view and collaborate on your content."
+        "title": "分享与协作",
+        "desc": "为队友生成链接以查看和协作您的内容。"
       },
       {
-        "title": "Private & Secure",
-        "desc": "Files deleted after processing. Your content is never used for training."
+        "title": "私密且安全",
+        "desc": "文件处理后删除。您的内容从不用于训练。"
       },
       {
-        "title": "Smart Detection",
-        "desc": "YouTube link? → Blog + Twitter. Bilibili? → WeChat + Xiaohongshu. Automatic."
+        "title": "智能检测",
+        "desc": "YouTube 链接？→ 博客 + Twitter。Bilibili？→ 微信 + 小红书。自动。"
       }
     ]
   },
   "formats": {
-    "outputLabel": "Output Formats",
-    "outputTitle": "10 Formats, ",
-    "outputHighlight": "One Click",
-    "outputSubtitle": "Generate everything simultaneously — no need to run the tool multiple times.",
+    "outputLabel": "输出格式",
+    "outputTitle": "10 种格式，",
+    "outputHighlight": "一键",
+    "outputSubtitle": "同时生成所有内容 — 无需多次运行工具。",
     "formatNames": [
-      "Blog Post",
-      "WeChat",
-      "Xiaohongshu",
+      "博客文章",
+      "微信",
+      "小红书",
       "Twitter",
       "LinkedIn",
-      "SEO Article",
-      "Newsletter",
-      "SRT Subtitles",
-      "AI Summary",
-      "Mind Map"
+      "SEO 文章",
+      "新闻通讯",
+      "SRT 字幕",
+      "AI 摘要",
+      "思维导图"
     ],
-    "langLabel": "Global Reach",
-    "langTitle": "63+ Languages Supported",
-    "langSubtitle": "Transcribe and generate content in 63+ languages. Perfect for international creators and global audiences.",
-    "more": "+45 more"
+    "langLabel": "全球覆盖",
+    "langTitle": "支持 63+ 种语言",
+    "langSubtitle": "以 63+ 种语言转录和生成内容。非常适合国际创作者和全球受众。",
+    "more": "+45 更多"
   },
   "social": {
-    "label": "Trusted by Creators",
+    "label": "受到创作者信赖",
     "stats": {
-      "users": "Active Users",
-      "videos": "Videos Processed",
-      "rating": "User Rating",
-      "languages": "Languages"
+      "users": "活跃用户",
+      "videos": "已处理视频",
+      "rating": "用户评分",
+      "languages": "语言"
     },
     "testimonials": [
       {
-        "text": "\"Finally a tool that understands content creation workflow. One video → all platforms in minutes. Game changer for my content schedule.\"",
+        "text": "\"终于有一个工具理解内容创作工作流。一个视频 → 所有平台只需几分钟。对我的内容计划来说是个游戏规则改变者。\"",
         "author": "Sarah Chen",
-        "role": "Content Creator"
+        "role": "内容创作者"
       },
       {
-        "text": "\"The conversational refinement is brilliant. I can tweak each output by just chatting with it. Saves me hours every week.\"",
+        "text": "\"对话式优化太棒了。我只需通过聊天就能调整每个输出。每周节省我数小时。\"",
         "author": "Marcus Rivera",
-        "role": "Marketing Lead"
+        "role": "营销主管"
       },
       {
-        "text": "\"I was skeptical about AI content, but the quality genuinely surprised me. The platform-specific formatting is spot on.\"",
+        "text": "\"我对 AI 内容持怀疑态度，但质量真的让我惊讶。针对特定平台的格式非常精准。\"",
         "author": "Yuki Tanaka",
-        "role": "Podcast Host"
+        "role": "播客主持人"
       },
       {
-        "text": "\"As a solo founder, this tool gives me a content team's output. LinkedIn posts, blogs, tweets — all from one video.\"",
+        "text": "\"作为独立创始人，这个工具给了我一个内容团队的产出。LinkedIn 帖子、博客、推文 — 全部来自一个视频。\"",
         "author": "Alex Park",
-        "role": "Startup Founder"
+        "role": "初创公司创始人"
       }
     ]
   },
   "pricing": {
-    "label": "Pricing",
-    "title": "Simple, ",
-    "highlight": "Transparent",
-    "suffix": "Pricing",
-    "subtitle": "Start free, upgrade when you need more. No hidden fees. Cancel anytime.",
-    "enterprise": "Need more? ",
-    "enterpriseLink": "Contact us",
-    "enterpriseSuffix": " for enterprise pricing.",
+    "label": "定价",
+    "title": "简单、",
+    "highlight": "透明",
+    "suffix": "定价",
+    "subtitle": "免费开始，需要时升级。无隐藏费用。随时取消。",
+    "enterprise": "需要更多？",
+    "enterpriseLink": "联系我们",
+    "enterpriseSuffix": "获取企业定价。",
     "plans": {
       "free": {
-        "name": "Free",
-        "desc": "Perfect for trying it out",
-        "cta": "Get Started",
+        "name": "免费",
+        "desc": "适合试用",
+        "cta": "开始使用",
         "features": [
-          "3 videos/month",
-          "5 output formats",
-          "Basic AI model",
-          "120 mins transcription",
-          "Community support"
+          "每月 3 个视频",
+          "5 种输出格式",
+          "基础 AI 模型",
+          "120 分钟转录",
+          "社区支持"
         ]
       },
       "creator": {
-        "name": "Creator",
-        "desc": "For serious content creators",
-        "cta": "Subscribe Now",
-        "badge": "Most Popular",
+        "name": "创作者",
+        "desc": "适合严肃的内容创作者",
+        "cta": "立即订阅",
+        "badge": "最受欢迎",
         "features": [
-          "30 videos/month",
-          "All 10 output formats",
-          "Premium AI model",
-          "1,200 mins transcription",
-          "Conversational refinement",
-          "Priority support",
-          "API access"
+          "每月 30 个视频",
+          "所有 10 种输出格式",
+          "高级 AI 模型",
+          "1,200 分钟转录",
+          "对话式优化",
+          "优先支持",
+          "API 访问"
         ]
       },
       "pro": {
-        "name": "Pro",
-        "desc": "For teams and agencies",
-        "cta": "Subscribe Now",
+        "name": "专业版",
+        "desc": "适合团队和机构",
+        "cta": "立即订阅",
         "features": [
-          "Unlimited videos",
-          "All formats + custom",
-          "Premium AI + custom tone",
-          "6,000 mins transcription",
-          "Team collaboration",
-          "White-label export",
-          "Dedicated support",
-          "Analytics dashboard"
+          "无限视频",
+          "所有格式 + 自定义",
+          "高级 AI + 自定义语气",
+          "6,000 分钟转录",
+          "团队协作",
+          "白标导出",
+          "专属支持",
+          "分析仪表板"
         ]
       }
     }
   },
   "cta": {
-    "title": "Ready to ",
-    "highlight": "10x Your Content",
-    "suffix": "Output?",
-    "subtitle": "Join thousands of creators who turn every video into a complete multi-platform content strategy. Start free — no credit card needed.",
-    "start": "Start for Free",
-    "pricing": "View Pricing"
+    "title": "准备好",
+    "highlight": "将您的内容提升 10 倍",
+    "suffix": "输出？",
+    "subtitle": "加入数千名创作者，将每个视频转化为完整的多平台内容策略。免费开始 — 无需信用卡。",
+    "start": "免费开始",
+    "pricing": "查看定价"
   },
   "faq": {
-    "label": "FAQ",
-    "title": "Frequently Asked ",
-    "highlight": "Questions",
+    "label": "常见问题",
+    "title": "常见",
+    "highlight": "问题",
     "items": [
       {
-        "q": "Is it really free to start?",
-        "a": "Yes! Free plan gives you 3 videos/month with 5 output formats. No credit card required."
+        "q": "真的可以免费开始吗？",
+        "a": "是的！免费计划每月提供 3 个视频和 5 种输出格式。无需信用卡。"
       },
       {
-        "q": "Which languages do you support?",
-        "a": "63+ languages for transcription and content generation."
+        "q": "你们支持哪些语言？",
+        "a": "63+ 种语言用于转录和内容生成。"
       },
       {
-        "q": "What platforms can I repurpose content for?",
-        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blogs, Medium, Substack, newsletters, and more."
+        "q": "我可以为哪些平台重新利用内容？",
+        "a": "微信、小红书、Twitter/X、LinkedIn、博客、Medium、Substack、新闻通讯等。"
       },
       {
-        "q": "How long does it take?",
-        "a": "Most videos processed in under 1 minute. Content streams in real-time."
+        "q": "需要多长时间？",
+        "a": "大多数视频在 1 分钟内处理完成。内容实时流式传输。"
       },
       {
-        "q": "Can I refine AI-generated content?",
-        "a": "Yes! Chat with each output to adjust tone, length, style, or add elements."
+        "q": "我可以优化 AI 生成的内容吗？",
+        "a": "是的！与每个输出聊天以调整语气、长度、风格或添加元素。"
       },
       {
-        "q": "What file formats can I upload?",
-        "a": "Audio: MP3, WAV, M4A, FLAC, OGG. Video: MP4, MOV, MKV, WEBM."
+        "q": "我可以上传哪些文件格式？",
+        "a": "音频：MP3、WAV、M4A、FLAC、OGG。视频：MP4、MOV、MKV、WEBM。"
       },
       {
-        "q": "Is my data safe?",
-        "a": "Yes. Files deleted after processing. Never used for training."
+        "q": "我的数据安全吗？",
+        "a": "是的。文件处理后删除。从不用于训练。"
       },
       {
-        "q": "Can I cancel anytime?",
-        "a": "Yes, cancel anytime. No long-term contracts."
+        "q": "我可以随时取消吗？",
+        "a": "是的，随时取消。无长期合同。"
       }
     ]
   },
   "footer": {
-    "tagline": "AI-powered content repurposing. Turn one video into your entire multi-platform content strategy.",
-    "copyright": "All rights reserved.",
-    "builtWith": "Built for content creators worldwide",
+    "tagline": "AI 驱动的内容再利用。将一个视频转化为您的整个多平台内容策略。",
+    "copyright": "保留所有权利。",
+    "builtWith": "为全球内容创作者打造",
     "sections": {
-      "product": "Product",
-      "tools": "Tools",
-      "legal": "Legal",
-      "company": "Company"
+      "product": "产品",
+      "tools": "工具",
+      "legal": "法律",
+      "company": "公司"
     },
     "links": {
-      "features": "Features",
-      "pricing": "Pricing",
-      "faq": "FAQ",
-      "yt2blog": "YouTube to Blog",
-      "vid2twitter": "Video to Twitter",
-      "vid2xhs": "Video to Xiaohongshu",
-      "podcast2article": "Podcast to Article",
-      "allTools": "All Tools →",
-      "privacy": "Privacy",
-      "terms": "Terms",
+      "features": "功能",
+      "pricing": "定价",
+      "faq": "常见问题",
+      "yt2blog": "YouTube 转博客",
+      "vid2twitter": "视频转 Twitter",
+      "vid2xhs": "视频转小红书",
+      "podcast2article": "播客转文章",
+      "allTools": "所有工具 →",
+      "privacy": "隐私",
+      "terms": "条款",
       "github": "GitHub",
-      "contact": "Contact"
+      "contact": "联系"
     }
   },
   "workbench": {
-    "transcribing": "Transcribing",
-    "generating": "Generating Content",
-    "completed": "Complete",
-    "progress": "Progress",
-    "cancel": "Cancel",
-    "refineTitle": "Refine - ",
-    "refinePlaceholder": "Tell AI how to adjust this content...",
-    "send": "Send",
-    "copy": "Copy",
-    "copied": "Copied",
-    "download": "Download",
-    "refine": "Refine",
-    "elapsedPrefix": "Elapsed",
-    "elapsedFormat": "{elapsed}s",
-    "estimatedFormat": "~{seconds}s",
-    "transcribeStart": "Downloading and transcribing audio...",
-    "transcribeDone": "Transcription complete! Generating content...",
-    "transcribeFailed": "No transcript received. Check audio file.",
-    "streamError": "Stream read failed",
-    "timeoutError": "Processing timed out. Try a shorter audio.",
-    "generatingFormat": "Generating {format}...",
-    "formatComplete": "{format} complete",
-    "formatsProgress": "{done}/{total} formats",
-    "allDone": "All done! {count} formats generated",
-    "detectedLang": "Detected: {lang} · {chars} chars"
+    "transcribing": "转录中",
+    "generating": "生成内容中",
+    "completed": "完成",
+    "progress": "进度",
+    "cancel": "取消",
+    "refineTitle": "优化 - ",
+    "refinePlaceholder": "告诉 AI 如何调整此内容...",
+    "send": "发送",
+    "copy": "复制",
+    "copied": "已复制",
+    "download": "下载",
+    "refine": "优化",
+    "elapsedPrefix": "已用时间",
+    "elapsedFormat": "{elapsed}秒",
+    "estimatedFormat": "~{seconds}秒",
+    "transcribeStart": "正在下载并转录音频...",
+    "transcribeDone": "转录完成！正在生成内容...",
+    "transcribeFailed": "未收到转录。检查音频文件。",
+    "streamError": "流读取失败",
+    "timeoutError": "处理超时。尝试较短的音频。",
+    "generatingFormat": "正在生成 {format}...",
+    "formatComplete": "{format} 完成",
+    "formatsProgress": "{done}/{total} 格式",
+    "allDone": "全部完成！已生成 {count} 种格式",
+    "detectedLang": "检测到：{lang} · {chars} 字符"
   }
 }
