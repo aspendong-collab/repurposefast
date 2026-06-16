@@ -43,3 +43,5 @@ demo=gr.Interface(
 # API via Gradio's built-in REST endpoint:
 # POST /gradio_api/call/transcribe_fn
 # {"data": ["url", "lang"]}
+
+demo.launch(server_name="0.0.0.0")
