@@ -6,23 +6,23 @@
     "tryFree": "免费试用"
   },
   "hero": {
-    "badge": "AI 驱动的内容复用",
-    "title": "一条视频，",
-    "highlight": "变身全平台内容",
-    "subtitle": "粘贴链接或上传文件 — AI 自动转写并将内容改写成博客文章、社交媒体帖子、邮件通讯等多种格式。",
-    "accent": "10 倍提升内容产出效率。",
+    "badge": "AI驱动的内容再利用",
+    "title": "将一个视频转化为",
+    "highlight": "你的整个内容策略",
+    "subtitle": "粘贴链接或上传文件——AI自动转录并将你的内容重新利用为博客文章、社交帖子、新闻通讯等。",
+    "accent": "将你的内容产出提升10倍。",
     "stats": {
-      "languages": "种语言",
-      "formats": "种输出格式",
-      "speed": "处理速度"
+      "languages": "语言",
+      "formats": "输出格式",
+      "speed": "处理时间"
     },
     "tabs": {
       "url": "粘贴链接",
       "file": "上传文件",
       "text": "粘贴文本"
     },
-    "placeholder": "粘贴 YouTube、播客或任何视频链接...",
-    "generate": "开始生成",
+    "placeholder": "粘贴YouTube、播客或任何视频链接...",
+    "generate": "生成",
     "processing": "处理中...",
     "error": "出了点问题",
     "tryAgain": "重试",
@@ -30,155 +30,155 @@
     "formatsGenerated": "种格式已生成"
   },
   "howItWorks": {
-    "label": "使用流程",
+    "label": "工作原理",
     "title": "从视频到",
     "highlight": "多平台",
-    "suffix": "只需 3 步",
+    "suffix": "只需3步",
     "steps": [
       {
         "title": "粘贴或上传",
-        "desc": "粘贴 YouTube 链接、上传音频文件、或直接粘贴文本。无需任何配置。"
+        "desc": "放入YouTube链接、上传音频文件或粘贴文本。无需配置——只需一键操作。"
       },
       {
-        "title": "AI 智能转化",
-        "desc": "AI 理解你的内容，并针对每个平台的独特风格进行智能改写。"
+        "title": "AI施展魔法",
+        "desc": "我们的AI转录并理解你的内容，然后智能地针对每个平台的独特风格进行重写。"
       },
       {
-        "title": "全平台发布",
-        "desc": "获得公众号文章、Twitter 线程、LinkedIn 帖子、小红书笔记等 — 一键复制、下载。"
+        "title": "随处发布",
+        "desc": "获取适用于微信、Twitter、LinkedIn、小红书、博客等平台的精美内容。可立即复制、下载或分享。"
       }
     ]
   },
   "features": {
-    "label": "功能特性",
-    "title": "扩展内容的",
-    "highlight": "所有工具",
-    "subtitle": "为希望最大化每一条内容价值的创作者打造。",
+    "label": "功能",
+    "title": "扩展内容所需的一切",
+    "highlight": "扩展你的内容",
+    "subtitle": "专为希望最大化每份内容产出的创作者打造。",
     "list": [
       {
-        "title": "AI 智能改写",
-        "desc": "Not just transcription — our AI understands context and rewrites for each platform's unique voice and format."
+        "title": "AI驱动的重写",
+        "desc": "不仅仅是转录——我们的AI理解上下文，并根据每个平台的独特风格和格式进行重写。"
       },
       {
-        "title": "10 种输出格式",
-        "desc": "Blog posts, Twitter threads, LinkedIn posts, Xiaohongshu notes, newsletters, SRT subtitles, SEO articles, and more."
+        "title": "10种输出格式",
+        "desc": "博客文章、Twitter帖子、LinkedIn帖子、小红书笔记、新闻通讯、SRT字幕、SEO文章等。"
       },
       {
-        "title": "63+ 种语言",
-        "desc": "Transcribe and generate content in 63+ languages. Perfect for international creators and global audiences."
+        "title": "63+种语言",
+        "desc": "以63+种语言转录和生成内容。非常适合国际创作者和全球受众。"
       },
       {
         "title": "流式生成",
-        "desc": "See content appear character by character in real-time. No more waiting for loading spinners."
+        "desc": "实时逐字查看内容出现。不再等待加载旋转器。"
       },
       {
-        "title": "对话式精调",
-        "desc": "Chat with each output to fine-tune it. Say \"make it shorter\" or \"add emoji\" — AI applies it instantly."
+        "title": "对话式优化",
+        "desc": "与每个输出对话以进行微调。说“缩短一点”或“添加表情符号”——AI立即应用。"
       },
       {
-        "title": "6 种导出格式",
-        "desc": "Download as Markdown, TXT, PDF, DOCX, SRT, or CSV. Directly ready for publishing."
+        "title": "6种导出格式",
+        "desc": "下载为Markdown、TXT、PDF、DOCX、SRT或CSV。直接可用于发布。"
       },
       {
         "title": "分享与协作",
-        "desc": "Generate shareable links for your teammates to view and collaborate on content."
+        "desc": "生成可分享的链接，供团队成员查看和协作处理内容。"
       },
       {
-        "title": "隐私安全",
-        "desc": "Your content stays yours. Files are automatically deleted after processing. No data retention."
+        "title": "私密且安全",
+        "desc": "你的内容始终属于你。文件在处理后自动删除。不保留数据。"
       },
       {
-        "title": "智能检测",
-        "desc": "Paste a YouTube link? We suggest blog + Twitter. Paste Bilibili? We suggest WeChat + Xiaohongshu."
+        "title": "智能平台检测",
+        "desc": "粘贴YouTube链接？我们建议博客+Twitter。粘贴Bilibili？我们建议微信+小红书。"
       }
     ]
   },
   "highlights": {
-    "label": "为什么选择 ailomo",
+    "label": "为什么选择ailomo",
     "title": "与众不同。",
-    "highlight": "AI 原生"
+    "highlight": "从头开始以AI为先"
   },
   "formats": {
     "outputLabel": "输出格式",
-    "outputTitle": "10 种格式，",
+    "outputTitle": "10种格式，",
     "outputHighlight": "一键生成",
-    "outputSubtitle": "同时生成所有格式 — 无需多次运行。",
+    "outputSubtitle": "同时生成所有内容——无需多次运行工具。",
     "langLabel": "全球覆盖",
-    "langTitle": "支持 63+ 种语言",
-    "langSubtitle": "转写和生成 63+ 种语言的内容。适合国际创作者和全球受众。",
-    "more": "+45 更多"
+    "langTitle": "支持63+种语言",
+    "langSubtitle": "以63+种语言转录和生成内容。非常适合国际创作者和全球受众。",
+    "more": "+45更多"
   },
   "social": {
-    "label": "值得信赖",
+    "label": "深受创作者信赖",
     "stats": {
       "users": "活跃用户",
-      "videos": "视频已处理",
+      "videos": "已处理视频",
       "rating": "用户评分",
       "languages": "语言"
     },
     "testimonials": [
       {
-        "text": "\"Finally a tool that understands content creation workflow. One video → all platforms in minutes. Game changer for my content schedule.\"",
+        "text": "“终于有一个工具理解内容创作工作流。一个视频→所有平台，几分钟内完成。对我的内容排期来说简直是革命性的。”",
         "author": "Sarah Chen",
-        "role": "Content Creator"
+        "role": "内容创作者"
       },
       {
-        "text": "\"The conversational refinement is brilliant. I can tweak each output by just chatting with it. Saves me hours every week.\"",
+        "text": "“对话式优化太棒了。我只需通过聊天就能调整每个输出。每周节省我数小时。”",
         "author": "Marcus Rivera",
-        "role": "Marketing Lead"
+        "role": "营销主管"
       },
       {
-        "text": "\"I was skeptical about AI content, but the quality genuinely surprised me. The platform-specific formatting is spot on.\"",
+        "text": "“我原本对AI内容持怀疑态度，但质量真的让我惊讶。针对平台的格式化非常精准。”",
         "author": "Yuki Tanaka",
-        "role": "Podcast Host"
+        "role": "播客主持人"
       },
       {
-        "text": "\"As a solo founder, this tool gives me a content team's output. LinkedIn posts, blogs, tweets — all from one video.\"",
+        "text": "“作为独立创始人，这个工具给了我一个内容团队的产出。LinkedIn帖子、博客、推文——全部来自一个视频。”",
         "author": "Alex Park",
-        "role": "Startup Founder"
+        "role": "初创公司创始人"
       }
     ]
   },
   "pricing": {
     "label": "定价",
-    "title": "简单",
+    "title": "简单、",
     "highlight": "透明",
-    "suffix": "定价",
-    "subtitle": "免费开始，需要更多时再升级。无隐藏费用。",
+    "suffix": "的定价",
+    "subtitle": "免费开始，需要时升级。无隐藏费用。",
     "plans": {
       "free": {
-        "name": "Free",
-        "desc": "Perfect for trying it out",
-        "cta": "Get Started"
+        "name": "免费版",
+        "desc": "适合试用",
+        "cta": "开始使用"
       },
       "creator": {
-        "name": "Creator",
-        "desc": "For serious content creators",
-        "cta": "Start Free Trial",
-        "badge": "Most Popular"
+        "name": "创作者版",
+        "desc": "适合严肃的内容创作者",
+        "cta": "开始免费试用",
+        "badge": "最受欢迎"
       },
       "pro": {
-        "name": "Pro",
-        "desc": "For teams and agencies",
-        "cta": "Start Free Trial"
+        "name": "专业版",
+        "desc": "适合团队和机构",
+        "cta": "开始免费试用"
       }
     }
   },
   "cta": {
-    "title": "准备好",
-    "highlight": "10 倍提升",
-    "suffix": "内容产出？",
-    "subtitle": "加入数千名创作者，将每一条视频变成完整的多平台内容矩阵。免费开始。",
+    "title": "准备好将你的内容产出",
+    "highlight": "提升10倍",
+    "suffix": "了吗？",
+    "subtitle": "加入数千名创作者，将每个视频转化为完整的多平台内容策略。免费开始——无需信用卡。",
     "start": "免费开始",
     "pricing": "查看定价"
   },
   "faq": {
     "label": "常见问题",
-    "title": "常见问题"
+    "title": "常见问题解答"
   },
   "footer": {
-    "tagline": "AI 驱动的内容复用。将一条视频变成你的整个多平台内容策略。",
-    "copyright": "版权所有。",
+    "tagline": "AI驱动的内容再利用。将一个视频转化为你的整个多平台内容策略。",
+    "copyright": "保留所有权利。",
     "builtWith": "为全球内容创作者打造"
   }
 }
