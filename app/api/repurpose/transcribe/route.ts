@@ -71,38 +71,26 @@ async function fetchTimedText(videoId: string): Promise<{ text: string; language
 }
 
 /**
- * Last-resort: download YouTube audio directly via ytdl-core → pipe to Whisper.
- * Pure Node.js, works on Vercel serverless.
+ * Last-resort: call Railway transcription service (yt-dlp + Faster-Whisper).
+ * Pure HTTP proxy — no binary dependencies on Vercel.
  */
-async function downloadYouTubeAudio(videoId: string): Promise<{ audioBuffer: ArrayBuffer; mimeType: string }> {
-  const ytdl = await import('@distube/ytdl-core')
+async function callRailwayWhisper(videoUrl: string, language?: string) {
+  const baseUrl = process.env.WHISPER_SERVICE_URL
+  if (!baseUrl) throw new Error('WHISPER_SERVICE_URL not configured')
 
-  try {
-    const videoUrl = `https://www.youtube.com/watch?v=${videoId}`
-    const info = await ytdl.getInfo(videoUrl)
+  const res = await fetch(`${baseUrl}/transcribe`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ url: videoUrl, language }),
+    signal: AbortSignal.timeout(120000),
+  })
 
-    // Pick smallest audio-only format
-    const audioFormat = info.formats
-      .filter((f: any) => f.hasAudio && !f.hasVideo && f.container === 'mp4')
-      .sort((a: any, b: any) => (a.bitrate || 999999) - (b.bitrate || 999999))[0]
-
-    if (!audioFormat) throw new Error('No audio format found')
-
-    console.log(`Downloading audio: ${audioFormat.bitrate}bps ${audioFormat.container}`)
-
-    const stream = ytdl.downloadFromInfo(info, { format: audioFormat })
-
-    // Collect stream into buffer
-    const chunks: Uint8Array[] = []
-    for await (const chunk of stream) {
-      chunks.push(chunk)
-    }
-    const buffer = Buffer.concat(chunks)
-
-    return { audioBuffer: buffer.buffer, mimeType: 'audio/mp4' }
-  } catch (e: any) {
-    throw new Error(`ytdl-core failed: ${e.message || 'download error'}`)
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}))
+    throw new Error((err as any).detail || `Railway error ${res.status}`)
   }
+
+  return res.json()
 }
 
 async function getYouTubeTranscript(videoId: string): Promise<{ text: string; language: string }> {
@@ -245,30 +233,30 @@ export async function POST(request: NextRequest) {
         jobStore.set(jobId, { status: 'transcribed', result: resp })
         return NextResponse.json(resp)
       } catch (transcriptError: any) {
-        console.log(`Transcript methods exhausted, trying audio download for ${videoId}...`)
+        console.log(`Transcript methods exhausted, trying Railway Whisper for ${videoId}...`)
 
-        // ── Last resort: download audio + Whisper ──
-        try {
-          const { audioBuffer, mimeType } = await downloadYouTubeAudio(videoId)
-          const file = new File([audioBuffer], `video-${videoId}.m4a`, { type: mimeType })
-          
-          const { transcribeFile } = await import('@/lib/repurpose/ai-service')
-          const result = await transcribeFile(file, language || undefined)
+        // ── Railway Whisper fallback ──
+        if (process.env.WHISPER_SERVICE_URL) {
+          try {
+            const whisperResult = await callRailwayWhisper(`https://www.youtube.com/watch?v=${videoId}`, language)
 
-          const resp: TranscribeResponse = {
-            jobId, status: 'transcribed',
-            transcript: result.text,
-            detectedLanguage: result.language,
-            durationSeconds: result.duration,
-            segments: result.segments,
+            const resp: TranscribeResponse = {
+              jobId, status: 'transcribed',
+              transcript: whisperResult.text,
+              detectedLanguage: whisperResult.language || language || 'en',
+              durationSeconds: whisperResult.duration || 0,
+              segments: whisperResult.segments || [],
+            }
+            jobStore.set(jobId, { status: 'transcribed', result: resp })
+            return NextResponse.json(resp)
+          } catch (whisperError: any) {
+            console.error(`Railway fallback also failed: ${whisperError.message}`)
           }
-          jobStore.set(jobId, { status: 'transcribed', result: resp })
-          return NextResponse.json(resp)
-        } catch (audioError: any) {
-          const msg = transcriptError.message || 'Transcript fetch failed'
-          jobStore.set(jobId, { status: 'failed', result: { jobId, status: 'failed', error: msg } })
-          return NextResponse.json({ jobId, status: 'failed', error: msg }, { status: 500 })
         }
+
+        const msg = transcriptError.message || 'Transcript fetch failed'
+        jobStore.set(jobId, { status: 'failed', result: { jobId, status: 'failed', error: msg } })
+        return NextResponse.json({ jobId, status: 'failed', error: msg }, { status: 500 })
       }
     }
 

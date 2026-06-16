@@ -12,6 +12,38 @@ export function Gallery({ d, formats, onCopy, onDownload, onRefine }: { d: Dicti
     try { await navigator.clipboard.writeText(c) } catch { const ta=document.createElement('textarea');ta.value=c;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta) }
     setCopied(m=>({...m,[f]:true})); setTimeout(()=>setCopied(m=>({...m,[f]:false})),2000); onCopy(f,c)
   }
-  const handleDownload = (f:OutputFormat, c:string, t:string) => { const b=new Blob([c],{type:'text/markdown'});const u=URL.createObjectURL(b);const a=document.createElement('a');a.href=u;a.download=t.slice(0,30)+'.md';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(u);onDownload(f,c,t) }
+  const handleDownload = async (f:OutputFormat, c:string, t:string, fmt:string = 'md') => {
+    try {
+      // Use export API for server-side format conversion
+      const res = await fetch('/api/export', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ content: c, format: fmt, title: t }),
+        credentials: 'omit',
+      })
+      const blob = await res.blob()
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = `${t.slice(0, 30)}.${fmt}`
+      document.body.appendChild(a)
+      a.click()
+      document.body.removeChild(a)
+      URL.revokeObjectURL(url)
+      onDownload(f, c, t)
+    } catch {
+      // Fallback: direct blob download
+      const b = new Blob([c], { type: 'text/markdown' })
+      const u = URL.createObjectURL(b)
+      const a = document.createElement('a')
+      a.href = u
+      a.download = t.slice(0, 30) + '.md'
+      document.body.appendChild(a)
+      a.click()
+      document.body.removeChild(a)
+      URL.revokeObjectURL(u)
+      onDownload(f, c, t)
+    }
+  }
   return (<div className="w-full max-w-6xl mx-auto"><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">{formats.map(f=>(<FormatCard key={f.format} d={d} format={f.format} status={f.status} content={f.content} title={f.title} metadata={f.metadata} error={f.error} isCopied={!!copied[f.format]} onCopy={()=>handleCopy(f.format,f.content)} onDownload={()=>handleDownload(f.format,f.content,f.title)} onRefine={()=>onRefine(f.format)}/>))}</div></div>)
 }
