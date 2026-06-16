@@ -112,9 +112,31 @@ export function useWorkbench(dict: Dictionary) {
       if (!tr.ok) { const ed=await tr.json().catch(()=>({})); throw new Error(ed.error||`Request failed (${tr.status})`) }
       const td = await tr.json()
 
-      // Captions disabled → guide user to alternatives
+      // Captions disabled → call HF Space directly (yt-dlp + Faster-Whisper)
       if (td.status === 'processing' || !td.transcript) {
-        throw new Error(td.error || 'This video has no captions and auto-download is not available yet. Switch to Paste Text mode or upload an audio file.')
+        const hfUrl = 'https://silence2026-ailomo-whisper.hf.space'
+        setState(s=>({...s,progress:{phase:'transcribing',message:'Downloading & transcribing via GPU...',percent:5,elapsed:0}}))
+        
+        const subRes = await fetch(hfUrl+'/gradio_api/call/transcribe_fn',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({data:[inputValue,'en']})})
+        const {event_id} = await subRes.json()
+        
+        for (let i=0;i<60;i++) {
+          await new Promise(r=>setTimeout(r,3000))
+          setState(s=>({...s,progress:{...s.progress!,percent:Math.min(5+i*1.5,95)}}))
+          const pr=await fetch(hfUrl+'/gradio_api/call/transcribe_fn/'+event_id)
+          const pt=await pr.text()
+          if (pt.includes('event: complete')) {
+            const dl=pt.split('\n').find((l:string)=>l.startsWith('data: '))
+            if (dl) {
+              const r=JSON.parse(dl.slice(6));const text=r[0];const detLang=r[1]||'en'
+              stopProgressTimer()
+              setState(s=>({...s,phase:'generating',transcript:text,detectedLanguage:detLang,progress:{phase:'generating',message:'Transcription complete!',detail:fmt(w.detectedLang,{lang:detLang,chars:text?.length||0}),percent:100,elapsed:0}}))
+              await doStream(text,suggestedFormats,detLang,platform)
+              return
+            }
+          }
+        }
+        throw new Error('GPU transcription timed out. Try Paste Text or upload audio file.')
       }
 
       if (!td.transcript) throw new Error(w.transcribeFailed)

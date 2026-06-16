@@ -256,11 +256,8 @@ export async function POST(request: NextRequest) {
       } catch (transcriptError: any) {
         console.log(`Transcript methods exhausted, starting async HF Whisper for ${videoId}...`)
 
-        // ── No transcript available ──
-        return NextResponse.json(
-          { jobId, status: 'failed', error: 'No transcript available. Try Paste Text or upload audio file.' },
-          { status: 400 }
-        )
+        // ── No captions → signal frontend to use HF Space ──
+        return NextResponse.json({ jobId, status: 'processing', message: 'Trying GPU transcription...' })
 
         const msg = transcriptError.message || 'Transcript fetch failed'
         setJob(jobId, { status: 'failed', result: { jobId, status: 'failed', error: msg } })
