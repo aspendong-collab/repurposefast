@@ -254,7 +254,31 @@ export async function POST(request: NextRequest) {
         setJob(jobId, { status: 'transcribed', result: resp })
         return NextResponse.json(resp)
       } catch (transcriptError: any) {
-        const msg = 'No captions available. Switch to Paste Text tab — open the video on YouTube, click "...More" → "Show transcript", copy and paste here.'
+        // Try Render microservice for audio download + transcription
+        const renderUrl = process.env.WHISPER_SERVICE_URL
+        if (renderUrl) {
+          try {
+            const renderRes = await fetch(`${renderUrl}/transcribe`, {
+              method: 'POST', headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ url }),
+              signal: AbortSignal.timeout(90000),
+            })
+            if (renderRes.ok) {
+              const rd = await renderRes.json()
+              if (rd.text) {
+                const resp: TranscribeResponse = {
+                  jobId, status: 'transcribed', transcript: rd.text,
+                  detectedLanguage: rd.language || 'en', durationSeconds: 0, segments: [],
+                }
+                setJob(jobId, { status: 'transcribed', result: resp })
+                return NextResponse.json(resp)
+              }
+            }
+          } catch (e: any) {
+            console.log('Render fallback failed:', e.message)
+          }
+        }
+        const msg = 'No captions available. Switch to Paste Text tab — open YouTube, click "...More" → "Show transcript", copy text here.'
         setJob(jobId, { status: 'failed', result: { jobId, status: 'failed', error: msg } })
         return NextResponse.json({ jobId, status: 'failed', error: msg }, { status: 400 })
       }
