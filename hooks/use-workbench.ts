@@ -118,7 +118,7 @@ export function useWorkbench(dict: Dictionary) {
         setState(s=>({...s,progress:{phase:'transcribing',message:w.transcribeStart,percent:5,elapsed:0}}))
         
         // Submit to HF Space
-        const subRes = await fetch(`${hfUrl}/gradio_api/call/transcribe_fn`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({data:[inputValue||'',language||'en']})})
+        const subRes = await fetch(`${hfUrl}/gradio_api/call/transcribe_fn`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({data:[inputValue||'','en']})})
         const {event_id} = await subRes.json()
         
         // Poll HF Space
