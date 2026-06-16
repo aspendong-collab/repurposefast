@@ -125,14 +125,28 @@ export function useWorkbench(dict: Dictionary) {
           setState(s=>({...s,progress:{...s.progress!,percent:Math.min(5+i*1.5,95)}}))
           const pr=await fetch(hfUrl+'/gradio_api/call/transcribe_fn/'+event_id)
           const pt=await pr.text()
+          if (pt.includes('event: error')) {
+            const el=pt.split('\n').find((l:string)=>l.startsWith('data: '))
+            const errMsg=el?JSON.parse(el.slice(6))?.message||'GPU error':'GPU processing error'
+            throw new Error(errMsg)
+          }
           if (pt.includes('event: complete')) {
             const dl=pt.split('\n').find((l:string)=>l.startsWith('data: '))
             if (dl) {
-              const r=JSON.parse(dl.slice(6));const text=r[0];const detLang=r[1]||'en'
-              stopProgressTimer()
-              setState(s=>({...s,phase:'generating',transcript:text,detectedLanguage:detLang,progress:{phase:'generating',message:'Transcription complete!',detail:fmt(w.detectedLang,{lang:detLang,chars:text?.length||0}),percent:100,elapsed:0}}))
-              await doStream(text,suggestedFormats,detLang,platform)
-              return
+              try {
+                const result=JSON.parse(dl.slice(6))
+                const text=Array.isArray(result)?(result[0]||''):(result?.text||result?.data||'')
+                const detLang=(result[1]||result?.language||'en')
+                if (text && text.length>10 && !text.startsWith('Error')) {
+                  stopProgressTimer()
+                  setState(s=>({...s,phase:'generating',transcript:text,detectedLanguage:detLang,progress:{phase:'generating',message:'Transcription complete!',detail:fmt(w.detectedLang,{lang:detLang,chars:text.length}),percent:100,elapsed:0}}))
+                  await doStream(text,suggestedFormats,detLang,platform)
+                  return
+                }
+                throw new Error('Empty or error transcript')
+              } catch(parseErr) {
+                throw new Error('GPU transcription failed. Try Paste Text instead.')
+              }
             }
           }
         }
