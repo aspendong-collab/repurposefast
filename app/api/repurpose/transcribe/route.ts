@@ -256,35 +256,11 @@ export async function POST(request: NextRequest) {
       } catch (transcriptError: any) {
         console.log(`Transcript methods exhausted, starting async HF Whisper for ${videoId}...`)
 
-        // ── Async HF Whisper (Vercel free plan only allows 10s) ──
-        if (process.env.WHISPER_SERVICE_URL) {
-          // Fire-and-forget: process in background, client polls GET endpoint
-          setJob(jobId, { status: 'processing' })
-          
-          callHFWhisper(`https://www.youtube.com/watch?v=${videoId}`, language)
-            .then((result) => {
-              setJob(jobId, { status: 'transcribed', result: {
-                jobId, status: 'transcribed',
-                transcript: result.text,
-                detectedLanguage: result.language || language || 'en',
-                durationSeconds: result.duration || 0,
-                segments: result.segments || [],
-              } as TranscribeResponse })
-              console.log(`✅ HF Space done for ${jobId}: ${result.text.length} chars`)
-            })
-            .catch((e) => {
-              setJob(jobId, { status: 'failed', result: {
-                jobId, status: 'failed',
-                error: `HF Space: ${e.message?.slice(0, 100)}. Try again or use Paste Text.`
-              } as TranscribeResponse })
-            })
-          
-          // Return immediately with processing status
-          return NextResponse.json({
-            jobId, status: 'processing',
-            message: 'Processing via HF Space. Poll GET endpoint for result.',
-          })
-        }
+        // ── No transcript available ──
+        return NextResponse.json(
+          { jobId, status: 'failed', error: 'No transcript available. Try Paste Text or upload audio file.' },
+          { status: 400 }
+        )
 
         const msg = transcriptError.message || 'Transcript fetch failed'
         setJob(jobId, { status: 'failed', result: { jobId, status: 'failed', error: msg } })

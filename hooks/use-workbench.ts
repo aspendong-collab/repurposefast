@@ -112,33 +112,9 @@ export function useWorkbench(dict: Dictionary) {
       if (!tr.ok) { const ed=await tr.json().catch(()=>({})); throw new Error(ed.error||`Request failed (${tr.status})`) }
       const td = await tr.json()
 
-      // Async processing: call HF Space Gradio API directly
-      if (td.status === 'processing') {
-        const hfUrl = 'https://silence2026-ailomo-whisper.hf.space'
-        setState(s=>({...s,progress:{phase:'transcribing',message:w.transcribeStart,percent:5,elapsed:0}}))
-        
-        // Submit to HF Space
-        const subRes = await fetch(`${hfUrl}/gradio_api/call/transcribe_fn`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({data:[inputValue||'','en']})})
-        const {event_id} = await subRes.json()
-        
-        // Poll HF Space
-        for (let i = 0; i < 40; i++) {
-          await new Promise(r => setTimeout(r, 4000))
-          setState(s=>({...s,progress:{...s.progress!,percent:Math.min(5+i*2,95)}}))
-          const pr = await fetch(`${hfUrl}/gradio_api/call/transcribe_fn/${event_id}`)
-          const pt = await pr.text()
-          if (pt.includes('event: complete')) {
-            const dl = pt.split('\n').find((l:string)=>l.startsWith('data: '))
-            if (dl) {
-              const [text, detectedLang] = JSON.parse(dl.slice(6))
-              stopProgressTimer()
-              setState(s=>({...s,phase:'generating',transcript:text,segments:[],detectedLanguage:detectedLang||'en',progress:{phase:'generating',message:w.transcribeDone,detail:fmt(w.detectedLang,{lang:detectedLang||'en',chars:text?.length||0}),percent:100,elapsed:0}}))
-              await doStream(text,suggestedFormats,detectedLang||'en',platform)
-              return
-            }
-          }
-        }
-        throw new Error(w.timeoutError)
+      // Captions disabled → guide user to alternatives
+      if (td.status === 'processing' || !td.transcript) {
+        throw new Error(td.error || 'This video has no captions and auto-download is not available yet. Switch to Paste Text mode or upload an audio file.')
       }
 
       if (!td.transcript) throw new Error(w.transcribeFailed)
