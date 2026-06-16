@@ -50,7 +50,6 @@ async function fetchTimedText(videoId: string): Promise<{ text: string; language
       if (!res.ok) continue
       
       const xml = await res.text()
-      // Parse simple XML: <text start="...">content</text>
       const texts = xml.match(/<text[^>]*>([^<]*)<\/text>/g)
       if (!texts || texts.length === 0) continue
       
@@ -69,6 +68,54 @@ async function fetchTimedText(videoId: string): Promise<{ text: string; language
     }
   }
   throw new Error('No captions found via timedtext API')
+}
+
+/**
+ * Last-resort: download YouTube audio via Invidious API → pipe to Whisper.
+ * Pure HTTP, no yt-dlp binary needed. Works on Vercel serverless.
+ */
+async function downloadYouTubeAudio(videoId: string): Promise<{ audioBuffer: ArrayBuffer; mimeType: string }> {
+  const endpoints = [
+    `https://inv.nadeko.net/api/v1/videos/${videoId}`,
+    `https://invidious.fdn.fr/api/v1/videos/${videoId}`,
+    `https://yewtu.be/api/v1/videos/${videoId}`,
+  ]
+
+  for (const apiUrl of endpoints) {
+    try {
+      console.log(`Trying Invidious: ${apiUrl}`)
+      const infoRes = await fetch(apiUrl, {
+        headers: { 'User-Agent': 'Mozilla/5.0' },
+        signal: AbortSignal.timeout(10000),
+      })
+      if (!infoRes.ok) continue
+
+      const info = await infoRes.json() as any
+      const formats: any[] = info.adaptiveFormats || info.formatStreams || []
+      
+      // Pick the smallest audio-only format
+      const audioFormat = formats
+        .filter((f: any) => f.type?.startsWith('audio/') && !f.type?.includes('video'))
+        .sort((a: any, b: any) => (a.bitrate || 999999) - (b.bitrate || 999999))[0]
+
+      if (!audioFormat?.url) continue
+
+      console.log(`Downloading audio: ${audioFormat.type} ${audioFormat.bitrate}bps`)
+      const audioRes = await fetch(audioFormat.url, {
+        signal: AbortSignal.timeout(30000),
+      })
+      if (!audioRes.ok) continue
+
+      const buffer = await audioRes.arrayBuffer()
+      if (buffer.byteLength < 1000) continue
+
+      return { audioBuffer: buffer, mimeType: audioFormat.type?.split(';')[0] || 'audio/mp4' }
+    } catch {
+      continue
+    }
+  }
+
+  throw new Error('All Invidious endpoints failed')
 }
 
 async function getYouTubeTranscript(videoId: string): Promise<{ text: string; language: string }> {
@@ -209,10 +256,31 @@ export async function POST(request: NextRequest) {
         }
         jobStore.set(jobId, { status: 'transcribed', result: resp })
         return NextResponse.json(resp)
-      } catch (e: any) {
-        const msg = e.message || 'Transcript fetch failed'
-        jobStore.set(jobId, { status: 'failed', result: { jobId, status: 'failed', error: msg } })
-        return NextResponse.json({ jobId, status: 'failed', error: msg }, { status: 500 })
+      } catch (transcriptError: any) {
+        console.log(`Transcript methods exhausted, trying audio download for ${videoId}...`)
+
+        // ── Last resort: download audio + Whisper ──
+        try {
+          const { audioBuffer, mimeType } = await downloadYouTubeAudio(videoId)
+          const file = new File([audioBuffer], `video-${videoId}.m4a`, { type: mimeType })
+          
+          const { transcribeFile } = await import('@/lib/repurpose/ai-service')
+          const result = await transcribeFile(file, language || undefined)
+
+          const resp: TranscribeResponse = {
+            jobId, status: 'transcribed',
+            transcript: result.text,
+            detectedLanguage: result.language,
+            durationSeconds: result.duration,
+            segments: result.segments,
+          }
+          jobStore.set(jobId, { status: 'transcribed', result: resp })
+          return NextResponse.json(resp)
+        } catch (audioError: any) {
+          const msg = transcriptError.message || 'Transcript fetch failed'
+          jobStore.set(jobId, { status: 'failed', result: { jobId, status: 'failed', error: msg } })
+          return NextResponse.json({ jobId, status: 'failed', error: msg }, { status: 500 })
+        }
       }
     }
 

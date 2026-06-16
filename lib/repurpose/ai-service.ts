@@ -160,6 +160,44 @@ export async function transcribeAudio(options: TranscribeOptions): Promise<Trans
 /**
  * Transcribe from a local file path using Node.js fs (for server-side use).
  */
+/**
+ * Transcribe a File object directly (already downloaded into memory).
+ * Used when audio is obtained from sources like Invidious API.
+ */
+export async function transcribeFile(
+  file: File,
+  language?: LanguageCode,
+): Promise<TranscribeResult> {
+  const openai = getWhisperClient()
+  if (!openai) throw new Error('Whisper not configured')
+
+  const transcription = await openai.audio.transcriptions.create({
+    file,
+    model: 'whisper-1',
+    language: language || undefined,
+    response_format: 'verbose_json' as const,
+    timestamp_granularities: ['segment'],
+  })
+
+  if (typeof transcription === 'string') {
+    return { text: transcription, language: language || 'auto', duration: 0 }
+  }
+
+  const verbose = transcription as unknown as {
+    text: string; language: string; duration: number
+    segments?: Array<{ id: number; start: number; end: number; text: string }>
+  }
+
+  return {
+    text: verbose.text,
+    language: (verbose.language || language || 'en') as LanguageCode,
+    duration: verbose.duration || 0,
+    segments: verbose.segments?.map((s) => ({
+      id: s.id, start: s.start, end: s.end, text: s.text,
+    })),
+  }
+}
+
 export async function transcribeFromPath(
   filePath: string,
   language?: LanguageCode,
