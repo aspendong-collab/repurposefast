@@ -254,14 +254,35 @@ export async function POST(request: NextRequest) {
         setJob(jobId, { status: 'transcribed', result: resp })
         return NextResponse.json(resp)
       } catch (transcriptError: any) {
-        console.log(`Transcript methods exhausted, starting async HF Whisper for ${videoId}...`)
+        console.log(`No captions for ${videoId}, downloading audio...`)
 
-        // ── No captions → signal frontend to use HF Space ──
-        return NextResponse.json({ jobId, status: 'processing', message: 'Trying GPU transcription...' })
+        // ── Download audio + Groq Whisper ──
+        try {
+          const ytdlRes = await fetch(`${request.nextUrl.origin}/api/repurpose/ytdl`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ url }),
+            signal: AbortSignal.timeout(60000),
+          })
+          if (!ytdlRes.ok) throw new Error((await ytdlRes.json()).error || 'Download failed')
+          const ytdlData = await ytdlRes.json()
 
-        const msg = transcriptError.message || 'Transcript fetch failed'
-        setJob(jobId, { status: 'failed', result: { jobId, status: 'failed', error: msg } })
-        return NextResponse.json({ jobId, status: 'failed', error: msg }, { status: 500 })
+          if (!ytdlData.transcript) throw new Error('No transcript from Groq')
+          
+          const resp: TranscribeResponse = {
+            jobId, status: 'transcribed',
+            transcript: ytdlData.transcript,
+            detectedLanguage: ytdlData.language || language || 'en',
+            durationSeconds: ytdlData.duration || 0,
+            segments: ytdlData.segments || [],
+          }
+          setJob(jobId, { status: 'transcribed', result: resp })
+          return NextResponse.json(resp)
+        } catch (ytdlError: any) {
+          const msg = `Download failed: ${ytdlError.message?.slice(0, 100)}. Try Paste Text instead.`
+          setJob(jobId, { status: 'failed', result: { jobId, status: 'failed', error: msg } })
+          return NextResponse.json({ jobId, status: 'failed', error: msg }, { status: 500 })
+        }
       }
     }
 
