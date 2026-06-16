@@ -1,7 +1,6 @@
-"""ailomo-whisper — no mount_gradio_app, raw FastAPI routes on demo.app"""
+"""ailomo-whisper HF Space"""
 import os, tempfile, logging
 import gradio as gr
-from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import yt_dlp
 
@@ -12,65 +11,44 @@ def get_model():
     global _model
     if _model is None:
         from faster_whisper import WhisperModel
-        logging.info("Loading model...")
         _model = WhisperModel("large-v3", device="cuda", compute_type="float16")
-        logging.info("Model ready")
     return _model
 
-def dl(url):
-    d = tempfile.mkdtemp()
-    t = os.path.join(d, "%(id)s.%(ext)s")
-    o = {"format": "bestaudio[ext=m4a]/bestaudio/best", "outtmpl": t, "quiet": True, "max_filesize": 50*1024*1024}
-    with yt_dlp.YoutubeDL(o) as ydl:
-        i = ydl.extract_info(url, download=True)
-        p = os.path.join(d, f"{i['id']}.m4a")
+def dl(u):
+    d=tempfile.mkdtemp();t=os.path.join(d,"%(id)s.%(ext)s")
+    o={"format":"bestaudio[ext=m4a]/bestaudio/best","outtmpl":t,"quiet":True,"max_filesize":50*1024*1024}
+    with yt_dlp.YoutubeDL(o) as y:
+        i=y.extract_info(u,download=True);p=os.path.join(d,f"{i['id']}.m4a")
     if not os.path.exists(p):
-        p2 = os.path.join(d, f"{i['id']}.webm")
-        if os.path.exists(p2): p = p2
-        else: raise FileNotFoundError("Download failed")
-    return p, d
+        p2=os.path.join(d,f"{i['id']}.webm")
+        if os.path.exists(p2):p=p2
+        else:raise FileNotFoundError("download failed")
+    return p,d
 
-def tf(path, lang):
-    m = get_model()
-    s, info = m.transcribe(path, language=lang or None, beam_size=5, vad_filter=True)
-    sl = list(s)
-    return " ".join(x.text.strip() for x in sl), info.language or "en", info.duration
+def tf(path,lang):
+    m=get_model();s,info=m.transcribe(path,language=lang or None,beam_size=5,vad_filter=True)
+    sl=list(s);return " ".join(x.text.strip() for x in sl),info.language or "en",info.duration
 
-# ── Gradio UI ──
-def gui_fn(url, lang):
+# Gradio UI
+def gui_fn(url,lang):
+    try:p,d=dl(url);t,ld,du=tf(p,lang);os.remove(p);os.rmdir(d);return t,ld,du
+    except Exception as e:return f"Error: {e}","",0
+
+demo=gr.Interface(fn=gui_fn,inputs=[gr.Textbox(label="YouTube URL"),gr.Textbox(label="Language",value="en")],outputs=[gr.Textbox(label="Transcript",lines=12),gr.Textbox(label="Lang"),gr.Number(label="Duration")],title="ailomo-whisper",description="Faster-Whisper large-v3 on T4 GPU")
+
+# REST API
+from fastapi.responses import JSONResponse
+from fastapi import Request
+
+async def health(_:Request):return JSONResponse({"status":"ok","model":"large-v3"})
+
+async def transcribe(request:Request):
     try:
-        p, d = dl(url)
-        text, ld, dur = tf(p, lang)
-        os.remove(p); os.rmdir(d)
-        return text, ld, dur
-    except Exception as e:
-        return f"Error: {e}", "", 0
+        b=await request.json()
+        p,d=dl(b["url"]);t,lang,dur=tf(p,b.get("language"))
+        os.remove(p);os.rmdir(d)
+        return JSONResponse({"text":t,"language":lang,"duration":dur})
+    except Exception as e:return JSONResponse({"error":str(e)},500)
 
-with gr.Blocks(title="ailomo-whisper") as demo:
-    gr.Markdown("# 🎙️ ailomo-whisper\nFaster-Whisper large-v3 on T4 GPU")
-    u = gr.Textbox(label="YouTube URL")
-    l = gr.Textbox(label="Language", value="en")
-    b = gr.Button("Transcribe", variant="primary")
-    t = gr.Textbox(label="Transcript", lines=12)
-    lo = gr.Textbox(label="Lang")
-    du = gr.Number(label="Duration")
-    b.click(fn=gui_fn, inputs=[u, l], outputs=[t, lo, du])
-
-# ── REST API (directly on demo.app) ──
-class TR(BaseModel):
-    url: str
-    language: str | None = None
-
-@demo.get("/health")
-def health():
-    return {"status": "ok", "model": "large-v3", "device": "cuda"}
-
-@demo.post("/transcribe")
-def api_transcribe(req: TR):
-    try:
-        p, d = dl(req.url)
-        text, lang, dur = tf(p, req.language)
-        os.remove(p); os.rmdir(d)
-        return {"text": text, "language": lang, "duration": dur}
-    except Exception as e:
-        raise HTTPException(500, str(e))
+demo.app.add_api_route("/health",health,methods=["GET"])
+demo.app.add_api_route("/transcribe",transcribe,methods=["POST"])
