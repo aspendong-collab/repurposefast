@@ -34,7 +34,13 @@ def gui_fn(url,lang):
     try:p,d=dl(url);t,ld,du=tf(p,lang);os.remove(p);os.rmdir(d);return t,ld,du
     except Exception as e:return f"Error: {e}","",0
 
-demo=gr.Interface(fn=gui_fn,inputs=[gr.Textbox(label="YouTube URL"),gr.Textbox(label="Language",value="en")],outputs=[gr.Textbox(label="Transcript",lines=12),gr.Textbox(label="Lang"),gr.Number(label="Duration")],title="ailomo-whisper",description="Faster-Whisper large-v3 on T4 GPU")
+demo=gr.Blocks(title="ailomo-whisper")
+with demo:
+    gr.Markdown("# 🎙️ ailomo-whisper\nFaster-Whisper large-v3 on T4 GPU")
+    u=gr.Textbox(label="YouTube URL");l=gr.Textbox(label="Language",value="en")
+    b=gr.Button("Transcribe",variant="primary")
+    t=gr.Textbox(label="Transcript",lines=12);lo=gr.Textbox(label="Lang");du=gr.Number(label="Duration")
+    b.click(fn=gui_fn,inputs=[u,l],outputs=[t,lo,du])
 
 # REST API
 from fastapi.responses import JSONResponse
