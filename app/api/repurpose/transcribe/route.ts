@@ -272,7 +272,14 @@ export async function POST(request: NextRequest) {
             jobStore.set(jobId, { status: 'transcribed', result: resp })
             return NextResponse.json(resp)
           } catch (whisperError: any) {
-            console.error(`Railway fallback also failed: ${whisperError.message}`)
+            console.error(`HF Space failed: ${whisperError.message}`)
+            // Include HF Space error in response
+            const hfMsg = whisperError.message?.includes('timeout') ? 'HF Space timed out' 
+              : whisperError.message?.slice(0, 100) || ''
+            return NextResponse.json({
+              jobId, status: 'failed',
+              error: `HF Space error: ${hfMsg}. Try again or use Paste Text.`,
+            }, { status: 500 })
           }
         }
 
