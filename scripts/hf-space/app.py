@@ -1,4 +1,4 @@
-"""ailomo-whisper — Blocks + REST API"""
+"""ailomo-whisper — no mount_gradio_app, raw FastAPI routes on demo.app"""
 import os, tempfile, logging
 import gradio as gr
 from fastapi import FastAPI, HTTPException
@@ -12,7 +12,7 @@ def get_model():
     global _model
     if _model is None:
         from faster_whisper import WhisperModel
-        logging.info("Loading Faster-Whisper large-v3...")
+        logging.info("Loading model...")
         _model = WhisperModel("large-v3", device="cuda", compute_type="float16")
         logging.info("Model ready")
     return _model
@@ -21,8 +21,8 @@ def dl(url):
     d = tempfile.mkdtemp()
     t = os.path.join(d, "%(id)s.%(ext)s")
     o = {"format": "bestaudio[ext=m4a]/bestaudio/best", "outtmpl": t, "quiet": True, "max_filesize": 50*1024*1024}
-    with yt_dlp.YoutubeDL(o) as y:
-        i = y.extract_info(url, download=True)
+    with yt_dlp.YoutubeDL(o) as ydl:
+        i = ydl.extract_info(url, download=True)
         p = os.path.join(d, f"{i['id']}.m4a")
     if not os.path.exists(p):
         p2 = os.path.join(d, f"{i['id']}.webm")
@@ -36,7 +36,7 @@ def tf(path, lang):
     sl = list(s)
     return " ".join(x.text.strip() for x in sl), info.language or "en", info.duration
 
-# ── Gradio Blocks ──
+# ── Gradio UI ──
 def gui_fn(url, lang):
     try:
         p, d = dl(url)
@@ -56,14 +56,16 @@ with gr.Blocks(title="ailomo-whisper") as demo:
     du = gr.Number(label="Duration")
     b.click(fn=gui_fn, inputs=[u, l], outputs=[t, lo, du])
 
-# ── REST API ──
-api = FastAPI()
-
+# ── REST API (directly on demo.app) ──
 class TR(BaseModel):
     url: str
     language: str | None = None
 
-@api.post("/transcribe")
+@demo.get("/health")
+def health():
+    return {"status": "ok", "model": "large-v3", "device": "cuda"}
+
+@demo.post("/transcribe")
 def api_transcribe(req: TR):
     try:
         p, d = dl(req.url)
@@ -72,10 +74,3 @@ def api_transcribe(req: TR):
         return {"text": text, "language": lang, "duration": dur}
     except Exception as e:
         raise HTTPException(500, str(e))
-
-@api.get("/health")
-def h():
-    return {"status": "ok", "model": "large-v3", "device": "cuda"}
-
-# Mount (Gradio 5/6 compatible)
-app = gr.mount_gradio_app(app=api, blocks=demo, path="/")
