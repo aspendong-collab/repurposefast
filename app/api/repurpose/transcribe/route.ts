@@ -254,35 +254,9 @@ export async function POST(request: NextRequest) {
         setJob(jobId, { status: 'transcribed', result: resp })
         return NextResponse.json(resp)
       } catch (transcriptError: any) {
-        console.log(`No captions for ${videoId}, downloading audio...`)
-
-        // ── Download audio + Groq Whisper ──
-        try {
-          const ytdlRes = await fetch(`${request.nextUrl.origin}/api/repurpose/ytdl`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ url }),
-            signal: AbortSignal.timeout(60000),
-          })
-          if (!ytdlRes.ok) throw new Error((await ytdlRes.json()).error || 'Download failed')
-          const ytdlData = await ytdlRes.json()
-
-          if (!ytdlData.transcript) throw new Error('No transcript from Groq')
-          
-          const resp: TranscribeResponse = {
-            jobId, status: 'transcribed',
-            transcript: ytdlData.transcript,
-            detectedLanguage: ytdlData.language || language || 'en',
-            durationSeconds: ytdlData.duration || 0,
-            segments: ytdlData.segments || [],
-          }
-          setJob(jobId, { status: 'transcribed', result: resp })
-          return NextResponse.json(resp)
-        } catch (ytdlError: any) {
-          const msg = `Download failed: ${ytdlError.message?.slice(0, 100)}. Try Paste Text instead.`
-          setJob(jobId, { status: 'failed', result: { jobId, status: 'failed', error: msg } })
-          return NextResponse.json({ jobId, status: 'failed', error: msg }, { status: 500 })
-        }
+        const msg = 'No captions available. Switch to Paste Text tab — open the video on YouTube, click "...More" → "Show transcript", copy and paste here.'
+        setJob(jobId, { status: 'failed', result: { jobId, status: 'failed', error: msg } })
+        return NextResponse.json({ jobId, status: 'failed', error: msg }, { status: 400 })
       }
     }
 
