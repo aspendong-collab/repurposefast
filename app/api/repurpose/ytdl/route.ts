@@ -8,15 +8,12 @@ export async function POST(request: NextRequest) {
     const { url } = await request.json()
     if (!url) return NextResponse.json({ error: 'url required' }, { status: 400 })
 
-    // 1. Download audio via ytdl-core (pure JS, no binaries)
+    // 1. Download audio via ytdl-core
     const ytdl = await import('@distube/ytdl-core')
-    const videoId = ytdl.getVideoID(url)
-    const info = await ytdl.getInfo(videoId)
-
-    const audioFormat = ytdl.chooseFormat(info.formats, { filter: 'audioonly', quality: 'lowestaudio' })
-    if (!audioFormat) throw new Error('No audio format found')
-
-    const stream = ytdl.downloadFromInfo(info, { format: audioFormat })
+    
+    // @distube/ytdl-core uses ytdl() directly with URL
+    const stream = ytdl.default ? ytdl.default(url, { quality: 'lowestaudio', filter: 'audioonly' }) : (ytdl as any)(url, { quality: 'lowestaudio', filter: 'audioonly' })
+    
     const chunks: Uint8Array[] = []
     for await (const chunk of stream) chunks.push(chunk)
     const buffer = Buffer.concat(chunks)
