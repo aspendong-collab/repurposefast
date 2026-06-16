@@ -11,13 +11,18 @@
 只需维护 en.json 一个文件，运行此脚本即可同步所有语言。
 """
 
-import json, os, sys, time, urllib.request
+import json, os, sys, time, urllib.request, ssl
+
+# SSL fix for macOS
+ssl._create_default_https_context = ssl._create_unverified_context
 
 API_KEY = os.getenv("OPENAI_API_KEY")
 API_BASE = os.getenv("OPENAI_BASE_URL", "https://api.deepseek.com")
 MODEL = "deepseek-chat"
 
-DICT_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "dictionaries")
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DICT_DIR = os.path.join(ROOT, "dictionaries")
+sys.path.insert(0, ROOT)
 
 from lib.i18n import localeMap, locales, defaultLocale
 

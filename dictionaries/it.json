@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Funzionalità",
+    "pricing": "Prezzi",
+    "faq": "FAQ",
+    "tryFree": "Prova Gratuita"
+  },
+  "hero": {
+    "badge": "Riproposizione di Contenuti con AI",
+    "title": "Trasforma un Video in",
+    "highlight": "Tutta la Tua Strategia di Contenuti",
+    "subtitle": "Incolla un link o carica un file — l'AI trascrive e ripropone automaticamente i tuoi contenuti in post di blog, thread social, newsletter e altro.",
+    "accent": "Moltiplica per 10 la tua produzione di contenuti.",
+    "stats": {
+      "languages": "Lingue",
+      "formats": "Formati di Output",
+      "speed": "Tempo di Elaborazione"
+    },
+    "tabs": {
+      "url": "Incolla Link",
+      "file": "Carica File",
+      "text": "Incolla Testo"
+    },
+    "placeholder": "Incolla un link di YouTube, podcast o qualsiasi video...",
+    "generate": "Genera",
+    "processing": "Elaborazione in corso...",
+    "error": "Qualcosa è andato storto",
+    "tryAgain": "Riprova",
+    "startOver": "Ricominciare",
+    "formatsGenerated": "formati generati"
+  },
+  "howItWorks": {
+    "label": "Come Funziona",
+    "title": "Dal Video al",
+    "highlight": "Multi-Platform",
+    "suffix": "in 3 Passaggi",
+    "steps": [
+      {
+        "title": "Incolla o Carica",
+        "desc": "Inserisci un link di YouTube, carica un file audio o incolla del testo. Nessuna configurazione necessaria — basta un clic."
+      },
+      {
+        "title": "L'AI Fa la Sua Magia",
+        "desc": "La nostra AI trascrive e comprende i tuoi contenuti, poi li riscrive intelligentemente per lo stile unico di ogni piattaforma."
+      },
+      {
+        "title": "Pubblica Ovunque",
+        "desc": "Ottieni contenuti rifiniti per WeChat, Twitter, LinkedIn, Xiaohongshu, blog e altro. Copia, scarica o condividi istantaneamente."
+      }
+    ]
+  },
+  "features": {
+    "label": "Funzionalità",
+    "title": "Tutto Quello di Cui Hai Bisogno per",
+    "highlight": "Scalare i Tuoi Contenuti",
+    "subtitle": "Progettato per creatori che vogliono massimizzare ogni contenuto che producono.",
+    "list": [
+      {
+        "title": "Riscrittura con AI",
+        "desc": "Non solo trascrizione — la nostra AI comprende il contesto e riscrive per la voce e il formato unici di ogni piattaforma."
+      },
+      {
+        "title": "10 Formati di Output",
+        "desc": "Post di blog, thread Twitter, post LinkedIn, note Xiaohongshu, newsletter, sottotitoli SRT, articoli SEO e altro."
+      },
+      {
+        "title": "63+ Lingue",
+        "desc": "Trascrivi e genera contenuti in oltre 63 lingue. Perfetto per creatori internazionali e pubblico globale."
+      },
+      {
+        "title": "Generazione in Streaming",
+        "desc": "Vedi i contenuti apparire carattere per carattere in tempo reale. Niente più attese per spinner di caricamento."
+      },
+      {
+        "title": "Raffinamento Conversazionale",
+        "desc": "Chatta con ogni output per perfezionarlo. Dì \"rendilo più breve\" o \"aggiungi emoji\" — l'AI lo applica istantaneamente."
+      },
+      {
+        "title": "6 Formati di Esportazione",
+        "desc": "Scarica come Markdown, TXT, PDF, DOCX, SRT o CSV. Pronto direttamente per la pubblicazione."
+      },
+      {
+        "title": "Condividi e Collabora",
+        "desc": "Genera link condivisibili per i tuoi collaboratori per visualizzare e collaborare sui contenuti."
+      },
+      {
+        "title": "Privato e Sicuro",
+        "desc": "I tuoi contenuti rimangono tuoi. I file vengono automaticamente eliminati dopo l'elaborazione. Nessuna conservazione dei dati."
+      },
+      {
+        "title": "Rilevamento Intelligente della Piattaforma",
+        "desc": "Incolli un link di YouTube? Suggeriamo blog + Twitter. Incolli Bilibili? Suggeriamo WeChat + Xiaohongshu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Perché ailomo",
+    "title": "Costruito Diversamente.",
+    "highlight": "AI-First Fin dall'Inizio"
+  },
+  "formats": {
+    "outputLabel": "Formati di Output",
+    "outputTitle": "10 Formati,",
+    "outputHighlight": "Un Clic",
+    "outputSubtitle": "Genera tutto simultaneamente — nessuna necessità di eseguire lo strumento più volte.",
+    "langLabel": "Portata Globale",
+    "langTitle": "63+ Lingue Supportate",
+    "langSubtitle": "Trascrivi e genera contenuti in oltre 63 lingue. Perfetto per creatori internazionali e pubblico globale.",
+    "more": "+45 altre"
+  },
+  "social": {
+    "label": "Fidato dai Creatori",
+    "stats": {
+      "users": "Utenti Attivi",
+      "videos": "Video Elaborati",
+      "rating": "Valutazione Utenti",
+      "languages": "Lingue"
+    },
+    "testimonials": [
+      {
+        "text": "\"Finalmente uno strumento che capisce il flusso di lavoro della creazione di contenuti. Un video → tutte le piattaforme in pochi minuti. Un punto di svolta per la mia programmazione di contenuti.\"",
+        "author": "Sarah Chen",
+        "role": "Creatrice di Contenuti"
+      },
+      {
+        "text": "\"Il raffinamento conversazionale è geniale. Posso modificare ogni output semplicemente chattando con esso. Mi fa risparmiare ore ogni settimana.\"",
+        "author": "Marcus Rivera",
+        "role": "Responsabile Marketing"
+      },
+      {
+        "text": "\"Ero scettico riguardo ai contenuti AI, ma la qualità mi ha davvero sorpreso. La formattazione specifica per piattaforma è perfetta.\"",
+        "author": "Yuki Tanaka",
+        "role": "Conduttore di Podcast"
+      },
+      {
+        "text": "\"Come fondatore solitario, questo strumento mi dà l'output di un team di contenuti. Post LinkedIn, blog, tweet — tutto da un video.\"",
+        "author": "Alex Park",
+        "role": "Fondatore di Startup"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Prezzi",
+    "title": "Prezzi",
+    "highlight": "Trasparenti",
+    "suffix": "e Semplici",
+    "subtitle": "Inizia gratis, aggiorna quando hai bisogno di più. Nessun costo nascosto.",
+    "plans": {
+      "free": {
+        "name": "Gratuito",
+        "desc": "Perfetto per provarlo",
+        "cta": "Inizia Ora"
+      },
+      "creator": {
+        "name": "Creatore",
+        "desc": "Per creatori di contenuti seri",
+        "cta": "Inizia Prova Gratuita",
+        "badge": "Più Popolare"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Per team e agenzie",
+        "cta": "Inizia Prova Gratuita"
+      }
+    }
+  },
+  "cta": {
+    "title": "Pronto a",
+    "highlight": "Moltiplicare per 10 i Tuoi Contenuti",
+    "suffix": "?",
+    "subtitle": "Unisciti a migliaia di creatori che trasformano ogni video in una strategia di contenuti multi-piattaforma completa. Inizia gratis — nessuna carta di credito necessaria.",
+    "start": "Inizia Gratis",
+    "pricing": "Vedi Prezzi"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Domande Frequenti"
+  },
+  "footer": {
+    "tagline": "Riproposizione di contenuti con AI. Trasforma un video nella tua intera strategia di contenuti multi-piattaforma.",
+    "copyright": "Tutti i diritti riservati.",
+    "builtWith": "Realizzato per creatori di contenuti in tutto il mondo"
+  }
+}
