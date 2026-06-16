@@ -1,0 +1,329 @@
+{
+  "nav": {
+    "features": "Fitur",
+    "howItWorks": "Cara Kerja",
+    "pricing": "Harga",
+    "faq": "FAQ",
+    "tryFree": "Coba Gratis"
+  },
+  "hero": {
+    "badge": "Penggunaan Ulang Konten Bertenaga AI",
+    "title": "Ubah Satu Video Menjadi",
+    "highlight": "Konten di Mana Saja",
+    "subtitle": "Tempel tautan YouTube. Unggah podcast. Letakkan transkrip teks.",
+    "accent": "ailomo langsung membuat konten yang rapi untuk setiap platform.",
+    "stats": {
+      "languages": "Bahasa",
+      "formats": "Format",
+      "speed": "Pemrosesan"
+    },
+    "tabs": {
+      "url": "Tempel Tautan",
+      "file": "Unggah",
+      "text": "Teks"
+    },
+    "placeholder": "Tempel tautan YouTube, URL podcast, atau video apa pun...",
+    "generate": "Hasilkan",
+    "fileDropTitle": "Letakkan file Anda di sini",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — hingga 500MB",
+    "textPlaceholder": "Tempel transkrip atau teks Anda — AI mengubahnya menjadi konten siap platform...",
+    "noSignup": "Tidak perlu mendaftar. Gratis untuk memulai.",
+    "processing": "Memproses...",
+    "error": "Terjadi kesalahan",
+    "tryAgain": "Coba lagi",
+    "startOver": "Mulai ulang",
+    "formatsGenerated": "format dihasilkan"
+  },
+  "howItWorks": {
+    "label": "Cara Kerja",
+    "title": "Dari Video ke ",
+    "highlight": "Multi-Platform",
+    "suffix": "dalam 3 Langkah",
+    "steps": [
+      {
+        "title": "Tempel atau Unggah",
+        "desc": "Letakkan tautan YouTube, unggah file audio, atau tempel teks. Tanpa konfigurasi."
+      },
+      {
+        "title": "AI Mengubahnya",
+        "desc": "Konten Anda ditranskripsi, dipahami, dan ditulis ulang untuk suara unik setiap platform."
+      },
+      {
+        "title": "Publikasikan di Mana Saja",
+        "desc": "Dapatkan posting blog, thread sosial, newsletter, dan lainnya. Salin, unduh, selesai."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Mengapa ailomo",
+    "title": "Dibangun Berbeda. ",
+    "highlight": "AI-Native",
+    "items": [
+      {
+        "badge": "Kecerdasan",
+        "title": "Bukan Sekadar Transkripsi",
+        "desc": "AI kami menganalisis konteks, mengekstrak wawasan, dan menghasilkan konten yang dioptimalkan untuk audiens setiap platform."
+      },
+      {
+        "badge": "Distribusi",
+        "title": "Satu Klik, Setiap Platform",
+        "desc": "Semua 10 format dihasilkan secara bersamaan. Dari blog panjang hingga thread sosial — semuanya siap dalam hitungan detik."
+      },
+      {
+        "badge": "Penyempurnaan",
+        "title": "Chat dengan Konten Anda",
+        "desc": "Setiap output memiliki chat AI bawaan. \"Tambahkan lebih banyak data\", \"buat lebih tajam\" — perubahan diterapkan secara instan."
+      }
+    ]
+  },
+  "features": {
+    "label": "Fitur",
+    "title": "Semua untuk ",
+    "highlight": "Skalakan Konten",
+    "subtitle": "Dibangun untuk kreator yang mengubah setiap konten menjadi dampak maksimal.",
+    "list": [
+      {
+        "title": "Penulisan Ulang Bertenaga AI",
+        "desc": "Bukan sekadar transkripsi — AI kami memahami konteks dan menulis ulang untuk suara unik setiap platform."
+      },
+      {
+        "title": "10 Format Output",
+        "desc": "Posting blog, thread Twitter, LinkedIn, Xiaohongshu, newsletter, subtitle SRT, artikel SEO, lainnya."
+      },
+      {
+        "title": "63+ Bahasa",
+        "desc": "Transkripsi dan hasilkan dalam 63+ bahasa. Dibangun untuk kreator internasional."
+      },
+      {
+        "title": "Generasi Streaming",
+        "desc": "Konten muncul karakter demi karakter secara real-time. Tidak perlu menunggu spinner."
+      },
+      {
+        "title": "Penyempurnaan Percakapan",
+        "desc": "Chat dengan setiap output untuk menyempurnakannya. \"Buat lebih pendek\" — selesai."
+      },
+      {
+        "title": "6 Format Ekspor",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Siap dipublikasikan secara instan."
+      },
+      {
+        "title": "Bagikan & Kolaborasi",
+        "desc": "Hasilkan tautan untuk rekan tim melihat dan berkolaborasi pada konten Anda."
+      },
+      {
+        "title": "Pribadi & Aman",
+        "desc": "File dihapus setelah diproses. Konten Anda tidak pernah digunakan untuk pelatihan."
+      },
+      {
+        "title": "Deteksi Cerdas",
+        "desc": "Tautan YouTube? → Blog + Twitter. Bilibili? → WeChat + Xiaohongshu. Otomatis."
+      }
+    ]
+  },
+  "formats": {
+    "outputLabel": "Format Output",
+    "outputTitle": "10 Format, ",
+    "outputHighlight": "Satu Klik",
+    "outputSubtitle": "Hasilkan semuanya secara bersamaan — tidak perlu menjalankan alat beberapa kali.",
+    "formatNames": [
+      "Posting Blog",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "Artikel SEO",
+      "Newsletter",
+      "Subtitle SRT",
+      "Ringkasan AI",
+      "Peta Pikiran"
+    ],
+    "langLabel": "Jangkauan Global",
+    "langTitle": "63+ Bahasa Didukung",
+    "langSubtitle": "Transkripsi dan hasilkan konten dalam 63+ bahasa. Sempurna untuk kreator internasional dan audiens global.",
+    "more": "+45 lainnya"
+  },
+  "social": {
+    "label": "Dipercaya oleh Kreator",
+    "stats": {
+      "users": "Pengguna Aktif",
+      "videos": "Video Diproses",
+      "rating": "Peringkat Pengguna",
+      "languages": "Bahasa"
+    },
+    "testimonials": [
+      {
+        "text": "\"Akhirnya alat yang memahami alur kerja pembuatan konten. Satu video → semua platform dalam hitungan menit. Pengubah permainan untuk jadwal konten saya.\"",
+        "author": "Sarah Chen",
+        "role": "Kreator Konten"
+      },
+      {
+        "text": "\"Penyempurnaan percakapan sangat brilian. Saya bisa menyesuaikan setiap output hanya dengan mengobrol dengannya. Menghemat waktu saya berjam-jam setiap minggu.\"",
+        "author": "Marcus Rivera",
+        "role": "Pimpinan Pemasaran"
+      },
+      {
+        "text": "\"Saya skeptis tentang konten AI, tetapi kualitasnya benar-benar mengejutkan saya. Pemformatan khusus platform sangat tepat.\"",
+        "author": "Yuki Tanaka",
+        "role": "Pembawa Acara Podcast"
+      },
+      {
+        "text": "\"Sebagai pendiri tunggal, alat ini memberi saya output tim konten. Posting LinkedIn, blog, tweet — semuanya dari satu video.\"",
+        "author": "Alex Park",
+        "role": "Pendiri Startup"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Harga",
+    "title": "Harga ",
+    "highlight": "Transparan",
+    "suffix": "Sederhana",
+    "subtitle": "Mulai gratis, tingkatkan saat Anda membutuhkan lebih banyak. Tanpa biaya tersembunyi. Batalkan kapan saja.",
+    "enterprise": "Butuh lebih? ",
+    "enterpriseLink": "Hubungi kami",
+    "enterpriseSuffix": " untuk harga enterprise.",
+    "plans": {
+      "free": {
+        "name": "Gratis",
+        "desc": "Sempurna untuk mencobanya",
+        "cta": "Mulai",
+        "features": [
+          "3 video/bulan",
+          "5 format output",
+          "Model AI dasar",
+          "Transkripsi 120 menit",
+          "Dukungan komunitas"
+        ]
+      },
+      "creator": {
+        "name": "Kreator",
+        "desc": "Untuk kreator konten serius",
+        "cta": "Berlangganan Sekarang",
+        "badge": "Paling Populer",
+        "features": [
+          "30 video/bulan",
+          "Semua 10 format output",
+          "Model AI premium",
+          "Transkripsi 1.200 menit",
+          "Penyempurnaan percakapan",
+          "Dukungan prioritas",
+          "Akses API"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Untuk tim dan agensi",
+        "cta": "Berlangganan Sekarang",
+        "features": [
+          "Video tak terbatas",
+          "Semua format + kustom",
+          "AI premium + nada kustom",
+          "Transkripsi 6.000 menit",
+          "Kolaborasi tim",
+          "Ekspor white-label",
+          "Dukungan khusus",
+          "Dasbor analitik"
+        ]
+      }
+    }
+  },
+  "cta": {
+    "title": "Siap untuk ",
+    "highlight": "10x Lipat Konten Anda",
+    "suffix": "?",
+    "subtitle": "Bergabunglah dengan ribuan kreator yang mengubah setiap video menjadi strategi konten multi-platform lengkap. Mulai gratis — tanpa perlu kartu kredit.",
+    "start": "Mulai Gratis",
+    "pricing": "Lihat Harga"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Pertanyaan yang Sering ",
+    "highlight": "Ditanyakan",
+    "items": [
+      {
+        "q": "Apakah benar-benar gratis untuk memulai?",
+        "a": "Ya! Paket gratis memberi Anda 3 video/bulan dengan 5 format output. Tidak perlu kartu kredit."
+      },
+      {
+        "q": "Bahasa apa saja yang didukung?",
+        "a": "63+ bahasa untuk transkripsi dan pembuatan konten."
+      },
+      {
+        "q": "Platform apa saja yang bisa saya gunakan untuk menggunakan ulang konten?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blog, Medium, Substack, newsletter, dan lainnya."
+      },
+      {
+        "q": "Berapa lama waktu yang dibutuhkan?",
+        "a": "Sebagian besar video diproses dalam waktu kurang dari 1 menit. Konten mengalir secara real-time."
+      },
+      {
+        "q": "Bisakah saya menyempurnakan konten yang dihasilkan AI?",
+        "a": "Ya! Chat dengan setiap output untuk menyesuaikan nada, panjang, gaya, atau menambahkan elemen."
+      },
+      {
+        "q": "Format file apa yang bisa saya unggah?",
+        "a": "Audio: MP3, WAV, M4A, FLAC, OGG. Video: MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "Apakah data saya aman?",
+        "a": "Ya. File dihapus setelah diproses. Tidak pernah digunakan untuk pelatihan."
+      },
+      {
+        "q": "Bisakah saya membatalkan kapan saja?",
+        "a": "Ya, batalkan kapan saja. Tanpa kontrak jangka panjang."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Penggunaan ulang konten bertenaga AI. Ubah satu video menjadi seluruh strategi konten multi-platform Anda.",
+    "copyright": "Hak cipta dilindungi.",
+    "builtWith": "Dibangun untuk kreator konten di seluruh dunia",
+    "sections": {
+      "product": "Produk",
+      "tools": "Alat",
+      "legal": "Hukum",
+      "company": "Perusahaan"
+    },
+    "links": {
+      "features": "Fitur",
+      "pricing": "Harga",
+      "faq": "FAQ",
+      "yt2blog": "YouTube ke Blog",
+      "vid2twitter": "Video ke Twitter",
+      "vid2xhs": "Video ke Xiaohongshu",
+      "podcast2article": "Podcast ke Artikel",
+      "allTools": "Semua Alat →",
+      "privacy": "Privasi",
+      "terms": "Ketentuan",
+      "github": "GitHub",
+      "contact": "Kontak"
+    }
+  },
+  "workbench": {
+    "transcribing": "Transkripsi",
+    "generating": "Menghasilkan Konten",
+    "completed": "Selesai",
+    "progress": "Kemajuan",
+    "cancel": "Batal",
+    "refineTitle": "Sempurnakan - ",
+    "refinePlaceholder": "Beri tahu AI cara menyesuaikan konten ini...",
+    "send": "Kirim",
+    "copy": "Salin",
+    "copied": "Disalin",
+    "download": "Unduh",
+    "refine": "Sempurnakan",
+    "elapsedPrefix": "Waktu",
+    "elapsedFormat": "{elapsed}s",
+    "estimatedFormat": "~{seconds}s",
+    "transcribeStart": "Mengunduh dan mentranskripsi audio...",
+    "transcribeDone": "Transkripsi selesai! Menghasilkan konten...",
+    "transcribeFailed": "Tidak ada transkrip yang diterima. Periksa file audio.",
+    "streamError": "Pembacaan stream gagal",
+    "timeoutError": "Pemrosesan waktu habis. Coba audio yang lebih pendek.",
+    "generatingFormat": "Menghasilkan {format}...",
+    "formatComplete": "{format} selesai",
+    "formatsProgress": "{done}/{total} format",
+    "allDone": "Selesai! {count} format dihasilkan",
+    "detectedLang": "Terdeteksi: {lang} · {chars} karakter"
+  }
+}

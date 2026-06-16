@@ -1,0 +1,329 @@
+{
+  "nav": {
+    "features": "Fonctionnalités",
+    "howItWorks": "Comment ça marche",
+    "pricing": "Tarifs",
+    "faq": "FAQ",
+    "tryFree": "Essai gratuit"
+  },
+  "hero": {
+    "badge": "Recyclage de contenu alimenté par l'IA",
+    "title": "Transformez une vidéo en",
+    "highlight": "contenu partout",
+    "subtitle": "Collez un lien YouTube. Téléchargez un podcast. Déposez une transcription texte.",
+    "accent": "ailomo crée instantanément du contenu soigné pour chaque plateforme.",
+    "stats": {
+      "languages": "Langues",
+      "formats": "Formats",
+      "speed": "Traitement"
+    },
+    "tabs": {
+      "url": "Coller un lien",
+      "file": "Télécharger",
+      "text": "Texte"
+    },
+    "placeholder": "Collez un lien YouTube, un URL de podcast ou toute vidéo...",
+    "generate": "Générer",
+    "fileDropTitle": "Déposez votre fichier ici",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — jusqu'à 500 Mo",
+    "textPlaceholder": "Collez votre transcription ou texte — l'IA le transforme en contenu prêt pour les plateformes...",
+    "noSignup": "Aucune inscription requise. Gratuit pour commencer.",
+    "processing": "Traitement en cours...",
+    "error": "Une erreur est survenue",
+    "tryAgain": "Réessayer",
+    "startOver": "Recommencer",
+    "formatsGenerated": "formats générés"
+  },
+  "howItWorks": {
+    "label": "Comment ça marche",
+    "title": "De la vidéo au ",
+    "highlight": "multi-plateforme",
+    "suffix": "en 3 étapes",
+    "steps": [
+      {
+        "title": "Coller ou télécharger",
+        "desc": "Déposez un lien YouTube, téléchargez un fichier audio ou collez du texte. Zéro configuration."
+      },
+      {
+        "title": "L'IA transforme",
+        "desc": "Votre contenu est transcrit, compris et réécrit pour la voix unique de chaque plateforme."
+      },
+      {
+        "title": "Publier partout",
+        "desc": "Obtenez des articles de blog, des fils sociaux, des newsletters et plus. Copiez, téléchargez, terminé."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Pourquoi ailomo",
+    "title": "Conçu différemment. ",
+    "highlight": "Natif IA",
+    "items": [
+      {
+        "badge": "Intelligence",
+        "title": "Pas seulement de la transcription",
+        "desc": "Notre IA analyse le contexte, extrait des insights et génère du contenu optimisé pour l'audience de chaque plateforme."
+      },
+      {
+        "badge": "Distribution",
+        "title": "Un clic, toutes les plateformes",
+        "desc": "Les 10 formats générés simultanément. Des blogs longs aux fils sociaux — tout est prêt en quelques secondes."
+      },
+      {
+        "badge": "Affinement",
+        "title": "Discutez avec votre contenu",
+        "desc": "Chaque sortie dispose d'un chat IA intégré. \"Ajoute plus de données\", \"rends-le plus percutant\" — les modifications sont appliquées instantanément."
+      }
+    ]
+  },
+  "features": {
+    "label": "Fonctionnalités",
+    "title": "Tout pour ",
+    "highlight": "passer à l'échelle",
+    "subtitle": "Conçu pour les créateurs qui transforment chaque contenu en impact maximal.",
+    "list": [
+      {
+        "title": "Réécriture alimentée par l'IA",
+        "desc": "Pas seulement de la transcription — notre IA comprend le contexte et réécrit pour la voix unique de chaque plateforme."
+      },
+      {
+        "title": "10 formats de sortie",
+        "desc": "Articles de blog, fils Twitter, LinkedIn, Xiaohongshu, newsletters, sous-titres SRT, articles SEO, plus."
+      },
+      {
+        "title": "63+ langues",
+        "desc": "Transcrivez et générez dans 63+ langues. Conçu pour les créateurs internationaux."
+      },
+      {
+        "title": "Génération en streaming",
+        "desc": "Le contenu apparaît caractère par caractère en temps réel. Pas d'attente de spinners."
+      },
+      {
+        "title": "Affinement conversationnel",
+        "desc": "Discutez avec chaque sortie pour l'affiner. \"Rends-le plus court\" — fait."
+      },
+      {
+        "title": "6 formats d'exportation",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Prêt à publier instantanément."
+      },
+      {
+        "title": "Partage et collaboration",
+        "desc": "Générez des liens pour que les coéquipiers puissent voir et collaborer sur votre contenu."
+      },
+      {
+        "title": "Privé et sécurisé",
+        "desc": "Les fichiers sont supprimés après traitement. Votre contenu n'est jamais utilisé pour l'entraînement."
+      },
+      {
+        "title": "Détection intelligente",
+        "desc": "Lien YouTube ? → Blog + Twitter. Bilibili ? → WeChat + Xiaohongshu. Automatique."
+      }
+    ]
+  },
+  "formats": {
+    "outputLabel": "Formats de sortie",
+    "outputTitle": "10 formats, ",
+    "outputHighlight": "un clic",
+    "outputSubtitle": "Générez tout simultanément — pas besoin d'exécuter l'outil plusieurs fois.",
+    "formatNames": [
+      "Article de blog",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "Article SEO",
+      "Newsletter",
+      "Sous-titres SRT",
+      "Résumé IA",
+      "Carte mentale"
+    ],
+    "langLabel": "Portée mondiale",
+    "langTitle": "63+ langues prises en charge",
+    "langSubtitle": "Transcrivez et générez du contenu dans 63+ langues. Parfait pour les créateurs internationaux et les audiences mondiales.",
+    "more": "+45 autres"
+  },
+  "social": {
+    "label": "Approuvé par les créateurs",
+    "stats": {
+      "users": "Utilisateurs actifs",
+      "videos": "Vidéos traitées",
+      "rating": "Évaluation utilisateur",
+      "languages": "Langues"
+    },
+    "testimonials": [
+      {
+        "text": "\"Enfin un outil qui comprend le workflow de création de contenu. Une vidéo → toutes les plateformes en minutes. Un changement de jeu pour mon planning de contenu.\"",
+        "author": "Sarah Chen",
+        "role": "Créatrice de contenu"
+      },
+      {
+        "text": "\"L'affinement conversationnel est brillant. Je peux ajuster chaque sortie en discutant simplement avec elle. Ça me fait gagner des heures chaque semaine.\"",
+        "author": "Marcus Rivera",
+        "role": "Responsable marketing"
+      },
+      {
+        "text": "\"J'étais sceptique quant au contenu IA, mais la qualité m'a vraiment surpris. Le formatage spécifique à la plateforme est parfait.\"",
+        "author": "Yuki Tanaka",
+        "role": "Animateur de podcast"
+      },
+      {
+        "text": "\"En tant que fondateur solo, cet outil me donne le rendement d'une équipe de contenu. Posts LinkedIn, blogs, tweets — tout à partir d'une vidéo.\"",
+        "author": "Alex Park",
+        "role": "Fondateur de startup"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Tarifs",
+    "title": "Tarifs ",
+    "highlight": "simples et transparents",
+    "suffix": "",
+    "subtitle": "Commencez gratuitement, passez à un niveau supérieur quand vous avez besoin de plus. Pas de frais cachés. Annulez à tout moment.",
+    "enterprise": "Besoin de plus ? ",
+    "enterpriseLink": "Contactez-nous",
+    "enterpriseSuffix": " pour les tarifs entreprise.",
+    "plans": {
+      "free": {
+        "name": "Gratuit",
+        "desc": "Parfait pour essayer",
+        "cta": "Commencer",
+        "features": [
+          "3 vidéos/mois",
+          "5 formats de sortie",
+          "Modèle IA de base",
+          "120 min de transcription",
+          "Support communautaire"
+        ]
+      },
+      "creator": {
+        "name": "Créateur",
+        "desc": "Pour les créateurs de contenu sérieux",
+        "cta": "S'abonner maintenant",
+        "badge": "Le plus populaire",
+        "features": [
+          "30 vidéos/mois",
+          "Tous les 10 formats de sortie",
+          "Modèle IA premium",
+          "1 200 min de transcription",
+          "Affinement conversationnel",
+          "Support prioritaire",
+          "Accès API"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Pour les équipes et agences",
+        "cta": "S'abonner maintenant",
+        "features": [
+          "Vidéos illimitées",
+          "Tous les formats + personnalisés",
+          "IA premium + ton personnalisé",
+          "6 000 min de transcription",
+          "Collaboration en équipe",
+          "Exportation marque blanche",
+          "Support dédié",
+          "Tableau de bord analytique"
+        ]
+      }
+    }
+  },
+  "cta": {
+    "title": "Prêt à ",
+    "highlight": "multiplier par 10 votre contenu",
+    "suffix": " ?",
+    "subtitle": "Rejoignez des milliers de créateurs qui transforment chaque vidéo en une stratégie de contenu multi-plateforme complète. Commencez gratuitement — aucune carte de crédit nécessaire.",
+    "start": "Commencer gratuitement",
+    "pricing": "Voir les tarifs"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Questions fréquemment ",
+    "highlight": "posées",
+    "items": [
+      {
+        "q": "Est-ce vraiment gratuit pour commencer ?",
+        "a": "Oui ! Le plan gratuit vous donne 3 vidéos/mois avec 5 formats de sortie. Aucune carte de crédit requise."
+      },
+      {
+        "q": "Quelles langues prenez-vous en charge ?",
+        "a": "63+ langues pour la transcription et la génération de contenu."
+      },
+      {
+        "q": "Pour quelles plateformes puis-je recycler du contenu ?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blogs, Medium, Substack, newsletters, et plus."
+      },
+      {
+        "q": "Combien de temps cela prend-il ?",
+        "a": "La plupart des vidéos sont traitées en moins d'une minute. Le contenu est diffusé en temps réel."
+      },
+      {
+        "q": "Puis-je affiner le contenu généré par l'IA ?",
+        "a": "Oui ! Discutez avec chaque sortie pour ajuster le ton, la longueur, le style ou ajouter des éléments."
+      },
+      {
+        "q": "Quels formats de fichier puis-je télécharger ?",
+        "a": "Audio : MP3, WAV, M4A, FLAC, OGG. Vidéo : MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "Mes données sont-elles en sécurité ?",
+        "a": "Oui. Les fichiers sont supprimés après traitement. Jamais utilisés pour l'entraînement."
+      },
+      {
+        "q": "Puis-je annuler à tout moment ?",
+        "a": "Oui, annulez à tout moment. Pas de contrats à long terme."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Recyclage de contenu alimenté par l'IA. Transformez une vidéo en votre stratégie de contenu multi-plateforme complète.",
+    "copyright": "Tous droits réservés.",
+    "builtWith": "Conçu pour les créateurs de contenu du monde entier",
+    "sections": {
+      "product": "Produit",
+      "tools": "Outils",
+      "legal": "Juridique",
+      "company": "Entreprise"
+    },
+    "links": {
+      "features": "Fonctionnalités",
+      "pricing": "Tarifs",
+      "faq": "FAQ",
+      "yt2blog": "YouTube vers Blog",
+      "vid2twitter": "Vidéo vers Twitter",
+      "vid2xhs": "Vidéo vers Xiaohongshu",
+      "podcast2article": "Podcast vers Article",
+      "allTools": "Tous les outils →",
+      "privacy": "Confidentialité",
+      "terms": "Conditions",
+      "github": "GitHub",
+      "contact": "Contact"
+    }
+  },
+  "workbench": {
+    "transcribing": "Transcription en cours",
+    "generating": "Génération de contenu",
+    "completed": "Terminé",
+    "progress": "Progression",
+    "cancel": "Annuler",
+    "refineTitle": "Affiner - ",
+    "refinePlaceholder": "Dites à l'IA comment ajuster ce contenu...",
+    "send": "Envoyer",
+    "copy": "Copier",
+    "copied": "Copié",
+    "download": "Télécharger",
+    "refine": "Affiner",
+    "elapsedPrefix": "Temps écoulé",
+    "elapsedFormat": "{elapsed}s",
+    "estimatedFormat": "~{seconds}s",
+    "transcribeStart": "Téléchargement et transcription de l'audio...",
+    "transcribeDone": "Transcription terminée ! Génération du contenu...",
+    "transcribeFailed": "Aucune transcription reçue. Vérifiez le fichier audio.",
+    "streamError": "Échec de la lecture du flux",
+    "timeoutError": "Le traitement a expiré. Essayez un audio plus court.",
+    "generatingFormat": "Génération de {format}...",
+    "formatComplete": "{format} terminé",
+    "formatsProgress": "{done}/{total} formats",
+    "allDone": "Tout est fait ! {count} formats générés",
+    "detectedLang": "Détecté : {lang} · {chars} caractères"
+  }
+}

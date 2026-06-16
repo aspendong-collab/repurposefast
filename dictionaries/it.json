@@ -1,0 +1,329 @@
+{
+  "nav": {
+    "features": "Funzionalità",
+    "howItWorks": "Come Funziona",
+    "pricing": "Prezzi",
+    "faq": "FAQ",
+    "tryFree": "Prova Gratis"
+  },
+  "hero": {
+    "badge": "Riproposizione di Contenuti con AI",
+    "title": "Trasforma un Video in",
+    "highlight": "Contenuti Ovunque",
+    "subtitle": "Incolla un link YouTube. Carica un podcast. Inserisci una trascrizione di testo.",
+    "accent": "ailomo crea istantaneamente contenuti raffinati per ogni piattaforma.",
+    "stats": {
+      "languages": "Lingue",
+      "formats": "Formati",
+      "speed": "Elaborazione"
+    },
+    "tabs": {
+      "url": "Incolla Link",
+      "file": "Carica",
+      "text": "Testo"
+    },
+    "placeholder": "Incolla un link YouTube, URL di podcast o qualsiasi video...",
+    "generate": "Genera",
+    "fileDropTitle": "Trascina il file qui",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — fino a 500MB",
+    "textPlaceholder": "Incolla la tua trascrizione o testo — l'AI lo trasforma in contenuti pronti per la piattaforma...",
+    "noSignup": "Nessuna registrazione richiesta. Inizia gratis.",
+    "processing": "Elaborazione in corso...",
+    "error": "Qualcosa è andato storto",
+    "tryAgain": "Riprova",
+    "startOver": "Ricominciare",
+    "formatsGenerated": "formati generati"
+  },
+  "howItWorks": {
+    "label": "Come Funziona",
+    "title": "Dal Video a ",
+    "highlight": "Multi-Piattaforma",
+    "suffix": "in 3 Passaggi",
+    "steps": [
+      {
+        "title": "Incolla o Carica",
+        "desc": "Inserisci un link YouTube, carica un file audio o incolla del testo. Zero configurazione."
+      },
+      {
+        "title": "L'AI lo Trasforma",
+        "desc": "Il tuo contenuto viene trascritto, compreso e riscritto per la voce unica di ogni piattaforma."
+      },
+      {
+        "title": "Pubblica Ovunque",
+        "desc": "Ottieni post per blog, thread social, newsletter e altro. Copia, scarica, fatto."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Perché ailomo",
+    "title": "Costruito Diversamente. ",
+    "highlight": "AI-Nativo",
+    "items": [
+      {
+        "badge": "Intelligenza",
+        "title": "Non Solo Trascrizione",
+        "desc": "La nostra AI analizza il contesto, estrae approfondimenti e genera contenuti ottimizzati per il pubblico di ogni piattaforma."
+      },
+      {
+        "badge": "Distribuzione",
+        "title": "Un Click, Ogni Piattaforma",
+        "desc": "Tutti i 10 formati generati simultaneamente. Dai blog lunghi ai thread social — tutto pronto in secondi."
+      },
+      {
+        "badge": "Perfezionamento",
+        "title": "Chatta con i Tuoi Contenuti",
+        "desc": "Ogni output ha una chat AI integrata. \"Aggiungi più dati\", \"rendilo più incisivo\" — modifiche applicate istantaneamente."
+      }
+    ]
+  },
+  "features": {
+    "label": "Funzionalità",
+    "title": "Tutto per ",
+    "highlight": "Scalare i Contenuti",
+    "subtitle": "Progettato per creatori che trasformano ogni contenuto in massimo impatto.",
+    "list": [
+      {
+        "title": "Riscrittura con AI",
+        "desc": "Non solo trascrizione — la nostra AI comprende il contesto e riscrive per la voce unica di ogni piattaforma."
+      },
+      {
+        "title": "10 Formati di Output",
+        "desc": "Post per blog, thread Twitter, LinkedIn, Xiaohongshu, newsletter, sottotitoli SRT, articoli SEO, altro."
+      },
+      {
+        "title": "63+ Lingue",
+        "desc": "Trascrivi e genera in 63+ lingue. Progettato per creatori internazionali."
+      },
+      {
+        "title": "Generazione in Streaming",
+        "desc": "I contenuti appaiono carattere per carattere in tempo reale. Nessuna attesa per spinner."
+      },
+      {
+        "title": "Perfezionamento Conversazionale",
+        "desc": "Chatta con ogni output per perfezionarlo. \"Rendilo più breve\" — fatto."
+      },
+      {
+        "title": "6 Formati di Esportazione",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Pronto per pubblicare istantaneamente."
+      },
+      {
+        "title": "Condividi e Collabora",
+        "desc": "Genera link per i compagni di squadra per visualizzare e collaborare sui tuoi contenuti."
+      },
+      {
+        "title": "Privato e Sicuro",
+        "desc": "I file vengono eliminati dopo l'elaborazione. I tuoi contenuti non vengono mai utilizzati per l'addestramento."
+      },
+      {
+        "title": "Rilevamento Intelligente",
+        "desc": "Link YouTube? → Blog + Twitter. Bilibili? → WeChat + Xiaohongshu. Automatico."
+      }
+    ]
+  },
+  "formats": {
+    "outputLabel": "Formati di Output",
+    "outputTitle": "10 Formati, ",
+    "outputHighlight": "Un Click",
+    "outputSubtitle": "Genera tutto simultaneamente — non c'è bisogno di eseguire lo strumento più volte.",
+    "formatNames": [
+      "Post per Blog",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "Articolo SEO",
+      "Newsletter",
+      "Sottotitoli SRT",
+      "Riepilogo AI",
+      "Mappa Mentale"
+    ],
+    "langLabel": "Portata Globale",
+    "langTitle": "63+ Lingue Supportate",
+    "langSubtitle": "Trascrivi e genera contenuti in 63+ lingue. Perfetto per creatori internazionali e pubblico globale.",
+    "more": "+45 altre"
+  },
+  "social": {
+    "label": "Apprezzato dai Creatori",
+    "stats": {
+      "users": "Utenti Attivi",
+      "videos": "Video Elaborati",
+      "rating": "Valutazione Utenti",
+      "languages": "Lingue"
+    },
+    "testimonials": [
+      {
+        "text": "\"Finalmente uno strumento che capisce il flusso di lavoro della creazione di contenuti. Un video → tutte le piattaforme in pochi minuti. Un punto di svolta per la mia programmazione di contenuti.\"",
+        "author": "Sarah Chen",
+        "role": "Creatrice di Contenuti"
+      },
+      {
+        "text": "\"Il perfezionamento conversazionale è geniale. Posso modificare ogni output semplicemente chattando con esso. Mi fa risparmiare ore ogni settimana.\"",
+        "author": "Marcus Rivera",
+        "role": "Responsabile Marketing"
+      },
+      {
+        "text": "\"Ero scettico riguardo ai contenuti AI, ma la qualità mi ha davvero sorpreso. La formattazione specifica per piattaforma è perfetta.\"",
+        "author": "Yuki Tanaka",
+        "role": "Conduttore di Podcast"
+      },
+      {
+        "text": "\"Come fondatore solista, questo strumento mi dà l'output di un team di contenuti. Post LinkedIn, blog, tweet — tutto da un video.\"",
+        "author": "Alex Park",
+        "role": "Fondatore di Startup"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Prezzi",
+    "title": "Prezzi ",
+    "highlight": "Semplici",
+    "suffix": " e Trasparenti",
+    "subtitle": "Inizia gratis, aggiorna quando hai bisogno di più. Nessun costo nascosto. Annulla quando vuoi.",
+    "enterprise": "Serve di più? ",
+    "enterpriseLink": "Contattaci",
+    "enterpriseSuffix": " per prezzi enterprise.",
+    "plans": {
+      "free": {
+        "name": "Gratis",
+        "desc": "Perfetto per provarlo",
+        "cta": "Inizia Ora",
+        "features": [
+          "3 video/mese",
+          "5 formati di output",
+          "Modello AI base",
+          "120 min di trascrizione",
+          "Supporto della community"
+        ]
+      },
+      "creator": {
+        "name": "Creatore",
+        "desc": "Per creatori di contenuti seri",
+        "cta": "Abbonati Ora",
+        "badge": "Più Popolare",
+        "features": [
+          "30 video/mese",
+          "Tutti i 10 formati di output",
+          "Modello AI premium",
+          "1.200 min di trascrizione",
+          "Perfezionamento conversazionale",
+          "Supporto prioritario",
+          "Accesso API"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Per team e agenzie",
+        "cta": "Abbonati Ora",
+        "features": [
+          "Video illimitati",
+          "Tutti i formati + personalizzati",
+          "AI premium + tono personalizzato",
+          "6.000 min di trascrizione",
+          "Collaborazione di team",
+          "Esportazione white-label",
+          "Supporto dedicato",
+          "Dashboard analitico"
+        ]
+      }
+    }
+  },
+  "cta": {
+    "title": "Pronto a ",
+    "highlight": "Decuplicare i Tuoi Contenuti",
+    "suffix": "?",
+    "subtitle": "Unisciti a migliaia di creatori che trasformano ogni video in una strategia completa di contenuti multi-piattaforma. Inizia gratis — nessuna carta di credito necessaria.",
+    "start": "Inizia Gratis",
+    "pricing": "Vedi Prezzi"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Domande ",
+    "highlight": "Frequenti",
+    "items": [
+      {
+        "q": "È davvero gratuito iniziare?",
+        "a": "Sì! Il piano gratuito ti dà 3 video/mese con 5 formati di output. Nessuna carta di credito richiesta."
+      },
+      {
+        "q": "Quali lingue supportate?",
+        "a": "63+ lingue per trascrizione e generazione di contenuti."
+      },
+      {
+        "q": "Per quali piattaforme posso riproporre i contenuti?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blog, Medium, Substack, newsletter e altro."
+      },
+      {
+        "q": "Quanto tempo ci vuole?",
+        "a": "La maggior parte dei video viene elaborata in meno di 1 minuto. I contenuti vengono trasmessi in tempo reale."
+      },
+      {
+        "q": "Posso perfezionare i contenuti generati dall'AI?",
+        "a": "Sì! Chatta con ogni output per regolare tono, lunghezza, stile o aggiungere elementi."
+      },
+      {
+        "q": "Quali formati di file posso caricare?",
+        "a": "Audio: MP3, WAV, M4A, FLAC, OGG. Video: MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "I miei dati sono al sicuro?",
+        "a": "Sì. I file vengono eliminati dopo l'elaborazione. Mai utilizzati per l'addestramento."
+      },
+      {
+        "q": "Posso annullare in qualsiasi momento?",
+        "a": "Sì, annulla quando vuoi. Nessun contratto a lungo termine."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Riproposizione di contenuti con AI. Trasforma un video nella tua intera strategia di contenuti multi-piattaforma.",
+    "copyright": "Tutti i diritti riservati.",
+    "builtWith": "Creato per creatori di contenuti in tutto il mondo",
+    "sections": {
+      "product": "Prodotto",
+      "tools": "Strumenti",
+      "legal": "Legale",
+      "company": "Azienda"
+    },
+    "links": {
+      "features": "Funzionalità",
+      "pricing": "Prezzi",
+      "faq": "FAQ",
+      "yt2blog": "YouTube a Blog",
+      "vid2twitter": "Video a Twitter",
+      "vid2xhs": "Video a Xiaohongshu",
+      "podcast2article": "Podcast ad Articolo",
+      "allTools": "Tutti gli Strumenti →",
+      "privacy": "Privacy",
+      "terms": "Termini",
+      "github": "GitHub",
+      "contact": "Contatto"
+    }
+  },
+  "workbench": {
+    "transcribing": "Trascrizione in corso",
+    "generating": "Generazione Contenuti",
+    "completed": "Completato",
+    "progress": "Avanzamento",
+    "cancel": "Annulla",
+    "refineTitle": "Perfeziona - ",
+    "refinePlaceholder": "Dì all'AI come regolare questo contenuto...",
+    "send": "Invia",
+    "copy": "Copia",
+    "copied": "Copiato",
+    "download": "Scarica",
+    "refine": "Perfeziona",
+    "elapsedPrefix": "Tempo trascorso",
+    "elapsedFormat": "{elapsed}s",
+    "estimatedFormat": "~{seconds}s",
+    "transcribeStart": "Download e trascrizione dell'audio in corso...",
+    "transcribeDone": "Trascrizione completata! Generazione contenuti in corso...",
+    "transcribeFailed": "Nessuna trascrizione ricevuta. Controlla il file audio.",
+    "streamError": "Lettura stream fallita",
+    "timeoutError": "Elaborazione scaduta. Prova un audio più breve.",
+    "generatingFormat": "Generazione {format} in corso...",
+    "formatComplete": "{format} completato",
+    "formatsProgress": "{done}/{total} formati",
+    "allDone": "Tutto fatto! {count} formati generati",
+    "detectedLang": "Rilevato: {lang} · {chars} caratteri"
+  }
+}

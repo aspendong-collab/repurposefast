@@ -1,0 +1,329 @@
+{
+  "nav": {
+    "features": "Astaamaha",
+    "howItWorks": "Sida ay u Shaqeyso",
+    "pricing": "Qiimaha",
+    "faq": "Su'aalaha Badanaa la Weydiiyo",
+    "tryFree": "Tijaabi Bilaash"
+  },
+  "hero": {
+    "badge": "Dib-u-isticmaalka Nuxurka ee AI-ku Xoojiyey",
+    "title": "Hal Fiidheyo u Beddel",
+    "highlight": "Nuxur Meel Kasta",
+    "subtitle": "Ku dheji xiriiriye YouTube ah. Soo geli podcast. Tuur qoraal qoraal ah.",
+    "accent": "ailomo waxay si degdeg ah u abuurtaa nuxur la safeeyey oo loogu talagalay goob kasta.",
+    "stats": {
+      "languages": "Luuqadaha",
+      "formats": "Qaababka",
+      "speed": "Habaynta"
+    },
+    "tabs": {
+      "url": "Ku Dheji Xiriiriye",
+      "file": "Soo Geli",
+      "text": "Qoraal"
+    },
+    "placeholder": "Ku dheji xiriiriye YouTube ah, URL podcast, ama fiidheyo kasta...",
+    "generate": "Soo Saar",
+    "fileDropTitle": "Hoos u rid faylkaaga halkan",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — ilaa 500MB",
+    "textPlaceholder": "Ku dheji qoraalkaaga ama qoraalka — AI wuxuu u beddelaa nuxur diyaar u ah goobta...",
+    "noSignup": "Ma baahna is-diiwaangelin. Bilaash in la bilaabo.",
+    "processing": "Waa la habaynayaa...",
+    "error": "Wax qaldan ayaa dhacay",
+    "tryAgain": "Mar kale isku day",
+    "startOver": "Ka bilow bilow",
+    "formatsGenerated": "qaabab ayaa la soo saaray"
+  },
+  "howItWorks": {
+    "label": "Sida ay u Shaqeyso",
+    "title": "Fiidheyo ilaa ",
+    "highlight": "Goobo Badan",
+    "suffix": "3 Tallaabo",
+    "steps": [
+      {
+        "title": "Ku Dheji ama Soo Geli",
+        "desc": "Ku dheji xiriiriye YouTube ah, soo geli fayl maqal ah, ama ku dheji qoraal. Qaabayn eber ah."
+      },
+      {
+        "title": "AI wuu Beddelaa",
+        "desc": "Nuxurkaaga waa la qoraa, waa la fahmaa, oo dib ayaa loo qoraa si uu ugu habboonaado codka gaarka ah ee goob kasta."
+      },
+      {
+        "title": "Ku Daabac Meel Kasta",
+        "desc": "Hel qoraallo blog ah, taxane bulsho, wargeysyo, iyo wax badan. Nuqul ka samee, soo deji, waa la dhameeyey."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Sababta ailomo",
+    "title": "Si Kala Duwan Loo Dhisay. ",
+    "highlight": "AI-Dhalasho",
+    "items": [
+      {
+        "badge": "Sirdoon",
+        "title": "Ma aha Qoraal Kaliya",
+        "desc": "AI-gaagu wuxuu falanqeeyaa macnaha, wuxuu soo saaraa aragtiyo, wuxuuna abuuraa nuxur loo habeeyey dhagaystayaasha goob kasta."
+      },
+      {
+        "badge": "Qaybinta",
+        "title": "Hal Gujin, Goob Kasta",
+        "desc": "Dhammaan 10 qaababka ayaa si isku mar ah loo soo saaraa. Laga bilaabo qoraallada blog-ga dhaadheer ilaa taxanaha bulshada — wax walba diyaar ayaa ah ilbiriqsiyo gudahood."
+      },
+      {
+        "badge": "Sifaynta",
+        "title": "La Hadal Nuxurkaaga",
+        "desc": "Natiijo kasta waxay leedahay wadahadal AI ah oo ku dhex jira. \"Ku dar xog dheeri\", \"ka dhig mid xoog badan\" — isbeddelada ayaa si degdeg ah loo dabaqaa."
+      }
+    ]
+  },
+  "features": {
+    "label": "Astaamaha",
+    "title": "Wax Kasta oo ",
+    "highlight": "Nuxurka Baaxadda",
+    "subtitle": "Waxaa loo dhisay abuurayaasha kuwaas oo u beddela qayb kasta oo nuxur ah saameyn ugu badan.",
+    "list": [
+      {
+        "title": "Dib-u-Qorista AI-ku Xoojiyey",
+        "desc": "Ma aha qoraal kaliya — AI-gaagu wuxuu fahmaa macnaha oo dib u qoraa si uu ugu habboonaado codka gaarka ah ee goob kasta."
+      },
+      {
+        "title": "10 Qaabab Soo-saaris",
+        "desc": "Qoraallo blog ah, taxane Twitter, LinkedIn, Xiaohongshu, wargeysyo, qoraallo hoosaadyo SRT, maqaallo SEO, iyo wax badan."
+      },
+      {
+        "title": "63+ Luuqadood",
+        "desc": "Qor oo soo saar nuxur 63+ luuqadood. Waxaa loo dhisay abuurayaasha caalamiga ah."
+      },
+      {
+        "title": "Soo-saaris Qulqulaysa",
+        "desc": "Nuxurku wuxuu u muuqdaa xaraf xaraf ah waqtiga dhabta ah. Ma sugayso wareegyo."
+      },
+      {
+        "title": "Sifaynta Wadahadalka",
+        "desc": "La hadal natiijo kasta si aad u sifayso. \"Ka dhig mid gaaban\" — waa la sameeyey."
+      },
+      {
+        "title": "6 Qaabab Dhoofinta",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Diyaar u ah in si degdeg ah loo daabaco."
+      },
+      {
+        "title": "La Wadaag & Wada Shaqee",
+        "desc": "Soo saar xiriiriyeyaal ay asxaabtu ku arki karaan oo ay kula wada shaqeyn karaan nuxurkaaga."
+      },
+      {
+        "title": "Gaar & Aamin",
+        "desc": "Faylasha waa la tirtiraa ka dib habaynta. Nuxurkaaga marna looma isticmaalo tababarka."
+      },
+      {
+        "title": "Ogaanshaha Caqliga Leh",
+        "desc": "Xiriiriye YouTube? → Blog + Twitter. Bilibili? → WeChat + Xiaohongshu. Toos ah."
+      }
+    ]
+  },
+  "formats": {
+    "outputLabel": "Qaababka Soo-saarka",
+    "outputTitle": "10 Qaabab, ",
+    "outputHighlight": "Hal Gujin",
+    "outputSubtitle": "Soo saar wax walba si isku mar ah — uma baahnid inaad marar badan ku shaqeysato qalabka.",
+    "formatNames": [
+      "Qoraal Blog",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "Maqaal SEO",
+      "Wargeys",
+      "Qoraallo Hoosaadyo SRT",
+      "Soo Koobid AI",
+      "Maabka Maskaxda"
+    ],
+    "langLabel": "Gaaritaanka Caalamiga ah",
+    "langTitle": "63+ Luuqadood ayaa La Taageeray",
+    "langSubtitle": "Qor oo soo saar nuxur 63+ luuqadood. Waa ku habboon tahay abuurayaasha caalamiga ah iyo dhagaystayaasha caalamka.",
+    "more": "+45 kale"
+  },
+  "social": {
+    "label": "Waxaa Aamina Abuurayaal",
+    "stats": {
+      "users": "Isticmaalayaasha Firfircoon",
+      "videos": "Fiidheyo La Habay",
+      "rating": "Qiimaynta Isticmaalaha",
+      "languages": "Luuqadaha"
+    },
+    "testimonials": [
+      {
+        "text": "\"Ugu dambeyntii qalab fahma habka shaqada abuurista nuxurka. Hal fiidheyo → dhammaan goobaha daqiiqado gudahood. Wax beddelay jadwalkayga nuxurka.\"",
+        "author": "Sarah Chen",
+        "role": "Abuuraha Nuxurka"
+      },
+      {
+        "text": "\"Sifaynta wadahadalku waa mid cajiib ah. Waxaan ka hagaajin karaa natiijo kasta anigoo la hadlaya. Waxay i badbaadisaa saacado toddobaad kasta.\"",
+        "author": "Marcus Rivera",
+        "role": "Hogaamiyaha Suuqgeynta"
+      },
+      {
+        "text": "\"Waxaan shaki ka qabay nuxurka AI, laakiin tayadu runtii way i yaabisay. Qaabaynta goobta gaarka ah waa mid sax ah.\"",
+        "author": "Yuki Tanaka",
+        "role": "Martigeliyaha Podcast"
+      },
+      {
+        "text": "\"Anigoo ah aasaase kaliya, qalabkani wuxuu i siiyaa wax soo saarka koox nuxur ah. Qoraallo LinkedIn, blogs, tweets — dhammaantood hal fiidheyo.\"",
+        "author": "Alex Park",
+        "role": "Aasaasaha Shirkadda"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Qiimaha",
+    "title": "Qiimo ",
+    "highlight": "Hufan",
+    "suffix": "Fudud",
+    "subtitle": "Ka bilaab bilaash, u cusboonaysii markaad u baahato wax badan. Ma jiraan kharashyo qarsoon. Ka jooji wakhti kasta.",
+    "enterprise": "Wax badan u baahan? ",
+    "enterpriseLink": "Nala soo xiriir",
+    "enterpriseSuffix": " qiimaha shirkadda.",
+    "plans": {
+      "free": {
+        "name": "Bilaash",
+        "desc": "Waa ku habboon tahay tijaabinta",
+        "cta": "Bilow",
+        "features": [
+          "3 fiidheyo/bishii",
+          "5 qaabab soo-saaris",
+          "Qaabka AI aasaasiga ah",
+          "120 daqiiqo oo qoraal ah",
+          "Taageerada bulshada"
+        ]
+      },
+      "creator": {
+        "name": "Abuuraha",
+        "desc": "Loogu talagalay abuurayaasha nuxurka ee halista ah",
+        "cta": "Roonow Hadda",
+        "badge": "Inta Badan La Doorto",
+        "features": [
+          "30 fiidheyo/bishii",
+          "Dhammaan 10 qaababka soo-saarka",
+          "Qaabka AI ee sare",
+          "1,200 daqiiqo oo qoraal ah",
+          "Sifaynta wadahadalka",
+          "Taageerada mudnaanta leh",
+          "Gelista API"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Loogu talagalay kooxaha iyo wakaaladaha",
+        "cta": "Roonow Hadda",
+        "features": [
+          "Fiidheyo aan xad lahayn",
+          "Dhammaan qaababka + kuwa gaarka ah",
+          "AI sare + cod gaar ah",
+          "6,000 daqiiqo oo qoraal ah",
+          "Wada shaqaynta kooxda",
+          "Dhoofinta calaamad cad",
+          "Taageero go'an",
+          "Dashboard falanqaynta"
+        ]
+      }
+    }
+  },
+  "cta": {
+    "title": "Diyaar u ah inaad ",
+    "highlight": "10x Nuxurkaaga",
+    "suffix": "Soo Saarto?",
+    "subtitle": "Ku biir kumannaan abuurayaal ah oo u beddela fiidheyo kasta istaraatiijiyad nuxur oo dhammaystiran oo goobo badan ah. Ka bilaab bilaash — uma baahnid kaadh amaah.",
+    "start": "Ka Bilaab Bilaash",
+    "pricing": "Fiiri Qiimaha"
+  },
+  "faq": {
+    "label": "Su'aalaha Badanaa la Weydiiyo",
+    "title": "Su'aalaha ",
+    "highlight": "Badanaa la Weydiiyo",
+    "items": [
+      {
+        "q": "Runtii ma bilaash baa in la bilaabo?",
+        "a": "Haa! Qorshaha bilaashka ah wuxuu ku siinayaa 3 fiidheyo/bishii oo leh 5 qaabab soo-saaris. Ma baahna kaadh amaah."
+      },
+      {
+        "q": "Luuqadaha intee le'eg ayaad taageertaan?",
+        "a": "63+ luuqadood oo loogu talagalay qoraalka iyo soo-saarka nuxurka."
+      },
+      {
+        "q": "Goobaha intee le'eg ayaan u beddeli karaa nuxurka?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blogs, Medium, Substack, wargeysyo, iyo wax badan."
+      },
+      {
+        "q": "Intee ayay qaadataa?",
+        "a": "Inta badan fiidheyaasha waa la habaynayaa 1 daqiiqo gudahood. Nuxurku wuxuu qulqulaa waqtiga dhabta ah."
+      },
+      {
+        "q": "Ma sifayn karaa nuxurka AI-ku soo saaray?",
+        "a": "Haa! La hadal natiijo kasta si aad u hagaajiso codka, dhererka, qaabka, ama ugu darto waxyaabo."
+      },
+      {
+        "q": "Waa kuwee qaababka faylasha aan soo gelin karo?",
+        "a": "Maqal: MP3, WAV, M4A, FLAC, OGG. Fiidheyo: MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "Xogteeyadu ma ammaan baa?",
+        "a": "Haa. Faylasha waa la tirtiraa ka dib habaynta. Marna looma isticmaalo tababarka."
+      },
+      {
+        "q": "Ma joojin karaa wakhti kasta?",
+        "a": "Haa, jooji wakhti kasta. Ma jiraan heshiisyo muddo dheer ah."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Dib-u-isticmaalka nuxurka ee AI-ku xoojiyey. Hal fiidheyo u beddel istaraatiijiyaddaada nuxur ee goobo badan oo dhammaystiran.",
+    "copyright": "Dhammaan xuquuqaha waa la dhawray.",
+    "builtWith": "Waxaa loo dhisay abuurayaasha nuxurka ee adduunka oo dhan",
+    "sections": {
+      "product": "Alaabta",
+      "tools": "Qalabka",
+      "legal": "Sharci",
+      "company": "Shirkadda"
+    },
+    "links": {
+      "features": "Astaamaha",
+      "pricing": "Qiimaha",
+      "faq": "Su'aalaha Badanaa la Weydiiyo",
+      "yt2blog": "YouTube ilaa Blog",
+      "vid2twitter": "Fiidheyo ilaa Twitter",
+      "vid2xhs": "Fiidheyo ilaa Xiaohongshu",
+      "podcast2article": "Podcast ilaa Maqaal",
+      "allTools": "Dhammaan Qalabka →",
+      "privacy": "Qarsoodiga",
+      "terms": "Shuruudaha",
+      "github": "GitHub",
+      "contact": "Nala soo xiriir"
+    }
+  },
+  "workbench": {
+    "transcribing": "Waa la qorayaa",
+    "generating": "Nuxurka waa la soo saarayaa",
+    "completed": "Dhammaystiran",
+    "progress": "Horumar",
+    "cancel": "Jooji",
+    "refineTitle": "Sifee - ",
+    "refinePlaceholder": "U sheeg AI sida loo hagaajiyo nuxurkan...",
+    "send": "Dir",
+    "copy": "Nuqul ka samee",
+    "copied": "La nuqul ka sameeyey",
+    "download": "Soo deji",
+    "refine": "Sifee",
+    "elapsedPrefix": "Waqtiga La Qaatay",
+    "elapsedFormat": "{elapsed}s",
+    "estimatedFormat": "~{seconds}s",
+    "transcribeStart": "Waa la soo dejinayaa oo la qorayaa maqalka...",
+    "transcribeDone": "Qoraalku waa dhammaystiran yahay! Nuxurka waa la soo saarayaa...",
+    "transcribeFailed": "Ma helin qoraal. Hubi faylka maqalka.",
+    "streamError": "Akhriska qulqulka wuu fashilmay",
+    "timeoutError": "Habayntu waa dhaaftay wakhtiga. Isku day maqal gaaban.",
+    "generatingFormat": "Waa la soo saarayaa {format}...",
+    "formatComplete": "{format} waa dhammaystiran yahay",
+    "formatsProgress": "{done}/{total} qaabab",
+    "allDone": "Dhammaan waa la dhameeyey! {count} qaabab ayaa la soo saaray",
+    "detectedLang": "La ogaaday: {lang} · {chars} xarfo"
+  }
+}
