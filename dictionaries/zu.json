@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Izici",
+    "pricing": "Izintengo",
+    "faq": "Imibuzo Evame Ukubuzwa",
+    "tryFree": "Zama Mahhala"
+  },
+  "hero": {
+    "badge": "Ukusetshenziswa Kabusha Kokuqukethwe Okunamandla nge-AI",
+    "title": "Phendula Ividiyo Eyodwa Ibe",
+    "highlight": "Isu Lakho Lonke Lokuqukethwe",
+    "subtitle": "Namathisela isixhumanisi noma ulayishe ifayela — i-AI ikopisha ngokuzenzakalelayo futhi isebenzise kabusha okuqukethwe kwakho kube okuthunyelwe kwebhulogi, imicu yomphakathi, izincwadi zezindaba, nokunye.",
+    "accent": "Khuphula umkhiqizo wakho wokuqukethwe ngokuphindwe ka-10.",
+    "stats": {
+      "languages": "Izilimi",
+      "formats": "Izindlela Zokukhipha",
+      "speed": "Isikhathi Sokucubungula"
+    },
+    "tabs": {
+      "url": "Namathisela Isixhumanisi",
+      "file": "Layisha Ifayela",
+      "text": "Namathisela Umbhalo"
+    },
+    "placeholder": "Namathisela isixhumanisi se-YouTube, i-podcast, noma enye ividiyo...",
+    "generate": "Khiqiza",
+    "processing": "Iyacubungula...",
+    "error": "Kukhona okungahambanga kahle",
+    "tryAgain": "Zama futhi",
+    "startOver": "Qala kabusha",
+    "formatsGenerated": "izindlela zokukhipha ezikhiqiziwe"
+  },
+  "howItWorks": {
+    "label": "Indlela Okusebenza Ngayo",
+    "title": "Kusukela Kuvidiyo Kuya",
+    "highlight": "Ezinkundleni Eziningi",
+    "suffix": "ngezinyathelo ezi-3",
+    "steps": [
+      {
+        "title": "Namathisela noma Layisha",
+        "desc": "Phonsa isixhumanisi se-YouTube, layisha ifayela lomsindo, noma unamathisele umbhalo. Akukho ukulungiselela okudingekayo — chofoza nje okukodwa."
+      },
+      {
+        "title": "I-AI Yenza Umlingo Wayo",
+        "desc": "I-AI yethu ikopisha futhi iqonde okuqukethwe kwakho, bese ikubhala kabusha ngokuhlakanipha ukuze kufane nesitayela esiyingqayizivele sendawo ngayinye."
+      },
+      {
+        "title": "Shicilela Yonke Indawo",
+        "desc": "Thola okuqukethwe okucwengiwe kwe-WeChat, Twitter, LinkedIn, Xiaohongshu, amabhulogi, nokunye. Kopisha, landa, noma wabelane ngaso ngokushesha."
+      }
+    ]
+  },
+  "features": {
+    "label": "Izici",
+    "title": "Konke Okudingayo Ukuze",
+    "highlight": "Khuphule Ukuqukethwe Kwakho",
+    "subtitle": "Yakhelwe abadali abafuna ukukhulisa konke okuqukethwe abakukhiqizayo.",
+    "list": [
+      {
+        "title": "Ukubhala Kabusha Okunamandla nge-AI",
+        "desc": "Hhayi ukukopisha nje — i-AI yethu iyaqonda umongo futhi ibhale kabusha ngokwezwi nezwi lendlela yendawo ngayinye."
+      },
+      {
+        "title": "Izindlela Zokukhipha Eziyi-10",
+        "desc": "Okuthunyelwe kwebhulogi, imicu ye-Twitter, okuthunyelwe kwe-LinkedIn, amanothi e-Xiaohongshu, izincwadi zezindaba, izihloko ze-SRT, izihloko ze-SEO, nokunye."
+      },
+      {
+        "title": "Izilimi Ezingaphezu Kwama-63",
+        "desc": "Kopisha futhi ukhiqize okuqukethwe ngezilimi ezingaphezu kwama-63. Kulungele abadali bamazwe ngamazwe nezethameli zomhlaba wonke."
+      },
+      {
+        "title": "Ukukhiqiza Okusakazwayo",
+        "desc": "Bona okuqukethwe kuvela uhlamvu ngohlamvu ngesikhathi sangempela. Akusekho ukulinda izipinari ezilayishayo."
+      },
+      {
+        "title": "Ukucwengwa Okungaxoxwayo",
+        "desc": "Xoxa nokukhipha ngakunye ukuze ukuhlele kahle. Ithi \"yenza kube mfushane\" noma \"engeza i-emoji\" — i-AI iyisebenzise ngokushesha."
+      },
+      {
+        "title": "Izindlela Zokukhipha Eziyisi-6",
+        "desc": "Landa njenge-Markdown, TXT, PDF, DOCX, SRT, noma CSV. Ilungele ukushicilelwa ngqo."
+      },
+      {
+        "title": "Yabelana futhi Usebenzisane",
+        "desc": "Khiqiza izixhumanisi ezabelwanayo ozosebenzisana ngazo nothanga bakho."
+      },
+      {
+        "title": "Kuyimfihlo futhi Kuvikelekile",
+        "desc": "Okuqukethwe kwakho kuhlala kungokwakho. Amafayela ayasuswa ngokuzenzakalelayo ngemva kokucubungula. Akukho ukugcinwa kwedatha."
+      },
+      {
+        "title": "Ukutholwa Okuhlakaniphile Kwendawo",
+        "desc": "Namathisela isixhumanisi se-YouTube? Siphakamisa ibhulogi + Twitter. Namathisela i-Bilibili? Siphakamisa i-WeChat + Xiaohongshu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Kungani i-ailomo",
+    "title": "Yakhiwe Ngokuhlukile.",
+    "highlight": "I-AI Iqala Kusukela Ekuqaleni"
+  },
+  "formats": {
+    "outputLabel": "Izindlela Zokukhipha",
+    "outputTitle": "Izindlela Zokukhipha Eziyi-10,",
+    "outputHighlight": "Ukuchofoza Okukodwa",
+    "outputSubtitle": "Khiqiza konke ngesikhathi esisodwa — akukho sidingo sokusebenzisa ithuluzi izikhathi eziningi.",
+    "langLabel": "Ukufinyelela Emhlabeni Wonke",
+    "langTitle": "Izilimi Ezingaphezu Kwama-63 Ziyasekelwa",
+    "langSubtitle": "Kopisha futhi ukhiqize okuqukethwe ngezilimi ezingaphezu kwama-63. Kulungele abadali bamazwe ngamazwe nezethameli zomhlaba wonke.",
+    "more": "+45 ezinye"
+  },
+  "social": {
+    "label": "Ithembekile Kubadali",
+    "stats": {
+      "users": "Abasebenzisi Abasebenzayo",
+      "videos": "Amavidiyo Acutshunguliwe",
+      "rating": "Isilinganiso Somsebenzisi",
+      "languages": "Izilimi"
+    },
+    "testimonials": [
+      {
+        "text": "\"Ekugcineni ithuluzi eliqonda umsebenzi wokudala okuqukethwe. Ividiyo eyodwa → zonke izinkundla ngemizuzu. Kushintsha umdlalo ohlelweni lwami lokuqukethwe.\"",
+        "author": "Sarah Chen",
+        "role": "Umdali Wokuqukethwe"
+      },
+      {
+        "text": "\"Ukucwengwa okungaxoxwayo kuhle kakhulu. Ngingakwazi ukulungisa okukhipha ngakunye ngokuxoxa nje nakho. Kungisindisa amahora nsuku zonke.\"",
+        "author": "Marcus Rivera",
+        "role": "Umholi Wezokumaketha"
+      },
+      {
+        "text": "\"Nganginokungabaza ngokuqukethwe kwe-AI, kodwa ikhwalithi yangimangaza ngempela. Ukufometha okukhethekile kwendawo kunembile.\"",
+        "author": "Yuki Tanaka",
+        "role": "Umsingathi we-Podcast"
+      },
+      {
+        "text": "\"Njengomsunguli oyedwa, leli thuluzi linginikeza umkhiqizo weqembu lokuqukethwe. Okuthunyelwe kwe-LinkedIn, amabhulogi, ama-tweets — konke kusuka kuvidiyo eyodwa.\"",
+        "author": "Alex Park",
+        "role": "Umsunguli Wezinkampani Ezisafufusa"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Izintengo",
+    "title": "Izintengo",
+    "highlight": "Ezisobala",
+    "suffix": "Ezingenazinkohliso",
+    "subtitle": "Qala mahhala, thuthukisa lapho udinga okwengeziwe. Azikho izindleko ezifihliwe.",
+    "plans": {
+      "free": {
+        "name": "Mahhala",
+        "desc": "Ilungele ukuzama",
+        "cta": "Qala"
+      },
+      "creator": {
+        "name": "Umdali",
+        "desc": "Okwabadali abaqinile bokuqukethwe",
+        "cta": "Qala Isivivinyo Samahhala",
+        "badge": "Ethandwa Kakhulu"
+      },
+      "pro": {
+        "name": "I-Pro",
+        "desc": "Okwamaqembu nama-ejensi",
+        "cta": "Qala Isivivinyo Samahhala"
+      }
+    }
+  },
+  "cta": {
+    "title": "Ukulungele",
+    "highlight": "Ukuphindaphinda Ukuqukethwe Kwakho Ngokuphindwe Ka-10",
+    "suffix": "?",
+    "subtitle": "Joyina izinkulungwane zabadali abaphendula ividiyo ngayinye ibe isu eliphelele lokuqukethwe ezinkundleni eziningi. Qala mahhala — ayikho ikhadi lesikweletu elidingekayo.",
+    "start": "Qala Mahhala",
+    "pricing": "Buka Izintengo"
+  },
+  "faq": {
+    "label": "Imibuzo Evame Ukubuzwa",
+    "title": "Imibuzo Evame Ukubuzwa"
+  },
+  "footer": {
+    "tagline": "Ukusetshenziswa kabusha kokuqukethwe okunamandla nge-AI. Phendula ividiyo eyodwa ibe isu lakho lonke lokuqukethwe ezinkundleni eziningi.",
+    "copyright": "Wonke amalungelo agodliwe.",
+    "builtWith": "Yakhelwe abadali bokuqukethwe emhlabeni wonke"
+  }
+}

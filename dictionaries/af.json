@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Kenmerke",
+    "pricing": "Pryse",
+    "faq": "Gereelde Vrae",
+    "tryFree": "Probeer Gratis"
+  },
+  "hero": {
+    "badge": "AI-aangedrewe Inhoudshergebruik",
+    "title": "Verander Een Video In",
+    "highlight": "Jou Hele Inhoudstrategie",
+    "subtitle": "Plak 'n skakel of laai 'n lêer op — AI transkribeer en hergebruik jou inhoud outomaties in blogplasings, sosiale drade, nuusbriewe, en meer.",
+    "accent": "10x jou inhoudsproduksie.",
+    "stats": {
+      "languages": "Tale",
+      "formats": "Uitsetformate",
+      "speed": "Verwerkingstyd"
+    },
+    "tabs": {
+      "url": "Plak Skakel",
+      "file": "Laai Lêer Op",
+      "text": "Plak Teks"
+    },
+    "placeholder": "Plak YouTube, potgooi, of enige video-skakel...",
+    "generate": "Genereer",
+    "processing": "Besig om te verwerk...",
+    "error": "Iets het verkeerd geloop",
+    "tryAgain": "Probeer weer",
+    "startOver": "Begin oor",
+    "formatsGenerated": "formate gegenereer"
+  },
+  "howItWorks": {
+    "label": "Hoe Dit Werk",
+    "title": "Van Video na",
+    "highlight": "Multi-Platform",
+    "suffix": "in 3 Stappe",
+    "steps": [
+      {
+        "title": "Plak of Laai Op",
+        "desc": "Laat val 'n YouTube-skakel, laai 'n oudio-lêer op, of plak teks. Geen opstelling nodig nie — net een klik."
+      },
+      {
+        "title": "AI Doen Sy Towery",
+        "desc": "Ons AI transkribeer en verstaan jou inhoud, en herskryf dit intelligent vir elke platform se unieke styl."
+      },
+      {
+        "title": "Publiseer Oral",
+        "desc": "Kry gepoleerde inhoud vir WeChat, Twitter, LinkedIn, Xiaohongshu, blogs, en meer. Kopieer, laai af, of deel dadelik."
+      }
+    ]
+  },
+  "features": {
+    "label": "Kenmerke",
+    "title": "Alles Wat Jy Nodig Het Om",
+    "highlight": "Jou Inhoud te Skaal",
+    "subtitle": "Gebou vir skeppers wat elke stukkie inhoud wat hulle produseer wil maksimeer.",
+    "list": [
+      {
+        "title": "AI-aangedrewe Herskrywing",
+        "desc": "Nie net transkripsie nie — ons AI verstaan konteks en herskryf vir elke platform se unieke stem en formaat."
+      },
+      {
+        "title": "10 Uitsetformate",
+        "desc": "Blogplasings, Twitter-drade, LinkedIn-plasings, Xiaohongshu-notas, nuusbriewe, SRT-onderskrifte, SEO-artikels, en meer."
+      },
+      {
+        "title": "63+ Tale",
+        "desc": "Transkribeer en genereer inhoud in 63+ tale. Perfek vir internasionale skeppers en wêreldwye gehore."
+      },
+      {
+        "title": "Stroomgenerering",
+        "desc": "Sien inhoud karakter vir karakter in reële tyd verskyn. Geen meer wag vir laai-aanwysers nie."
+      },
+      {
+        "title": "Gespreksverfyning",
+        "desc": "Gesels met elke uitset om dit fyn te stel. Sê \"maak dit korter\" of \"voeg emoji by\" — AI pas dit dadelik toe."
+      },
+      {
+        "title": "6 Uitvoerformate",
+        "desc": "Laai af as Markdown, TXT, PDF, DOCX, SRT, of CSV. Direk gereed vir publikasie."
+      },
+      {
+        "title": "Deel & Werk Saam",
+        "desc": "Genereer deelbare skakels vir jou spanlede om inhoud te sien en saam te werk."
+      },
+      {
+        "title": "Privaat & Veilig",
+        "desc": "Jou inhoud bly joune. Lêers word outomaties verwyder na verwerking. Geen data-bewaring nie."
+      },
+      {
+        "title": "Slim Platformdeteksie",
+        "desc": "Plak 'n YouTube-skakel? Ons stel blog + Twitter voor. Plak Bilibili? Ons stel WeChat + Xiaohongshu voor."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Hoekom ailomo",
+    "title": "Anders Gebou.",
+    "highlight": "AI-Eerste Van Die Grond Af"
+  },
+  "formats": {
+    "outputLabel": "Uitsetformate",
+    "outputTitle": "10 Formate,",
+    "outputHighlight": "Een Klik",
+    "outputSubtitle": "Genereer alles gelyktydig — geen behoefte om die instrument verskeie kere te gebruik nie.",
+    "langLabel": "Wêreldwye Bereik",
+    "langTitle": "63+ Tale Ondersteun",
+    "langSubtitle": "Transkribeer en genereer inhoud in 63+ tale. Perfek vir internasionale skeppers en wêreldwye gehore.",
+    "more": "+45 meer"
+  },
+  "social": {
+    "label": "Vertrou deur Skeppers",
+    "stats": {
+      "users": "Aktiewe Gebruikers",
+      "videos": "Video's Verwerk",
+      "rating": "Gebruikersgradering",
+      "languages": "Tale"
+    },
+    "testimonials": [
+      {
+        "text": "\"Uiteindelik 'n instrument wat die inhoudskeppingswerkvloei verstaan. Een video → alle platforms in minute. Spelveranderend vir my inhoudskedule.\"",
+        "author": "Sarah Chen",
+        "role": "Inhoudskepper"
+      },
+      {
+        "text": "\"Die gespreksverfyning is briljant. Ek kan elke uitset aanpas deur net daarmee te gesels. Spaar my ure elke week.\"",
+        "author": "Marcus Rivera",
+        "role": "Bemarkingshoof"
+      },
+      {
+        "text": "\"Ek was skepties oor AI-inhoud, maar die kwaliteit het my regtig verras. Die platformspesifieke formatering is perfek.\"",
+        "author": "Yuki Tanaka",
+        "role": "Potgooi-aanbieder"
+      },
+      {
+        "text": "\"As 'n alleenstigter gee hierdie instrument my 'n inhoudspan se uitset. LinkedIn-plasings, blogs, tweets — alles van een video.\"",
+        "author": "Alex Park",
+        "role": "Beginondernemer"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Pryse",
+    "title": "Eenvoudige,",
+    "highlight": "Deursigtige",
+    "suffix": "Pryse",
+    "subtitle": "Begin gratis, gradeer op wanneer jy meer nodig het. Geen verborge fooie nie.",
+    "plans": {
+      "free": {
+        "name": "Gratis",
+        "desc": "Perfek om dit te probeer",
+        "cta": "Begin"
+      },
+      "creator": {
+        "name": "Skepper",
+        "desc": "Vir ernstige inhoudskeppers",
+        "cta": "Begin Gratis Proef",
+        "badge": "Mees Gewild"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Vir spanne en agentskappe",
+        "cta": "Begin Gratis Proef"
+      }
+    }
+  },
+  "cta": {
+    "title": "Gereed om",
+    "highlight": "10x Jou Inhoud",
+    "suffix": "Uitset?",
+    "subtitle": "Sluit aan by duisende skeppers wat elke video in 'n volledige multi-platform inhoudstrategie omskep. Begin gratis — geen kredietkaart nodig nie.",
+    "start": "Begin Gratis",
+    "pricing": "Bekyk Pryse"
+  },
+  "faq": {
+    "label": "Gereelde Vrae",
+    "title": "Gereeld Gevra"
+  },
+  "footer": {
+    "tagline": "AI-aangedrewe inhoudshergebruik. Verander een video in jou hele multi-platform inhoudstrategie.",
+    "copyright": "Alle regte voorbehou.",
+    "builtWith": "Gebou vir inhoudskeppers wêreldwyd"
+  }
+}

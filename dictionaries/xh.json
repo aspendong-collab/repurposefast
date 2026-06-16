@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Iimpawu",
+    "pricing": "Amaxabiso",
+    "faq": "Imibuzo Ebuzwa Rhoqo",
+    "tryFree": "Zama Simahla"
+  },
+  "hero": {
+    "badge": "Ukuphinda Usebenzise Umxholo oNgeniswe yi-AI",
+    "title": "Guqula Ividiyo Enye Ibe",
+    "highlight": "Isicwangciso Sakho Sonke Somxholo",
+    "subtitle": "Ncamathisa ikhonkco okanye ulayishe ifayile — i-AI ikhuphela ngokuzenzekelayo kwaye iphinde isebenzise umxholo wakho ube ziibhlogi, imisonto yezentlalo, iincwadana zeendaba, nokunye.",
+    "accent": "Phinda-phinda imveliso yakho yomxholo ngokuphindwe ka-10.",
+    "stats": {
+      "languages": "Iilwimi",
+      "formats": "Iifomathi Zokuphuma",
+      "speed": "Ixesha Lokuqhubekeka"
+    },
+    "tabs": {
+      "url": "Ncamathisa Ikhonkco",
+      "file": "Layisha Ifayile",
+      "text": "Ncamathisa Umbhalo"
+    },
+    "placeholder": "Ncamathisa ikhonkco le-YouTube, ipodcast, okanye nayiphi na ividiyo...",
+    "generate": "Velisa",
+    "processing": "Iyacubungula...",
+    "error": "Kukho into engahambanga kakuhle",
+    "tryAgain": "Zama kwakhona",
+    "startOver": "Qala ngokutsha",
+    "formatsGenerated": "iifomathi ezivelisiweyo"
+  },
+  "howItWorks": {
+    "label": "Indlela Esisebenza Ngayo",
+    "title": "Ukusuka KwiVidiyo Ukuya",
+    "highlight": "KwiiPlatifomu Ezininzi",
+    "suffix": "ngamaNyathelo ama-3",
+    "steps": [
+      {
+        "title": "Ncamathisa okanye Layisha",
+        "desc": "Phosa ikhonkco le-YouTube, layisha ifayile yomsindo, okanye ncamathisa umbhalo. Akukho seto iyimfuneko — nqakraza nje kube kanye."
+      },
+      {
+        "title": "I-AI Iyasebenza Ngomlingo",
+        "desc": "I-AI yethu ikhuphela kwaye iqonde umxholo wakho, emva koko iwubhale ngobukrelekrele ngokwesitayile esikhethekileyo seplatifomu nganye."
+      },
+      {
+        "title": "Papasha Kuyo Yonke Indawo",
+        "desc": "Fumana umxholo ococekileyo we-WeChat, Twitter, LinkedIn, Xiaohongshu, iibhlogi, nokunye. Khuphela, khuphela okanye wabelane ngoko nangoko."
+      }
+    ]
+  },
+  "features": {
+    "label": "Iimpawu",
+    "title": "Yonke Into Oyifunayo Ukuze",
+    "highlight": "Ukhulise Umxholo Wakho",
+    "subtitle": "Yakhelwe abadali abafuna ukwandisa umxholo ngamnye abawuvelisayo.",
+    "list": [
+      {
+        "title": "Ukuphinda Kubhalwe nge-AI",
+        "desc": "Ayikokukhuphela nje — i-AI iyawuqonda umxholo kwaye iphinde ibhale ngokwelizwi kunye nefomathi ekhethekileyo yeplatifomu nganye."
+      },
+      {
+        "title": "Iifomathi Zokuphuma ezi-10",
+        "desc": "Iibhlogi, imisonto ye-Twitter, izithuba ze-LinkedIn, amanqaku e-Xiaohongshu, iincwadana zeendaba, i-SRT subtitles, amanqaku e-SEO, nokunye."
+      },
+      {
+        "title": "Iilwimi ezingama-63+",
+        "desc": "Khupha kwaye uvelise umxholo ngeelwimi ezingama-63+. Zilungele abadali bamazwe ngamazwe kunye nabaphulaphuli behlabathi."
+      },
+      {
+        "title": "Ukuveliswa Okusasazwayo",
+        "desc": "Bona umxholo uvela unobumba ngonobumba ngexesha lokwenyani. Akusayi kuba nokulinda i-spinner."
+      },
+      {
+        "title": "Ukuphuculwa Ngengxoxo",
+        "desc": "Thetha nemveliso nganye ukuyilungisa. Yithi 'yenza ibe mfutshane' okanye 'yongeza i-emoji' — i-AI iyisebenzisa ngoko nangoko."
+      },
+      {
+        "title": "Iifomathi Zokuthumela ezi-6",
+        "desc": "Khuphela njenge-Markdown, TXT, PDF, DOCX, SRT, okanye CSV. Ilungele ukupapashwa ngokuthe ngqo."
+      },
+      {
+        "title": "Yabelana & Sebenzisana",
+        "desc": "Velisa amakhonkco okwabelana ukuze abasebenzi bakho bakwazi ukujonga kwaye basebenzisane kumxholo."
+      },
+      {
+        "title": "Yabucala & Ikhuselekile",
+        "desc": "Umxholo wakho uhlala ungowakho. Iifayile ziyacinywa ngokuzenzekelayo emva kokuqhubekeka. Akukho kugcinwa kwedatha."
+      },
+      {
+        "title": "Ukubhaqwa KwePlatifomu Ngobukrelekrele",
+        "desc": "Ncamathisa ikhonkco le-YouTube? Sicebisa ibhlogi + Twitter. Ncamathisa i-Bilibili? Sicebisa i-WeChat + Xiaohongshu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Kutheni i-ailomo",
+    "title": "Yakhiwe Ngokwahlukileyo.",
+    "highlight": "I-AI-First Ukusuka Ekuqaleni"
+  },
+  "formats": {
+    "outputLabel": "Iifomathi Zokuphuma",
+    "outputTitle": "Iifomathi ezili-10,",
+    "outputHighlight": "Nqakraza Kube Kanye",
+    "outputSubtitle": "Velisa yonke into ngaxeshanye — akukho mfuneko yokuqhuba isixhobo izihlandlo ezininzi.",
+    "langLabel": "Ukufikelela Ehlabathini",
+    "langTitle": "Iilwimi ezingama-63+ Ziyaxhaswa",
+    "langSubtitle": "Khupha kwaye uvelise umxholo ngeelwimi ezingama-63+. Zilungele abadali bamazwe ngamazwe kunye nabaphulaphuli behlabathi.",
+    "more": "+ezinye ezingama-45"
+  },
+  "social": {
+    "label": "Ithembele Abadali",
+    "stats": {
+      "users": "Abasebenzisi Abasebenzayo",
+      "videos": "Iividiyo Eziqhubekekileyo",
+      "rating": "Ulinganiso Lomsebenzisi",
+      "languages": "Iilwimi"
+    },
+    "testimonials": [
+      {
+        "text": "\"Ekugqibeleni isixhobo esiyiqondayo indlela yokusebenza yokudala umxholo. Ividiyo enye → zonke iiplatifomu kwimizuzu. Itshintshe ishedyuli yam yomxholo.\"",
+        "author": "Sarah Chen",
+        "role": "Umdali Womxholo"
+      },
+      {
+        "text": "\"Ukuphuculwa ngengxoxo kuyamangalisa. Ndiyakwazi ukulungisa imveliso nganye ngokuthetha nje nayo. Kusindisa iiyure zam qho ngeveki.\"",
+        "author": "Marcus Rivera",
+        "role": "Inkokeli Yentengiso"
+      },
+      {
+        "text": "\"Bendithandabuza umxholo we-AI, kodwa umgangatho undimangalisile ngokwenene. Ukufomathwa okukhethekileyo kweplatifomu kuchanekile.\"",
+        "author": "Yuki Tanaka",
+        "role": "Umsingathi wePodcast"
+      },
+      {
+        "text": "\"Njengomseki osebenza yedwa, esi sixhobo sindinika imveliso yeqela lomxholo. Izithuba ze-LinkedIn, iibhlogi, iitweets — zonke zivela kwividiyo enye.\"",
+        "author": "Alex Park",
+        "role": "Umseki weSitartap"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Amaxabiso",
+    "title": "Amaxabiso",
+    "highlight": "Acacileyo",
+    "suffix": "Alula",
+    "subtitle": "Qala simahla, phucula xa ufuna okungaphezulu. Akukho mirhumo ifihliweyo.",
+    "plans": {
+      "free": {
+        "name": "Simahla",
+        "desc": "Ilungele ukuyizama",
+        "cta": "Qala"
+      },
+      "creator": {
+        "name": "Umdali",
+        "desc": "Yabadali abazimiseleyo bomxholo",
+        "cta": "Qala iTrial Simahla",
+        "badge": "Idume Kakhulu"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Yamaqela kunye nee-arhente",
+        "cta": "Qala iTrial Simahla"
+      }
+    }
+  },
+  "cta": {
+    "title": "Ukulungele Uku",
+    "highlight": "Phinda-Phinda Umxholo Wakho Ngokuphindwe Ka-10",
+    "suffix": "?",
+    "subtitle": "Joyina amawaka abadali abaguqula ividiyo nganye ibe sisicwangciso esipheleleyo somxholo kwiplatifomu ezininzi. Qala simahla — akukho khadi letyala liyimfuneko.",
+    "start": "Qala Simahla",
+    "pricing": "Jonga Amaxabiso"
+  },
+  "faq": {
+    "label": "Imibuzo Ebuzwa Rhoqo",
+    "title": "Imibuzo Ebuzwa Rhoqo"
+  },
+  "footer": {
+    "tagline": "Ukuphinda usebenzise umxholo nge-AI. Guqula ividiyo enye ibe sisicwangciso sakho sonke somxholo kwiplatifomu ezininzi.",
+    "copyright": "Onke amalungelo agciniwe.",
+    "builtWith": "Yakhelwe abadali bomxholo kwihlabathi liphela"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Awọn ẹya",
+    "pricing": "Iye owo",
+    "faq": "Ibeere",
+    "tryFree": "Gbiyanju Ọfẹ"
+  },
+  "hero": {
+    "badge": "Atunlo Akoonu ti AI Ṣe",
+    "title": "Yi Fidio Kan Pada Si",
+    "highlight": "Gbogbo Ilana Akoonu Rẹ",
+    "subtitle": "Fi ọna asopọ kan tabi gbe faili kan silẹ — AI n ṣe atunkọ ati tun lo akoonu rẹ laifọwọyi sinu awọn ifiweranṣẹ bulọọgi, awọn okun awujọ, awọn iwe iroyin, ati diẹ sii.",
+    "accent": "Mu akoonu rẹ pọ si 10x.",
+    "stats": {
+      "languages": "Awọn Ede",
+      "formats": "Awọn Ọna Iṣejade",
+      "speed": "Akoko Ṣiṣe"
+    },
+    "tabs": {
+      "url": "Fi Ọna asopọ Silẹ",
+      "file": "Gbe Faili Silẹ",
+      "text": "Fi Ọrọ Silẹ"
+    },
+    "placeholder": "Fi ọna asopọ YouTube, adarọ-ese, tabi eyikeyi fidio silẹ...",
+    "generate": "Ṣe ipilẹṣẹ",
+    "processing": "Ṣiṣẹ lori...",
+    "error": "Nkan kan ṣe aṣiṣe",
+    "tryAgain": "Gbiyanju lẹẹkansi",
+    "startOver": "Bẹrẹ lẹẹkansi",
+    "formatsGenerated": "awọn ọna iṣejade ti ṣe ipilẹṣẹ"
+  },
+  "howItWorks": {
+    "label": "Bii O Ṣe Ṣiṣẹ",
+    "title": "Lati Fidio Si",
+    "highlight": "Ọpọlọpọ-Platform",
+    "suffix": "ni Awọn Igbesẹ 3",
+    "steps": [
+      {
+        "title": "Fi Silẹ tabi Gbe Silẹ",
+        "desc": "Ju ọna asopọ YouTube kan silẹ, gbe faili ohun kan silẹ, tabi fi ọrọ silẹ. Ko si iṣeto ti o nilo — tẹ kan ṣoṣo."
+      },
+      {
+        "title": "AI Ṣe Iṣẹ Iyanu Rẹ",
+        "desc": "AI wa n ṣe atunkọ ati loye akoonu rẹ, lẹhinna tun kọ ọ ni ọgbọn fun aṣa alailẹgbẹ ti platform kọọkan."
+      },
+      {
+        "title": "Tẹjade Nibikibi",
+        "desc": "Gba akoonu didara fun WeChat, Twitter, LinkedIn, Xiaohongshu, awọn bulọọgi, ati diẹ sii. Daakọ, gbe silẹ, tabi pin lẹsẹkẹsẹ."
+      }
+    ]
+  },
+  "features": {
+    "label": "Awọn Ẹya",
+    "title": "Ohun Gbogbo Ti O Nilo Lati",
+    "highlight": "Mu Akoonu Rẹ Pọ Si",
+    "subtitle": "Ti a ṣe fun awọn olupilẹṣẹ ti o fẹ mu gbogbo nkan akoonu ti wọn ṣe pọ si.",
+    "list": [
+      {
+        "title": "Atunkọ ti AI Ṣe",
+        "desc": "Kii ṣe atunkọ nikan — AI loye ọrọ-ọrọ ati tun kọ fun ohun ati ọna kika alailẹgbẹ ti platform kọọkan."
+      },
+      {
+        "title": "Awọn Ọna Iṣejade 10",
+        "desc": "Awọn ifiweranṣẹ bulọọgi, awọn okun Twitter, awọn ifiweranṣẹ LinkedIn, awọn akọsilẹ Xiaohongshu, awọn iwe iroyin, awọn atunkọ SRT, awọn nkan SEO, ati diẹ sii."
+      },
+      {
+        "title": "Awọn Ede 63+",
+        "desc": "Ṣe atunkọ ati ṣe ipilẹṣẹ akoonu ni awọn ede 63+. Pipe fun awọn olupilẹṣẹ agbaye ati awọn olugbo kariaye."
+      },
+      {
+        "title": "Ipilẹṣẹ Ṣiṣan",
+        "desc": "Wo akoonu ti n farahan lẹẹkọọkan lẹẹkọọkan ni akoko gidi. Ko si iduro fun awọn iyipo ikojọpọ mọ."
+      },
+      {
+        "title": "Atunse Ọrọ-ọrọ",
+        "desc": "Bá ọ̀kan lára àwọn àbájáde sọ̀rọ̀ láti tún un ṣe. Sọ \"sọ ọ́ kúrú\" tàbí \"fi emoji kún un\" — AI máa ń lò ó lẹ́sẹ̀kẹsẹ̀."
+      },
+      {
+        "title": "Awọn Ọna Iṣejade 6",
+        "desc": "Gbe silẹ bi Markdown, TXT, PDF, DOCX, SRT, tabi CSV. Ti ṣetan taara fun titẹjade."
+      },
+      {
+        "title": "Pin & Ṣe Ifọwọsowọpọ",
+        "desc": "Ṣe ipilẹṣẹ awọn ọna asopọ pinpin fun awọn ẹlẹgbẹ rẹ lati wo ati ṣe ifọwọsowọpọ lori akoonu."
+      },
+      {
+        "title": "Ikọkọ & Aabo",
+        "desc": "Akoonu rẹ jẹ tirẹ. Awọn faili n parẹ laifọwọyi lẹhin ṣiṣe. Ko si idaduro data."
+      },
+      {
+        "title": "Wiwa Platform Ọlọgbọn",
+        "desc": "Fi ọna asopọ YouTube kan silẹ? A daba bulọọgi + Twitter. Fi Bilibili silẹ? A daba WeChat + Xiaohongshu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Idi ailomo",
+    "title": "Ti Kọ O yatọ.",
+    "highlight": "AI-Akọkọ Lati Ipilẹ"
+  },
+  "formats": {
+    "outputLabel": "Awọn Ọna Iṣejade",
+    "outputTitle": "Awọn Ọna 10,",
+    "outputHighlight": "Tẹ Kan",
+    "outputSubtitle": "Ṣe ipilẹṣẹ ohun gbogbo ni akoko kanna — ko si iwulo lati lo ọpa naa ni ọpọlọpọ igba.",
+    "langLabel": "Arọwọto Agbaye",
+    "langTitle": "Awọn Ede 63+ Ti Ṣe Atilẹyin",
+    "langSubtitle": "Ṣe atunkọ ati ṣe ipilẹṣẹ akoonu ni awọn ede 63+. Pipe fun awọn olupilẹṣẹ agbaye ati awọn olugbo kariaye.",
+    "more": "+45 diẹ sii"
+  },
+  "social": {
+    "label": "Ti Awọn Olupilẹṣẹ Gbẹkẹle",
+    "stats": {
+      "users": "Awọn Olumulo Ti Nṣiṣe Lọwọ",
+      "videos": "Awọn Fidio Ti Ṣe",
+      "rating": "Iwọn Olumulo",
+      "languages": "Awọn Ede"
+    },
+    "testimonials": [
+      {
+        "text": "\"Nikẹhin irinṣẹ kan ti o loye iṣẹ ṣiṣe ẹda akoonu. Fidio kan → gbogbo awọn platform ni iṣẹju diẹ. Iyipada ere fun iṣeto akoonu mi.\"",
+        "author": "Sarah Chen",
+        "role": "Olupilẹṣẹ Akoonu"
+      },
+      {
+        "text": "\"Atunse ọrọ-ọrọ jẹ iyanu. Mo le ṣatunṣe abajade kọọkan nipa sisọ pẹlu rẹ. O n gba wakati mi pamọ ni ọsẹ kọọkan.\"",
+        "author": "Marcus Rivera",
+        "role": "Oludari Titaja"
+      },
+      {
+        "text": "\"Mo ṣiyemeji nipa akoonu AI, ṣugbọn didara naa yà mi lẹnu gaan. Ṣiṣe ọna kika pato platform jẹ deede.\"",
+        "author": "Yuki Tanaka",
+        "role": "Agbalejo Adarọ-ese"
+      },
+      {
+        "text": "\"Gẹgẹbi oludasile nikan, irinṣẹ yii fun mi ni iṣelọpọ ẹgbẹ akoonu. Awọn ifiweranṣẹ LinkedIn, awọn bulọọgi, awọn tweets — gbogbo rẹ lati fidio kan.\"",
+        "author": "Alex Park",
+        "role": "Oludasile Ibẹrẹ"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Iye owo",
+    "title": "Rọrun,",
+    "highlight": "Gbangba",
+    "suffix": "Iye Owo",
+    "subtitle": "Bẹrẹ ọfẹ, igbega nigbati o ba nilo diẹ sii. Ko si awọn idiyele farasin.",
+    "plans": {
+      "free": {
+        "name": "Ọfẹ",
+        "desc": "Pipe fun igbiyanju rẹ",
+        "cta": "Bẹrẹ"
+      },
+      "creator": {
+        "name": "Olupilẹṣẹ",
+        "desc": "Fun awọn olupilẹṣẹ akoonu pataki",
+        "cta": "Bẹrẹ Idanwo Ọfẹ",
+        "badge": "Olokiki Julọ"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Fun awọn ẹgbẹ ati awọn ile-iṣẹ",
+        "cta": "Bẹrẹ Idanwo Ọfẹ"
+      }
+    }
+  },
+  "cta": {
+    "title": "Ṣetan Lati",
+    "highlight": "Mu Akoonu Rẹ Pọ Si 10x",
+    "suffix": "Iṣejade?",
+    "subtitle": "Darapọ mọ ẹgbẹẹgbẹrun awọn olupilẹṣẹ ti o sọ fidio kọọkan di ilana akoonu ọpọlọpọ-platform pipe. Bẹrẹ ọfẹ — ko si kaadi kirẹditi ti o nilo.",
+    "start": "Bẹrẹ Ọfẹ",
+    "pricing": "Wo Iye Owo"
+  },
+  "faq": {
+    "label": "Ibeere",
+    "title": "Awọn Ibeere Nigbagbogbo"
+  },
+  "footer": {
+    "tagline": "Atunlo akoonu ti AI ṣe. Yi fidio kan pada si gbogbo ilana akoonu ọpọlọpọ-platform rẹ.",
+    "copyright": "Gbogbo ẹtọ wa ni ipamọ.",
+    "builtWith": "Ti a kọ fun awọn olupilẹṣẹ akoonu agbaye"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Fasaloli",
+    "pricing": "Farashi",
+    "faq": "Tambayoyi",
+    "tryFree": "Gwada Kyauta"
+  },
+  "hero": {
+    "badge": "Sake Amfani da Abun ciki ta AI",
+    "title": "Juya Bidiyo Guda Zuwa",
+    "highlight": "Duk Dabarun Abun cikin ku",
+    "subtitle": "Manna hanyar haɗi ko loda fayil — AI ta rubuta kuma ta sake amfani da abun cikin ku ta atomatik zuwa rubutun blog, jerin sada zumunta, wasiƙun labarai, da ƙari.",
+    "accent": "Sau 10 na fitar da abun cikin ku.",
+    "stats": {
+      "languages": "Harsuna",
+      "formats": "Tsarin Fitarwa",
+      "speed": "Lokacin Aiki"
+    },
+    "tabs": {
+      "url": "Manna Hanyar Haɗi",
+      "file": "Loda Fayil",
+      "text": "Manna Rubutu"
+    },
+    "placeholder": "Manna hanyar haɗin YouTube, podcast, ko kowane bidiyo...",
+    "generate": "Ƙirƙira",
+    "processing": "Ana aiki...",
+    "error": "Wani abu ya yi kuskure",
+    "tryAgain": "Sake gwadawa",
+    "startOver": "Fara sabo",
+    "formatsGenerated": "tsarin da aka ƙirƙira"
+  },
+  "howItWorks": {
+    "label": "Yadda Yake Aiki",
+    "title": "Daga Bidiyo Zuwa",
+    "highlight": "Dandamali da yawa",
+    "suffix": "a cikin Matakai 3",
+    "steps": [
+      {
+        "title": "Manna ko Loda",
+        "desc": "Saka hanyar haɗin YouTube, loda fayil mai sauti, ko manna rubutu. Babu buƙatar saiti — danna ɗaya kawai."
+      },
+      {
+        "title": "AI Ta Yi Sihirinta",
+        "desc": "AI ɗin mu tana rubutawa da fahimtar abun cikin ku, sannan ta sake rubuta shi da hikima don salon kowane dandamali."
+      },
+      {
+        "title": "Buga Ko'ina",
+        "desc": "Sami ingantaccen abun ciki don WeChat, Twitter, LinkedIn, Xiaohongshu, blogs, da ƙari. Kwafi, sauke, ko raba nan take."
+      }
+    ]
+  },
+  "features": {
+    "label": "Fasaloli",
+    "title": "Duk Abin Da Kuke Bukata Don",
+    "highlight": "Haɓaka Abun Cikin ku",
+    "subtitle": "An gina shi don masu ƙirƙira waɗanda ke son haɓaka kowane ɓangaren abun cikin da suke samarwa.",
+    "list": [
+      {
+        "title": "Sake Rubutu ta AI",
+        "desc": "Ba rubutu kawai ba — AI ɗin mu tana fahimtar mahallin kuma ta sake rubutawa don murya da tsarin kowane dandamali."
+      },
+      {
+        "title": "Tsarin Fitarwa 10",
+        "desc": "Rubutun blog, jerin Twitter, posts na LinkedIn, bayanan Xiaohongshu, wasiƙun labarai, SRT subtitles, labaran SEO, da ƙari."
+      },
+      {
+        "title": "Harsuna 63+",
+        "desc": "Rubuta da ƙirƙirar abun ciki cikin harsuna sama da 63. Daidai ga masu ƙirƙira na duniya da masu sauraro na duniya."
+      },
+      {
+        "title": "Samar da Streaming",
+        "desc": "Ganin abun ciki yana bayyana harafi da harafi a ainihin lokaci. Babu jiran maɓallan lodi."
+      },
+      {
+        "title": "Gyara Ta Hira",
+        "desc": "Yi hira da kowane fitarwa don daidaita shi. Ka ce \"taƙaita\" ko \"ƙara emoji\" — AI ta yi nan take."
+      },
+      {
+        "title": "Tsarin Fitarwa 6",
+        "desc": "Sauke a matsayin Markdown, TXT, PDF, DOCX, SRT, ko CSV. Shirye kai tsaye don bugawa."
+      },
+      {
+        "title": "Raba & Haɗa Kai",
+        "desc": "Ƙirƙiri hanyoyin haɗi masu rabawa don abokan aikinku su gani da haɗa kai kan abun ciki."
+      },
+      {
+        "title": "Sirri & Amintacce",
+        "desc": "Abun cikin ku ya kasance naku. Ana share fayiloli ta atomatik bayan aiki. Babu adana bayanai."
+      },
+      {
+        "title": "Gano Dandamali Mai Hikima",
+        "desc": "Ka manna hanyar haɗin YouTube? Muna ba da shawarar blog + Twitter. Ka manna Bilibili? Muna ba da shawarar WeChat + Xiaohongshu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Me yasa ailomo",
+    "title": "An Gina Shi Daban.",
+    "highlight": "AI-Farko Daga Tushe"
+  },
+  "formats": {
+    "outputLabel": "Tsarin Fitarwa",
+    "outputTitle": "Tsari 10,",
+    "outputHighlight": "Danna ɗaya",
+    "outputSubtitle": "Ƙirƙira duka lokaci guda — babu buƙatar gudanar da kayan aiki sau da yawa.",
+    "langLabel": "Isha Duniya",
+    "langTitle": "Harsuna 63+ Aka Tallafawa",
+    "langSubtitle": "Rubuta da ƙirƙirar abun ciki cikin harsuna sama da 63. Daidai ga masu ƙirƙira na duniya da masu sauraro na duniya.",
+    "more": "+45 ƙari"
+  },
+  "social": {
+    "label": "Masu Ƙirƙira Sun Aminta",
+    "stats": {
+      "users": "Masu Amfani Masu Aiki",
+      "videos": "Bidiyoyin Da Aka Aiwatar",
+      "rating": "Ƙimar Mai Amfani",
+      "languages": "Harsuna"
+    },
+    "testimonials": [
+      {
+        "text": "\"A ƙarshe kayan aiki da ya fahimci tsarin ƙirƙirar abun ciki. Bidiyo ɗaya → duk dandamali cikin mintuna. Canji ne ga jadawalin abun ciki na.\"",
+        "author": "Sarah Chen",
+        "role": "Mai Ƙirƙira Abun Ciki"
+      },
+      {
+        "text": "\"Gyaran ta hira yana da hazaka. Ina iya daidaita kowane fitarwa ta hanyar yin hira da shi. Yana ceton ni sa'o'i kowane mako.\"",
+        "author": "Marcus Rivera",
+        "role": "Jagoran Tallace-tallace"
+      },
+      {
+        "text": "\"Na yi shakka game da abun cikin AI, amma ingancin ya ba ni mamaki da gaske. Tsarin dandamali na musamman ya yi daidai.\"",
+        "author": "Yuki Tanaka",
+        "role": "Mai Gabatar da Podcast"
+      },
+      {
+        "text": "\"A matsayina na wanda ya kafa kamfani ni kaɗai, wannan kayan aiki yana ba ni fitarwar ƙungiyar abun ciki. Posts na LinkedIn, blogs, tweets — duk daga bidiyo ɗaya.\"",
+        "author": "Alex Park",
+        "role": "Wanda Ya Kafa Startup"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Farashi",
+    "title": "Sauƙi,",
+    "highlight": "Bayyananne",
+    "suffix": "Farashi",
+    "subtitle": "Fara kyauta, haɓaka lokacin da kuke buƙata. Babu kuɗaɗen ɓoye.",
+    "plans": {
+      "free": {
+        "name": "Kyauta",
+        "desc": "Daidai don gwadawa",
+        "cta": "Fara"
+      },
+      "creator": {
+        "name": "Mai Ƙirƙira",
+        "desc": "Ga masu ƙirƙira abun ciki masu mahimmanci",
+        "cta": "Fara Gwajin Kyauta",
+        "badge": "Mafi Shahara"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Ga ƙungiyoyi da hukumomi",
+        "cta": "Fara Gwajin Kyauta"
+      }
+    }
+  },
+  "cta": {
+    "title": "Kuna Shirye Don",
+    "highlight": "Sau 10 na Abun Cikin ku",
+    "suffix": "Fitarwa?",
+    "subtitle": "Ku haɗa da dubban masu ƙirƙira waɗanda ke juya kowane bidiyo zuwa cikakkiyar dabarun abun ciki na dandamali da yawa. Fara kyauta — babu buƙatar katin kiredit.",
+    "start": "Fara Kyauta",
+    "pricing": "Duba Farashi"
+  },
+  "faq": {
+    "label": "Tambayoyi",
+    "title": "Tambayoyin Da Aka Yawaita"
+  },
+  "footer": {
+    "tagline": "Sake amfani da abun ciki ta AI. Juya bidiyo ɗaya zuwa duk dabarun abun cikin ku na dandamali da yawa.",
+    "copyright": "Duk haƙƙoƙi suna kariya.",
+    "builtWith": "An gina shi don masu ƙirƙira abun ciki a duniya"
+  }
+}

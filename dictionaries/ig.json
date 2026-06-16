@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Atụmatụ",
+    "pricing": "Ọnụahịa",
+    "faq": "Ajụjụ",
+    "tryFree": "Nwalee N'efu"
+  },
+  "hero": {
+    "badge": "Mmegharị Ọdịnaya Site na AI",
+    "title": "Tụgharịa Otu Vidio Gaa",
+    "highlight": "Atụmatụ Ọdịnaya Gị Niile",
+    "subtitle": "Tinye njikọ ma ọ bụ bulite faịlụ — AI na-edepụta ma na-atụgharị ọdịnaya gị na akụkọ blọgụ, eriri mmekọrịta, akwụkwọ akụkọ, na ihe ndị ọzọ.",
+    "accent": "Mụbaa mmepụta ọdịnaya gị ugboro iri.",
+    "stats": {
+      "languages": "Asụsụ",
+      "formats": "Ụdị Mmepụta",
+      "speed": "Oge Nhazi"
+    },
+    "tabs": {
+      "url": "Tinye Njikọ",
+      "file": "Bulite Faịlụ",
+      "text": "Tinye Ederede"
+    },
+    "placeholder": "Tinye njikọ YouTube, pọdkastị, ma ọ bụ vidio ọ bụla...",
+    "generate": "Mepụta",
+    "processing": "Na-ahazi...",
+    "error": "Ihe mere n'ụzọ na-ezighị ezi",
+    "tryAgain": "Nwaa ọzọ",
+    "startOver": "Malite ọzọ",
+    "formatsGenerated": "ụdị emepụtara"
+  },
+  "howItWorks": {
+    "label": "Otu Ọ Si Arụ Ọrụ",
+    "title": "Site na Vidio Gaa na",
+    "highlight": "Ọtụtụ Ikpo Okwu",
+    "suffix": "na Nzọụkwụ 3",
+    "steps": [
+      {
+        "title": "Tinye ma ọ bụ Bulite",
+        "desc": "Wụda njikọ YouTube, bulite faịlụ ọdịyo, ma ọ bụ tinye ederede. Ọ dịghị nhazi achọrọ — naanị otu pị."
+      },
+      {
+        "title": "AI Na-arụ Ọrụ Ya",
+        "desc": "AI anyị na-edepụta ma ghọta ọdịnaya gị, wee degharịa ya n'ụzọ nwere ọgụgụ isi maka ụdị ikpo okwu ọ bụla."
+      },
+      {
+        "title": "Bipụta Ebe Niile",
+        "desc": "Nweta ọdịnaya a nụchara anụcha maka WeChat, Twitter, LinkedIn, Xiaohongshu, blọgụ, na ihe ndị ọzọ. Detuo, budata, ma ọ bụ kesaa ozugbo."
+      }
+    ]
+  },
+  "features": {
+    "label": "Atụmatụ",
+    "title": "Ihe Niile I Chọrọ iji",
+    "highlight": "Mụbaa Ọdịnaya Gị",
+    "subtitle": "Ewubere maka ndị okike chọrọ iwepụta uru kacha na mpempe ọdịnaya ọ bụla ha mepụtara.",
+    "list": [
+      {
+        "title": "Idegharị Site na AI",
+        "desc": "Ọ bụghị naanị idepụta — AI anyị na-aghọta ihe ọ pụtara ma degharịa ya maka olu na ụdị ikpo okwu ọ bụla."
+      },
+      {
+        "title": "Ụdị Mmepụta 10",
+        "desc": "Akụkọ blọgụ, eriri Twitter, posts LinkedIn, ndetu Xiaohongshu, akwụkwọ akụkọ, ndepụta okwu SRT, isiokwu SEO, na ihe ndị ọzọ."
+      },
+      {
+        "title": "Asụsụ 63+",
+        "desc": "Depụta ma mepụta ọdịnaya n'asụsụ 63+. Dị mma maka ndị okike mba ụwa na ndị na-ege ntị zuru ụwa ọnụ."
+      },
+      {
+        "title": "Mepụta Na-aga n'ihu",
+        "desc": "Hụ ọdịnaya ka ọ na-apụta mkpụrụedemede site na mkpụrụedemede n'oge. Ọ dịghị ichere ihe na-egwu egwu."
+      },
+      {
+        "title": "Ndozigharị Mkparịta Ụka",
+        "desc": "Kparịta ụka na mmepụta ọ bụla iji dozie ya. Kwuo \"mee ka ọ dị mkpụmkpụ\" ma ọ bụ \"tinye emoji\" — AI na-etinye ya ozugbo."
+      },
+      {
+        "title": "Ụdị Mbupụ 6",
+        "desc": "Budata dị ka Markdown, TXT, PDF, DOCX, SRT, ma ọ bụ CSV. Dị njikere ozugbo maka mbipụta."
+      },
+      {
+        "title": "Kesaa ma Soro Rụọ Ọrụ",
+        "desc": "Mepụta njikọ enwere ike ịkesa maka ndị otu gị ka ha lee ma soro rụọ ọrụ na ọdịnaya."
+      },
+      {
+        "title": "Nkeonwe na Nchebe",
+        "desc": "Ọdịnaya gị bụ nke gị. A na-ehichapụ faịlụ ozugbo emechara nhazi. Ọ dịghị idowe data."
+      },
+      {
+        "title": "Nchọpụta Ikpo Okwu Nwere Ọgụgụ Isi",
+        "desc": "Tinye njikọ YouTube? Anyị na-atụ aro blọgụ + Twitter. Tinye Bilibili? Anyị na-atụ aro WeChat + Xiaohongshu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Ihe mere ailomo",
+    "title": "Ewubere Dị Iche.",
+    "highlight": "AI-Bụ Ihe Mbụ Site na Mmalite"
+  },
+  "formats": {
+    "outputLabel": "Ụdị Mmepụta",
+    "outputTitle": "Ụdị 10,",
+    "outputHighlight": "Otu Pị",
+    "outputSubtitle": "Mepụta ihe niile n'otu oge — ọ dịghị mkpa ịgba ngwaọrụ ọtụtụ ugboro.",
+    "langLabel": "Oke Ụwa",
+    "langTitle": "Asụsụ 63+ Akwadoro",
+    "langSubtitle": "Depụta ma mepụta ọdịnaya n'asụsụ 63+. Dị mma maka ndị okike mba ụwa na ndị na-ege ntị zuru ụwa ọnụ.",
+    "more": "+45 ọzọ"
+  },
+  "social": {
+    "label": "Ndị Okike Tụkwasịrị Obi",
+    "stats": {
+      "users": "Ndị Ọrụ Na-arụ Ọrụ",
+      "videos": "Vidio Ahaziri",
+      "rating": "Ọkwa Ndị Ọrụ",
+      "languages": "Asụsụ"
+    },
+    "testimonials": [
+      {
+        "text": "\"N'ikpeazụ, ngwaọrụ na-aghọta usoro ọrụ ịmepụta ọdịnaya. Otu vidio → ikpo okwu niile n'ime nkeji. Mgbanwe egwuregwu maka usoro ọdịnaya m.\"",
+        "author": "Sarah Chen",
+        "role": "Onye Okike Ọdịnaya"
+      },
+      {
+        "text": "\"Ndozigharị mkparịta ụka ahụ mara mma. Enwere m ike ịhazi mmepụta ọ bụla site na ịkparịta ụka na ya. Na-azọpụta m ọtụtụ awa kwa izu.\"",
+        "author": "Marcus Rivera",
+        "role": "Onye Ndú Ahịa"
+      },
+      {
+        "text": "\"Enwere m obi abụọ banyere ọdịnaya AI, mana àgwà ahụ tụrụ m n'anya n'ezie. Ụdị ikpo okwu pụrụ iche ahụ dabara nke ọma.\"",
+        "author": "Yuki Tanaka",
+        "role": "Onye Nlekọta Pọdkastị"
+      },
+      {
+        "text": "\"Dị ka onye guzobere naanị ya, ngwaọrụ a na-enye m mmepụta otu ọrụ ọdịnaya. Posts LinkedIn, blọgụ, tweets — ha niile sitere na otu vidio.\"",
+        "author": "Alex Park",
+        "role": "Onye guzobere ụlọ ọrụ mmalite"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Ọnụahịa",
+    "title": "Ọnụahịa",
+    "highlight": "Doro Anya",
+    "suffix": "",
+    "subtitle": "Malite n'efu, kwalite mgbe ịchọrọ ihe ọzọ. Ọ dịghị ụgwọ zoro ezo.",
+    "plans": {
+      "free": {
+        "name": "N'efu",
+        "desc": "Dị mma maka ịnwale ya",
+        "cta": "Bido"
+      },
+      "creator": {
+        "name": "Onye Okike",
+        "desc": "Maka ndị okike ọdịnaya siri ike",
+        "cta": "Bido Nnwale N'efu",
+        "badge": "Kacha Ewu Ewu"
+      },
+      "pro": {
+        "name": "Ọkachamara",
+        "desc": "Maka otu na ụlọ ọrụ",
+        "cta": "Bido Nnwale N'efu"
+      }
+    }
+  },
+  "cta": {
+    "title": "Ị dịla njikere ị",
+    "highlight": "Mụbaa Ọdịnaya Gị Ugboro Iri",
+    "suffix": "?",
+    "subtitle": "Sonye na puku kwuru puku ndị okike na-atụgharị vidio ọ bụla ka ọ bụrụ atụmatụ ọdịnaya zuru oke n'ọtụtụ ikpo okwu. Bido n'efu — ọ dịghị kaadị kredit achọrọ.",
+    "start": "Bido N'efu",
+    "pricing": "Lee Ọnụahịa"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Ajụjụ A Na-ajụkarị"
+  },
+  "footer": {
+    "tagline": "Mmegharị ọdịnaya site na AI. Tụgharịa otu vidio gaa na atụmatụ ọdịnaya gị niile n'ọtụtụ ikpo okwu.",
+    "copyright": "Ikike niile echekwabara.",
+    "builtWith": "Ewubere maka ndị okike ọdịnaya n'ụwa niile"
+  }
+}
