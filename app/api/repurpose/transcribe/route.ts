@@ -150,9 +150,10 @@ async function getYouTubeTranscript(videoId: string): Promise<{ text: string; la
       lastError = e
       const msg = e.message || ''
 
-      // Don't retry for permanent errors
+      // Captions disabled → stop retrying immediately, fall through to audio download
       if (msg.includes('disabled') || msg.includes('not available')) {
-        throw new Error("This video doesn't have captions enabled. Try uploading the audio file directly, or paste the content as text.")
+        console.log(`Captions disabled for ${videoId}, will try audio download`)
+        break
       }
 
       // Retry for rate-limit / transient errors
