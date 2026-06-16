@@ -89,8 +89,8 @@ async function callHFWhisper(videoUrl: string, language?: string) {
   const { event_id } = await submitRes.json()
   if (!event_id) throw new Error('No event_id from Gradio')
 
-  // Step 2: Poll for result (up to 90 seconds)
-  for (let i = 0; i < 30; i++) {
+  // Step 2: Poll for result (up to 180 seconds for first cold-start request)
+  for (let i = 0; i < 60; i++) {
     await new Promise((r) => setTimeout(r, 3000))
     const pollRes = await fetch(`${baseUrl}/gradio_api/call/transcribe_fn/${event_id}`, {
       signal: AbortSignal.timeout(10000),
@@ -112,7 +112,7 @@ async function callHFWhisper(videoUrl: string, language?: string) {
       }
     }
   }
-  throw new Error('Transcription timed out after 90s')
+  throw new Error('Transcription timed out after 180s')
 }
 
 async function getYouTubeTranscript(videoId: string): Promise<{ text: string; language: string }> {
