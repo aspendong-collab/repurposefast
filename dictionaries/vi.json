@@ -1,329 +1,329 @@
 {
   "nav": {
-    "features": "Features",
-    "howItWorks": "How It Works",
-    "pricing": "Pricing",
+    "features": "Tính năng",
+    "howItWorks": "Cách hoạt động",
+    "pricing": "Bảng giá",
     "faq": "FAQ",
-    "tryFree": "Try Free"
+    "tryFree": "Dùng thử miễn phí"
   },
   "hero": {
-    "badge": "AI-Powered Content Repurposing",
-    "title": "Turn One Video Into",
-    "highlight": "Content Everywhere",
-    "subtitle": "Paste a YouTube link. Upload a podcast. Drop a text transcript.",
-    "accent": "ailomo instantly creates polished content for every platform.",
+    "badge": "Tái mục đích nội dung bằng AI",
+    "title": "Biến một video thành",
+    "highlight": "Nội dung ở khắp mọi nơi",
+    "subtitle": "Dán link YouTube. Tải lên podcast. Thả bản ghi văn bản.",
+    "accent": "ailomo ngay lập tức tạo nội dung trau chuốt cho mọi nền tảng.",
     "stats": {
-      "languages": "Languages",
-      "formats": "Formats",
-      "speed": "Processing"
+      "languages": "Ngôn ngữ",
+      "formats": "Định dạng",
+      "speed": "Xử lý"
     },
     "tabs": {
-      "url": "Paste Link",
-      "file": "Upload",
-      "text": "Text"
+      "url": "Dán link",
+      "file": "Tải lên",
+      "text": "Văn bản"
     },
-    "placeholder": "Paste a YouTube link, podcast URL, or any video...",
-    "generate": "Generate",
-    "fileDropTitle": "Drop your file here",
-    "fileDropSubtitle": "MP3, WAV, MP4, MOV — up to 500MB",
-    "textPlaceholder": "Paste your transcript or text — AI transforms it into platform-ready content...",
-    "noSignup": "No sign-up required. Free to start.",
-    "processing": "Processing...",
-    "error": "Something went wrong",
-    "tryAgain": "Try again",
-    "startOver": "Start over",
-    "formatsGenerated": "formats generated"
+    "placeholder": "Dán link YouTube, URL podcast hoặc bất kỳ video nào...",
+    "generate": "Tạo",
+    "fileDropTitle": "Thả file của bạn vào đây",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — tối đa 500MB",
+    "textPlaceholder": "Dán bản ghi hoặc văn bản của bạn — AI biến nó thành nội dung sẵn sàng cho nền tảng...",
+    "noSignup": "Không cần đăng ký. Miễn phí để bắt đầu.",
+    "processing": "Đang xử lý...",
+    "error": "Đã xảy ra lỗi",
+    "tryAgain": "Thử lại",
+    "startOver": "Bắt đầu lại",
+    "formatsGenerated": "định dạng đã được tạo"
   },
   "howItWorks": {
-    "label": "How It Works",
-    "title": "From Video to ",
-    "highlight": "Multi-Platform",
-    "suffix": "in 3 Steps",
+    "label": "Cách hoạt động",
+    "title": "Từ video đến ",
+    "highlight": "Đa nền tảng",
+    "suffix": "trong 3 bước",
     "steps": [
       {
-        "title": "Paste or Upload",
-        "desc": "Drop a YouTube link, upload an audio file, or paste text. Zero configuration."
+        "title": "Dán hoặc tải lên",
+        "desc": "Thả link YouTube, tải lên file âm thanh hoặc dán văn bản. Không cần cấu hình."
       },
       {
-        "title": "AI Transforms It",
-        "desc": "Your content is transcribed, understood, and rewritten for every platform's unique voice."
+        "title": "AI biến đổi nó",
+        "desc": "Nội dung của bạn được phiên âm, hiểu và viết lại theo giọng điệu riêng của từng nền tảng."
       },
       {
-        "title": "Publish Everywhere",
-        "desc": "Get blog posts, social threads, newsletters, and more. Copy, download, done."
+        "title": "Xuất bản ở khắp mọi nơi",
+        "desc": "Nhận bài blog, chuỗi bài trên mạng xã hội, bản tin và hơn thế nữa. Sao chép, tải xuống, xong."
       }
     ]
   },
   "highlights": {
-    "label": "Why ailomo",
-    "title": "Built Different. ",
+    "label": "Tại sao ailomo",
+    "title": "Được xây dựng khác biệt. ",
     "highlight": "AI-Native",
     "items": [
       {
-        "badge": "Intelligence",
-        "title": "Not Just Transcription",
-        "desc": "Our AI analyzes context, extracts insights, and generates content optimized for each platform's audience."
+        "badge": "Thông minh",
+        "title": "Không chỉ phiên âm",
+        "desc": "AI của chúng tôi phân tích ngữ cảnh, trích xuất thông tin chi tiết và tạo nội dung được tối ưu hóa cho đối tượng của từng nền tảng."
       },
       {
-        "badge": "Distribution",
-        "title": "One Click, Every Platform",
-        "desc": "All 10 formats generated simultaneously. From long-form blogs to social threads — everything ready in seconds."
+        "badge": "Phân phối",
+        "title": "Một cú nhấp, mọi nền tảng",
+        "desc": "Tất cả 10 định dạng được tạo đồng thời. Từ blog dài đến chuỗi bài trên mạng xã hội — mọi thứ sẵn sàng trong vài giây."
       },
       {
-        "badge": "Refinement",
-        "title": "Chat With Your Content",
-        "desc": "Every output has a built-in AI chat. \"Add more data\", \"make it punchier\" — changes applied instantly."
+        "badge": "Tinh chỉnh",
+        "title": "Trò chuyện với nội dung của bạn",
+        "desc": "Mỗi đầu ra đều có AI chat tích hợp. \"Thêm dữ liệu\", \"làm cho nó sắc nét hơn\" — các thay đổi được áp dụng ngay lập tức."
       }
     ]
   },
   "features": {
-    "label": "Features",
-    "title": "Everything to ",
-    "highlight": "Scale Content",
-    "subtitle": "Built for creators who turn every piece of content into maximum impact.",
+    "label": "Tính năng",
+    "title": "Mọi thứ để ",
+    "highlight": "Mở rộng nội dung",
+    "subtitle": "Được xây dựng cho những người sáng tạo biến mỗi phần nội dung thành tác động tối đa.",
     "list": [
       {
-        "title": "AI-Powered Rewriting",
-        "desc": "Not just transcription — our AI understands context and rewrites for each platform's unique voice."
+        "title": "Viết lại bằng AI",
+        "desc": "Không chỉ phiên âm — AI của chúng tôi hiểu ngữ cảnh và viết lại theo giọng điệu riêng của từng nền tảng."
       },
       {
-        "title": "10 Output Formats",
-        "desc": "Blog posts, Twitter threads, LinkedIn, Xiaohongshu, newsletters, SRT subtitles, SEO articles, more."
+        "title": "10 định dạng đầu ra",
+        "desc": "Bài blog, chuỗi bài Twitter, LinkedIn, Xiaohongshu, bản tin, phụ đề SRT, bài SEO, v.v."
       },
       {
-        "title": "63+ Languages",
-        "desc": "Transcribe and generate in 63+ languages. Built for international creators."
+        "title": "63+ ngôn ngữ",
+        "desc": "Phiên âm và tạo nội dung bằng 63+ ngôn ngữ. Được xây dựng cho người sáng tạo quốc tế."
       },
       {
-        "title": "Streaming Generation",
-        "desc": "Content appears character by character in real-time. No waiting for spinners."
+        "title": "Tạo theo luồng",
+        "desc": "Nội dung xuất hiện từng ký tự theo thời gian thực. Không cần chờ spinner."
       },
       {
-        "title": "Conversational Refinement",
-        "desc": "Chat with each output to fine-tune it. \"Make it shorter\" — done."
+        "title": "Tinh chỉnh bằng hội thoại",
+        "desc": "Trò chuyện với từng đầu ra để tinh chỉnh nó. \"Làm ngắn hơn\" — xong."
       },
       {
-        "title": "6 Export Formats",
-        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Ready to publish instantly."
+        "title": "6 định dạng xuất",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Sẵn sàng xuất bản ngay lập tức."
       },
       {
-        "title": "Share & Collaborate",
-        "desc": "Generate links for teammates to view and collaborate on your content."
+        "title": "Chia sẻ và cộng tác",
+        "desc": "Tạo link cho đồng đội xem và cộng tác trên nội dung của bạn."
       },
       {
-        "title": "Private & Secure",
-        "desc": "Files deleted after processing. Your content is never used for training."
+        "title": "Riêng tư và bảo mật",
+        "desc": "File bị xóa sau khi xử lý. Nội dung của bạn không bao giờ được dùng để huấn luyện."
       },
       {
-        "title": "Smart Detection",
-        "desc": "YouTube link? → Blog + Twitter. Bilibili? → WeChat + Xiaohongshu. Automatic."
+        "title": "Phát hiện thông minh",
+        "desc": "Link YouTube? → Blog + Twitter. Bilibili? → WeChat + Xiaohongshu. Tự động."
       }
     ]
   },
   "formats": {
-    "outputLabel": "Output Formats",
-    "outputTitle": "10 Formats, ",
-    "outputHighlight": "One Click",
-    "outputSubtitle": "Generate everything simultaneously — no need to run the tool multiple times.",
+    "outputLabel": "Định dạng đầu ra",
+    "outputTitle": "10 định dạng, ",
+    "outputHighlight": "một cú nhấp",
+    "outputSubtitle": "Tạo mọi thứ đồng thời — không cần chạy công cụ nhiều lần.",
     "formatNames": [
-      "Blog Post",
+      "Bài blog",
       "WeChat",
       "Xiaohongshu",
       "Twitter",
       "LinkedIn",
-      "SEO Article",
-      "Newsletter",
-      "SRT Subtitles",
-      "AI Summary",
-      "Mind Map"
+      "Bài SEO",
+      "Bản tin",
+      "Phụ đề SRT",
+      "Tóm tắt AI",
+      "Sơ đồ tư duy"
     ],
-    "langLabel": "Global Reach",
-    "langTitle": "63+ Languages Supported",
-    "langSubtitle": "Transcribe and generate content in 63+ languages. Perfect for international creators and global audiences.",
-    "more": "+45 more"
+    "langLabel": "Phạm vi toàn cầu",
+    "langTitle": "Hỗ trợ 63+ ngôn ngữ",
+    "langSubtitle": "Phiên âm và tạo nội dung bằng 63+ ngôn ngữ. Hoàn hảo cho người sáng tạo quốc tế và khán giả toàn cầu.",
+    "more": "+45 ngôn ngữ khác"
   },
   "social": {
-    "label": "Trusted by Creators",
+    "label": "Được tin dùng bởi người sáng tạo",
     "stats": {
-      "users": "Active Users",
-      "videos": "Videos Processed",
-      "rating": "User Rating",
-      "languages": "Languages"
+      "users": "Người dùng hoạt động",
+      "videos": "Video đã xử lý",
+      "rating": "Đánh giá người dùng",
+      "languages": "Ngôn ngữ"
     },
     "testimonials": [
       {
-        "text": "\"Finally a tool that understands content creation workflow. One video → all platforms in minutes. Game changer for my content schedule.\"",
+        "text": "\"Cuối cùng cũng có một công cụ hiểu quy trình tạo nội dung. Một video → tất cả nền tảng trong vài phút. Thay đổi cuộc chơi cho lịch trình nội dung của tôi.\"",
         "author": "Sarah Chen",
-        "role": "Content Creator"
+        "role": "Người sáng tạo nội dung"
       },
       {
-        "text": "\"The conversational refinement is brilliant. I can tweak each output by just chatting with it. Saves me hours every week.\"",
+        "text": "\"Tính năng tinh chỉnh bằng hội thoại thật tuyệt vời. Tôi có thể điều chỉnh từng đầu ra chỉ bằng cách trò chuyện với nó. Tiết kiệm cho tôi hàng giờ mỗi tuần.\"",
         "author": "Marcus Rivera",
-        "role": "Marketing Lead"
+        "role": "Trưởng nhóm Marketing"
       },
       {
-        "text": "\"I was skeptical about AI content, but the quality genuinely surprised me. The platform-specific formatting is spot on.\"",
+        "text": "\"Tôi đã hoài nghi về nội dung AI, nhưng chất lượng thực sự làm tôi ngạc nhiên. Định dạng dành riêng cho từng nền tảng rất chính xác.\"",
         "author": "Yuki Tanaka",
-        "role": "Podcast Host"
+        "role": "Người dẫn chương trình Podcast"
       },
       {
-        "text": "\"As a solo founder, this tool gives me a content team's output. LinkedIn posts, blogs, tweets — all from one video.\"",
+        "text": "\"Là một người sáng lập solo, công cụ này mang lại cho tôi sản lượng của cả một đội ngũ nội dung. Bài LinkedIn, blog, tweet — tất cả từ một video.\"",
         "author": "Alex Park",
-        "role": "Startup Founder"
+        "role": "Người sáng lập Startup"
       }
     ]
   },
   "pricing": {
-    "label": "Pricing",
-    "title": "Simple, ",
-    "highlight": "Transparent",
-    "suffix": "Pricing",
-    "subtitle": "Start free, upgrade when you need more. No hidden fees. Cancel anytime.",
-    "enterprise": "Need more? ",
-    "enterpriseLink": "Contact us",
-    "enterpriseSuffix": " for enterprise pricing.",
+    "label": "Bảng giá",
+    "title": "Đơn giản, ",
+    "highlight": "Minh bạch",
+    "suffix": "Giá cả",
+    "subtitle": "Bắt đầu miễn phí, nâng cấp khi bạn cần thêm. Không phí ẩn. Hủy bất cứ lúc nào.",
+    "enterprise": "Cần thêm? ",
+    "enterpriseLink": "Liên hệ chúng tôi",
+    "enterpriseSuffix": " để có giá doanh nghiệp.",
     "plans": {
       "free": {
-        "name": "Free",
-        "desc": "Perfect for trying it out",
-        "cta": "Get Started",
+        "name": "Miễn phí",
+        "desc": "Hoàn hảo để dùng thử",
+        "cta": "Bắt đầu",
         "features": [
-          "3 videos/month",
-          "5 output formats",
-          "Basic AI model",
-          "120 mins transcription",
-          "Community support"
+          "3 video/tháng",
+          "5 định dạng đầu ra",
+          "Mô hình AI cơ bản",
+          "120 phút phiên âm",
+          "Hỗ trợ cộng đồng"
         ]
       },
       "creator": {
-        "name": "Creator",
-        "desc": "For serious content creators",
-        "cta": "Subscribe Now",
-        "badge": "Most Popular",
+        "name": "Người sáng tạo",
+        "desc": "Dành cho người sáng tạo nội dung chuyên nghiệp",
+        "cta": "Đăng ký ngay",
+        "badge": "Phổ biến nhất",
         "features": [
-          "30 videos/month",
-          "All 10 output formats",
-          "Premium AI model",
-          "1,200 mins transcription",
-          "Conversational refinement",
-          "Priority support",
-          "API access"
+          "30 video/tháng",
+          "Tất cả 10 định dạng đầu ra",
+          "Mô hình AI cao cấp",
+          "1.200 phút phiên âm",
+          "Tinh chỉnh bằng hội thoại",
+          "Hỗ trợ ưu tiên",
+          "Truy cập API"
         ]
       },
       "pro": {
-        "name": "Pro",
-        "desc": "For teams and agencies",
-        "cta": "Subscribe Now",
+        "name": "Chuyên nghiệp",
+        "desc": "Dành cho nhóm và đại lý",
+        "cta": "Đăng ký ngay",
         "features": [
-          "Unlimited videos",
-          "All formats + custom",
-          "Premium AI + custom tone",
-          "6,000 mins transcription",
-          "Team collaboration",
-          "White-label export",
-          "Dedicated support",
-          "Analytics dashboard"
+          "Video không giới hạn",
+          "Tất cả định dạng + tùy chỉnh",
+          "AI cao cấp + giọng điệu tùy chỉnh",
+          "6.000 phút phiên âm",
+          "Cộng tác nhóm",
+          "Xuất bản trắng",
+          "Hỗ trợ riêng",
+          "Bảng điều khiển phân tích"
         ]
       }
     }
   },
   "cta": {
-    "title": "Ready to ",
-    "highlight": "10x Your Content",
-    "suffix": "Output?",
-    "subtitle": "Join thousands of creators who turn every video into a complete multi-platform content strategy. Start free — no credit card needed.",
-    "start": "Start for Free",
-    "pricing": "View Pricing"
+    "title": "Sẵn sàng ",
+    "highlight": "Tăng gấp 10 lần nội dung",
+    "suffix": " của bạn?",
+    "subtitle": "Tham gia cùng hàng nghìn người sáng tạo biến mỗi video thành chiến lược nội dung đa nền tảng hoàn chỉnh. Bắt đầu miễn phí — không cần thẻ tín dụng.",
+    "start": "Bắt đầu miễn phí",
+    "pricing": "Xem bảng giá"
   },
   "faq": {
     "label": "FAQ",
-    "title": "Frequently Asked ",
-    "highlight": "Questions",
+    "title": "Câu hỏi thường gặp ",
+    "highlight": "Câu hỏi",
     "items": [
       {
-        "q": "Is it really free to start?",
-        "a": "Yes! Free plan gives you 3 videos/month with 5 output formats. No credit card required."
+        "q": "Có thực sự miễn phí để bắt đầu không?",
+        "a": "Có! Gói miễn phí cho bạn 3 video/tháng với 5 định dạng đầu ra. Không cần thẻ tín dụng."
       },
       {
-        "q": "Which languages do you support?",
-        "a": "63+ languages for transcription and content generation."
+        "q": "Bạn hỗ trợ những ngôn ngữ nào?",
+        "a": "63+ ngôn ngữ cho phiên âm và tạo nội dung."
       },
       {
-        "q": "What platforms can I repurpose content for?",
-        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blogs, Medium, Substack, newsletters, and more."
+        "q": "Tôi có thể tái mục đích nội dung cho những nền tảng nào?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blog, Medium, Substack, bản tin và nhiều hơn nữa."
       },
       {
-        "q": "How long does it take?",
-        "a": "Most videos processed in under 1 minute. Content streams in real-time."
+        "q": "Mất bao lâu?",
+        "a": "Hầu hết video được xử lý trong vòng dưới 1 phút. Nội dung được phát trực tiếp theo thời gian thực."
       },
       {
-        "q": "Can I refine AI-generated content?",
-        "a": "Yes! Chat with each output to adjust tone, length, style, or add elements."
+        "q": "Tôi có thể tinh chỉnh nội dung do AI tạo không?",
+        "a": "Có! Trò chuyện với từng đầu ra để điều chỉnh giọng điệu, độ dài, phong cách hoặc thêm yếu tố."
       },
       {
-        "q": "What file formats can I upload?",
-        "a": "Audio: MP3, WAV, M4A, FLAC, OGG. Video: MP4, MOV, MKV, WEBM."
+        "q": "Tôi có thể tải lên những định dạng file nào?",
+        "a": "Âm thanh: MP3, WAV, M4A, FLAC, OGG. Video: MP4, MOV, MKV, WEBM."
       },
       {
-        "q": "Is my data safe?",
-        "a": "Yes. Files deleted after processing. Never used for training."
+        "q": "Dữ liệu của tôi có an toàn không?",
+        "a": "Có. File bị xóa sau khi xử lý. Không bao giờ được dùng để huấn luyện."
       },
       {
-        "q": "Can I cancel anytime?",
-        "a": "Yes, cancel anytime. No long-term contracts."
+        "q": "Tôi có thể hủy bất cứ lúc nào không?",
+        "a": "Có, hủy bất cứ lúc nào. Không có hợp đồng dài hạn."
       }
     ]
   },
   "footer": {
-    "tagline": "AI-powered content repurposing. Turn one video into your entire multi-platform content strategy.",
-    "copyright": "All rights reserved.",
-    "builtWith": "Built for content creators worldwide",
+    "tagline": "Tái mục đích nội dung bằng AI. Biến một video thành toàn bộ chiến lược nội dung đa nền tảng của bạn.",
+    "copyright": "Đã đăng ký bản quyền.",
+    "builtWith": "Được xây dựng cho người sáng tạo nội dung trên toàn thế giới",
     "sections": {
-      "product": "Product",
-      "tools": "Tools",
-      "legal": "Legal",
-      "company": "Company"
+      "product": "Sản phẩm",
+      "tools": "Công cụ",
+      "legal": "Pháp lý",
+      "company": "Công ty"
     },
     "links": {
-      "features": "Features",
-      "pricing": "Pricing",
+      "features": "Tính năng",
+      "pricing": "Bảng giá",
       "faq": "FAQ",
-      "yt2blog": "YouTube to Blog",
-      "vid2twitter": "Video to Twitter",
-      "vid2xhs": "Video to Xiaohongshu",
-      "podcast2article": "Podcast to Article",
-      "allTools": "All Tools →",
-      "privacy": "Privacy",
-      "terms": "Terms",
+      "yt2blog": "YouTube sang Blog",
+      "vid2twitter": "Video sang Twitter",
+      "vid2xhs": "Video sang Xiaohongshu",
+      "podcast2article": "Podcast sang Bài viết",
+      "allTools": "Tất cả công cụ →",
+      "privacy": "Quyền riêng tư",
+      "terms": "Điều khoản",
       "github": "GitHub",
-      "contact": "Contact"
+      "contact": "Liên hệ"
     }
   },
   "workbench": {
-    "transcribing": "Transcribing",
-    "generating": "Generating Content",
-    "completed": "Complete",
-    "progress": "Progress",
-    "cancel": "Cancel",
-    "refineTitle": "Refine - ",
-    "refinePlaceholder": "Tell AI how to adjust this content...",
-    "send": "Send",
-    "copy": "Copy",
-    "copied": "Copied",
-    "download": "Download",
-    "refine": "Refine",
-    "elapsedPrefix": "Elapsed",
+    "transcribing": "Đang phiên âm",
+    "generating": "Đang tạo nội dung",
+    "completed": "Hoàn tất",
+    "progress": "Tiến trình",
+    "cancel": "Hủy",
+    "refineTitle": "Tinh chỉnh - ",
+    "refinePlaceholder": "Yêu cầu AI cách điều chỉnh nội dung này...",
+    "send": "Gửi",
+    "copy": "Sao chép",
+    "copied": "Đã sao chép",
+    "download": "Tải xuống",
+    "refine": "Tinh chỉnh",
+    "elapsedPrefix": "Đã trôi qua",
     "elapsedFormat": "{elapsed}s",
     "estimatedFormat": "~{seconds}s",
-    "transcribeStart": "Downloading and transcribing audio...",
-    "transcribeDone": "Transcription complete! Generating content...",
-    "transcribeFailed": "No transcript received. Check audio file.",
-    "streamError": "Stream read failed",
-    "timeoutError": "Processing timed out. Try a shorter audio.",
-    "generatingFormat": "Generating {format}...",
-    "formatComplete": "{format} complete",
-    "formatsProgress": "{done}/{total} formats",
-    "allDone": "All done! {count} formats generated",
-    "detectedLang": "Detected: {lang} · {chars} chars"
+    "transcribeStart": "Đang tải xuống và phiên âm âm thanh...",
+    "transcribeDone": "Phiên âm hoàn tất! Đang tạo nội dung...",
+    "transcribeFailed": "Không nhận được bản ghi. Kiểm tra file âm thanh.",
+    "streamError": "Đọc luồng thất bại",
+    "timeoutError": "Xử lý hết thời gian. Thử âm thanh ngắn hơn.",
+    "generatingFormat": "Đang tạo {format}...",
+    "formatComplete": "{format} hoàn tất",
+    "formatsProgress": "{done}/{total} định dạng",
+    "allDone": "Hoàn tất! {count} định dạng đã được tạo",
+    "detectedLang": "Đã phát hiện: {lang} · {chars} ký tự"
   }
 }
