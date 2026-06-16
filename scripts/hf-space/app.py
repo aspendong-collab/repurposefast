@@ -1,6 +1,8 @@
-"""ailomo-whisper — HF Space Gradio SDK"""
+"""ailomo-whisper — Blocks + REST API"""
 import os, tempfile, logging
 import gradio as gr
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
 import yt_dlp
 
 logging.basicConfig(level=logging.INFO)
@@ -10,57 +12,70 @@ def get_model():
     global _model
     if _model is None:
         from faster_whisper import WhisperModel
-        logging.info("Loading Faster-Whisper large-v3 on GPU...")
+        logging.info("Loading Faster-Whisper large-v3...")
         _model = WhisperModel("large-v3", device="cuda", compute_type="float16")
-        logging.info("✅ Model loaded")
+        logging.info("Model ready")
     return _model
 
-def transcribe_youtube(url, lang):
+def dl(url):
+    d = tempfile.mkdtemp()
+    t = os.path.join(d, "%(id)s.%(ext)s")
+    o = {"format": "bestaudio[ext=m4a]/bestaudio/best", "outtmpl": t, "quiet": True, "max_filesize": 50*1024*1024}
+    with yt_dlp.YoutubeDL(o) as y:
+        i = y.extract_info(url, download=True)
+        p = os.path.join(d, f"{i['id']}.m4a")
+    if not os.path.exists(p):
+        p2 = os.path.join(d, f"{i['id']}.webm")
+        if os.path.exists(p2): p = p2
+        else: raise FileNotFoundError("Download failed")
+    return p, d
+
+def tf(path, lang):
+    m = get_model()
+    s, info = m.transcribe(path, language=lang or None, beam_size=5, vad_filter=True)
+    sl = list(s)
+    return " ".join(x.text.strip() for x in sl), info.language or "en", info.duration
+
+# ── Gradio Blocks ──
+def gui_fn(url, lang):
     try:
-        # Download audio
-        tmpdir = tempfile.mkdtemp()
-        outtmpl = os.path.join(tmpdir, "%(id)s.%(ext)s")
-        ydl_opts = {"format": "bestaudio[ext=m4a]/bestaudio/best", "outtmpl": outtmpl, "quiet": True, "max_filesize": 50*1024*1024}
-        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            info = ydl.extract_info(url, download=True)
-            path = os.path.join(tmpdir, f"{info['id']}.m4a")
-        if not os.path.exists(path):
-            alt = os.path.join(tmpdir, f"{info['id']}.webm")
-            if os.path.exists(alt): path = alt
-            else: return "Error: download failed", "", 0
-
-        # Transcribe
-        model = get_model()
-        segments, info_data = model.transcribe(path, language=lang or None, beam_size=5, vad_filter=True)
-        seg_list = list(segments)
-        text = " ".join(s.text.strip() for s in seg_list)
-
-        # Cleanup
-        os.remove(path)
-        os.rmdir(tmpdir)
-
-        logging.info(f"Done: {len(seg_list)} segs, {len(text)} chars, lang={info_data.language}")
-        return text, info_data.language or "en", info_data.duration
+        p, d = dl(url)
+        text, ld, dur = tf(p, lang)
+        os.remove(p); os.rmdir(d)
+        return text, ld, dur
     except Exception as e:
-        logging.error(str(e))
         return f"Error: {e}", "", 0
 
-# ── Gradio UI ──
-demo = gr.Interface(
-    fn=transcribe_youtube,
-    inputs=[
-        gr.Textbox(label="YouTube URL", placeholder="https://www.youtube.com/watch?v=..."),
-        gr.Textbox(label="Language (optional)", value="en"),
-    ],
-    outputs=[
-        gr.Textbox(label="Transcript", lines=15),
-        gr.Textbox(label="Language"),
-        gr.Number(label="Duration (sec)"),
-    ],
-    title="ailomo-whisper",
-    description="Free YouTube transcription via Faster-Whisper large-v3 on T4 GPU. Enter a URL and click Submit.",
-    theme="soft",
-)
+with gr.Blocks(title="ailomo-whisper", theme=gr.themes.Soft()) as demo:
+    gr.Markdown("# 🎙️ ailomo-whisper\nFaster-Whisper large-v3 on T4 GPU")
+    u = gr.Textbox(label="YouTube URL")
+    l = gr.Textbox(label="Language", value="en")
+    b = gr.Button("Transcribe", variant="primary")
+    t = gr.Textbox(label="Transcript", lines=12)
+    lo = gr.Textbox(label="Lang")
+    du = gr.Number(label="Duration")
+    b.click(fn=gui_fn, inputs=[u, l], outputs=[t, lo, du])
 
-if __name__ == "__main__":
-    demo.launch()
+# ── REST API ──
+api = FastAPI()
+
+class TR(BaseModel):
+    url: str
+    language: str | None = None
+
+@api.post("/transcribe")
+def api_transcribe(req: TR):
+    try:
+        p, d = dl(req.url)
+        text, lang, dur = tf(p, req.language)
+        os.remove(p); os.rmdir(d)
+        return {"text": text, "language": lang, "duration": dur}
+    except Exception as e:
+        raise HTTPException(500, str(e))
+
+@api.get("/health")
+def h():
+    return {"status": "ok", "model": "large-v3", "device": "cuda"}
+
+# Mount (Gradio 5/6 compatible)
+app = gr.mount_gradio_app(demo, api, path="/")
