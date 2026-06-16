@@ -64,7 +64,7 @@ async function fetchTimedText(videoId: string): Promise<{ text: string; language
       const langCode = lang.includes('zh') ? 'zh' : lang.includes('ja') ? 'ja' : lang.includes('ko') ? 'ko' : 'en'
       console.log(`✅ TimedText fallback OK: ${texts.length} segments, ${fullText.length} chars`)
       return { text: fullText, language: langCode }
-    } catch {
+    } catch (_fetchError) {
       continue
     }
   }
@@ -105,7 +105,7 @@ async function getYouTubeTranscript(videoId: string): Promise<{ text: string; la
 
       // Don't retry for permanent errors
       if (msg.includes('disabled') || msg.includes('not available')) {
-        throw new Error(`This video doesn\'t have captions enabled. Try uploading the audio file directly, or paste the content as text.`)
+        throw new Error("This video doesn't have captions enabled. Try uploading the audio file directly, or paste the content as text.")
       }
 
       // Retry for rate-limit / transient errors
@@ -121,17 +121,16 @@ async function getYouTubeTranscript(videoId: string): Promise<{ text: string; la
   console.log(`⚠️  youtube-transcript exhausted → trying timedtext fallback for ${videoId}`)
   try {
     return await fetchTimedText(videoId)
-  } catch {
-    // all methods exhausted
+  } catch (_timedTextError) {
+    // all methods exhausted, throw final error below
   }
 
-  throw new Error(
-    `YouTube is rate-limiting our server. Please try one of these:\n` +
-    `1. Wait 30 seconds and try again\n` +
-    `2. Switch to "Paste Text" tab and paste the video transcript manually\n` +
-    `3. Download the video audio and upload it via "Upload File" tab`
-  )
-  }
+  throw new Error([
+    'YouTube is rate-limiting our server. Please try one of these:',
+    '1. Wait 30 seconds and try again',
+    '2. Switch to "Paste Text" tab and paste the video transcript manually',
+    '3. Download the video audio and upload it via "Upload File" tab',
+  ].join('\n'))
 }
 
 export async function POST(request: NextRequest) {
