@@ -255,32 +255,36 @@ export async function POST(request: NextRequest) {
         jobStore.set(jobId, { status: 'transcribed', result: resp })
         return NextResponse.json(resp)
       } catch (transcriptError: any) {
-        console.log(`Transcript methods exhausted, trying Railway Whisper for ${videoId}...`)
+        console.log(`Transcript methods exhausted, starting async HF Whisper for ${videoId}...`)
 
-        // ── Railway Whisper fallback ──
+        // ── Async HF Whisper (Vercel free plan only allows 10s) ──
         if (process.env.WHISPER_SERVICE_URL) {
-          try {
-            const whisperResult = await callHFWhisper(`https://www.youtube.com/watch?v=${videoId}`, language)
-
-            const resp: TranscribeResponse = {
-              jobId, status: 'transcribed',
-              transcript: whisperResult.text,
-              detectedLanguage: whisperResult.language || language || 'en',
-              durationSeconds: whisperResult.duration || 0,
-              segments: whisperResult.segments || [],
-            }
-            jobStore.set(jobId, { status: 'transcribed', result: resp })
-            return NextResponse.json(resp)
-          } catch (whisperError: any) {
-            console.error(`HF Space failed: ${whisperError.message}`)
-            // Include HF Space error in response
-            const hfMsg = whisperError.message?.includes('timeout') ? 'HF Space timed out' 
-              : whisperError.message?.slice(0, 100) || ''
-            return NextResponse.json({
-              jobId, status: 'failed',
-              error: `HF Space error: ${hfMsg}. Try again or use Paste Text.`,
-            }, { status: 500 })
-          }
+          // Fire-and-forget: process in background, client polls GET endpoint
+          jobStore.set(jobId, { status: 'processing' })
+          
+          callHFWhisper(`https://www.youtube.com/watch?v=${videoId}`, language)
+            .then((result) => {
+              jobStore.set(jobId, { status: 'transcribed', result: {
+                jobId, status: 'transcribed',
+                transcript: result.text,
+                detectedLanguage: result.language || language || 'en',
+                durationSeconds: result.duration || 0,
+                segments: result.segments || [],
+              } as TranscribeResponse })
+              console.log(`✅ HF Space done for ${jobId}: ${result.text.length} chars`)
+            })
+            .catch((e) => {
+              jobStore.set(jobId, { status: 'failed', result: {
+                jobId, status: 'failed',
+                error: `HF Space: ${e.message?.slice(0, 100)}. Try again or use Paste Text.`
+              } as TranscribeResponse })
+            })
+          
+          // Return immediately with processing status
+          return NextResponse.json({
+            jobId, status: 'processing',
+            message: 'Processing via HF Space. Poll GET endpoint for result.',
+          })
         }
 
         const msg = transcriptError.message || 'Transcript fetch failed'

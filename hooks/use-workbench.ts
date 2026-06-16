@@ -111,6 +111,29 @@ export function useWorkbench(dict: Dictionary) {
       const tr = await fetch('/api/repurpose/transcribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({source:inputMode,url:inputValue||undefined,language:'auto'}),signal:AbortSignal.timeout(120000)})
       if (!tr.ok) { const ed=await tr.json().catch(()=>({})); throw new Error(ed.error||`Request failed (${tr.status})`) }
       const td = await tr.json()
+
+      // Async processing: poll until complete
+      if (td.status === 'processing') {
+        setState(s=>({...s,progress:{phase:'transcribing',message:w.transcribeStart,percent:10,elapsed:0}}))
+        for (let i = 0; i < 60; i++) {
+          await new Promise(r => setTimeout(r, 3000))
+          const pollRes = await fetch(`/api/repurpose/transcribe?jobId=${td.jobId}`)
+          if (!pollRes.ok) continue
+          const pollData = await pollRes.json()
+          if (pollData.status === 'transcribed') {
+            setState(s=>({...s,phase:'generating',transcript:pollData.transcript,segments:pollData.segments||[],detectedLanguage:pollData.detectedLanguage||'zh',progress:{phase:'generating',message:w.transcribeDone,detail:fmt(w.detectedLang,{lang:pollData.detectedLanguage||'auto',chars:pollData.transcript?.length||0}),percent:100,elapsed:0}}))
+            stopProgressTimer()
+            await doStream(pollData.transcript,suggestedFormats,pollData.detectedLanguage||'zh',platform)
+            return
+          }
+          if (pollData.status === 'failed') {
+            throw new Error(pollData.error || w.transcribeFailed)
+          }
+          setState(s=>({...s,progress:{...s.progress!,percent:Math.min(10+i*2,90)}}))
+        }
+        throw new Error(w.timeoutError)
+      }
+
       if (!td.transcript) throw new Error(w.transcribeFailed)
       stopProgressTimer()
       setState(s=>({...s,phase:'generating',transcript:td.transcript,segments:td.segments||[],detectedLanguage:td.detectedLanguage||'zh',progress:{phase:'generating',message:w.transcribeDone,detail:fmt(w.detectedLang,{lang:td.detectedLanguage||'auto',chars:td.transcript.length}),percent:100,elapsed:0}}))
