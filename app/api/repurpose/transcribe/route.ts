@@ -71,26 +71,48 @@ async function fetchTimedText(videoId: string): Promise<{ text: string; language
 }
 
 /**
- * Last-resort: call Railway transcription service (yt-dlp + Faster-Whisper).
- * Pure HTTP proxy — no binary dependencies on Vercel.
+ * Call HF Space Whisper via Gradio API.
+ * Gradio endpoint: POST /gradio_api/call/transcribe_fn → event_id → poll for result
  */
-async function callRailwayWhisper(videoUrl: string, language?: string) {
+async function callHFWhisper(videoUrl: string, language?: string) {
   const baseUrl = process.env.WHISPER_SERVICE_URL
   if (!baseUrl) throw new Error('WHISPER_SERVICE_URL not configured')
 
-  const res = await fetch(`${baseUrl}/transcribe`, {
+  // Step 1: Submit job
+  const submitRes = await fetch(`${baseUrl}/gradio_api/call/transcribe_fn`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ url: videoUrl, language }),
-    signal: AbortSignal.timeout(120000),
+    body: JSON.stringify({ data: [videoUrl, language || 'en'] }),
+    signal: AbortSignal.timeout(15000),
   })
+  if (!submitRes.ok) throw new Error(`Gradio submit failed: ${submitRes.status}`)
+  const { event_id } = await submitRes.json()
+  if (!event_id) throw new Error('No event_id from Gradio')
 
-  if (!res.ok) {
-    const err = await res.json().catch(() => ({}))
-    throw new Error((err as any).detail || `Railway error ${res.status}`)
+  // Step 2: Poll for result (up to 90 seconds)
+  for (let i = 0; i < 30; i++) {
+    await new Promise((r) => setTimeout(r, 3000))
+    const pollRes = await fetch(`${baseUrl}/gradio_api/call/transcribe_fn/${event_id}`, {
+      signal: AbortSignal.timeout(10000),
+    })
+    if (!pollRes.ok) continue
+
+    const text = await pollRes.text()
+    // Gradio returns result as event-stream with "event: complete" line + "data: [...]"
+    if (text.includes('event: complete')) {
+      const dataLine = text.split('\n').find((l) => l.startsWith('data: '))
+      if (dataLine) {
+        const result = JSON.parse(dataLine.slice(6))
+        return {
+          text: result[0] || '',
+          language: result[1] || language || 'en',
+          duration: result[2] || 0,
+          segments: [],
+        }
+      }
+    }
   }
-
-  return res.json()
+  throw new Error('Transcription timed out after 90s')
 }
 
 async function getYouTubeTranscript(videoId: string): Promise<{ text: string; language: string }> {
@@ -238,7 +260,7 @@ export async function POST(request: NextRequest) {
         // ── Railway Whisper fallback ──
         if (process.env.WHISPER_SERVICE_URL) {
           try {
-            const whisperResult = await callRailwayWhisper(`https://www.youtube.com/watch?v=${videoId}`, language)
+            const whisperResult = await callHFWhisper(`https://www.youtube.com/watch?v=${videoId}`, language)
 
             const resp: TranscribeResponse = {
               jobId, status: 'transcribed',

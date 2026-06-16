@@ -1,7 +1,6 @@
 """ailomo-whisper HF Space"""
 import os, tempfile, logging
 import gradio as gr
-from pydantic import BaseModel
 import yt_dlp
 
 logging.basicConfig(level=logging.INFO)
@@ -22,39 +21,25 @@ def dl(u):
     if not os.path.exists(p):
         p2=os.path.join(d,f"{i['id']}.webm")
         if os.path.exists(p2):p=p2
-        else:raise FileNotFoundError("download failed")
     return p,d
 
-def tf(path,lang):
-    m=get_model();s,info=m.transcribe(path,language=lang or None,beam_size=5,vad_filter=True)
-    sl=list(s);return " ".join(x.text.strip() for x in sl),info.language or "en",info.duration
-
-# Gradio UI
-def gui_fn(url,lang):
-    try:p,d=dl(url);t,ld,du=tf(p,lang);os.remove(p);os.rmdir(d);return t,ld,du
-    except Exception as e:return f"Error: {e}","",0
-
-demo=gr.Blocks(title="ailomo-whisper")
-with demo:
-    gr.Markdown("# 🎙️ ailomo-whisper\nFaster-Whisper large-v3 on T4 GPU")
-    u=gr.Textbox(label="YouTube URL");l=gr.Textbox(label="Language",value="en")
-    b=gr.Button("Transcribe",variant="primary")
-    t=gr.Textbox(label="Transcript",lines=12);lo=gr.Textbox(label="Lang");du=gr.Number(label="Duration")
-    b.click(fn=gui_fn,inputs=[u,l],outputs=[t,lo,du])
-
-# REST API
-from fastapi.responses import JSONResponse
-from fastapi import Request
-
-async def health(_:Request):return JSONResponse({"status":"ok","model":"large-v3"})
-
-async def transcribe(request:Request):
+def transcribe_fn(url,lang):
     try:
-        b=await request.json()
-        p,d=dl(b["url"]);t,lang,dur=tf(p,b.get("language"))
-        os.remove(p);os.rmdir(d)
-        return JSONResponse({"text":t,"language":lang,"duration":dur})
-    except Exception as e:return JSONResponse({"error":str(e)},500)
+        p,d=dl(url);m=get_model()
+        s,info=m.transcribe(p,language=lang or None,beam_size=5,vad_filter=True)
+        sl=list(s);t=" ".join(x.text.strip() for x in sl)
+        os.remove(p);os.rmdir(d);return t,info.language or "en",info.duration
+    except Exception as e:
+        return f"Error: {e}","",0
 
-demo.app.add_api_route("/health",health,methods=["GET"])
-demo.app.add_api_route("/transcribe",transcribe,methods=["POST"])
+demo=gr.Interface(
+    fn=transcribe_fn,
+    inputs=[gr.Textbox(label="YouTube URL"),gr.Textbox(label="Language",value="en")],
+    outputs=[gr.Textbox(label="Transcript",lines=12),gr.Textbox(label="Lang"),gr.Number(label="Duration")],
+    title="ailomo-whisper",
+    description="Faster-Whisper large-v3 on T4 GPU"
+)
+
+# API via Gradio's built-in REST endpoint:
+# POST /gradio_api/call/transcribe_fn
+# {"data": ["url", "lang"]}
