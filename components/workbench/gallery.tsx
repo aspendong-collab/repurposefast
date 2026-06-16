@@ -1,77 +1,17 @@
 'use client'
-
 import { useState } from 'react'
 import { FormatCard } from './format-card'
 import type { OutputFormat } from '@/lib/repurpose/types'
-import type { FormatResult } from '@/hooks/use-workbench'
+import type { Dictionary } from '@/lib/dictionary'
 
-interface GalleryProps {
-  formats: FormatResult[]
-  onCopy: (format: OutputFormat, content: string) => void
-  onDownload: (format: OutputFormat, content: string, title: string) => void
-  onRefine: (format: OutputFormat) => void
-}
+interface FormatResult { format: OutputFormat; status: 'pending'|'streaming'|'completed'|'error'; title: string; content: string; metadata?: any; error?: string }
 
-export function Gallery({ formats, onCopy, onDownload, onRefine }: GalleryProps) {
-  const [copiedMap, setCopiedMap] = useState<Record<string, boolean>>({})
-
-  const handleCopy = async (format: OutputFormat, content: string) => {
-    try {
-      await navigator.clipboard.writeText(content)
-    } catch {
-      const textarea = document.createElement('textarea')
-      textarea.value = content
-      document.body.appendChild(textarea)
-      textarea.select()
-      document.execCommand('copy')
-      document.body.removeChild(textarea)
-    }
-    setCopiedMap((m) => ({ ...m, [format]: true }))
-    setTimeout(() => setCopiedMap((m) => ({ ...m, [format]: false })), 2000)
-    onCopy(format, content)
+export function Gallery({ d, formats, onCopy, onDownload, onRefine }: { d: Dictionary; formats: FormatResult[]; onCopy: (f:OutputFormat,c:string)=>void; onDownload: (f:OutputFormat,c:string,t:string)=>void; onRefine: (f:OutputFormat)=>void }) {
+  const [copied, setCopied] = useState<Record<string,boolean>>({})
+  const handleCopy = async (f:OutputFormat, c:string) => {
+    try { await navigator.clipboard.writeText(c) } catch { const ta=document.createElement('textarea');ta.value=c;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta) }
+    setCopied(m=>({...m,[f]:true})); setTimeout(()=>setCopied(m=>({...m,[f]:false})),2000); onCopy(f,c)
   }
-
-  const handleDownload = (format: OutputFormat, content: string, title: string) => {
-    const blob = new Blob([content], { type: 'text/markdown;charset=utf-8' })
-    const url = URL.createObjectURL(blob)
-    const a = document.createElement('a')
-    a.href = url
-    a.download = `${title.slice(0, 30)}.md`
-    document.body.appendChild(a)
-    a.click()
-    document.body.removeChild(a)
-    URL.revokeObjectURL(url)
-    onDownload(format, content, title)
-  }
-
-  return (
-    <div className="w-full max-w-6xl mx-auto animate-in fade-in slide-in-from-bottom-8 duration-700">
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {formats.map((f) => (
-          <FormatCard
-            key={f.format}
-            format={f.format}
-            status={f.status}
-            content={f.content}
-            title={f.title}
-            metadata={f.metadata}
-            error={f.error}
-            isCopied={!!copiedMap[f.format]}
-            onCopy={() => handleCopy(f.format, f.content)}
-            onDownload={() => handleDownload(f.format, f.content, f.title)}
-            onRefine={() => onRefine(f.format)}
-          />
-        ))}
-      </div>
-
-      {/* Completion banner */}
-      {formats.every((f) => f.status === 'completed') && (
-        <div className="text-center mt-8 animate-in fade-in duration-1000">
-          <p className="text-sm text-muted-foreground">
-            ✅ 全部生成完成 · 点击「对话精调」可继续修改任何内容
-          </p>
-        </div>
-      )}
-    </div>
-  )
+  const handleDownload = (f:OutputFormat, c:string, t:string) => { const b=new Blob([c],{type:'text/markdown'});const u=URL.createObjectURL(b);const a=document.createElement('a');a.href=u;a.download=t.slice(0,30)+'.md';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(u);onDownload(f,c,t) }
+  return (<div className="w-full max-w-6xl mx-auto"><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">{formats.map(f=>(<FormatCard key={f.format} d={d} format={f.format} status={f.status} content={f.content} title={f.title} metadata={f.metadata} error={f.error} isCopied={!!copied[f.format]} onCopy={()=>handleCopy(f.format,f.content)} onDownload={()=>handleDownload(f.format,f.content,f.title)} onRefine={()=>onRefine(f.format)}/>))}</div></div>)
 }

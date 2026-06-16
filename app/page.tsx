@@ -15,22 +15,21 @@ import { Footer } from '@/components/landing/footer'
 
 export default function HomePage() {
   const { dict } = useLocale()
-
   return (
     <>
-      <Navbar dict={dict.nav} />
+      <Navbar d={dict} />
       <main>
-        <HeroSection dict={dict.hero} />
-        <HowItWorks dict={dict.howItWorks} />
-        <FeatureHighlights dict={dict.highlights} />
-        <Features dict={dict.features} />
-        <FormatShowcase dict={dict.formats} />
-        <SocialProof dict={dict.social} />
-        <Pricing dict={dict.pricing} />
-        <CTASection dict={dict.cta} />
-        <FAQ dict={dict.faq} />
+        <HeroSection d={dict} />
+        <HowItWorks d={dict} />
+        <FeatureHighlights d={dict} />
+        <Features d={dict} />
+        <FormatShowcase d={dict} />
+        <SocialProof d={dict} />
+        <Pricing d={dict} />
+        <CTASection d={dict} />
+        <FAQ d={dict} />
       </main>
-      <Footer dict={dict.footer} />
+      <Footer d={dict} />
     </>
   )
 }

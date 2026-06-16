@@ -1,15 +1,25 @@
 {
-  "nav": { "features": "Features", "pricing": "Pricing", "faq": "FAQ", "tryFree": "Try Free" },
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "tryFree": "Try Free"
+  },
   "hero": {
     "badge": "AI-Powered Content Repurposing",
     "title": "Turn One Video Into",
-    "highlight": "Your Entire Content Strategy",
-    "subtitle": "Paste a link or upload a file — AI automatically transcribes and repurposes your content into blog posts, social threads, newsletters, and more.",
-    "accent": "10x your content output.",
-    "stats": { "languages": "Languages", "formats": "Output Formats", "speed": "Processing Time" },
-    "tabs": { "url": "Paste Link", "file": "Upload File", "text": "Paste Text" },
-    "placeholder": "Paste YouTube, podcast, or any video link...",
+    "highlight": "Content Everywhere",
+    "subtitle": "Paste a YouTube link. Upload a podcast. Drop a text transcript.",
+    "accent": "ailomo instantly creates polished content for every platform.",
+    "stats": { "languages": "Languages", "formats": "Formats", "speed": "Processing" },
+    "tabs": { "url": "Paste Link", "file": "Upload", "text": "Text" },
+    "placeholder": "Paste a YouTube link, podcast URL, or any video...",
     "generate": "Generate",
+    "fileDropTitle": "Drop your file here",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — up to 500MB",
+    "textPlaceholder": "Paste your transcript or text — AI transforms it into platform-ready content...",
+    "noSignup": "No sign-up required. Free to start.",
     "processing": "Processing...",
     "error": "Something went wrong",
     "tryAgain": "Try again",
@@ -18,42 +28,48 @@
   },
   "howItWorks": {
     "label": "How It Works",
-    "title": "From Video to",
+    "title": "From Video to ",
     "highlight": "Multi-Platform",
     "suffix": "in 3 Steps",
     "steps": [
-      { "title": "Paste or Upload", "desc": "Drop a YouTube link, upload an audio file, or paste text. No configuration needed — just one click." },
-      { "title": "AI Works Its Magic", "desc": "Our AI transcribes and understands your content, then intelligently rewrites it for each platform's unique style." },
-      { "title": "Publish Everywhere", "desc": "Get polished content for WeChat, Twitter, LinkedIn, Xiaohongshu, blogs, and more. Copy, download, or share instantly." }
-    ]
-  },
-  "features": {
-    "label": "Features",
-    "title": "Everything You Need to",
-    "highlight": "Scale Your Content",
-    "subtitle": "Built for creators who want to maximize every piece of content they produce.",
-    "list": [
-      { "title": "AI-Powered Rewriting", "desc": "Not just transcription — our AI understands context and rewrites for each platform's unique voice and format." },
-      { "title": "10 Output Formats", "desc": "Blog posts, Twitter threads, LinkedIn posts, Xiaohongshu notes, newsletters, SRT subtitles, SEO articles, and more." },
-      { "title": "63+ Languages", "desc": "Transcribe and generate content in 63+ languages. Perfect for international creators and global audiences." },
-      { "title": "Streaming Generation", "desc": "See content appear character by character in real-time. No more waiting for loading spinners." },
-      { "title": "Conversational Refinement", "desc": "Chat with each output to fine-tune it. Say \"make it shorter\" or \"add emoji\" — AI applies it instantly." },
-      { "title": "6 Export Formats", "desc": "Download as Markdown, TXT, PDF, DOCX, SRT, or CSV. Directly ready for publishing." },
-      { "title": "Share & Collaborate", "desc": "Generate shareable links for your teammates to view and collaborate on content." },
-      { "title": "Private & Secure", "desc": "Your content stays yours. Files are automatically deleted after processing. No data retention." },
-      { "title": "Smart Platform Detection", "desc": "Paste a YouTube link? We suggest blog + Twitter. Paste Bilibili? We suggest WeChat + Xiaohongshu." }
+      { "title": "Paste or Upload", "desc": "Drop a YouTube link, upload an audio file, or paste text. Zero configuration." },
+      { "title": "AI Transforms It", "desc": "Your content is transcribed, understood, and rewritten for every platform's unique voice." },
+      { "title": "Publish Everywhere", "desc": "Get blog posts, social threads, newsletters, and more. Copy, download, done." }
     ]
   },
   "highlights": {
     "label": "Why ailomo",
-    "title": "Built Different.",
-    "highlight": "AI-First From the Ground Up"
+    "title": "Built Different. ",
+    "highlight": "AI-Native",
+    "items": [
+      { "badge": "Intelligence", "title": "Not Just Transcription", "desc": "Our AI analyzes context, extracts insights, and generates content optimized for each platform's audience." },
+      { "badge": "Distribution", "title": "One Click, Every Platform", "desc": "All 10 formats generated simultaneously. From long-form blogs to social threads — everything ready in seconds." },
+      { "badge": "Refinement", "title": "Chat With Your Content", "desc": "Every output has a built-in AI chat. \"Add more data\", \"make it punchier\" — changes applied instantly." }
+    ]
+  },
+  "features": {
+    "label": "Features",
+    "title": "Everything to ",
+    "highlight": "Scale Content",
+    "subtitle": "Built for creators who turn every piece of content into maximum impact.",
+    "list": [
+      { "title": "AI-Powered Rewriting", "desc": "Not just transcription — our AI understands context and rewrites for each platform's unique voice." },
+      { "title": "10 Output Formats", "desc": "Blog posts, Twitter threads, LinkedIn, Xiaohongshu, newsletters, SRT subtitles, SEO articles, more." },
+      { "title": "63+ Languages", "desc": "Transcribe and generate in 63+ languages. Built for international creators." },
+      { "title": "Streaming Generation", "desc": "Content appears character by character in real-time. No waiting for spinners." },
+      { "title": "Conversational Refinement", "desc": "Chat with each output to fine-tune it. \"Make it shorter\" — done." },
+      { "title": "6 Export Formats", "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Ready to publish instantly." },
+      { "title": "Share & Collaborate", "desc": "Generate links for teammates to view and collaborate on your content." },
+      { "title": "Private & Secure", "desc": "Files deleted after processing. Your content is never used for training." },
+      { "title": "Smart Detection", "desc": "YouTube link? → Blog + Twitter. Bilibili? → WeChat + Xiaohongshu. Automatic." }
+    ]
   },
   "formats": {
     "outputLabel": "Output Formats",
-    "outputTitle": "10 Formats,",
+    "outputTitle": "10 Formats, ",
     "outputHighlight": "One Click",
     "outputSubtitle": "Generate everything simultaneously — no need to run the tool multiple times.",
+    "formatNames": ["Blog Post", "WeChat", "Xiaohongshu", "Twitter", "LinkedIn", "SEO Article", "Newsletter", "SRT Subtitles", "AI Summary", "Mind Map"],
     "langLabel": "Global Reach",
     "langTitle": "63+ Languages Supported",
     "langSubtitle": "Transcribe and generate content in 63+ languages. Perfect for international creators and global audiences.",
@@ -71,18 +87,21 @@
   },
   "pricing": {
     "label": "Pricing",
-    "title": "Simple,",
+    "title": "Simple, ",
     "highlight": "Transparent",
     "suffix": "Pricing",
-    "subtitle": "Start free, upgrade when you need more. No hidden fees.",
+    "subtitle": "Start free, upgrade when you need more. No hidden fees. Cancel anytime.",
+    "enterprise": "Need more? ",
+    "enterpriseLink": "Contact us",
+    "enterpriseSuffix": " for enterprise pricing.",
     "plans": {
-      "free": { "name": "Free", "desc": "Perfect for trying it out", "cta": "Get Started" },
-      "creator": { "name": "Creator", "desc": "For serious content creators", "cta": "Start Free Trial", "badge": "Most Popular" },
-      "pro": { "name": "Pro", "desc": "For teams and agencies", "cta": "Start Free Trial" }
+      "free": { "name": "Free", "desc": "Perfect for trying it out", "cta": "Get Started", "features": ["3 videos/month", "5 output formats", "Basic AI model", "120 mins transcription", "Community support"] },
+      "creator": { "name": "Creator", "desc": "For serious content creators", "cta": "Subscribe Now", "badge": "Most Popular", "features": ["30 videos/month", "All 10 output formats", "Premium AI model", "1,200 mins transcription", "Conversational refinement", "Priority support", "API access"] },
+      "pro": { "name": "Pro", "desc": "For teams and agencies", "cta": "Subscribe Now", "features": ["Unlimited videos", "All formats + custom", "Premium AI + custom tone", "6,000 mins transcription", "Team collaboration", "White-label export", "Dedicated support", "Analytics dashboard"] }
     }
   },
   "cta": {
-    "title": "Ready to",
+    "title": "Ready to ",
     "highlight": "10x Your Content",
     "suffix": "Output?",
     "subtitle": "Join thousands of creators who turn every video into a complete multi-platform content strategy. Start free — no credit card needed.",
@@ -91,11 +110,49 @@
   },
   "faq": {
     "label": "FAQ",
-    "title": "Frequently Asked"
+    "title": "Frequently Asked ",
+    "highlight": "Questions",
+    "items": [
+      { "q": "Is it really free to start?", "a": "Yes! Free plan gives you 3 videos/month with 5 output formats. No credit card required." },
+      { "q": "Which languages do you support?", "a": "63+ languages for transcription and content generation." },
+      { "q": "What platforms can I repurpose content for?", "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blogs, Medium, Substack, newsletters, and more." },
+      { "q": "How long does it take?", "a": "Most videos processed in under 1 minute. Content streams in real-time." },
+      { "q": "Can I refine AI-generated content?", "a": "Yes! Chat with each output to adjust tone, length, style, or add elements." },
+      { "q": "What file formats can I upload?", "a": "Audio: MP3, WAV, M4A, FLAC, OGG. Video: MP4, MOV, MKV, WEBM." },
+      { "q": "Is my data safe?", "a": "Yes. Files deleted after processing. Never used for training." },
+      { "q": "Can I cancel anytime?", "a": "Yes, cancel anytime. No long-term contracts." }
+    ]
   },
   "footer": {
     "tagline": "AI-powered content repurposing. Turn one video into your entire multi-platform content strategy.",
     "copyright": "All rights reserved.",
-    "builtWith": "Built for content creators worldwide"
+    "builtWith": "Built for content creators worldwide",
+    "sections": {
+      "product": "Product",
+      "tools": "Tools",
+      "legal": "Legal",
+      "company": "Company"
+    },
+    "links": {
+      "features": "Features", "pricing": "Pricing", "faq": "FAQ",
+      "yt2blog": "YouTube to Blog", "vid2twitter": "Video to Twitter", "vid2xhs": "Video to Xiaohongshu",
+      "podcast2article": "Podcast to Article", "allTools": "All Tools →",
+      "privacy": "Privacy", "terms": "Terms",
+      "github": "GitHub", "contact": "Contact"
+    }
+  },
+  "workbench": {
+    "transcribing": "Transcribing",
+    "generating": "Generating Content",
+    "completed": "Complete",
+    "progress": "Progress",
+    "cancel": "Cancel",
+    "refineTitle": "Refine - ",
+    "refinePlaceholder": "Tell AI how to adjust this content...",
+    "send": "Send",
+    "copy": "Copy",
+    "copied": "Copied",
+    "download": "Download",
+    "refine": "Refine"
   }
 }
