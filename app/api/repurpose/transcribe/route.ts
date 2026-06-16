@@ -8,8 +8,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { transcribeAudio } from '@/lib/repurpose/ai-service'
 import type { TranscribeResponse, JobStatus } from '@/lib/repurpose/types'
 import { randomUUID } from 'crypto'
-
-const jobStore = new Map<string, { status: JobStatus; result?: TranscribeResponse }>()
+import { getJob, setJob } from '@/lib/kv'
 
 function isYouTubeUrl(url: string): boolean {
   return /(?:youtube\.com\/(?:watch\?v=|embed\/|v\/|shorts\/)|youtu\.be\/)/i.test(url)
@@ -190,7 +189,7 @@ export async function POST(request: NextRequest) {
       if (!file) return NextResponse.json({ error: 'File required' }, { status: 400 })
 
       const jobId = randomUUID()
-      jobStore.set(jobId, { status: 'transcribing' })
+      setJob(jobId, { status: 'transcribing' })
 
       const language = formData.get('language') as string | null
 
@@ -213,11 +212,11 @@ export async function POST(request: NextRequest) {
           durationSeconds: result.duration,
           segments: result.segments,
         }
-        jobStore.set(jobId, { status: 'transcribed', result: resp })
+        setJob(jobId, { status: 'transcribed', result: resp })
         return NextResponse.json(resp)
       } catch (e: any) {
         const msg = e.message || 'Transcription failed'
-        jobStore.set(jobId, { status: 'failed', result: { jobId, status: 'failed', error: msg } })
+        setJob(jobId, { status: 'failed', result: { jobId, status: 'failed', error: msg } })
         return NextResponse.json({ jobId, status: 'failed', error: msg }, { status: 500 })
       }
     }
@@ -231,7 +230,7 @@ export async function POST(request: NextRequest) {
     }
 
     const jobId = randomUUID()
-    jobStore.set(jobId, { status: 'transcribing' })
+    setJob(jobId, { status: 'transcribing' })
 
     // 🎯 YouTube: fast transcript API
     if (isYouTubeUrl(url)) {
@@ -252,7 +251,7 @@ export async function POST(request: NextRequest) {
           durationSeconds: 0,
           segments: [],
         }
-        jobStore.set(jobId, { status: 'transcribed', result: resp })
+        setJob(jobId, { status: 'transcribed', result: resp })
         return NextResponse.json(resp)
       } catch (transcriptError: any) {
         console.log(`Transcript methods exhausted, starting async HF Whisper for ${videoId}...`)
@@ -260,11 +259,11 @@ export async function POST(request: NextRequest) {
         // ── Async HF Whisper (Vercel free plan only allows 10s) ──
         if (process.env.WHISPER_SERVICE_URL) {
           // Fire-and-forget: process in background, client polls GET endpoint
-          jobStore.set(jobId, { status: 'processing' })
+          setJob(jobId, { status: 'processing' })
           
           callHFWhisper(`https://www.youtube.com/watch?v=${videoId}`, language)
             .then((result) => {
-              jobStore.set(jobId, { status: 'transcribed', result: {
+              setJob(jobId, { status: 'transcribed', result: {
                 jobId, status: 'transcribed',
                 transcript: result.text,
                 detectedLanguage: result.language || language || 'en',
@@ -274,7 +273,7 @@ export async function POST(request: NextRequest) {
               console.log(`✅ HF Space done for ${jobId}: ${result.text.length} chars`)
             })
             .catch((e) => {
-              jobStore.set(jobId, { status: 'failed', result: {
+              setJob(jobId, { status: 'failed', result: {
                 jobId, status: 'failed',
                 error: `HF Space: ${e.message?.slice(0, 100)}. Try again or use Paste Text.`
               } as TranscribeResponse })
@@ -288,7 +287,7 @@ export async function POST(request: NextRequest) {
         }
 
         const msg = transcriptError.message || 'Transcript fetch failed'
-        jobStore.set(jobId, { status: 'failed', result: { jobId, status: 'failed', error: msg } })
+        setJob(jobId, { status: 'failed', result: { jobId, status: 'failed', error: msg } })
         return NextResponse.json({ jobId, status: 'failed', error: msg }, { status: 500 })
       }
     }
@@ -307,11 +306,11 @@ export async function POST(request: NextRequest) {
         durationSeconds: result.duration,
         segments: result.segments,
       }
-      jobStore.set(jobId, { status: 'transcribed', result: resp })
+      setJob(jobId, { status: 'transcribed', result: resp })
       return NextResponse.json(resp)
     } catch (e: any) {
       const msg = e.message || 'Transcription failed'
-      jobStore.set(jobId, { status: 'failed', result: { jobId, status: 'failed', error: msg } })
+      setJob(jobId, { status: 'failed', result: { jobId, status: 'failed', error: msg } })
       return NextResponse.json({ jobId, status: 'failed', error: msg }, { status: 500 })
     }
   } catch (error) {
@@ -326,7 +325,7 @@ export async function GET(request: NextRequest) {
   const jobId = searchParams.get('jobId')
   if (!jobId) return NextResponse.json({ error: 'jobId required' }, { status: 400 })
 
-  const job = jobStore.get(jobId)
+  const job = await getJob(jobId)
   if (!job) return NextResponse.json({ error: 'Job not found' }, { status: 404 })
 
   return NextResponse.json(job.result || { jobId, status: job.status })
