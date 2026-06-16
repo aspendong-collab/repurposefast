@@ -5,122 +5,110 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 220 15% 12%;
+    --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
-    --card-foreground: 220 15% 12%;
+    --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 12%;
-    --primary: 262 83% 58%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 255 80% 55%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 220 15% 12%;
-    --muted: 220 14% 95%;
-    --muted-foreground: 220 8% 46%;
-    --accent: 262 83% 95%;
-    --accent-foreground: 262 83% 42%;
-    --destructive: 0 72% 51%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 220 13% 88%;
-    --input: 220 13% 88%;
-    --ring: 262 83% 58%;
-    --radius: 0.875rem;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 255 80% 55%;
+    --radius: 1rem;
   }
 
   .dark {
-    --background: 230 35% 3%;
-    --foreground: 210 20% 95%;
-    --card: 230 30% 6%;
-    --card-foreground: 210 20% 95%;
-    --popover: 230 30% 6%;
-    --popover-foreground: 210 20% 95%;
-    --primary: 262 83% 62%;
+    --background: 250 30% 3.5%;
+    --foreground: 210 20% 96%;
+    --card: 250 30% 5%;
+    --card-foreground: 210 20% 96%;
+    --popover: 250 30% 5%;
+    --popover-foreground: 210 20% 96%;
+    --primary: 255 85% 65%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 230 25% 10%;
-    --secondary-foreground: 210 20% 95%;
-    --muted: 230 25% 10%;
-    --muted-foreground: 220 10% 56%;
-    --accent: 262 25% 16%;
-    --accent-foreground: 262 60% 84%;
-    --destructive: 0 62% 40%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 230 20% 14%;
-    --input: 230 20% 14%;
-    --ring: 262 83% 62%;
+    --secondary: 250 25% 9%;
+    --secondary-foreground: 210 20% 96%;
+    --muted: 250 25% 9%;
+    --muted-foreground: 250 10% 54%;
+    --accent: 250 20% 14%;
+    --accent-foreground: 255 80% 80%;
+    --destructive: 0 62.8% 40%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 250 20% 13%;
+    --input: 250 20% 13%;
+    --ring: 255 85% 65%;
   }
 
   * { @apply border-border; }
-  body { @apply bg-background text-foreground antialiased; }
+  body { @apply bg-background text-foreground antialiased; font-feature-settings: "cv02","cv03","cv04","cv11"; }
 }
 
 @layer components {
-  /* ── Gradients ── */
-  .gradient-brand {
-    @apply bg-gradient-to-r from-violet-600 via-purple-500 to-fuchsia-500;
-  }
-  .gradient-text {
-    @apply bg-gradient-to-r from-violet-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent;
-  }
-  .gradient-text-warm {
-    @apply bg-gradient-to-r from-orange-400 via-pink-400 to-purple-400 bg-clip-text text-transparent;
-  }
-  .gradient-accent {
-    @apply bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent;
-  }
+  /* ── Premium Gradients ── */
+  .g-brand  { @apply bg-gradient-to-r from-violet-500 via-purple-500 to-fuchsia-500; }
+  .g-text   { @apply bg-gradient-to-r from-violet-300 via-fuchsia-300 to-cyan-300 bg-clip-text text-transparent; }
+  .g-card   { background: linear-gradient(135deg, rgba(139,92,246,0.08), rgba(6,182,212,0.04), rgba(236,72,153,0.05)); }
+  .g-hero   { background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(139,92,246,0.15), transparent 60%), radial-gradient(ellipse 60% 50% at 80% 50%, rgba(6,182,212,0.08), transparent 50%); }
 
   /* ── Glass ── */
-  .glass { @apply bg-white/5 backdrop-blur-xl border border-white/10; }
-  .glass-strong { @apply bg-white/10 backdrop-blur-2xl border border-white/15; }
+  .glass    { @apply bg-white/[0.03] backdrop-blur-2xl border border-white/[0.06]; }
+  .glass-strong { @apply bg-white/[0.06] backdrop-blur-2xl border border-white/[0.1]; }
 
   /* ── Glow ── */
-  .glow-violet { box-shadow: 0 0 80px -10px rgba(139,92,246,0.35), 0 0 160px -40px rgba(139,92,246,0.18); }
-  .glow-cyan   { box-shadow: 0 0 60px -10px rgba(6,182,212,0.3), 0 0 120px -30px rgba(6,182,212,0.14); }
+  .glow-v   { box-shadow: 0 0 100px -20px rgba(139,92,246,0.3), 0 0 200px -50px rgba(139,92,246,0.12); }
+  .glow-c   { box-shadow: 0 0 80px -15px rgba(6,182,212,0.25); }
 
-  /* ── Input Focus Ring ── */
-  .input-hero {
-    @apply border-2 border-violet-500/40 bg-violet-500/[0.03] focus:border-violet-400 focus:ring-4 focus:ring-violet-500/15 focus:bg-violet-500/[0.06] transition-all duration-300;
+  /* ── Input ── */
+  .input-focus {
+    @apply border-2 border-violet-500/25 bg-violet-500/[0.03] focus:border-violet-400/60 focus:ring-4 focus:ring-violet-500/[0.08] transition-all duration-300 outline-none;
   }
 
-  /* ── Animated Border Card ── */
-  .card-glow {
-    position: relative; border-radius: 1rem;
+  /* ── Animated Border ── */
+  .b-glow {
+    position: relative;
   }
-  .card-glow::before {
+  .b-glow::after {
     content: ''; position: absolute; inset: -1px; border-radius: inherit;
-    background: linear-gradient(135deg, rgba(139,92,246,0.35), rgba(6,182,212,0.15), rgba(236,72,153,0.25));
-    z-index: -1; opacity: 0; transition: opacity 0.3s;
+    background: linear-gradient(135deg, rgba(139,92,246,0.45), rgba(6,182,212,0.2), rgba(236,72,153,0.3));
+    z-index: -1; opacity: 0; transition: opacity 0.4s;
   }
-  .card-glow:hover::before { opacity: 1; }
+  .b-glow:hover::after, .b-glow.active::after { opacity: 1; }
+
+  /* ── Grid Pattern ── */
+  .bg-dot {
+    background-image: radial-gradient(circle, rgba(139,92,246,0.12) 0.5px, transparent 0.5px);
+    background-size: 28px 28px;
+  }
 
   /* ── Animations ── */
-  @keyframes reveal-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-  @keyframes reveal-scale { from { opacity: 0; transform: scale(0.96); } to { opacity: 1; transform: scale(1); } }
-  @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+  @keyframes r-up    { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes r-scale { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
   @keyframes shimmer { 0% { transform: translateX(-100%); } 100% { transform: translateX(200%); } }
-  @keyframes pulse-ring { 0% { transform: scale(0.95); opacity: 0.5; } 100% { transform: scale(1.25); opacity: 0; } }
+  @keyframes float   { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
 
-  .reveal-up { animation: reveal-up 0.5s ease-out both; }
-  .reveal-scale { animation: reveal-scale 0.4s ease-out both; }
-  .animate-float { animation: float 4s ease-in-out infinite; }
+  .r-up     { animation: r-up 0.6s cubic-bezier(.22,1,.36,1) both; }
+  .r-scale  { animation: r-scale 0.5s cubic-bezier(.22,1,.36,1) both; }
+  .a-float  { animation: float 5s ease-in-out infinite; }
 
   /* ── Shimmer Button ── */
-  .btn-shimmer {
+  .btn-shine {
     position: relative; overflow: hidden;
   }
-  .btn-shimmer::after {
-    content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
-    animation: shimmer 2.5s infinite;
+  .btn-shine::after {
+    content: ''; position: absolute; top: 0; left: -100%; width: 60%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
+    animation: shimmer 3s infinite;
   }
 
-  /* ── Grid Background ── */
-  .bg-grid {
-    background-image:
-      linear-gradient(rgba(139,92,246,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(139,92,246,0.04) 1px, transparent 1px);
-    background-size: 60px 60px;
-  }
-
-  /* ── Scrollbar ── */
-  .scrollbar-none::-webkit-scrollbar { display: none; }
-  .scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
+  /* ── Section Divider ── */
+  .s-divider { @apply border-t border-violet-500/[0.08]; }
 }
