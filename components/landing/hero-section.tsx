@@ -73,9 +73,9 @@ export function HeroSection() {
         {/* ── Embedded Tool ── */}
         {state.phase === 'idle' && (
           <div className="max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200">
-            <div className="rounded-2xl border border-border/50 bg-card/60 backdrop-blur-sm p-1 shadow-2xl shadow-violet-500/5">
+            <div className="rounded-2xl border-2 border-violet-500/20 bg-card/40 backdrop-blur-xl p-1 shadow-[0_0_60px_-10px_rgba(139,92,246,0.15)]">
               {/* Mode Switcher */}
-              <div className="flex gap-1 px-1 pt-1 pb-3 border-b border-border/30">
+              <div className="flex gap-1 px-1 pt-1 pb-2 border-b border-violet-500/10">
                 {[
                   { id: 'url' as const, icon: Link, label: 'Paste Link' },
                   { id: 'file' as const, icon: Upload, label: 'Upload File' },
@@ -85,10 +85,10 @@ export function HeroSection() {
                     key={id}
                     onClick={() => setInputMode(id)}
                     className={cn(
-                      'flex-1 inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-medium transition-all',
+                      'flex-1 inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-all',
                       state.inputMode === id
-                        ? 'bg-violet-600/10 text-violet-400 shadow-sm'
-                        : 'text-muted-foreground hover:text-foreground hover:bg-muted/50',
+                        ? 'bg-violet-600 text-white shadow-lg shadow-violet-500/25'
+                        : 'text-muted-foreground hover:text-foreground hover:bg-violet-500/5',
                     )}
                   >
                     <Icon className="h-4 w-4" />
@@ -103,23 +103,23 @@ export function HeroSection() {
                   {state.inputMode === 'url' && (
                     <div className="flex gap-3">
                       <div className="relative flex-1">
-                        <Link className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+                        <Link className="absolute left-5 top-1/2 -translate-y-1/2 h-5 w-5 text-violet-400" />
                         <input
                           type="url"
                           value={state.inputValue}
                           onChange={(e) => setInputValue(e.target.value)}
                           onKeyDown={(e) => { if (e.key === 'Enter' && state.inputValue.trim()) startProcessing() }}
                           placeholder="Paste YouTube, podcast, or any video link..."
-                          className="w-full h-14 rounded-xl border border-border/50 bg-background/50 pl-12 pr-4 text-sm outline-none focus:border-violet-500/50 focus:ring-2 focus:ring-violet-500/10 transition-all placeholder:text-muted-foreground/50"
+                          className="w-full h-14 rounded-xl border-2 border-violet-500/30 bg-violet-500/[0.04] pl-14 pr-4 text-sm outline-none focus:border-violet-400 focus:ring-4 focus:ring-violet-500/10 transition-all duration-300 placeholder:text-muted-foreground/40 text-foreground"
                         />
                       </div>
                       <button
                         onClick={startProcessing}
                         disabled={!state.inputValue.trim()}
                         className={cn(
-                          'shrink-0 h-14 px-6 rounded-xl text-sm font-semibold transition-all flex items-center gap-2',
+                          'shrink-0 h-14 px-8 rounded-xl text-sm font-semibold transition-all flex items-center gap-2',
                           state.inputValue.trim()
-                            ? 'bg-violet-600 text-white hover:bg-violet-500 shadow-lg shadow-violet-500/25 active:scale-95'
+                            ? 'bg-gradient-to-r from-violet-600 to-purple-600 text-white hover:from-violet-500 hover:to-purple-500 shadow-lg shadow-violet-500/30 active:scale-95 btn-shimmer'
                             : 'bg-muted text-muted-foreground cursor-not-allowed',
                         )}
                       >

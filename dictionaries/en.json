@@ -1,0 +1,101 @@
+{
+  "nav": { "features": "Features", "pricing": "Pricing", "faq": "FAQ", "tryFree": "Try Free" },
+  "hero": {
+    "badge": "AI-Powered Content Repurposing",
+    "title": "Turn One Video Into",
+    "highlight": "Your Entire Content Strategy",
+    "subtitle": "Paste a link or upload a file — AI automatically transcribes and repurposes your content into blog posts, social threads, newsletters, and more.",
+    "accent": "10x your content output.",
+    "stats": { "languages": "Languages", "formats": "Output Formats", "speed": "Processing Time" },
+    "tabs": { "url": "Paste Link", "file": "Upload File", "text": "Paste Text" },
+    "placeholder": "Paste YouTube, podcast, or any video link...",
+    "generate": "Generate",
+    "processing": "Processing...",
+    "error": "Something went wrong",
+    "tryAgain": "Try again",
+    "startOver": "Start over",
+    "formatsGenerated": "formats generated"
+  },
+  "howItWorks": {
+    "label": "How It Works",
+    "title": "From Video to",
+    "highlight": "Multi-Platform",
+    "suffix": "in 3 Steps",
+    "steps": [
+      { "title": "Paste or Upload", "desc": "Drop a YouTube link, upload an audio file, or paste text. No configuration needed — just one click." },
+      { "title": "AI Works Its Magic", "desc": "Our AI transcribes and understands your content, then intelligently rewrites it for each platform's unique style." },
+      { "title": "Publish Everywhere", "desc": "Get polished content for WeChat, Twitter, LinkedIn, Xiaohongshu, blogs, and more. Copy, download, or share instantly." }
+    ]
+  },
+  "features": {
+    "label": "Features",
+    "title": "Everything You Need to",
+    "highlight": "Scale Your Content",
+    "subtitle": "Built for creators who want to maximize every piece of content they produce.",
+    "list": [
+      { "title": "AI-Powered Rewriting", "desc": "Not just transcription — our AI understands context and rewrites for each platform's unique voice and format." },
+      { "title": "10 Output Formats", "desc": "Blog posts, Twitter threads, LinkedIn posts, Xiaohongshu notes, newsletters, SRT subtitles, SEO articles, and more." },
+      { "title": "63+ Languages", "desc": "Transcribe and generate content in 63+ languages. Perfect for international creators and global audiences." },
+      { "title": "Streaming Generation", "desc": "See content appear character by character in real-time. No more waiting for loading spinners." },
+      { "title": "Conversational Refinement", "desc": "Chat with each output to fine-tune it. Say \"make it shorter\" or \"add emoji\" — AI applies it instantly." },
+      { "title": "6 Export Formats", "desc": "Download as Markdown, TXT, PDF, DOCX, SRT, or CSV. Directly ready for publishing." },
+      { "title": "Share & Collaborate", "desc": "Generate shareable links for your teammates to view and collaborate on content." },
+      { "title": "Private & Secure", "desc": "Your content stays yours. Files are automatically deleted after processing. No data retention." },
+      { "title": "Smart Platform Detection", "desc": "Paste a YouTube link? We suggest blog + Twitter. Paste Bilibili? We suggest WeChat + Xiaohongshu." }
+    ]
+  },
+  "highlights": {
+    "label": "Why ailomo",
+    "title": "Built Different.",
+    "highlight": "AI-First From the Ground Up"
+  },
+  "formats": {
+    "outputLabel": "Output Formats",
+    "outputTitle": "10 Formats,",
+    "outputHighlight": "One Click",
+    "outputSubtitle": "Generate everything simultaneously — no need to run the tool multiple times.",
+    "langLabel": "Global Reach",
+    "langTitle": "63+ Languages Supported",
+    "langSubtitle": "Transcribe and generate content in 63+ languages. Perfect for international creators and global audiences.",
+    "more": "+45 more"
+  },
+  "social": {
+    "label": "Trusted by Creators",
+    "stats": { "users": "Active Users", "videos": "Videos Processed", "rating": "User Rating", "languages": "Languages" },
+    "testimonials": [
+      { "text": "\"Finally a tool that understands content creation workflow. One video → all platforms in minutes. Game changer for my content schedule.\"", "author": "Sarah Chen", "role": "Content Creator" },
+      { "text": "\"The conversational refinement is brilliant. I can tweak each output by just chatting with it. Saves me hours every week.\"", "author": "Marcus Rivera", "role": "Marketing Lead" },
+      { "text": "\"I was skeptical about AI content, but the quality genuinely surprised me. The platform-specific formatting is spot on.\"", "author": "Yuki Tanaka", "role": "Podcast Host" },
+      { "text": "\"As a solo founder, this tool gives me a content team's output. LinkedIn posts, blogs, tweets — all from one video.\"", "author": "Alex Park", "role": "Startup Founder" }
+    ]
+  },
+  "pricing": {
+    "label": "Pricing",
+    "title": "Simple,",
+    "highlight": "Transparent",
+    "suffix": "Pricing",
+    "subtitle": "Start free, upgrade when you need more. No hidden fees.",
+    "plans": {
+      "free": { "name": "Free", "desc": "Perfect for trying it out", "cta": "Get Started" },
+      "creator": { "name": "Creator", "desc": "For serious content creators", "cta": "Start Free Trial", "badge": "Most Popular" },
+      "pro": { "name": "Pro", "desc": "For teams and agencies", "cta": "Start Free Trial" }
+    }
+  },
+  "cta": {
+    "title": "Ready to",
+    "highlight": "10x Your Content",
+    "suffix": "Output?",
+    "subtitle": "Join thousands of creators who turn every video into a complete multi-platform content strategy. Start free — no credit card needed.",
+    "start": "Start for Free",
+    "pricing": "View Pricing"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Frequently Asked"
+  },
+  "footer": {
+    "tagline": "AI-powered content repurposing. Turn one video into your entire multi-platform content strategy.",
+    "copyright": "All rights reserved.",
+    "builtWith": "Built for content creators worldwide"
+  }
+}
