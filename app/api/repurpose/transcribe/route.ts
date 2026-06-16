@@ -71,51 +71,38 @@ async function fetchTimedText(videoId: string): Promise<{ text: string; language
 }
 
 /**
- * Last-resort: download YouTube audio via Invidious API → pipe to Whisper.
- * Pure HTTP, no yt-dlp binary needed. Works on Vercel serverless.
+ * Last-resort: download YouTube audio directly via ytdl-core → pipe to Whisper.
+ * Pure Node.js, works on Vercel serverless.
  */
 async function downloadYouTubeAudio(videoId: string): Promise<{ audioBuffer: ArrayBuffer; mimeType: string }> {
-  const endpoints = [
-    `https://inv.nadeko.net/api/v1/videos/${videoId}`,
-    `https://invidious.fdn.fr/api/v1/videos/${videoId}`,
-    `https://yewtu.be/api/v1/videos/${videoId}`,
-  ]
+  const ytdl = await import('@distube/ytdl-core')
 
-  for (const apiUrl of endpoints) {
-    try {
-      console.log(`Trying Invidious: ${apiUrl}`)
-      const infoRes = await fetch(apiUrl, {
-        headers: { 'User-Agent': 'Mozilla/5.0' },
-        signal: AbortSignal.timeout(10000),
-      })
-      if (!infoRes.ok) continue
+  try {
+    const videoUrl = `https://www.youtube.com/watch?v=${videoId}`
+    const info = await ytdl.getInfo(videoUrl)
 
-      const info = await infoRes.json() as any
-      const formats: any[] = info.adaptiveFormats || info.formatStreams || []
-      
-      // Pick the smallest audio-only format
-      const audioFormat = formats
-        .filter((f: any) => f.type?.startsWith('audio/') && !f.type?.includes('video'))
-        .sort((a: any, b: any) => (a.bitrate || 999999) - (b.bitrate || 999999))[0]
+    // Pick smallest audio-only format
+    const audioFormat = info.formats
+      .filter((f: any) => f.hasAudio && !f.hasVideo && f.container === 'mp4')
+      .sort((a: any, b: any) => (a.bitrate || 999999) - (b.bitrate || 999999))[0]
 
-      if (!audioFormat?.url) continue
+    if (!audioFormat) throw new Error('No audio format found')
 
-      console.log(`Downloading audio: ${audioFormat.type} ${audioFormat.bitrate}bps`)
-      const audioRes = await fetch(audioFormat.url, {
-        signal: AbortSignal.timeout(30000),
-      })
-      if (!audioRes.ok) continue
+    console.log(`Downloading audio: ${audioFormat.bitrate}bps ${audioFormat.container}`)
 
-      const buffer = await audioRes.arrayBuffer()
-      if (buffer.byteLength < 1000) continue
+    const stream = ytdl.downloadFromInfo(info, { format: audioFormat })
 
-      return { audioBuffer: buffer, mimeType: audioFormat.type?.split(';')[0] || 'audio/mp4' }
-    } catch {
-      continue
+    // Collect stream into buffer
+    const chunks: Uint8Array[] = []
+    for await (const chunk of stream) {
+      chunks.push(chunk)
     }
-  }
+    const buffer = Buffer.concat(chunks)
 
-  throw new Error('All Invidious endpoints failed')
+    return { audioBuffer: buffer.buffer, mimeType: 'audio/mp4' }
+  } catch (e: any) {
+    throw new Error(`ytdl-core failed: ${e.message || 'download error'}`)
+  }
 }
 
 async function getYouTubeTranscript(videoId: string): Promise<{ text: string; language: string }> {
