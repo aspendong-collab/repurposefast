@@ -64,8 +64,20 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
   const [dict, setDict] = useState<Dictionary>(en as unknown as Dictionary)
 
   useEffect(() => {
+    // Priority: localStorage > cookie > browser language > default
     const saved = localStorage.getItem('ailomo_locale') as Locale | null
-    if (saved && saved in localeMap) setLocaleState(saved)
+    if (saved && saved in localeMap) { setLocaleState(saved); return }
+
+    // Check cookie (from middleware IP detection)
+    const cookie = document.cookie.split('; ').find(r => r.startsWith('ailomo_locale='))
+    if (cookie) {
+      const cookieVal = cookie.split('=')[1] as Locale
+      if (cookieVal in localeMap) { setLocaleState(cookieVal); return }
+    }
+
+    // Browser language
+    const browserLang = navigator.language?.split('-')[0] as Locale
+    if (browserLang && browserLang in localeMap) { setLocaleState(browserLang); return }
   }, [])
 
   useEffect(() => { setDict(DICT_MAP[locale] || en) }, [locale])
