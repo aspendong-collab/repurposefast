@@ -46,7 +46,7 @@ def gui_fn(url, lang):
     except Exception as e:
         return f"Error: {e}", "", 0
 
-with gr.Blocks(title="ailomo-whisper", theme=gr.themes.Soft()) as demo:
+with gr.Blocks(title="ailomo-whisper") as demo:
     gr.Markdown("# 🎙️ ailomo-whisper\nFaster-Whisper large-v3 on T4 GPU")
     u = gr.Textbox(label="YouTube URL")
     l = gr.Textbox(label="Language", value="en")
@@ -78,4 +78,4 @@ def h():
     return {"status": "ok", "model": "large-v3", "device": "cuda"}
 
 # Mount (Gradio 5/6 compatible)
-app = gr.mount_gradio_app(demo, api, path="/")
+app = gr.mount_gradio_app(app=api, blocks=demo, path="/")
