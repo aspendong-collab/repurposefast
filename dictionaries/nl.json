@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Functies",
+    "pricing": "Prijzen",
+    "faq": "FAQ",
+    "tryFree": "Probeer gratis"
+  },
+  "hero": {
+    "badge": "AI-gestuurde contenthergebruik",
+    "title": "Maak van één video",
+    "highlight": "Je volledige contentstrategie",
+    "subtitle": "Plak een link of upload een bestand — AI transcribeert en hergebruikt je content automatisch naar blogposts, social threads, nieuwsbrieven en meer.",
+    "accent": "10x je contentoutput.",
+    "stats": {
+      "languages": "Talen",
+      "formats": "Uitvoerformaten",
+      "speed": "Verwerkingstijd"
+    },
+    "tabs": {
+      "url": "Plak link",
+      "file": "Upload bestand",
+      "text": "Plak tekst"
+    },
+    "placeholder": "Plak YouTube, podcast of een andere videolink...",
+    "generate": "Genereer",
+    "processing": "Bezig met verwerken...",
+    "error": "Er is iets misgegaan",
+    "tryAgain": "Probeer opnieuw",
+    "startOver": "Opnieuw beginnen",
+    "formatsGenerated": "formaten gegenereerd"
+  },
+  "howItWorks": {
+    "label": "Hoe het werkt",
+    "title": "Van video naar",
+    "highlight": "Multi-platform",
+    "suffix": "in 3 stappen",
+    "steps": [
+      {
+        "title": "Plak of upload",
+        "desc": "Drop een YouTube-link, upload een audiobestand of plak tekst. Geen configuratie nodig — slechts één klik."
+      },
+      {
+        "title": "AI doet zijn magie",
+        "desc": "Onze AI transcribeert en begrijpt je content, en herschrijft het vervolgens intelligent voor de unieke stijl van elk platform."
+      },
+      {
+        "title": "Publiceer overal",
+        "desc": "Ontvang gepolijste content voor WeChat, Twitter, LinkedIn, Xiaohongshu, blogs en meer. Kopieer, download of deel direct."
+      }
+    ]
+  },
+  "features": {
+    "label": "Functies",
+    "title": "Alles wat je nodig hebt om",
+    "highlight": "Je content te schalen",
+    "subtitle": "Gebouwd voor makers die elk stukje content dat ze produceren willen maximaliseren.",
+    "list": [
+      {
+        "title": "AI-gestuurd herschrijven",
+        "desc": "Niet alleen transcriptie — onze AI begrijpt context en herschrijft voor de unieke stem en het formaat van elk platform."
+      },
+      {
+        "title": "10 uitvoerformaten",
+        "desc": "Blogposts, Twitter-threads, LinkedIn-posts, Xiaohongshu-notities, nieuwsbrieven, SRT-ondertitels, SEO-artikelen en meer."
+      },
+      {
+        "title": "63+ talen",
+        "desc": "Transcribeer en genereer content in 63+ talen. Perfect voor internationale makers en wereldwijde doelgroepen."
+      },
+      {
+        "title": "Streaming generatie",
+        "desc": "Zie content teken voor teken in realtime verschijnen. Niet langer wachten op laadspinners."
+      },
+      {
+        "title": "Conversationele verfijning",
+        "desc": "Chat met elke uitvoer om deze te verfijnen. Zeg \"maak het korter\" of \"voeg emoji toe\" — AI past het direct toe."
+      },
+      {
+        "title": "6 exportformaten",
+        "desc": "Download als Markdown, TXT, PDF, DOCX, SRT of CSV. Direct klaar om te publiceren."
+      },
+      {
+        "title": "Deel en werk samen",
+        "desc": "Genereer deelbare links voor teamgenoten om content te bekijken en samen te werken."
+      },
+      {
+        "title": "Privé en veilig",
+        "desc": "Je content blijft van jou. Bestanden worden automatisch verwijderd na verwerking. Geen gegevensopslag."
+      },
+      {
+        "title": "Slimme platformdetectie",
+        "desc": "Plak je een YouTube-link? We stellen blog + Twitter voor. Plak je Bilibili? We stellen WeChat + Xiaohongshu voor."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Waarom ailomo",
+    "title": "Anders gebouwd.",
+    "highlight": "AI-first vanaf de basis"
+  },
+  "formats": {
+    "outputLabel": "Uitvoerformaten",
+    "outputTitle": "10 formaten,",
+    "outputHighlight": "Eén klik",
+    "outputSubtitle": "Genereer alles tegelijk — geen noodzaak om de tool meerdere keren te gebruiken.",
+    "langLabel": "Wereldwijd bereik",
+    "langTitle": "63+ talen ondersteund",
+    "langSubtitle": "Transcribeer en genereer content in 63+ talen. Perfect voor internationale makers en wereldwijde doelgroepen.",
+    "more": "+45 meer"
+  },
+  "social": {
+    "label": "Vertrouwd door makers",
+    "stats": {
+      "users": "Actieve gebruikers",
+      "videos": "Verwerkte video's",
+      "rating": "Gebruikersbeoordeling",
+      "languages": "Talen"
+    },
+    "testimonials": [
+      {
+        "text": "\"Eindelijk een tool die de workflow voor contentcreatie begrijpt. Eén video → alle platforms in minuten. Een gamechanger voor mijn contentschema.\"",
+        "author": "Sarah Chen",
+        "role": "Contentmaker"
+      },
+      {
+        "text": "\"De conversationele verfijning is briljant. Ik kan elke uitvoer aanpassen door er gewoon mee te chatten. Bespaart me uren per week.\"",
+        "author": "Marcus Rivera",
+        "role": "Marketinglead"
+      },
+      {
+        "text": "\"Ik was sceptisch over AI-content, maar de kwaliteit verraste me echt. De platformspecifieke opmaak is perfect.\"",
+        "author": "Yuki Tanaka",
+        "role": "Podcasthost"
+      },
+      {
+        "text": "\"Als solo-oprichter geeft deze tool me de output van een contentteam. LinkedIn-posts, blogs, tweets — allemaal van één video.\"",
+        "author": "Alex Park",
+        "role": "Startup-oprichter"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Prijzen",
+    "title": "Eenvoudige,",
+    "highlight": "Transparante",
+    "suffix": "prijzen",
+    "subtitle": "Begin gratis, upgrade wanneer je meer nodig hebt. Geen verborgen kosten.",
+    "plans": {
+      "free": {
+        "name": "Gratis",
+        "desc": "Perfect om het uit te proberen",
+        "cta": "Aan de slag"
+      },
+      "creator": {
+        "name": "Creator",
+        "desc": "Voor serieuze contentmakers",
+        "cta": "Start gratis proefperiode",
+        "badge": "Meest populair"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Voor teams en bureaus",
+        "cta": "Start gratis proefperiode"
+      }
+    }
+  },
+  "cta": {
+    "title": "Klaar om",
+    "highlight": "10x je contentoutput",
+    "suffix": "te krijgen?",
+    "subtitle": "Sluit je aan bij duizenden makers die elke video omzetten in een complete multi-platform contentstrategie. Begin gratis — geen creditcard nodig.",
+    "start": "Begin gratis",
+    "pricing": "Bekijk prijzen"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Veelgestelde vragen"
+  },
+  "footer": {
+    "tagline": "AI-gestuurd contenthergebruik. Maak van één video je volledige multi-platform contentstrategie.",
+    "copyright": "Alle rechten voorbehouden.",
+    "builtWith": "Gebouwd voor contentmakers wereldwijd"
+  }
+}

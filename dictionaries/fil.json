@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Mga Tampok",
+    "pricing": "Presyo",
+    "faq": "FAQ",
+    "tryFree": "Subukan nang Libre"
+  },
+  "hero": {
+    "badge": "Pag-repurpose ng Nilalaman na Pinapagana ng AI",
+    "title": "Gawing Isang Video ang",
+    "highlight": "Iyong Buong Estratehiya sa Nilalaman",
+    "subtitle": "Mag-paste ng link o mag-upload ng file — awtomatikong nag-transcribe at nagre-repurpose ng iyong nilalaman ang AI sa mga blog post, social threads, newsletter, at higit pa.",
+    "accent": "10x ang iyong output ng nilalaman.",
+    "stats": {
+      "languages": "Mga Wika",
+      "formats": "Mga Format ng Output",
+      "speed": "Oras ng Pagproseso"
+    },
+    "tabs": {
+      "url": "I-paste ang Link",
+      "file": "Mag-upload ng File",
+      "text": "I-paste ang Teksto"
+    },
+    "placeholder": "I-paste ang link ng YouTube, podcast, o anumang video...",
+    "generate": "Gumawa",
+    "processing": "Pinoproseso...",
+    "error": "May nangyaring mali",
+    "tryAgain": "Subukan muli",
+    "startOver": "Magsimulang muli",
+    "formatsGenerated": "mga format na nagawa"
+  },
+  "howItWorks": {
+    "label": "Paano Ito Gumagana",
+    "title": "Mula sa Video hanggang",
+    "highlight": "Multi-Platform",
+    "suffix": "sa 3 Hakbang",
+    "steps": [
+      {
+        "title": "I-paste o Mag-upload",
+        "desc": "Mag-drop ng YouTube link, mag-upload ng audio file, o mag-paste ng teksto. Walang kailangang configuration — isang click lang."
+      },
+      {
+        "title": "Gumagana ang AI",
+        "desc": "Nag-transcribe at nauunawaan ng aming AI ang iyong nilalaman, pagkatapos ay matalinong isinusulat muli ito para sa natatanging istilo ng bawat platform."
+      },
+      {
+        "title": "I-publish Kahit Saan",
+        "desc": "Kumuha ng pinakintab na nilalaman para sa WeChat, Twitter, LinkedIn, Xiaohongshu, blog, at higit pa. Kopyahin, i-download, o ibahagi agad."
+      }
+    ]
+  },
+  "features": {
+    "label": "Mga Tampok",
+    "title": "Lahat ng Kailangan Mo para",
+    "highlight": "Palakihin ang Iyong Nilalaman",
+    "subtitle": "Ginawa para sa mga creator na gustong i-maximize ang bawat piraso ng nilalaman na kanilang ginagawa.",
+    "list": [
+      {
+        "title": "Pagsusulat na Pinapagana ng AI",
+        "desc": "Hindi lang transcription — nauunawaan ng aming AI ang konteksto at isinusulat muli para sa natatanging boses at format ng bawat platform."
+      },
+      {
+        "title": "10 Format ng Output",
+        "desc": "Mga blog post, Twitter threads, LinkedIn posts, Xiaohongshu notes, newsletter, SRT subtitles, SEO articles, at higit pa."
+      },
+      {
+        "title": "63+ Wika",
+        "desc": "Mag-transcribe at gumawa ng nilalaman sa 63+ wika. Perpekto para sa mga international creator at global audience."
+      },
+      {
+        "title": "Streaming Generation",
+        "desc": "Makita ang nilalaman na lumalabas nang character by character sa real-time. Hindi na kailangang maghintay ng loading spinners."
+      },
+      {
+        "title": "Pagpipino sa Pamamagitan ng Pag-uusap",
+        "desc": "Makipag-chat sa bawat output para i-fine-tune ito. Sabihin ang \"paikliin\" o \"magdagdag ng emoji\" — agad itong inaapply ng AI."
+      },
+      {
+        "title": "6 Export Format",
+        "desc": "I-download bilang Markdown, TXT, PDF, DOCX, SRT, o CSV. Handa nang i-publish."
+      },
+      {
+        "title": "Ibahagi at Makipagtulungan",
+        "desc": "Gumawa ng mga shareable link para sa iyong mga kasamahan upang matingnan at makipagtulungan sa nilalaman."
+      },
+      {
+        "title": "Pribado at Ligtas",
+        "desc": "Ang iyong nilalaman ay mananatiling sa iyo. Awtomatikong binubura ang mga file pagkatapos ng pagproseso. Walang pagpapanatili ng data."
+      },
+      {
+        "title": "Matalinong Pagtukoy ng Platform",
+        "desc": "Nag-paste ng YouTube link? Iminumungkahi namin ang blog + Twitter. Nag-paste ng Bilibili? Iminumungkahi namin ang WeChat + Xiaohongshu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Bakit ailomo",
+    "title": "Ibang Klase ang Pagkakagawa.",
+    "highlight": "AI-First Mula sa Simula"
+  },
+  "formats": {
+    "outputLabel": "Mga Format ng Output",
+    "outputTitle": "10 Format,",
+    "outputHighlight": "Isang Click",
+    "outputSubtitle": "Gawin ang lahat nang sabay-sabay — hindi na kailangang patakbuhin nang maraming beses ang tool.",
+    "langLabel": "Pandaigdigang Abot",
+    "langTitle": "63+ Wika na Suportado",
+    "langSubtitle": "Mag-transcribe at gumawa ng nilalaman sa 63+ wika. Perpekto para sa mga international creator at global audience.",
+    "more": "+45 pa"
+  },
+  "social": {
+    "label": "Pinagkakatiwalaan ng mga Creator",
+    "stats": {
+      "users": "Mga Aktibong User",
+      "videos": "Mga Video na Naproseso",
+      "rating": "Rating ng User",
+      "languages": "Mga Wika"
+    },
+    "testimonials": [
+      {
+        "text": "\"Sa wakas, isang tool na nauunawaan ang workflow ng paggawa ng nilalaman. Isang video → lahat ng platform sa ilang minuto. Game changer para sa aking iskedyul ng nilalaman.\"",
+        "author": "Sarah Chen",
+        "role": "Content Creator"
+      },
+      {
+        "text": "\"Napakatalino ng conversational refinement. Maaari kong ayusin ang bawat output sa pamamagitan lamang ng pakikipag-chat dito. Nakakatipid ito sa akin ng maraming oras bawat linggo.\"",
+        "author": "Marcus Rivera",
+        "role": "Marketing Lead"
+      },
+      {
+        "text": "\"Nag-aalinlangan ako tungkol sa AI content, ngunit ang kalidad ay talagang nagulat sa akin. Ang platform-specific formatting ay eksakto.\"",
+        "author": "Yuki Tanaka",
+        "role": "Podcast Host"
+      },
+      {
+        "text": "\"Bilang isang solo founder, binibigyan ako ng tool na ito ng output ng isang content team. LinkedIn posts, blog, tweets — lahat mula sa isang video.\"",
+        "author": "Alex Park",
+        "role": "Startup Founder"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Presyo",
+    "title": "Simple,",
+    "highlight": "Transparent",
+    "suffix": "na Presyo",
+    "subtitle": "Magsimula nang libre, mag-upgrade kapag kailangan mo ng higit pa. Walang nakatagong bayad.",
+    "plans": {
+      "free": {
+        "name": "Libre",
+        "desc": "Perpekto para subukan ito",
+        "cta": "Magsimula"
+      },
+      "creator": {
+        "name": "Creator",
+        "desc": "Para sa mga seryosong content creator",
+        "cta": "Magsimula ng Libreng Trial",
+        "badge": "Pinakasikat"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Para sa mga team at agency",
+        "cta": "Magsimula ng Libreng Trial"
+      }
+    }
+  },
+  "cta": {
+    "title": "Handa nang",
+    "highlight": "10x ang Iyong Nilalaman",
+    "suffix": "Output?",
+    "subtitle": "Sumali sa libu-libong creator na ginagawang kumpletong multi-platform content strategy ang bawat video. Magsimula nang libre — walang credit card na kailangan.",
+    "start": "Magsimula nang Libre",
+    "pricing": "Tingnan ang Presyo"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Mga Madalas Itanong"
+  },
+  "footer": {
+    "tagline": "Pag-repurpose ng nilalaman na pinapagana ng AI. Gawing isang video ang iyong buong multi-platform content strategy.",
+    "copyright": "Lahat ng karapatan ay nakalaan.",
+    "builtWith": "Ginawa para sa mga content creator sa buong mundo"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Vipengele",
+    "pricing": "Bei",
+    "faq": "Maswali Yanayoulizwa Mara kwa Mara",
+    "tryFree": "Jaribu Bure"
+  },
+  "hero": {
+    "badge": "Kutumia Maudhui Kwa Nguvu ya AI",
+    "title": "Geuza Video Moja Kuwa",
+    "highlight": "Mkakati Wako Wote wa Maudhui",
+    "subtitle": "Bandika kiungo au pakua faili — AI inakili na kubadilisha maudhui yako kuwa machapisho ya blogu, nyuzi za mitandao ya kijamii, majarida, na mengine zaidi.",
+    "accent": "Ongeza pato lako la maudhui mara 10.",
+    "stats": {
+      "languages": "Lugha",
+      "formats": "Miundo ya Pato",
+      "speed": "Muda wa Kuchakata"
+    },
+    "tabs": {
+      "url": "Bandika Kiungo",
+      "file": "Pakua Faili",
+      "text": "Bandika Maandishi"
+    },
+    "placeholder": "Bandika kiungo cha YouTube, podcast, au video yoyote...",
+    "generate": "Tengeneza",
+    "processing": "Inachakata...",
+    "error": "Kuna hitilafu imetokea",
+    "tryAgain": "Jaribu tena",
+    "startOver": "Anza upya",
+    "formatsGenerated": "miundo imetengenezwa"
+  },
+  "howItWorks": {
+    "label": "Inavyofanya Kazi",
+    "title": "Kutoka Video Hadi",
+    "highlight": "Mifumo Mingi",
+    "suffix": "kwa Hatua 3",
+    "steps": [
+      {
+        "title": "Bandika au Pakua",
+        "desc": "Tupa kiungo cha YouTube, pakua faili ya sauti, au bandika maandishi. Hakuna usanidi unaohitajika — bonyeza mara moja tu."
+      },
+      {
+        "title": "AI Inafanya Kazi Yake",
+        "desc": "AI yetu inakili na kuelewa maudhui yako, kisha inayaandika upya kwa mtindo wa kila jukwaa."
+      },
+      {
+        "title": "Chapisha Kila Mahali",
+        "desc": "Pata maudhui yaliyoboreshwa kwa WeChat, Twitter, LinkedIn, Xiaohongshu, blogu, na mengine. Nakili, pakua, au shiriki papo hapo."
+      }
+    ]
+  },
+  "features": {
+    "label": "Vipengele",
+    "title": "Kila Kitu Unachohitaji Ku",
+    "highlight": "Panua Maudhui Yako",
+    "subtitle": "Imeundwa kwa waundaji wanaotaka kuongeza kila kipande cha maudhui wanachozalisha.",
+    "list": [
+      {
+        "title": "Kuandika Upya Kwa Nguvu ya AI",
+        "desc": "Si kunakili tu — AI inaelewa muktadha na kuandika upya kwa sauti na muundo wa kila jukwaa."
+      },
+      {
+        "title": "Miundo 10 ya Pato",
+        "desc": "Machapisho ya blogu, nyuzi za Twitter, machapisho ya LinkedIn, maelezo ya Xiaohongshu, majarida, manukuu ya SRT, makala za SEO, na mengine."
+      },
+      {
+        "title": "Lugha 63+",
+        "desc": "Nakili na tengeneza maudhui kwa lugha zaidi ya 63. Inafaa kwa waundaji wa kimataifa na hadhira za ulimwengu."
+      },
+      {
+        "title": "Uzalishaji wa Mtiririko",
+        "desc": "Ona maudhui yakionekana herufi kwa herufi kwa wakati halisi. Hakuna kusubiri kwa vipindi vya upakiaji."
+      },
+      {
+        "title": "Uboreshaji wa Mazungumzo",
+        "desc": "Zungumza na kila pato ili kuliboresha. Sema 'fanya iwe fupi' au 'ongeza emoji' — AI inaitumia mara moja."
+      },
+      {
+        "title": "Miundo 6 ya Kusafirisha",
+        "desc": "Pakua kama Markdown, TXT, PDF, DOCX, SRT, au CSV. Tayari moja kwa moja kwa uchapishaji."
+      },
+      {
+        "title": "Shiriki na Ushirikiane",
+        "desc": "Tengeneza viungo vinavyoweza kushirikiwa kwa wenzako ili waone na kushirikiana kwenye maudhui."
+      },
+      {
+        "title": "Faragha na Usalama",
+        "desc": "Maudhui yako yanabaki yako. Faili hufutwa kiotomatiki baada ya kuchakatwa. Hakuna uhifadhi wa data."
+      },
+      {
+        "title": "Utambuzi Mahiri wa Jukwaa",
+        "desc": "Bandika kiungo cha YouTube? Tunapendekeza blogu + Twitter. Bandika Bilibili? Tunapendekeza WeChat + Xiaohongshu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Kwa nini ailomo",
+    "title": "Imejengwa Tofauti.",
+    "highlight": "AI-Kwanza Tangu Mwanzo"
+  },
+  "formats": {
+    "outputLabel": "Miundo ya Pato",
+    "outputTitle": "Miundo 10,",
+    "outputHighlight": "Bonyeza Moja",
+    "outputSubtitle": "Tengeneza kila kitu kwa wakati mmoja — hakuna haja ya kuendesha zana mara nyingi.",
+    "langLabel": "Ufikiaji wa Kimataifa",
+    "langTitle": "Lugha 63+ Zinazoungwa Mkono",
+    "langSubtitle": "Nakili na tengeneza maudhui kwa lugha zaidi ya 63. Inafaa kwa waundaji wa kimataifa na hadhira za ulimwengu.",
+    "more": "+45 zaidi"
+  },
+  "social": {
+    "label": "Inaaminika na Waundaji",
+    "stats": {
+      "users": "Watumiaji Hai",
+      "videos": "Video Zilizochakatwa",
+      "rating": "Ukadiriaji wa Mtumiaji",
+      "languages": "Lugha"
+    },
+    "testimonials": [
+      {
+        "text": "\"Hatimaye chombo kinachoelewa mtiririko wa kazi wa kuunda maudhui. Video moja → mifumo yote kwa dakika. Mabadiliko makubwa kwa ratiba yangu ya maudhui.\"",
+        "author": "Sarah Chen",
+        "role": "Muundaji wa Maudhui"
+      },
+      {
+        "text": "\"Uboreshaji wa mazungumzo ni mzuri. Ninaweza kurekebisha kila pato kwa kuzungumza nacho tu. Inaniokoa masaa kila wiki.\"",
+        "author": "Marcus Rivera",
+        "role": "Kiongozi wa Masoko"
+      },
+      {
+        "text": "\"Nilikuwa na shaka kuhusu maudhui ya AI, lakini ubora ulinishangaza. Uundaji maalum wa jukwaa ni sahihi kabisa.\"",
+        "author": "Yuki Tanaka",
+        "role": "Mwenyeji wa Podcast"
+      },
+      {
+        "text": "\"Kama mwanzilishi wa pekee, chombo hiki kinanipa pato la timu ya maudhui. Machapisho ya LinkedIn, blogu, tweets — zote kutoka video moja.\"",
+        "author": "Alex Park",
+        "role": "Mwanzilishi wa Startup"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Bei",
+    "title": "Bei Rahisi,",
+    "highlight": "Wazi",
+    "suffix": "",
+    "subtitle": "Anza bure, pata sasisho unapohitaji zaidi. Hakuna ada zilizofichwa.",
+    "plans": {
+      "free": {
+        "name": "Bure",
+        "desc": "Inafaa kwa kujaribu",
+        "cta": "Anza"
+      },
+      "creator": {
+        "name": "Muundaji",
+        "desc": "Kwa waundaji wa maudhui makini",
+        "cta": "Anza Jaribio Bure",
+        "badge": "Maarufu Zaidi"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Kwa timu na mashirika",
+        "cta": "Anza Jaribio Bure"
+      }
+    }
+  },
+  "cta": {
+    "title": "Uko Taya Ku",
+    "highlight": "Ongeza Maudhui Yako Mara 10",
+    "suffix": "Pato?",
+    "subtitle": "Jiunge na maelfu ya waundaji wanaogeza kila video kuwa mkakati kamili wa maudhui wa mifumo mingi. Anza bure — hakuna kadi ya mkopo inayohitajika.",
+    "start": "Anza Bure",
+    "pricing": "Angalia Bei"
+  },
+  "faq": {
+    "label": "Maswali Yanayoulizwa Mara kwa Mara",
+    "title": "Maswali Yanayoulizwa Mara kwa Mara"
+  },
+  "footer": {
+    "tagline": "Kutumia maudhui kwa nguvu ya AI. Geuza video moja kuwa mkakati wako wote wa maudhui wa mifumo mingi.",
+    "copyright": "Haki zote zimehifadhiwa.",
+    "builtWith": "Imejengwa kwa waundaji wa maudhui duniani kote"
+  }
+}

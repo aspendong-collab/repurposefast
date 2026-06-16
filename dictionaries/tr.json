@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Özellikler",
+    "pricing": "Fiyatlandırma",
+    "faq": "SSS",
+    "tryFree": "Ücretsiz Dene"
+  },
+  "hero": {
+    "badge": "Yapay Zeka Destekli İçerik Yeniden Kullanımı",
+    "title": "Bir Videoyu",
+    "highlight": "Tüm İçerik Stratejine Dönüştür",
+    "subtitle": "Bir bağlantı yapıştırın veya bir dosya yükleyin — AI otomatik olarak yazıya döker ve içeriğinizi blog yazıları, sosyal medya dizileri, bültenler ve daha fazlasına dönüştürür.",
+    "accent": "İçerik çıktınızı 10 katına çıkarın.",
+    "stats": {
+      "languages": "Dil",
+      "formats": "Çıktı Formatları",
+      "speed": "İşlem Süresi"
+    },
+    "tabs": {
+      "url": "Bağlantı Yapıştır",
+      "file": "Dosya Yükle",
+      "text": "Metin Yapıştır"
+    },
+    "placeholder": "YouTube, podcast veya herhangi bir video bağlantısını yapıştırın...",
+    "generate": "Oluştur",
+    "processing": "İşleniyor...",
+    "error": "Bir hata oluştu",
+    "tryAgain": "Tekrar Dene",
+    "startOver": "Baştan Başla",
+    "formatsGenerated": "format oluşturuldu"
+  },
+  "howItWorks": {
+    "label": "Nasıl Çalışır",
+    "title": "Videodan",
+    "highlight": "Çoklu Platforma",
+    "suffix": "3 Adımda",
+    "steps": [
+      {
+        "title": "Yapıştır veya Yükle",
+        "desc": "Bir YouTube bağlantısı bırakın, bir ses dosyası yükleyin veya metin yapıştırın. Yapılandırma gerektirmez — sadece bir tıklama."
+      },
+      {
+        "title": "AI Sihrini Yapar",
+        "desc": "AI'nız içeriğinizi yazıya döker ve anlar, ardından her platformun benzersiz stiline göre akıllıca yeniden yazar."
+      },
+      {
+        "title": "Her Yerde Yayınla",
+        "desc": "WeChat, Twitter, LinkedIn, Xiaohongshu, bloglar ve daha fazlası için cilalı içerik elde edin. Hemen kopyalayın, indirin veya paylaşın."
+      }
+    ]
+  },
+  "features": {
+    "label": "Özellikler",
+    "title": "İçeriğinizi Ölçeklendirmek İçin",
+    "highlight": "İhtiyacınız Olan Her Şey",
+    "subtitle": "Ürettikleri her içerik parçasını en üst düzeye çıkarmak isteyen yaratıcılar için tasarlandı.",
+    "list": [
+      {
+        "title": "AI Destekli Yeniden Yazma",
+        "desc": "Sadece yazıya dökme değil — AI'mız bağlamı anlar ve her platformun benzersiz sesine ve formatına göre yeniden yazar."
+      },
+      {
+        "title": "10 Çıktı Formatı",
+        "desc": "Blog yazıları, Twitter dizileri, LinkedIn gönderileri, Xiaohongshu notları, bültenler, SRT altyazıları, SEO makaleleri ve daha fazlası."
+      },
+      {
+        "title": "63+ Dil",
+        "desc": "63'ten fazla dilde içerik yazıya dökün ve oluşturun. Uluslararası yaratıcılar ve küresel kitleler için mükemmel."
+      },
+      {
+        "title": "Akış Oluşturma",
+        "desc": "İçeriğin gerçek zamanlı olarak karakter karakter görünmesini izleyin. Artık yüklenme döndürücülerini beklemek yok."
+      },
+      {
+        "title": "Konuşma Yoluyla İyileştirme",
+        "desc": "Her çıktıyla sohbet ederek ince ayar yapın. \"Kısalt\" veya \"emoji ekle\" deyin — AI anında uygular."
+      },
+      {
+        "title": "6 Dışa Aktarma Formatı",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT veya CSV olarak indirin. Doğrudan yayına hazır."
+      },
+      {
+        "title": "Paylaş ve İşbirliği Yap",
+        "desc": "Takım arkadaşlarınızın içeriği görüntülemesi ve üzerinde işbirliği yapması için paylaşılabilir bağlantılar oluşturun."
+      },
+      {
+        "title": "Özel ve Güvenli",
+        "desc": "İçeriğiniz sizin kalır. Dosyalar işlemden sonra otomatik olarak silinir. Veri saklanmaz."
+      },
+      {
+        "title": "Akıllı Platform Algılama",
+        "desc": "Bir YouTube bağlantısı mı yapıştırdınız? Blog + Twitter öneririz. Bilibili mi yapıştırdınız? WeChat + Xiaohongshu öneririz."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Neden ailomo",
+    "title": "Farklı İnşa Edildi.",
+    "highlight": "En Başından AI Öncelikli"
+  },
+  "formats": {
+    "outputLabel": "Çıktı Formatları",
+    "outputTitle": "10 Format,",
+    "outputHighlight": "Tek Tıkla",
+    "outputSubtitle": "Hepsini aynı anda oluşturun — aracı birden çok kez çalıştırmanıza gerek yok.",
+    "langLabel": "Küresel Erişim",
+    "langTitle": "63+ Dil Desteği",
+    "langSubtitle": "63'ten fazla dilde içerik yazıya dökün ve oluşturun. Uluslararası yaratıcılar ve küresel kitleler için mükemmel.",
+    "more": "+45 daha"
+  },
+  "social": {
+    "label": "Yaratıcılar Tarafından Güveniliyor",
+    "stats": {
+      "users": "Aktif Kullanıcı",
+      "videos": "İşlenen Video",
+      "rating": "Kullanıcı Puanı",
+      "languages": "Dil"
+    },
+    "testimonials": [
+      {
+        "text": "\"Sonunda içerik oluşturma iş akışını anlayan bir araç. Bir video → dakikalar içinde tüm platformlar. İçerik programım için oyun değiştirici.\"",
+        "author": "Sarah Chen",
+        "role": "İçerik Yaratıcısı"
+      },
+      {
+        "text": "\"Konuşma yoluyla iyileştirme harika. Sadece sohbet ederek her çıktıyı ayarlayabiliyorum. Her hafta saatlerce zaman kazandırıyor.\"",
+        "author": "Marcus Rivera",
+        "role": "Pazarlama Lideri"
+      },
+      {
+        "text": "\"AI içeriğine şüpheyle yaklaşıyordum ama kalite beni gerçekten şaşırttı. Platforma özel biçimlendirme çok isabetli.\"",
+        "author": "Yuki Tanaka",
+        "role": "Podcast Sunucusu"
+      },
+      {
+        "text": "\"Tek başına bir kurucu olarak, bu araç bana bir içerik ekibinin çıktısını veriyor. LinkedIn gönderileri, bloglar, tweetler — hepsi bir videodan.\"",
+        "author": "Alex Park",
+        "role": "Girişim Kurucusu"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Fiyatlandırma",
+    "title": "Basit,",
+    "highlight": "Şeffaf",
+    "suffix": "Fiyatlandırma",
+    "subtitle": "Ücretsiz başlayın, ihtiyacınız olduğunda yükseltin. Gizli ücret yok.",
+    "plans": {
+      "free": {
+        "name": "Ücretsiz",
+        "desc": "Denemek için mükemmel",
+        "cta": "Başlayın"
+      },
+      "creator": {
+        "name": "Yaratıcı",
+        "desc": "Ciddi içerik yaratıcıları için",
+        "cta": "Ücretsiz Denemeye Başla",
+        "badge": "En Popüler"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Ekipler ve ajanslar için",
+        "cta": "Ücretsiz Denemeye Başla"
+      }
+    }
+  },
+  "cta": {
+    "title": "İçerik Çıktınızı",
+    "highlight": "10 Katına Çıkarmaya",
+    "suffix": "Hazır mısınız?",
+    "subtitle": "Her videoyu eksiksiz bir çoklu platform içerik stratejisine dönüştüren binlerce yaratıcıya katılın. Ücretsiz başlayın — kredi kartı gerekmez.",
+    "start": "Ücretsiz Başla",
+    "pricing": "Fiyatlandırmayı Gör"
+  },
+  "faq": {
+    "label": "SSS",
+    "title": "Sıkça Sorulan Sorular"
+  },
+  "footer": {
+    "tagline": "AI destekli içerik yeniden kullanımı. Bir videoyu tüm çoklu platform içerik stratejinize dönüştürün.",
+    "copyright": "Tüm hakları saklıdır.",
+    "builtWith": "Dünya çapındaki içerik yaratıcıları için yapıldı"
+  }
+}
