@@ -15,6 +15,7 @@ export function Navbar({ d }: { d: Dictionary }) {
     { href: '#features', label: d.nav.features },
     { href: '#how-it-works', label: d.nav.howItWorks },
     { href: '#pricing', label: d.nav.pricing },
+    { href: '/blog', label: 'Blog', external: false },
     { href: '#faq', label: d.nav.faq },
   ]
   const Tg = () => (<div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500 to-purple-600 shadow-lg shadow-violet-500/20"><Sparkles className="h-4.5 w-4.5 text-white" /></div>)
