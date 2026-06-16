@@ -1,28 +1,33 @@
 {
   "nav": {
     "features": "Funcionalitats",
+    "howItWorks": "Com funciona",
     "pricing": "Preus",
     "faq": "PMF",
-    "tryFree": "Prova Gratuïta"
+    "tryFree": "Prova gratuïta"
   },
   "hero": {
     "badge": "Reutilització de contingut amb IA",
     "title": "Converteix un vídeo en",
-    "highlight": "Tota la teva estratègia de contingut",
-    "subtitle": "Enganxa un enllaç o puja un fitxer: la IA transcriu i reutilitza automàticament el teu contingut en articles de blog, fils de xarxes socials, butlletins i molt més.",
-    "accent": "Multiplica per 10 la teva producció de contingut.",
+    "highlight": "Contingut a tot arreu",
+    "subtitle": "Enganxa un enllaç de YouTube. Puja un pòdcast. Deixa anar una transcripció de text.",
+    "accent": "ailomo crea instantàniament contingut polit per a cada plataforma.",
     "stats": {
       "languages": "Idiomes",
-      "formats": "Formats de sortida",
-      "speed": "Temps de processament"
+      "formats": "Formats",
+      "speed": "Processament"
     },
     "tabs": {
       "url": "Enganxa l'enllaç",
-      "file": "Puja un fitxer",
-      "text": "Enganxa text"
+      "file": "Puja",
+      "text": "Text"
     },
-    "placeholder": "Enganxa un enllaç de YouTube, podcast o qualsevol vídeo...",
+    "placeholder": "Enganxa un enllaç de YouTube, URL de pòdcast o qualsevol vídeo...",
     "generate": "Genera",
+    "fileDropTitle": "Deixa anar el teu fitxer aquí",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — fins a 500MB",
+    "textPlaceholder": "Enganxa la teva transcripció o text — la IA el transforma en contingut preparat per a la plataforma...",
+    "noSignup": "No cal registrar-se. Comença gratuïtament.",
     "processing": "Processant...",
     "error": "Alguna cosa ha anat malament",
     "tryAgain": "Torna-ho a provar",
@@ -31,85 +36,114 @@
   },
   "howItWorks": {
     "label": "Com funciona",
-    "title": "Del vídeo a",
+    "title": "De vídeo a ",
     "highlight": "Multiplataforma",
     "suffix": "en 3 passos",
     "steps": [
       {
         "title": "Enganxa o puja",
-        "desc": "Deixa un enllaç de YouTube, puja un fitxer d'àudio o enganxa text. Sense configuració: només un clic."
+        "desc": "Deixa anar un enllaç de YouTube, puja un fitxer d'àudio o enganxa text. Sense configuració."
       },
       {
-        "title": "La IA fa la seva màgia",
-        "desc": "La nostra IA transcriu i entén el teu contingut, després el reescriu de manera intel·ligent per a l'estil únic de cada plataforma."
+        "title": "La IA ho transforma",
+        "desc": "El teu contingut es transcriu, s'entén i es reescriu per a la veu única de cada plataforma."
       },
       {
         "title": "Publica a tot arreu",
-        "desc": "Obtén contingut polit per a WeChat, Twitter, LinkedIn, Xiaohongshu, blogs i més. Copia, descarrega o comparteix a l'instant."
-      }
-    ]
-  },
-  "features": {
-    "label": "Funcionalitats",
-    "title": "Tot el que necessites per",
-    "highlight": "escalar el teu contingut",
-    "subtitle": "Dissenyat per a creadors que volen maximitzar cada peça de contingut que produeixen.",
-    "list": [
-      {
-        "title": "Reescriptura amb IA",
-        "desc": "No només transcripció: la nostra IA entén el context i reescriu per a la veu i el format únics de cada plataforma."
-      },
-      {
-        "title": "10 formats de sortida",
-        "desc": "Articles de blog, fils de Twitter, publicacions de LinkedIn, notes de Xiaohongshu, butlletins, subtítols SRT, articles SEO i més."
-      },
-      {
-        "title": "Més de 63 idiomes",
-        "desc": "Transcriu i genera contingut en més de 63 idiomes. Perfecte per a creadors internacionals i audiències globals."
-      },
-      {
-        "title": "Generació en streaming",
-        "desc": "Veure el contingut aparèixer caràcter per caràcter en temps real. Sense esperar rodets de càrrega."
-      },
-      {
-        "title": "Refinament conversacional",
-        "desc": "Xateja amb cada sortida per ajustar-la. Digues \"fes-ho més curt\" o \"afegeix emoji\": la IA ho aplica a l'instant."
-      },
-      {
-        "title": "6 formats d'exportació",
-        "desc": "Descarrega com a Markdown, TXT, PDF, DOCX, SRT o CSV. Directament llest per publicar."
-      },
-      {
-        "title": "Comparteix i col·labora",
-        "desc": "Genera enllaços compartibles perquè els teus companys vegin i col·laborin en el contingut."
-      },
-      {
-        "title": "Privat i segur",
-        "desc": "El teu contingut es queda teu. Els fitxers s'eliminen automàticament després del processament. Sense retenció de dades."
-      },
-      {
-        "title": "Detecció intel·ligent de plataforma",
-        "desc": "Enganxes un enllaç de YouTube? Suggerim blog + Twitter. Enganxes Bilibili? Suggerim WeChat + Xiaohongshu."
+        "desc": "Obtén publicacions de bloc, fils socials, butlletins i més. Copia, descarrega, fet."
       }
     ]
   },
   "highlights": {
     "label": "Per què ailomo",
-    "title": "Construït de manera diferent.",
-    "highlight": "IA des de zero"
+    "title": "Construït de manera diferent. ",
+    "highlight": "Nadiu d'IA",
+    "items": [
+      {
+        "badge": "Intel·ligència",
+        "title": "No només transcripció",
+        "desc": "La nostra IA analitza el context, extreu informació i genera contingut optimitzat per a l'audiència de cada plataforma."
+      },
+      {
+        "badge": "Distribució",
+        "title": "Un clic, cada plataforma",
+        "desc": "Tots els 10 formats es generen simultàniament. De blocs llargs a fils socials — tot llest en segons."
+      },
+      {
+        "badge": "Refinament",
+        "title": "Xateja amb el teu contingut",
+        "desc": "Cada sortida té un xat d'IA integrat. \"Afegeix més dades\", \"fes-ho més contundent\" — els canvis s'apliquen instantàniament."
+      }
+    ]
+  },
+  "features": {
+    "label": "Funcionalitats",
+    "title": "Tot per ",
+    "highlight": "escalar el contingut",
+    "subtitle": "Construït per a creadors que converteixen cada peça de contingut en un impacte màxim.",
+    "list": [
+      {
+        "title": "Reescriptura amb IA",
+        "desc": "No només transcripció — la nostra IA entén el context i reescriu per a la veu única de cada plataforma."
+      },
+      {
+        "title": "10 formats de sortida",
+        "desc": "Publicacions de bloc, fils de Twitter, LinkedIn, Xiaohongshu, butlletins, subtítols SRT, articles SEO, més."
+      },
+      {
+        "title": "Més de 63 idiomes",
+        "desc": "Transcriu i genera en més de 63 idiomes. Construït per a creadors internacionals."
+      },
+      {
+        "title": "Generació en streaming",
+        "desc": "El contingut apareix caràcter per caràcter en temps real. Sense esperar rodets de càrrega."
+      },
+      {
+        "title": "Refinament conversacional",
+        "desc": "Xateja amb cada sortida per ajustar-la. \"Fes-ho més curt\" — fet."
+      },
+      {
+        "title": "6 formats d'exportació",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Llest per publicar instantàniament."
+      },
+      {
+        "title": "Comparteix i col·labora",
+        "desc": "Genera enllaços perquè els companys vegin i col·laborin en el teu contingut."
+      },
+      {
+        "title": "Privat i segur",
+        "desc": "Els fitxers s'eliminen després del processament. El teu contingut no s'utilitza mai per a entrenament."
+      },
+      {
+        "title": "Detecció intel·ligent",
+        "desc": "Enllaç de YouTube? → Bloc + Twitter. Bilibili? → WeChat + Xiaohongshu. Automàtic."
+      }
+    ]
   },
   "formats": {
     "outputLabel": "Formats de sortida",
-    "outputTitle": "10 formats,",
+    "outputTitle": "10 formats, ",
     "outputHighlight": "un clic",
-    "outputSubtitle": "Genera-ho tot simultàniament: no cal executar l'eina diverses vegades.",
+    "outputSubtitle": "Genera-ho tot simultàniament — no cal executar l'eina diverses vegades.",
+    "formatNames": [
+      "Publicació de bloc",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "Article SEO",
+      "Butlletí",
+      "Subtítols SRT",
+      "Resum d'IA",
+      "Mapa mental"
+    ],
     "langLabel": "Abast global",
     "langTitle": "Més de 63 idiomes compatibles",
     "langSubtitle": "Transcriu i genera contingut en més de 63 idiomes. Perfecte per a creadors internacionals i audiències globals.",
     "more": "+45 més"
   },
   "social": {
-    "label": "Confiats per creadors",
+    "label": "Confiats pels creadors",
     "stats": {
       "users": "Usuaris actius",
       "videos": "Vídeos processats",
@@ -118,7 +152,7 @@
     },
     "testimonials": [
       {
-        "text": "\"Per fi una eina que entén el flux de treball de creació de contingut. Un vídeo → totes les plataformes en minuts. Un canvi radical per a la meva programació de contingut.\"",
+        "text": "\"Finalment una eina que entén el flux de treball de creació de contingut. Un vídeo → totes les plataformes en minuts. Un canvi radical per a la meva programació de contingut.\"",
         "author": "Sarah Chen",
         "role": "Creadora de contingut"
       },
@@ -128,12 +162,12 @@
         "role": "Responsable de màrqueting"
       },
       {
-        "text": "\"Era escèptic sobre el contingut amb IA, però la qualitat em va sorprendre realment. El format específic per a cada plataforma és perfecte.\"",
+        "text": "\"Era escèptic sobre el contingut d'IA, però la qualitat em va sorprendre realment. El format específic per a cada plataforma és perfecte.\"",
         "author": "Yuki Tanaka",
-        "role": "Presentador de podcast"
+        "role": "Presentador de pòdcast"
       },
       {
-        "text": "\"Com a fundador en solitari, aquesta eina em dona la producció d'un equip de contingut. Publicacions de LinkedIn, blogs, tweets: tot d'un sol vídeo.\"",
+        "text": "\"Com a fundador en solitari, aquesta eina em dona la producció d'un equip de contingut. Publicacions de LinkedIn, blocs, tuits — tot d'un sol vídeo.\"",
         "author": "Alex Park",
         "role": "Fundador d'startup"
       }
@@ -141,44 +175,142 @@
   },
   "pricing": {
     "label": "Preus",
-    "title": "Preus",
-    "highlight": "transparents",
-    "suffix": "i senzills",
-    "subtitle": "Comença gratis, actualitza quan necessitis més. Sense comissions ocultes.",
+    "title": "Preus ",
+    "highlight": "simples i transparents",
+    "suffix": "",
+    "subtitle": "Comença gratuïtament, actualitza quan necessitis més. Sense comissions ocultes. Cancel·la quan vulguis.",
+    "enterprise": "Necessites més? ",
+    "enterpriseLink": "Contacta'ns",
+    "enterpriseSuffix": " per a preus empresarials.",
     "plans": {
       "free": {
         "name": "Gratuït",
         "desc": "Perfecte per provar-ho",
-        "cta": "Comença"
+        "cta": "Comença",
+        "features": [
+          "3 vídeos/mes",
+          "5 formats de sortida",
+          "Model d'IA bàsic",
+          "120 min de transcripció",
+          "Suport comunitari"
+        ]
       },
       "creator": {
         "name": "Creador",
         "desc": "Per a creadors de contingut seriosos",
-        "cta": "Prova gratuïta",
-        "badge": "Més popular"
+        "cta": "Subscriu-te ara",
+        "badge": "Més popular",
+        "features": [
+          "30 vídeos/mes",
+          "Tots els 10 formats de sortida",
+          "Model d'IA premium",
+          "1.200 min de transcripció",
+          "Refinament conversacional",
+          "Suport prioritari",
+          "Accés a l'API"
+        ]
       },
       "pro": {
         "name": "Pro",
         "desc": "Per a equips i agències",
-        "cta": "Prova gratuïta"
+        "cta": "Subscriu-te ara",
+        "features": [
+          "Vídeos il·limitats",
+          "Tots els formats + personalitzats",
+          "IA premium + to personalitzat",
+          "6.000 min de transcripció",
+          "Col·laboració en equip",
+          "Exportació de marca blanca",
+          "Suport dedicat",
+          "Panell d'anàlisi"
+        ]
       }
     }
   },
   "cta": {
-    "title": "Preparat per",
-    "highlight": "multiplicar per 10",
-    "suffix": "la teva producció de contingut?",
-    "subtitle": "Uneix-te a milers de creadors que converteixen cada vídeo en una estratègia de contingut multiplataforma completa. Comença gratis: sense necessitat de targeta de crèdit.",
-    "start": "Comença gratis",
+    "title": "Preparat per ",
+    "highlight": "multiplicar per 10 el teu contingut",
+    "suffix": "?",
+    "subtitle": "Uneix-te a milers de creadors que converteixen cada vídeo en una estratègia de contingut multiplataforma completa. Comença gratuïtament — sense necessitat de targeta de crèdit.",
+    "start": "Comença gratuïtament",
     "pricing": "Veure preus"
   },
   "faq": {
     "label": "PMF",
-    "title": "Preguntes freqüents"
+    "title": "Preguntes ",
+    "highlight": "freqüents",
+    "items": [
+      {
+        "q": "És realment gratuït començar?",
+        "a": "Sí! El pla gratuït et dona 3 vídeos/mes amb 5 formats de sortida. No cal targeta de crèdit."
+      },
+      {
+        "q": "Quins idiomes compatibleu?",
+        "a": "Més de 63 idiomes per a transcripció i generació de contingut."
+      },
+      {
+        "q": "Per a quines plataformes puc reutilitzar contingut?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blocs, Medium, Substack, butlletins i més."
+      },
+      {
+        "q": "Quant de temps triga?",
+        "a": "La majoria de vídeos es processen en menys d'1 minut. El contingut es transmet en temps real."
+      },
+      {
+        "q": "Puc refinar el contingut generat per IA?",
+        "a": "Sí! Xateja amb cada sortida per ajustar el to, la longitud, l'estil o afegir elements."
+      },
+      {
+        "q": "Quins formats de fitxer puc pujar?",
+        "a": "Àudio: MP3, WAV, M4A, FLAC, OGG. Vídeo: MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "Les meves dades estan segures?",
+        "a": "Sí. Els fitxers s'eliminen després del processament. Mai s'utilitzen per a entrenament."
+      },
+      {
+        "q": "Puc cancel·lar en qualsevol moment?",
+        "a": "Sí, cancel·la quan vulguis. Sense contractes a llarg termini."
+      }
+    ]
   },
   "footer": {
     "tagline": "Reutilització de contingut amb IA. Converteix un vídeo en tota la teva estratègia de contingut multiplataforma.",
     "copyright": "Tots els drets reservats.",
-    "builtWith": "Creat per a creadors de contingut d'arreu del món"
+    "builtWith": "Construït per a creadors de contingut d'arreu del món",
+    "sections": {
+      "product": "Producte",
+      "tools": "Eines",
+      "legal": "Legal",
+      "company": "Empresa"
+    },
+    "links": {
+      "features": "Funcionalitats",
+      "pricing": "Preus",
+      "faq": "PMF",
+      "yt2blog": "YouTube a Bloc",
+      "vid2twitter": "Vídeo a Twitter",
+      "vid2xhs": "Vídeo a Xiaohongshu",
+      "podcast2article": "Pòdcast a Article",
+      "allTools": "Totes les eines →",
+      "privacy": "Privadesa",
+      "terms": "Termes",
+      "github": "GitHub",
+      "contact": "Contacte"
+    }
+  },
+  "workbench": {
+    "transcribing": "Transcrivint",
+    "generating": "Generant contingut",
+    "completed": "Completat",
+    "progress": "Progrés",
+    "cancel": "Cancel·la",
+    "refineTitle": "Refina - ",
+    "refinePlaceholder": "Digues a la IA com ajustar aquest contingut...",
+    "send": "Envia",
+    "copy": "Copia",
+    "copied": "Copiat",
+    "download": "Descarrega",
+    "refine": "Refina"
   }
 }

@@ -1,28 +1,33 @@
 {
   "nav": {
     "features": "Funkcje",
+    "howItWorks": "Jak to działa",
     "pricing": "Cennik",
     "faq": "FAQ",
     "tryFree": "Wypróbuj za darmo"
   },
   "hero": {
-    "badge": "Przekształcanie treści oparte na AI",
-    "title": "Zamień jeden film w",
-    "highlight": "Całą swoją strategię treści",
-    "subtitle": "Wklej link lub prześlij plik — AI automatycznie transkrybuje i przekształca Twoje treści w posty na bloga, wątki społecznościowe, newslettery i wiele więcej.",
-    "accent": "Zwielokrotnij swoją produkcję treści 10-krotnie.",
+    "badge": "Przetwarzanie treści oparte na AI",
+    "title": "Zmień jeden film w",
+    "highlight": "Treści wszędzie",
+    "subtitle": "Wklej link z YouTube. Prześlij podcast. Wpisz transkrypcję tekstową.",
+    "accent": "ailomo natychmiast tworzy dopracowane treści na każdą platformę.",
     "stats": {
       "languages": "Języki",
-      "formats": "Formaty wyjściowe",
-      "speed": "Czas przetwarzania"
+      "formats": "Formaty",
+      "speed": "Przetwarzanie"
     },
     "tabs": {
       "url": "Wklej link",
-      "file": "Prześlij plik",
-      "text": "Wklej tekst"
+      "file": "Prześlij",
+      "text": "Tekst"
     },
-    "placeholder": "Wklej link z YouTube, podcastu lub innego filmu...",
+    "placeholder": "Wklej link z YouTube, podcastu lub dowolnego filmu...",
     "generate": "Generuj",
+    "fileDropTitle": "Upuść plik tutaj",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — do 500MB",
+    "textPlaceholder": "Wklej transkrypcję lub tekst — AI przekształci go w treści gotowe na platformy...",
+    "noSignup": "Bez rejestracji. Zacznij za darmo.",
     "processing": "Przetwarzanie...",
     "error": "Coś poszło nie tak",
     "tryAgain": "Spróbuj ponownie",
@@ -31,81 +36,110 @@
   },
   "howItWorks": {
     "label": "Jak to działa",
-    "title": "Od filmu do",
+    "title": "Od filmu do ",
     "highlight": "wielu platform",
     "suffix": "w 3 krokach",
     "steps": [
       {
         "title": "Wklej lub prześlij",
-        "desc": "Wrzuć link z YouTube, prześlij plik audio lub wklej tekst. Bez konfiguracji — wystarczy jeden klik."
+        "desc": "Wklej link z YouTube, prześlij plik audio lub wklej tekst. Zero konfiguracji."
       },
       {
-        "title": "AI działa magicznie",
-        "desc": "Nasze AI transkrybuje i rozumie Twoje treści, a następnie inteligentnie przepisuje je dla unikalnego stylu każdej platformy."
+        "title": "AI przekształca",
+        "desc": "Twoja treść jest transkrybowana, rozumiana i przepisywana dla unikalnego głosu każdej platformy."
       },
       {
         "title": "Publikuj wszędzie",
-        "desc": "Otrzymaj dopracowane treści dla WeChat, Twitter, LinkedIn, Xiaohongshu, blogów i innych. Kopiuj, pobieraj lub udostępniaj natychmiast."
-      }
-    ]
-  },
-  "features": {
-    "label": "Funkcje",
-    "title": "Wszystko, czego potrzebujesz, aby",
-    "highlight": "skalować swoje treści",
-    "subtitle": "Stworzone dla twórców, którzy chcą maksymalnie wykorzystać każdą wyprodukowaną treść.",
-    "list": [
-      {
-        "title": "Przepisywanie oparte na AI",
-        "desc": "Nie tylko transkrypcja — nasze AI rozumie kontekst i przepisuje treści dla unikalnego głosu i formatu każdej platformy."
-      },
-      {
-        "title": "10 formatów wyjściowych",
-        "desc": "Posty na bloga, wątki na Twitterze, posty na LinkedIn, notatki na Xiaohongshu, newslettery, napisy SRT, artykuły SEO i więcej."
-      },
-      {
-        "title": "Ponad 63 języki",
-        "desc": "Transkrybuj i generuj treści w ponad 63 językach. Idealne dla międzynarodowych twórców i globalnej publiczności."
-      },
-      {
-        "title": "Generowanie strumieniowe",
-        "desc": "Obserwuj treści pojawiające się znak po znaku w czasie rzeczywistym. Koniec z czekaniem na wskaźniki ładowania."
-      },
-      {
-        "title": "Dopracowanie konwersacyjne",
-        "desc": "Rozmawiaj z każdym wyjściem, aby je dostroić. Powiedz „zrób krótsze” lub „dodaj emoji” — AI zastosuje to natychmiast."
-      },
-      {
-        "title": "6 formatów eksportu",
-        "desc": "Pobierz jako Markdown, TXT, PDF, DOCX, SRT lub CSV. Gotowe do publikacji."
-      },
-      {
-        "title": "Udostępnianie i współpraca",
-        "desc": "Generuj linki do udostępniania dla członków zespołu, aby mogli przeglądać i współpracować nad treściami."
-      },
-      {
-        "title": "Prywatność i bezpieczeństwo",
-        "desc": "Twoje treści pozostają Twoje. Pliki są automatycznie usuwane po przetworzeniu. Brak przechowywania danych."
-      },
-      {
-        "title": "Inteligentne wykrywanie platform",
-        "desc": "Wklejasz link z YouTube? Sugerujemy blog + Twitter. Wklejasz z Bilibili? Sugerujemy WeChat + Xiaohongshu."
+        "desc": "Otrzymuj posty na bloga, wątki społecznościowe, newslettery i więcej. Kopiuj, pobieraj, gotowe."
       }
     ]
   },
   "highlights": {
     "label": "Dlaczego ailomo",
-    "title": "Zbudowane inaczej.",
-    "highlight": "AI-first od podstaw"
+    "title": "Zbudowany inaczej. ",
+    "highlight": "AI-Native",
+    "items": [
+      {
+        "badge": "Inteligencja",
+        "title": "Nie tylko transkrypcja",
+        "desc": "Nasze AI analizuje kontekst, wyciąga wnioski i generuje treści zoptymalizowane pod odbiorców każdej platformy."
+      },
+      {
+        "badge": "Dystrybucja",
+        "title": "Jeden klik, każda platforma",
+        "desc": "Wszystkie 10 formatów generowanych jednocześnie. Od długich form blogowych po wątki społecznościowe — wszystko gotowe w kilka sekund."
+      },
+      {
+        "badge": "Dopracowanie",
+        "title": "Rozmawiaj ze swoją treścią",
+        "desc": "Każde wyjście ma wbudowany czat AI. „Dodaj więcej danych”, „zrób to bardziej wyraziste” — zmiany stosowane natychmiast."
+      }
+    ]
+  },
+  "features": {
+    "label": "Funkcje",
+    "title": "Wszystko, aby ",
+    "highlight": "skalować treści",
+    "subtitle": "Zbudowane dla twórców, którzy zamieniają każdy element treści w maksymalny wpływ.",
+    "list": [
+      {
+        "title": "Przepisywanie oparte na AI",
+        "desc": "Nie tylko transkrypcja — nasze AI rozumie kontekst i przepisuje dla unikalnego głosu każdej platformy."
+      },
+      {
+        "title": "10 formatów wyjściowych",
+        "desc": "Posty na bloga, wątki na Twitterze, LinkedIn, Xiaohongshu, newslettery, napisy SRT, artykuły SEO i więcej."
+      },
+      {
+        "title": "63+ języki",
+        "desc": "Transkrybuj i generuj w 63+ językach. Zbudowane dla międzynarodowych twórców."
+      },
+      {
+        "title": "Generowanie strumieniowe",
+        "desc": "Treść pojawia się znak po znaku w czasie rzeczywistym. Bez czekania na wskaźniki ładowania."
+      },
+      {
+        "title": "Dopracowanie konwersacyjne",
+        "desc": "Rozmawiaj z każdym wyjściem, aby je dostroić. „Zrób to krótsze” — gotowe."
+      },
+      {
+        "title": "6 formatów eksportu",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Gotowe do natychmiastowej publikacji."
+      },
+      {
+        "title": "Udostępnianie i współpraca",
+        "desc": "Generuj linki dla członków zespołu, aby mogli przeglądać i współpracować nad Twoimi treściami."
+      },
+      {
+        "title": "Prywatność i bezpieczeństwo",
+        "desc": "Pliki usuwane po przetworzeniu. Twoje treści nigdy nie są używane do trenowania."
+      },
+      {
+        "title": "Inteligentne wykrywanie",
+        "desc": "Link YouTube? → Blog + Twitter. Bilibili? → WeChat + Xiaohongshu. Automatycznie."
+      }
+    ]
   },
   "formats": {
     "outputLabel": "Formaty wyjściowe",
-    "outputTitle": "10 formatów,",
+    "outputTitle": "10 formatów, ",
     "outputHighlight": "jeden klik",
     "outputSubtitle": "Generuj wszystko jednocześnie — nie musisz uruchamiać narzędzia wielokrotnie.",
+    "formatNames": [
+      "Post na bloga",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "Artykuł SEO",
+      "Newsletter",
+      "Napisy SRT",
+      "Podsumowanie AI",
+      "Mapa myśli"
+    ],
     "langLabel": "Globalny zasięg",
-    "langTitle": "Obsługa ponad 63 języków",
-    "langSubtitle": "Transkrybuj i generuj treści w ponad 63 językach. Idealne dla międzynarodowych twórców i globalnej publiczności.",
+    "langTitle": "Obsługa 63+ języków",
+    "langSubtitle": "Transkrybuj i generuj treści w 63+ językach. Idealne dla międzynarodowych twórców i globalnych odbiorców.",
     "more": "+45 więcej"
   },
   "social": {
@@ -118,7 +152,7 @@
     },
     "testimonials": [
       {
-        "text": "\"Wreszcie narzędzie, które rozumie proces tworzenia treści. Jeden film → wszystkie platformy w minutach. Zmienia zasady gry w moim harmonogramie treści.\"",
+        "text": "\"Wreszcie narzędzie, które rozumie workflow tworzenia treści. Jeden film → wszystkie platformy w minutach. Zmienia zasady gry w moim harmonogramie treści.\"",
         "author": "Sarah Chen",
         "role": "Twórca treści"
       },
@@ -133,7 +167,7 @@
         "role": "Prowadzący podcast"
       },
       {
-        "text": "\"Jako samodzielny założyciel, to narzędzie daje mi wydajność całego zespołu treści. Posty na LinkedIn, blogi, tweety — wszystko z jednego filmu.\"",
+        "text": "\"Jako samodzielny założyciel, to narzędzie daje mi wyniki całego zespołu treści. Posty na LinkedIn, blogi, tweety — wszystko z jednego filmu.\"",
         "author": "Alex Park",
         "role": "Założyciel startupu"
       }
@@ -141,44 +175,142 @@
   },
   "pricing": {
     "label": "Cennik",
-    "title": "Prosty,",
+    "title": "Prosty, ",
     "highlight": "przejrzysty",
     "suffix": "cennik",
-    "subtitle": "Zacznij za darmo, zaktualizuj, gdy potrzebujesz więcej. Bez ukrytych opłat.",
+    "subtitle": "Zacznij za darmo, ulepsz, gdy potrzebujesz więcej. Bez ukrytych opłat. Anuluj w każdej chwili.",
+    "enterprise": "Potrzebujesz więcej? ",
+    "enterpriseLink": "Skontaktuj się z nami",
+    "enterpriseSuffix": " w sprawie cennika dla firm.",
     "plans": {
       "free": {
         "name": "Darmowy",
         "desc": "Idealny do wypróbowania",
-        "cta": "Rozpocznij"
+        "cta": "Rozpocznij",
+        "features": [
+          "3 filmy/miesiąc",
+          "5 formatów wyjściowych",
+          "Podstawowy model AI",
+          "120 minut transkrypcji",
+          "Wsparcie społeczności"
+        ]
       },
       "creator": {
         "name": "Twórca",
         "desc": "Dla poważnych twórców treści",
-        "cta": "Rozpocznij darmowy okres próbny",
-        "badge": "Najpopularniejszy"
+        "cta": "Subskrybuj teraz",
+        "badge": "Najpopularniejszy",
+        "features": [
+          "30 filmów/miesiąc",
+          "Wszystkie 10 formatów wyjściowych",
+          "Premium model AI",
+          "1200 minut transkrypcji",
+          "Dopracowanie konwersacyjne",
+          "Priorytetowe wsparcie",
+          "Dostęp do API"
+        ]
       },
       "pro": {
         "name": "Pro",
         "desc": "Dla zespołów i agencji",
-        "cta": "Rozpocznij darmowy okres próbny"
+        "cta": "Subskrybuj teraz",
+        "features": [
+          "Nielimitowane filmy",
+          "Wszystkie formaty + niestandardowe",
+          "Premium AI + niestandardowy ton",
+          "6000 minut transkrypcji",
+          "Współpraca zespołowa",
+          "Eksport white-label",
+          "Dedykowane wsparcie",
+          "Panel analityczny"
+        ]
       }
     }
   },
   "cta": {
-    "title": "Gotowy, aby",
-    "highlight": "zwielokrotnić swoje treści 10-krotnie",
-    "suffix": "?",
-    "subtitle": "Dołącz do tysięcy twórców, którzy zamieniają każdy film w kompletną strategię treści na wielu platformach. Zacznij za darmo — bez karty kredytowej.",
+    "title": "Gotowy, aby ",
+    "highlight": "10-krotnie zwiększyć",
+    "suffix": " wyniki treści?",
+    "subtitle": "Dołącz do tysięcy twórców, którzy zamieniają każdy film w kompletną strategię treści na wiele platform. Zacznij za darmo — bez karty kredytowej.",
     "start": "Zacznij za darmo",
     "pricing": "Zobacz cennik"
   },
   "faq": {
     "label": "FAQ",
-    "title": "Często zadawane pytania"
+    "title": "Najczęściej zadawane ",
+    "highlight": "pytania",
+    "items": [
+      {
+        "q": "Czy naprawdę można zacząć za darmo?",
+        "a": "Tak! Darmowy plan daje 3 filmy/miesiąc z 5 formatami wyjściowymi. Bez karty kredytowej."
+      },
+      {
+        "q": "Które języki obsługujecie?",
+        "a": "63+ języki do transkrypcji i generowania treści."
+      },
+      {
+        "q": "Dla jakich platform mogę przekształcać treści?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blogi, Medium, Substack, newslettery i więcej."
+      },
+      {
+        "q": "Jak długo to trwa?",
+        "a": "Większość filmów przetwarzana w mniej niż 1 minutę. Treści są strumieniowane w czasie rzeczywistym."
+      },
+      {
+        "q": "Czy mogę dopracować treści wygenerowane przez AI?",
+        "a": "Tak! Rozmawiaj z każdym wyjściem, aby dostosować ton, długość, styl lub dodać elementy."
+      },
+      {
+        "q": "Jakie formaty plików mogę przesłać?",
+        "a": "Audio: MP3, WAV, M4A, FLAC, OGG. Wideo: MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "Czy moje dane są bezpieczne?",
+        "a": "Tak. Pliki usuwane po przetworzeniu. Nigdy nie używane do trenowania."
+      },
+      {
+        "q": "Czy mogę anulować w każdej chwili?",
+        "a": "Tak, anuluj w każdej chwili. Bez długoterminowych umów."
+      }
+    ]
   },
   "footer": {
-    "tagline": "Przekształcanie treści oparte na AI. Zamień jeden film w całą swoją strategię treści na wielu platformach.",
+    "tagline": "Przetwarzanie treści oparte na AI. Zamień jeden film w całą strategię treści na wiele platform.",
     "copyright": "Wszelkie prawa zastrzeżone.",
-    "builtWith": "Stworzone dla twórców treści na całym świecie"
+    "builtWith": "Zbudowane dla twórców treści na całym świecie",
+    "sections": {
+      "product": "Produkt",
+      "tools": "Narzędzia",
+      "legal": "Prawne",
+      "company": "Firma"
+    },
+    "links": {
+      "features": "Funkcje",
+      "pricing": "Cennik",
+      "faq": "FAQ",
+      "yt2blog": "YouTube na blog",
+      "vid2twitter": "Wideo na Twitter",
+      "vid2xhs": "Wideo na Xiaohongshu",
+      "podcast2article": "Podcast na artykuł",
+      "allTools": "Wszystkie narzędzia →",
+      "privacy": "Prywatność",
+      "terms": "Regulamin",
+      "github": "GitHub",
+      "contact": "Kontakt"
+    }
+  },
+  "workbench": {
+    "transcribing": "Transkrypcja",
+    "generating": "Generowanie treści",
+    "completed": "Ukończone",
+    "progress": "Postęp",
+    "cancel": "Anuluj",
+    "refineTitle": "Dopracuj - ",
+    "refinePlaceholder": "Powiedz AI, jak dostosować tę treść...",
+    "send": "Wyślij",
+    "copy": "Kopiuj",
+    "copied": "Skopiowano",
+    "download": "Pobierz",
+    "refine": "Dopracuj"
   }
 }

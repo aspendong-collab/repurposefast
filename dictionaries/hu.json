@@ -1,111 +1,145 @@
 {
   "nav": {
     "features": "Funkciók",
+    "howItWorks": "Hogyan működik",
     "pricing": "Árazás",
     "faq": "GYIK",
-    "tryFree": "Ingyenes kipróbálás"
+    "tryFree": "Próbáld ki ingyen"
   },
   "hero": {
     "badge": "AI-alapú tartalom-újrahasznosítás",
     "title": "Egy videóból",
-    "highlight": "A teljes tartalomstratégiád",
-    "subtitle": "Illessz be egy linket vagy tölts fel egy fájlt — az AI automatikusan átírja és újrahasznosítja a tartalmadat blogbejegyzésekké, közösségi szálakká, hírlevelekké és még sok mássá.",
-    "accent": "10x-es tartalomkibocsátás.",
+    "highlight": "Tartalom mindenhol",
+    "subtitle": "Illessz be egy YouTube-linket. Tölts fel egy podcastot. Dobj be egy szöveges átiratot.",
+    "accent": "az ailomo azonnal csiszolt tartalmat készít minden platformra.",
     "stats": {
       "languages": "Nyelvek",
-      "formats": "Kimeneti formátumok",
-      "speed": "Feldolgozási idő"
+      "formats": "Formátumok",
+      "speed": "Feldolgozás"
     },
     "tabs": {
       "url": "Link beillesztése",
-      "file": "Fájl feltöltése",
-      "text": "Szöveg beillesztése"
+      "file": "Feltöltés",
+      "text": "Szöveg"
     },
-    "placeholder": "Illessz be YouTube-, podcast- vagy bármilyen videó linket...",
+    "placeholder": "Illessz be egy YouTube-linket, podcast URL-t vagy bármilyen videót...",
     "generate": "Generálás",
+    "fileDropTitle": "Húzd ide a fájlodat",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — akár 500MB",
+    "textPlaceholder": "Illessz be egy átiratot vagy szöveget — az AI platformkész tartalommá alakítja...",
+    "noSignup": "Nincs szükség regisztrációra. Ingyenes kezdés.",
     "processing": "Feldolgozás...",
     "error": "Valami hiba történt",
     "tryAgain": "Próbáld újra",
-    "startOver": "Kezdd elölről",
+    "startOver": "Kezdd újra",
     "formatsGenerated": "formátum generálva"
   },
   "howItWorks": {
     "label": "Hogyan működik",
-    "title": "Videóból",
-    "highlight": "Többplatformos",
-    "suffix": "3 lépésben",
+    "title": "Videóból ",
+    "highlight": "többplatformos",
+    "suffix": " tartalom 3 lépésben",
     "steps": [
       {
-        "title": "Illeszd be vagy töltsd fel",
-        "desc": "Dobj be egy YouTube linket, tölts fel egy hangfájlt vagy illessz be szöveget. Nincs szükség konfigurációra — csak egy kattintás."
+        "title": "Illessz be vagy tölts fel",
+        "desc": "Dobj be egy YouTube-linket, tölts fel egy hangfájlt, vagy illessz be szöveget. Nulla konfiguráció."
       },
       {
-        "title": "Az AI varázsol",
-        "desc": "AI-unk átírja és megérti a tartalmadat, majd intelligensen újraírja azt az egyes platformok egyedi stílusához igazítva."
+        "title": "Az AI átalakítja",
+        "desc": "A tartalmad átírásra kerül, megértésre, és átírásra minden platform egyedi hangjához igazítva."
       },
       {
-        "title": "Publikálj mindenhová",
-        "desc": "Kész tartalmat kapsz WeChatre, Twitterre, LinkedInre, Xiaohongshura, blogokra és még sok másra. Másold ki, töltsd le vagy oszd meg azonnal."
+        "title": "Tedd közzé mindenhol",
+        "desc": "Kapsz blogbejegyzéseket, közösségi szálakat, hírleveleket és még többet. Másold ki, töltsd le, kész."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Miért az ailomo",
+    "title": "Más felépítésű. ",
+    "highlight": "AI-natív",
+    "items": [
+      {
+        "badge": "Intelligencia",
+        "title": "Nem csak átírás",
+        "desc": "Az AI elemzi a kontextust, kivonja az insightokat, és az egyes platformok közönségére optimalizált tartalmat generál."
+      },
+      {
+        "badge": "Terjesztés",
+        "title": "Egy kattintás, minden platform",
+        "desc": "Mind a 10 formátum egyidejűleg generálódik. A hosszú formátumú blogoktól a közösségi szálakig — minden másodpercek alatt kész."
+      },
+      {
+        "badge": "Finomítás",
+        "title": "Beszélgess a tartalmaddal",
+        "desc": "Minden kimenethez beépített AI chat tartozik. \"Adj hozzá több adatot\", \"tedd ütősebbé\" — a változtatások azonnal alkalmazásra kerülnek."
       }
     ]
   },
   "features": {
     "label": "Funkciók",
-    "title": "Minden, amire szükséged van",
-    "highlight": "Tartalmad skálázásához",
-    "subtitle": "Alkotóknak készült, akik minden egyes tartalomból a legtöbbet akarják kihozni.",
+    "title": "Minden, ami a ",
+    "highlight": "tartalom skálázásához",
+    "subtitle": "Alkotóknak készült, akik minden tartalomból maximális hatást hoznak ki.",
     "list": [
       {
-        "title": "AI-alapú újraírás",
-        "desc": "Nem csak átírás — az AI megérti a kontextust, és minden platform egyedi hangjához és formátumához igazítva írja újra."
+        "title": "AI-alapú átírás",
+        "desc": "Nem csak átírás — az AI megérti a kontextust, és minden platform egyedi hangjára írja át."
       },
       {
         "title": "10 kimeneti formátum",
-        "desc": "Blogbejegyzések, Twitter-szálak, LinkedIn-bejegyzések, Xiaohongshu-jegyzetek, hírlevelek, SRT feliratok, SEO cikkek és még sok más."
+        "desc": "Blogbejegyzések, Twitter-szálak, LinkedIn, Xiaohongshu, hírlevelek, SRT feliratok, SEO cikkek, és még több."
       },
       {
         "title": "63+ nyelv",
-        "desc": "Átírás és tartalomgenerálás 63+ nyelven. Tökéletes nemzetközi alkotók és globális közönségek számára."
+        "desc": "Átírás és generálás 63+ nyelven. Nemzetközi alkotóknak készült."
       },
       {
         "title": "Streaming generálás",
-        "desc": "Lásd, ahogy a tartalom karakterről karakterre megjelenik valós időben. Nincs több várakozás a töltőspinnerekre."
+        "desc": "A tartalom karakterről karakterre jelenik meg valós időben. Nincs várakozás forgó ikonokra."
       },
       {
         "title": "Beszélgetéses finomítás",
-        "desc": "Beszélgess az egyes kimenetekkel a finomhangoláshoz. Mondd, hogy \"tedd rövidebbé\" vagy \"adj hozzá emojit\" — az AI azonnal alkalmazza."
+        "desc": "Beszélgess minden kimenettel a finomhangoláshoz. \"Tedd rövidebbé\" — kész."
       },
       {
-        "title": "6 exportformátum",
-        "desc": "Töltsd le Markdown, TXT, PDF, DOCX, SRT vagy CSV formátumban. Közvetlenül publikálásra készen."
+        "title": "6 export formátum",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Azonnal közzétehető."
       },
       {
         "title": "Megosztás és együttműködés",
-        "desc": "Generálj megosztható linkeket a csapattársaidnak, hogy megtekinthessék és együtt dolgozhassanak a tartalmon."
+        "desc": "Generálj linkeket csapattársaknak a tartalom megtekintéséhez és együttműködéséhez."
       },
       {
         "title": "Privát és biztonságos",
-        "desc": "A tartalmad a tiéd marad. A fájlok automatikusan törlődnek a feldolgozás után. Nincs adatmegőrzés."
+        "desc": "Fájlok törlődnek a feldolgozás után. A tartalmad soha nem kerül felhasználásra tanításhoz."
       },
       {
-        "title": "Intelligens platformfelismerés",
-        "desc": "Beillesztesz egy YouTube linket? Blogot + Twittert javaslunk. Beillesztesz Bilibilit? WeChatet + Xiaohongshut javaslunk."
+        "title": "Intelligens felismerés",
+        "desc": "YouTube link? → Blog + Twitter. Bilibili? → WeChat + Xiaohongshu. Automatikus."
       }
     ]
   },
-  "highlights": {
-    "label": "Miért ailomo",
-    "title": "Más felépítésű.",
-    "highlight": "AI-első az alapoktól"
-  },
   "formats": {
     "outputLabel": "Kimeneti formátumok",
-    "outputTitle": "10 formátum,",
-    "outputHighlight": "Egy kattintás",
+    "outputTitle": "10 formátum, ",
+    "outputHighlight": "egy kattintás",
     "outputSubtitle": "Generálj mindent egyszerre — nem kell többször futtatni az eszközt.",
+    "formatNames": [
+      "Blogbejegyzés",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "SEO cikk",
+      "Hírlevél",
+      "SRT feliratok",
+      "AI összefoglaló",
+      "Elmetérkép"
+    ],
     "langLabel": "Globális elérés",
     "langTitle": "63+ támogatott nyelv",
-    "langSubtitle": "Átírás és tartalomgenerálás 63+ nyelven. Tökéletes nemzetközi alkotók és globális közönségek számára.",
+    "langSubtitle": "Átírás és tartalomgenerálás 63+ nyelven. Tökéletes nemzetközi alkotóknak és globális közönségeknek.",
     "more": "+45 további"
   },
   "social": {
@@ -118,67 +152,165 @@
     },
     "testimonials": [
       {
-        "text": "\"Végre egy eszköz, ami érti a tartalomkészítés munkafolyamatát. Egy videó → minden platformra percek alatt. Játékmódosító a tartalomütemezésemben.\"",
+        "text": "\"Végre egy eszköz, ami érti a tartalomkészítés munkafolyamatát. Egy videó → minden platform percek alatt. Játékmódosító a tartalomütemezésemben.\"",
         "author": "Sarah Chen",
         "role": "Tartalomkészítő"
       },
       {
-        "text": "\"A beszélgetéses finomítás zseniális. Minden kimenetet testre szabhatok, csak beszélgetek vele. Hetente órákat spórol meg nekem.\"",
+        "text": "\"A beszélgetéses finomítás zseniális. Minden kimenetet finomhangolhatok azzal, hogy csak beszélgetek vele. Heti órákat spórol meg.\"",
         "author": "Marcus Rivera",
-        "role": "Marketingvezető"
+        "role": "Marketing vezető"
       },
       {
-        "text": "\"Szkeprikus voltam az AI-tartalommal kapcsolatban, de a minőség őszintén meglepett. A platform-specifikus formázás tökéletes.\"",
+        "text": "\"Skeptikus voltam az AI-tartalommal kapcsolatban, de a minőség őszintén meglepett. A platform-specifikus formázás tökéletes.\"",
         "author": "Yuki Tanaka",
-        "role": "Podcast-műsorvezető"
+        "role": "Podcast házigazda"
       },
       {
-        "text": "\"Egyéni alapítóként ez az eszköz egy tartalomcsapat teljesítményét adja. LinkedIn-bejegyzések, blogok, tweetek — mind egyetlen videóból.\"",
+        "text": "\"Egyéni alapítóként ez az eszköz egy tartalomcsapat teljesítményét adja. LinkedIn bejegyzések, blogok, tweetek — mind egy videóból.\"",
         "author": "Alex Park",
-        "role": "Startup-alapító"
+        "role": "Startup alapító"
       }
     ]
   },
   "pricing": {
     "label": "Árazás",
-    "title": "Egyszerű,",
-    "highlight": "Átlátható",
-    "suffix": "árazás",
-    "subtitle": "Kezdd ingyenesen, frissíts, ha többre van szükséged. Nincsenek rejtett díjak.",
+    "title": "Egyszerű, ",
+    "highlight": "átlátható",
+    "suffix": " árazás",
+    "subtitle": "Kezdd ingyen, frissíts, ha többre van szükséged. Nincsenek rejtett díjak. Lemondhatod bármikor.",
+    "enterprise": "Többre van szükséged? ",
+    "enterpriseLink": "Lépj kapcsolatba velünk",
+    "enterpriseSuffix": " a vállalati árazásért.",
     "plans": {
       "free": {
         "name": "Ingyenes",
         "desc": "Tökéletes a kipróbáláshoz",
-        "cta": "Kezdj hozzá"
+        "cta": "Kezdj hozzá",
+        "features": [
+          "3 videó/hónap",
+          "5 kimeneti formátum",
+          "Alap AI modell",
+          "120 perc átírás",
+          "Közösségi támogatás"
+        ]
       },
       "creator": {
         "name": "Alkotó",
         "desc": "Komoly tartalomkészítőknek",
-        "cta": "Ingyenes próba indítása",
-        "badge": "Legnépszerűbb"
+        "cta": "Feliratkozás most",
+        "badge": "Legnépszerűbb",
+        "features": [
+          "30 videó/hónap",
+          "Mind a 10 kimeneti formátum",
+          "Prémium AI modell",
+          "1 200 perc átírás",
+          "Beszélgetéses finomítás",
+          "Prioritásos támogatás",
+          "API hozzáférés"
+        ]
       },
       "pro": {
         "name": "Pro",
         "desc": "Csapatoknak és ügynökségeknek",
-        "cta": "Ingyenes próba indítása"
+        "cta": "Feliratkozás most",
+        "features": [
+          "Korlátlan videók",
+          "Minden formátum + egyedi",
+          "Prémium AI + egyedi hangnem",
+          "6 000 perc átírás",
+          "Csapat együttműködés",
+          "White-label export",
+          "Dedikált támogatás",
+          "Analitikai irányítópult"
+        ]
       }
     }
   },
   "cta": {
-    "title": "Készen állsz",
-    "highlight": "10x-es tartalomkibocsátásra",
+    "title": "Készen állsz a ",
+    "highlight": "tartalom 10x-esére",
     "suffix": "?",
-    "subtitle": "Csatlakozz több ezer alkotóhoz, akik minden videót egy teljes, többplatformos tartalomstratégiává alakítanak. Kezdd ingyenesen — nincs szükség bankkártyára.",
-    "start": "Kezdj ingyenesen",
+    "subtitle": "Csatlakozz több ezer alkotóhoz, akik minden videót egy teljes többplatformos tartalomstratégiává alakítanak. Kezdd ingyen — nincs szükség bankkártyára.",
+    "start": "Kezdj ingyen",
     "pricing": "Árazás megtekintése"
   },
   "faq": {
     "label": "GYIK",
-    "title": "Gyakran ismételt kérdések"
+    "title": "Gyakran Ismételt ",
+    "highlight": "Kérdések",
+    "items": [
+      {
+        "q": "Tényleg ingyenes a kezdés?",
+        "a": "Igen! Az ingyenes csomag 3 videót biztosít havonta 5 kimeneti formátummal. Nincs szükség bankkártyára."
+      },
+      {
+        "q": "Milyen nyelveket támogattok?",
+        "a": "63+ nyelvet az átíráshoz és a tartalomgeneráláshoz."
+      },
+      {
+        "q": "Milyen platformokra tudok tartalmat újrahasznosítani?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blogok, Medium, Substack, hírlevelek és még több."
+      },
+      {
+        "q": "Mennyi időbe telik?",
+        "a": "A legtöbb videó kevesebb mint 1 perc alatt feldolgozásra kerül. A tartalom valós időben streamelődik."
+      },
+      {
+        "q": "Finomíthatom az AI által generált tartalmat?",
+        "a": "Igen! Beszélgess minden kimenettel a hangnem, hossz, stílus beállításához vagy elemek hozzáadásához."
+      },
+      {
+        "q": "Milyen fájlformátumokat tudok feltölteni?",
+        "a": "Hang: MP3, WAV, M4A, FLAC, OGG. Videó: MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "Biztonságban vannak az adataim?",
+        "a": "Igen. A fájlok törlődnek a feldolgozás után. Soha nem használjuk őket tanításhoz."
+      },
+      {
+        "q": "Lemondhatom bármikor?",
+        "a": "Igen, bármikor lemondhatod. Nincsenek hosszú távú szerződések."
+      }
+    ]
   },
   "footer": {
-    "tagline": "AI-alapú tartalom-újrahasznosítás. Alakíts egy videót a teljes, többplatformos tartalomstratégiáddá.",
+    "tagline": "AI-alapú tartalom-újrahasznosítás. Egy videóból a teljes többplatformos tartalomstratégiád.",
     "copyright": "Minden jog fenntartva.",
-    "builtWith": "Világszerte tartalomkészítőknek készült"
+    "builtWith": "Tartalomkészítőknek világszerte",
+    "sections": {
+      "product": "Termék",
+      "tools": "Eszközök",
+      "legal": "Jogi",
+      "company": "Cég"
+    },
+    "links": {
+      "features": "Funkciók",
+      "pricing": "Árazás",
+      "faq": "GYIK",
+      "yt2blog": "YouTube-ból blog",
+      "vid2twitter": "Videóból Twitter",
+      "vid2xhs": "Videóból Xiaohongshu",
+      "podcast2article": "Podcastból cikk",
+      "allTools": "Minden eszköz →",
+      "privacy": "Adatvédelem",
+      "terms": "Feltételek",
+      "github": "GitHub",
+      "contact": "Kapcsolat"
+    }
+  },
+  "workbench": {
+    "transcribing": "Átírás",
+    "generating": "Tartalom generálása",
+    "completed": "Kész",
+    "progress": "Folyamat",
+    "cancel": "Mégse",
+    "refineTitle": "Finomítás - ",
+    "refinePlaceholder": "Mondd meg az AI-nak, hogyan állítsa be ezt a tartalmat...",
+    "send": "Küldés",
+    "copy": "Másolás",
+    "copied": "Másolva",
+    "download": "Letöltés",
+    "refine": "Finomítás"
   }
 }

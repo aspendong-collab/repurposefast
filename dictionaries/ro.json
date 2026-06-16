@@ -1,6 +1,7 @@
 {
   "nav": {
-    "features": "Funcții",
+    "features": "Caracteristici",
+    "howItWorks": "Cum funcționează",
     "pricing": "Prețuri",
     "faq": "Întrebări frecvente",
     "tryFree": "Încearcă gratuit"
@@ -8,21 +9,25 @@
   "hero": {
     "badge": "Reutilizare a conținutului bazată pe AI",
     "title": "Transformă un videoclip în",
-    "highlight": "Întreaga ta strategie de conținut",
-    "subtitle": "Lipește un link sau încarcă un fișier — AI transcrie automat și reutilizează conținutul tău în articole de blog, fire sociale, newslettere și multe altele.",
-    "accent": "Multiplică-ți producția de conținut de 10 ori.",
+    "highlight": "conținut peste tot",
+    "subtitle": "Lipește un link YouTube. Încarcă un podcast. Adaugă o transcriere text.",
+    "accent": "ailomo creează instantaneu conținut rafinat pentru fiecare platformă.",
     "stats": {
       "languages": "Limbi",
-      "formats": "Formate de ieșire",
-      "speed": "Timp de procesare"
+      "formats": "Formate",
+      "speed": "Procesare"
     },
     "tabs": {
-      "url": "Lipește link",
-      "file": "Încarcă fișier",
-      "text": "Lipește text"
+      "url": "Lipește linkul",
+      "file": "Încărcare",
+      "text": "Text"
     },
-    "placeholder": "Lipește link YouTube, podcast sau orice videoclip...",
+    "placeholder": "Lipește un link YouTube, URL de podcast sau orice videoclip...",
     "generate": "Generează",
+    "fileDropTitle": "Plasează fișierul aici",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — până la 500MB",
+    "textPlaceholder": "Lipește transcrierea sau textul — AI îl transformă în conținut gata pentru platforme...",
+    "noSignup": "Nu este necesară înregistrarea. Începe gratuit.",
     "processing": "Se procesează...",
     "error": "Ceva nu a funcționat",
     "tryAgain": "Încearcă din nou",
@@ -31,85 +36,114 @@
   },
   "howItWorks": {
     "label": "Cum funcționează",
-    "title": "De la videoclip la",
-    "highlight": "Multi-Platformă",
+    "title": "De la videoclip la ",
+    "highlight": "multi-platformă",
     "suffix": "în 3 pași",
     "steps": [
       {
         "title": "Lipește sau încarcă",
-        "desc": "Adaugă un link YouTube, încarcă un fișier audio sau lipește text. Nu e nevoie de configurare — un singur clic."
+        "desc": "Adaugă un link YouTube, încarcă un fișier audio sau lipește text. Zero configurare."
       },
       {
-        "title": "AI își face magia",
-        "desc": "AI transcrie și înțelege conținutul tău, apoi îl rescrie inteligent pentru stilul unic al fiecărei platforme."
+        "title": "AI îl transformă",
+        "desc": "Conținutul tău este transcris, înțeles și rescris pentru vocea unică a fiecărei platforme."
       },
       {
         "title": "Publică peste tot",
-        "desc": "Primește conținut rafinat pentru WeChat, Twitter, LinkedIn, Xiaohongshu, bloguri și multe altele. Copiază, descarcă sau distribuie instantaneu."
-      }
-    ]
-  },
-  "features": {
-    "label": "Funcții",
-    "title": "Tot ce ai nevoie pentru a",
-    "highlight": "Scala conținutul",
-    "subtitle": "Construit pentru creatori care vor să maximizeze fiecare bucată de conținut produsă.",
-    "list": [
-      {
-        "title": "Rescriere bazată pe AI",
-        "desc": "Nu doar transcriere — AI înțelege contextul și rescrie pentru vocea și formatul unic al fiecărei platforme."
-      },
-      {
-        "title": "10 formate de ieșire",
-        "desc": "Articole de blog, fire Twitter, postări LinkedIn, note Xiaohongshu, newslettere, subtitrări SRT, articole SEO și multe altele."
-      },
-      {
-        "title": "Peste 63 de limbi",
-        "desc": "Transcrie și generează conținut în peste 63 de limbi. Perfect pentru creatori internaționali și audiențe globale."
-      },
-      {
-        "title": "Generare în flux",
-        "desc": "Vezi conținutul apărând caracter cu caracter în timp real. Nu mai aștepta după încărcătoare."
-      },
-      {
-        "title": "Rafinare conversațională",
-        "desc": "Discută cu fiecare ieșire pentru a o ajusta. Spune „fă-o mai scurtă” sau „adaugă emoji” — AI aplică instantaneu."
-      },
-      {
-        "title": "6 formate de export",
-        "desc": "Descarcă în Markdown, TXT, PDF, DOCX, SRT sau CSV. Gata de publicare direct."
-      },
-      {
-        "title": "Partajare și colaborare",
-        "desc": "Generează linkuri partajabile pentru ca colegii tăi să vadă și să colaboreze la conținut."
-      },
-      {
-        "title": "Privat și sigur",
-        "desc": "Conținutul tău rămâne al tău. Fișierele sunt șterse automat după procesare. Fără reținere de date."
-      },
-      {
-        "title": "Detectare inteligentă a platformei",
-        "desc": "Lipești un link YouTube? Sugerăm blog + Twitter. Lipești Bilibili? Sugerăm WeChat + Xiaohongshu."
+        "desc": "Obține articole de blog, fire sociale, newslettere și multe altele. Copiază, descarcă, gata."
       }
     ]
   },
   "highlights": {
     "label": "De ce ailomo",
-    "title": "Construit diferit.",
-    "highlight": "AI-First de la zero"
+    "title": "Construit diferit. ",
+    "highlight": "AI-Nativ",
+    "items": [
+      {
+        "badge": "Inteligență",
+        "title": "Nu doar transcriere",
+        "desc": "AI-ul nostru analizează contextul, extrage informații și generează conținut optimizat pentru publicul fiecărei platforme."
+      },
+      {
+        "badge": "Distribuție",
+        "title": "Un click, fiecare platformă",
+        "desc": "Toate cele 10 formate generate simultan. De la bloguri lungi la fire sociale — totul gata în câteva secunde."
+      },
+      {
+        "badge": "Rafinare",
+        "title": "Conversație cu conținutul tău",
+        "desc": "Fiecare rezultat are un chat AI încorporat. „Adaugă mai multe date”, „fă-l mai dinamic” — modificările se aplică instantaneu."
+      }
+    ]
+  },
+  "features": {
+    "label": "Caracteristici",
+    "title": "Totul pentru a ",
+    "highlight": "scala conținutul",
+    "subtitle": "Construit pentru creatori care transformă fiecare conținut în impact maxim.",
+    "list": [
+      {
+        "title": "Rescriere bazată pe AI",
+        "desc": "Nu doar transcriere — AI-ul nostru înțelege contextul și rescrie pentru vocea unică a fiecărei platforme."
+      },
+      {
+        "title": "10 formate de ieșire",
+        "desc": "Articole de blog, fire Twitter, LinkedIn, Xiaohongshu, newslettere, subtitrări SRT, articole SEO, și multe altele."
+      },
+      {
+        "title": "Peste 63 de limbi",
+        "desc": "Transcrie și generează în peste 63 de limbi. Construit pentru creatori internaționali."
+      },
+      {
+        "title": "Generare în flux",
+        "desc": "Conținutul apare caracter cu caracter în timp real. Fără așteptare pentru încărcare."
+      },
+      {
+        "title": "Rafinare conversațională",
+        "desc": "Conversație cu fiecare rezultat pentru a-l ajusta. „Fă-l mai scurt” — gata."
+      },
+      {
+        "title": "6 formate de export",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Gata de publicare instantaneu."
+      },
+      {
+        "title": "Partajare și colaborare",
+        "desc": "Generează linkuri pentru colegi pentru a vizualiza și colabora la conținutul tău."
+      },
+      {
+        "title": "Privat și sigur",
+        "desc": "Fișierele sunt șterse după procesare. Conținutul tău nu este folosit pentru antrenare."
+      },
+      {
+        "title": "Detectare inteligentă",
+        "desc": "Link YouTube? → Blog + Twitter. Bilibili? → WeChat + Xiaohongshu. Automat."
+      }
+    ]
   },
   "formats": {
     "outputLabel": "Formate de ieșire",
-    "outputTitle": "10 formate,",
-    "outputHighlight": "Un singur clic",
-    "outputSubtitle": "Generează totul simultan — nu e nevoie să rulezi instrumentul de mai multe ori.",
+    "outputTitle": "10 formate, ",
+    "outputHighlight": "un click",
+    "outputSubtitle": "Generează totul simultan — nu este nevoie să rulezi instrumentul de mai multe ori.",
+    "formatNames": [
+      "Articol de blog",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "Articol SEO",
+      "Newsletter",
+      "Subtitrări SRT",
+      "Rezumat AI",
+      "Hartă mentală"
+    ],
     "langLabel": "Acoperire globală",
     "langTitle": "Peste 63 de limbi suportate",
     "langSubtitle": "Transcrie și generează conținut în peste 63 de limbi. Perfect pentru creatori internaționali și audiențe globale.",
     "more": "+45 în plus"
   },
   "social": {
-    "label": "Încredințat de creatori",
+    "label": "Încrederea creatorilor",
     "stats": {
       "users": "Utilizatori activi",
       "videos": "Videoclipuri procesate",
@@ -123,17 +157,17 @@
         "role": "Creator de conținut"
       },
       {
-        "text": "\"Rafinarea conversațională este genială. Pot ajusta fiecare ieșire doar discutând cu ea. Îmi economisește ore în fiecare săptămână.\"",
+        "text": "\"Rafinarea conversațională este genială. Pot ajusta fiecare rezultat doar conversând cu el. Îmi economisește ore în fiecare săptămână.\"",
         "author": "Marcus Rivera",
         "role": "Responsabil marketing"
       },
       {
         "text": "\"Eram sceptic în privința conținutului AI, dar calitatea m-a surprins cu adevărat. Formatarea specifică platformei este perfectă.\"",
         "author": "Yuki Tanaka",
-        "role": "Prezentator de podcast"
+        "role": "Gazdă de podcast"
       },
       {
-        "text": "\"Ca fondator solo, acest instrument îmi oferă producția unei echipe de conținut. Postări LinkedIn, bloguri, tweeturi — toate dintr-un singur videoclip.\"",
+        "text": "\"Ca fondator solo, acest instrument îmi oferă rezultatul unei echipe de conținut. Postări LinkedIn, bloguri, tweeturi — toate dintr-un singur videoclip.\"",
         "author": "Alex Park",
         "role": "Fondator startup"
       }
@@ -141,44 +175,142 @@
   },
   "pricing": {
     "label": "Prețuri",
-    "title": "Prețuri",
-    "highlight": "Transparente",
-    "suffix": "simple",
-    "subtitle": "Începe gratuit, actualizează când ai nevoie de mai mult. Fără taxe ascunse.",
+    "title": "Prețuri ",
+    "highlight": "simple, transparente",
+    "suffix": "",
+    "subtitle": "Începe gratuit, actualizează când ai nevoie de mai mult. Fără taxe ascunse. Anulează oricând.",
+    "enterprise": "Ai nevoie de mai mult? ",
+    "enterpriseLink": "Contactează-ne",
+    "enterpriseSuffix": " pentru prețuri enterprise.",
     "plans": {
       "free": {
         "name": "Gratuit",
-        "desc": "Perfect pentru încercare",
-        "cta": "Începe acum"
+        "desc": "Perfect pentru a încerca",
+        "cta": "Începe",
+        "features": [
+          "3 videoclipuri/lună",
+          "5 formate de ieșire",
+          "Model AI de bază",
+          "120 minute transcriere",
+          "Suport comunitar"
+        ]
       },
       "creator": {
         "name": "Creator",
         "desc": "Pentru creatori serioși de conținut",
-        "cta": "Începe perioada de probă gratuită",
-        "badge": "Cel mai popular"
+        "cta": "Abonează-te acum",
+        "badge": "Cel mai popular",
+        "features": [
+          "30 videoclipuri/lună",
+          "Toate cele 10 formate de ieșire",
+          "Model AI premium",
+          "1.200 minute transcriere",
+          "Rafinare conversațională",
+          "Suport prioritar",
+          "Acces API"
+        ]
       },
       "pro": {
         "name": "Pro",
         "desc": "Pentru echipe și agenții",
-        "cta": "Începe perioada de probă gratuită"
+        "cta": "Abonează-te acum",
+        "features": [
+          "Videoclipuri nelimitate",
+          "Toate formatele + personalizate",
+          "AI premium + ton personalizat",
+          "6.000 minute transcriere",
+          "Colaborare în echipă",
+          "Export white-label",
+          "Suport dedicat",
+          "Tablou de bord analitic"
+        ]
       }
     }
   },
   "cta": {
-    "title": "Pregătit să",
-    "highlight": "multiplici conținutul de 10 ori",
-    "suffix": "?",
-    "subtitle": "Alătură-te miilor de creatori care transformă fiecare videoclip într-o strategie completă de conținut multi-platformă. Începe gratuit — nu e nevoie de card de credit.",
+    "title": "Pregătit să ",
+    "highlight": "înmulțești de 10 ori",
+    "suffix": " rezultatul conținutului tău?",
+    "subtitle": "Alătură-te miilor de creatori care transformă fiecare videoclip într-o strategie completă de conținut multi-platformă. Începe gratuit — nu este necesar card de credit.",
     "start": "Începe gratuit",
     "pricing": "Vezi prețurile"
   },
   "faq": {
     "label": "Întrebări frecvente",
-    "title": "Întrebări frecvente"
+    "title": "Întrebări ",
+    "highlight": "frecvente",
+    "items": [
+      {
+        "q": "Este cu adevărat gratuit să începi?",
+        "a": "Da! Planul gratuit îți oferă 3 videoclipuri/lună cu 5 formate de ieșire. Nu este necesar card de credit."
+      },
+      {
+        "q": "Ce limbi suportați?",
+        "a": "Peste 63 de limbi pentru transcriere și generare de conținut."
+      },
+      {
+        "q": "Pentru ce platforme pot reutiliza conținutul?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, bloguri, Medium, Substack, newslettere și multe altele."
+      },
+      {
+        "q": "Cât timp durează?",
+        "a": "Majoritatea videoclipurilor sunt procesate în mai puțin de 1 minut. Conținutul se transmite în timp real."
+      },
+      {
+        "q": "Pot rafina conținutul generat de AI?",
+        "a": "Da! Conversație cu fiecare rezultat pentru a ajusta tonul, lungimea, stilul sau pentru a adăuga elemente."
+      },
+      {
+        "q": "Ce formate de fișiere pot încărca?",
+        "a": "Audio: MP3, WAV, M4A, FLAC, OGG. Video: MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "Datele mele sunt în siguranță?",
+        "a": "Da. Fișierele sunt șterse după procesare. Nu sunt folosite pentru antrenare."
+      },
+      {
+        "q": "Pot anula oricând?",
+        "a": "Da, anulează oricând. Fără contracte pe termen lung."
+      }
+    ]
   },
   "footer": {
     "tagline": "Reutilizare a conținutului bazată pe AI. Transformă un videoclip în întreaga ta strategie de conținut multi-platformă.",
     "copyright": "Toate drepturile rezervate.",
-    "builtWith": "Construit pentru creatorii de conținut din întreaga lume"
+    "builtWith": "Construit pentru creatorii de conținut din întreaga lume",
+    "sections": {
+      "product": "Produs",
+      "tools": "Instrumente",
+      "legal": "Legal",
+      "company": "Companie"
+    },
+    "links": {
+      "features": "Caracteristici",
+      "pricing": "Prețuri",
+      "faq": "Întrebări frecvente",
+      "yt2blog": "YouTube în Blog",
+      "vid2twitter": "Video în Twitter",
+      "vid2xhs": "Video în Xiaohongshu",
+      "podcast2article": "Podcast în Articol",
+      "allTools": "Toate instrumentele →",
+      "privacy": "Confidențialitate",
+      "terms": "Termeni",
+      "github": "GitHub",
+      "contact": "Contact"
+    }
+  },
+  "workbench": {
+    "transcribing": "Se transcrie",
+    "generating": "Se generează conținutul",
+    "completed": "Finalizat",
+    "progress": "Progres",
+    "cancel": "Anulează",
+    "refineTitle": "Rafinează - ",
+    "refinePlaceholder": "Spune AI cum să ajusteze acest conținut...",
+    "send": "Trimite",
+    "copy": "Copiază",
+    "copied": "Copiat",
+    "download": "Descarcă",
+    "refine": "Rafinează"
   }
 }

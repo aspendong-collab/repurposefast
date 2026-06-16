@@ -1,28 +1,33 @@
 {
   "nav": {
     "features": "Funktioner",
+    "howItWorks": "Så fungerar det",
     "pricing": "Priser",
     "faq": "FAQ",
     "tryFree": "Prova gratis"
   },
   "hero": {
-    "badge": "AI-driven återanvändning av innehåll",
-    "title": "Förvandla en video till",
-    "highlight": "Hela din innehållsstrategi",
-    "subtitle": "Klistra in en länk eller ladda upp en fil — AI transkriberar och återanvänder automatiskt ditt innehåll till blogginlägg, sociala trådar, nyhetsbrev och mer.",
-    "accent": "10x din innehållsproduktion.",
+    "badge": "AI-driven innehållsåteranvändning",
+    "title": "Gör en video till",
+    "highlight": "innehåll överallt",
+    "subtitle": "Klistra in en YouTube-länk. Ladda upp en podcast. Släpp en texttranskription.",
+    "accent": "ailomo skapar omedelbart polerat innehåll för varje plattform.",
     "stats": {
       "languages": "Språk",
-      "formats": "Utdataformat",
-      "speed": "Bearbetningstid"
+      "formats": "Format",
+      "speed": "Bearbetning"
     },
     "tabs": {
       "url": "Klistra in länk",
-      "file": "Ladda upp fil",
-      "text": "Klistra in text"
+      "file": "Ladda upp",
+      "text": "Text"
     },
-    "placeholder": "Klistra in YouTube, podcast eller valfri videolänk...",
+    "placeholder": "Klistra in en YouTube-länk, podcast-URL eller valfri video...",
     "generate": "Generera",
+    "fileDropTitle": "Släpp din fil här",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — upp till 500MB",
+    "textPlaceholder": "Klistra in din transkription eller text — AI omvandlar den till plattformsklar innehåll...",
+    "noSignup": "Ingen registrering krävs. Gratis att börja.",
     "processing": "Bearbetar...",
     "error": "Något gick fel",
     "tryAgain": "Försök igen",
@@ -30,82 +35,111 @@
     "formatsGenerated": "format genererade"
   },
   "howItWorks": {
-    "label": "Hur det fungerar",
-    "title": "Från video till",
-    "highlight": "Multiplattform",
-    "suffix": "på 3 steg",
+    "label": "Så fungerar det",
+    "title": "Från video till ",
+    "highlight": "multi-plattform",
+    "suffix": " på 3 steg",
     "steps": [
       {
         "title": "Klistra in eller ladda upp",
-        "desc": "Släpp en YouTube-länk, ladda upp en ljudfil eller klistra in text. Ingen konfiguration krävs — bara ett klick."
+        "desc": "Släpp en YouTube-länk, ladda upp en ljudfil eller klistra in text. Noll konfiguration."
       },
       {
-        "title": "AI gör sin magi",
-        "desc": "Vår AI transkriberar och förstår ditt innehåll, och skriver sedan intelligent om det för varje plattforms unika stil."
+        "title": "AI omvandlar det",
+        "desc": "Ditt innehåll transkriberas, förstås och skrivs om för varje plattforms unika röst."
       },
       {
         "title": "Publicera överallt",
-        "desc": "Få polerat innehåll för WeChat, Twitter, LinkedIn, Xiaohongshu, bloggar och mer. Kopiera, ladda ner eller dela direkt."
-      }
-    ]
-  },
-  "features": {
-    "label": "Funktioner",
-    "title": "Allt du behöver för att",
-    "highlight": "Skala ditt innehåll",
-    "subtitle": "Byggt för kreatörer som vill maximera varje innehåll de producerar.",
-    "list": [
-      {
-        "title": "AI-driven omskrivning",
-        "desc": "Inte bara transkription — vår AI förstår sammanhang och skriver om för varje plattforms unika röst och format."
-      },
-      {
-        "title": "10 utdataformat",
-        "desc": "Blogginlägg, Twitter-trådar, LinkedIn-inlägg, Xiaohongshu-anteckningar, nyhetsbrev, SRT-undertexter, SEO-artiklar och mer."
-      },
-      {
-        "title": "63+ språk",
-        "desc": "Transkribera och generera innehåll på 63+ språk. Perfekt för internationella kreatörer och globala målgrupper."
-      },
-      {
-        "title": "Strömmande generering",
-        "desc": "Se innehåll visas tecken för tecken i realtid. Ingen mer väntan på laddningsindikatorer."
-      },
-      {
-        "title": "Konversationsförfining",
-        "desc": "Chatta med varje utdata för att finjustera det. Säg \"gör det kortare\" eller \"lägg till emoji\" — AI tillämpar det direkt."
-      },
-      {
-        "title": "6 exportformat",
-        "desc": "Ladda ner som Markdown, TXT, PDF, DOCX, SRT eller CSV. Klart för publicering direkt."
-      },
-      {
-        "title": "Dela och samarbeta",
-        "desc": "Generera delbara länkar för dina teammedlemmar att visa och samarbeta på innehåll."
-      },
-      {
-        "title": "Privat och säkert",
-        "desc": "Ditt innehåll förblir ditt. Filer raderas automatiskt efter bearbetning. Ingen datalagring."
-      },
-      {
-        "title": "Smart plattformsdetektering",
-        "desc": "Klistra in en YouTube-länk? Vi föreslår blogg + Twitter. Klistra in Bilibili? Vi föreslår WeChat + Xiaohongshu."
+        "desc": "Få blogginlägg, sociala trådar, nyhetsbrev och mer. Kopiera, ladda ner, klart."
       }
     ]
   },
   "highlights": {
     "label": "Varför ailomo",
-    "title": "Byggt annorlunda.",
-    "highlight": "AI-först från grunden"
+    "title": "Byggd annorlunda. ",
+    "highlight": "AI-native",
+    "items": [
+      {
+        "badge": "Intelligens",
+        "title": "Inte bara transkription",
+        "desc": "Vår AI analyserar sammanhang, extraherar insikter och genererar innehåll optimerat för varje plattforms publik."
+      },
+      {
+        "badge": "Distribution",
+        "title": "Ett klick, varje plattform",
+        "desc": "Alla 10 format genereras samtidigt. Från långa bloggar till sociala trådar — allt klart på sekunder."
+      },
+      {
+        "badge": "Förfining",
+        "title": "Chatta med ditt innehåll",
+        "desc": "Varje utdata har en inbyggd AI-chatt. \"Lägg till mer data\", \"gör det slagkraftigare\" — ändringar tillämpas omedelbart."
+      }
+    ]
+  },
+  "features": {
+    "label": "Funktioner",
+    "title": "Allt för att ",
+    "highlight": "skala innehåll",
+    "subtitle": "Byggd för kreatörer som gör varje innehåll till maximal effekt.",
+    "list": [
+      {
+        "title": "AI-driven omskrivning",
+        "desc": "Inte bara transkription — vår AI förstår sammanhang och skriver om för varje plattforms unika röst."
+      },
+      {
+        "title": "10 utdataformat",
+        "desc": "Blogginlägg, Twitter-trådar, LinkedIn, Xiaohongshu, nyhetsbrev, SRT-undertexter, SEO-artiklar, mer."
+      },
+      {
+        "title": "63+ språk",
+        "desc": "Transkribera och generera på 63+ språk. Byggd för internationella kreatörer."
+      },
+      {
+        "title": "Strömmande generering",
+        "desc": "Innehåll visas tecken för tecken i realtid. Ingen väntan på snurror."
+      },
+      {
+        "title": "Konversationsförfining",
+        "desc": "Chatta med varje utdata för att finjustera det. \"Gör det kortare\" — klart."
+      },
+      {
+        "title": "6 exportformat",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Redo att publiceras omedelbart."
+      },
+      {
+        "title": "Dela & samarbeta",
+        "desc": "Generera länkar för teammedlemmar att visa och samarbeta på ditt innehåll."
+      },
+      {
+        "title": "Privat & säkert",
+        "desc": "Filer raderas efter bearbetning. Ditt innehåll används aldrig för träning."
+      },
+      {
+        "title": "Smart detektering",
+        "desc": "YouTube-länk? → Blogg + Twitter. Bilibili? → WeChat + Xiaohongshu. Automatiskt."
+      }
+    ]
   },
   "formats": {
     "outputLabel": "Utdataformat",
-    "outputTitle": "10 format,",
-    "outputHighlight": "Ett klick",
+    "outputTitle": "10 format, ",
+    "outputHighlight": "ett klick",
     "outputSubtitle": "Generera allt samtidigt — inget behov av att köra verktyget flera gånger.",
+    "formatNames": [
+      "Blogginlägg",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "SEO-artikel",
+      "Nyhetsbrev",
+      "SRT-undertexter",
+      "AI-sammanfattning",
+      "Mind Map"
+    ],
     "langLabel": "Global räckvidd",
-    "langTitle": "63+ språk som stöds",
-    "langSubtitle": "Transkribera och generera innehåll på 63+ språk. Perfekt för internationella kreatörer och globala målgrupper.",
+    "langTitle": "63+ språk stöds",
+    "langSubtitle": "Transkribera och generera innehåll på 63+ språk. Perfekt för internationella kreatörer och global publik.",
     "more": "+45 fler"
   },
   "social": {
@@ -125,15 +159,15 @@
       {
         "text": "\"Den konversationsbaserade förfiningen är briljant. Jag kan justera varje utdata genom att bara chatta med den. Sparar mig timmar varje vecka.\"",
         "author": "Marcus Rivera",
-        "role": "Marknadsföringsansvarig"
+        "role": "Marknadschef"
       },
       {
-        "text": "\"Jag var skeptisk till AI-innehåll, men kvaliteten överraskade mig verkligen. Plattformsspecifik formatering är perfekt.\"",
+        "text": "\"Jag var skeptisk till AI-innehåll, men kvaliteten överraskade mig verkligen. Den plattformsspecifika formateringen är perfekt.\"",
         "author": "Yuki Tanaka",
         "role": "Podcastvärd"
       },
       {
-        "text": "\"Som ensam grundare ger detta verktyg mig ett innehållsteams produktion. LinkedIn-inlägg, bloggar, tweets — allt från en video.\"",
+        "text": "\"Som ensam grundare ger detta verktyg mig en innehållsteams produktion. LinkedIn-inlägg, bloggar, tweets — allt från en video.\"",
         "author": "Alex Park",
         "role": "Startup-grundare"
       }
@@ -141,44 +175,142 @@
   },
   "pricing": {
     "label": "Priser",
-    "title": "Enkla,",
-    "highlight": "Transparenta",
-    "suffix": "priser",
-    "subtitle": "Börja gratis, uppgradera när du behöver mer. Inga dolda avgifter.",
+    "title": "Enkla, ",
+    "highlight": "transparenta",
+    "suffix": " priser",
+    "subtitle": "Börja gratis, uppgradera när du behöver mer. Inga dolda avgifter. Avsluta när som helst.",
+    "enterprise": "Behöver du mer? ",
+    "enterpriseLink": "Kontakta oss",
+    "enterpriseSuffix": " för företagspriser.",
     "plans": {
       "free": {
         "name": "Gratis",
         "desc": "Perfekt för att prova",
-        "cta": "Kom igång"
+        "cta": "Kom igång",
+        "features": [
+          "3 videor/månad",
+          "5 utdataformat",
+          "Grundläggande AI-modell",
+          "120 min transkription",
+          "Community-support"
+        ]
       },
       "creator": {
-        "name": "Kreatör",
+        "name": "Creator",
         "desc": "För seriösa innehållsskapare",
-        "cta": "Starta gratis provperiod",
-        "badge": "Mest populär"
+        "cta": "Prenumerera nu",
+        "badge": "Mest populär",
+        "features": [
+          "30 videor/månad",
+          "Alla 10 utdataformat",
+          "Premium AI-modell",
+          "1 200 min transkription",
+          "Konversationsförfining",
+          "Prioriterad support",
+          "API-åtkomst"
+        ]
       },
       "pro": {
         "name": "Pro",
         "desc": "För team och byråer",
-        "cta": "Starta gratis provperiod"
+        "cta": "Prenumerera nu",
+        "features": [
+          "Obegränsat med videor",
+          "Alla format + anpassade",
+          "Premium AI + anpassad ton",
+          "6 000 min transkription",
+          "Teamsamarbete",
+          "White-label-export",
+          "Dedikerad support",
+          "Analysdashboard"
+        ]
       }
     }
   },
   "cta": {
-    "title": "Redo att",
+    "title": "Redo att ",
     "highlight": "10x ditt innehåll",
-    "suffix": "utdata?",
-    "subtitle": "Gå med i tusentals kreatörer som förvandlar varje video till en komplett multiplattforms innehållsstrategi. Börja gratis — inget kreditkort krävs.",
+    "suffix": "?",
+    "subtitle": "Gå med i tusentals kreatörer som förvandlar varje video till en komplett multi-plattforms innehållsstrategi. Börja gratis — inget kreditkort krävs.",
     "start": "Börja gratis",
-    "pricing": "Visa priser"
+    "pricing": "Se priser"
   },
   "faq": {
     "label": "FAQ",
-    "title": "Vanliga frågor"
+    "title": "Vanliga frågor ",
+    "highlight": "och svar",
+    "items": [
+      {
+        "q": "Är det verkligen gratis att börja?",
+        "a": "Ja! Gratisplanen ger dig 3 videor/månad med 5 utdataformat. Inget kreditkort krävs."
+      },
+      {
+        "q": "Vilka språk stöder ni?",
+        "a": "63+ språk för transkription och innehållsgenerering."
+      },
+      {
+        "q": "Vilka plattformar kan jag återanvända innehåll för?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, bloggar, Medium, Substack, nyhetsbrev och mer."
+      },
+      {
+        "q": "Hur lång tid tar det?",
+        "a": "De flesta videor bearbetas på under 1 minut. Innehåll strömmas i realtid."
+      },
+      {
+        "q": "Kan jag förfina AI-genererat innehåll?",
+        "a": "Ja! Chatta med varje utdata för att justera ton, längd, stil eller lägga till element."
+      },
+      {
+        "q": "Vilka filformat kan jag ladda upp?",
+        "a": "Ljud: MP3, WAV, M4A, FLAC, OGG. Video: MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "Är min data säker?",
+        "a": "Ja. Filer raderas efter bearbetning. Används aldrig för träning."
+      },
+      {
+        "q": "Kan jag avsluta när som helst?",
+        "a": "Ja, avsluta när som helst. Inga långtidskontrakt."
+      }
+    ]
   },
   "footer": {
-    "tagline": "AI-driven återanvändning av innehåll. Förvandla en video till hela din multiplattforms innehållsstrategi.",
+    "tagline": "AI-driven innehållsåteranvändning. Gör en video till din hela multi-plattforms innehållsstrategi.",
     "copyright": "Alla rättigheter förbehållna.",
-    "builtWith": "Byggt för innehållsskapare världen över"
+    "builtWith": "Byggd för innehållsskapare världen över",
+    "sections": {
+      "product": "Produkt",
+      "tools": "Verktyg",
+      "legal": "Juridik",
+      "company": "Företag"
+    },
+    "links": {
+      "features": "Funktioner",
+      "pricing": "Priser",
+      "faq": "FAQ",
+      "yt2blog": "YouTube till blogg",
+      "vid2twitter": "Video till Twitter",
+      "vid2xhs": "Video till Xiaohongshu",
+      "podcast2article": "Podcast till artikel",
+      "allTools": "Alla verktyg →",
+      "privacy": "Integritet",
+      "terms": "Villkor",
+      "github": "GitHub",
+      "contact": "Kontakt"
+    }
+  },
+  "workbench": {
+    "transcribing": "Transkriberar",
+    "generating": "Genererar innehåll",
+    "completed": "Klar",
+    "progress": "Framsteg",
+    "cancel": "Avbryt",
+    "refineTitle": "Förfina - ",
+    "refinePlaceholder": "Berätta för AI hur detta innehåll ska justeras...",
+    "send": "Skicka",
+    "copy": "Kopiera",
+    "copied": "Kopierat",
+    "download": "Ladda ner",
+    "refine": "Förfina"
   }
 }

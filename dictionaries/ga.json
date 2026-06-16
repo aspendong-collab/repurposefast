@@ -1,29 +1,34 @@
 {
   "nav": {
     "features": "Gnéithe",
+    "howItWorks": "Conas a Oibríonn Sé",
     "pricing": "Praghsáil",
     "faq": "Ceisteanna Coitianta",
-    "tryFree": "Bain Triail As Saor in Aisce"
+    "tryFree": "Bain Triail Saor in Aisce"
   },
   "hero": {
-    "badge": "Athchóiriú Ábhar faoi Chumhacht AI",
-    "title": "Déan Físeán Amháin",
-    "highlight": "Do Straitéis Ábhar Iomlán",
-    "subtitle": "Greamaigh nasc nó uaslódáil comhad — déanann AI tras-scríobh agus athchóiriú uathoibríoch ar d'ábhar ina bhlagphoist, snáitheanna sóisialta, nuachtlitreacha, agus níos mó.",
-    "accent": "10x d'aschur ábhair.",
+    "badge": "Athúsáid Ábhar faoi Chumhacht AI",
+    "title": "Déan Físeán Amháin a Iompú Ina",
+    "highlight": "Ábhar i Ngach Áit",
+    "subtitle": "Greamaigh nasc YouTube. Uaslódáil podchraoladh. Scaoil athscríbhinn téacs.",
+    "accent": "Cruthaíonn ailomo ábhar snasta do gach ardán láithreach.",
     "stats": {
       "languages": "Teangacha",
-      "formats": "Formáidí Aschuir",
-      "speed": "Am Próiseála"
+      "formats": "Formáidí",
+      "speed": "Próiseáil"
     },
     "tabs": {
       "url": "Greamaigh Nasc",
-      "file": "Uaslódáil Comhad",
-      "text": "Greamaigh Téacs"
+      "file": "Uaslódáil",
+      "text": "Téacs"
     },
-    "placeholder": "Greamaigh nasc YouTube, podchraoladh, nó aon fhíseán...",
+    "placeholder": "Greamaigh nasc YouTube, URL podchraolta, nó aon fhíseán...",
     "generate": "Gin",
-    "processing": "Á Phróiseáil...",
+    "fileDropTitle": "Scaoil do chomhad anseo",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — suas le 500MB",
+    "textPlaceholder": "Greamaigh d'athscríbhinn nó do théacs — déanann AI é a chlaochlú ina ábhar réidh d'ardáin...",
+    "noSignup": "Ní gá clárú. Saor in aisce le tosú.",
+    "processing": "Á phróiseáil...",
     "error": "Tharla earráid",
     "tryAgain": "Bain triail eile as",
     "startOver": "Tosaigh arís",
@@ -31,109 +36,138 @@
   },
   "howItWorks": {
     "label": "Conas a Oibríonn Sé",
-    "title": "Ó Fhíseán go",
+    "title": "Ó Fhíseán go ",
     "highlight": "Il-Ardán",
     "suffix": "i 3 Chéim",
     "steps": [
       {
         "title": "Greamaigh nó Uaslódáil",
-        "desc": "Caith isteach nasc YouTube, uaslódáil comhad fuaime, nó greamaigh téacs. Ní gá aon chumraíocht — ach cliceáil amháin."
+        "desc": "Scaoil nasc YouTube, uaslódáil comhad fuaime, nó greamaigh téacs. Gan aon chumraíocht."
       },
       {
-        "title": "Déanann AI a Dhraíocht",
-        "desc": "Déanann ár AI tras-scríobh agus tuiscint ar d'ábhar, ansin athscríobhann sé go cliste é do stíl uathúil gach ardáin."
+        "title": "Claochlaíonn AI É",
+        "desc": "Déantar d'ábhar a thrascríobh, a thuiscint, agus a athscríobh do ghlór uathúil gach ardáin."
       },
       {
-        "title": "Foilsigh Gach Áit",
-        "desc": "Faigh ábhar snasta do WeChat, Twitter, LinkedIn, Xiaohongshu, blaganna, agus níos mó. Cóipeáil, íoslódáil, nó roinn láithreach."
-      }
-    ]
-  },
-  "features": {
-    "label": "Gnéithe",
-    "title": "Gach a Dhíth Ort chun",
-    "highlight": "d'Ábhar a Scálú",
-    "subtitle": "Tógtha do chruthaitheoirí ar mian leo an leas is fearr a bhaint as gach píosa ábhair a tháirgeann siad.",
-    "list": [
-      {
-        "title": "Athscríobh faoi Chumhacht AI",
-        "desc": "Ní hamháin tras-scríobh — tuigeann ár AI comhthéacs agus athscríobhann sé do ghuth agus formáid uathúil gach ardáin."
-      },
-      {
-        "title": "10 bhFormáid Aschuir",
-        "desc": "Blagphoist, snáitheanna Twitter, poist LinkedIn, nótaí Xiaohongshu, nuachtlitreacha, fotheidil SRT, ailt SEO, agus níos mó."
-      },
-      {
-        "title": "63+ Teanga",
-        "desc": "Déan tras-scríobh agus giniúint ábhair i 63+ teanga. Foirfe do chruthaitheoirí idirnáisiúnta agus lucht féachana domhanda."
-      },
-      {
-        "title": "Giniúint Sruthaithe",
-        "desc": "Feic an t-ábhar le feiceáil carachtar ar charachtar i bhfíor-am. Ní gá fanacht le ciorcail luchtaithe."
-      },
-      {
-        "title": "Mionchoigeartú Comhrá",
-        "desc": "Comhrá a dhéanamh le gach aschur chun é a mhionchoigeartú. Abair \"déan níos giorra é\" nó \"cuir emoji leis\" — cuireann AI i bhfeidhm láithreach é."
-      },
-      {
-        "title": "6 Formáid Easpórtála",
-        "desc": "Íoslódáil mar Markdown, TXT, PDF, DOCX, SRT, nó CSV. Réidh le foilsiú go díreach."
-      },
-      {
-        "title": "Roinn & Comhoibrigh",
-        "desc": "Gin naisc inroinnte do do chomhghleacaithe chun ábhar a fheiceáil agus comhoibriú air."
-      },
-      {
-        "title": "Príobháideach & Slán",
-        "desc": "Fanann d'ábhar leatsa. Scriostar comhaid go huathoibríoch tar éis próiseála. Gan aon choinneáil sonraí."
-      },
-      {
-        "title": "Braite Cliste Ardáin",
-        "desc": "Greamaigh nasc YouTube? Molaimid blag + Twitter. Greamaigh Bilibili? Molaimid WeChat + Xiaohongshu."
+        "title": "Foilsigh i Ngach Áit",
+        "desc": "Faigh blagphoist, snáitheanna sóisialta, nuachtlitreacha, agus níos mó. Cóipeáil, íoslódáil, déanta."
       }
     ]
   },
   "highlights": {
     "label": "Cén Fáth ailomo",
-    "title": "Tógtha ar Dhóigh Eile.",
-    "highlight": "AI-Céad Ón Tús"
+    "title": "Tógtha ar Dhóigh Eile. ",
+    "highlight": "Dúchasach AI",
+    "items": [
+      {
+        "badge": "Faisnéis",
+        "title": "Ní Trascríobh Amháin",
+        "desc": "Déanann ár AI anailís ar chomhthéacs, baineann sé léargais amach, agus gineann sé ábhar optamaithe do lucht féachana gach ardáin."
+      },
+      {
+        "badge": "Dáileadh",
+        "title": "Cliceáil Amháin, Gach Ardán",
+        "desc": "Gintear na 10 formáid go léir go comhuaineach. Ó bhlagphoist fhada go snáitheanna sóisialta — gach rud réidh i gceann soicind."
+      },
+      {
+        "badge": "Mionchoigeartú",
+        "title": "Comhrá le d'Ábhar",
+        "desc": "Tá comhrá AI ionsuite ag gach aschur. \"Cuir níos mó sonraí leis\", \"déan níos géire é\" — cuirtear athruithe i bhfeidhm láithreach."
+      }
+    ]
+  },
+  "features": {
+    "label": "Gnéithe",
+    "title": "Gach Rud chun ",
+    "highlight": "Ábhar a Scálú",
+    "subtitle": "Tógtha do chruthaitheoirí a iompaíonn gach píosa ábhair ina thionchar uasta.",
+    "list": [
+      {
+        "title": "Athscríobh faoi Chumhacht AI",
+        "desc": "Ní trascríobh amháin — tuigeann ár AI comhthéacs agus athscríobhann sé do ghlór uathúil gach ardáin."
+      },
+      {
+        "title": "10 Formáid Aschuir",
+        "desc": "Blagphoist, snáitheanna Twitter, LinkedIn, Xiaohongshu, nuachtlitreacha, fotheidil SRT, ailt SEO, agus níos mó."
+      },
+      {
+        "title": "63+ Teanga",
+        "desc": "Trascríobh agus giniúint i 63+ teanga. Tógtha do chruthaitheoirí idirnáisiúnta."
+      },
+      {
+        "title": "Giniúint Sruthaithe",
+        "desc": "Tá ábhar le feiceáil carachtar ar charachtar i bhfíor-am. Gan fanacht le ciorcail ag casadh."
+      },
+      {
+        "title": "Mionchoigeartú Comhrá",
+        "desc": "Comhrá le gach aschur chun é a mhionchoigeartú. \"Déan níos giorra é\" — déanta."
+      },
+      {
+        "title": "6 Formáid Easpórtála",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Réidh le foilsiú láithreach."
+      },
+      {
+        "title": "Comhroinn & Comhoibrigh",
+        "desc": "Gin naisc do chomhghleacaithe chun d'ábhar a fheiceáil agus comhoibriú air."
+      },
+      {
+        "title": "Príobháideach & Slán",
+        "desc": "Scriostar comhaid tar éis próiseála. Ní úsáidtear d'ábhar riamh le haghaidh oiliúna."
+      },
+      {
+        "title": "Braite Cliste",
+        "desc": "Nasc YouTube? → Blag + Twitter. Bilibili? → WeChat + Xiaohongshu. Uathoibríoch."
+      }
+    ]
   },
   "formats": {
     "outputLabel": "Formáidí Aschuir",
-    "outputTitle": "10 bhFormáid,",
+    "outputTitle": "10 Formáid, ",
     "outputHighlight": "Cliceáil Amháin",
-    "outputSubtitle": "Gin gach rud go comhuaineach — ní gá an uirlis a rith arís agus arís eile.",
-    "langLabel": "Sroicheadh Domhanda",
+    "outputSubtitle": "Gin gach rud go comhuaineach — gan gá an uirlis a rith arís agus arís eile.",
+    "formatNames": [
+      "Blagphost",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "Alt SEO",
+      "Nuachtlitir",
+      "Fotheidil SRT",
+      "Achoimre AI",
+      "Léarscáil Intinne"
+    ],
+    "langLabel": "Raon Domhanda",
     "langTitle": "63+ Teanga ar Fáil",
-    "langSubtitle": "Déan tras-scríobh agus giniúint ábhair i 63+ teanga. Foirfe do chruthaitheoirí idirnáisiúnta agus lucht féachana domhanda.",
+    "langSubtitle": "Trascríobh agus giniúint ábhair i 63+ teanga. Foirfe do chruthaitheoirí idirnáisiúnta agus lucht féachana domhanda.",
     "more": "+45 eile"
   },
   "social": {
     "label": "Iontaobhaithe ag Cruthaitheoirí",
     "stats": {
       "users": "Úsáideoirí Gníomhacha",
-      "videos": "Físeáin Próiseáilte",
-      "rating": "Rátáil Úsáideoirí",
+      "videos": "Físeáin Phróiseáilte",
+      "rating": "Rátáil Úsáideora",
       "languages": "Teangacha"
     },
     "testimonials": [
       {
-        "text": "\"Ar deireadh uirlis a thuigeann sreabhadh oibre cruthaithe ábhair. Físeán amháin → gach ardán i nóiméid. Athróir cluiche do mo sceideal ábhair.\"",
+        "text": "\"Ar deireadh uirlis a thuigeann sreabhadh oibre cruthaithe ábhair. Físeán amháin → gach ardán i gceann nóiméad. Athróir cluiche do mo sceideal ábhair.\"",
         "author": "Sarah Chen",
         "role": "Cruthaitheoir Ábhair"
       },
       {
-        "text": "\"Tá an mionchoigeartú comhrá iontach. Is féidir liom gach aschur a mhionchoigeartú trí chomhrá a dhéanamh leis. Sábhálann sé uaireanta orm gach seachtain.\"",
+        "text": "\"Tá an mionchoigeartú comhrá iontach. Is féidir liom gach aschur a mhionchoigeartú trí chomhrá a dhéanamh leis. Sábhálann sé uaireanta dom gach seachtain.\"",
         "author": "Marcus Rivera",
         "role": "Ceannaire Margaíochta"
       },
       {
-        "text": "\"Bhí mé amhrasach faoi ábhar AI, ach chuir an caighdeán iontas orm i ndáiríre. Tá an fhormáidiú a bhaineann go sonrach le hardán ar fheabhas.\"",
+        "text": "\"Bhí mé amhrasach faoi ábhar AI, ach chuir cáilíocht an ábhair iontas orm. Tá an fhormáidiú a bhaineann go sonrach le hardán ar fheabhas.\"",
         "author": "Yuki Tanaka",
-        "role": "Óstach Podchraoladh"
+        "role": "Óstach Podchraolta"
       },
       {
-        "text": "\"Mar bhunaitheoir aonair, tugann an uirlis seo dom aschur fhoireann ábhair. Poist LinkedIn, blaganna, tweets — go léir ó fhíseán amháin.\"",
+        "text": "\"Mar bhunaitheoir aonair, tugann an uirlis seo aschur fhoireann ábhair dom. Poist LinkedIn, blaganna, tweets — go léir ó fhíseán amháin.\"",
         "author": "Alex Park",
         "role": "Bunaitheoir Gnólachta Nuathionscanta"
       }
@@ -141,44 +175,142 @@
   },
   "pricing": {
     "label": "Praghsáil",
-    "title": "Praghsáil",
-    "highlight": "Shimplí, Trédhearcach",
-    "suffix": "",
-    "subtitle": "Tosaigh saor in aisce, uasghrádaigh nuair a bhíonn níos mó uait. Gan aon táillí i bhfolach.",
+    "title": "Praghsáil ",
+    "highlight": "Shimplí, ",
+    "suffix": "Trédhearcach",
+    "subtitle": "Tosaigh saor in aisce, uasghrádaigh nuair is gá duit níos mó. Gan táillí i bhfolach. Cealaigh am ar bith.",
+    "enterprise": "An dteastaíonn níos mó? ",
+    "enterpriseLink": "Déan teagmháil linn",
+    "enterpriseSuffix": " le haghaidh praghsála fiontair.",
     "plans": {
       "free": {
         "name": "Saor in Aisce",
-        "desc": "Foirfe chun triail a bhaint as",
-        "cta": "Tosaigh"
+        "desc": "Foirfe le triail a bhaint as",
+        "cta": "Tosaigh Anois",
+        "features": [
+          "3 fhíseán/mí",
+          "5 fhormáid aschuir",
+          "Samhail AI bhunúsach",
+          "120 nóiméad trascríobh",
+          "Tacaíocht pobail"
+        ]
       },
       "creator": {
         "name": "Cruthaitheoir",
         "desc": "Do chruthaitheoirí ábhair thromchúiseacha",
-        "cta": "Tosaigh Triail Saor in Aisce",
-        "badge": "Is mó a bhfuil tóir air"
+        "cta": "Liostáil Anois",
+        "badge": "Is Mó a Úsáidtear",
+        "features": [
+          "30 físeán/mí",
+          "Gach 10 bhformáid aschuir",
+          "Samhail AI phréimhe",
+          "1,200 nóiméad trascríobh",
+          "Mionchoigeartú comhrá",
+          "Tacaíocht tosaíochta",
+          "Rochtain API"
+        ]
       },
       "pro": {
         "name": "Pro",
-        "desc": "D'fhoirne agus ghníomhaireachtaí",
-        "cta": "Tosaigh Triail Saor in Aisce"
+        "desc": "Do fhoirne agus ghníomhaireachtaí",
+        "cta": "Liostáil Anois",
+        "features": [
+          "Físeáin gan teorainn",
+          "Gach formáid + saincheaptha",
+          "Préimh AI + ton saincheaptha",
+          "6,000 nóiméad trascríobh",
+          "Comhoibriú foirne",
+          "Easpórtáil bánbhrandáilte",
+          "Tacaíocht thiomnaithe",
+          "Deais anailísíochta"
+        ]
       }
     }
   },
   "cta": {
-    "title": "Réidh chun",
-    "highlight": "d'Aschur Ábhair a 10x",
+    "title": "Réidh le d'Ábhar a ",
+    "highlight": "10x",
     "suffix": "?",
-    "subtitle": "Bí le mílte cruthaitheoirí a dhéanann gach físeán ina straitéis ábhair il-ardáin iomlán. Tosaigh saor in aisce — níl gá le cárta creidmheasa.",
-    "start": "Tosaigh Saor in Aisce",
+    "subtitle": "Bí le mílte cruthaitheoirí a iompaíonn gach físeán ina straitéis iomlán ábhair il-ardáin. Tosaigh saor in aisce — níl gá le cárta creidmheasa.",
+    "start": "Tosaigh saor in Aisce",
     "pricing": "Féach ar Phraghsáil"
   },
   "faq": {
     "label": "Ceisteanna Coitianta",
-    "title": "Ceisteanna a Chuirtear Go Minic"
+    "title": "Ceisteanna a Chuirtear ",
+    "highlight": "Go Minic",
+    "items": [
+      {
+        "q": "An bhfuil sé saor in aisce i ndáiríre le tosú?",
+        "a": "Sea! Tugann an plean saor in aisce 3 fhíseán/mí duit le 5 fhormáid aschuir. Níl gá le cárta creidmheasa."
+      },
+      {
+        "q": "Cé na teangacha a dtacaíonn tú leo?",
+        "a": "63+ teanga le haghaidh trascríobh agus giniúna ábhair."
+      },
+      {
+        "q": "Cé na hardáin ar féidir liom ábhar a athúsáid dóibh?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blaganna, Medium, Substack, nuachtlitreacha, agus níos mó."
+      },
+      {
+        "q": "Cé chomh fada a thógann sé?",
+        "a": "Próiseáiltear an chuid is mó d'fhíseáin i níos lú ná nóiméad. Sruthaíonn ábhar i bhfíor-am."
+      },
+      {
+        "q": "An féidir liom ábhar ginte AI a mhionchoigeartú?",
+        "a": "Sea! Comhrá le gach aschur chun ton, fad, stíl a choigeartú, nó gnéithe a chur leis."
+      },
+      {
+        "q": "Cé na formáidí comhaid is féidir liom a uaslódáil?",
+        "a": "Fuaime: MP3, WAV, M4A, FLAC, OGG. Físeán: MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "An bhfuil mo chuid sonraí sábháilte?",
+        "a": "Sea. Scriostar comhaid tar éis próiseála. Ní úsáidtear riamh le haghaidh oiliúna."
+      },
+      {
+        "q": "An féidir liom cealú am ar bith?",
+        "a": "Sea, cealaigh am ar bith. Gan aon chonarthaí fadtéarmacha."
+      }
+    ]
   },
   "footer": {
-    "tagline": "Athchóiriú ábhair faoi chumhacht AI. Déan físeán amháin ina do straitéis ábhair il-ardáin iomlán.",
+    "tagline": "Athúsáid ábhair faoi chumhacht AI. Iompaigh físeán amháin i do straitéis iomlán ábhair il-ardáin.",
     "copyright": "Gach ceart ar cosaint.",
-    "builtWith": "Tógtha do chruthaitheoirí ábhair ar fud an domhain"
+    "builtWith": "Tógtha do chruthaitheoirí ábhair ar fud an domhain",
+    "sections": {
+      "product": "Táirge",
+      "tools": "Uirlisí",
+      "legal": "Dlíthiúil",
+      "company": "Cuideachta"
+    },
+    "links": {
+      "features": "Gnéithe",
+      "pricing": "Praghsáil",
+      "faq": "Ceisteanna Coitianta",
+      "yt2blog": "YouTube go Blag",
+      "vid2twitter": "Físeán go Twitter",
+      "vid2xhs": "Físeán go Xiaohongshu",
+      "podcast2article": "Podchraoladh go hAlt",
+      "allTools": "Gach Uirlis →",
+      "privacy": "Príobháideacht",
+      "terms": "Téarmaí",
+      "github": "GitHub",
+      "contact": "Teagmháil"
+    }
+  },
+  "workbench": {
+    "transcribing": "Á Thras-scríobh",
+    "generating": "Ábhar á Ghiniúint",
+    "completed": "Críochnaithe",
+    "progress": "Dul chun cinn",
+    "cancel": "Cealaigh",
+    "refineTitle": "Mionchoigeartú - ",
+    "refinePlaceholder": "Inis don AI conas an t-ábhar seo a choigeartú...",
+    "send": "Seol",
+    "copy": "Cóipeáil",
+    "copied": "Cóipeáilte",
+    "download": "Íoslódáil",
+    "refine": "Mionchoigeartú"
   }
 }

@@ -1,6 +1,7 @@
 {
   "nav": {
     "features": "Funktsioonid",
+    "howItWorks": "Kuidas see töötab",
     "pricing": "Hinnakiri",
     "faq": "KKK",
     "tryFree": "Proovi tasuta"
@@ -8,21 +9,25 @@
   "hero": {
     "badge": "AI-põhine sisu ümbertöötlemine",
     "title": "Muuda üks video",
-    "highlight": "Kogu oma sisustrateegiaks",
-    "subtitle": "Kleebi link või laadi fail üles — AI transkribeerib ja töötleb su sisu automaatselt ümber blogipostitusteks, sotsiaalmeedia lõimedeks, uudiskirjadeks ja paljuks muuks.",
-    "accent": "10x oma sisu toodangut.",
+    "highlight": "Sisu kõikjale",
+    "subtitle": "Kleebi YouTube'i link. Laadi üles podcast. Lisa teksttranskriptsioon.",
+    "accent": "ailomo loob hetkega viimistletud sisu igale platvormile.",
     "stats": {
       "languages": "Keeled",
-      "formats": "Väljundvormingud",
-      "speed": "Töötlemisaeg"
+      "formats": "Vormingud",
+      "speed": "Töötlemine"
     },
     "tabs": {
       "url": "Kleebi link",
-      "file": "Laadi fail üles",
-      "text": "Kleebi tekst"
+      "file": "Laadi üles",
+      "text": "Tekst"
     },
-    "placeholder": "Kleebi YouTube'i, podcasti või mõne video link...",
+    "placeholder": "Kleebi YouTube'i link, podcasti URL või mõni video...",
     "generate": "Genereeri",
+    "fileDropTitle": "Lohista fail siia",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — kuni 500MB",
+    "textPlaceholder": "Kleebi oma transkriptsioon või tekst — AI muudab selle platvormivalmis sisuks...",
+    "noSignup": "Registreerimist pole vaja. Alustamiseks tasuta.",
     "processing": "Töötlemine...",
     "error": "Midagi läks valesti",
     "tryAgain": "Proovi uuesti",
@@ -31,81 +36,110 @@
   },
   "howItWorks": {
     "label": "Kuidas see töötab",
-    "title": "Videost",
+    "title": "Videost ",
     "highlight": "Mitme platvormi",
     "suffix": "3 sammuga",
     "steps": [
       {
         "title": "Kleebi või laadi üles",
-        "desc": "Lisa YouTube'i link, laadi helifail üles või kleebi tekst. Pole vaja seadistada — lihtsalt üks klõps."
+        "desc": "Lisa YouTube'i link, laadi üles helifail või kleebi tekst. Null seadistust."
       },
       {
-        "title": "AI teeb oma võlu",
-        "desc": "Meie AI transkribeerib ja mõistab su sisu, seejärel kirjutab selle nutikalt ümber iga platvormi ainulaadse stiili jaoks."
+        "title": "AI muudab selle",
+        "desc": "Sinu sisu transkribeeritakse, mõistetakse ja kirjutatakse ümber iga platvormi unikaalses stiilis."
       },
       {
         "title": "Avalda kõikjal",
-        "desc": "Saad viimistletud sisu WeChati, Twitteri, LinkedIni, Xiaohongshu, blogide ja paljuks muuks. Kopeeri, laadi alla või jaga kohe."
-      }
-    ]
-  },
-  "features": {
-    "label": "Funktsioonid",
-    "title": "Kõik, mida vajad",
-    "highlight": "oma sisu skaleerimiseks",
-    "subtitle": "Loodud loojatele, kes soovivad maksimeerida iga toodetud sisutükki.",
-    "list": [
-      {
-        "title": "AI-põhine ümberkirjutamine",
-        "desc": "Mitte ainult transkriptsioon — meie AI mõistab konteksti ja kirjutab ümber iga platvormi ainulaadse hääle ja vormingu jaoks."
-      },
-      {
-        "title": "10 väljundvormingut",
-        "desc": "Blogipostitused, Twitteri lõimed, LinkedIni postitused, Xiaohongshu märkmed, uudiskirjad, SRT subtiitrid, SEO artiklid ja palju muud."
-      },
-      {
-        "title": "63+ keelt",
-        "desc": "Transkribeeri ja genereeri sisu 63+ keeles. Täiuslik rahvusvahelistele loojatele ja globaalsetele publikutele."
-      },
-      {
-        "title": "Voogedastusgeneratsioon",
-        "desc": "Näe sisu ilmumas märk märgi haaval reaalajas. Pole enam ootamist laadimisrõngastele."
-      },
-      {
-        "title": "Vestluslik täpsustamine",
-        "desc": "Vestle iga väljundiga selle täpsustamiseks. Ütle \"tee lühemaks\" või \"lisa emotikon\" — AI rakendab seda koheselt."
-      },
-      {
-        "title": "6 ekspordivormingut",
-        "desc": "Laadi alla Markdown, TXT, PDF, DOCX, SRT või CSV vormingus. Kohe avaldamiseks valmis."
-      },
-      {
-        "title": "Jagamine ja koostöö",
-        "desc": "Genereeri jagatavaid linke oma meeskonnakaaslastele sisu vaatamiseks ja koostööks."
-      },
-      {
-        "title": "Privaatne ja turvaline",
-        "desc": "Sinu sisu jääb sinu omaks. Failid kustutatakse automaatselt pärast töötlemist. Andmeid ei säilitata."
-      },
-      {
-        "title": "Nutikas platvormituvastus",
-        "desc": "Kleebid YouTube'i lingi? Soovitame blogi + Twitter. Kleebid Bilibili? Soovitame WeChat + Xiaohongshu."
+        "desc": "Hangi blogipostitused, sotsiaalmeedia lõimed, uudiskirjad ja palju muud. Kopeeri, laadi alla, valmis."
       }
     ]
   },
   "highlights": {
     "label": "Miks ailomo",
-    "title": "Erinevalt ehitatud.",
-    "highlight": "AI-esimene nullist"
+    "title": "Erinevalt ehitatud. ",
+    "highlight": "AI-põhine",
+    "items": [
+      {
+        "badge": "Intelligentsus",
+        "title": "Mitte lihtsalt transkriptsioon",
+        "desc": "Meie AI analüüsib konteksti, eraldab teadmisi ja genereerib sisu, mis on optimeeritud iga platvormi publiku jaoks."
+      },
+      {
+        "badge": "Levitamine",
+        "title": "Üks klõps, kõik platvormid",
+        "desc": "Kõik 10 vormingut genereeritakse samaaegselt. Alates pikkadest blogidest kuni sotsiaalmeedia lõimedeni – kõik valmis sekunditega."
+      },
+      {
+        "badge": "Täiustamine",
+        "title": "Vestle oma sisuga",
+        "desc": "Igal väljundil on sisseehitatud AI-vestlus. \"Lisa rohkem andmeid\", \"tee see löövamaks\" – muudatused rakenduvad koheselt."
+      }
+    ]
+  },
+  "features": {
+    "label": "Funktsioonid",
+    "title": "Kõik, et ",
+    "highlight": "Sisu skaleerida",
+    "subtitle": "Loodud loojatele, kes muudavad iga sisutüki maksimaalseks mõjuks.",
+    "list": [
+      {
+        "title": "AI-põhine ümberkirjutamine",
+        "desc": "Mitte lihtsalt transkriptsioon – meie AI mõistab konteksti ja kirjutab ümber iga platvormi unikaalses stiilis."
+      },
+      {
+        "title": "10 väljundvormingut",
+        "desc": "Blogipostitused, Twitteri lõimed, LinkedIn, Xiaohongshu, uudiskirjad, SRT subtiitrid, SEO artiklid, rohkem."
+      },
+      {
+        "title": "63+ keelt",
+        "desc": "Transkribeeri ja genereeri 63+ keeles. Loodud rahvusvahelistele loojatele."
+      },
+      {
+        "title": "Voogedastusgeneratsioon",
+        "desc": "Sisu ilmub reaalajas märk märgi haaval. Pole vaja oodata."
+      },
+      {
+        "title": "Vestluslik täiustamine",
+        "desc": "Vestle iga väljundiga selle täpsustamiseks. \"Tee lühemaks\" – tehtud."
+      },
+      {
+        "title": "6 ekspordivormingut",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Valmis koheseks avaldamiseks."
+      },
+      {
+        "title": "Jagamine ja koostöö",
+        "desc": "Genereeri lingid, et meeskonnaliikmed saaksid vaadata ja koostööd teha."
+      },
+      {
+        "title": "Privaatne ja turvaline",
+        "desc": "Failid kustutatakse pärast töötlemist. Sinu sisu ei kasutata kunagi treenimiseks."
+      },
+      {
+        "title": "Nutikas tuvastus",
+        "desc": "YouTube'i link? → Blogi + Twitter. Bilibili? → WeChat + Xiaohongshu. Automaatne."
+      }
+    ]
   },
   "formats": {
     "outputLabel": "Väljundvormingud",
-    "outputTitle": "10 vormingut,",
-    "outputHighlight": "ühe klõpsuga",
-    "outputSubtitle": "Genereeri kõike korraga — pole vaja tööriista mitu korda käivitada.",
+    "outputTitle": "10 vormingut, ",
+    "outputHighlight": "üks klõps",
+    "outputSubtitle": "Genereeri kõike korraga – pole vaja tööriista mitu korda käivitada.",
+    "formatNames": [
+      "Blogipostitus",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "SEO artikkel",
+      "Uudiskiri",
+      "SRT subtiitrid",
+      "AI kokkuvõte",
+      "Mõttekaart"
+    ],
     "langLabel": "Globaalne ulatus",
     "langTitle": "63+ keelt toetatud",
-    "langSubtitle": "Transkribeeri ja genereeri sisu 63+ keeles. Täiuslik rahvusvahelistele loojatele ja globaalsetele publikutele.",
+    "langSubtitle": "Transkribeeri ja genereeri sisu 63+ keeles. Täiuslik rahvusvahelistele loojatele ja globaalsele publikule.",
     "more": "+45 veel"
   },
   "social": {
@@ -118,22 +152,22 @@
     },
     "testimonials": [
       {
-        "text": "\"Lõpuks ometi tööriist, mis mõistab sisu loomise töövoogu. Üks video → kõik platvormid minutitega. Mängumuutja minu sisugraafiku jaoks.\"",
+        "text": "\"Lõpuks ometi tööriist, mis mõistab sisuloomise töövoogu. Üks video → kõik platvormid minutitega. Muutis mu sisugraafiku täielikult.\"",
         "author": "Sarah Chen",
         "role": "Sisulooja"
       },
       {
-        "text": "\"Vestluslik täpsustamine on geniaalne. Saan iga väljundit lihtsalt vesteldes kohandada. See säästab mul iga nädal tunde.\"",
+        "text": "\"Vestluslik täiustamine on geniaalne. Saan iga väljundit lihtsalt vesteldes kohandada. Säästab mulle iga nädal tunde.\"",
         "author": "Marcus Rivera",
         "role": "Turundusjuht"
       },
       {
-        "text": "\"Olin AI-sisu suhtes skeptiline, kuid kvaliteet üllatas mind tõeliselt. Platvormipõhine vormindamine on täpne.\"",
+        "text": "\"Olin AI-sisu suhtes skeptiline, kuid kvaliteet üllatas mind tõeliselt. Platvormispetsiifiline vormindus on täpne.\"",
         "author": "Yuki Tanaka",
         "role": "Podcasti saatejuht"
       },
       {
-        "text": "\"Üksikettevõtjana annab see tööriist mulle sisumeeskonna toodangu. LinkedIni postitused, blogid, säutsud — kõik ühest videost.\"",
+        "text": "\"Üksikettevõtjana annab see tööriist mulle sisutiimi väljundi. LinkedIni postitused, blogid, säutsud – kõik ühest videost.\"",
         "author": "Alex Park",
         "role": "Idufirma asutaja"
       }
@@ -141,44 +175,142 @@
   },
   "pricing": {
     "label": "Hinnakiri",
-    "title": "Lihtne,",
+    "title": "Lihtne, ",
     "highlight": "läbipaistev",
     "suffix": "hinnakiri",
-    "subtitle": "Alusta tasuta, uuenda siis, kui vajad rohkem. Peidetud tasusid pole.",
+    "subtitle": "Alusta tasuta, uuenda kui vajad rohkem. Peidetud tasusid pole. Tühista igal ajal.",
+    "enterprise": "Vajad rohkem? ",
+    "enterpriseLink": "Võta meiega ühendust",
+    "enterpriseSuffix": " ettevõtte hinnakirja jaoks.",
     "plans": {
       "free": {
         "name": "Tasuta",
         "desc": "Täiuslik proovimiseks",
-        "cta": "Alusta"
+        "cta": "Alusta",
+        "features": [
+          "3 videot/kuus",
+          "5 väljundvormingut",
+          "Põhiline AI mudel",
+          "120 min transkriptsiooni",
+          "Kogukonna tugi"
+        ]
       },
       "creator": {
         "name": "Looja",
         "desc": "Tõsistele sisuloojatele",
-        "cta": "Alusta tasuta prooviperioodi",
-        "badge": "Kõige populaarsem"
+        "cta": "Telli kohe",
+        "badge": "Kõige populaarsem",
+        "features": [
+          "30 videot/kuus",
+          "Kõik 10 väljundvormingut",
+          "Premium AI mudel",
+          "1200 min transkriptsiooni",
+          "Vestluslik täiustamine",
+          "Prioriteetne tugi",
+          "API juurdepääs"
+        ]
       },
       "pro": {
         "name": "Pro",
         "desc": "Meeskondadele ja agentuuridele",
-        "cta": "Alusta tasuta prooviperioodi"
+        "cta": "Telli kohe",
+        "features": [
+          "Piiramatud videod",
+          "Kõik vormingud + kohandatud",
+          "Premium AI + kohandatud toon",
+          "6000 min transkriptsiooni",
+          "Meeskonnatöö",
+          "Valge märgistusega eksport",
+          "Pühendatud tugi",
+          "Analüütika töölaud"
+        ]
       }
     }
   },
   "cta": {
-    "title": "Valmis",
+    "title": "Valmis ",
     "highlight": "10x oma sisu",
-    "suffix": "toodangut?",
-    "subtitle": "Liitu tuhandete loojatega, kes muudavad iga video terviklikuks mitme platvormi sisustrateegiaks. Alusta tasuta — krediitkaarti pole vaja.",
+    "suffix": "väljundit?",
+    "subtitle": "Liitu tuhandete loojatega, kes muudavad iga video terviklikuks mitme platvormi sisustrateegiaks. Alusta tasuta – krediitkaarti pole vaja.",
     "start": "Alusta tasuta",
     "pricing": "Vaata hinnakirja"
   },
   "faq": {
     "label": "KKK",
-    "title": "Korduma kippuvad küsimused"
+    "title": "Korduma kippuvad ",
+    "highlight": "küsimused",
+    "items": [
+      {
+        "q": "Kas alustamine on tõesti tasuta?",
+        "a": "Jah! Tasuta plaan annab sulle 3 videot/kuus koos 5 väljundvorminguga. Krediitkaarti pole vaja."
+      },
+      {
+        "q": "Milliseid keeli te toetate?",
+        "a": "63+ keelt transkriptsiooniks ja sisu genereerimiseks."
+      },
+      {
+        "q": "Millistele platvormidele saan sisu ümber töödelda?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blogid, Medium, Substack, uudiskirjad ja palju muud."
+      },
+      {
+        "q": "Kui kaua see aega võtab?",
+        "a": "Enamik videoid töödeldakse alla 1 minuti. Sisu voogedastatakse reaalajas."
+      },
+      {
+        "q": "Kas ma saan AI loodud sisu täiustada?",
+        "a": "Jah! Vestle iga väljundiga, et kohandada tooni, pikkust, stiili või lisada elemente."
+      },
+      {
+        "q": "Milliseid failivorminguid saan üles laadida?",
+        "a": "Heli: MP3, WAV, M4A, FLAC, OGG. Video: MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "Kas mu andmed on turvalised?",
+        "a": "Jah. Failid kustutatakse pärast töötlemist. Neid ei kasutata kunagi treenimiseks."
+      },
+      {
+        "q": "Kas ma saan igal ajal tühistada?",
+        "a": "Jah, tühista igal ajal. Pikaajalisi lepinguid pole."
+      }
+    ]
   },
   "footer": {
-    "tagline": "AI-põhine sisu ümbertöötlemine. Muuda üks video kogu oma mitme platvormi sisustrateegiaks.",
+    "tagline": "AI-põhine sisu ümbertöötlemine. Muuda üks video oma terviklikuks mitme platvormi sisustrateegiaks.",
     "copyright": "Kõik õigused kaitstud.",
-    "builtWith": "Loodud sisuloojatele üle maailma"
+    "builtWith": "Loodud sisuloojatele üle maailma",
+    "sections": {
+      "product": "Toode",
+      "tools": "Tööriistad",
+      "legal": "Õiguslik",
+      "company": "Ettevõte"
+    },
+    "links": {
+      "features": "Funktsioonid",
+      "pricing": "Hinnakiri",
+      "faq": "KKK",
+      "yt2blog": "YouTube blogiks",
+      "vid2twitter": "Video Twitteriks",
+      "vid2xhs": "Video Xiaohongshuks",
+      "podcast2article": "Podcast artikliks",
+      "allTools": "Kõik tööriistad →",
+      "privacy": "Privaatsus",
+      "terms": "Tingimused",
+      "github": "GitHub",
+      "contact": "Kontakt"
+    }
+  },
+  "workbench": {
+    "transcribing": "Transkribeerimine",
+    "generating": "Sisu genereerimine",
+    "completed": "Valmis",
+    "progress": "Edenemine",
+    "cancel": "Tühista",
+    "refineTitle": "Täienda - ",
+    "refinePlaceholder": "Ütle AI-le, kuidas seda sisu kohandada...",
+    "send": "Saada",
+    "copy": "Kopeeri",
+    "copied": "Kopeeritud",
+    "download": "Laadi alla",
+    "refine": "Täienda"
   }
 }

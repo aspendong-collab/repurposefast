@@ -1,28 +1,33 @@
 {
   "nav": {
     "features": "Funkcijos",
+    "howItWorks": "Kaip tai veikia",
     "pricing": "Kainos",
     "faq": "DUK",
     "tryFree": "Išbandyti nemokamai"
   },
   "hero": {
-    "badge": "AI valdomas turinio perdirbimas",
+    "badge": "AI pagrįstas turinio pernaudojimas",
     "title": "Paverskite vieną vaizdo įrašą",
-    "highlight": "Visą savo turinio strategiją",
-    "subtitle": "Įklijuokite nuorodą arba įkelkite failą – AI automatiškai transkribuoja ir perdirba jūsų turinį į tinklaraščio įrašus, socialinių tinklų gijas, naujienlaiškius ir dar daugiau.",
-    "accent": "Padauginkite savo turinio kiekį 10 kartų.",
+    "highlight": "Turiniu visur",
+    "subtitle": "Įklijuokite YouTube nuorodą. Įkelkite podcast'ą. Įveskite teksto transkripciją.",
+    "accent": "ailomo akimirksniu sukuria poliruotą turinį kiekvienai platformai.",
     "stats": {
       "languages": "Kalbos",
-      "formats": "Išvesties formatai",
-      "speed": "Apdorojimo laikas"
+      "formats": "Formatai",
+      "speed": "Apdorojimas"
     },
     "tabs": {
       "url": "Įklijuoti nuorodą",
-      "file": "Įkelti failą",
-      "text": "Įklijuoti tekstą"
+      "file": "Įkelti",
+      "text": "Tekstas"
     },
-    "placeholder": "Įklijuokite YouTube, podcast'o ar bet kurio vaizdo įrašo nuorodą...",
+    "placeholder": "Įklijuokite YouTube nuorodą, podcast'o URL ar bet kokį vaizdo įrašą...",
     "generate": "Generuoti",
+    "fileDropTitle": "Tempkite failą čia",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — iki 500MB",
+    "textPlaceholder": "Įklijuokite savo transkripciją ar tekstą — AI paverčia jį platformai paruoštu turiniu...",
+    "noSignup": "Nereikia registruotis. Pradėti nemokamai.",
     "processing": "Apdorojama...",
     "error": "Kažkas nutiko ne taip",
     "tryAgain": "Bandyti dar kartą",
@@ -31,109 +36,138 @@
   },
   "howItWorks": {
     "label": "Kaip tai veikia",
-    "title": "Nuo vaizdo įrašo iki",
+    "title": "Nuo vaizdo įrašo iki ",
     "highlight": "kelių platformų",
     "suffix": "per 3 žingsnius",
     "steps": [
       {
         "title": "Įklijuokite arba įkelkite",
-        "desc": "Įmeskite YouTube nuorodą, įkelkite garso failą arba įklijuokite tekstą. Nereikia jokios konfigūracijos – tik vienas paspaudimas."
+        "desc": "Įmeskite YouTube nuorodą, įkelkite garso failą arba įklijuokite tekstą. Jokios konfigūracijos."
       },
       {
-        "title": "AI atlieka savo magiją",
-        "desc": "Mūsų AI transkribuoja ir supranta jūsų turinį, tada protingai perrašo jį pagal kiekvienos platformos unikalų stilių."
+        "title": "AI transformuoja",
+        "desc": "Jūsų turinys transkribuojamas, suprantamas ir perrašomas pagal kiekvienos platformos unikalų balsą."
       },
       {
         "title": "Skelbkite visur",
-        "desc": "Gaukite paruoštą turinį, skirtą WeChat, Twitter, LinkedIn, Xiaohongshu, tinklaraščiams ir kt. Kopijuokite, atsisiųskite arba bendrinkite akimirksniu."
-      }
-    ]
-  },
-  "features": {
-    "label": "Funkcijos",
-    "title": "Viskas, ko jums reikia",
-    "highlight": "mastelio keitimui",
-    "subtitle": "Sukurta kūrėjams, norintiems maksimaliai išnaudoti kiekvieną savo turinio dalį.",
-    "list": [
-      {
-        "title": "AI valdomas perrašymas",
-        "desc": "Ne tik transkripcija – mūsų AI supranta kontekstą ir perrašo pagal kiekvienos platformos unikalų balsą ir formatą."
-      },
-      {
-        "title": "10 išvesties formatų",
-        "desc": "Tinklaraščio įrašai, Twitter gijos, LinkedIn įrašai, Xiaohongshu užrašai, naujienlaiškiai, SRT subtitrai, SEO straipsniai ir dar daugiau."
-      },
-      {
-        "title": "63+ kalbos",
-        "desc": "Transkribuokite ir generuokite turinį 63+ kalbomis. Puikiai tinka tarptautiniams kūrėjams ir pasaulinei auditorijai."
-      },
-      {
-        "title": "Srautinis generavimas",
-        "desc": "Stebėkite, kaip turinys atsiranda simbolis po simbolio realiu laiku. Daugiau nereikia laukti besisukančių indikatorių."
-      },
-      {
-        "title": "Pokalbio tobulinimas",
-        "desc": "Bendraukite su kiekvienu rezultatu, kad jį patobulintumėte. Pasakykite „padaryk trumpiau“ arba „pridėk jaustukų“ – AI pritaiko akimirksniu."
-      },
-      {
-        "title": "6 eksporto formatai",
-        "desc": "Atsisiųskite kaip Markdown, TXT, PDF, DOCX, SRT arba CSV. Tiesiogiai paruošta publikavimui."
-      },
-      {
-        "title": "Dalijimasis ir bendradarbiavimas",
-        "desc": "Sukurkite bendrinamas nuorodas savo komandos nariams, kad jie galėtų peržiūrėti ir bendradarbiauti kuriant turinį."
-      },
-      {
-        "title": "Privatu ir saugu",
-        "desc": "Jūsų turinys lieka jūsų. Failai automatiškai ištrinami po apdorojimo. Duomenys nėra saugomi."
-      },
-      {
-        "title": "Protingas platformos atpažinimas",
-        "desc": "Įklijavote YouTube nuorodą? Siūlome tinklaraštį + Twitter. Įklijavote Bilibili? Siūlome WeChat + Xiaohongshu."
+        "desc": "Gaukite tinklaraščio įrašus, socialinius siūlus, naujienlaiškius ir daugiau. Kopijuokite, atsisiųskite, padaryta."
       }
     ]
   },
   "highlights": {
     "label": "Kodėl ailomo",
-    "title": "Sukurta kitaip.",
-    "highlight": "AI pirmenybė nuo pat pradžių"
+    "title": "Sukurtas kitaip. ",
+    "highlight": "AI-natyvus",
+    "items": [
+      {
+        "badge": "Intelektas",
+        "title": "Ne tik transkripcija",
+        "desc": "Mūsų AI analizuoja kontekstą, išgauna įžvalgas ir generuoja turinį, optimizuotą kiekvienos platformos auditorijai."
+      },
+      {
+        "badge": "Paskirstymas",
+        "title": "Vienas paspaudimas, kiekviena platforma",
+        "desc": "Visi 10 formatų generuojami vienu metu. Nuo ilgų tinklaraščių iki socialinių siūlų — viskas paruošta per sekundes."
+      },
+      {
+        "badge": "Tobulinimas",
+        "title": "Bendraukite su savo turiniu",
+        "desc": "Kiekvienas rezultatas turi integruotą AI pokalbį. „Pridėk daugiau duomenų“, „padaryk aštriau“ — pakeitimai taikomi akimirksniu."
+      }
+    ]
+  },
+  "features": {
+    "label": "Funkcijos",
+    "title": "Viskas, kad ",
+    "highlight": "mastuotumėte turinį",
+    "subtitle": "Sukurta kūrėjams, kurie kiekvieną turinio dalį paverčia maksimaliu poveikiu.",
+    "list": [
+      {
+        "title": "AI pagrįstas perrašymas",
+        "desc": "Ne tik transkripcija — mūsų AI supranta kontekstą ir perrašo pagal kiekvienos platformos unikalų balsą."
+      },
+      {
+        "title": "10 išvesties formatų",
+        "desc": "Tinklaraščio įrašai, Twitter siūlai, LinkedIn, Xiaohongshu, naujienlaiškiai, SRT subtitrai, SEO straipsniai ir daugiau."
+      },
+      {
+        "title": "63+ kalbos",
+        "desc": "Transkribuokite ir generuokite 63+ kalbomis. Skirta tarptautiniams kūrėjams."
+      },
+      {
+        "title": "Srautinis generavimas",
+        "desc": "Turinys rodomas simbolis po simbolio realiu laiku. Nereikia laukti suktukų."
+      },
+      {
+        "title": "Pokalbio tobulinimas",
+        "desc": "Bendraukite su kiekvienu rezultatu, kad jį patobulintumėte. „Padaryk trumpiau“ — padaryta."
+      },
+      {
+        "title": "6 eksporto formatai",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Paruošta publikuoti akimirksniu."
+      },
+      {
+        "title": "Dalijimasis ir bendradarbiavimas",
+        "desc": "Sukurkite nuorodas komandos nariams peržiūrėti ir bendradarbiauti su jūsų turiniu."
+      },
+      {
+        "title": "Privatu ir saugu",
+        "desc": "Failai ištrinami po apdorojimo. Jūsų turinys niekada nenaudojamas mokymui."
+      },
+      {
+        "title": "Protingas aptikimas",
+        "desc": "YouTube nuoroda? → Tinklaraštis + Twitter. Bilibili? → WeChat + Xiaohongshu. Automatiškai."
+      }
+    ]
   },
   "formats": {
     "outputLabel": "Išvesties formatai",
-    "outputTitle": "10 formatų,",
+    "outputTitle": "10 formatų, ",
     "outputHighlight": "vienu paspaudimu",
-    "outputSubtitle": "Generuokite viską vienu metu – nereikia paleisti įrankio kelis kartus.",
+    "outputSubtitle": "Generuokite viską vienu metu — nereikia paleisti įrankio kelis kartus.",
+    "formatNames": [
+      "Tinklaraščio įrašas",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "SEO straipsnis",
+      "Naujienlaiškis",
+      "SRT subtitrai",
+      "AI santrauka",
+      "Minčių žemėlapis"
+    ],
     "langLabel": "Pasaulinė aprėptis",
     "langTitle": "Palaikoma 63+ kalbų",
     "langSubtitle": "Transkribuokite ir generuokite turinį 63+ kalbomis. Puikiai tinka tarptautiniams kūrėjams ir pasaulinei auditorijai.",
     "more": "+45 daugiau"
   },
   "social": {
-    "label": "Patikėta kūrėjų",
+    "label": "Pasitiki kūrėjai",
     "stats": {
       "users": "Aktyvūs vartotojai",
-      "videos": "Apdorota vaizdo įrašų",
+      "videos": "Apdoroti vaizdo įrašai",
       "rating": "Vartotojų įvertinimas",
       "languages": "Kalbos"
     },
     "testimonials": [
       {
-        "text": "\"Pagaliau įrankis, kuris supranta turinio kūrimo darbo eigą. Vienas vaizdo įrašas → visos platformos per kelias minutes. Tai pakeitė mano turinio grafiką.\"",
+        "text": "\"Pagaliau įrankis, kuris supranta turinio kūrimo darbo eigą. Vienas vaizdo įrašas → visos platformos per minutes. Žaidimo keitiklis mano turinio tvarkaraščiui.\"",
         "author": "Sarah Chen",
         "role": "Turinio kūrėja"
       },
       {
-        "text": "\"Pokalbio tobulinimas yra puikus. Galiu pakoreguoti kiekvieną rezultatą tiesiog su juo kalbėdamasis. Tai sutaupo man valandas kiekvieną savaitę.\"",
+        "text": "\"Pokalbio tobulinimas yra puikus. Galiu koreguoti kiekvieną rezultatą tiesiog su juo kalbėdamas. Tai sutaupo man valandas kiekvieną savaitę.\"",
         "author": "Marcus Rivera",
         "role": "Rinkodaros vadovas"
       },
       {
-        "text": "\"Buvau skeptiškas dėl AI turinio, bet kokybė mane tikrai nustebino. Platformai specifinis formatavimas yra tikslus.\"",
+        "text": "\"Buvau skeptiškas dėl AI turinio, bet kokybė tikrai mane nustebino. Platformai specifinis formatavimas yra tikslus.\"",
         "author": "Yuki Tanaka",
         "role": "Podcast'o vedėjas"
       },
       {
-        "text": "\"Kaip vienas įkūrėjas, šis įrankis man suteikia visos turinio komandos rezultatą. LinkedIn įrašai, tinklaraščiai, tvitai – viskas iš vieno vaizdo įrašo.\"",
+        "text": "\"Kaip vienintelis įkūrėjas, šis įrankis man suteikia turinio komandos rezultatą. LinkedIn įrašai, tinklaraščiai, tviteriai — viskas iš vieno vaizdo įrašo.\"",
         "author": "Alex Park",
         "role": "Startuolio įkūrėjas"
       }
@@ -141,44 +175,142 @@
   },
   "pricing": {
     "label": "Kainos",
-    "title": "Paprastos,",
-    "highlight": "skaidrios",
-    "suffix": "kainos",
-    "subtitle": "Pradėkite nemokamai, atnaujinkite, kai prireiks daugiau. Jokių paslėptų mokesčių.",
+    "title": "Paprastas, ",
+    "highlight": "skaidrus",
+    "suffix": "kainodara",
+    "subtitle": "Pradėkite nemokamai, atnaujinkite, kai reikia daugiau. Jokių paslėptų mokesčių. Atšaukite bet kada.",
+    "enterprise": "Reikia daugiau? ",
+    "enterpriseLink": "Susisiekite su mumis",
+    "enterpriseSuffix": " dėl įmonės kainodaros.",
     "plans": {
       "free": {
         "name": "Nemokamas",
-        "desc": "Puikiai tinka išbandymui",
-        "cta": "Pradėti"
+        "desc": "Puikiai tinka išbandyti",
+        "cta": "Pradėti",
+        "features": [
+          "3 vaizdo įrašai per mėnesį",
+          "5 išvesties formatai",
+          "Pagrindinis AI modelis",
+          "120 min. transkripcijos",
+          "Bendruomenės palaikymas"
+        ]
       },
       "creator": {
         "name": "Kūrėjas",
         "desc": "Rimtiems turinio kūrėjams",
-        "cta": "Pradėti nemokamą bandomąjį laikotarpį",
-        "badge": "Populiariausias"
+        "cta": "Prenumeruoti dabar",
+        "badge": "Populiariausias",
+        "features": [
+          "30 vaizdo įrašų per mėnesį",
+          "Visi 10 išvesties formatų",
+          "Premium AI modelis",
+          "1 200 min. transkripcijos",
+          "Pokalbio tobulinimas",
+          "Pirmenybinis palaikymas",
+          "API prieiga"
+        ]
       },
       "pro": {
         "name": "Pro",
         "desc": "Komandoms ir agentūroms",
-        "cta": "Pradėti nemokamą bandomąjį laikotarpį"
+        "cta": "Prenumeruoti dabar",
+        "features": [
+          "Neriboti vaizdo įrašai",
+          "Visi formatai + individualūs",
+          "Premium AI + individualus tonas",
+          "6 000 min. transkripcijos",
+          "Komandinis bendradarbiavimas",
+          "White-label eksportas",
+          "Dedikuotas palaikymas",
+          "Analitikos skydelis"
+        ]
       }
     }
   },
   "cta": {
-    "title": "Pasiruošę",
-    "highlight": "10 kartų padidinti",
-    "suffix": "savo turinio kiekį?",
-    "subtitle": "Prisijunkite prie tūkstančių kūrėjų, kurie kiekvieną vaizdo įrašą paverčia išsamia kelių platformų turinio strategija. Pradėkite nemokamai – kreditinės kortelės nereikia.",
+    "title": "Pasiruošę ",
+    "highlight": "10x padidinti savo turinį",
+    "suffix": "?",
+    "subtitle": "Prisijunkite prie tūkstančių kūrėjų, kurie kiekvieną vaizdo įrašą paverčia išsamia kelių platformų turinio strategija. Pradėkite nemokamai — nereikia kreditinės kortelės.",
     "start": "Pradėti nemokamai",
     "pricing": "Peržiūrėti kainas"
   },
   "faq": {
     "label": "DUK",
-    "title": "Dažnai užduodami klausimai"
+    "title": "Dažnai užduodami ",
+    "highlight": "klausimai",
+    "items": [
+      {
+        "q": "Ar tikrai pradėti nemokamai?",
+        "a": "Taip! Nemokamas planas suteikia 3 vaizdo įrašus per mėnesį su 5 išvesties formatais. Nereikia kreditinės kortelės."
+      },
+      {
+        "q": "Kokias kalbas palaikote?",
+        "a": "63+ kalbos transkripcijai ir turinio generavimui."
+      },
+      {
+        "q": "Kokioms platformoms galiu pernaudoti turinį?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, tinklaraščiai, Medium, Substack, naujienlaiškiai ir daugiau."
+      },
+      {
+        "q": "Kiek laiko tai užtrunka?",
+        "a": "Dauguma vaizdo įrašų apdorojami per mažiau nei 1 minutę. Turinys srautiniu būdu rodomas realiu laiku."
+      },
+      {
+        "q": "Ar galiu patobulinti AI sugeneruotą turinį?",
+        "a": "Taip! Bendraukite su kiekvienu rezultatu, kad pakoreguotumėte toną, ilgį, stilių ar pridėtumėte elementų."
+      },
+      {
+        "q": "Kokius failų formatus galiu įkelti?",
+        "a": "Garsas: MP3, WAV, M4A, FLAC, OGG. Vaizdo įrašai: MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "Ar mano duomenys saugūs?",
+        "a": "Taip. Failai ištrinami po apdorojimo. Niekada nenaudojami mokymui."
+      },
+      {
+        "q": "Ar galiu atšaukti bet kada?",
+        "a": "Taip, atšaukite bet kada. Jokių ilgalaikių sutarčių."
+      }
+    ]
   },
   "footer": {
-    "tagline": "AI valdomas turinio perdirbimas. Paverskite vieną vaizdo įrašą visa savo kelių platformų turinio strategija.",
+    "tagline": "AI pagrįstas turinio pernaudojimas. Paverskite vieną vaizdo įrašą visa kelių platformų turinio strategija.",
     "copyright": "Visos teisės saugomos.",
-    "builtWith": "Sukurta turinio kūrėjams visame pasaulyje"
+    "builtWith": "Sukurta turinio kūrėjams visame pasaulyje",
+    "sections": {
+      "product": "Produktas",
+      "tools": "Įrankiai",
+      "legal": "Teisinė informacija",
+      "company": "Įmonė"
+    },
+    "links": {
+      "features": "Funkcijos",
+      "pricing": "Kainos",
+      "faq": "DUK",
+      "yt2blog": "YouTube į tinklaraštį",
+      "vid2twitter": "Vaizdo įrašas į Twitter",
+      "vid2xhs": "Vaizdo įrašas į Xiaohongshu",
+      "podcast2article": "Podcast'as į straipsnį",
+      "allTools": "Visi įrankiai →",
+      "privacy": "Privatumas",
+      "terms": "Sąlygos",
+      "github": "GitHub",
+      "contact": "Kontaktai"
+    }
+  },
+  "workbench": {
+    "transcribing": "Transkribuojama",
+    "generating": "Generuojamas turinys",
+    "completed": "Baigta",
+    "progress": "Eiga",
+    "cancel": "Atšaukti",
+    "refineTitle": "Tobulinti - ",
+    "refinePlaceholder": "Pasakykite AI, kaip koreguoti šį turinį...",
+    "send": "Siųsti",
+    "copy": "Kopijuoti",
+    "copied": "Nukopijuota",
+    "download": "Atsisiųsti",
+    "refine": "Tobulinti"
   }
 }

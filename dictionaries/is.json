@@ -1,115 +1,149 @@
 {
   "nav": {
     "features": "Eiginleikar",
+    "howItWorks": "Hvernig það virkar",
     "pricing": "Verðskrá",
-    "faq": "Spurt og svarað",
+    "faq": "Algengar spurningar",
     "tryFree": "Prófa ókeypis"
   },
   "hero": {
     "badge": "AI-knúin endurnýting efnis",
     "title": "Breyttu einu myndbandi í",
-    "highlight": "Alla þína efnisstefnu",
-    "subtitle": "Límdu hlekk eða hladdu upp skrá — AI umritar og endurnýtir efnið þitt sjálfkrafa í bloggfærslur, samfélagsþræði, fréttabréf og fleira.",
-    "accent": "10-faldaðu efnisafköstin þín.",
+    "highlight": "Efni alls staðar",
+    "subtitle": "Límdu YouTube-tengil. Hladdu upp hlaðvarpi. Settu inn texta.",
+    "accent": "ailomo býr til fágað efni fyrir hvern vettvang samstundis.",
     "stats": {
       "languages": "Tungumál",
-      "formats": "Úttakssnið",
-      "speed": "Vinnslutími"
+      "formats": "Snið",
+      "speed": "Vinnsluhraði"
     },
     "tabs": {
-      "url": "Límdu hlekk",
-      "file": "Hladdu upp skrá",
-      "text": "Límdu texta"
+      "url": "Límdu tengil",
+      "file": "Hlaða upp",
+      "text": "Texti"
     },
-    "placeholder": "Límdu YouTube, podcast eða hlekk að myndbandi...",
+    "placeholder": "Límdu YouTube-tengil, hlaðvarpstengil eða hvaða myndband sem er...",
     "generate": "Búa til",
+    "fileDropTitle": "Slepptu skránni hér",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — allt að 500MB",
+    "textPlaceholder": "Límdu afrit eða texta — AI breytir því í efni tilbúið fyrir vettvang...",
+    "noSignup": "Engin skráning nauðsynleg. Ókeypis að byrja.",
     "processing": "Vinnsla...",
     "error": "Eitthvað fór úrskeiðis",
     "tryAgain": "Reyna aftur",
     "startOver": "Byrja upp á nýtt",
-    "formatsGenerated": "sniðum búið til"
+    "formatsGenerated": "snið búin til"
   },
   "howItWorks": {
     "label": "Hvernig það virkar",
-    "title": "Frá myndbandi til",
-    "highlight": "Fjölpalla",
+    "title": "Frá myndbandi til ",
+    "highlight": "Margra vettvanga",
     "suffix": "í 3 skrefum",
     "steps": [
       {
         "title": "Límdu eða hladdu upp",
-        "desc": "Slepptu YouTube hlekk, hladdu upp hljóðskrá eða límdu texta. Engin uppsetning nauðsynleg — bara einn smellur."
+        "desc": "Slepptu YouTube-tengli, hladdu upp hljóðskrá eða límdu texta. Engin uppsetning."
       },
       {
-        "title": "AI vinnur töfra sína",
-        "desc": "AI okkar umritar og skilur efnið þitt, endurskrifar það síðan á greindan hátt fyrir einstakan stíl hvers vettvangs."
+        "title": "AI umbreytir því",
+        "desc": "Efnið þitt er afritað, skilið og endurskrifað fyrir einstakan rödd hvers vettvangs."
       },
       {
         "title": "Birtu alls staðar",
-        "desc": "Fáðu fágað efni fyrir WeChat, Twitter, LinkedIn, Xiaohongshu, blogg og fleira. Afritaðu, hladdu niður eða deildu strax."
-      }
-    ]
-  },
-  "features": {
-    "label": "Eiginleikar",
-    "title": "Allt sem þú þarft til að",
-    "highlight": "Stækka efnið þitt",
-    "subtitle": "Hannað fyrir skapandi höfunda sem vilja nýta hvert efnisstykki sem þeir framleiða.",
-    "list": [
-      {
-        "title": "AI-knúin endurskrifun",
-        "desc": "Ekki bara umritun — AI okkar skilur samhengi og endurskrifar fyrir einstakan rödd og snið hvers vettvangs."
-      },
-      {
-        "title": "10 úttakssnið",
-        "desc": "Bloggfærslur, Twitter þræðir, LinkedIn færslur, Xiaohongshu glósur, fréttabréf, SRT textar, SEO greinar og fleira."
-      },
-      {
-        "title": "63+ tungumál",
-        "desc": "Umritaðu og búðu til efni á 63+ tungumálum. Fullkomið fyrir alþjóðlega höfunda og áhorfendur."
-      },
-      {
-        "title": "Streymisvinnsla",
-        "desc": "Sjáðu efni birtast staf fyrir staf í rauntíma. Engin bið eftir hleðsluhjólum."
-      },
-      {
-        "title": "Samtalsfínstilling",
-        "desc": "Spjallaðu við hvert úttak til að fínstilla það. Segðu „gerðu það styttra“ eða „bættu við emoji“ — AI beitir því strax."
-      },
-      {
-        "title": "6 útflutningssnið",
-        "desc": "Hladdu niður sem Markdown, TXT, PDF, DOCX, SRT eða CSV. Beint tilbúið til birtingar."
-      },
-      {
-        "title": "Deildu og vinndu saman",
-        "desc": "Búðu til deilanlega hlekki fyrir samstarfsmenn til að skoða og vinna saman að efni."
-      },
-      {
-        "title": "Einka og öruggt",
-        "desc": "Efnið þitt helst þitt. Skrám er sjálfkrafa eytt eftir vinnslu. Engin gagnageymsla."
-      },
-      {
-        "title": "Snjöll vettvangsgreining",
-        "desc": "Límirðu YouTube hlekk? Við stingum upp á blogg + Twitter. Límirðu Bilibili? Við stingum upp á WeChat + Xiaohongshu."
+        "desc": "Fáðu bloggfærslur, samfélagsþræði, fréttabréf og fleira. Afritaðu, hladdu niður, búið."
       }
     ]
   },
   "highlights": {
     "label": "Af hverju ailomo",
-    "title": "Öðruvísi hannað.",
-    "highlight": "AI-fyrst frá grunni"
+    "title": "Öðruvísi smíðað. ",
+    "highlight": "AI-nætt",
+    "items": [
+      {
+        "badge": "Greind",
+        "title": "Ekki bara afritun",
+        "desc": "AI okkar greinir samhengi, dregur fram innsýn og býr til efni sem er fínstillt fyrir áhorfendur hvers vettvangs."
+      },
+      {
+        "badge": "Dreifing",
+        "title": "Einn smellur, allir vettvangar",
+        "desc": "Öll 10 sniðin búin til samtímis. Frá löngum bloggum til samfélagsþráða — allt tilbúið á nokkrum sekúndum."
+      },
+      {
+        "badge": "Fínpússun",
+        "title": "Spjallaðu við efnið þitt",
+        "desc": "Sérhver úttak hefur innbyggt AI-spjall. „Bættu við fleiri gögnum“, „gerðu það kröftugra“ — breytingar beitt samstundis."
+      }
+    ]
+  },
+  "features": {
+    "label": "Eiginleikar",
+    "title": "Allt til að ",
+    "highlight": "Stækka efni",
+    "subtitle": "Smíðað fyrir skapandi höfunda sem breyta hverju efni í hámarksáhrif.",
+    "list": [
+      {
+        "title": "AI-knúin endurskrifun",
+        "desc": "Ekki bara afritun — AI okkar skilur samhengi og endurskrifar fyrir einstakan rödd hvers vettvangs."
+      },
+      {
+        "title": "10 úttakssnið",
+        "desc": "Bloggfærslur, Twitter-þræðir, LinkedIn, Xiaohongshu, fréttabréf, SRT-textar, SEO-greinar, fleira."
+      },
+      {
+        "title": "63+ tungumál",
+        "desc": "Afritaðu og búðu til efni á 63+ tungumálum. Smíðað fyrir alþjóðlega skapandi höfunda."
+      },
+      {
+        "title": "Streymisvinnsla",
+        "desc": "Efni birtist staf fyrir staf í rauntíma. Engin bið eftir hleðsluhjólum."
+      },
+      {
+        "title": "Samtalsfínpússun",
+        "desc": "Spjallaðu við hvert úttak til að fínstilla það. „Gerðu það styttra“ — gert."
+      },
+      {
+        "title": "6 útflutningssnið",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Tilbúið til birtingar samstundis."
+      },
+      {
+        "title": "Deila og vinna saman",
+        "desc": "Búðu til tengla fyrir samstarfsmenn til að skoða og vinna saman að efninu þínu."
+      },
+      {
+        "title": "Einka og öruggt",
+        "desc": "Skrám eytt eftir vinnslu. Efnið þitt er aldrei notað til þjálfunar."
+      },
+      {
+        "title": "Snjöll greining",
+        "desc": "YouTube-tengill? → Blogg + Twitter. Bilibili? → WeChat + Xiaohongshu. Sjálfvirkt."
+      }
+    ]
   },
   "formats": {
     "outputLabel": "Úttakssnið",
-    "outputTitle": "10 snið,",
-    "outputHighlight": "Einn smellur",
-    "outputSubtitle": "Búðu til allt samtímis — engin þörf á að keyra tólið oftar en einu sinni.",
+    "outputTitle": "10 snið, ",
+    "outputHighlight": "einn smellur",
+    "outputSubtitle": "Búðu til allt samtímis — engin þörf á að keyra tólið margsinnis.",
+    "formatNames": [
+      "Bloggfærsla",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "SEO-grein",
+      "Fréttabréf",
+      "SRT-textar",
+      "AI-samantekt",
+      "Hugarkort"
+    ],
     "langLabel": "Alþjóðleg ná",
     "langTitle": "63+ tungumál studd",
-    "langSubtitle": "Umritaðu og búðu til efni á 63+ tungumálum. Fullkomið fyrir alþjóðlega höfunda og áhorfendur.",
+    "langSubtitle": "Afritaðu og búðu til efni á 63+ tungumálum. Fullkomið fyrir alþjóðlega skapandi höfunda og alþjóðlega áhorfendur.",
     "more": "+45 fleiri"
   },
   "social": {
-    "label": "Treyst af höfundum",
+    "label": "Treyst af skapandi höfundum",
     "stats": {
       "users": "Virkir notendur",
       "videos": "Myndbönd unnin",
@@ -123,17 +157,17 @@
         "role": "Efnisgerðarmaður"
       },
       {
-        "text": "„Samtalsfínstillingin er snilld. Ég get fínstillt hvert úttak með því að spjalla við það. Sparar mér klukkustundir í hverri viku.“",
+        "text": "„Samtalsfínpússunin er snilld. Ég get stillt hvert úttak með því að spjalla við það. Sparar mér klukkustundir í hverri viku.“",
         "author": "Marcus Rivera",
         "role": "Markaðsstjóri"
       },
       {
-        "text": "„Ég var efins um AI efni, en gæðin komu mér virkilega á óvart. Vettvangssértæka sniðunin er nákvæm.“",
+        "text": "„Ég var efins um AI-efni, en gæðin komu mér virkilega á óvart. Vettvangssértæka sniðunin er á hreinu.“",
         "author": "Yuki Tanaka",
-        "role": "Podcast gestgjafi"
+        "role": "Hlaðvarpsstjórnandi"
       },
       {
-        "text": "„Sem einyrki gefur þetta tól mér afköst efnisliðs. LinkedIn færslur, blogg, tíst — allt úr einu myndbandi.“",
+        "text": "„Sem einyrki gefur þetta tól mér afköst eins og efnisdeild. LinkedIn-færslur, blogg, tíst — allt úr einu myndbandi.“",
         "author": "Alex Park",
         "role": "Sprotafyrirtækisstofnandi"
       }
@@ -141,44 +175,142 @@
   },
   "pricing": {
     "label": "Verðskrá",
-    "title": "Einföld,",
-    "highlight": "Gagnsæ",
-    "suffix": "verðskrá",
-    "subtitle": "Byrjaðu ókeypis, uppfærðu þegar þú þarft meira. Engin föld gjöld.",
+    "title": "Einföld, ",
+    "highlight": "gagnsæ",
+    "suffix": " verðskrá",
+    "subtitle": "Byrjaðu ókeypis, uppfærðu þegar þú þarft meira. Engin föld gjöld. Hætta hvenær sem er.",
+    "enterprise": "Þarftu meira? ",
+    "enterpriseLink": "Hafðu samband",
+    "enterpriseSuffix": " fyrir fyrirtækjaverð.",
     "plans": {
       "free": {
         "name": "Ókeypis",
         "desc": "Fullkomið til að prófa",
-        "cta": "Byrjaðu"
+        "cta": "Byrjaðu",
+        "features": [
+          "3 myndbönd/mánuði",
+          "5 úttakssnið",
+          "Grunn-AI líkan",
+          "120 mín afritun",
+          "Samfélagsstuðningur"
+        ]
       },
       "creator": {
-        "name": "Höfundur",
+        "name": "Skapandi höfundur",
         "desc": "Fyrir alvarlega efnisgerðarmenn",
-        "cta": "Byrjaðu ókeypis prufu",
-        "badge": "Vinsælast"
+        "cta": "Gerast áskrifandi núna",
+        "badge": "Vinsælast",
+        "features": [
+          "30 myndbönd/mánuði",
+          "Öll 10 úttakssnið",
+          "Premium AI líkan",
+          "1.200 mín afritun",
+          "Samtalsfínpússun",
+          "Forgangsstuðningur",
+          "API-aðgangur"
+        ]
       },
       "pro": {
-        "name": "Pro",
+        "name": "Atvinnumaður",
         "desc": "Fyrir teymi og stofur",
-        "cta": "Byrjaðu ókeypis prufu"
+        "cta": "Gerast áskrifandi núna",
+        "features": [
+          "Ótakmörkuð myndbönd",
+          "Öll snið + sérsniðin",
+          "Premium AI + sérsniðinn tón",
+          "6.000 mín afritun",
+          "Teymissamvinna",
+          "White-label útflutningur",
+          "Sérstakur stuðningur",
+          "Greiningarmælaborð"
+        ]
       }
     }
   },
   "cta": {
-    "title": "Tilbúinn að",
-    "highlight": "10-falda efnisafköst",
-    "suffix": "þín?",
-    "subtitle": "Vertu með þúsundum höfunda sem breyta hverju myndbandi í heildstæða fjölpalla efnisstefnu. Byrjaðu ókeypis — ekkert kreditkort nauðsynlegt.",
+    "title": "Tilbúinn að ",
+    "highlight": "10-falda efnið þitt",
+    "suffix": "?",
+    "subtitle": "Vertu með þúsundum skapandi höfunda sem breyta hverju myndbandi í heildstæða margra vettvanga efnisstefnu. Byrjaðu ókeypis — engin kreditkort nauðsynleg.",
     "start": "Byrjaðu ókeypis",
     "pricing": "Skoða verðskrá"
   },
   "faq": {
-    "label": "FAQ",
-    "title": "Algengar spurningar"
+    "label": "Algengar spurningar",
+    "title": "Algengar ",
+    "highlight": "spurningar",
+    "items": [
+      {
+        "q": "Er það virkilega ókeypis að byrja?",
+        "a": "Já! Ókeypis áætlunin gefur þér 3 myndbönd/mánuði með 5 úttakssniðum. Ekkert kreditkort nauðsynlegt."
+      },
+      {
+        "q": "Hvaða tungumál styðjið þið?",
+        "a": "63+ tungumál fyrir afritun og efnisgerð."
+      },
+      {
+        "q": "Fyrir hvaða vettvanga get ég endurnýtt efni?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blogg, Medium, Substack, fréttabréf og fleira."
+      },
+      {
+        "q": "Hversu langan tíma tekur það?",
+        "a": "Flest myndbönd unnin á innan við 1 mínútu. Efni streymir í rauntíma."
+      },
+      {
+        "q": "Get ég fínpússað AI-búið efni?",
+        "a": "Já! Spjallaðu við hvert úttak til að stilla tón, lengd, stíl eða bæta við þáttum."
+      },
+      {
+        "q": "Hvaða skráarsnið get ég hlaðið upp?",
+        "a": "Hljóð: MP3, WAV, M4A, FLAC, OGG. Myndband: MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "Er gögnin mín örugg?",
+        "a": "Já. Skrám eytt eftir vinnslu. Aldrei notuð til þjálfunar."
+      },
+      {
+        "q": "Get ég hætt hvenær sem er?",
+        "a": "Já, hættu hvenær sem er. Engir langtímasamningar."
+      }
+    ]
   },
   "footer": {
-    "tagline": "AI-knúin endurnýting efnis. Breyttu einu myndbandi í alla þína fjölpalla efnisstefnu.",
-    "copyright": "Allur réttur áskilinn.",
-    "builtWith": "Hannað fyrir efnisgerðarmenn um allan heim"
+    "tagline": "AI-knúin endurnýting efnis. Breyttu einu myndbandi í heildstæða margra vettvanga efnisstefnu.",
+    "copyright": "Öll réttindi áskilin.",
+    "builtWith": "Smíðað fyrir skapandi höfunda um allan heim",
+    "sections": {
+      "product": "Vara",
+      "tools": "Tól",
+      "legal": "Löglegt",
+      "company": "Fyrirtæki"
+    },
+    "links": {
+      "features": "Eiginleikar",
+      "pricing": "Verðskrá",
+      "faq": "Algengar spurningar",
+      "yt2blog": "YouTube í blogg",
+      "vid2twitter": "Myndband í Twitter",
+      "vid2xhs": "Myndband í Xiaohongshu",
+      "podcast2article": "Hlaðvarp í grein",
+      "allTools": "Öll tól →",
+      "privacy": "Persónuvernd",
+      "terms": "Skilmálar",
+      "github": "GitHub",
+      "contact": "Hafðu samband"
+    }
+  },
+  "workbench": {
+    "transcribing": "Afrita",
+    "generating": "Búa til efni",
+    "completed": "Lokið",
+    "progress": "Framvinda",
+    "cancel": "Hætta við",
+    "refineTitle": "Fínpússa - ",
+    "refinePlaceholder": "Segðu AI hvernig á að stilla þetta efni...",
+    "send": "Senda",
+    "copy": "Afrita",
+    "copied": "Afritað",
+    "download": "Hlaða niður",
+    "refine": "Fínpússa"
   }
 }

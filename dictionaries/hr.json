@@ -1,28 +1,33 @@
 {
   "nav": {
     "features": "Značajke",
+    "howItWorks": "Kako radi",
     "pricing": "Cijene",
-    "faq": "ČPP",
+    "faq": "FAQ",
     "tryFree": "Isprobaj besplatno"
   },
   "hero": {
-    "badge": "Preoblikovanje sadržaja pomoću AI-ja",
+    "badge": "AI-pokretana prerada sadržaja",
     "title": "Pretvorite jedan video u",
-    "highlight": "Cijelu svoju strategiju sadržaja",
-    "subtitle": "Zalijepite poveznicu ili prenesite datoteku — AI automatski transkribira i prenamjenjuje vaš sadržaj u objave na blogu, društvene niti, biltene i još mnogo toga.",
-    "accent": "Udeseterostručite svoj sadržaj.",
+    "highlight": "sadržaj posvuda",
+    "subtitle": "Zalijepite YouTube poveznicu. Prenesite podcast. Upišite tekstualni prijepis.",
+    "accent": "ailomo trenutno stvara kvalitetan sadržaj za svaku platformu.",
     "stats": {
       "languages": "Jezici",
-      "formats": "Izlazni formati",
-      "speed": "Vrijeme obrade"
+      "formats": "Formati",
+      "speed": "Obrada"
     },
     "tabs": {
       "url": "Zalijepi poveznicu",
-      "file": "Prenesi datoteku",
-      "text": "Zalijepi tekst"
+      "file": "Prenesi",
+      "text": "Tekst"
     },
-    "placeholder": "Zalijepite YouTube, podcast ili bilo koju video poveznicu...",
+    "placeholder": "Zalijepite YouTube poveznicu, URL podcasta ili bilo koji video...",
     "generate": "Generiraj",
+    "fileDropTitle": "Ispustite datoteku ovdje",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — do 500 MB",
+    "textPlaceholder": "Zalijepite svoj prijepis ili tekst — AI ga pretvara u sadržaj spreman za platforme...",
+    "noSignup": "Nije potrebna registracija. Besplatno za početak.",
     "processing": "Obrađujem...",
     "error": "Nešto je pošlo po zlu",
     "tryAgain": "Pokušaj ponovno",
@@ -31,78 +36,107 @@
   },
   "howItWorks": {
     "label": "Kako radi",
-    "title": "Od videa do",
+    "title": "Od videa do ",
     "highlight": "više platformi",
     "suffix": "u 3 koraka",
     "steps": [
       {
         "title": "Zalijepi ili prenesi",
-        "desc": "Ubacite YouTube poveznicu, prenesite audio datoteku ili zalijepite tekst. Nije potrebna konfiguracija — samo jedan klik."
+        "desc": "Ubacite YouTube poveznicu, prenesite audio datoteku ili zalijepite tekst. Nulta konfiguracija."
       },
       {
-        "title": "AI radi svoju magiju",
-        "desc": "Naš AI transkribira i razumije vaš sadržaj, zatim ga inteligentno prepisuje za jedinstveni stil svake platforme."
+        "title": "AI ga transformira",
+        "desc": "Vaš sadržaj se transkribira, razumije i prepisuje za jedinstveni glas svake platforme."
       },
       {
         "title": "Objavi posvuda",
-        "desc": "Dobijte dotjeran sadržaj za WeChat, Twitter, LinkedIn, Xiaohongshu, blogove i više. Kopirajte, preuzmite ili podijelite odmah."
-      }
-    ]
-  },
-  "features": {
-    "label": "Značajke",
-    "title": "Sve što vam treba za",
-    "highlight": "skaliranje sadržaja",
-    "subtitle": "Napravljeno za kreatore koji žele maksimalno iskoristiti svaki djelić sadržaja koji proizvedu.",
-    "list": [
-      {
-        "title": "Prepisivanje pomoću AI-ja",
-        "desc": "Nije samo transkripcija — naš AI razumije kontekst i prepisuje za jedinstveni glas i format svake platforme."
-      },
-      {
-        "title": "10 izlaznih formata",
-        "desc": "Objave na blogu, Twitter niti, LinkedIn objave, Xiaohongshu bilješke, bilteni, SRT titlovi, SEO članci i više."
-      },
-      {
-        "title": "63+ jezika",
-        "desc": "Transkribirajte i generirajte sadržaj na 63+ jezika. Savršeno za međunarodne kreatore i globalnu publiku."
-      },
-      {
-        "title": "Streaming generiranje",
-        "desc": "Gledajte kako se sadržaj pojavljuje znak po znak u stvarnom vremenu. Nema više čekanja na učitavanje."
-      },
-      {
-        "title": "Razgovorno dotjerivanje",
-        "desc": "Razgovarajte sa svakim izlazom kako biste ga fino podesili. Recite \"skrati\" ili \"dodaj emoji\" — AI to odmah primjenjuje."
-      },
-      {
-        "title": "6 izvoznih formata",
-        "desc": "Preuzmite kao Markdown, TXT, PDF, DOCX, SRT ili CSV. Spremno za objavljivanje."
-      },
-      {
-        "title": "Dijeljenje i suradnja",
-        "desc": "Generirajte poveznice za dijeljenje kako bi vaši suradnici mogli pregledavati i surađivati na sadržaju."
-      },
-      {
-        "title": "Privatno i sigurno",
-        "desc": "Vaš sadržaj ostaje vaš. Datoteke se automatski brišu nakon obrade. Bez zadržavanja podataka."
-      },
-      {
-        "title": "Pametno prepoznavanje platforme",
-        "desc": "Zalijepite YouTube poveznicu? Predlažemo blog + Twitter. Zalijepite Bilibili? Predlažemo WeChat + Xiaohongshu."
+        "desc": "Dobijte blog postove, društvene niti, biltene i više. Kopiraj, preuzmi, gotovo."
       }
     ]
   },
   "highlights": {
     "label": "Zašto ailomo",
-    "title": "Drugačije napravljen.",
-    "highlight": "AI-prvi od temelja"
+    "title": "Drugačije izgrađen. ",
+    "highlight": "AI-izvorni",
+    "items": [
+      {
+        "badge": "Inteligencija",
+        "title": "Nije samo transkripcija",
+        "desc": "Naš AI analizira kontekst, izvlači uvide i generira sadržaj optimiziran za publiku svake platforme."
+      },
+      {
+        "badge": "Distribucija",
+        "title": "Jedan klik, svaka platforma",
+        "desc": "Svih 10 formata generira se istovremeno. Od dugih blogova do društvenih niti — sve spremno u sekundama."
+      },
+      {
+        "badge": "Dorada",
+        "title": "Razgovarajte sa svojim sadržajem",
+        "desc": "Svaki izlaz ima ugrađeni AI chat. \"Dodaj više podataka\", \"učini ga oštrijim\" — promjene se primjenjuju trenutno."
+      }
+    ]
+  },
+  "features": {
+    "label": "Značajke",
+    "title": "Sve za ",
+    "highlight": "skaliranje sadržaja",
+    "subtitle": "Izgrađeno za kreatore koji svaki komad sadržaja pretvaraju u maksimalan učinak.",
+    "list": [
+      {
+        "title": "AI-pokretano prepisivanje",
+        "desc": "Nije samo transkripcija — naš AI razumije kontekst i prepisuje za jedinstveni glas svake platforme."
+      },
+      {
+        "title": "10 izlaznih formata",
+        "desc": "Blog postovi, Twitter niti, LinkedIn, Xiaohongshu, bilteni, SRT titlovi, SEO članci, više."
+      },
+      {
+        "title": "63+ jezika",
+        "desc": "Transkribirajte i generirajte na 63+ jezika. Izgrađeno za međunarodne kreatore."
+      },
+      {
+        "title": "Streaming generacija",
+        "desc": "Sadržaj se pojavljuje znak po znak u stvarnom vremenu. Bez čekanja na spinnere."
+      },
+      {
+        "title": "Razgovorna dorada",
+        "desc": "Razgovarajte sa svakim izlazom kako biste ga fino podesili. \"Učini ga kraćim\" — gotovo."
+      },
+      {
+        "title": "6 izvoznih formata",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Spremno za trenutno objavljivanje."
+      },
+      {
+        "title": "Dijeljenje i suradnja",
+        "desc": "Generirajte poveznice za članove tima za pregled i suradnju na vašem sadržaju."
+      },
+      {
+        "title": "Privatno i sigurno",
+        "desc": "Datoteke se brišu nakon obrade. Vaš sadržaj se nikada ne koristi za obuku."
+      },
+      {
+        "title": "Pametno prepoznavanje",
+        "desc": "YouTube poveznica? → Blog + Twitter. Bilibili? → WeChat + Xiaohongshu. Automatski."
+      }
+    ]
   },
   "formats": {
     "outputLabel": "Izlazni formati",
-    "outputTitle": "10 formata,",
+    "outputTitle": "10 formata, ",
     "outputHighlight": "jedan klik",
-    "outputSubtitle": "Generirajte sve istovremeno — nema potrebe više puta pokretati alat.",
+    "outputSubtitle": "Generirajte sve istovremeno — nema potrebe za višestrukim pokretanjem alata.",
+    "formatNames": [
+      "Blog post",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "SEO članak",
+      "Bilten",
+      "SRT titlovi",
+      "AI sažetak",
+      "Mapa uma"
+    ],
     "langLabel": "Globalni doseg",
     "langTitle": "Podržano 63+ jezika",
     "langSubtitle": "Transkribirajte i generirajte sadržaj na 63+ jezika. Savršeno za međunarodne kreatore i globalnu publiku.",
@@ -118,12 +152,12 @@
     },
     "testimonials": [
       {
-        "text": "\"Napokon alat koji razumije tijek rada za stvaranje sadržaja. Jedan video → sve platforme za nekoliko minuta. Revolucija za moj raspored sadržaja.\"",
+        "text": "\"Napokon alat koji razumije tijek rada stvaranja sadržaja. Jedan video → sve platforme u minutama. Promjena igre za moj raspored sadržaja.\"",
         "author": "Sarah Chen",
-        "role": "Kreatorica sadržaja"
+        "role": "Kreator sadržaja"
       },
       {
-        "text": "\"Razgovorno dotjerivanje je briljantno. Mogu prilagoditi svaki izlaz jednostavnim razgovorom s njim. Štedi mi sate svaki tjedan.\"",
+        "text": "\"Razgovorna dorada je briljantna. Mogu prilagoditi svaki izlaz jednostavnim razgovorom s njim. Štedi mi sate svaki tjedan.\"",
         "author": "Marcus Rivera",
         "role": "Voditelj marketinga"
       },
@@ -133,7 +167,7 @@
         "role": "Voditelj podcasta"
       },
       {
-        "text": "\"Kao samostalni osnivač, ovaj alat mi daje učinak tima za sadržaj. LinkedIn objave, blogovi, tweetovi — sve iz jednog videa.\"",
+        "text": "\"Kao samostalni osnivač, ovaj alat mi daje učinak tima za sadržaj. LinkedIn postovi, blogovi, tweetovi — sve iz jednog videa.\"",
         "author": "Alex Park",
         "role": "Osnivač startupa"
       }
@@ -141,44 +175,142 @@
   },
   "pricing": {
     "label": "Cijene",
-    "title": "Jednostavne,",
+    "title": "Jednostavne, ",
     "highlight": "transparentne",
     "suffix": "cijene",
-    "subtitle": "Počnite besplatno, nadogradite kada vam zatreba više. Bez skrivenih naknada.",
+    "subtitle": "Počnite besplatno, nadogradite kada trebate više. Bez skrivenih naknada. Otkažite bilo kada.",
+    "enterprise": "Trebate više? ",
+    "enterpriseLink": "Kontaktirajte nas",
+    "enterpriseSuffix": " za poslovne cijene.",
     "plans": {
       "free": {
         "name": "Besplatno",
         "desc": "Savršeno za isprobavanje",
-        "cta": "Započni"
+        "cta": "Započni",
+        "features": [
+          "3 videa/mjesečno",
+          "5 izlaznih formata",
+          "Osnovni AI model",
+          "120 min transkripcije",
+          "Podrška zajednice"
+        ]
       },
       "creator": {
         "name": "Kreator",
         "desc": "Za ozbiljne kreatore sadržaja",
-        "cta": "Započni besplatnu probu",
-        "badge": "Najpopularnije"
+        "cta": "Pretplati se sada",
+        "badge": "Najpopularnije",
+        "features": [
+          "30 videa/mjesečno",
+          "Svih 10 izlaznih formata",
+          "Premium AI model",
+          "1.200 min transkripcije",
+          "Razgovorna dorada",
+          "Prioritetna podrška",
+          "API pristup"
+        ]
       },
       "pro": {
         "name": "Pro",
         "desc": "Za timove i agencije",
-        "cta": "Započni besplatnu probu"
+        "cta": "Pretplati se sada",
+        "features": [
+          "Neograničeno videa",
+          "Svi formati + prilagođeni",
+          "Premium AI + prilagođeni ton",
+          "6.000 min transkripcije",
+          "Timska suradnja",
+          "White-label izvoz",
+          "Namjenska podrška",
+          "Analitička ploča"
+        ]
       }
     }
   },
   "cta": {
-    "title": "Spremni za",
-    "highlight": "udeseterostručenje sadržaja",
+    "title": "Spremni za ",
+    "highlight": "10x povećanje sadržaja",
     "suffix": "?",
-    "subtitle": "Pridružite se tisućama kreatora koji svaki video pretvaraju u kompletnu strategiju sadržaja za više platformi. Počnite besplatno — nije potrebna kreditna kartica.",
+    "subtitle": "Pridružite se tisućama kreatora koji svaki video pretvaraju u potpunu strategiju sadržaja na više platformi. Počnite besplatno — nije potrebna kreditna kartica.",
     "start": "Započni besplatno",
     "pricing": "Pogledaj cijene"
   },
   "faq": {
-    "label": "ČPP",
-    "title": "Često postavljana pitanja"
+    "label": "FAQ",
+    "title": "Često postavljana ",
+    "highlight": "pitanja",
+    "items": [
+      {
+        "q": "Je li stvarno besplatno za početak?",
+        "a": "Da! Besplatni plan daje vam 3 videa/mjesečno s 5 izlaznih formata. Nije potrebna kreditna kartica."
+      },
+      {
+        "q": "Koje jezike podržavate?",
+        "a": "63+ jezika za transkripciju i generiranje sadržaja."
+      },
+      {
+        "q": "Za koje platforme mogu preraditi sadržaj?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blogovi, Medium, Substack, bilteni i više."
+      },
+      {
+        "q": "Koliko dugo traje?",
+        "a": "Većina videa obrađuje se za manje od 1 minute. Sadržaj struji u stvarnom vremenu."
+      },
+      {
+        "q": "Mogu li doraditi AI-generirani sadržaj?",
+        "a": "Da! Razgovarajte sa svakim izlazom kako biste prilagodili ton, duljinu, stil ili dodali elemente."
+      },
+      {
+        "q": "Koje formate datoteka mogu prenijeti?",
+        "a": "Audio: MP3, WAV, M4A, FLAC, OGG. Video: MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "Jesu li moji podaci sigurni?",
+        "a": "Da. Datoteke se brišu nakon obrade. Nikada se ne koriste za obuku."
+      },
+      {
+        "q": "Mogu li otkazati bilo kada?",
+        "a": "Da, otkažite bilo kada. Bez dugoročnih ugovora."
+      }
+    ]
   },
   "footer": {
-    "tagline": "Preoblikovanje sadržaja pomoću AI-ja. Pretvorite jedan video u cijelu strategiju sadržaja za više platformi.",
+    "tagline": "AI-pokretana prerada sadržaja. Pretvorite jedan video u cijelu strategiju sadržaja na više platformi.",
     "copyright": "Sva prava pridržana.",
-    "builtWith": "Napravljeno za kreatore sadržaja diljem svijeta"
+    "builtWith": "Izgrađeno za kreatore sadržaja diljem svijeta",
+    "sections": {
+      "product": "Proizvod",
+      "tools": "Alati",
+      "legal": "Pravno",
+      "company": "Tvrtka"
+    },
+    "links": {
+      "features": "Značajke",
+      "pricing": "Cijene",
+      "faq": "FAQ",
+      "yt2blog": "YouTube u Blog",
+      "vid2twitter": "Video u Twitter",
+      "vid2xhs": "Video u Xiaohongshu",
+      "podcast2article": "Podcast u Članak",
+      "allTools": "Svi alati →",
+      "privacy": "Privatnost",
+      "terms": "Uvjeti",
+      "github": "GitHub",
+      "contact": "Kontakt"
+    }
+  },
+  "workbench": {
+    "transcribing": "Transkripcija",
+    "generating": "Generiranje sadržaja",
+    "completed": "Završeno",
+    "progress": "Napredak",
+    "cancel": "Otkaži",
+    "refineTitle": "Dorada - ",
+    "refinePlaceholder": "Recite AI-u kako prilagoditi ovaj sadržaj...",
+    "send": "Pošalji",
+    "copy": "Kopiraj",
+    "copied": "Kopirano",
+    "download": "Preuzmi",
+    "refine": "Doradi"
   }
 }

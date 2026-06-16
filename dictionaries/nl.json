@@ -1,28 +1,33 @@
 {
   "nav": {
     "features": "Functies",
+    "howItWorks": "Hoe het werkt",
     "pricing": "Prijzen",
     "faq": "FAQ",
     "tryFree": "Probeer gratis"
   },
   "hero": {
-    "badge": "AI-gestuurde contenthergebruik",
+    "badge": "AI-gestuurd content hergebruik",
     "title": "Maak van één video",
-    "highlight": "Je volledige contentstrategie",
-    "subtitle": "Plak een link of upload een bestand — AI transcribeert en hergebruikt je content automatisch naar blogposts, social threads, nieuwsbrieven en meer.",
-    "accent": "10x je contentoutput.",
+    "highlight": "Content overal",
+    "subtitle": "Plak een YouTube-link. Upload een podcast. Zet een tekst transcript neer.",
+    "accent": "ailomo maakt direct gepolijste content voor elk platform.",
     "stats": {
       "languages": "Talen",
-      "formats": "Uitvoerformaten",
-      "speed": "Verwerkingstijd"
+      "formats": "Formaten",
+      "speed": "Verwerking"
     },
     "tabs": {
       "url": "Plak link",
-      "file": "Upload bestand",
-      "text": "Plak tekst"
+      "file": "Upload",
+      "text": "Tekst"
     },
-    "placeholder": "Plak YouTube, podcast of een andere videolink...",
+    "placeholder": "Plak een YouTube-link, podcast-URL of een andere video...",
     "generate": "Genereer",
+    "fileDropTitle": "Sleep je bestand hier",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — tot 500MB",
+    "textPlaceholder": "Plak je transcript of tekst — AI zet het om in platformklare content...",
+    "noSignup": "Geen registratie vereist. Gratis om te starten.",
     "processing": "Bezig met verwerken...",
     "error": "Er is iets misgegaan",
     "tryAgain": "Probeer opnieuw",
@@ -31,78 +36,107 @@
   },
   "howItWorks": {
     "label": "Hoe het werkt",
-    "title": "Van video naar",
+    "title": "Van video naar ",
     "highlight": "Multi-platform",
     "suffix": "in 3 stappen",
     "steps": [
       {
         "title": "Plak of upload",
-        "desc": "Drop een YouTube-link, upload een audiobestand of plak tekst. Geen configuratie nodig — slechts één klik."
+        "desc": "Zet een YouTube-link, upload een audiobestand of plak tekst. Geen configuratie nodig."
       },
       {
-        "title": "AI doet zijn magie",
-        "desc": "Onze AI transcribeert en begrijpt je content, en herschrijft het vervolgens intelligent voor de unieke stijl van elk platform."
+        "title": "AI transformeert het",
+        "desc": "Je content wordt getranscribeerd, begrepen en herschreven voor de unieke stem van elk platform."
       },
       {
         "title": "Publiceer overal",
-        "desc": "Ontvang gepolijste content voor WeChat, Twitter, LinkedIn, Xiaohongshu, blogs en meer. Kopieer, download of deel direct."
-      }
-    ]
-  },
-  "features": {
-    "label": "Functies",
-    "title": "Alles wat je nodig hebt om",
-    "highlight": "Je content te schalen",
-    "subtitle": "Gebouwd voor makers die elk stukje content dat ze produceren willen maximaliseren.",
-    "list": [
-      {
-        "title": "AI-gestuurd herschrijven",
-        "desc": "Niet alleen transcriptie — onze AI begrijpt context en herschrijft voor de unieke stem en het formaat van elk platform."
-      },
-      {
-        "title": "10 uitvoerformaten",
-        "desc": "Blogposts, Twitter-threads, LinkedIn-posts, Xiaohongshu-notities, nieuwsbrieven, SRT-ondertitels, SEO-artikelen en meer."
-      },
-      {
-        "title": "63+ talen",
-        "desc": "Transcribeer en genereer content in 63+ talen. Perfect voor internationale makers en wereldwijde doelgroepen."
-      },
-      {
-        "title": "Streaming generatie",
-        "desc": "Zie content teken voor teken in realtime verschijnen. Niet langer wachten op laadspinners."
-      },
-      {
-        "title": "Conversationele verfijning",
-        "desc": "Chat met elke uitvoer om deze te verfijnen. Zeg \"maak het korter\" of \"voeg emoji toe\" — AI past het direct toe."
-      },
-      {
-        "title": "6 exportformaten",
-        "desc": "Download als Markdown, TXT, PDF, DOCX, SRT of CSV. Direct klaar om te publiceren."
-      },
-      {
-        "title": "Deel en werk samen",
-        "desc": "Genereer deelbare links voor teamgenoten om content te bekijken en samen te werken."
-      },
-      {
-        "title": "Privé en veilig",
-        "desc": "Je content blijft van jou. Bestanden worden automatisch verwijderd na verwerking. Geen gegevensopslag."
-      },
-      {
-        "title": "Slimme platformdetectie",
-        "desc": "Plak je een YouTube-link? We stellen blog + Twitter voor. Plak je Bilibili? We stellen WeChat + Xiaohongshu voor."
+        "desc": "Ontvang blogposts, social threads, nieuwsbrieven en meer. Kopiëren, downloaden, klaar."
       }
     ]
   },
   "highlights": {
     "label": "Waarom ailomo",
-    "title": "Anders gebouwd.",
-    "highlight": "AI-first vanaf de basis"
+    "title": "Anders gebouwd. ",
+    "highlight": "AI-native",
+    "items": [
+      {
+        "badge": "Intelligentie",
+        "title": "Niet alleen transcriptie",
+        "desc": "Onze AI analyseert context, haalt inzichten naar boven en genereert content geoptimaliseerd voor het publiek van elk platform."
+      },
+      {
+        "badge": "Distributie",
+        "title": "Eén klik, elk platform",
+        "desc": "Alle 10 formaten worden tegelijk gegenereerd. Van lange blogs tot social threads — alles in seconden klaar."
+      },
+      {
+        "badge": "Verfijning",
+        "title": "Chat met je content",
+        "desc": "Elke uitvoer heeft een ingebouwde AI-chat. 'Voeg meer data toe', 'maak het krachtiger' — wijzigingen worden direct toegepast."
+      }
+    ]
+  },
+  "features": {
+    "label": "Functies",
+    "title": "Alles om ",
+    "highlight": "content te schalen",
+    "subtitle": "Gebouwd voor makers die elk stuk content omzetten in maximale impact.",
+    "list": [
+      {
+        "title": "AI-gestuurd herschrijven",
+        "desc": "Niet alleen transcriptie — onze AI begrijpt context en herschrijft voor de unieke stem van elk platform."
+      },
+      {
+        "title": "10 uitvoerformaten",
+        "desc": "Blogposts, Twitter-threads, LinkedIn, Xiaohongshu, nieuwsbrieven, SRT-ondertiteling, SEO-artikelen, meer."
+      },
+      {
+        "title": "63+ talen",
+        "desc": "Transcribeer en genereer in 63+ talen. Gebouwd voor internationale makers."
+      },
+      {
+        "title": "Streaming generatie",
+        "desc": "Content verschijnt teken voor teken in real-time. Geen wachten op spinners."
+      },
+      {
+        "title": "Conversationele verfijning",
+        "desc": "Chat met elke uitvoer om deze te verfijnen. 'Maak het korter' — gedaan."
+      },
+      {
+        "title": "6 exportformaten",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Klaar om direct te publiceren."
+      },
+      {
+        "title": "Deel & samenwerk",
+        "desc": "Genereer links voor teamgenoten om je content te bekijken en eraan samen te werken."
+      },
+      {
+        "title": "Privé & veilig",
+        "desc": "Bestanden worden na verwerking verwijderd. Je content wordt nooit gebruikt voor training."
+      },
+      {
+        "title": "Slimme detectie",
+        "desc": "YouTube-link? → Blog + Twitter. Bilibili? → WeChat + Xiaohongshu. Automatisch."
+      }
+    ]
   },
   "formats": {
     "outputLabel": "Uitvoerformaten",
-    "outputTitle": "10 formaten,",
-    "outputHighlight": "Eén klik",
+    "outputTitle": "10 formaten, ",
+    "outputHighlight": "één klik",
     "outputSubtitle": "Genereer alles tegelijk — geen noodzaak om de tool meerdere keren te gebruiken.",
+    "formatNames": [
+      "Blogpost",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "SEO-artikel",
+      "Nieuwsbrief",
+      "SRT-ondertiteling",
+      "AI-samenvatting",
+      "Mindmap"
+    ],
     "langLabel": "Wereldwijd bereik",
     "langTitle": "63+ talen ondersteund",
     "langSubtitle": "Transcribeer en genereer content in 63+ talen. Perfect voor internationale makers en wereldwijde doelgroepen.",
@@ -118,17 +152,17 @@
     },
     "testimonials": [
       {
-        "text": "\"Eindelijk een tool die de workflow voor contentcreatie begrijpt. Eén video → alle platforms in minuten. Een gamechanger voor mijn contentschema.\"",
+        "text": "\"Eindelijk een tool die de contentcreatie-workflow begrijpt. Eén video → alle platforms in minuten. Een gamechanger voor mijn contentplanning.\"",
         "author": "Sarah Chen",
         "role": "Contentmaker"
       },
       {
         "text": "\"De conversationele verfijning is briljant. Ik kan elke uitvoer aanpassen door er gewoon mee te chatten. Bespaart me uren per week.\"",
         "author": "Marcus Rivera",
-        "role": "Marketinglead"
+        "role": "Marketing lead"
       },
       {
-        "text": "\"Ik was sceptisch over AI-content, maar de kwaliteit verraste me echt. De platformspecifieke opmaak is perfect.\"",
+        "text": "\"Ik was sceptisch over AI-content, maar de kwaliteit verraste me echt. De platformspecifieke opmaak is precies goed.\"",
         "author": "Yuki Tanaka",
         "role": "Podcasthost"
       },
@@ -141,44 +175,142 @@
   },
   "pricing": {
     "label": "Prijzen",
-    "title": "Eenvoudige,",
-    "highlight": "Transparante",
+    "title": "Eenvoudige, ",
+    "highlight": "transparante",
     "suffix": "prijzen",
-    "subtitle": "Begin gratis, upgrade wanneer je meer nodig hebt. Geen verborgen kosten.",
+    "subtitle": "Start gratis, upgrade wanneer je meer nodig hebt. Geen verborgen kosten. Annuleer op elk moment.",
+    "enterprise": "Meer nodig? ",
+    "enterpriseLink": "Neem contact op",
+    "enterpriseSuffix": " voor enterprise-prijzen.",
     "plans": {
       "free": {
         "name": "Gratis",
-        "desc": "Perfect om het uit te proberen",
-        "cta": "Aan de slag"
+        "desc": "Perfect om uit te proberen",
+        "cta": "Aan de slag",
+        "features": [
+          "3 video's/maand",
+          "5 uitvoerformaten",
+          "Basis AI-model",
+          "120 min transcriptie",
+          "Community-ondersteuning"
+        ]
       },
       "creator": {
         "name": "Creator",
         "desc": "Voor serieuze contentmakers",
-        "cta": "Start gratis proefperiode",
-        "badge": "Meest populair"
+        "cta": "Nu abonneren",
+        "badge": "Meest populair",
+        "features": [
+          "30 video's/maand",
+          "Alle 10 uitvoerformaten",
+          "Premium AI-model",
+          "1.200 min transcriptie",
+          "Conversationele verfijning",
+          "Prioriteitsondersteuning",
+          "API-toegang"
+        ]
       },
       "pro": {
         "name": "Pro",
         "desc": "Voor teams en bureaus",
-        "cta": "Start gratis proefperiode"
+        "cta": "Nu abonneren",
+        "features": [
+          "Onbeperkte video's",
+          "Alle formaten + aangepast",
+          "Premium AI + aangepaste toon",
+          "6.000 min transcriptie",
+          "Teamsamenwerking",
+          "White-label export",
+          "Toegewijde ondersteuning",
+          "Analytics-dashboard"
+        ]
       }
     }
   },
   "cta": {
-    "title": "Klaar om",
-    "highlight": "10x je contentoutput",
-    "suffix": "te krijgen?",
-    "subtitle": "Sluit je aan bij duizenden makers die elke video omzetten in een complete multi-platform contentstrategie. Begin gratis — geen creditcard nodig.",
-    "start": "Begin gratis",
+    "title": "Klaar om je content ",
+    "highlight": "10x te versterken",
+    "suffix": "?",
+    "subtitle": "Sluit je aan bij duizenden makers die elke video omzetten in een complete multi-platform contentstrategie. Start gratis — geen creditcard nodig.",
+    "start": "Gratis starten",
     "pricing": "Bekijk prijzen"
   },
   "faq": {
     "label": "FAQ",
-    "title": "Veelgestelde vragen"
+    "title": "Veelgestelde ",
+    "highlight": "vragen",
+    "items": [
+      {
+        "q": "Is het echt gratis om te starten?",
+        "a": "Ja! Het gratis plan geeft je 3 video's/maand met 5 uitvoerformaten. Geen creditcard vereist."
+      },
+      {
+        "q": "Welke talen ondersteunen jullie?",
+        "a": "63+ talen voor transcriptie en contentgeneratie."
+      },
+      {
+        "q": "Voor welke platforms kan ik content hergebruiken?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blogs, Medium, Substack, nieuwsbrieven en meer."
+      },
+      {
+        "q": "Hoe lang duurt het?",
+        "a": "De meeste video's worden in minder dan 1 minuut verwerkt. Content streamt in real-time."
+      },
+      {
+        "q": "Kan ik AI-gegenereerde content verfijnen?",
+        "a": "Ja! Chat met elke uitvoer om toon, lengte, stijl aan te passen of elementen toe te voegen."
+      },
+      {
+        "q": "Welke bestandsformaten kan ik uploaden?",
+        "a": "Audio: MP3, WAV, M4A, FLAC, OGG. Video: MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "Zijn mijn gegevens veilig?",
+        "a": "Ja. Bestanden worden na verwerking verwijderd. Nooit gebruikt voor training."
+      },
+      {
+        "q": "Kan ik op elk moment annuleren?",
+        "a": "Ja, annuleer op elk moment. Geen langetermijncontracten."
+      }
+    ]
   },
   "footer": {
-    "tagline": "AI-gestuurd contenthergebruik. Maak van één video je volledige multi-platform contentstrategie.",
+    "tagline": "AI-gestuurd content hergebruik. Maak van één video je volledige multi-platform contentstrategie.",
     "copyright": "Alle rechten voorbehouden.",
-    "builtWith": "Gebouwd voor contentmakers wereldwijd"
+    "builtWith": "Gebouwd voor contentmakers wereldwijd",
+    "sections": {
+      "product": "Product",
+      "tools": "Tools",
+      "legal": "Juridisch",
+      "company": "Bedrijf"
+    },
+    "links": {
+      "features": "Functies",
+      "pricing": "Prijzen",
+      "faq": "FAQ",
+      "yt2blog": "YouTube naar Blog",
+      "vid2twitter": "Video naar Twitter",
+      "vid2xhs": "Video naar Xiaohongshu",
+      "podcast2article": "Podcast naar Artikel",
+      "allTools": "Alle Tools →",
+      "privacy": "Privacy",
+      "terms": "Voorwaarden",
+      "github": "GitHub",
+      "contact": "Contact"
+    }
+  },
+  "workbench": {
+    "transcribing": "Transcriberen",
+    "generating": "Content genereren",
+    "completed": "Voltooid",
+    "progress": "Voortgang",
+    "cancel": "Annuleren",
+    "refineTitle": "Verfijn - ",
+    "refinePlaceholder": "Vertel AI hoe deze content aangepast moet worden...",
+    "send": "Verzenden",
+    "copy": "Kopiëren",
+    "copied": "Gekopieerd",
+    "download": "Downloaden",
+    "refine": "Verfijn"
   }
 }

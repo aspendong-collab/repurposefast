@@ -1,28 +1,33 @@
 {
   "nav": {
     "features": "Funkcie",
+    "howItWorks": "Ako to funguje",
     "pricing": "Cenník",
     "faq": "FAQ",
     "tryFree": "Vyskúšať zadarmo"
   },
   "hero": {
-    "badge": "Repurposing obsahu poháňaný AI",
+    "badge": "Opätovné využitie obsahu pomocou AI",
     "title": "Premeňte jedno video na",
-    "highlight": "Celú vašu obsahovú stratégiu",
-    "subtitle": "Vložte odkaz alebo nahrajte súbor – AI automaticky prepíše a repurpuje váš obsah na blogové príspevky, sociálne vlákna, newslettre a ďalšie.",
-    "accent": "Znásôbite svoj obsah 10-násobne.",
+    "highlight": "Obsah všade",
+    "subtitle": "Vložte odkaz na YouTube. Nahrajte podcast. Vložte textový prepis.",
+    "accent": "ailomo okamžite vytvára kvalitný obsah pre každú platformu.",
     "stats": {
       "languages": "Jazyky",
-      "formats": "Výstupné formáty",
-      "speed": "Čas spracovania"
+      "formats": "Formáty",
+      "speed": "Spracovanie"
     },
     "tabs": {
       "url": "Vložiť odkaz",
-      "file": "Nahrať súbor",
-      "text": "Vložiť text"
+      "file": "Nahrať",
+      "text": "Text"
     },
-    "placeholder": "Vložte odkaz na YouTube, podcast alebo akékoľvek video...",
+    "placeholder": "Vložte odkaz na YouTube, URL podcastu alebo akékoľvek video...",
     "generate": "Generovať",
+    "fileDropTitle": "Presuňte sem svoj súbor",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — do 500 MB",
+    "textPlaceholder": "Vložte svoj prepis alebo text — AI ho premení na obsah pripravený pre platformy...",
+    "noSignup": "Bez registrácie. Zadarmo na začiatok.",
     "processing": "Spracúva sa...",
     "error": "Niečo sa pokazilo",
     "tryAgain": "Skúsiť znova",
@@ -31,78 +36,107 @@
   },
   "howItWorks": {
     "label": "Ako to funguje",
-    "title": "Od videa k",
+    "title": "Od videa k ",
     "highlight": "Multiplatformovému",
-    "suffix": "obsahu v 3 krokoch",
+    "suffix": " obsahu v 3 krokoch",
     "steps": [
       {
-        "title": "Vložte alebo nahrajte",
-        "desc": "Vložte YouTube odkaz, nahrajte audio súbor alebo vložte text. Žiadna konfigurácia – stačí jedno kliknutie."
+        "title": "Vložiť alebo nahrať",
+        "desc": "Vložte odkaz na YouTube, nahrajte audio súbor alebo vložte text. Žiadna konfigurácia."
       },
       {
-        "title": "AI robí svoju mágiu",
-        "desc": "Naša AI prepíše a pochopí váš obsah, potom ho inteligentne prepíše pre jedinečný štýl každej platformy."
+        "title": "AI to transformuje",
+        "desc": "Váš obsah je prepísaný, pochopený a prepracovaný pre jedinečný hlas každej platformy."
       },
       {
-        "title": "Publikujte všade",
-        "desc": "Získajte vyleštený obsah pre WeChat, Twitter, LinkedIn, Xiaohongshu, blogy a ďalšie. Kopírujte, sťahujte alebo zdieľajte okamžite."
-      }
-    ]
-  },
-  "features": {
-    "label": "Funkcie",
-    "title": "Všetko, čo potrebujete na",
-    "highlight": "škálovanie vášho obsahu",
-    "subtitle": "Postavené pre tvorcov, ktorí chcú maximalizovať každý kúsok obsahu, ktorý vytvoria.",
-    "list": [
-      {
-        "title": "Prepísanie poháňané AI",
-        "desc": "Nie len prepis – naša AI rozumie kontextu a prepisuje pre jedinečný hlas a formát každej platformy."
-      },
-      {
-        "title": "10 výstupných formátov",
-        "desc": "Blogové príspevky, Twitter vlákna, LinkedIn príspevky, Xiaohongshu poznámky, newslettre, SRT titulky, SEO články a ďalšie."
-      },
-      {
-        "title": "63+ jazykov",
-        "desc": "Prepíšte a generujte obsah v 63+ jazykoch. Ideálne pre medzinárodných tvorcov a globálne publikum."
-      },
-      {
-        "title": "Streamované generovanie",
-        "desc": "Sledujte, ako sa obsah objavuje znak po znaku v reálnom čase. Žiadne čakanie na načítavacie spinner."
-      },
-      {
-        "title": "Konverzačné doladenie",
-        "desc": "Chatujte s každým výstupom a doladte ho. Povedzte „urob to kratšie“ alebo „pridaj emoji“ – AI to okamžite aplikuje."
-      },
-      {
-        "title": "6 exportných formátov",
-        "desc": "Stiahnite ako Markdown, TXT, PDF, DOCX, SRT alebo CSV. Priamo pripravené na publikovanie."
-      },
-      {
-        "title": "Zdieľanie a spolupráca",
-        "desc": "Generujte zdieľateľné odkazy pre vašich kolegov na zobrazenie a spoluprácu na obsahu."
-      },
-      {
-        "title": "Súkromné a bezpečné",
-        "desc": "Váš obsah zostáva váš. Súbory sa po spracovaní automaticky vymažú. Žiadne uchovávanie údajov."
-      },
-      {
-        "title": "Inteligentná detekcia platformy",
-        "desc": "Vložíte YouTube odkaz? Navrhneme blog + Twitter. Vložíte Bilibili? Navrhneme WeChat + Xiaohongshu."
+        "title": "Publikovať všade",
+        "desc": "Získajte blogové príspevky, sociálne vlákna, newslettre a viac. Kopírovať, stiahnuť, hotovo."
       }
     ]
   },
   "highlights": {
     "label": "Prečo ailomo",
-    "title": "Postavené inak.",
-    "highlight": "AI-first od základov"
+    "title": "Postavené inak. ",
+    "highlight": "AI-Native",
+    "items": [
+      {
+        "badge": "Inteligencia",
+        "title": "Nie len prepis",
+        "desc": "Naša AI analyzuje kontext, extrahuje poznatky a generuje obsah optimalizovaný pre publikum každej platformy."
+      },
+      {
+        "badge": "Distribúcia",
+        "title": "Jedno kliknutie, každá platforma",
+        "desc": "Všetkých 10 formátov vygenerovaných súčasne. Od dlhých blogov po sociálne vlákna — všetko hotové v priebehu sekúnd."
+      },
+      {
+        "badge": "Doladenie",
+        "title": "Chatujte so svojím obsahom",
+        "desc": "Každý výstup má vstavaný AI chat. „Pridaj viac údajov“, „urob to údernejšie“ — zmeny aplikované okamžite."
+      }
+    ]
+  },
+  "features": {
+    "label": "Funkcie",
+    "title": "Všetko na ",
+    "highlight": "Škálovanie obsahu",
+    "subtitle": "Postavené pre tvorcov, ktorí premenia každý kúsok obsahu na maximálny dopad.",
+    "list": [
+      {
+        "title": "Prepísanie pomocou AI",
+        "desc": "Nie len prepis — naša AI rozumie kontextu a prepisuje pre jedinečný hlas každej platformy."
+      },
+      {
+        "title": "10 výstupných formátov",
+        "desc": "Blogové príspevky, vlákna na Twitteri, LinkedIn, Xiaohongshu, newslettre, SRT titulky, SEO články a viac."
+      },
+      {
+        "title": "63+ jazykov",
+        "desc": "Prepíšte a generujte v 63+ jazykoch. Postavené pre medzinárodných tvorcov."
+      },
+      {
+        "title": "Streamované generovanie",
+        "desc": "Obsah sa zobrazuje znak po znaku v reálnom čase. Žiadne čakanie na načítavanie."
+      },
+      {
+        "title": "Konverzačné doladenie",
+        "desc": "Chatujte s každým výstupom a doladite ho. „Urob to kratšie“ — hotovo."
+      },
+      {
+        "title": "6 exportných formátov",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Pripravené na okamžité publikovanie."
+      },
+      {
+        "title": "Zdieľanie a spolupráca",
+        "desc": "Generujte odkazy pre kolegov na zobrazenie a spoluprácu na vašom obsahu."
+      },
+      {
+        "title": "Súkromie a bezpečnosť",
+        "desc": "Súbory sú po spracovaní vymazané. Váš obsah sa nikdy nepoužíva na trénovanie."
+      },
+      {
+        "title": "Inteligentná detekcia",
+        "desc": "Odkaz na YouTube? → Blog + Twitter. Bilibili? → WeChat + Xiaohongshu. Automaticky."
+      }
+    ]
   },
   "formats": {
     "outputLabel": "Výstupné formáty",
-    "outputTitle": "10 formátov,",
+    "outputTitle": "10 formátov, ",
     "outputHighlight": "jedno kliknutie",
-    "outputSubtitle": "Generujte všetko súčasne – nie je potrebné spúšťať nástroj viackrát.",
+    "outputSubtitle": "Generujte všetko súčasne — nie je potrebné spúšťať nástroj viackrát.",
+    "formatNames": [
+      "Blogový príspevok",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "SEO článok",
+      "Newsletter",
+      "SRT titulky",
+      "AI súhrn",
+      "Myšlienková mapa"
+    ],
     "langLabel": "Globálny dosah",
     "langTitle": "Podpora 63+ jazykov",
     "langSubtitle": "Prepíšte a generujte obsah v 63+ jazykoch. Ideálne pre medzinárodných tvorcov a globálne publikum.",
@@ -118,7 +152,7 @@
     },
     "testimonials": [
       {
-        "text": "\"Konečne nástroj, ktorý rozumie pracovnému toku tvorby obsahu. Jedno video → všetky platformy za pár minút. Zmena hry pre môj obsahový plán.\"",
+        "text": "\"Konečne nástroj, ktorý rozumie pracovnému postupu tvorby obsahu. Jedno video → všetky platformy za pár minút. Zmena hry pre môj obsahový harmonogram.\"",
         "author": "Sarah Chen",
         "role": "Tvorca obsahu"
       },
@@ -133,7 +167,7 @@
         "role": "Hostiteľ podcastu"
       },
       {
-        "text": "\"Ako sólový zakladateľ mi tento nástroj dáva výstup celého obsahového tímu. LinkedIn príspevky, blogy, tweety – všetko z jedného videa.\"",
+        "text": "\"Ako sólový zakladateľ mi tento nástroj dáva výstup celého obsahového tímu. LinkedIn príspevky, blogy, tweety — všetko z jedného videa.\"",
         "author": "Alex Park",
         "role": "Zakladateľ startupu"
       }
@@ -141,44 +175,142 @@
   },
   "pricing": {
     "label": "Cenník",
-    "title": "Jednoduchý,",
-    "highlight": "transparentný",
-    "suffix": "cenník",
-    "subtitle": "Začnite zadarmo, upgradnite, keď potrebujete viac. Žiadne skryté poplatky.",
+    "title": "Jednoduché, ",
+    "highlight": "transparentné",
+    "suffix": " ceny",
+    "subtitle": "Začnite zadarmo, upgradnite keď budete potrebovať viac. Žiadne skryté poplatky. Zrušte kedykoľvek.",
+    "enterprise": "Potrebujete viac? ",
+    "enterpriseLink": "Kontaktujte nás",
+    "enterpriseSuffix": " pre podnikové ceny.",
     "plans": {
       "free": {
-        "name": "Zadarmo",
+        "name": "Free",
         "desc": "Ideálne na vyskúšanie",
-        "cta": "Začať"
+        "cta": "Začať",
+        "features": [
+          "3 videá/mesiac",
+          "5 výstupných formátov",
+          "Základný AI model",
+          "120 minút prepisu",
+          "Komunitná podpora"
+        ]
       },
       "creator": {
-        "name": "Tvorca",
-        "desc": "Pre serióznych tvorcov obsahu",
-        "cta": "Začať bezplatnú skúšobnú verziu",
-        "badge": "Najobľúbenejšie"
+        "name": "Creator",
+        "desc": "Pre vážnych tvorcov obsahu",
+        "cta": "Prihlásiť sa",
+        "badge": "Najobľúbenejšie",
+        "features": [
+          "30 videí/mesiac",
+          "Všetkých 10 výstupných formátov",
+          "Prémiový AI model",
+          "1 200 minút prepisu",
+          "Konverzačné doladenie",
+          "Prioritná podpora",
+          "API prístup"
+        ]
       },
       "pro": {
         "name": "Pro",
         "desc": "Pre tímy a agentúry",
-        "cta": "Začať bezplatnú skúšobnú verziu"
+        "cta": "Prihlásiť sa",
+        "features": [
+          "Neobmedzené videá",
+          "Všetky formáty + vlastné",
+          "Prémiový AI + vlastný tón",
+          "6 000 minút prepisu",
+          "Tímová spolupráca",
+          "White-label export",
+          "Vyhradená podpora",
+          "Analytický dashboard"
+        ]
       }
     }
   },
   "cta": {
-    "title": "Ste pripravení",
-    "highlight": "znásôbiť svoj obsah",
-    "suffix": "10-násobne?",
-    "subtitle": "Pripojte sa k tisíckam tvorcov, ktorí premenia každé video na kompletnú multiplatformovú obsahovú stratégiu. Začnite zadarmo – bez potreby kreditnej karty.",
+    "title": "Ste pripravení ",
+    "highlight": "10x znásobiť svoj obsah",
+    "suffix": "?",
+    "subtitle": "Pripojte sa k tisíckam tvorcov, ktorí premenia každé video na kompletnú multiplatformovú obsahovú stratégiu. Začnite zadarmo — bez potreby kreditnej karty.",
     "start": "Začať zadarmo",
     "pricing": "Zobraziť cenník"
   },
   "faq": {
     "label": "FAQ",
-    "title": "Často kladené otázky"
+    "title": "Často kladené ",
+    "highlight": "otázky",
+    "items": [
+      {
+        "q": "Je to naozaj zadarmo na začiatok?",
+        "a": "Áno! Free plán vám dáva 3 videá/mesiac s 5 výstupnými formátmi. Bez potreby kreditnej karty."
+      },
+      {
+        "q": "Ktoré jazyky podporujete?",
+        "a": "63+ jazykov na prepis a generovanie obsahu."
+      },
+      {
+        "q": "Pre ktoré platformy môžem opätovne použiť obsah?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blogy, Medium, Substack, newslettre a viac."
+      },
+      {
+        "q": "Ako dlho to trvá?",
+        "a": "Väčšina videí je spracovaná do 1 minúty. Obsah sa streamuje v reálnom čase."
+      },
+      {
+        "q": "Môžem doladiť obsah generovaný AI?",
+        "a": "Áno! Chatujte s každým výstupom a upravte tón, dĺžku, štýl alebo pridajte prvky."
+      },
+      {
+        "q": "Aké formáty súborov môžem nahrať?",
+        "a": "Audio: MP3, WAV, M4A, FLAC, OGG. Video: MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "Sú moje dáta v bezpečí?",
+        "a": "Áno. Súbory sú po spracovaní vymazané. Nikdy sa nepoužívajú na trénovanie."
+      },
+      {
+        "q": "Môžem zrušiť kedykoľvek?",
+        "a": "Áno, zrušte kedykoľvek. Žiadne dlhodobé zmluvy."
+      }
+    ]
   },
   "footer": {
-    "tagline": "Repurposing obsahu poháňaný AI. Premeňte jedno video na celú vašu multiplatformovú obsahovú stratégiu.",
+    "tagline": "Opätovné využitie obsahu pomocou AI. Premeňte jedno video na celú multiplatformovú obsahovú stratégiu.",
     "copyright": "Všetky práva vyhradené.",
-    "builtWith": "Postavené pre tvorcov obsahu po celom svete"
+    "builtWith": "Vytvorené pre tvorcov obsahu po celom svete",
+    "sections": {
+      "product": "Produkt",
+      "tools": "Nástroje",
+      "legal": "Právne informácie",
+      "company": "Spoločnosť"
+    },
+    "links": {
+      "features": "Funkcie",
+      "pricing": "Cenník",
+      "faq": "FAQ",
+      "yt2blog": "YouTube na blog",
+      "vid2twitter": "Video na Twitter",
+      "vid2xhs": "Video na Xiaohongshu",
+      "podcast2article": "Podcast na článok",
+      "allTools": "Všetky nástroje →",
+      "privacy": "Súkromie",
+      "terms": "Podmienky",
+      "github": "GitHub",
+      "contact": "Kontakt"
+    }
+  },
+  "workbench": {
+    "transcribing": "Prepísať",
+    "generating": "Generovať obsah",
+    "completed": "Dokončené",
+    "progress": "Priebeh",
+    "cancel": "Zrušiť",
+    "refineTitle": "Doladiť - ",
+    "refinePlaceholder": "Povedzte AI, ako upraviť tento obsah...",
+    "send": "Odoslať",
+    "copy": "Kopírovať",
+    "copied": "Skopírované",
+    "download": "Stiahnuť",
+    "refine": "Doladiť"
   }
 }

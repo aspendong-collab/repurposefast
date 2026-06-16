@@ -1,28 +1,33 @@
 {
   "nav": {
     "features": "Kenmerke",
+    "howItWorks": "Hoe Dit Werk",
     "pricing": "Pryse",
     "faq": "Gereelde Vrae",
     "tryFree": "Probeer Gratis"
   },
   "hero": {
     "badge": "AI-aangedrewe Inhoudshergebruik",
-    "title": "Verander Een Video In",
-    "highlight": "Jou Hele Inhoudstrategie",
-    "subtitle": "Plak 'n skakel of laai 'n lêer op — AI transkribeer en hergebruik jou inhoud outomaties in blogplasings, sosiale drade, nuusbriewe, en meer.",
-    "accent": "10x jou inhoudsproduksie.",
+    "title": "Maak Een Video",
+    "highlight": "Inhoud Oral",
+    "subtitle": "Plak 'n YouTube-skakel. Laai 'n potgooi op. Laai 'n teksafskrif.",
+    "accent": "ailomo skep onmiddellik gepoleerde inhoud vir elke platform.",
     "stats": {
       "languages": "Tale",
-      "formats": "Uitsetformate",
-      "speed": "Verwerkingstyd"
+      "formats": "Formate",
+      "speed": "Verwerking"
     },
     "tabs": {
       "url": "Plak Skakel",
-      "file": "Laai Lêer Op",
-      "text": "Plak Teks"
+      "file": "Laai Op",
+      "text": "Teks"
     },
-    "placeholder": "Plak YouTube, potgooi, of enige video-skakel...",
+    "placeholder": "Plak 'n YouTube-skakel, potgooi-URL, of enige video...",
     "generate": "Genereer",
+    "fileDropTitle": "Laai jou lêer hier",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — tot 500MB",
+    "textPlaceholder": "Plak jou afskrif of teks — AI transformeer dit in platform-gereed inhoud...",
+    "noSignup": "Geen registrasie nodig nie. Gratis om te begin.",
     "processing": "Besig om te verwerk...",
     "error": "Iets het verkeerd geloop",
     "tryAgain": "Probeer weer",
@@ -31,78 +36,107 @@
   },
   "howItWorks": {
     "label": "Hoe Dit Werk",
-    "title": "Van Video na",
+    "title": "Van Video na ",
     "highlight": "Multi-Platform",
     "suffix": "in 3 Stappe",
     "steps": [
       {
         "title": "Plak of Laai Op",
-        "desc": "Laat val 'n YouTube-skakel, laai 'n oudio-lêer op, of plak teks. Geen opstelling nodig nie — net een klik."
+        "desc": "Laat val 'n YouTube-skakel, laai 'n oudio-lêer op, of plak teks. Geen konfigurasie nodig nie."
       },
       {
-        "title": "AI Doen Sy Towery",
-        "desc": "Ons AI transkribeer en verstaan jou inhoud, en herskryf dit intelligent vir elke platform se unieke styl."
+        "title": "AI Transformeer Dit",
+        "desc": "Jou inhoud word getranskribeer, verstaan, en herskryf vir elke platform se unieke stem."
       },
       {
         "title": "Publiseer Oral",
-        "desc": "Kry gepoleerde inhoud vir WeChat, Twitter, LinkedIn, Xiaohongshu, blogs, en meer. Kopieer, laai af, of deel dadelik."
-      }
-    ]
-  },
-  "features": {
-    "label": "Kenmerke",
-    "title": "Alles Wat Jy Nodig Het Om",
-    "highlight": "Jou Inhoud te Skaal",
-    "subtitle": "Gebou vir skeppers wat elke stukkie inhoud wat hulle produseer wil maksimeer.",
-    "list": [
-      {
-        "title": "AI-aangedrewe Herskrywing",
-        "desc": "Nie net transkripsie nie — ons AI verstaan konteks en herskryf vir elke platform se unieke stem en formaat."
-      },
-      {
-        "title": "10 Uitsetformate",
-        "desc": "Blogplasings, Twitter-drade, LinkedIn-plasings, Xiaohongshu-notas, nuusbriewe, SRT-onderskrifte, SEO-artikels, en meer."
-      },
-      {
-        "title": "63+ Tale",
-        "desc": "Transkribeer en genereer inhoud in 63+ tale. Perfek vir internasionale skeppers en wêreldwye gehore."
-      },
-      {
-        "title": "Stroomgenerering",
-        "desc": "Sien inhoud karakter vir karakter in reële tyd verskyn. Geen meer wag vir laai-aanwysers nie."
-      },
-      {
-        "title": "Gespreksverfyning",
-        "desc": "Gesels met elke uitset om dit fyn te stel. Sê \"maak dit korter\" of \"voeg emoji by\" — AI pas dit dadelik toe."
-      },
-      {
-        "title": "6 Uitvoerformate",
-        "desc": "Laai af as Markdown, TXT, PDF, DOCX, SRT, of CSV. Direk gereed vir publikasie."
-      },
-      {
-        "title": "Deel & Werk Saam",
-        "desc": "Genereer deelbare skakels vir jou spanlede om inhoud te sien en saam te werk."
-      },
-      {
-        "title": "Privaat & Veilig",
-        "desc": "Jou inhoud bly joune. Lêers word outomaties verwyder na verwerking. Geen data-bewaring nie."
-      },
-      {
-        "title": "Slim Platformdeteksie",
-        "desc": "Plak 'n YouTube-skakel? Ons stel blog + Twitter voor. Plak Bilibili? Ons stel WeChat + Xiaohongshu voor."
+        "desc": "Kry blogplasings, sosiale drade, nuusbriewe, en meer. Kopieer, laai af, klaar."
       }
     ]
   },
   "highlights": {
     "label": "Hoekom ailomo",
-    "title": "Anders Gebou.",
-    "highlight": "AI-Eerste Van Die Grond Af"
+    "title": "Anders Gebou. ",
+    "highlight": "AI-Native",
+    "items": [
+      {
+        "badge": "Intelligensie",
+        "title": "Nie Net Transkripsie Nie",
+        "desc": "Ons AI ontleed konteks, onttrek insigte, en genereer inhoud geoptimaliseer vir elke platform se gehoor."
+      },
+      {
+        "badge": "Verspreiding",
+        "title": "Een Kliek, Elke Platform",
+        "desc": "Al 10 formate word gelyktydig gegenereer. Van langvorm blogs tot sosiale drade — alles binne sekondes gereed."
+      },
+      {
+        "badge": "Verfyning",
+        "title": "Gesels Met Jou Inhoud",
+        "desc": "Elke uitset het 'n ingeboude AI-klets. \"Voeg meer data by\", \"maak dit kragtiger\" — veranderinge word onmiddellik toegepas."
+      }
+    ]
+  },
+  "features": {
+    "label": "Kenmerke",
+    "title": "Alles om ",
+    "highlight": "Inhoud te Skaal",
+    "subtitle": "Gebou vir skeppers wat elke stuk inhoud in maksimum impak omskep.",
+    "list": [
+      {
+        "title": "AI-aangedrewe Herskrywing",
+        "desc": "Nie net transkripsie nie — ons AI verstaan konteks en herskryf vir elke platform se unieke stem."
+      },
+      {
+        "title": "10 Uitsetformate",
+        "desc": "Blogplasings, Twitter-drade, LinkedIn, Xiaohongshu, nuusbriewe, SRT-onderskrifte, SEO-artikels, meer."
+      },
+      {
+        "title": "63+ Tale",
+        "desc": "Transkribeer en genereer in 63+ tale. Gebou vir internasionale skeppers."
+      },
+      {
+        "title": "Stroomgenerering",
+        "desc": "Inhoud verskyn karakter vir karakter in reële tyd. Geen wag vir draaiers nie."
+      },
+      {
+        "title": "Gespreksverfyning",
+        "desc": "Klets met elke uitset om dit fyn te stel. \"Maak dit korter\" — klaar."
+      },
+      {
+        "title": "6 Uitvoerformate",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Gereed om onmiddellik te publiseer."
+      },
+      {
+        "title": "Deel & Samewerk",
+        "desc": "Genereer skakels vir spanlede om jou inhoud te sien en saam te werk."
+      },
+      {
+        "title": "Privaat & Veilig",
+        "desc": "Lêers word na verwerking verwyder. Jou inhoud word nooit vir opleiding gebruik nie."
+      },
+      {
+        "title": "Slim Opsporing",
+        "desc": "YouTube-skakel? → Blog + Twitter. Bilibili? → WeChat + Xiaohongshu. Outomaties."
+      }
+    ]
   },
   "formats": {
     "outputLabel": "Uitsetformate",
-    "outputTitle": "10 Formate,",
-    "outputHighlight": "Een Klik",
-    "outputSubtitle": "Genereer alles gelyktydig — geen behoefte om die instrument verskeie kere te gebruik nie.",
+    "outputTitle": "10 Formate, ",
+    "outputHighlight": "Een Kliek",
+    "outputSubtitle": "Genereer alles gelyktydig — geen behoefte om die hulpmiddel verskeie kere te gebruik nie.",
+    "formatNames": [
+      "Blogplasing",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "SEO-artikel",
+      "Nuusbrief",
+      "SRT-onderskrifte",
+      "AI-opsomming",
+      "Breinkaart"
+    ],
     "langLabel": "Wêreldwye Bereik",
     "langTitle": "63+ Tale Ondersteun",
     "langSubtitle": "Transkribeer en genereer inhoud in 63+ tale. Perfek vir internasionale skeppers en wêreldwye gehore.",
@@ -118,22 +152,22 @@
     },
     "testimonials": [
       {
-        "text": "\"Uiteindelik 'n instrument wat die inhoudskeppingswerkvloei verstaan. Een video → alle platforms in minute. Spelveranderend vir my inhoudskedule.\"",
+        "text": "\"Uiteindelik 'n hulpmiddel wat die inhoudskeppingswerkvloei verstaan. Een video → alle platforms in minute. Spelveranderend vir my inhoudskedule.\"",
         "author": "Sarah Chen",
         "role": "Inhoudskepper"
       },
       {
-        "text": "\"Die gespreksverfyning is briljant. Ek kan elke uitset aanpas deur net daarmee te gesels. Spaar my ure elke week.\"",
+        "text": "\"Die gespreksverfyning is briljant. Ek kan elke uitset aanpas deur net daarmee te gesels. Spaar my elke week ure.\"",
         "author": "Marcus Rivera",
         "role": "Bemarkingshoof"
       },
       {
-        "text": "\"Ek was skepties oor AI-inhoud, maar die kwaliteit het my regtig verras. Die platformspesifieke formatering is perfek.\"",
+        "text": "\"Ek was skepties oor AI-inhoud, maar die kwaliteit het my opreg verras. Die platform-spesifieke formatering is perfek.\"",
         "author": "Yuki Tanaka",
         "role": "Potgooi-aanbieder"
       },
       {
-        "text": "\"As 'n alleenstigter gee hierdie instrument my 'n inhoudspan se uitset. LinkedIn-plasings, blogs, tweets — alles van een video.\"",
+        "text": "\"As 'n alleenstigter gee hierdie hulpmiddel my 'n inhoudspan se uitset. LinkedIn-plasings, blogs, twiets — alles van een video.\"",
         "author": "Alex Park",
         "role": "Beginondernemer"
       }
@@ -141,31 +175,60 @@
   },
   "pricing": {
     "label": "Pryse",
-    "title": "Eenvoudige,",
+    "title": "Eenvoudige, ",
     "highlight": "Deursigtige",
     "suffix": "Pryse",
-    "subtitle": "Begin gratis, gradeer op wanneer jy meer nodig het. Geen verborge fooie nie.",
+    "subtitle": "Begin gratis, gradeer op wanneer jy meer nodig het. Geen verborge fooie nie. Kanselleer enige tyd.",
+    "enterprise": "Meer nodig? ",
+    "enterpriseLink": "Kontak ons",
+    "enterpriseSuffix": " vir ondernemingspryse.",
     "plans": {
       "free": {
         "name": "Gratis",
         "desc": "Perfek om dit te probeer",
-        "cta": "Begin"
+        "cta": "Begin",
+        "features": [
+          "3 video's/maand",
+          "5 uitsetformate",
+          "Basiese AI-model",
+          "120 min transkripsie",
+          "Gemeenskapsondersteuning"
+        ]
       },
       "creator": {
         "name": "Skepper",
         "desc": "Vir ernstige inhoudskeppers",
-        "cta": "Begin Gratis Proef",
-        "badge": "Mees Gewild"
+        "cta": "Teken Nou In",
+        "badge": "Mees Gewild",
+        "features": [
+          "30 video's/maand",
+          "Al 10 uitsetformate",
+          "Premium AI-model",
+          "1 200 min transkripsie",
+          "Gespreksverfyning",
+          "Prioriteitsondersteuning",
+          "API-toegang"
+        ]
       },
       "pro": {
         "name": "Pro",
         "desc": "Vir spanne en agentskappe",
-        "cta": "Begin Gratis Proef"
+        "cta": "Teken Nou In",
+        "features": [
+          "Onbeperkte video's",
+          "Alle formate + pasgemaak",
+          "Premium AI + pasgemaakte toon",
+          "6 000 min transkripsie",
+          "Spansamewerking",
+          "Wit-etiket uitvoer",
+          "Toegewyde ondersteuning",
+          "Ontledingspaneel"
+        ]
       }
     }
   },
   "cta": {
-    "title": "Gereed om",
+    "title": "Gereed om ",
     "highlight": "10x Jou Inhoud",
     "suffix": "Uitset?",
     "subtitle": "Sluit aan by duisende skeppers wat elke video in 'n volledige multi-platform inhoudstrategie omskep. Begin gratis — geen kredietkaart nodig nie.",
@@ -174,11 +237,80 @@
   },
   "faq": {
     "label": "Gereelde Vrae",
-    "title": "Gereeld Gevra"
+    "title": "Gereeld Gevraagde ",
+    "highlight": "Vrae",
+    "items": [
+      {
+        "q": "Is dit regtig gratis om te begin?",
+        "a": "Ja! Die gratis plan gee jou 3 video's/maand met 5 uitsetformate. Geen kredietkaart nodig nie."
+      },
+      {
+        "q": "Watter tale ondersteun jy?",
+        "a": "63+ tale vir transkripsie en inhoudgenerering."
+      },
+      {
+        "q": "Vir watter platforms kan ek inhoud hergebruik?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blogs, Medium, Substack, nuusbriewe, en meer."
+      },
+      {
+        "q": "Hoe lank neem dit?",
+        "a": "Die meeste video's word binne 1 minuut verwerk. Inhoud stroom in reële tyd."
+      },
+      {
+        "q": "Kan ek AI-gegenereerde inhoud verfyn?",
+        "a": "Ja! Klets met elke uitset om toon, lengte, styl aan te pas, of elemente by te voeg."
+      },
+      {
+        "q": "Watter lêerformate kan ek oplaai?",
+        "a": "Oudio: MP3, WAV, M4A, FLAC, OGG. Video: MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "Is my data veilig?",
+        "a": "Ja. Lêers word na verwerking verwyder. Nooit vir opleiding gebruik nie."
+      },
+      {
+        "q": "Kan ek enige tyd kanselleer?",
+        "a": "Ja, kanselleer enige tyd. Geen langtermynkontrakte nie."
+      }
+    ]
   },
   "footer": {
-    "tagline": "AI-aangedrewe inhoudshergebruik. Verander een video in jou hele multi-platform inhoudstrategie.",
+    "tagline": "AI-aangedrewe inhoudshergebruik. Skakel een video om in jou hele multi-platform inhoudstrategie.",
     "copyright": "Alle regte voorbehou.",
-    "builtWith": "Gebou vir inhoudskeppers wêreldwyd"
+    "builtWith": "Gebou vir inhoudskeppers wêreldwyd",
+    "sections": {
+      "product": "Produk",
+      "tools": "Gereedskap",
+      "legal": "Wetlik",
+      "company": "Maatskappy"
+    },
+    "links": {
+      "features": "Kenmerke",
+      "pricing": "Pryse",
+      "faq": "Gereelde Vrae",
+      "yt2blog": "YouTube na Blog",
+      "vid2twitter": "Video na Twitter",
+      "vid2xhs": "Video na Xiaohongshu",
+      "podcast2article": "Potgooi na Artikel",
+      "allTools": "Alle Gereedskap →",
+      "privacy": "Privaatheid",
+      "terms": "Bepalings",
+      "github": "GitHub",
+      "contact": "Kontak"
+    }
+  },
+  "workbench": {
+    "transcribing": "Besig om te transkribeer",
+    "generating": "Besig om inhoud te genereer",
+    "completed": "Voltooi",
+    "progress": "Vordering",
+    "cancel": "Kanselleer",
+    "refineTitle": "Verfyn - ",
+    "refinePlaceholder": "Sê vir AI hoe om hierdie inhoud aan te pas...",
+    "send": "Stuur",
+    "copy": "Kopieer",
+    "copied": "Gekopieer",
+    "download": "Laai Af",
+    "refine": "Verfyn"
   }
 }

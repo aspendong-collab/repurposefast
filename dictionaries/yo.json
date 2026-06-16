@@ -1,184 +1,316 @@
 {
   "nav": {
     "features": "Awọn ẹya",
-    "pricing": "Iye owo",
-    "faq": "Ibeere",
-    "tryFree": "Gbiyanju Ọfẹ"
+    "howItWorks": "Bí Ó Ṣe Ṣiṣẹ́",
+    "pricing": "Iye Owo",
+    "faq": "Ìbéèrè",
+    "tryFree": "Gbiyànjú Lọ́fẹ̀ẹ́"
   },
   "hero": {
-    "badge": "Atunlo Akoonu ti AI Ṣe",
-    "title": "Yi Fidio Kan Pada Si",
-    "highlight": "Gbogbo Ilana Akoonu Rẹ",
-    "subtitle": "Fi ọna asopọ kan tabi gbe faili kan silẹ — AI n ṣe atunkọ ati tun lo akoonu rẹ laifọwọyi sinu awọn ifiweranṣẹ bulọọgi, awọn okun awujọ, awọn iwe iroyin, ati diẹ sii.",
-    "accent": "Mu akoonu rẹ pọ si 10x.",
+    "badge": "Àtúnṣe Àkóónú pẹ̀lú AI",
+    "title": "Yí Fídíò Kan Sọ́nà",
+    "highlight": "Àkóónú Níbi Gbogbo",
+    "subtitle": "Fi ọ̀rọ̀ asopọ̀ YouTube kan síbẹ̀. Gbé pódíà kan síta. Jẹ́ kí àkọsílẹ̀ ọ̀rọ̀ kan wọlé.",
+    "accent": "ailomo ń ṣẹ̀dá àkóónú tí ó dára fún gbogbo pẹpẹ lẹ́ẹ̀kọ̀ọ̀kan.",
     "stats": {
-      "languages": "Awọn Ede",
-      "formats": "Awọn Ọna Iṣejade",
-      "speed": "Akoko Ṣiṣe"
+      "languages": "Èdè",
+      "formats": "Ọ̀nà",
+      "speed": "Ṣíṣe"
     },
     "tabs": {
-      "url": "Fi Ọna asopọ Silẹ",
-      "file": "Gbe Faili Silẹ",
-      "text": "Fi Ọrọ Silẹ"
+      "url": "Fi Ọ̀rọ̀ Asopọ̀",
+      "file": "Gbé Síta",
+      "text": "Ọ̀rọ̀"
     },
-    "placeholder": "Fi ọna asopọ YouTube, adarọ-ese, tabi eyikeyi fidio silẹ...",
-    "generate": "Ṣe ipilẹṣẹ",
-    "processing": "Ṣiṣẹ lori...",
-    "error": "Nkan kan ṣe aṣiṣe",
-    "tryAgain": "Gbiyanju lẹẹkansi",
-    "startOver": "Bẹrẹ lẹẹkansi",
-    "formatsGenerated": "awọn ọna iṣejade ti ṣe ipilẹṣẹ"
+    "placeholder": "Fi ọ̀rọ̀ asopọ̀ YouTube, URL pódíà, tàbí fídíò èyíkéyìí síbẹ̀...",
+    "generate": "Ṣẹ̀dá",
+    "fileDropTitle": "Jẹ́ kí fáìlì rẹ bọ́ síbí",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — tó 500MB",
+    "textPlaceholder": "Fi àkọsílẹ̀ tàbí ọ̀rọ̀ rẹ síbẹ̀ — AI yóò yí i padà sí àkóónú tí ó ṣe tán fún pẹpẹ...",
+    "noSignup": "Kò sí ìforúkọsílẹ̀ tí a béèrè. Lò ó lọ́fẹ̀ẹ́.",
+    "processing": "Ń ṣiṣẹ́...",
+    "error": "Ohun kan ti kùnà",
+    "tryAgain": "Tún gbìyànjú",
+    "startOver": "Bẹ̀rẹ̀ lẹ́ẹ̀kan sí i",
+    "formatsGenerated": "àwọn ọ̀nà tí a ṣẹ̀dá"
   },
   "howItWorks": {
-    "label": "Bii O Ṣe Ṣiṣẹ",
-    "title": "Lati Fidio Si",
-    "highlight": "Ọpọlọpọ-Platform",
-    "suffix": "ni Awọn Igbesẹ 3",
+    "label": "Bí Ó Ṣe Ṣiṣẹ́",
+    "title": "Láti Fídíò sí ",
+    "highlight": "Ọ̀pọ̀ Pẹpẹ",
+    "suffix": "ní Ìgbésẹ̀ Mẹ́ta",
     "steps": [
       {
-        "title": "Fi Silẹ tabi Gbe Silẹ",
-        "desc": "Ju ọna asopọ YouTube kan silẹ, gbe faili ohun kan silẹ, tabi fi ọrọ silẹ. Ko si iṣeto ti o nilo — tẹ kan ṣoṣo."
+        "title": "Fi síbẹ̀ tàbí Gbé Síta",
+        "desc": "Fi ọ̀rọ̀ asopọ̀ YouTube kan, gbé fáìlì ohùn síta, tàbí fi ọ̀rọ̀ síbẹ̀. Kò sí ìtòlẹ́sẹẹsẹ kankan."
       },
       {
-        "title": "AI Ṣe Iṣẹ Iyanu Rẹ",
-        "desc": "AI wa n ṣe atunkọ ati loye akoonu rẹ, lẹhinna tun kọ ọ ni ọgbọn fun aṣa alailẹgbẹ ti platform kọọkan."
+        "title": "AI Yí i Padà",
+        "desc": "A kọ àkóónú rẹ sílẹ̀, a lóye rẹ̀, a sì tún kọ ọ́ fún ohùn àrà ọ̀tọ̀ gbogbo pẹpẹ."
       },
       {
-        "title": "Tẹjade Nibikibi",
-        "desc": "Gba akoonu didara fun WeChat, Twitter, LinkedIn, Xiaohongshu, awọn bulọọgi, ati diẹ sii. Daakọ, gbe silẹ, tabi pin lẹsẹkẹsẹ."
-      }
-    ]
-  },
-  "features": {
-    "label": "Awọn Ẹya",
-    "title": "Ohun Gbogbo Ti O Nilo Lati",
-    "highlight": "Mu Akoonu Rẹ Pọ Si",
-    "subtitle": "Ti a ṣe fun awọn olupilẹṣẹ ti o fẹ mu gbogbo nkan akoonu ti wọn ṣe pọ si.",
-    "list": [
-      {
-        "title": "Atunkọ ti AI Ṣe",
-        "desc": "Kii ṣe atunkọ nikan — AI loye ọrọ-ọrọ ati tun kọ fun ohun ati ọna kika alailẹgbẹ ti platform kọọkan."
-      },
-      {
-        "title": "Awọn Ọna Iṣejade 10",
-        "desc": "Awọn ifiweranṣẹ bulọọgi, awọn okun Twitter, awọn ifiweranṣẹ LinkedIn, awọn akọsilẹ Xiaohongshu, awọn iwe iroyin, awọn atunkọ SRT, awọn nkan SEO, ati diẹ sii."
-      },
-      {
-        "title": "Awọn Ede 63+",
-        "desc": "Ṣe atunkọ ati ṣe ipilẹṣẹ akoonu ni awọn ede 63+. Pipe fun awọn olupilẹṣẹ agbaye ati awọn olugbo kariaye."
-      },
-      {
-        "title": "Ipilẹṣẹ Ṣiṣan",
-        "desc": "Wo akoonu ti n farahan lẹẹkọọkan lẹẹkọọkan ni akoko gidi. Ko si iduro fun awọn iyipo ikojọpọ mọ."
-      },
-      {
-        "title": "Atunse Ọrọ-ọrọ",
-        "desc": "Bá ọ̀kan lára àwọn àbájáde sọ̀rọ̀ láti tún un ṣe. Sọ \"sọ ọ́ kúrú\" tàbí \"fi emoji kún un\" — AI máa ń lò ó lẹ́sẹ̀kẹsẹ̀."
-      },
-      {
-        "title": "Awọn Ọna Iṣejade 6",
-        "desc": "Gbe silẹ bi Markdown, TXT, PDF, DOCX, SRT, tabi CSV. Ti ṣetan taara fun titẹjade."
-      },
-      {
-        "title": "Pin & Ṣe Ifọwọsowọpọ",
-        "desc": "Ṣe ipilẹṣẹ awọn ọna asopọ pinpin fun awọn ẹlẹgbẹ rẹ lati wo ati ṣe ifọwọsowọpọ lori akoonu."
-      },
-      {
-        "title": "Ikọkọ & Aabo",
-        "desc": "Akoonu rẹ jẹ tirẹ. Awọn faili n parẹ laifọwọyi lẹhin ṣiṣe. Ko si idaduro data."
-      },
-      {
-        "title": "Wiwa Platform Ọlọgbọn",
-        "desc": "Fi ọna asopọ YouTube kan silẹ? A daba bulọọgi + Twitter. Fi Bilibili silẹ? A daba WeChat + Xiaohongshu."
+        "title": "Tẹ̀jáde Níbi Gbogbo",
+        "desc": "Gba àwọn àkọlé, àwọn ìtẹ̀lé, àwọn ìwé ìròyìn, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ. Dákọ, gbà sílẹ̀, ó ti parí."
       }
     ]
   },
   "highlights": {
-    "label": "Idi ailomo",
-    "title": "Ti Kọ O yatọ.",
-    "highlight": "AI-Akọkọ Lati Ipilẹ"
+    "label": "Kí Nìdí ailomo",
+    "title": "Ṣeé Ṣe Lọ́nà Yàtọ̀. ",
+    "highlight": "AI-Native",
+    "items": [
+      {
+        "badge": "Oye",
+        "title": "Kì Í Ṣe Àkọsílẹ̀ Nìkan",
+        "desc": "AI wa ń ṣàyẹ̀wò ọ̀rọ̀ inú, ó ń yọ àwọn ìmọ̀ jáde, ó sì ń ṣẹ̀dá àkóónú tí a ṣe àtúnṣe fún àwọn olùgbọ́ pẹpẹ kọ̀ọ̀kan."
+      },
+      {
+        "badge": "Pínkiri",
+        "title": "Tẹ̀ Kan, Gbogbo Pẹpẹ",
+        "desc": "Gbogbo àwọn ọ̀nà 10 ni a ṣẹ̀dá lẹ́ẹ̀kọ̀ọ̀kan. Láti àkọlé gígùn sí àwọn ìtẹ̀lé àwùjọ — ohun gbogbo ti ṣe tán ní ìṣẹ́jú díẹ̀."
+      },
+      {
+        "badge": "Àtúnṣe",
+        "title": "Bá Àkóónú Rẹ Sọ̀rọ̀",
+        "desc": "Gbogbo àbájáde ní AI ìbánisọ̀rọ̀ tí a kọ́ sínú rẹ̀. \"Fi àwọn dátà kún un\", \"mú un yára\" — àwọn ìyípadà ń ṣẹlẹ̀ lẹ́ẹ̀kọ̀ọ̀kan."
+      }
+    ]
+  },
+  "features": {
+    "label": "Àwọn Ẹya",
+    "title": "Ohun Gbogbo Láti ",
+    "highlight": "Pọ̀ Sí Àkóónú",
+    "subtitle": "Ṣeé Ṣe fún àwọn ẹlẹ́dàá tí ń sọ gbogbo àkóónú kan di ipa tí ó pọ̀ jù lọ.",
+    "list": [
+      {
+        "title": "Àtúnkọ pẹ̀lú AI",
+        "desc": "Kì í ṣe àkọsílẹ̀ nìkan — AI wa lóye ọ̀rọ̀ inú, ó sì tún kọ ọ́ fún ohùn àrà ọ̀tọ̀ gbogbo pẹpẹ."
+      },
+      {
+        "title": "Àwọn Ọ̀nà Àbájáde 10",
+        "desc": "Àwọn àkọlé, àwọn ìtẹ̀lé Twitter, LinkedIn, Xiaohongshu, àwọn ìwé ìròyìn, àwọn àkọsílẹ̀ SRT, àwọn àkọlé SEO, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ."
+      },
+      {
+        "title": "Àwọn Èdè 63+",
+        "desc": "Kọ àkóónú sílẹ̀ kí o sì ṣẹ̀dá rẹ̀ ní àwọn èdè 63+. Ṣeé Ṣe fún àwọn ẹlẹ́dàá àgbáyé."
+      },
+      {
+        "title": "Ìṣẹ̀dá Gbígbàlẹ̀",
+        "desc": "Àkóónú ń farahàn lẹ́ẹ̀kọ̀ọ̀kan lẹ́yìn kọ̀ọ̀kan ní àkókò gidi. Kò sí ìdúró fún àwọn ìyípoyípo."
+      },
+      {
+        "title": "Àtúnṣe Ìbánisọ̀rọ̀",
+        "desc": "Bá àbájáde kọ̀ọ̀kan sọ̀rọ̀ láti tún un ṣe. \"Mú un kúrú\" — ó ti ṣe."
+      },
+      {
+        "title": "Àwọn Ọ̀nà Ìkójáde 6",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Ṣe tán láti tẹ̀jáde lẹ́ẹ̀kọ̀ọ̀kan."
+      },
+      {
+        "title": "Pínkiri & Ifọwọ́sowọ́pọ̀",
+        "desc": "Ṣẹ̀dá àwọn ọ̀rọ̀ asopọ̀ fún àwọn ẹlẹgbẹ́ rẹ láti wò àti láti fọwọ́sowọ́pọ̀ lórí àkóónú rẹ."
+      },
+      {
+        "title": "Ikọ̀kọ̀ & Ààbò",
+        "desc": "A pa àwọn fáìlì rẹ́ lẹ́yìn ṣíṣe. A kì í lo àkóónú rẹ fún ìdánilẹ́kọ̀ọ́."
+      },
+      {
+        "title": "Ìwárí Ọlọ́gbọ́n",
+        "desc": "Ọ̀rọ̀ asopọ̀ YouTube? → Blog + Twitter. Bilibili? → WeChat + Xiaohongshu. Láìdábọ̀."
+      }
+    ]
   },
   "formats": {
-    "outputLabel": "Awọn Ọna Iṣejade",
-    "outputTitle": "Awọn Ọna 10,",
-    "outputHighlight": "Tẹ Kan",
-    "outputSubtitle": "Ṣe ipilẹṣẹ ohun gbogbo ni akoko kanna — ko si iwulo lati lo ọpa naa ni ọpọlọpọ igba.",
-    "langLabel": "Arọwọto Agbaye",
-    "langTitle": "Awọn Ede 63+ Ti Ṣe Atilẹyin",
-    "langSubtitle": "Ṣe atunkọ ati ṣe ipilẹṣẹ akoonu ni awọn ede 63+. Pipe fun awọn olupilẹṣẹ agbaye ati awọn olugbo kariaye.",
-    "more": "+45 diẹ sii"
+    "outputLabel": "Àwọn Ọ̀nà Àbájáde",
+    "outputTitle": "Àwọn Ọ̀nà 10, ",
+    "outputHighlight": "Tẹ̀ Kan",
+    "outputSubtitle": "Ṣẹ̀dá ohun gbogbo lẹ́ẹ̀kọ̀ọ̀kan — kò sí àìní láti lo ọ̀pá ìdarí lẹ́ẹ̀kan sí i.",
+    "formatNames": [
+      "Àkọlé Blog",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "Àkọlé SEO",
+      "Ìwé Ìròyìn",
+      "Àkọsílẹ̀ SRT",
+      "Àkópọ̀ AI",
+      "Àwòrán Ọ̀pọ̀lọ́pọ̀"
+    ],
+    "langLabel": "Àgbáyé",
+    "langTitle": "Àwọn Èdè 63+ Ló Wà",
+    "langSubtitle": "Kọ àkóónú sílẹ̀ kí o sì ṣẹ̀dá rẹ̀ ní àwọn èdè 63+. Ó dára fún àwọn ẹlẹ́dàá àgbáyé àti àwọn olùgbọ́ kárí ayé.",
+    "more": "+45 mìíràn"
   },
   "social": {
-    "label": "Ti Awọn Olupilẹṣẹ Gbẹkẹle",
+    "label": "Àwọn Ẹlẹ́dàá Gbẹ́kẹ̀lé",
     "stats": {
-      "users": "Awọn Olumulo Ti Nṣiṣe Lọwọ",
-      "videos": "Awọn Fidio Ti Ṣe",
-      "rating": "Iwọn Olumulo",
-      "languages": "Awọn Ede"
+      "users": "Àwọn Olùmúlò",
+      "videos": "Àwọn Fídíò Tí A Ṣe",
+      "rating": "Ìdíwọ̀n Olùmúlò",
+      "languages": "Àwọn Èdè"
     },
     "testimonials": [
       {
-        "text": "\"Nikẹhin irinṣẹ kan ti o loye iṣẹ ṣiṣe ẹda akoonu. Fidio kan → gbogbo awọn platform ni iṣẹju diẹ. Iyipada ere fun iṣeto akoonu mi.\"",
+        "text": "\"Níkẹyìn, ohun èlò kan tí ó lóye iṣẹ́ ṣíṣe àkóónú. Fídíò kan → gbogbo pẹpẹ ní ìṣẹ́jú díẹ̀. Ó yí ìtòlẹ́sẹẹsẹ àkóónú mi padà.\"",
         "author": "Sarah Chen",
-        "role": "Olupilẹṣẹ Akoonu"
+        "role": "Ẹlẹ́dàá Àkóónú"
       },
       {
-        "text": "\"Atunse ọrọ-ọrọ jẹ iyanu. Mo le ṣatunṣe abajade kọọkan nipa sisọ pẹlu rẹ. O n gba wakati mi pamọ ni ọsẹ kọọkan.\"",
+        "text": "\"Àtúnṣe ìbánisọ̀rọ̀ jẹ́ àgbàyanu. Mo lè tún àbájáde kọ̀ọ̀kan ṣe nípa bíbá a sọ̀rọ̀. Ó ń gba wákàtí lọ́wọ́ mi lọ́sọ̀ọ̀sẹ̀.\"",
         "author": "Marcus Rivera",
-        "role": "Oludari Titaja"
+        "role": "Olùdarí Ìpolówó"
       },
       {
-        "text": "\"Mo ṣiyemeji nipa akoonu AI, ṣugbọn didara naa yà mi lẹnu gaan. Ṣiṣe ọna kika pato platform jẹ deede.\"",
+        "text": "\"Mo ṣiyèméjì nípa àkóónú AI, ṣùgbọ́n didára rẹ̀ yà mí lẹ́nu. Ìṣètò pẹpẹ pàtó jẹ́ kíkún.\"",
         "author": "Yuki Tanaka",
-        "role": "Agbalejo Adarọ-ese"
+        "role": "Agbátẹrindin Pódíà"
       },
       {
-        "text": "\"Gẹgẹbi oludasile nikan, irinṣẹ yii fun mi ni iṣelọpọ ẹgbẹ akoonu. Awọn ifiweranṣẹ LinkedIn, awọn bulọọgi, awọn tweets — gbogbo rẹ lati fidio kan.\"",
+        "text": "\"Gẹ́gẹ́ bí olùdásílẹ̀ nìkan, ohun èlò yìí fún mi ní àbájáde ẹgbẹ́ àkóónú. Àwọn ìkésíní LinkedIn, àwọn àkọlé, àwọn tweets — gbogbo rẹ̀ láti fídíò kan.\"",
         "author": "Alex Park",
-        "role": "Oludasile Ibẹrẹ"
+        "role": "Olùdásílẹ̀ Startup"
       }
     ]
   },
   "pricing": {
-    "label": "Iye owo",
-    "title": "Rọrun,",
-    "highlight": "Gbangba",
+    "label": "Iye Owo",
+    "title": "Rọrùn, ",
+    "highlight": "Kò Sí Ìkọ̀kọ̀",
     "suffix": "Iye Owo",
-    "subtitle": "Bẹrẹ ọfẹ, igbega nigbati o ba nilo diẹ sii. Ko si awọn idiyele farasin.",
+    "subtitle": "Bẹ̀rẹ̀ lọ́fẹ̀ẹ́, gbé àtúnṣe nígbà tí o bá nílò rẹ̀. Kò sí owó ìkọ̀kọ̀. Fagilee nígbàkígbà.",
+    "enterprise": "Ṣe o nílò diẹ̀ sí i? ",
+    "enterpriseLink": "Kàn sí wa",
+    "enterpriseSuffix": " fún iye owo ile-iṣẹ.",
     "plans": {
       "free": {
-        "name": "Ọfẹ",
-        "desc": "Pipe fun igbiyanju rẹ",
-        "cta": "Bẹrẹ"
+        "name": "Ọ̀fẹ́",
+        "desc": "Ó dára fún ìgbìyànjú",
+        "cta": "Bẹ̀rẹ̀",
+        "features": [
+          "Àwọn fídíò 3 lósù",
+          "Àwọn ọ̀nà àbájáde 5",
+          "Awoṣe AI ìpìlẹ̀",
+          "Àkọsílẹ̀ ìṣẹ́jú 120",
+          "Ìtìlẹ́yìn àwùjọ"
+        ]
       },
       "creator": {
-        "name": "Olupilẹṣẹ",
-        "desc": "Fun awọn olupilẹṣẹ akoonu pataki",
-        "cta": "Bẹrẹ Idanwo Ọfẹ",
-        "badge": "Olokiki Julọ"
+        "name": "Ẹlẹ́dàá",
+        "desc": "Fún àwọn ẹlẹ́dàá àkóónú tí ó ṣe pàtàkì",
+        "cta": "Forúkọsílẹ̀ Nísinsìnyí",
+        "badge": "Èyí Tí Ó Gbajúmọ̀ Jù Lọ",
+        "features": [
+          "Àwọn fídíò 30 lósù",
+          "Gbogbo àwọn ọ̀nà àbájáde 10",
+          "Awoṣe AI tí ó ga",
+          "Àkọsílẹ̀ ìṣẹ́jú 1,200",
+          "Àtúnṣe ìbánisọ̀rọ̀",
+          "Ìtìlẹ́yìn àkọ́kọ́",
+          "Ìwọ̀nwọ̀ API"
+        ]
       },
       "pro": {
         "name": "Pro",
-        "desc": "Fun awọn ẹgbẹ ati awọn ile-iṣẹ",
-        "cta": "Bẹrẹ Idanwo Ọfẹ"
+        "desc": "Fún àwọn ẹgbẹ́ àti àwọn ilé iṣẹ́",
+        "cta": "Forúkọsílẹ̀ Nísinsìnyí",
+        "features": [
+          "Àwọn fídíò tí kò lópin",
+          "Gbogbo àwọn ọ̀nà + àrà",
+          "AI tí ó ga + ohùn àrà",
+          "Àkọsílẹ̀ ìṣẹ́jú 6,000",
+          "Ifọwọ́sowọ́pọ̀ ẹgbẹ́",
+          "Ìkójáde White-label",
+          "Ìtìlẹ́yìn ìyàsọ́tọ̀",
+          "Dáṣíbọ̀ọ̀tì àtúpalẹ̀"
+        ]
       }
     }
   },
   "cta": {
-    "title": "Ṣetan Lati",
-    "highlight": "Mu Akoonu Rẹ Pọ Si 10x",
-    "suffix": "Iṣejade?",
-    "subtitle": "Darapọ mọ ẹgbẹẹgbẹrun awọn olupilẹṣẹ ti o sọ fidio kọọkan di ilana akoonu ọpọlọpọ-platform pipe. Bẹrẹ ọfẹ — ko si kaadi kirẹditi ti o nilo.",
-    "start": "Bẹrẹ Ọfẹ",
+    "title": "Ṣe o Ṣe Tán Láti ",
+    "highlight": "Pọ̀ Sí Àkóónú Rẹ Lẹ́ẹ̀mẹ́wàá",
+    "suffix": "?",
+    "subtitle": "Dara pọ̀ mọ́ ẹgbẹẹgbẹ̀rún àwọn ẹlẹ́dàá tí ń sọ fídíò kọ̀ọ̀kan di ìtòlẹ́sẹẹsẹ àkóónú ọ̀pọ̀ pẹpẹ tí ó pé. Bẹ̀rẹ̀ lọ́fẹ̀ẹ́ — kò sí káàdì kírédìì tí a béèrè.",
+    "start": "Bẹ̀rẹ̀ Lọ́fẹ̀ẹ́",
     "pricing": "Wo Iye Owo"
   },
   "faq": {
-    "label": "Ibeere",
-    "title": "Awọn Ibeere Nigbagbogbo"
+    "label": "Ìbéèrè",
+    "title": "Àwọn Ìbéèrè Tí A Sábà Máa ń Béèrè ",
+    "highlight": "Lóye",
+    "items": [
+      {
+        "q": "Ṣé ó jẹ́ ọ̀fẹ́ láti bẹ̀rẹ̀ gan-an?",
+        "a": "Bẹ́ẹ̀ ni! Ètò ọ̀fẹ́ fún ọ ní àwọn fídíò 3 lósù pẹ̀lú àwọn ọ̀nà àbájáde 5. Kò sí káàdì kírédìì tí a béèrè."
+      },
+      {
+        "q": "Àwọn èdè wo ni ẹ̀ ń tìlẹ́yìn?",
+        "a": "Àwọn èdè 63+ fún àkọsílẹ̀ àti ìṣẹ̀dá àkóónú."
+      },
+      {
+        "q": "Àwọn pẹpẹ wo ni mo lè tún àkóónú ṣe fún?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, àwọn blog, Medium, Substack, àwọn ìwé ìròyìn, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ."
+      },
+      {
+        "q": "Báwo ni ó ṣe gba àkókò?",
+        "a": "Ọ̀pọ̀ fídíò ni a ṣe nísàlẹ̀ ìṣẹ́jú kan. Àkóónú ń ṣàn ní àkókò gidi."
+      },
+      {
+        "q": "Ṣé mo lè tún àkóónú tí AI ṣẹ̀dá ṣe?",
+        "a": "Bẹ́ẹ̀ ni! Bá àbájáde kọ̀ọ̀kan sọ̀rọ̀ láti ṣàtúnṣe ohùn, gígùn, ara, tàbí fi àwọn nǹkan kún un."
+      },
+      {
+        "q": "Àwọn ọ̀nà fáìlì wo ni mo lè gbé síta?",
+        "a": "Ohùn: MP3, WAV, M4A, FLAC, OGG. Fídíò: MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "Ṣé dátà mi dáàbò bò?",
+        "a": "Bẹ́ẹ̀ ni. A pa àwọn fáìlì rẹ́ lẹ́yìn ṣíṣe. A kì í lò wọ́n fún ìdánilẹ́kọ̀ọ́."
+      },
+      {
+        "q": "Ṣé mo lè fagilee nígbàkígbà?",
+        "a": "Bẹ́ẹ̀ ni, fagilee nígbàkígbà. Kò sí àdéhùn gígùn."
+      }
+    ]
   },
   "footer": {
-    "tagline": "Atunlo akoonu ti AI ṣe. Yi fidio kan pada si gbogbo ilana akoonu ọpọlọpọ-platform rẹ.",
-    "copyright": "Gbogbo ẹtọ wa ni ipamọ.",
-    "builtWith": "Ti a kọ fun awọn olupilẹṣẹ akoonu agbaye"
+    "tagline": "Àtúnṣe àkóónú pẹ̀lú AI. Yí fídíò kan di gbogbo ìtòlẹ́sẹẹsẹ àkóónú ọ̀pọ̀ pẹpẹ rẹ.",
+    "copyright": "Gbogbo ẹ̀tọ́ ní ààbò.",
+    "builtWith": "Ṣeé Ṣe fún àwọn ẹlẹ́dàá àkóónú kárí ayé",
+    "sections": {
+      "product": "Ọjà",
+      "tools": "Àwọn Irinṣẹ́",
+      "legal": "Òfin",
+      "company": "Ilé Iṣẹ́"
+    },
+    "links": {
+      "features": "Àwọn Ẹya",
+      "pricing": "Iye Owo",
+      "faq": "Ìbéèrè",
+      "yt2blog": "YouTube sí Blog",
+      "vid2twitter": "Fídíò sí Twitter",
+      "vid2xhs": "Fídíò sí Xiaohongshu",
+      "podcast2article": "Pódíà sí Àkọlé",
+      "allTools": "Gbogbo Irinṣẹ́ →",
+      "privacy": "Ikọ̀kọ̀",
+      "terms": "Àwọn Òfin",
+      "github": "GitHub",
+      "contact": "Kàn Sí Wa"
+    }
+  },
+  "workbench": {
+    "transcribing": "Ń Kọ Sílẹ̀",
+    "generating": "Ń Ṣẹ̀dá Àkóónú",
+    "completed": "Ó Ti Parí",
+    "progress": "Ìlọsíwájú",
+    "cancel": "Fagilee",
+    "refineTitle": "Tún Ṣe - ",
+    "refinePlaceholder": "Sọ fún AI bí a ṣe lè tún àkóónú yìí ṣe...",
+    "send": "Rán",
+    "copy": "Dákọ",
+    "copied": "A Ti Dákọ",
+    "download": "Gbà Sílẹ̀",
+    "refine": "Tún Ṣe"
   }
 }

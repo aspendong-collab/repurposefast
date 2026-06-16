@@ -1,111 +1,145 @@
 {
   "nav": {
-    "features": "Karat",
+    "features": "Karatteristiċi",
+    "howItWorks": "Kif Jaħdem",
     "pricing": "Prezzijiet",
     "faq": "FAQ",
     "tryFree": "Ipprova B'xejn"
   },
   "hero": {
-    "badge": "Użu mill-ġdid tal-Kontenut bl-AI",
-    "title": "Bidla Vidjo Wieħed Fi",
-    "highlight": "L-Istrateġija Kollha tal-Kontenut Tiegħek",
-    "subtitle": "Paste link jew upload file — AI awtomatikament tittraskrivi u tuża mill-ġdid il-kontenut tiegħek f'blog posts, threads soċjali, newsletters, u aktar.",
-    "accent": "10x il-produzzjoni tal-kontenut tiegħek.",
+    "badge": "Użu mill-ġdid tal-Kontenut b'AI",
+    "title": "Bidla Vidjo Wieħed F'",
+    "highlight": "Kontenut Kullimkien",
+    "subtitle": "Paste link ta' YouTube. Upload podcast. Daħħal traskrizzjoni ta' test.",
+    "accent": "ailomo joħloq istantanjament kontenut illustrat għal kull pjattaforma.",
     "stats": {
       "languages": "Lingwi",
-      "formats": "Formati tal-Output",
-      "speed": "Ħin tal-Ipproċessar"
+      "formats": "Formati",
+      "speed": "Ipproċessar"
     },
     "tabs": {
       "url": "Paste Link",
-      "file": "Upload File",
-      "text": "Paste Test"
+      "file": "Upload",
+      "text": "Test"
     },
-    "placeholder": "Paste YouTube, podcast, jew kwalunkwe link tal-vidjo...",
+    "placeholder": "Paste link ta' YouTube, URL ta' podcast, jew kwalunkwe vidjo...",
     "generate": "Iġġenera",
+    "fileDropTitle": "Poġġi l-fajl tiegħek hawn",
+    "fileDropSubtitle": "MP3, WAV, MP4, MOV — sa 500MB",
+    "textPlaceholder": "Paste t-traskrizzjoni jew it-test tiegħek — AI jittrasformah f'kontenut lest għall-pjattaforma...",
+    "noSignup": "Mhux meħtieġ reġistrazzjoni. B'xejn biex tibda.",
     "processing": "Qed nipproċessa...",
-    "error": "Ġara xi ħaġa ħażina",
+    "error": "Ġrat xi ħaġa ħażina",
     "tryAgain": "Erġa' pprova",
     "startOver": "Ibda mill-ġdid",
     "formatsGenerated": "formati ġġenerati"
   },
   "howItWorks": {
     "label": "Kif Jaħdem",
-    "title": "Minn Vidjo Għal",
+    "title": "Minn Vidjo għal ",
     "highlight": "Multi-Pjattaforma",
     "suffix": "fi 3 Passi",
     "steps": [
       {
         "title": "Paste jew Upload",
-        "desc": "Qiegħed link ta' YouTube, upload file awdjo, jew paste test. M'hemmx bżonn konfigurazzjoni — klikk waħda biss."
+        "desc": "Poġġi link ta' YouTube, upload fajl awdjo, jew paste test. L-ebda konfigurazzjoni."
       },
       {
-        "title": "AI Taħdem il-Maġija Tagħha",
-        "desc": "L-AI tagħna tittraskrivi u tifhem il-kontenut tiegħek, imbagħad terġa' tikteb b'mod intelliġenti għall-istil uniku ta' kull pjattaforma."
+        "title": "AI Jittrasformah",
+        "desc": "Il-kontenut tiegħek jiġi traskritt, mifhum, u miktub mill-ġdid għall-vuċi unika ta' kull pjattaforma."
       },
       {
         "title": "Ippubblika Kullimkien",
-        "desc": "Ikseb kontenut illustrat għal WeChat, Twitter, LinkedIn, Xiaohongshu, blogs, u aktar. Ikkopja, niżżel, jew aqsam immedjatament."
-      }
-    ]
-  },
-  "features": {
-    "label": "Karat",
-    "title": "Dak Kollu li Għandek Bżonn Biex",
-    "highlight": "Tkabbar il-Kontenut Tiegħek",
-    "subtitle": "Mibni għal kreaturi li jridu jimmassimizzaw kull biċċa kontenut li jipproduċu.",
-    "list": [
-      {
-        "title": "Kitba mill-ġdid bl-AI",
-        "desc": "Mhux biss traskrizzjoni — l-AI tagħna tifhem il-kuntest u terġa' tikteb għall-vuċi u l-format uniku ta' kull pjattaforma."
-      },
-      {
-        "title": "10 Formati ta' Output",
-        "desc": "Blog posts, Twitter threads, LinkedIn posts, Xiaohongshu notes, newsletters, SRT subtitles, SEO articles, u aktar."
-      },
-      {
-        "title": "63+ Lingwi",
-        "desc": "Traskrivi u ġġenera kontenut f'63+ lingwa. Perfett għal kreaturi internazzjonali u udjenzi globali."
-      },
-      {
-        "title": "Ġenerazzjoni Streaming",
-        "desc": "Ara l-kontenut jidher karattru b'karattru f'ħin reali. M'għadx għandek bżonn tistenna spinners tat-tagħbija."
-      },
-      {
-        "title": "Raffinar Konversazzjonali",
-        "desc": "Chat ma' kull output biex tirfinah. Għid \"agħmilha iqsar\" jew \"żid emoji\" — AI tapplikah immedjatament."
-      },
-      {
-        "title": "6 Formati ta' Esportazzjoni",
-        "desc": "Niżżel bħala Markdown, TXT, PDF, DOCX, SRT, jew CSV. Lest direttament għall-pubblikazzjoni."
-      },
-      {
-        "title": "Aqsam u Kkollabora",
-        "desc": "Iġġenera links kondiviżibbli għall-kollegi tiegħek biex jaraw u jikkollaboraw fuq il-kontenut."
-      },
-      {
-        "title": "Privat u Sikur",
-        "desc": "Il-kontenut tiegħek jibqa' tiegħek. Il-fajls jitħassru awtomatikament wara l-ipproċessar. L-ebda żamma ta' dejta."
-      },
-      {
-        "title": "Sejbien Intelliġenti tal-Pjattaforma",
-        "desc": "Paste link ta' YouTube? Nissuġġerixxu blog + Twitter. Paste Bilibili? Nissuġġerixxu WeChat + Xiaohongshu."
+        "desc": "Ikseb postijiet tal-blog, threads soċjali, newsletters, u aktar. Ikkopja, niżżel, lest."
       }
     ]
   },
   "highlights": {
     "label": "Għaliex ailomo",
-    "title": "Mibni B'mod Differenti.",
-    "highlight": "AI-Ewwel mill-Bidu"
+    "title": "Mibni Differenti. ",
+    "highlight": "AI-Nattiv",
+    "items": [
+      {
+        "badge": "Intelliġenza",
+        "title": "Mhux Biss Traskrizzjoni",
+        "desc": "L-AI tagħna tanalizza l-kuntest, tiġbed għarfien, u tiġġenera kontenut ottimizzat għall-udjenza ta' kull pjattaforma."
+      },
+      {
+        "badge": "Distribuzzjoni",
+        "title": "Klikk Waħda, Kull Pjattaforma",
+        "desc": "Il-10 formati kollha jiġu ġġenerati simultanjament. Minn blogs twal għal threads soċjali — kollox lest fi ftit sekondi."
+      },
+      {
+        "badge": "Raffinar",
+        "title": "Chat mal-Kontenut Tiegħek",
+        "desc": "Kull output għandu chat AI integrat. \"Żid aktar data\", \"agħmilha aktar qawwija\" — bidliet applikati istantanjament."
+      }
+    ]
+  },
+  "features": {
+    "label": "Karatteristiċi",
+    "title": "Kollox biex ",
+    "highlight": "Tiskala l-Kontenut",
+    "subtitle": "Mibni għal kreaturi li jbiddlu kull biċċa kontenut f'impatt massimu.",
+    "list": [
+      {
+        "title": "Kitba mill-ġdid b'AI",
+        "desc": "Mhux biss traskrizzjoni — l-AI tagħna tifhem il-kuntest u tikteb mill-ġdid għall-vuċi unika ta' kull pjattaforma."
+      },
+      {
+        "title": "10 Formati ta' Output",
+        "desc": "Postijiet tal-blog, threads ta' Twitter, LinkedIn, Xiaohongshu, newsletters, sottotitli SRT, artikli SEO, aktar."
+      },
+      {
+        "title": "63+ Lingwi",
+        "desc": "Traskrivi u iġġenera f'63+ lingwa. Mibni għal kreaturi internazzjonali."
+      },
+      {
+        "title": "Ġenerazzjoni Streaming",
+        "desc": "Il-kontenut jidher karattru b'karattru f'ħin reali. L-ebda stennija għal spinners."
+      },
+      {
+        "title": "Raffinar Konversazzjonali",
+        "desc": "Chat ma' kull output biex tirfinah. \"Agħmilha iqsar\" — lest."
+      },
+      {
+        "title": "6 Formati ta' Esportazzjoni",
+        "desc": "Markdown, TXT, PDF, DOCX, SRT, CSV. Lest biex tippubblika istantanjament."
+      },
+      {
+        "title": "Qsam u Kollabora",
+        "desc": "Iġġenera links għal sħabi tat-tim biex jaraw u jikkollaboraw fuq il-kontenut tiegħek."
+      },
+      {
+        "title": "Privat u Sikur",
+        "desc": "Fajls imħassra wara l-ipproċessar. Il-kontenut tiegħek qatt ma jintuża għat-taħriġ."
+      },
+      {
+        "title": "Sejbien Intelliġenti",
+        "desc": "Link ta' YouTube? → Blog + Twitter. Bilibili? → WeChat + Xiaohongshu. Awtomatiku."
+      }
+    ]
   },
   "formats": {
-    "outputLabel": "Formati tal-Output",
-    "outputTitle": "10 Formati,",
+    "outputLabel": "Formati ta' Output",
+    "outputTitle": "10 Formati, ",
     "outputHighlight": "Klikk Waħda",
-    "outputSubtitle": "Iġġenera kollox simultanjament — m'hemmx bżonn tmexxi l-għodda diversi drabi.",
+    "outputSubtitle": "Iġġenera kollox simultanjament — mhux meħtieġ li tħaddem l-għodda diversi drabi.",
+    "formatNames": [
+      "Post tal-Blog",
+      "WeChat",
+      "Xiaohongshu",
+      "Twitter",
+      "LinkedIn",
+      "Artiklu SEO",
+      "Newsletter",
+      "Sottotitli SRT",
+      "Sommarju AI",
+      "Mappa Mentali"
+    ],
     "langLabel": "Firxa Globali",
     "langTitle": "63+ Lingwi Appoġġjati",
-    "langSubtitle": "Traskrivi u ġġenera kontenut f'63+ lingwa. Perfett għal kreaturi internazzjonali u udjenzi globali.",
+    "langSubtitle": "Traskrivi u iġġenera kontenut f'63+ lingwa. Perfett għal kreaturi internazzjonali u udjenzi globali.",
     "more": "+45 aktar"
   },
   "social": {
@@ -118,7 +152,7 @@
     },
     "testimonials": [
       {
-        "text": "\"Fl-aħħar għodda li tifhem il-fluss tax-xogħol tal-ħolqien tal-kontenut. Vidjo wieħed → il-pjattaformi kollha f'minuti. Bidla fil-logħba għall-iskeda tal-kontenut tiegħi.\"",
+        "text": "\"Fl-aħħar għodda li tifhem il-fluss tax-xogħol tal-ħolqien tal-kontenut. Vidjo wieħed → il-pjattaformi kollha fi ftit minuti. Bidla fil-logħba għall-iskeda tal-kontenut tiegħi.\"",
         "author": "Sarah Chen",
         "role": "Kreatur tal-Kontenut"
       },
@@ -128,12 +162,12 @@
         "role": "Mexxej tal-Marketing"
       },
       {
-        "text": "\"Kienu xettiċi dwar il-kontenut tal-AI, imma l-kwalità verament sorpriżatni. Il-format speċifiku għall-pjattaforma huwa perfett.\"",
+        "text": "\"Kien xettiku dwar kontenut AI, iżda l-kwalità sorprietni ġenwinament. Il-format speċifiku għall-pjattaforma huwa perfett.\"",
         "author": "Yuki Tanaka",
-        "role": "Ospitanti tal-Podcast"
+        "role": "Host tal-Podcast"
       },
       {
-        "text": "\"Bħala fundatur solitarju, din l-għodda tagħtini l-produzzjoni ta' tim tal-kontenut. LinkedIn posts, blogs, tweets — kollha minn vidjo wieħed.\"",
+        "text": "\"Bħala fundatur waħdieni, din l-għodda tagħtini l-output ta' tim tal-kontenut. Postijiet ta' LinkedIn, blogs, tweets — kollha minn vidjo wieħed.\"",
         "author": "Alex Park",
         "role": "Fundatur ta' Startup"
       }
@@ -141,31 +175,60 @@
   },
   "pricing": {
     "label": "Prezzijiet",
-    "title": "Prezzijiet Sempliċi,",
+    "title": "Sempliċi, ",
     "highlight": "Trasparenti",
-    "suffix": "",
-    "subtitle": "Ibda b'xejn, aġġorna meta jkollok bżonn aktar. L-ebda ħlasijiet moħbija.",
+    "suffix": "Prezzijiet",
+    "subtitle": "Ibda b'xejn, aġġorna meta jkollok bżonn aktar. L-ebda ħlasijiet moħbija. Ikkanċella meta trid.",
+    "enterprise": "Għandek bżonn aktar? ",
+    "enterpriseLink": "Ikkuntattjana",
+    "enterpriseSuffix": " għal prezzijiet intrapriża.",
     "plans": {
       "free": {
         "name": "B'xejn",
         "desc": "Perfett biex tipprova",
-        "cta": "Ibda"
+        "cta": "Ibda",
+        "features": [
+          "3 vidjows/xahar",
+          "5 formati ta' output",
+          "Mudell AI bażiku",
+          "120 minuta traskrizzjoni",
+          "Appoġġ tal-komunità"
+        ]
       },
       "creator": {
         "name": "Kreatur",
         "desc": "Għal kreaturi serji tal-kontenut",
-        "cta": "Ibda Prova B'xejn",
-        "badge": "L-Aktar Popolari"
+        "cta": "Abbona Issa",
+        "badge": "L-Aktar Popolari",
+        "features": [
+          "30 vidjow/xahar",
+          "Il-10 formati ta' output kollha",
+          "Mudell AI premium",
+          "1,200 minuta traskrizzjoni",
+          "Raffinar konversazzjonali",
+          "Appoġġ prijoritarju",
+          "Aċċess API"
+        ]
       },
       "pro": {
         "name": "Pro",
         "desc": "Għal timijiet u aġenziji",
-        "cta": "Ibda Prova B'xejn"
+        "cta": "Abbona Issa",
+        "features": [
+          "Vidjows illimitati",
+          "Il-formati kollha + personalizzati",
+          "AI premium + ton personalizzat",
+          "6,000 minuta traskrizzjoni",
+          "Kollaborazzjoni tat-tim",
+          "Esportazzjoni white-label",
+          "Appoġġ dedikat",
+          "Dashboard tal-analiżi"
+        ]
       }
     }
   },
   "cta": {
-    "title": "Lest Biex",
+    "title": "Lest biex ",
     "highlight": "10x il-Kontenut Tiegħek",
     "suffix": "Output?",
     "subtitle": "Ingħaqad ma' eluf ta' kreaturi li jbiddlu kull vidjo fi strateġija kompleta ta' kontenut multi-pjattaforma. Ibda b'xejn — l-ebda karta ta' kreditu meħtieġa.",
@@ -174,11 +237,80 @@
   },
   "faq": {
     "label": "FAQ",
-    "title": "Mistoqsijiet Frekwenti"
+    "title": "Mistoqsijiet Frekwenti ",
+    "highlight": "Mistoqsijiet",
+    "items": [
+      {
+        "q": "Huwa verament b'xejn biex tibda?",
+        "a": "Iva! Il-pjan b'xejn jagħtik 3 vidjows/xahar b'5 formati ta' output. L-ebda karta ta' kreditu meħtieġa."
+      },
+      {
+        "q": "Liema lingwi tappoġġja?",
+        "a": "63+ lingwa għal traskrizzjoni u ġenerazzjoni tal-kontenut."
+      },
+      {
+        "q": "Għal liema pjattaformi nista' nuża mill-ġdid il-kontenut?",
+        "a": "WeChat, Xiaohongshu, Twitter/X, LinkedIn, blogs, Medium, Substack, newsletters, u aktar."
+      },
+      {
+        "q": "Kemm idum?",
+        "a": "Il-biċċa l-kbira tal-vidjows jiġu pproċessati f'inqas minn minuta. Il-kontenut jixxandar f'ħin reali."
+      },
+      {
+        "q": "Nista' nirfina l-kontenut iġġenerat mill-AI?",
+        "a": "Iva! Chat ma' kull output biex taġġusta t-ton, it-tul, l-istil, jew iżżid elementi."
+      },
+      {
+        "q": "Liema formati ta' fajl nista' nupload?",
+        "a": "Awdjo: MP3, WAV, M4A, FLAC, OGG. Vidjo: MP4, MOV, MKV, WEBM."
+      },
+      {
+        "q": "Id-data tiegħi hija sigura?",
+        "a": "Iva. Fajls imħassra wara l-ipproċessar. Qatt ma jintużaw għat-taħriġ."
+      },
+      {
+        "q": "Nista' nkanċella meta trid?",
+        "a": "Iva, ikkanċella meta trid. L-ebda kuntratti fit-tul."
+      }
+    ]
   },
   "footer": {
-    "tagline": "Użu mill-ġdid tal-kontenut bl-AI. Ibdel vidjo wieħed fl-istrateġija kollha tal-kontenut multi-pjattaforma tiegħek.",
+    "tagline": "Użu mill-ġdid tal-kontenut b'AI. Biddel vidjo wieħed fl-istrateġija kollha tiegħek ta' kontenut multi-pjattaforma.",
     "copyright": "Id-drittijiet kollha riżervati.",
-    "builtWith": "Mibni għal kreaturi tal-kontenut madwar id-dinja"
+    "builtWith": "Mibni għal kreaturi tal-kontenut madwar id-dinja",
+    "sections": {
+      "product": "Prodott",
+      "tools": "Għodod",
+      "legal": "Legali",
+      "company": "Kumpanija"
+    },
+    "links": {
+      "features": "Karatteristiċi",
+      "pricing": "Prezzijiet",
+      "faq": "FAQ",
+      "yt2blog": "YouTube għal Blog",
+      "vid2twitter": "Vidjo għal Twitter",
+      "vid2xhs": "Vidjo għal Xiaohongshu",
+      "podcast2article": "Podcast għal Artiklu",
+      "allTools": "L-Għodod Kollha →",
+      "privacy": "Privatezza",
+      "terms": "Termini",
+      "github": "GitHub",
+      "contact": "Kuntatt"
+    }
+  },
+  "workbench": {
+    "transcribing": "Qed Nittraskrivi",
+    "generating": "Qed Niġġenera Kontenut",
+    "completed": "Komplut",
+    "progress": "Progress",
+    "cancel": "Ikkanċella",
+    "refineTitle": "Irfina - ",
+    "refinePlaceholder": "Għid lill-AI kif taġġusta dan il-kontenut...",
+    "send": "Ibgħat",
+    "copy": "Ikkopja",
+    "copied": "Ikkupjat",
+    "download": "Niżżel",
+    "refine": "Irfina"
   }
 }
