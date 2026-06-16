@@ -1,7 +1,5 @@
 // ── POST /api/repurpose/ytdl ────────────────────────────────────────────────
-// Download YouTube audio via ytdl-core → transcribe via Groq Whisper (free)
-// Groq is 10x faster than HF Space. Total <10s for short videos.
-// Requires: GROQ_API_KEY in env vars
+// Downloads YouTube audio via ytdl-core → transcribes via HF Whisper (free)
 
 import { NextRequest, NextResponse } from 'next/server'
 
@@ -10,10 +8,7 @@ export async function POST(request: NextRequest) {
     const { url } = await request.json()
     if (!url) return NextResponse.json({ error: 'url required' }, { status: 400 })
 
-    const groqKey = process.env.GROQ_API_KEY || process.env.OPENAI_API_KEY
-    if (!groqKey) return NextResponse.json({ error: 'No API key configured' }, { status: 500 })
-
-    // 1. Download audio via ytdl-core
+    // 1. Download audio via ytdl-core (pure JS, no binaries)
     const ytdl = await import('@distube/ytdl-core')
     const videoId = ytdl.getVideoID(url)
     const info = await ytdl.getInfo(videoId)
@@ -26,33 +21,52 @@ export async function POST(request: NextRequest) {
     for await (const chunk of stream) chunks.push(chunk)
     const buffer = Buffer.concat(chunks)
 
-    // 2. Transcribe via Groq Whisper
-    const formData = new FormData()
-    formData.append('file', new Blob([buffer], { type: 'audio/mp4' }), 'audio.m4a')
-    formData.append('model', 'whisper-large-v3')
-    formData.append('response_format', 'verbose_json')
+    // 2. Transcribe via multiple backends
+    let result = await tryHFWhisper(buffer)
+    if (!result) result = await tryGroq(buffer)
+    if (!result) throw new Error('All transcription backends failed')
 
-    const groqRes = await fetch('https://api.groq.com/openai/v1/audio/transcriptions', {
-      method: 'POST',
-      headers: { Authorization: `Bearer ${groqKey}` },
-      body: formData,
-      signal: AbortSignal.timeout(15000),
-    })
-
-    if (!groqRes.ok) {
-      const err = await groqRes.text()
-      throw new Error(`Groq error ${groqRes.status}: ${err.slice(0, 200)}`)
-    }
-
-    const result = await groqRes.json()
-    return NextResponse.json({
-      transcript: result.text,
-      language: result.language || 'en',
-      duration: result.duration || 0,
-      segments: result.segments || [],
-    })
+    return NextResponse.json(result)
   } catch (e: any) {
-    console.error('ytdl error:', e.message)
     return NextResponse.json({ error: e.message || 'Download failed' }, { status: 500 })
   }
+}
+
+async function tryHFWhisper(buffer: Buffer) {
+  const hfToken = process.env.HF_TOKEN
+  if (!hfToken) return null
+  
+  try {
+    const form = new FormData()
+    form.append('file', new Blob([buffer], { type: 'audio/mp4' }), 'audio.m4a')
+    
+    const res = await fetch('https://api-inference.huggingface.co/models/openai/whisper-large-v3', {
+      method: 'POST', headers: { Authorization: `Bearer ${hfToken}` }, body: form,
+      signal: AbortSignal.timeout(30000),
+    })
+    const data = await res.json()
+    if (data.text) return { transcript: data.text, language: data.language || 'en', duration: 0, segments: [] }
+    if (data.error) console.log('HF error:', data.error)
+  } catch (e: any) { console.log('HF failed:', e.message) }
+  return null
+}
+
+async function tryGroq(buffer: Buffer) {
+  const groqKey = process.env.GROQ_API_KEY
+  if (!groqKey) return null
+
+  try {
+    const form = new FormData()
+    form.append('file', new Blob([buffer], { type: 'audio/mp4' }), 'audio.m4a')
+    form.append('model', 'whisper-large-v3')
+    form.append('response_format', 'verbose_json')
+
+    const res = await fetch('https://api.groq.com/openai/v1/audio/transcriptions', {
+      method: 'POST', headers: { Authorization: `Bearer ${groqKey}` }, body: form,
+      signal: AbortSignal.timeout(15000),
+    })
+    const data = await res.json()
+    if (data.text) return { transcript: data.text, language: data.language || 'en', duration: data.duration || 0, segments: data.segments || [] }
+  } catch (e: any) { console.log('Groq failed:', e.message) }
+  return null
 }
