@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Funcionalidades",
+    "pricing": "Prezos",
+    "faq": "FAQ",
+    "tryFree": "Probar de balde"
+  },
+  "hero": {
+    "badge": "Reaproveitamento de contido con IA",
+    "title": "Converte un vídeo en",
+    "highlight": "Toda a túa estratexia de contido",
+    "subtitle": "Pega unha ligazón ou sube un ficheiro: a IA transcribe e reaproveita automaticamente o teu contido en artigos de blog, fíos sociais, boletíns e moito máis.",
+    "accent": "Multiplica por 10 a túa produción de contido.",
+    "stats": {
+      "languages": "Idiomas",
+      "formats": "Formatos de saída",
+      "speed": "Tempo de procesamento"
+    },
+    "tabs": {
+      "url": "Pegar ligazón",
+      "file": "Subir ficheiro",
+      "text": "Pegar texto"
+    },
+    "placeholder": "Pega unha ligazón de YouTube, podcast ou calquera vídeo...",
+    "generate": "Xerar",
+    "processing": "Procesando...",
+    "error": "Algo fallou",
+    "tryAgain": "Tentar de novo",
+    "startOver": "Comezar de novo",
+    "formatsGenerated": "formatos xerados"
+  },
+  "howItWorks": {
+    "label": "Como funciona",
+    "title": "De vídeo a",
+    "highlight": "Multiplataforma",
+    "suffix": "en 3 pasos",
+    "steps": [
+      {
+        "title": "Pega ou sube",
+        "desc": "Insire unha ligazón de YouTube, sube un ficheiro de audio ou pega texto. Sen configuración necesaria, só un clic."
+      },
+      {
+        "title": "A IA fai a súa maxia",
+        "desc": "A nosa IA transcribe e comprende o teu contido, e despois reescríbeo intelixentemente para o estilo único de cada plataforma."
+      },
+      {
+        "title": "Publica en todas partes",
+        "desc": "Obtén contido pulido para WeChat, Twitter, LinkedIn, Xiaohongshu, blogs e máis. Cópiao, descárgao ou compárteo ao instante."
+      }
+    ]
+  },
+  "features": {
+    "label": "Funcionalidades",
+    "title": "Todo o que precisas para",
+    "highlight": "Escalar o teu contido",
+    "subtitle": "Construído para creadores que queren maximizar cada peza de contido que producen.",
+    "list": [
+      {
+        "title": "Reescritura con IA",
+        "desc": "Non é só transcrición: a nosa IA comprende o contexto e reescribe para a voz e formato únicos de cada plataforma."
+      },
+      {
+        "title": "10 formatos de saída",
+        "desc": "Artigos de blog, fíos de Twitter, publicacións de LinkedIn, notas de Xiaohongshu, boletíns, subtítulos SRT, artigos SEO e máis."
+      },
+      {
+        "title": "Máis de 63 idiomas",
+        "desc": "Transcribe e xera contido en máis de 63 idiomas. Perfecto para creadores internacionais e audiencias globais."
+      },
+      {
+        "title": "Xeración en streaming",
+        "desc": "Ve o contido aparecer carácter a carácter en tempo real. Sen máis esperas por rodas de carga."
+      },
+      {
+        "title": "Refinamento conversacional",
+        "desc": "Conversa con cada saída para axustala. Di \"faino máis curto\" ou \"engade emoji\" — a IA aplícao ao instante."
+      },
+      {
+        "title": "6 formatos de exportación",
+        "desc": "Descarga como Markdown, TXT, PDF, DOCX, SRT ou CSV. Listo para publicar directamente."
+      },
+      {
+        "title": "Compartir e colaborar",
+        "desc": "Xera ligazóns compartibles para que os teus compañeiros vexan e colaboren no contido."
+      },
+      {
+        "title": "Privado e seguro",
+        "desc": "O teu contido segue sendo teu. Os ficheiros elimínanse automaticamente despois do procesamento. Sen retención de datos."
+      },
+      {
+        "title": "Detección intelixente de plataforma",
+        "desc": "Pegas unha ligazón de YouTube? Suxerimos blog + Twitter. Pegas Bilibili? Suxerimos WeChat + Xiaohongshu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Por que ailomo",
+    "title": "Construído de xeito diferente.",
+    "highlight": "IA desde a base"
+  },
+  "formats": {
+    "outputLabel": "Formatos de saída",
+    "outputTitle": "10 formatos,",
+    "outputHighlight": "un clic",
+    "outputSubtitle": "Xera todo simultaneamente: non necesitas executar a ferramenta varias veces.",
+    "langLabel": "Alcance global",
+    "langTitle": "Máis de 63 idiomas compatibles",
+    "langSubtitle": "Transcribe e xera contido en máis de 63 idiomas. Perfecto para creadores internacionais e audiencias globais.",
+    "more": "+45 máis"
+  },
+  "social": {
+    "label": "Confiado por creadores",
+    "stats": {
+      "users": "Usuarios activos",
+      "videos": "Vídeos procesados",
+      "rating": "Valoración dos usuarios",
+      "languages": "Idiomas"
+    },
+    "testimonials": [
+      {
+        "text": "\"Por fin unha ferramenta que entende o fluxo de traballo de creación de contido. Un vídeo → todas as plataformas en minutos. Cambiou o meu calendario de contido.\"",
+        "author": "Sarah Chen",
+        "role": "Creadora de contido"
+      },
+      {
+        "text": "\"O refinamento conversacional é brillante. Podo axustar cada saída simplemente conversando con ela. Aforrarme horas cada semana.\"",
+        "author": "Marcus Rivera",
+        "role": "Responsable de marketing"
+      },
+      {
+        "text": "\"Era escéptico sobre o contido con IA, pero a calidade sorprendeume de verdade. O formato específico para cada plataforma é perfecto.\"",
+        "author": "Yuki Tanaka",
+        "role": "Presentador de podcast"
+      },
+      {
+        "text": "\"Como fundador en solitario, esta ferramenta dame a produción dun equipo de contido. Publicacións de LinkedIn, blogs, chíos — todo dun só vídeo.\"",
+        "author": "Alex Park",
+        "role": "Fundador de startup"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Prezos",
+    "title": "Prezos",
+    "highlight": "transparentes",
+    "suffix": "e sinxelos",
+    "subtitle": "Comeza de balde, actualiza cando necesites máis. Sen custos ocultos.",
+    "plans": {
+      "free": {
+        "name": "Gratuíto",
+        "desc": "Perfecto para probalo",
+        "cta": "Comezar"
+      },
+      "creator": {
+        "name": "Creador",
+        "desc": "Para creadores de contido serios",
+        "cta": "Iniciar proba gratuíta",
+        "badge": "Máis popular"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Para equipos e axencias",
+        "cta": "Iniciar proba gratuíta"
+      }
+    }
+  },
+  "cta": {
+    "title": "Listo para",
+    "highlight": "multiplicar por 10",
+    "suffix": "a túa produción de contido?",
+    "subtitle": "Únete a miles de creadores que converten cada vídeo nunha estratexia de contido multiplataforma completa. Comeza de balde, sen necesidade de tarxeta de crédito.",
+    "start": "Comezar de balde",
+    "pricing": "Ver prezos"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Preguntas frecuentes"
+  },
+  "footer": {
+    "tagline": "Reaproveitamento de contido con IA. Converte un vídeo en toda a túa estratexia de contido multiplataforma.",
+    "copyright": "Todos os dereitos reservados.",
+    "builtWith": "Construído para creadores de contido de todo o mundo"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Funksjoner",
+    "pricing": "Priser",
+    "faq": "FAQ",
+    "tryFree": "Prøv gratis"
+  },
+  "hero": {
+    "badge": "AI-drevet innholdsgjenbruk",
+    "title": "Gjør én video om til",
+    "highlight": "Hele innholdsstrategien din",
+    "subtitle": "Lim inn en lenke eller last opp en fil – AI transkriberer og gjenbruker innholdet ditt automatisk til blogginnlegg, sosiale tråder, nyhetsbrev og mer.",
+    "accent": "10x innholdsproduksjonen din.",
+    "stats": {
+      "languages": "Språk",
+      "formats": "Utdataformater",
+      "speed": "Behandlingstid"
+    },
+    "tabs": {
+      "url": "Lim inn lenke",
+      "file": "Last opp fil",
+      "text": "Lim inn tekst"
+    },
+    "placeholder": "Lim inn YouTube-, podcast- eller videolenke...",
+    "generate": "Generer",
+    "processing": "Behandler...",
+    "error": "Noe gikk galt",
+    "tryAgain": "Prøv igjen",
+    "startOver": "Start på nytt",
+    "formatsGenerated": "formater generert"
+  },
+  "howItWorks": {
+    "label": "Slik fungerer det",
+    "title": "Fra video til",
+    "highlight": "flere plattformer",
+    "suffix": "på 3 trinn",
+    "steps": [
+      {
+        "title": "Lim inn eller last opp",
+        "desc": "Slipp en YouTube-lenke, last opp en lydfil eller lim inn tekst. Ingen konfigurasjon nødvendig – bare ett klikk."
+      },
+      {
+        "title": "AI gjør jobben",
+        "desc": "Vår AI transkriberer og forstår innholdet ditt, og omskriver det intelligent for hver plattforms unike stil."
+      },
+      {
+        "title": "Publiser overalt",
+        "desc": "Få polert innhold for WeChat, Twitter, LinkedIn, Xiaohongshu, blogger og mer. Kopier, last ned eller del umiddelbart."
+      }
+    ]
+  },
+  "features": {
+    "label": "Funksjoner",
+    "title": "Alt du trenger for å",
+    "highlight": "skalere innholdet ditt",
+    "subtitle": "Bygget for skapere som ønsker å maksimere hvert innholdsstykke de produserer.",
+    "list": [
+      {
+        "title": "AI-drevet omskriving",
+        "desc": "Ikke bare transkripsjon – AI forstår kontekst og omskriver for hver plattforms unike stemme og format."
+      },
+      {
+        "title": "10 utdataformater",
+        "desc": "Blogginnlegg, Twitter-tråder, LinkedIn-innlegg, Xiaohongshu-notater, nyhetsbrev, SRT-undertekster, SEO-artikler og mer."
+      },
+      {
+        "title": "63+ språk",
+        "desc": "Transkriber og generer innhold på 63+ språk. Perfekt for internasjonale skapere og globale målgrupper."
+      },
+      {
+        "title": "Strømmegenerering",
+        "desc": "Se innhold vises tegn for tegn i sanntid. Ikke mer venting på lastespinnere."
+      },
+      {
+        "title": "Samtaleforbedring",
+        "desc": "Chatt med hver utdata for å finjustere den. Si «gjør den kortere» eller «legg til emoji» – AI bruker det umiddelbart."
+      },
+      {
+        "title": "6 eksportformater",
+        "desc": "Last ned som Markdown, TXT, PDF, DOCX, SRT eller CSV. Klar for publisering."
+      },
+      {
+        "title": "Del og samarbeid",
+        "desc": "Generer delbare lenker for teammedlemmer for å se og samarbeide om innhold."
+      },
+      {
+        "title": "Privat og sikkert",
+        "desc": "Innholdet ditt forblir ditt. Filer slettes automatisk etter behandling. Ingen datalagring."
+      },
+      {
+        "title": "Smart plattformdeteksjon",
+        "desc": "Lim inn en YouTube-lenke? Vi foreslår blogg + Twitter. Lim inn Bilibili? Vi foreslår WeChat + Xiaohongshu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Hvorfor ailomo",
+    "title": "Bygget annerledes.",
+    "highlight": "AI-først fra grunnen av"
+  },
+  "formats": {
+    "outputLabel": "Utdataformater",
+    "outputTitle": "10 formater,",
+    "outputHighlight": "ett klikk",
+    "outputSubtitle": "Generer alt samtidig – ingen grunn til å kjøre verktøyet flere ganger.",
+    "langLabel": "Global rekkevidde",
+    "langTitle": "63+ språk støttet",
+    "langSubtitle": "Transkriber og generer innhold på 63+ språk. Perfekt for internasjonale skapere og globale målgrupper.",
+    "more": "+45 flere"
+  },
+  "social": {
+    "label": "Betrodd av skapere",
+    "stats": {
+      "users": "Aktive brukere",
+      "videos": "Videoer behandlet",
+      "rating": "Brukervurdering",
+      "languages": "Språk"
+    },
+    "testimonials": [
+      {
+        "text": "\"Endelig et verktøy som forstår innholdsproduksjonsflyten. Én video → alle plattformer på minutter. En game changer for innholdsplanen min.\"",
+        "author": "Sarah Chen",
+        "role": "Innholdsskaper"
+      },
+      {
+        "text": "\"Samtaleforbedringen er genial. Jeg kan justere hver utdata ved å bare chatte med den. Sparer meg timer hver uke.\"",
+        "author": "Marcus Rivera",
+        "role": "Markedsføringsleder"
+      },
+      {
+        "text": "\"Jeg var skeptisk til AI-innhold, men kvaliteten overrasket meg virkelig. Plattformspesifikk formatering er helt riktig.\"",
+        "author": "Yuki Tanaka",
+        "role": "Podcastvert"
+      },
+      {
+        "text": "\"Som grunnlegger alene gir dette verktøyet meg et helt innholdsteams produksjon. LinkedIn-innlegg, blogger, tweets – alt fra én video.\"",
+        "author": "Alex Park",
+        "role": "Startup-gründer"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Priser",
+    "title": "Enkel,",
+    "highlight": "gjennomsiktig",
+    "suffix": "prising",
+    "subtitle": "Start gratis, oppgrader når du trenger mer. Ingen skjulte avgifter.",
+    "plans": {
+      "free": {
+        "name": "Gratis",
+        "desc": "Perfekt for å prøve det ut",
+        "cta": "Kom i gang"
+      },
+      "creator": {
+        "name": "Skaper",
+        "desc": "For seriøse innholdsskapere",
+        "cta": "Start gratis prøveperiode",
+        "badge": "Mest populær"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "For team og byråer",
+        "cta": "Start gratis prøveperiode"
+      }
+    }
+  },
+  "cta": {
+    "title": "Klar til å",
+    "highlight": "10x innholdet",
+    "suffix": "ditt?",
+    "subtitle": "Bli med tusenvis av skapere som gjør hver video til en komplett flerplattforms innholdsstrategi. Start gratis – ingen kredittkort nødvendig.",
+    "start": "Start gratis",
+    "pricing": "Se priser"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Ofte stilte spørsmål"
+  },
+  "footer": {
+    "tagline": "AI-drevet innholdsgjenbruk. Gjør én video om til hele flerplattforms innholdsstrategien din.",
+    "copyright": "Alle rettigheter forbeholdt.",
+    "builtWith": "Bygget for innholdsskapere over hele verden"
+  }
+}

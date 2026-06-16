@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Značajke",
+    "pricing": "Cijene",
+    "faq": "ČPP",
+    "tryFree": "Isprobaj besplatno"
+  },
+  "hero": {
+    "badge": "Preoblikovanje sadržaja pomoću AI-ja",
+    "title": "Pretvorite jedan video u",
+    "highlight": "Cijelu svoju strategiju sadržaja",
+    "subtitle": "Zalijepite poveznicu ili prenesite datoteku — AI automatski transkribira i prenamjenjuje vaš sadržaj u objave na blogu, društvene niti, biltene i još mnogo toga.",
+    "accent": "Udeseterostručite svoj sadržaj.",
+    "stats": {
+      "languages": "Jezici",
+      "formats": "Izlazni formati",
+      "speed": "Vrijeme obrade"
+    },
+    "tabs": {
+      "url": "Zalijepi poveznicu",
+      "file": "Prenesi datoteku",
+      "text": "Zalijepi tekst"
+    },
+    "placeholder": "Zalijepite YouTube, podcast ili bilo koju video poveznicu...",
+    "generate": "Generiraj",
+    "processing": "Obrađujem...",
+    "error": "Nešto je pošlo po zlu",
+    "tryAgain": "Pokušaj ponovno",
+    "startOver": "Kreni ispočetka",
+    "formatsGenerated": "generiranih formata"
+  },
+  "howItWorks": {
+    "label": "Kako radi",
+    "title": "Od videa do",
+    "highlight": "više platformi",
+    "suffix": "u 3 koraka",
+    "steps": [
+      {
+        "title": "Zalijepi ili prenesi",
+        "desc": "Ubacite YouTube poveznicu, prenesite audio datoteku ili zalijepite tekst. Nije potrebna konfiguracija — samo jedan klik."
+      },
+      {
+        "title": "AI radi svoju magiju",
+        "desc": "Naš AI transkribira i razumije vaš sadržaj, zatim ga inteligentno prepisuje za jedinstveni stil svake platforme."
+      },
+      {
+        "title": "Objavi posvuda",
+        "desc": "Dobijte dotjeran sadržaj za WeChat, Twitter, LinkedIn, Xiaohongshu, blogove i više. Kopirajte, preuzmite ili podijelite odmah."
+      }
+    ]
+  },
+  "features": {
+    "label": "Značajke",
+    "title": "Sve što vam treba za",
+    "highlight": "skaliranje sadržaja",
+    "subtitle": "Napravljeno za kreatore koji žele maksimalno iskoristiti svaki djelić sadržaja koji proizvedu.",
+    "list": [
+      {
+        "title": "Prepisivanje pomoću AI-ja",
+        "desc": "Nije samo transkripcija — naš AI razumije kontekst i prepisuje za jedinstveni glas i format svake platforme."
+      },
+      {
+        "title": "10 izlaznih formata",
+        "desc": "Objave na blogu, Twitter niti, LinkedIn objave, Xiaohongshu bilješke, bilteni, SRT titlovi, SEO članci i više."
+      },
+      {
+        "title": "63+ jezika",
+        "desc": "Transkribirajte i generirajte sadržaj na 63+ jezika. Savršeno za međunarodne kreatore i globalnu publiku."
+      },
+      {
+        "title": "Streaming generiranje",
+        "desc": "Gledajte kako se sadržaj pojavljuje znak po znak u stvarnom vremenu. Nema više čekanja na učitavanje."
+      },
+      {
+        "title": "Razgovorno dotjerivanje",
+        "desc": "Razgovarajte sa svakim izlazom kako biste ga fino podesili. Recite \"skrati\" ili \"dodaj emoji\" — AI to odmah primjenjuje."
+      },
+      {
+        "title": "6 izvoznih formata",
+        "desc": "Preuzmite kao Markdown, TXT, PDF, DOCX, SRT ili CSV. Spremno za objavljivanje."
+      },
+      {
+        "title": "Dijeljenje i suradnja",
+        "desc": "Generirajte poveznice za dijeljenje kako bi vaši suradnici mogli pregledavati i surađivati na sadržaju."
+      },
+      {
+        "title": "Privatno i sigurno",
+        "desc": "Vaš sadržaj ostaje vaš. Datoteke se automatski brišu nakon obrade. Bez zadržavanja podataka."
+      },
+      {
+        "title": "Pametno prepoznavanje platforme",
+        "desc": "Zalijepite YouTube poveznicu? Predlažemo blog + Twitter. Zalijepite Bilibili? Predlažemo WeChat + Xiaohongshu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Zašto ailomo",
+    "title": "Drugačije napravljen.",
+    "highlight": "AI-prvi od temelja"
+  },
+  "formats": {
+    "outputLabel": "Izlazni formati",
+    "outputTitle": "10 formata,",
+    "outputHighlight": "jedan klik",
+    "outputSubtitle": "Generirajte sve istovremeno — nema potrebe više puta pokretati alat.",
+    "langLabel": "Globalni doseg",
+    "langTitle": "Podržano 63+ jezika",
+    "langSubtitle": "Transkribirajte i generirajte sadržaj na 63+ jezika. Savršeno za međunarodne kreatore i globalnu publiku.",
+    "more": "+45 više"
+  },
+  "social": {
+    "label": "Povjerenje kreatora",
+    "stats": {
+      "users": "Aktivnih korisnika",
+      "videos": "Obrađenih videa",
+      "rating": "Ocjena korisnika",
+      "languages": "Jezika"
+    },
+    "testimonials": [
+      {
+        "text": "\"Napokon alat koji razumije tijek rada za stvaranje sadržaja. Jedan video → sve platforme za nekoliko minuta. Revolucija za moj raspored sadržaja.\"",
+        "author": "Sarah Chen",
+        "role": "Kreatorica sadržaja"
+      },
+      {
+        "text": "\"Razgovorno dotjerivanje je briljantno. Mogu prilagoditi svaki izlaz jednostavnim razgovorom s njim. Štedi mi sate svaki tjedan.\"",
+        "author": "Marcus Rivera",
+        "role": "Voditelj marketinga"
+      },
+      {
+        "text": "\"Bio sam skeptičan prema AI sadržaju, ali kvaliteta me iskreno iznenadila. Formatiranje specifično za platformu je savršeno.\"",
+        "author": "Yuki Tanaka",
+        "role": "Voditelj podcasta"
+      },
+      {
+        "text": "\"Kao samostalni osnivač, ovaj alat mi daje učinak tima za sadržaj. LinkedIn objave, blogovi, tweetovi — sve iz jednog videa.\"",
+        "author": "Alex Park",
+        "role": "Osnivač startupa"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Cijene",
+    "title": "Jednostavne,",
+    "highlight": "transparentne",
+    "suffix": "cijene",
+    "subtitle": "Počnite besplatno, nadogradite kada vam zatreba više. Bez skrivenih naknada.",
+    "plans": {
+      "free": {
+        "name": "Besplatno",
+        "desc": "Savršeno za isprobavanje",
+        "cta": "Započni"
+      },
+      "creator": {
+        "name": "Kreator",
+        "desc": "Za ozbiljne kreatore sadržaja",
+        "cta": "Započni besplatnu probu",
+        "badge": "Najpopularnije"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Za timove i agencije",
+        "cta": "Započni besplatnu probu"
+      }
+    }
+  },
+  "cta": {
+    "title": "Spremni za",
+    "highlight": "udeseterostručenje sadržaja",
+    "suffix": "?",
+    "subtitle": "Pridružite se tisućama kreatora koji svaki video pretvaraju u kompletnu strategiju sadržaja za više platformi. Počnite besplatno — nije potrebna kreditna kartica.",
+    "start": "Započni besplatno",
+    "pricing": "Pogledaj cijene"
+  },
+  "faq": {
+    "label": "ČPP",
+    "title": "Često postavljana pitanja"
+  },
+  "footer": {
+    "tagline": "Preoblikovanje sadržaja pomoću AI-ja. Pretvorite jedan video u cijelu strategiju sadržaja za više platformi.",
+    "copyright": "Sva prava pridržana.",
+    "builtWith": "Napravljeno za kreatore sadržaja diljem svijeta"
+  }
+}

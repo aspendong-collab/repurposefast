@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Funkcijas",
+    "pricing": "Cenas",
+    "faq": "BUJ",
+    "tryFree": "Izmēģināt bez maksas"
+  },
+  "hero": {
+    "badge": "AI vadīta satura pārveidošana",
+    "title": "Pārvērt vienu video",
+    "highlight": "Visā tavā satura stratēģijā",
+    "subtitle": "Ielīmē saiti vai augšupielādē failu — AI automātiski transkribē un pārveido tavu saturu emuāra ierakstos, sociālo tīklu pavedienos, jaunumvēstulēs un citur.",
+    "accent": "10x palielini sava satura iznākumu.",
+    "stats": {
+      "languages": "Valodas",
+      "formats": "Izvades formāti",
+      "speed": "Apstrādes laiks"
+    },
+    "tabs": {
+      "url": "Ielīmēt saiti",
+      "file": "Augšupielādēt failu",
+      "text": "Ielīmēt tekstu"
+    },
+    "placeholder": "Ielīmē YouTube, aplādes vai jebkuru video saiti...",
+    "generate": "Ģenerēt",
+    "processing": "Apstrādā...",
+    "error": "Kaut kas nogāja greizi",
+    "tryAgain": "Mēģināt vēlreiz",
+    "startOver": "Sākt no jauna",
+    "formatsGenerated": "formāti ģenerēti"
+  },
+  "howItWorks": {
+    "label": "Kā tas darbojas",
+    "title": "No video līdz",
+    "highlight": "daudzplatformu",
+    "suffix": "3 soļos",
+    "steps": [
+      {
+        "title": "Ielīmē vai augšupielādē",
+        "desc": "Iemet YouTube saiti, augšupielādē audio failu vai ielīmē tekstu. Nav nepieciešama konfigurācija — tikai viens klikšķis."
+      },
+      {
+        "title": "AI dara savu burvību",
+        "desc": "Mūsu AI transkribē un saprot tavu saturu, pēc tam inteliģenti pārraksta to katrai platformai atbilstošā stilā."
+      },
+      {
+        "title": "Publicē visur",
+        "desc": "Saņem gatavu saturu WeChat, Twitter, LinkedIn, Xiaohongshu, emuāriem un citur. Kopē, lejupielādē vai dalies uzreiz."
+      }
+    ]
+  },
+  "features": {
+    "label": "Funkcijas",
+    "title": "Viss, kas tev nepieciešams, lai",
+    "highlight": "mērogotu savu saturu",
+    "subtitle": "Radīts satura veidotājiem, kuri vēlas maksimāli izmantot katru radīto satura vienību.",
+    "list": [
+      {
+        "title": "AI vadīta pārrakstīšana",
+        "desc": "Ne tikai transkripcija — mūsu AI saprot kontekstu un pārraksta katras platformas unikālajā balsī un formātā."
+      },
+      {
+        "title": "10 izvades formāti",
+        "desc": "Emuāra ieraksti, Twitter pavedieni, LinkedIn ieraksti, Xiaohongshu piezīmes, jaunumvēstules, SRT subtitri, SEO raksti un vēl."
+      },
+      {
+        "title": "63+ valodas",
+        "desc": "Transkribē un ģenerē saturu 63+ valodās. Lieliski piemērots starptautiskiem satura veidotājiem un globālai auditorijai."
+      },
+      {
+        "title": "Straumēšanas ģenerēšana",
+        "desc": "Skaties, kā saturs parādās rakstzīmi pa rakstzīmei reāllaikā. Vairs nav jāgaida ielādes ritenīši."
+      },
+      {
+        "title": "Sarunvalodas precizēšana",
+        "desc": "Sarunājies ar katru izvadi, lai to uzlabotu. Saki \"padari īsāku\" vai \"pievieno emocijzīmes\" — AI to uzreiz piemēro."
+      },
+      {
+        "title": "6 eksporta formāti",
+        "desc": "Lejupielādē kā Markdown, TXT, PDF, DOCX, SRT vai CSV. Gatavs publicēšanai."
+      },
+      {
+        "title": "Dalīšanās un sadarbība",
+        "desc": "Ģenerē koplietojamas saites, lai kolēģi varētu skatīt un sadarboties pie satura."
+      },
+      {
+        "title": "Privāts un drošs",
+        "desc": "Tavs saturs paliek tavs. Faili tiek automātiski dzēsti pēc apstrādes. Dati netiek saglabāti."
+      },
+      {
+        "title": "Viedā platformas noteikšana",
+        "desc": "Ielīmē YouTube saiti? Mēs iesakām emuāru + Twitter. Ielīmē Bilibili? Mēs iesakām WeChat + Xiaohongshu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Kāpēc ailomo",
+    "title": "Radīts citādāk.",
+    "highlight": "AI-pirmais no paša sākuma"
+  },
+  "formats": {
+    "outputLabel": "Izvades formāti",
+    "outputTitle": "10 formāti,",
+    "outputHighlight": "viens klikšķis",
+    "outputSubtitle": "Ģenerē visu vienlaicīgi — nav jāpalaiž rīks vairākas reizes.",
+    "langLabel": "Globāls sasniedzamība",
+    "langTitle": "Atbalstītas 63+ valodas",
+    "langSubtitle": "Transkribē un ģenerē saturu 63+ valodās. Lieliski piemērots starptautiskiem satura veidotājiem un globālai auditorijai.",
+    "more": "+45 vēl"
+  },
+  "social": {
+    "label": "Uzticas satura veidotāji",
+    "stats": {
+      "users": "Aktīvie lietotāji",
+      "videos": "Apstrādātie video",
+      "rating": "Lietotāju vērtējums",
+      "languages": "Valodas"
+    },
+    "testimonials": [
+      {
+        "text": "\"Beidzot rīks, kas saprot satura veidošanas darbplūsmu. Viens video → visas platformas dažu minūšu laikā. Spēles mainītājs manam satura grafikam.\"",
+        "author": "Sarah Chen",
+        "role": "Satura veidotāja"
+      },
+      {
+        "text": "\"Sarunvalodas precizēšana ir izcila. Es varu pielāgot katru izvadi, vienkārši sarunājoties ar to. Tas ietaupa man stundas katru nedēļu.\"",
+        "author": "Marcus Rivera",
+        "role": "Mārketinga vadītājs"
+      },
+      {
+        "text": "\"Es biju skeptisks par AI saturu, bet kvalitāte mani patiesi pārsteidza. Platformai specifiskais formatējums ir precīzs.\"",
+        "author": "Yuki Tanaka",
+        "role": "Aplādes vadītājs"
+      },
+      {
+        "text": "\"Kā solo dibinātājs šis rīks man dod satura komandas iznākumu. LinkedIn ieraksti, emuāri, tvīti — viss no viena video.\"",
+        "author": "Alex Park",
+        "role": "Startapa dibinātājs"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Cenas",
+    "title": "Vienkāršas,",
+    "highlight": "caurspīdīgas",
+    "suffix": "cenas",
+    "subtitle": "Sāc bez maksas, ja nepieciešams vairāk, jaunini. Bez slēptām maksām.",
+    "plans": {
+      "free": {
+        "name": "Bezmaksas",
+        "desc": "Lieliski, lai izmēģinātu",
+        "cta": "Sākt"
+      },
+      "creator": {
+        "name": "Satura veidotājs",
+        "desc": "Nopietniem satura veidotājiem",
+        "cta": "Sākt bezmaksas izmēģinājumu",
+        "badge": "Populārākais"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Komandām un aģentūrām",
+        "cta": "Sākt bezmaksas izmēģinājumu"
+      }
+    }
+  },
+  "cta": {
+    "title": "Vai esi gatavs",
+    "highlight": "10x palielināt sava satura",
+    "suffix": "iznākumu?",
+    "subtitle": "Pievienojies tūkstošiem satura veidotāju, kuri pārvērš katru video pilnā daudzplatformu satura stratēģijā. Sāc bez maksas — nav nepieciešama kredītkarte.",
+    "start": "Sākt bez maksas",
+    "pricing": "Skatīt cenas"
+  },
+  "faq": {
+    "label": "BUJ",
+    "title": "Bieži uzdotie jautājumi"
+  },
+  "footer": {
+    "tagline": "AI vadīta satura pārveidošana. Pārvērt vienu video visā tavā daudzplatformu satura stratēģijā.",
+    "copyright": "Visas tiesības aizsargātas.",
+    "builtWith": "Radīts satura veidotājiem visā pasaulē"
+  }
+}

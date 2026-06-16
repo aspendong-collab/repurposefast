@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Funkcije",
+    "pricing": "Cenik",
+    "faq": "Pogosta vprašanja",
+    "tryFree": "Preizkusite brezplačno"
+  },
+  "hero": {
+    "badge": "Preoblikovanje vsebine z AI",
+    "title": "Spremenite en video v",
+    "highlight": "Celotno vsebinsko strategijo",
+    "subtitle": "Prilepite povezavo ali naložite datoteko — AI samodejno prepiše in preoblikuje vašo vsebino v objave na blogu, družbene niti, novice in več.",
+    "accent": "10x povečajte svojo vsebino.",
+    "stats": {
+      "languages": "Jeziki",
+      "formats": "Izhodne oblike",
+      "speed": "Čas obdelave"
+    },
+    "tabs": {
+      "url": "Prilepi povezavo",
+      "file": "Naloži datoteko",
+      "text": "Prilepi besedilo"
+    },
+    "placeholder": "Prilepite YouTube, podcast ali katero koli povezavo do videa...",
+    "generate": "Ustvari",
+    "processing": "Obdelujem...",
+    "error": "Nekaj je šlo narobe",
+    "tryAgain": "Poskusi znova",
+    "startOver": "Začni znova",
+    "formatsGenerated": "oblik ustvarjenih"
+  },
+  "howItWorks": {
+    "label": "Kako deluje",
+    "title": "Od videa do",
+    "highlight": "več platform",
+    "suffix": "v 3 korakih",
+    "steps": [
+      {
+        "title": "Prilepi ali naloži",
+        "desc": "Spustite YouTube povezavo, naložite zvočno datoteko ali prilepite besedilo. Brez nastavljanja — samo en klik."
+      },
+      {
+        "title": "AI naredi svojo magijo",
+        "desc": "Naš AI prepiše in razume vašo vsebino, nato pa jo inteligentno prepiše za edinstven slog vsake platforme."
+      },
+      {
+        "title": "Objavi povsod",
+        "desc": "Pridobite dodelano vsebino za WeChat, Twitter, LinkedIn, Xiaohongshu, bloge in več. Kopirajte, prenesite ali delite takoj."
+      }
+    ]
+  },
+  "features": {
+    "label": "Funkcije",
+    "title": "Vse, kar potrebujete za",
+    "highlight": "povečanje vsebine",
+    "subtitle": "Zgrajeno za ustvarjalce, ki želijo kar najbolje izkoristiti vsak kos vsebine.",
+    "list": [
+      {
+        "title": "Prepisovanje z AI",
+        "desc": "Ne le prepisovanje — naš AI razume kontekst in prepiše za edinstven glas in obliko vsake platforme."
+      },
+      {
+        "title": "10 izhodnih oblik",
+        "desc": "Objave na blogu, Twitter niti, LinkedIn objave, Xiaohongshu zapiski, novice, SRT podnapisi, SEO članki in več."
+      },
+      {
+        "title": "63+ jezikov",
+        "desc": "Prepišite in ustvarite vsebino v 63+ jezikih. Popolno za mednarodne ustvarjalce in globalno občinstvo."
+      },
+      {
+        "title": "Pretakanje generiranja",
+        "desc": "Vidite vsebino, ki se prikazuje znak za znakom v realnem času. Brez čakanja na nalagalne vrtiljake."
+      },
+      {
+        "title": "Pogovorno izboljšanje",
+        "desc": "Klepetajte z vsakim izhodom, da ga natančno prilagodite. Recite \"naredi krajše\" ali \"dodaj emoji\" — AI to takoj uporabi."
+      },
+      {
+        "title": "6 izvoznih oblik",
+        "desc": "Prenesite kot Markdown, TXT, PDF, DOCX, SRT ali CSV. Neposredno pripravljeno za objavo."
+      },
+      {
+        "title": "Deljenje in sodelovanje",
+        "desc": "Ustvarite deljive povezave za sodelavce, da si ogledajo in sodelujejo pri vsebini."
+      },
+      {
+        "title": "Zasebno in varno",
+        "desc": "Vaša vsebina ostane vaša. Datoteke se samodejno izbrišejo po obdelavi. Brez hrambe podatkov."
+      },
+      {
+        "title": "Pametno prepoznavanje platforme",
+        "desc": "Prilepite YouTube povezavo? Predlagamo blog + Twitter. Prilepite Bilibili? Predlagamo WeChat + Xiaohongshu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Zakaj ailomo",
+    "title": "Zgrajeno drugače.",
+    "highlight": "AI-prvi od začetka"
+  },
+  "formats": {
+    "outputLabel": "Izhodne oblike",
+    "outputTitle": "10 oblik,",
+    "outputHighlight": "en klik",
+    "outputSubtitle": "Ustvarite vse hkrati — ni potrebe po večkratnem zagonu orodja.",
+    "langLabel": "Globalni doseg",
+    "langTitle": "Podprtih 63+ jezikov",
+    "langSubtitle": "Prepišite in ustvarite vsebino v 63+ jezikih. Popolno za mednarodne ustvarjalce in globalno občinstvo.",
+    "more": "+45 več"
+  },
+  "social": {
+    "label": "Zaupajo ustvarjalci",
+    "stats": {
+      "users": "Aktivni uporabniki",
+      "videos": "Obdelani videi",
+      "rating": "Ocena uporabnikov",
+      "languages": "Jeziki"
+    },
+    "testimonials": [
+      {
+        "text": "\"Končno orodje, ki razume potek ustvarjanja vsebine. En video → vse platforme v minutah. Preobrat za moj urnik vsebine.\"",
+        "author": "Sarah Chen",
+        "role": "Ustvarjalka vsebin"
+      },
+      {
+        "text": "\"Pogovorno izboljšanje je sijajno. Vsak izhod lahko prilagodim samo s klepetom. Prihrani mi ure vsak teden.\"",
+        "author": "Marcus Rivera",
+        "role": "Vodja marketinga"
+      },
+      {
+        "text": "\"Bil sem skeptičen glede AI vsebine, a kakovost me je res presenetila. Oblikovanje za posamezno platformo je popolno.\"",
+        "author": "Yuki Tanaka",
+        "role": "Voditelj podcasta"
+      },
+      {
+        "text": "\"Kot samostojni ustanovitelj mi to orodje daje izhod celotne ekipe za vsebine. LinkedIn objave, blogi, tviti — vse iz enega videa.\"",
+        "author": "Alex Park",
+        "role": "Ustanovitelj startupa"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Cenik",
+    "title": "Preprost,",
+    "highlight": "pregleden",
+    "suffix": "cenik",
+    "subtitle": "Začnite brezplačno, nadgradite, ko potrebujete več. Brez skritih stroškov.",
+    "plans": {
+      "free": {
+        "name": "Brezplačno",
+        "desc": "Popolno za preizkušanje",
+        "cta": "Začnite"
+      },
+      "creator": {
+        "name": "Ustvarjalec",
+        "desc": "Za resne ustvarjalce vsebin",
+        "cta": "Začnite brezplačno preizkusno obdobje",
+        "badge": "Najbolj priljubljeno"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Za ekipe in agencije",
+        "cta": "Začnite brezplačno preizkusno obdobje"
+      }
+    }
+  },
+  "cta": {
+    "title": "Pripravljeni na",
+    "highlight": "10x povečanje vsebine",
+    "suffix": "?",
+    "subtitle": "Pridružite se tisočim ustvarjalcem, ki vsak video spremenijo v celotno večplatformno vsebinsko strategijo. Začnite brezplačno — brez potrebne kreditne kartice.",
+    "start": "Začnite brezplačno",
+    "pricing": "Oglejte si cenik"
+  },
+  "faq": {
+    "label": "Pogosta vprašanja",
+    "title": "Pogosto zastavljena"
+  },
+  "footer": {
+    "tagline": "Preoblikovanje vsebine z AI. Spremenite en video v celotno večplatformno vsebinsko strategijo.",
+    "copyright": "Vse pravice pridržane.",
+    "builtWith": "Zgrajeno za ustvarjalce vsebin po vsem svetu"
+  }
+}

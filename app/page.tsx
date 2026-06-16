@@ -1,4 +1,6 @@
-import type { Metadata } from 'next'
+'use client'
+
+import { useLocale } from '@/hooks/use-locale'
 import { Navbar } from '@/components/landing/navbar'
 import { HeroSection } from '@/components/landing/hero-section'
 import { HowItWorks } from '@/components/landing/how-it-works'
@@ -11,27 +13,24 @@ import { CTASection } from '@/components/landing/cta-section'
 import { FAQ } from '@/components/landing/faq'
 import { Footer } from '@/components/landing/footer'
 
-export const metadata: Metadata = {
-  title: 'ailomo — AI Video Content Repurposing | Turn One Video Into Multi-Platform Content',
-  description: 'AI-powered content repurposing. Paste a link → get blog posts, Twitter threads, LinkedIn posts, Xiaohongshu notes & more. 63+ languages, free to start.',
-}
-
 export default function HomePage() {
+  const { dict } = useLocale()
+
   return (
     <>
-      <Navbar />
+      <Navbar dict={dict.nav} />
       <main>
-        <HeroSection />
-        <HowItWorks />
-        <FeatureHighlights />
-        <Features />
-        <FormatShowcase />
-        <SocialProof />
-        <Pricing />
-        <CTASection />
-        <FAQ />
+        <HeroSection dict={dict.hero} />
+        <HowItWorks dict={dict.howItWorks} />
+        <FeatureHighlights dict={dict.highlights} />
+        <Features dict={dict.features} />
+        <FormatShowcase dict={dict.formats} />
+        <SocialProof dict={dict.social} />
+        <Pricing dict={dict.pricing} />
+        <CTASection dict={dict.cta} />
+        <FAQ dict={dict.faq} />
       </main>
-      <Footer />
+      <Footer dict={dict.footer} />
     </>
   )
 }

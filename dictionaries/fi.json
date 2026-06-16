@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Ominaisuudet",
+    "pricing": "Hinnoittelu",
+    "faq": "UKK",
+    "tryFree": "Kokeile ilmaiseksi"
+  },
+  "hero": {
+    "badge": "AI-pohjainen sisällön uudelleenkäyttö",
+    "title": "Muuta yksi video",
+    "highlight": "Koko sisältöstrategiaksi",
+    "subtitle": "Liitä linkki tai lataa tiedosto — AI transkriboi ja muokkaa sisältösi automaattisesti blogipostauksiksi, someketjuiksi, uutiskirjeiksi ja muiksi.",
+    "accent": "10-kertaista sisältötuotantosi.",
+    "stats": {
+      "languages": "Kielet",
+      "formats": "Tulosformaatit",
+      "speed": "Käsittelyaika"
+    },
+    "tabs": {
+      "url": "Liitä linkki",
+      "file": "Lataa tiedosto",
+      "text": "Liitä teksti"
+    },
+    "placeholder": "Liitä YouTube-, podcast- tai mikä tahansa videolinkki...",
+    "generate": "Luo",
+    "processing": "Käsitellään...",
+    "error": "Jotain meni pieleen",
+    "tryAgain": "Yritä uudelleen",
+    "startOver": "Aloita alusta",
+    "formatsGenerated": "formaattia luotu"
+  },
+  "howItWorks": {
+    "label": "Näin se toimii",
+    "title": "Videosta",
+    "highlight": "monialustaiseksi",
+    "suffix": "3 vaiheessa",
+    "steps": [
+      {
+        "title": "Liitä tai lataa",
+        "desc": "Lisää YouTube-linkki, lataa äänitiedosto tai liitä teksti. Ei tarvetta asetuksille — vain yksi klikkaus."
+      },
+      {
+        "title": "AI tekee taikansa",
+        "desc": "AI transkriboi ja ymmärtää sisältösi, sitten kirjoittaa sen uudelleen kullekin alustalle sopivaan tyyliin."
+      },
+      {
+        "title": "Julkaise kaikkialla",
+        "desc": "Saat valmista sisältöä WeChatiin, Twitteriin, LinkedIniin, Xiaohongshuun, blogeihin ja muualle. Kopioi, lataa tai jaa heti."
+      }
+    ]
+  },
+  "features": {
+    "label": "Ominaisuudet",
+    "title": "Kaikki mitä tarvitset",
+    "highlight": "sisältösi skaalaamiseen",
+    "subtitle": "Suunniteltu tekijöille, jotka haluavat maksimoida jokaisen tuottamansa sisällön.",
+    "list": [
+      {
+        "title": "AI-pohjainen uudelleenkirjoitus",
+        "desc": "Ei pelkkää transkriptiota — AI ymmärtää kontekstin ja kirjoittaa uudelleen kullekin alustalle sopivalla äänellä ja muodolla."
+      },
+      {
+        "title": "10 tulosformaattia",
+        "desc": "Blogipostaukset, Twitter-ketjut, LinkedIn-päivitykset, Xiaohongshu-muistiinpanot, uutiskirjeet, SRT-tekstitykset, SEO-artikkelit ja muut."
+      },
+      {
+        "title": "63+ kieltä",
+        "desc": "Transkriboi ja luo sisältöä 63+ kielellä. Täydellinen kansainvälisille tekijöille ja maailmanlaajuisille yleisöille."
+      },
+      {
+        "title": "Suoratoistogenerointi",
+        "desc": "Näe sisältö ilmestyvän merkki kerrallaan reaaliajassa. Ei enää odottelua latausindikaattoreille."
+      },
+      {
+        "title": "Keskusteleva hienosäätö",
+        "desc": "Keskustele jokaisen tuotoksen kanssa hienosäätääksesi sitä. Sano \"tee lyhyemmäksi\" tai \"lisää emoji\" — AI soveltaa heti."
+      },
+      {
+        "title": "6 vientiformaattia",
+        "desc": "Lataa Markdown-, TXT-, PDF-, DOCX-, SRT- tai CSV-muodossa. Suoraan valmiina julkaistavaksi."
+      },
+      {
+        "title": "Jaa ja tee yhteistyötä",
+        "desc": "Luo jaettavia linkkejä tiimikavereille, jotta he voivat tarkastella ja tehdä yhteistyötä sisällön parissa."
+      },
+      {
+        "title": "Yksityinen ja turvallinen",
+        "desc": "Sisältösi pysyy sinun. Tiedostot poistetaan automaattisesti käsittelyn jälkeen. Ei tietojen säilytystä."
+      },
+      {
+        "title": "Älykäs alustantunnistus",
+        "desc": "Liitätkö YouTube-linkin? Suosittelemme blogia + Twitteriä. Liitätkö Bilibili-linkin? Suosittelemme WeChatia + Xiaohongshua."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Miksi ailomo",
+    "title": "Rakennettu eri tavalla.",
+    "highlight": "AI-ensimmäinen alusta alkaen"
+  },
+  "formats": {
+    "outputLabel": "Tulosformaatit",
+    "outputTitle": "10 formaattia,",
+    "outputHighlight": "yksi klikkaus",
+    "outputSubtitle": "Luo kaikki samanaikaisesti — ei tarvetta ajaa työkalua useita kertoja.",
+    "langLabel": "Maailmanlaajuinen kattavuus",
+    "langTitle": "63+ kieltä tuettu",
+    "langSubtitle": "Transkriboi ja luo sisältöä 63+ kielellä. Täydellinen kansainvälisille tekijöille ja maailmanlaajuisille yleisöille.",
+    "more": "+45 lisää"
+  },
+  "social": {
+    "label": "Luottavat tekijät",
+    "stats": {
+      "users": "Aktiiviset käyttäjät",
+      "videos": "Käsitellyt videot",
+      "rating": "Käyttäjäarvosana",
+      "languages": "Kielet"
+    },
+    "testimonials": [
+      {
+        "text": "\"Vihdoin työkalu, joka ymmärtää sisällöntuotannon työnkulun. Yksi video → kaikki alustat minuuteissa. Pelinmuuttaja sisältöaikataululleni.\"",
+        "author": "Sarah Chen",
+        "role": "Sisällöntuottaja"
+      },
+      {
+        "text": "\"Keskusteleva hienosäätö on loistava. Voin muokata jokaista tuotosta vain keskustelemalla sen kanssa. Säästää tunteja joka viikko.\"",
+        "author": "Marcus Rivera",
+        "role": "Markkinointipäällikkö"
+      },
+      {
+        "text": "\"Olin skeptinen AI-sisällön suhteen, mutta laatu yllätti minut todella. Alustakohtainen muotoilu on täsmällistä.\"",
+        "author": "Yuki Tanaka",
+        "role": "Podcast-juontaja"
+      },
+      {
+        "text": "\"Yksinyrittäjänä tämä työkalu antaa minulle kokonaisen sisältötiimin tuotoksen. LinkedIn-päivitykset, blogit, twiitit — kaikki yhdestä videosta.\"",
+        "author": "Alex Park",
+        "role": "Startup-perustaja"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Hinnoittelu",
+    "title": "Yksinkertainen,",
+    "highlight": "läpinäkyvä",
+    "suffix": "hinnoittelu",
+    "subtitle": "Aloita ilmaiseksi, päivitä kun tarvitset lisää. Ei piilokuluja.",
+    "plans": {
+      "free": {
+        "name": "Ilmainen",
+        "desc": "Täydellinen kokeiluun",
+        "cta": "Aloita"
+      },
+      "creator": {
+        "name": "Tekijä",
+        "desc": "Vakaville sisällöntuottajille",
+        "cta": "Aloita ilmainen kokeilu",
+        "badge": "Suosituin"
+      },
+      "pro": {
+        "name": "Ammattilainen",
+        "desc": "Tiimeille ja toimistoille",
+        "cta": "Aloita ilmainen kokeilu"
+      }
+    }
+  },
+  "cta": {
+    "title": "Valmis",
+    "highlight": "10-kertaistamaan sisältösi",
+    "suffix": "tuotannon?",
+    "subtitle": "Liity tuhansien tekijöiden joukkoon, jotka muuttavat jokaisen videon täydelliseksi monialustaiseksi sisältöstrategiaksi. Aloita ilmaiseksi — ei luottokorttia tarvita.",
+    "start": "Aloita ilmaiseksi",
+    "pricing": "Katso hinnoittelu"
+  },
+  "faq": {
+    "label": "UKK",
+    "title": "Usein kysytyt"
+  },
+  "footer": {
+    "tagline": "AI-pohjainen sisällön uudelleenkäyttö. Muuta yksi video koko monialustaiseksi sisältöstrategiaksi.",
+    "copyright": "Kaikki oikeudet pidätetään.",
+    "builtWith": "Tehty sisällöntuottajille maailmanlaajuisesti"
+  }
+}

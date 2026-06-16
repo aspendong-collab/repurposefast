@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Gnéithe",
+    "pricing": "Praghsáil",
+    "faq": "Ceisteanna Coitianta",
+    "tryFree": "Bain Triail As Saor in Aisce"
+  },
+  "hero": {
+    "badge": "Athchóiriú Ábhar faoi Chumhacht AI",
+    "title": "Déan Físeán Amháin",
+    "highlight": "Do Straitéis Ábhar Iomlán",
+    "subtitle": "Greamaigh nasc nó uaslódáil comhad — déanann AI tras-scríobh agus athchóiriú uathoibríoch ar d'ábhar ina bhlagphoist, snáitheanna sóisialta, nuachtlitreacha, agus níos mó.",
+    "accent": "10x d'aschur ábhair.",
+    "stats": {
+      "languages": "Teangacha",
+      "formats": "Formáidí Aschuir",
+      "speed": "Am Próiseála"
+    },
+    "tabs": {
+      "url": "Greamaigh Nasc",
+      "file": "Uaslódáil Comhad",
+      "text": "Greamaigh Téacs"
+    },
+    "placeholder": "Greamaigh nasc YouTube, podchraoladh, nó aon fhíseán...",
+    "generate": "Gin",
+    "processing": "Á Phróiseáil...",
+    "error": "Tharla earráid",
+    "tryAgain": "Bain triail eile as",
+    "startOver": "Tosaigh arís",
+    "formatsGenerated": "formáidí ginte"
+  },
+  "howItWorks": {
+    "label": "Conas a Oibríonn Sé",
+    "title": "Ó Fhíseán go",
+    "highlight": "Il-Ardán",
+    "suffix": "i 3 Chéim",
+    "steps": [
+      {
+        "title": "Greamaigh nó Uaslódáil",
+        "desc": "Caith isteach nasc YouTube, uaslódáil comhad fuaime, nó greamaigh téacs. Ní gá aon chumraíocht — ach cliceáil amháin."
+      },
+      {
+        "title": "Déanann AI a Dhraíocht",
+        "desc": "Déanann ár AI tras-scríobh agus tuiscint ar d'ábhar, ansin athscríobhann sé go cliste é do stíl uathúil gach ardáin."
+      },
+      {
+        "title": "Foilsigh Gach Áit",
+        "desc": "Faigh ábhar snasta do WeChat, Twitter, LinkedIn, Xiaohongshu, blaganna, agus níos mó. Cóipeáil, íoslódáil, nó roinn láithreach."
+      }
+    ]
+  },
+  "features": {
+    "label": "Gnéithe",
+    "title": "Gach a Dhíth Ort chun",
+    "highlight": "d'Ábhar a Scálú",
+    "subtitle": "Tógtha do chruthaitheoirí ar mian leo an leas is fearr a bhaint as gach píosa ábhair a tháirgeann siad.",
+    "list": [
+      {
+        "title": "Athscríobh faoi Chumhacht AI",
+        "desc": "Ní hamháin tras-scríobh — tuigeann ár AI comhthéacs agus athscríobhann sé do ghuth agus formáid uathúil gach ardáin."
+      },
+      {
+        "title": "10 bhFormáid Aschuir",
+        "desc": "Blagphoist, snáitheanna Twitter, poist LinkedIn, nótaí Xiaohongshu, nuachtlitreacha, fotheidil SRT, ailt SEO, agus níos mó."
+      },
+      {
+        "title": "63+ Teanga",
+        "desc": "Déan tras-scríobh agus giniúint ábhair i 63+ teanga. Foirfe do chruthaitheoirí idirnáisiúnta agus lucht féachana domhanda."
+      },
+      {
+        "title": "Giniúint Sruthaithe",
+        "desc": "Feic an t-ábhar le feiceáil carachtar ar charachtar i bhfíor-am. Ní gá fanacht le ciorcail luchtaithe."
+      },
+      {
+        "title": "Mionchoigeartú Comhrá",
+        "desc": "Comhrá a dhéanamh le gach aschur chun é a mhionchoigeartú. Abair \"déan níos giorra é\" nó \"cuir emoji leis\" — cuireann AI i bhfeidhm láithreach é."
+      },
+      {
+        "title": "6 Formáid Easpórtála",
+        "desc": "Íoslódáil mar Markdown, TXT, PDF, DOCX, SRT, nó CSV. Réidh le foilsiú go díreach."
+      },
+      {
+        "title": "Roinn & Comhoibrigh",
+        "desc": "Gin naisc inroinnte do do chomhghleacaithe chun ábhar a fheiceáil agus comhoibriú air."
+      },
+      {
+        "title": "Príobháideach & Slán",
+        "desc": "Fanann d'ábhar leatsa. Scriostar comhaid go huathoibríoch tar éis próiseála. Gan aon choinneáil sonraí."
+      },
+      {
+        "title": "Braite Cliste Ardáin",
+        "desc": "Greamaigh nasc YouTube? Molaimid blag + Twitter. Greamaigh Bilibili? Molaimid WeChat + Xiaohongshu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Cén Fáth ailomo",
+    "title": "Tógtha ar Dhóigh Eile.",
+    "highlight": "AI-Céad Ón Tús"
+  },
+  "formats": {
+    "outputLabel": "Formáidí Aschuir",
+    "outputTitle": "10 bhFormáid,",
+    "outputHighlight": "Cliceáil Amháin",
+    "outputSubtitle": "Gin gach rud go comhuaineach — ní gá an uirlis a rith arís agus arís eile.",
+    "langLabel": "Sroicheadh Domhanda",
+    "langTitle": "63+ Teanga ar Fáil",
+    "langSubtitle": "Déan tras-scríobh agus giniúint ábhair i 63+ teanga. Foirfe do chruthaitheoirí idirnáisiúnta agus lucht féachana domhanda.",
+    "more": "+45 eile"
+  },
+  "social": {
+    "label": "Iontaobhaithe ag Cruthaitheoirí",
+    "stats": {
+      "users": "Úsáideoirí Gníomhacha",
+      "videos": "Físeáin Próiseáilte",
+      "rating": "Rátáil Úsáideoirí",
+      "languages": "Teangacha"
+    },
+    "testimonials": [
+      {
+        "text": "\"Ar deireadh uirlis a thuigeann sreabhadh oibre cruthaithe ábhair. Físeán amháin → gach ardán i nóiméid. Athróir cluiche do mo sceideal ábhair.\"",
+        "author": "Sarah Chen",
+        "role": "Cruthaitheoir Ábhair"
+      },
+      {
+        "text": "\"Tá an mionchoigeartú comhrá iontach. Is féidir liom gach aschur a mhionchoigeartú trí chomhrá a dhéanamh leis. Sábhálann sé uaireanta orm gach seachtain.\"",
+        "author": "Marcus Rivera",
+        "role": "Ceannaire Margaíochta"
+      },
+      {
+        "text": "\"Bhí mé amhrasach faoi ábhar AI, ach chuir an caighdeán iontas orm i ndáiríre. Tá an fhormáidiú a bhaineann go sonrach le hardán ar fheabhas.\"",
+        "author": "Yuki Tanaka",
+        "role": "Óstach Podchraoladh"
+      },
+      {
+        "text": "\"Mar bhunaitheoir aonair, tugann an uirlis seo dom aschur fhoireann ábhair. Poist LinkedIn, blaganna, tweets — go léir ó fhíseán amháin.\"",
+        "author": "Alex Park",
+        "role": "Bunaitheoir Gnólachta Nuathionscanta"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Praghsáil",
+    "title": "Praghsáil",
+    "highlight": "Shimplí, Trédhearcach",
+    "suffix": "",
+    "subtitle": "Tosaigh saor in aisce, uasghrádaigh nuair a bhíonn níos mó uait. Gan aon táillí i bhfolach.",
+    "plans": {
+      "free": {
+        "name": "Saor in Aisce",
+        "desc": "Foirfe chun triail a bhaint as",
+        "cta": "Tosaigh"
+      },
+      "creator": {
+        "name": "Cruthaitheoir",
+        "desc": "Do chruthaitheoirí ábhair thromchúiseacha",
+        "cta": "Tosaigh Triail Saor in Aisce",
+        "badge": "Is mó a bhfuil tóir air"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "D'fhoirne agus ghníomhaireachtaí",
+        "cta": "Tosaigh Triail Saor in Aisce"
+      }
+    }
+  },
+  "cta": {
+    "title": "Réidh chun",
+    "highlight": "d'Aschur Ábhair a 10x",
+    "suffix": "?",
+    "subtitle": "Bí le mílte cruthaitheoirí a dhéanann gach físeán ina straitéis ábhair il-ardáin iomlán. Tosaigh saor in aisce — níl gá le cárta creidmheasa.",
+    "start": "Tosaigh Saor in Aisce",
+    "pricing": "Féach ar Phraghsáil"
+  },
+  "faq": {
+    "label": "Ceisteanna Coitianta",
+    "title": "Ceisteanna a Chuirtear Go Minic"
+  },
+  "footer": {
+    "tagline": "Athchóiriú ábhair faoi chumhacht AI. Déan físeán amháin ina do straitéis ábhair il-ardáin iomlán.",
+    "copyright": "Gach ceart ar cosaint.",
+    "builtWith": "Tógtha do chruthaitheoirí ábhair ar fud an domhain"
+  }
+}

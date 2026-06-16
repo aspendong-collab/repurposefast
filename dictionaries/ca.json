@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Funcionalitats",
+    "pricing": "Preus",
+    "faq": "PMF",
+    "tryFree": "Prova Gratuïta"
+  },
+  "hero": {
+    "badge": "Reutilització de contingut amb IA",
+    "title": "Converteix un vídeo en",
+    "highlight": "Tota la teva estratègia de contingut",
+    "subtitle": "Enganxa un enllaç o puja un fitxer: la IA transcriu i reutilitza automàticament el teu contingut en articles de blog, fils de xarxes socials, butlletins i molt més.",
+    "accent": "Multiplica per 10 la teva producció de contingut.",
+    "stats": {
+      "languages": "Idiomes",
+      "formats": "Formats de sortida",
+      "speed": "Temps de processament"
+    },
+    "tabs": {
+      "url": "Enganxa l'enllaç",
+      "file": "Puja un fitxer",
+      "text": "Enganxa text"
+    },
+    "placeholder": "Enganxa un enllaç de YouTube, podcast o qualsevol vídeo...",
+    "generate": "Genera",
+    "processing": "Processant...",
+    "error": "Alguna cosa ha anat malament",
+    "tryAgain": "Torna-ho a provar",
+    "startOver": "Comença de nou",
+    "formatsGenerated": "formats generats"
+  },
+  "howItWorks": {
+    "label": "Com funciona",
+    "title": "Del vídeo a",
+    "highlight": "Multiplataforma",
+    "suffix": "en 3 passos",
+    "steps": [
+      {
+        "title": "Enganxa o puja",
+        "desc": "Deixa un enllaç de YouTube, puja un fitxer d'àudio o enganxa text. Sense configuració: només un clic."
+      },
+      {
+        "title": "La IA fa la seva màgia",
+        "desc": "La nostra IA transcriu i entén el teu contingut, després el reescriu de manera intel·ligent per a l'estil únic de cada plataforma."
+      },
+      {
+        "title": "Publica a tot arreu",
+        "desc": "Obtén contingut polit per a WeChat, Twitter, LinkedIn, Xiaohongshu, blogs i més. Copia, descarrega o comparteix a l'instant."
+      }
+    ]
+  },
+  "features": {
+    "label": "Funcionalitats",
+    "title": "Tot el que necessites per",
+    "highlight": "escalar el teu contingut",
+    "subtitle": "Dissenyat per a creadors que volen maximitzar cada peça de contingut que produeixen.",
+    "list": [
+      {
+        "title": "Reescriptura amb IA",
+        "desc": "No només transcripció: la nostra IA entén el context i reescriu per a la veu i el format únics de cada plataforma."
+      },
+      {
+        "title": "10 formats de sortida",
+        "desc": "Articles de blog, fils de Twitter, publicacions de LinkedIn, notes de Xiaohongshu, butlletins, subtítols SRT, articles SEO i més."
+      },
+      {
+        "title": "Més de 63 idiomes",
+        "desc": "Transcriu i genera contingut en més de 63 idiomes. Perfecte per a creadors internacionals i audiències globals."
+      },
+      {
+        "title": "Generació en streaming",
+        "desc": "Veure el contingut aparèixer caràcter per caràcter en temps real. Sense esperar rodets de càrrega."
+      },
+      {
+        "title": "Refinament conversacional",
+        "desc": "Xateja amb cada sortida per ajustar-la. Digues \"fes-ho més curt\" o \"afegeix emoji\": la IA ho aplica a l'instant."
+      },
+      {
+        "title": "6 formats d'exportació",
+        "desc": "Descarrega com a Markdown, TXT, PDF, DOCX, SRT o CSV. Directament llest per publicar."
+      },
+      {
+        "title": "Comparteix i col·labora",
+        "desc": "Genera enllaços compartibles perquè els teus companys vegin i col·laborin en el contingut."
+      },
+      {
+        "title": "Privat i segur",
+        "desc": "El teu contingut es queda teu. Els fitxers s'eliminen automàticament després del processament. Sense retenció de dades."
+      },
+      {
+        "title": "Detecció intel·ligent de plataforma",
+        "desc": "Enganxes un enllaç de YouTube? Suggerim blog + Twitter. Enganxes Bilibili? Suggerim WeChat + Xiaohongshu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Per què ailomo",
+    "title": "Construït de manera diferent.",
+    "highlight": "IA des de zero"
+  },
+  "formats": {
+    "outputLabel": "Formats de sortida",
+    "outputTitle": "10 formats,",
+    "outputHighlight": "un clic",
+    "outputSubtitle": "Genera-ho tot simultàniament: no cal executar l'eina diverses vegades.",
+    "langLabel": "Abast global",
+    "langTitle": "Més de 63 idiomes compatibles",
+    "langSubtitle": "Transcriu i genera contingut en més de 63 idiomes. Perfecte per a creadors internacionals i audiències globals.",
+    "more": "+45 més"
+  },
+  "social": {
+    "label": "Confiats per creadors",
+    "stats": {
+      "users": "Usuaris actius",
+      "videos": "Vídeos processats",
+      "rating": "Valoració d'usuaris",
+      "languages": "Idiomes"
+    },
+    "testimonials": [
+      {
+        "text": "\"Per fi una eina que entén el flux de treball de creació de contingut. Un vídeo → totes les plataformes en minuts. Un canvi radical per a la meva programació de contingut.\"",
+        "author": "Sarah Chen",
+        "role": "Creadora de contingut"
+      },
+      {
+        "text": "\"El refinament conversacional és brillant. Puc ajustar cada sortida simplement xatejant-hi. M'estalvia hores cada setmana.\"",
+        "author": "Marcus Rivera",
+        "role": "Responsable de màrqueting"
+      },
+      {
+        "text": "\"Era escèptic sobre el contingut amb IA, però la qualitat em va sorprendre realment. El format específic per a cada plataforma és perfecte.\"",
+        "author": "Yuki Tanaka",
+        "role": "Presentador de podcast"
+      },
+      {
+        "text": "\"Com a fundador en solitari, aquesta eina em dona la producció d'un equip de contingut. Publicacions de LinkedIn, blogs, tweets: tot d'un sol vídeo.\"",
+        "author": "Alex Park",
+        "role": "Fundador d'startup"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Preus",
+    "title": "Preus",
+    "highlight": "transparents",
+    "suffix": "i senzills",
+    "subtitle": "Comença gratis, actualitza quan necessitis més. Sense comissions ocultes.",
+    "plans": {
+      "free": {
+        "name": "Gratuït",
+        "desc": "Perfecte per provar-ho",
+        "cta": "Comença"
+      },
+      "creator": {
+        "name": "Creador",
+        "desc": "Per a creadors de contingut seriosos",
+        "cta": "Prova gratuïta",
+        "badge": "Més popular"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Per a equips i agències",
+        "cta": "Prova gratuïta"
+      }
+    }
+  },
+  "cta": {
+    "title": "Preparat per",
+    "highlight": "multiplicar per 10",
+    "suffix": "la teva producció de contingut?",
+    "subtitle": "Uneix-te a milers de creadors que converteixen cada vídeo en una estratègia de contingut multiplataforma completa. Comença gratis: sense necessitat de targeta de crèdit.",
+    "start": "Comença gratis",
+    "pricing": "Veure preus"
+  },
+  "faq": {
+    "label": "PMF",
+    "title": "Preguntes freqüents"
+  },
+  "footer": {
+    "tagline": "Reutilització de contingut amb IA. Converteix un vídeo en tota la teva estratègia de contingut multiplataforma.",
+    "copyright": "Tots els drets reservats.",
+    "builtWith": "Creat per a creadors de contingut d'arreu del món"
+  }
+}

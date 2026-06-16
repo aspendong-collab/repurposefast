@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Funktioner",
+    "pricing": "Priser",
+    "faq": "FAQ",
+    "tryFree": "Prova gratis"
+  },
+  "hero": {
+    "badge": "AI-driven återanvändning av innehåll",
+    "title": "Förvandla en video till",
+    "highlight": "Hela din innehållsstrategi",
+    "subtitle": "Klistra in en länk eller ladda upp en fil — AI transkriberar och återanvänder automatiskt ditt innehåll till blogginlägg, sociala trådar, nyhetsbrev och mer.",
+    "accent": "10x din innehållsproduktion.",
+    "stats": {
+      "languages": "Språk",
+      "formats": "Utdataformat",
+      "speed": "Bearbetningstid"
+    },
+    "tabs": {
+      "url": "Klistra in länk",
+      "file": "Ladda upp fil",
+      "text": "Klistra in text"
+    },
+    "placeholder": "Klistra in YouTube, podcast eller valfri videolänk...",
+    "generate": "Generera",
+    "processing": "Bearbetar...",
+    "error": "Något gick fel",
+    "tryAgain": "Försök igen",
+    "startOver": "Börja om",
+    "formatsGenerated": "format genererade"
+  },
+  "howItWorks": {
+    "label": "Hur det fungerar",
+    "title": "Från video till",
+    "highlight": "Multiplattform",
+    "suffix": "på 3 steg",
+    "steps": [
+      {
+        "title": "Klistra in eller ladda upp",
+        "desc": "Släpp en YouTube-länk, ladda upp en ljudfil eller klistra in text. Ingen konfiguration krävs — bara ett klick."
+      },
+      {
+        "title": "AI gör sin magi",
+        "desc": "Vår AI transkriberar och förstår ditt innehåll, och skriver sedan intelligent om det för varje plattforms unika stil."
+      },
+      {
+        "title": "Publicera överallt",
+        "desc": "Få polerat innehåll för WeChat, Twitter, LinkedIn, Xiaohongshu, bloggar och mer. Kopiera, ladda ner eller dela direkt."
+      }
+    ]
+  },
+  "features": {
+    "label": "Funktioner",
+    "title": "Allt du behöver för att",
+    "highlight": "Skala ditt innehåll",
+    "subtitle": "Byggt för kreatörer som vill maximera varje innehåll de producerar.",
+    "list": [
+      {
+        "title": "AI-driven omskrivning",
+        "desc": "Inte bara transkription — vår AI förstår sammanhang och skriver om för varje plattforms unika röst och format."
+      },
+      {
+        "title": "10 utdataformat",
+        "desc": "Blogginlägg, Twitter-trådar, LinkedIn-inlägg, Xiaohongshu-anteckningar, nyhetsbrev, SRT-undertexter, SEO-artiklar och mer."
+      },
+      {
+        "title": "63+ språk",
+        "desc": "Transkribera och generera innehåll på 63+ språk. Perfekt för internationella kreatörer och globala målgrupper."
+      },
+      {
+        "title": "Strömmande generering",
+        "desc": "Se innehåll visas tecken för tecken i realtid. Ingen mer väntan på laddningsindikatorer."
+      },
+      {
+        "title": "Konversationsförfining",
+        "desc": "Chatta med varje utdata för att finjustera det. Säg \"gör det kortare\" eller \"lägg till emoji\" — AI tillämpar det direkt."
+      },
+      {
+        "title": "6 exportformat",
+        "desc": "Ladda ner som Markdown, TXT, PDF, DOCX, SRT eller CSV. Klart för publicering direkt."
+      },
+      {
+        "title": "Dela och samarbeta",
+        "desc": "Generera delbara länkar för dina teammedlemmar att visa och samarbeta på innehåll."
+      },
+      {
+        "title": "Privat och säkert",
+        "desc": "Ditt innehåll förblir ditt. Filer raderas automatiskt efter bearbetning. Ingen datalagring."
+      },
+      {
+        "title": "Smart plattformsdetektering",
+        "desc": "Klistra in en YouTube-länk? Vi föreslår blogg + Twitter. Klistra in Bilibili? Vi föreslår WeChat + Xiaohongshu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Varför ailomo",
+    "title": "Byggt annorlunda.",
+    "highlight": "AI-först från grunden"
+  },
+  "formats": {
+    "outputLabel": "Utdataformat",
+    "outputTitle": "10 format,",
+    "outputHighlight": "Ett klick",
+    "outputSubtitle": "Generera allt samtidigt — inget behov av att köra verktyget flera gånger.",
+    "langLabel": "Global räckvidd",
+    "langTitle": "63+ språk som stöds",
+    "langSubtitle": "Transkribera och generera innehåll på 63+ språk. Perfekt för internationella kreatörer och globala målgrupper.",
+    "more": "+45 fler"
+  },
+  "social": {
+    "label": "Betrodd av kreatörer",
+    "stats": {
+      "users": "Aktiva användare",
+      "videos": "Bearbetade videor",
+      "rating": "Användarbetyg",
+      "languages": "Språk"
+    },
+    "testimonials": [
+      {
+        "text": "\"Äntligen ett verktyg som förstår arbetsflödet för innehållsskapande. En video → alla plattformar på några minuter. Spelväxlare för mitt innehållsschema.\"",
+        "author": "Sarah Chen",
+        "role": "Innehållsskapare"
+      },
+      {
+        "text": "\"Den konversationsbaserade förfiningen är briljant. Jag kan justera varje utdata genom att bara chatta med den. Sparar mig timmar varje vecka.\"",
+        "author": "Marcus Rivera",
+        "role": "Marknadsföringsansvarig"
+      },
+      {
+        "text": "\"Jag var skeptisk till AI-innehåll, men kvaliteten överraskade mig verkligen. Plattformsspecifik formatering är perfekt.\"",
+        "author": "Yuki Tanaka",
+        "role": "Podcastvärd"
+      },
+      {
+        "text": "\"Som ensam grundare ger detta verktyg mig ett innehållsteams produktion. LinkedIn-inlägg, bloggar, tweets — allt från en video.\"",
+        "author": "Alex Park",
+        "role": "Startup-grundare"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Priser",
+    "title": "Enkla,",
+    "highlight": "Transparenta",
+    "suffix": "priser",
+    "subtitle": "Börja gratis, uppgradera när du behöver mer. Inga dolda avgifter.",
+    "plans": {
+      "free": {
+        "name": "Gratis",
+        "desc": "Perfekt för att prova",
+        "cta": "Kom igång"
+      },
+      "creator": {
+        "name": "Kreatör",
+        "desc": "För seriösa innehållsskapare",
+        "cta": "Starta gratis provperiod",
+        "badge": "Mest populär"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "För team och byråer",
+        "cta": "Starta gratis provperiod"
+      }
+    }
+  },
+  "cta": {
+    "title": "Redo att",
+    "highlight": "10x ditt innehåll",
+    "suffix": "utdata?",
+    "subtitle": "Gå med i tusentals kreatörer som förvandlar varje video till en komplett multiplattforms innehållsstrategi. Börja gratis — inget kreditkort krävs.",
+    "start": "Börja gratis",
+    "pricing": "Visa priser"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Vanliga frågor"
+  },
+  "footer": {
+    "tagline": "AI-driven återanvändning av innehåll. Förvandla en video till hela din multiplattforms innehållsstrategi.",
+    "copyright": "Alla rättigheter förbehållna.",
+    "builtWith": "Byggt för innehållsskapare världen över"
+  }
+}

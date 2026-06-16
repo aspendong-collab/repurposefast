@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Funktioner",
+    "pricing": "Priser",
+    "faq": "FAQ",
+    "tryFree": "Prøv gratis"
+  },
+  "hero": {
+    "badge": "AI-drevet genbrug af indhold",
+    "title": "Gør én video til",
+    "highlight": "Hele din indholdsstrategi",
+    "subtitle": "Indsæt et link eller upload en fil – AI transskriberer og genbruger automatisk dit indhold til blogindlæg, sociale tråde, nyhedsbreve og meget mere.",
+    "accent": "10x dit indholdsoutput.",
+    "stats": {
+      "languages": "Sprog",
+      "formats": "Outputformater",
+      "speed": "Behandlingstid"
+    },
+    "tabs": {
+      "url": "Indsæt link",
+      "file": "Upload fil",
+      "text": "Indsæt tekst"
+    },
+    "placeholder": "Indsæt YouTube-, podcast- eller ethvert videolink...",
+    "generate": "Generer",
+    "processing": "Behandler...",
+    "error": "Noget gik galt",
+    "tryAgain": "Prøv igen",
+    "startOver": "Start forfra",
+    "formatsGenerated": "formater genereret"
+  },
+  "howItWorks": {
+    "label": "Sådan fungerer det",
+    "title": "Fra video til",
+    "highlight": "Multi-platform",
+    "suffix": "på 3 trin",
+    "steps": [
+      {
+        "title": "Indsæt eller upload",
+        "desc": "Drop et YouTube-link, upload en lydfil eller indsæt tekst. Ingen konfiguration nødvendig – bare ét klik."
+      },
+      {
+        "title": "AI gør sit magi",
+        "desc": "Vores AI transskriberer og forstår dit indhold, og omskriver det intelligent til hver platforms unikke stil."
+      },
+      {
+        "title": "Publicer overalt",
+        "desc": "Få poleret indhold til WeChat, Twitter, LinkedIn, Xiaohongshu, blogs og meget mere. Kopier, download eller del øjeblikkeligt."
+      }
+    ]
+  },
+  "features": {
+    "label": "Funktioner",
+    "title": "Alt hvad du behøver for at",
+    "highlight": "Skalér dit indhold",
+    "subtitle": "Bygget til skabere, der vil maksimere hvert stykke indhold, de producerer.",
+    "list": [
+      {
+        "title": "AI-drevet omskrivning",
+        "desc": "Ikke bare transskription – vores AI forstår kontekst og omskriver til hver platforms unikke stemme og format."
+      },
+      {
+        "title": "10 outputformater",
+        "desc": "Blogindlæg, Twitter-tråde, LinkedIn-opslag, Xiaohongshu-noter, nyhedsbreve, SRT-undertekster, SEO-artikler og meget mere."
+      },
+      {
+        "title": "63+ sprog",
+        "desc": "Transskriber og generer indhold på 63+ sprog. Perfekt til internationale skabere og globale målgrupper."
+      },
+      {
+        "title": "Streaming-generering",
+        "desc": "Se indhold dukke op tegn for tegn i realtid. Ikke mere ventetid på loading-spinnere."
+      },
+      {
+        "title": "Samtaleforbedring",
+        "desc": "Chat med hvert output for at finjustere det. Sig \"gør det kortere\" eller \"tilføj emoji\" – AI anvender det øjeblikkeligt."
+      },
+      {
+        "title": "6 eksportformater",
+        "desc": "Download som Markdown, TXT, PDF, DOCX, SRT eller CSV. Klar til publicering direkte."
+      },
+      {
+        "title": "Del og samarbejd",
+        "desc": "Generer delelige links til dine teammedlemmer, så de kan se og samarbejde om indhold."
+      },
+      {
+        "title": "Privat og sikkert",
+        "desc": "Dit indhold forbliver dit. Filer slettes automatisk efter behandling. Ingen datalagring."
+      },
+      {
+        "title": "Smart platformdetektion",
+        "desc": "Indsæt et YouTube-link? Vi foreslår blog + Twitter. Indsæt Bilibili? Vi foreslår WeChat + Xiaohongshu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Hvorfor ailomo",
+    "title": "Bygget anderledes.",
+    "highlight": "AI-først fra bunden"
+  },
+  "formats": {
+    "outputLabel": "Outputformater",
+    "outputTitle": "10 formater,",
+    "outputHighlight": "ét klik",
+    "outputSubtitle": "Generer alt samtidigt – ingen grund til at køre værktøjet flere gange.",
+    "langLabel": "Global rækkevidde",
+    "langTitle": "63+ sprog understøttet",
+    "langSubtitle": "Transskriber og generer indhold på 63+ sprog. Perfekt til internationale skabere og globale målgrupper.",
+    "more": "+45 mere"
+  },
+  "social": {
+    "label": "Betroet af skabere",
+    "stats": {
+      "users": "Aktive brugere",
+      "videos": "Behandlede videoer",
+      "rating": "Brugervurdering",
+      "languages": "Sprog"
+    },
+    "testimonials": [
+      {
+        "text": "\"Endelig et værktøj, der forstår workflowet for indholdsproduktion. Én video → alle platforme på få minutter. En game changer for min indholdsplan.\"",
+        "author": "Sarah Chen",
+        "role": "Indholdsskaber"
+      },
+      {
+        "text": "\"Den samtaleforbedring er genial. Jeg kan justere hvert output ved bare at chatte med det. Sparer mig timer hver uge.\"",
+        "author": "Marcus Rivera",
+        "role": "Marketingchef"
+      },
+      {
+        "text": "\"Jeg var skeptisk over for AI-indhold, men kvaliteten overraskede mig virkelig. Den platformspecifikke formatering er perfekt.\"",
+        "author": "Yuki Tanaka",
+        "role": "Podcastvært"
+      },
+      {
+        "text": "\"Som eneejer giver dette værktøj mig output fra et indholdsteam. LinkedIn-opslag, blogs, tweets – alt fra én video.\"",
+        "author": "Alex Park",
+        "role": "Startup-grundlægger"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Priser",
+    "title": "Enkle,",
+    "highlight": "gennemsigtige",
+    "suffix": "priser",
+    "subtitle": "Start gratis, opgrader når du har brug for mere. Ingen skjulte gebyrer.",
+    "plans": {
+      "free": {
+        "name": "Gratis",
+        "desc": "Perfekt til at prøve det",
+        "cta": "Kom i gang"
+      },
+      "creator": {
+        "name": "Skaber",
+        "desc": "For seriøse indholdsskabere",
+        "cta": "Start gratis prøveperiode",
+        "badge": "Mest populære"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "For teams og bureauer",
+        "cta": "Start gratis prøveperiode"
+      }
+    }
+  },
+  "cta": {
+    "title": "Klar til at",
+    "highlight": "10x dit indhold",
+    "suffix": "output?",
+    "subtitle": "Slut dig til tusindvis af skabere, der gør hver video til en komplet multi-platform indholdsstrategi. Start gratis – intet kreditkort nødvendigt.",
+    "start": "Start gratis",
+    "pricing": "Se priser"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Ofte stillede spørgsmål"
+  },
+  "footer": {
+    "tagline": "AI-drevet genbrug af indhold. Gør én video til hele din multi-platform indholdsstrategi.",
+    "copyright": "Alle rettigheder forbeholdes.",
+    "builtWith": "Bygget til indholdsskabere verden over"
+  }
+}

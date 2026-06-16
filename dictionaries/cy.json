@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Nodweddion",
+    "pricing": "Prisio",
+    "faq": "Cwestiynau Cyffredin",
+    "tryFree": "Rhowch Gynnig Am Ddim"
+  },
+  "hero": {
+    "badge": "Ail-bwrpasu Cynnwys wedi'i Bweru gan AI",
+    "title": "Trowch Un Fideo yn",
+    "highlight": "Eich Strategaeth Cynnwys Gyfan",
+    "subtitle": "Gludwch ddolen neu uwchlwythwch ffeil — mae AI yn trawsgrifio ac yn ail-bwrpasu'ch cynnwys yn awtomatig i bostiadau blog, edafedd cymdeithasol, cylchlythyrau, a mwy.",
+    "accent": "10x eich allbwn cynnwys.",
+    "stats": {
+      "languages": "Ieithoedd",
+      "formats": "Fformatau Allbwn",
+      "speed": "Amser Prosesu"
+    },
+    "tabs": {
+      "url": "Gludo Dolen",
+      "file": "Uwchlwytho Ffeil",
+      "text": "Gludo Testun"
+    },
+    "placeholder": "Gludwch ddolen YouTube, podlediad, neu unrhyw fideo...",
+    "generate": "Cynhyrchu",
+    "processing": "Yn prosesu...",
+    "error": "Aeth rhywbeth o'i le",
+    "tryAgain": "Ceisio eto",
+    "startOver": "Dechrau o'r dechrau",
+    "formatsGenerated": "fformatau wedi'u cynhyrchu"
+  },
+  "howItWorks": {
+    "label": "Sut Mae'n Gweithio",
+    "title": "O Fideo i",
+    "highlight": "Aml-Lwyfan",
+    "suffix": "mewn 3 Cham",
+    "steps": [
+      {
+        "title": "Gludo neu Uwchlwytho",
+        "desc": "Gollyngwch ddolen YouTube, uwchlwythwch ffeil sain, neu gludwch destun. Dim angen cyfluniad — dim ond un clic."
+      },
+      {
+        "title": "Mae AI yn Gweithio Ei Hud",
+        "desc": "Mae ein AI yn trawsgrifio ac yn deall eich cynnwys, yna'n ei ail-ysgrifennu'n ddeallus ar gyfer arddull unigryw pob llwyfan."
+      },
+      {
+        "title": "Cyhoeddi Ym Mhobman",
+        "desc": "Cewch gynnwys caboledig ar gyfer WeChat, Twitter, LinkedIn, Xiaohongshu, blogiau, a mwy. Copïwch, lawrlwythwch, neu rannwch ar unwaith."
+      }
+    ]
+  },
+  "features": {
+    "label": "Nodweddion",
+    "title": "Popeth Sydd Ei Angen i",
+    "highlight": "Raddeiddio Eich Cynnwys",
+    "subtitle": "Wedi'i adeiladu ar gyfer crewyr sydd am wneud y mwyaf o bob darn o gynnwys maen nhw'n ei gynhyrchu.",
+    "list": [
+      {
+        "title": "Ail-ysgrifennu wedi'i Bweru gan AI",
+        "desc": "Nid dim ond trawsgrifio — mae ein AI yn deall cyd-destun ac yn ail-ysgrifennu ar gyfer llais a fformat unigryw pob llwyfan."
+      },
+      {
+        "title": "10 Fformat Allbwn",
+        "desc": "Postiadau blog, edafedd Twitter, postiadau LinkedIn, nodiadau Xiaohongshu, cylchlythyrau, isdeitlau SRT, erthyglau SEO, a mwy."
+      },
+      {
+        "title": "63+ o Ieithoedd",
+        "desc": "Trawsgrifiwch a chynhyrchwch gynnwys mewn dros 63 o ieithoedd. Perffaith ar gyfer crewyr rhyngwladol a chynulleidfaoedd byd-eang."
+      },
+      {
+        "title": "Cynhyrchu Ffrydio",
+        "desc": "Gweld cynnwys yn ymddangos fesul nod mewn amser real. Dim mwy o aros am sbinners llwytho."
+      },
+      {
+        "title": "Mireinio Sgyrsiol",
+        "desc": "Sgyrsiwch â phob allbwn i'w fireinio. Dywedwch \"gwnewch yn fyrrach\" neu \"ychwanegwch emoji\" — mae AI yn ei gymhwyso ar unwaith."
+      },
+      {
+        "title": "6 Fformat Allforio",
+        "desc": "Lawrlwythwch fel Markdown, TXT, PDF, DOCX, SRT, neu CSV. Yn barod i'w gyhoeddi'n uniongyrchol."
+      },
+      {
+        "title": "Rhannu a Chydweithio",
+        "desc": "Cynhyrchwch ddolenni y gellir eu rhannu i'ch cydweithwyr weld a chydweithio ar gynnwys."
+      },
+      {
+        "title": "Preifat a Diogel",
+        "desc": "Mae eich cynnwys yn aros yn eiddo i chi. Mae ffeiliau'n cael eu dileu'n awtomatig ar ôl prosesu. Dim cadw data."
+      },
+      {
+        "title": "Canfod Llwyfan Deallus",
+        "desc": "Gludo dolen YouTube? Rydym yn awgrymu blog + Twitter. Gludo Bilibili? Rydym yn awgrymu WeChat + Xiaohongshu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Pam ailomo",
+    "title": "Wedi'i Adeiladu'n Wahanol.",
+    "highlight": "AI yn Gyntaf o'r Dechrau"
+  },
+  "formats": {
+    "outputLabel": "Fformatau Allbwn",
+    "outputTitle": "10 Fformat,",
+    "outputHighlight": "Un Clic",
+    "outputSubtitle": "Cynhyrchwch bopeth ar yr un pryd — dim angen rhedeg yr offeryn sawl gwaith.",
+    "langLabel": "Cyrhaeddiad Byd-eang",
+    "langTitle": "Cefnogaeth i 63+ o Ieithoedd",
+    "langSubtitle": "Trawsgrifiwch a chynhyrchwch gynnwys mewn dros 63 o ieithoedd. Perffaith ar gyfer crewyr rhyngwladol a chynulleidfaoedd byd-eang.",
+    "more": "+45 yn rhagor"
+  },
+  "social": {
+    "label": "Yn Ymddiried ynddo gan Greuwyr",
+    "stats": {
+      "users": "Defnyddwyr Gweithredol",
+      "videos": "Fideos wedi'u Prosesu",
+      "rating": "Sgôr Defnyddwyr",
+      "languages": "Ieithoedd"
+    },
+    "testimonials": [
+      {
+        "text": "\"O'r diwedd offeryn sy'n deall llif gwaith creu cynnwys. Un fideo → pob llwyfan mewn munudau. Newidiwr gêm i'm hamserlen gynnwys.\"",
+        "author": "Sarah Chen",
+        "role": "Creawdwr Cynnwys"
+      },
+      {
+        "text": "\"Mae'r mireinio sgyrsiol yn wych. Gallaf addasu pob allbwn trwy sgwrsio ag ef. Yn arbed oriau i mi bob wythnos.\"",
+        "author": "Marcus Rivera",
+        "role": "Arweinydd Marchnata"
+      },
+      {
+        "text": "\"Roeddwn yn amheus am gynnwys AI, ond fe'm synnwyd yn wirioneddol gan yr ansawdd. Mae'r fformatio penodol i lwyfan yn berffaith.\"",
+        "author": "Yuki Tanaka",
+        "role": "Cyflwynydd Podlediad"
+      },
+      {
+        "text": "\"Fel sylfaenydd unigol, mae'r offeryn hwn yn rhoi allbwn tîm cynnwys i mi. Postiadau LinkedIn, blogiau, trydariadau — i gyd o un fideo.\"",
+        "author": "Alex Park",
+        "role": "Sylfaenydd Cwmni Cychwynnol"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Prisio",
+    "title": "Prisio",
+    "highlight": "Tryloyw",
+    "suffix": "Syml",
+    "subtitle": "Dechreuwch yn rhad ac am ddim, uwchraddiwch pan fyddwch angen mwy. Dim ffioedd cudd.",
+    "plans": {
+      "free": {
+        "name": "Am Ddim",
+        "desc": "Perffaith ar gyfer rhoi cynnig arni",
+        "cta": "Dechrau Arni"
+      },
+      "creator": {
+        "name": "Creawdwr",
+        "desc": "Ar gyfer crewyr cynnwys difrifol",
+        "cta": "Dechrau Treial Am Ddim",
+        "badge": "Mwyaf Poblogaidd"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Ar gyfer timau ac asiantaethau",
+        "cta": "Dechrau Treial Am Ddim"
+      }
+    }
+  },
+  "cta": {
+    "title": "Yn Barod i",
+    "highlight": "10x Eich Cynnwys",
+    "suffix": "Allbwn?",
+    "subtitle": "Ymunwch â miloedd o grewyr sy'n troi pob fideo yn strategaeth gynnwys aml-lwyfan gyflawn. Dechreuwch yn rhad ac am ddim — dim angen cerdyn credyd.",
+    "start": "Dechrau Am Ddim",
+    "pricing": "Gweld Prisio"
+  },
+  "faq": {
+    "label": "Cwestiynau Cyffredin",
+    "title": "Cwestiynau Cyffredin"
+  },
+  "footer": {
+    "tagline": "Ail-bwrpasu cynnwys wedi'i bweru gan AI. Trowch un fideo yn eich strategaeth gynnwys aml-lwyfan gyfan.",
+    "copyright": "Cedwir pob hawl.",
+    "builtWith": "Wedi'i adeiladu ar gyfer crewyr cynnwys ledled y byd"
+  }
+}

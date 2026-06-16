@@ -1,0 +1,184 @@
+{
+  "nav": {
+    "features": "Ezaugarriak",
+    "pricing": "Prezioak",
+    "faq": "FAQ",
+    "tryFree": "Probatu Doan"
+  },
+  "hero": {
+    "badge": "AI bidezko Eduki Birprozesaketa",
+    "title": "Bihurtu Bideo Bat",
+    "highlight": "Zure Eduki Estrategia Osoa",
+    "subtitle": "Itsatsi esteka bat edo igo fitxategi bat — AIak automatikoki transkribatu eta birprozesatzen du zure edukia blog argitalpen, sare sozialetako hari, buletin eta gehiagotan.",
+    "accent": "10x biderkatu zure eduki ekoizpena.",
+    "stats": {
+      "languages": "Hizkuntzak",
+      "formats": "Irteera Formatuak",
+      "speed": "Prozesatze Denbora"
+    },
+    "tabs": {
+      "url": "Itsatsi Esteka",
+      "file": "Igo Fitxategia",
+      "text": "Itsatsi Testua"
+    },
+    "placeholder": "Itsatsi YouTube, podcast edo edozein bideo esteka...",
+    "generate": "Sortu",
+    "processing": "Prozesatzen...",
+    "error": "Zerbait gaizki joan da",
+    "tryAgain": "Saiatu berriro",
+    "startOver": "Hasi berriz",
+    "formatsGenerated": "sortutako formatuak"
+  },
+  "howItWorks": {
+    "label": "Nola Funtzionatzen Du",
+    "title": "Bideotik",
+    "highlight": "Plataforma Anitzetara",
+    "suffix": "3 Urratsetan",
+    "steps": [
+      {
+        "title": "Itsatsi edo Igo",
+        "desc": "Bota YouTube esteka bat, igo audio fitxategi bat, edo itsatsi testua. Ez da konfiguraziorik behar — klik bakarra."
+      },
+      {
+        "title": "AIak Bere Magia Egiten Du",
+        "desc": "Gure AIak zure edukia transkribatu eta ulertzen du, eta plataforma bakoitzaren estilo berezirako adimentsuki berridazten du."
+      },
+      {
+        "title": "Argitaratu Nonahi",
+        "desc": "Lortu eduki landua WeChat, Twitter, LinkedIn, Xiaohongshu, blog eta gehiagorako. Kopiatu, deskargatu edo partekatu berehala."
+      }
+    ]
+  },
+  "features": {
+    "label": "Ezaugarriak",
+    "title": "Edukia Eskalatzeko",
+    "highlight": "Behar Duzun Guztia",
+    "subtitle": "Sortzaileentzat eraikia, ekoizten duten eduki pieza bakoitza maximizatu nahi dutenentzat.",
+    "list": [
+      {
+        "title": "AI bidezko Berridazketa",
+        "desc": "Transkripzioa baino gehiago — gure AIak testuingurua ulertzen du eta plataforma bakoitzaren ahots eta formatu berezirako berridazten du."
+      },
+      {
+        "title": "10 Irteera Formatu",
+        "desc": "Blog argitalpenak, Twitter hariak, LinkedIn argitalpenak, Xiaohongshu oharrak, buletinak, SRT azpitituluak, SEO artikuluak eta gehiago."
+      },
+      {
+        "title": "63+ Hizkuntza",
+        "desc": "Transkribatu eta sortu edukia 63+ hizkuntzatan. Ezin hobea nazioarteko sortzaile eta audientzia globalentzat."
+      },
+      {
+        "title": "Streaming Bidezko Sorkuntza",
+        "desc": "Ikusi edukia karakterez karaktere agertzen denbora errealean. Ez itxaron kargatzeko birarik gehiago."
+      },
+      {
+        "title": "Elkarrizketa Bidezko Fintzea",
+        "desc": "Txateatu irteera bakoitzarekin fintzeko. Esan \"laburtu\" edo \"gehitu emoji\" — AIak berehala aplikatzen du."
+      },
+      {
+        "title": "6 Esportazio Formatu",
+        "desc": "Deskargatu Markdown, TXT, PDF, DOCX, SRT edo CSV gisa. Zuzenean argitaratzeko prest."
+      },
+      {
+        "title": "Partekatu eta Kolaboratu",
+        "desc": "Sortu partekatzeko estekatuak zure taldekideek edukia ikusi eta kolaboratzeko."
+      },
+      {
+        "title": "Pribatua eta Segurua",
+        "desc": "Zure edukia zurea da. Fitxategiak automatikoki ezabatzen dira prozesatu ondoren. Daturik ez gordetzen."
+      },
+      {
+        "title": "Plataforma Detekzio Adimenduna",
+        "desc": "Itsatsi YouTube esteka bat? Blog + Twitter iradokitzen dugu. Itsatsi Bilibili? WeChat + Xiaohongshu iradokitzen dugu."
+      }
+    ]
+  },
+  "highlights": {
+    "label": "Zergatik ailomo",
+    "title": "Beste Era Batean Eraikia.",
+    "highlight": "AI-Lehena Oinarritik"
+  },
+  "formats": {
+    "outputLabel": "Irteera Formatuak",
+    "outputTitle": "10 Formatu,",
+    "outputHighlight": "Klik Bakarrean",
+    "outputSubtitle": "Sortu dena aldi berean — ez da tresna behin baino gehiagotan exekutatu behar.",
+    "langLabel": "Eskura Globala",
+    "langTitle": "63+ Hizkuntza Onartuak",
+    "langSubtitle": "Transkribatu eta sortu edukia 63+ hizkuntzatan. Ezin hobea nazioarteko sortzaile eta audientzia globalentzat.",
+    "more": "+45 gehiago"
+  },
+  "social": {
+    "label": "Sortzaileek Fidatua",
+    "stats": {
+      "users": "Erabiltzaile Aktiboak",
+      "videos": "Prozesatutako Bideoak",
+      "rating": "Erabiltzaileen Balorazioa",
+      "languages": "Hizkuntzak"
+    },
+    "testimonials": [
+      {
+        "text": "\"Azkenik eduki sorkuntza fluxua ulertzen duen tresna bat. Bideo bat → plataforma guztiak minututan. Joko-aldaketa nire eduki egutegirako.\"",
+        "author": "Sarah Chen",
+        "role": "Eduki Sortzailea"
+      },
+      {
+        "text": "\"Elkarrizketa bidezko fintzea bikaina da. Irteera bakoitza doitzen dut berarekin txateatuz. Astero orduak aurrezten dizkit.\"",
+        "author": "Marcus Rivera",
+        "role": "Marketin Burua"
+      },
+      {
+        "text": "\"Eskepikoa nintzen AI edukiarekiko, baina kalitateak benetan harritu ninduen. Plataforma espezifikoko formatua zehatza da.\"",
+        "author": "Yuki Tanaka",
+        "role": "Podcast Aurkezlea"
+      },
+      {
+        "text": "\"Sortzaile bakar gisa, tresna honek eduki talde baten ekoizpena ematen dit. LinkedIn argitalpenak, blogak, txioak — guztiak bideo batetik.\"",
+        "author": "Alex Park",
+        "role": "Startup Sortzailea"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Prezioak",
+    "title": "Prezio",
+    "highlight": "Gardena",
+    "suffix": " eta Sinplea",
+    "subtitle": "Hasi doan, berritu behar duzunean. Ez dago ezkutuko kuotarik.",
+    "plans": {
+      "free": {
+        "name": "Doakoa",
+        "desc": "Ezin hobea probatzeko",
+        "cta": "Hasi"
+      },
+      "creator": {
+        "name": "Sortzailea",
+        "desc": "Sortzaile serioentzat",
+        "cta": "Hasi Doako Probarekin",
+        "badge": "Ospetsuena"
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Talde eta agentzientzat",
+        "cta": "Hasi Doako Probarekin"
+      }
+    }
+  },
+  "cta": {
+    "title": "Prest",
+    "highlight": "10x Biderkatzeko",
+    "suffix": " Zure Edukia?",
+    "subtitle": "Bat egin milaka sortzailerekin bideo bakoitza plataforma anitzeko eduki estrategia oso bihurtzen dutenekin. Hasi doan — ez da kreditu txartelik behar.",
+    "start": "Hasi Doan",
+    "pricing": "Ikusi Prezioak"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Ohiko Galderak"
+  },
+  "footer": {
+    "tagline": "AI bidezko eduki birprozesaketa. Bihurtu bideo bat zure plataforma anitzeko eduki estrategia osoan.",
+    "copyright": "Eskubide guztiak erreserbatuta.",
+    "builtWith": "Mundu osoko eduki sortzaileentzat eraikia"
+  }
+}
