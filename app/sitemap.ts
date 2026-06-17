@@ -51,5 +51,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }))
 
-  return [...core, ...tools, ...langPages, ...blogs]
+  // Blog language alternates (15 langs x 15 posts = 225 entries)
+  const blogLocales = ['en','zh','ja','ko','es','fr','de','pt','ar','hi','id','th','vi','ru','it']
+  const blogLangPages: MetadataRoute.Sitemap = []
+  for (const post of allBlogPosts) {
+    for (const lang of blogLocales) {
+      blogLangPages.push({
+        url: `${siteUrl}/${lang}/blog/${post.slug}`,
+        lastModified: blogDate,
+        changeFrequency: 'monthly' as const,
+        priority: 0.6,
+      })
+    }
+  }
+
+  return [...core, ...tools, ...langPages, ...blogs, ...blogLangPages]
 }

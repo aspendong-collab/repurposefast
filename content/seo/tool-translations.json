@@ -1,0 +1,1139 @@
+{
+  "ja": {
+    "youtube-to-blog-post": {
+      "title": "YouTubeをブログ記事に - AIワンクリック生成 | ailomo",
+      "description": "YouTube動画を高品質なブログ記事に瞬時に変換。AI文字起こし＋リライトで、元の意味を保ちながら構成を最適化。",
+      "h1": "YouTube動画をブログ記事に瞬時に変換",
+      "badge": "YouTube → ブログ記事",
+      "ogTitle": "YouTubeをブログ記事に - AIワンクリック生成",
+      "ogDescription": "YouTube動画をAI文字起こしとリライトでSEO最適化されたブログ記事に変換。",
+      "features": [
+        {
+          "title": "AIリライト",
+          "desc": "単なる文字起こしではなく、AIが内容を理解しブログ向けに再構成"
+        },
+        {
+          "title": "SEO最適化",
+          "desc": "SEOに適したタイトル、メタディスクリプション、キーワード豊富なコンテンツを自動生成"
+        },
+        {
+          "title": "多言語対応",
+          "desc": "ソース言語を検出し、20以上の言語に翻訳して出力"
+        },
+        {
+          "title": "超高速処理",
+          "desc": "10分の動画を文字起こしし、1分以内に記事を生成"
+        }
+      ],
+      "slug": "youtube-to-blog-post"
+    },
+    "video-to-twitter-thread": {
+      "title": "動画をTwitter/Xスレッドに変換 - AI自動生成 | ailomo",
+      "description": "動画コンテンツを魅力的なTwitter/Xスレッドに変換。AIが重要な洞察を抽出し、フック＋ポイント＋CTAの構造を作成します。",
+      "h1": "動画をバイラルなTwitter/Xスレッドに変える",
+      "badge": "動画 → Twitterスレッド",
+      "ogTitle": "動画をTwitter/Xスレッドに変換 - AI自動生成",
+      "ogDescription": "AIで動画コンテンツをTwitter/Xスレッドに変換 — フック＋洞察＋CTA。",
+      "features": [
+        {
+          "title": "AIフック生成",
+          "desc": "注目を集める最初のツイートを自動生成"
+        },
+        {
+          "title": "洞察抽出",
+          "desc": "各280文字以内で6〜12の重要ポイントを抽出"
+        },
+        {
+          "title": "自動CTA",
+          "desc": "エンゲージメントを促進する行動喚起で締めくくる"
+        },
+        {
+          "title": "即時出力",
+          "desc": "リンクを貼るだけで10秒で完全なスレッドを取得"
+        }
+      ],
+      "slug": "video-to-twitter-thread"
+    },
+    "video-to-xiaohongshu": {
+      "title": "動画から小紅書ノートへ - AIスタイルジェネレーター | ailomo",
+      "description": "動画を小紅書風のノートに変換。AIが絵文字たっぷりのレビュースタイルコンテンツとトレンドハッシュタグを生成します。",
+      "h1": "動画を小紅書（RED）ノートに変換",
+      "badge": "動画 → 小紅書ノート",
+      "ogTitle": "動画から小紅書ノートへ - AIジェネレーター",
+      "ogDescription": "動画を小紅書ノートに変換。絵文字スタイル＋トレンドハッシュタグ。",
+      "features": [
+        {
+          "title": "レビュースタイル",
+          "desc": "パーソナルな印象を与える、本物らしいレビュー風コピーを自動生成"
+        },
+        {
+          "title": "絵文字の洗練",
+          "desc": "スマートな絵文字配置で温かみとエンゲージメントを向上"
+        },
+        {
+          "title": "トレンドハッシュタグ",
+          "desc": "関連する話題のハッシュタグを自動マッチングし、視認性を向上"
+        },
+        {
+          "title": "モバイルフォーマット",
+          "desc": "一文一行で、スマホでの読みやすさに最適化"
+        }
+      ],
+      "slug": "video-to-xiaohongshu"
+    }
+  },
+  "ko": {
+    "youtube-to-blog-post": {
+      "title": "YouTube를 블로그 포스트로 | ailomo",
+      "badge": "YouTube → 블로그 포스트",
+      "h1": "YouTube 동영상을 블로그 포스트로 변환하세요"
+    },
+    "video-to-twitter-thread": {
+      "title": "동영상을 Twitter/X 스레드로 | ailomo",
+      "badge": "동영상 → Twitter 스레드",
+      "h1": "동영상을 Twitter/X 스레드로 변환하세요"
+    },
+    "video-to-xiaohongshu": {
+      "title": "동영상을 샤오홍슈 노트로 | ailomo",
+      "badge": "동영상 → 샤오홍슈 노트",
+      "h1": "동영상을 샤오홍슈 노트로 변환하세요"
+    },
+    "video-to-linkedin-post": {
+      "title": "동영상을 LinkedIn 포스트로 | ailomo",
+      "badge": "동영상 → LinkedIn 포스트",
+      "h1": "동영상을 LinkedIn 포스트로 변환하세요"
+    },
+    "podcast-to-article": {
+      "title": "팟캐스트를 아티클로 | ailomo",
+      "badge": "팟캐스트 → 아티클",
+      "h1": "팟캐스트를 아티클로 변환하세요"
+    },
+    "video-to-seo-article": {
+      "title": "동영상을 SEO 아티클로 | ailomo",
+      "badge": "동영상 → SEO 아티클",
+      "h1": "동영상을 SEO 아티클로 변환하세요"
+    },
+    "audio-to-text": {
+      "title": "오디오를 텍스트로 | ailomo",
+      "badge": "오디오 → 텍스트",
+      "h1": "오디오를 텍스트로 변환하세요"
+    },
+    "video-to-subtitle": {
+      "title": "동영상을 자막으로 | ailomo",
+      "badge": "동영상 → 자막",
+      "h1": "동영상에서 자막을 생성하세요"
+    },
+    "meeting-to-notes": {
+      "title": "회의를 노트로 | ailomo",
+      "badge": "회의 → 노트",
+      "h1": "회의를 실행 가능한 노트로 변환하세요"
+    },
+    "interview-transcript": {
+      "title": "인터뷰를 대본으로 | ailomo",
+      "badge": "인터뷰 → 대본",
+      "h1": "인터뷰를 대본으로 변환하세요"
+    },
+    "video-content-repurposing": {
+      "title": "동영상 콘텐츠 재활용 | ailomo",
+      "badge": "동영상 → 모든 플랫폼",
+      "h1": "하나의 동영상으로 모든 플랫폼에"
+    },
+    "mp4-to-text": {
+      "title": "MP4를 텍스트로 | ailomo",
+      "badge": "MP4 → 텍스트",
+      "h1": "MP4 동영상에서 텍스트 추출하기"
+    }
+  },
+  "es": {
+    "youtube-to-blog-post": {
+      "title": "YouTube a Publicación de Blog | ailomo",
+      "badge": "YouTube → Publicación de Blog",
+      "h1": "Convierte Videos de YouTube en Publicaciones de Blog"
+    },
+    "video-to-twitter-thread": {
+      "title": "Video a Hilo de Twitter/X | ailomo",
+      "badge": "Video → Hilo de Twitter",
+      "h1": "Convierte Videos en Hilos de Twitter/X"
+    },
+    "video-to-xiaohongshu": {
+      "title": "Video a Nota de Xiaohongshu | ailomo",
+      "badge": "Video → Nota de Xiaohongshu",
+      "h1": "Convierte Videos en Notas de Xiaohongshu"
+    },
+    "video-to-linkedin-post": {
+      "title": "Video a Publicación de LinkedIn | ailomo",
+      "badge": "Video → Publicación de LinkedIn",
+      "h1": "Convierte Videos en Publicaciones de LinkedIn"
+    },
+    "podcast-to-article": {
+      "title": "Podcast a Artículo | ailomo",
+      "badge": "Podcast → Artículo",
+      "h1": "Convierte Podcasts en Artículos"
+    },
+    "video-to-seo-article": {
+      "title": "Video a Artículo SEO | ailomo",
+      "badge": "Video → Artículo SEO",
+      "h1": "Convierte Videos en Artículos SEO"
+    },
+    "audio-to-text": {
+      "title": "Audio a Texto | ailomo",
+      "badge": "Audio → Texto",
+      "h1": "Convierte Audio a Texto"
+    },
+    "video-to-subtitle": {
+      "title": "Video a Subtítulo | ailomo",
+      "badge": "Video → Subtítulo",
+      "h1": "Genera Subtítulos a partir de Video"
+    },
+    "meeting-to-notes": {
+      "title": "Reunión a Notas | ailomo",
+      "badge": "Reunión → Notas",
+      "h1": "Convierte Reuniones en Notas Accionables"
+    },
+    "interview-transcript": {
+      "title": "Entrevista a Transcripción | ailomo",
+      "badge": "Entrevista → Transcripción",
+      "h1": "Convierte Entrevistas en Transcripciones"
+    },
+    "video-content-repurposing": {
+      "title": "Reutilización de Contenido de Video | ailomo",
+      "badge": "Video → Todas las Plataformas",
+      "h1": "Un Video para Todas las Plataformas"
+    },
+    "mp4-to-text": {
+      "title": "MP4 a Texto | ailomo",
+      "badge": "MP4 → Texto",
+      "h1": "Extrae Texto de Videos MP4"
+    }
+  },
+  "fr": {
+    "youtube-to-blog-post": {
+      "title": "YouTube vers Article de Blog | ailomo",
+      "badge": "YouTube → Article de Blog",
+      "h1": "Transformez des vidéos YouTube en articles de blog"
+    },
+    "video-to-twitter-thread": {
+      "title": "Vidéo vers Fil Twitter/X | ailomo",
+      "badge": "Vidéo → Fil Twitter",
+      "h1": "Transformez des vidéos en fils Twitter/X"
+    },
+    "video-to-xiaohongshu": {
+      "title": "Vidéo vers Note Xiaohongshu | ailomo",
+      "badge": "Vidéo → Note Xiaohongshu",
+      "h1": "Transformez des vidéos en notes Xiaohongshu"
+    },
+    "video-to-linkedin-post": {
+      "title": "Vidéo vers Publication LinkedIn | ailomo",
+      "badge": "Vidéo → Publication LinkedIn",
+      "h1": "Transformez des vidéos en publications LinkedIn"
+    },
+    "podcast-to-article": {
+      "title": "Podcast vers Article | ailomo",
+      "badge": "Podcast → Article",
+      "h1": "Transformez des podcasts en articles"
+    },
+    "video-to-seo-article": {
+      "title": "Vidéo vers Article SEO | ailomo",
+      "badge": "Vidéo → Article SEO",
+      "h1": "Transformez des vidéos en articles SEO"
+    },
+    "audio-to-text": {
+      "title": "Audio vers Texte | ailomo",
+      "badge": "Audio → Texte",
+      "h1": "Convertissez l'audio en texte"
+    },
+    "video-to-subtitle": {
+      "title": "Vidéo vers Sous-titres | ailomo",
+      "badge": "Vidéo → Sous-titres",
+      "h1": "Générez des sous-titres à partir d'une vidéo"
+    },
+    "meeting-to-notes": {
+      "title": "Réunion vers Notes | ailomo",
+      "badge": "Réunion → Notes",
+      "h1": "Transformez des réunions en notes exploitables"
+    },
+    "interview-transcript": {
+      "title": "Entretien vers Transcription | ailomo",
+      "badge": "Entretien → Transcription",
+      "h1": "Transformez des entretiens en transcriptions"
+    },
+    "video-content-repurposing": {
+      "title": "Réutilisation de Contenu Vidéo | ailomo",
+      "badge": "Vidéo → Toutes les Plateformes",
+      "h1": "Une vidéo pour toutes les plateformes"
+    },
+    "mp4-to-text": {
+      "title": "MP4 vers Texte | ailomo",
+      "badge": "MP4 → Texte",
+      "h1": "Extrayez le texte de vidéos MP4"
+    }
+  },
+  "de": {
+    "youtube-to-blog-post": {
+      "title": "YouTube zu Blogbeitrag | ailomo",
+      "badge": "YouTube → Blogbeitrag",
+      "h1": "Verwandle YouTube-Videos in Blogbeiträge"
+    },
+    "video-to-twitter-thread": {
+      "title": "Video zu Twitter/X-Thread | ailomo",
+      "badge": "Video → Twitter-Thread",
+      "h1": "Verwandle Videos in Twitter/X-Threads"
+    },
+    "video-to-xiaohongshu": {
+      "title": "Video zu Xiaohongshu-Notiz | ailomo",
+      "badge": "Video → Xiaohongshu-Notiz",
+      "h1": "Verwandle Videos in Xiaohongshu-Notizen"
+    },
+    "video-to-linkedin-post": {
+      "title": "Video zu LinkedIn-Beitrag | ailomo",
+      "badge": "Video → LinkedIn-Beitrag",
+      "h1": "Verwandle Videos in LinkedIn-Beiträge"
+    },
+    "podcast-to-article": {
+      "title": "Podcast zu Artikel | ailomo",
+      "badge": "Podcast → Artikel",
+      "h1": "Verwandle Podcasts in Artikel"
+    },
+    "video-to-seo-article": {
+      "title": "Video zu SEO-Artikel | ailomo",
+      "badge": "Video → SEO-Artikel",
+      "h1": "Verwandle Videos in SEO-Artikel"
+    },
+    "audio-to-text": {
+      "title": "Audio zu Text | ailomo",
+      "badge": "Audio → Text",
+      "h1": "Konvertiere Audio in Text"
+    },
+    "video-to-subtitle": {
+      "title": "Video zu Untertitel | ailomo",
+      "badge": "Video → Untertitel",
+      "h1": "Generiere Untertitel aus Video"
+    },
+    "meeting-to-notes": {
+      "title": "Meeting zu Notizen | ailomo",
+      "badge": "Meeting → Notizen",
+      "h1": "Verwandle Meetings in umsetzbare Notizen"
+    },
+    "interview-transcript": {
+      "title": "Interview zu Transkript | ailomo",
+      "badge": "Interview → Transkript",
+      "h1": "Verwandle Interviews in Transkripte"
+    },
+    "video-content-repurposing": {
+      "title": "Video-Content-Repurposing | ailomo",
+      "badge": "Video → Alle Plattformen",
+      "h1": "Ein Video für alle Plattformen"
+    },
+    "mp4-to-text": {
+      "title": "MP4 zu Text | ailomo",
+      "badge": "MP4 → Text",
+      "h1": "Extrahiere Text aus MP4-Videos"
+    }
+  },
+  "pt": {
+    "youtube-to-blog-post": {
+      "title": "YouTube para Post de Blog | ailomo",
+      "badge": "YouTube → Post de Blog",
+      "h1": "Transforme Vídeos do YouTube em Posts de Blog"
+    },
+    "video-to-twitter-thread": {
+      "title": "Vídeo para Thread do Twitter/X | ailomo",
+      "badge": "Vídeo → Thread do Twitter",
+      "h1": "Transforme Vídeos em Threads do Twitter/X"
+    },
+    "video-to-xiaohongshu": {
+      "title": "Vídeo para Nota do Xiaohongshu | ailomo",
+      "badge": "Vídeo → Nota do Xiaohongshu",
+      "h1": "Transforme Vídeos em Notas do Xiaohongshu"
+    },
+    "video-to-linkedin-post": {
+      "title": "Vídeo para Post do LinkedIn | ailomo",
+      "badge": "Vídeo → Post do LinkedIn",
+      "h1": "Transforme Vídeos em Posts do LinkedIn"
+    },
+    "podcast-to-article": {
+      "title": "Podcast para Artigo | ailomo",
+      "badge": "Podcast → Artigo",
+      "h1": "Transforme Podcasts em Artigos"
+    },
+    "video-to-seo-article": {
+      "title": "Vídeo para Artigo SEO | ailomo",
+      "badge": "Vídeo → Artigo SEO",
+      "h1": "Transforme Vídeos em Artigos SEO"
+    },
+    "audio-to-text": {
+      "title": "Áudio para Texto | ailomo",
+      "badge": "Áudio → Texto",
+      "h1": "Converta Áudio em Texto"
+    },
+    "video-to-subtitle": {
+      "title": "Vídeo para Legenda | ailomo",
+      "badge": "Vídeo → Legenda",
+      "h1": "Gere Legendas a Partir de Vídeos"
+    },
+    "meeting-to-notes": {
+      "title": "Reunião para Anotações | ailomo",
+      "badge": "Reunião → Anotações",
+      "h1": "Transforme Reuniões em Anotações Acionáveis"
+    },
+    "interview-transcript": {
+      "title": "Entrevista para Transcrição | ailomo",
+      "badge": "Entrevista → Transcrição",
+      "h1": "Transforme Entrevistas em Transcrições"
+    },
+    "video-content-repurposing": {
+      "title": "Reaproveitamento de Conteúdo de Vídeo | ailomo",
+      "badge": "Vídeo → Todas as Plataformas",
+      "h1": "Um Vídeo para Todas as Plataformas"
+    },
+    "mp4-to-text": {
+      "title": "MP4 para Texto | ailomo",
+      "badge": "MP4 → Texto",
+      "h1": "Extraia Texto de Vídeos MP4"
+    }
+  },
+  "ar": {
+    "youtube-to-blog-post": {
+      "title": "يوتيوب إلى مقال مدونة | ailomo",
+      "badge": "يوتيوب → مقال مدونة",
+      "h1": "حوّل فيديوهات يوتيوب إلى مقالات مدونة"
+    },
+    "video-to-twitter-thread": {
+      "title": "فيديو إلى سلسلة تغريدات تويتر/X | ailomo",
+      "badge": "فيديو → سلسلة تغريدات تويتر",
+      "h1": "حوّل الفيديوهات إلى سلسلة تغريدات تويتر/X"
+    },
+    "video-to-xiaohongshu": {
+      "title": "فيديو إلى ملاحظة شياو هونغ شو | ailomo",
+      "badge": "فيديو → ملاحظة شياو هونغ شو",
+      "h1": "حوّل الفيديوهات إلى ملاحظات شياو هونغ شو"
+    },
+    "video-to-linkedin-post": {
+      "title": "فيديو إلى منشور لينكد إن | ailomo",
+      "badge": "فيديو → منشور لينكد إن",
+      "h1": "حوّل الفيديوهات إلى منشورات لينكد إن"
+    },
+    "podcast-to-article": {
+      "title": "بودكاست إلى مقال | ailomo",
+      "badge": "بودكاست → مقال",
+      "h1": "حوّل البودكاست إلى مقالات"
+    },
+    "video-to-seo-article": {
+      "title": "فيديو إلى مقال محسّن لمحركات البحث | ailomo",
+      "badge": "فيديو → مقال محسّن لمحركات البحث",
+      "h1": "حوّل الفيديوهات إلى مقالات محسّنة لمحركات البحث"
+    },
+    "audio-to-text": {
+      "title": "صوت إلى نص | ailomo",
+      "badge": "صوت → نص",
+      "h1": "حوّل الصوت إلى نص"
+    },
+    "video-to-subtitle": {
+      "title": "فيديو إلى ترجمة | ailomo",
+      "badge": "فيديو → ترجمة",
+      "h1": "أنشئ ترجمات من الفيديو"
+    },
+    "meeting-to-notes": {
+      "title": "اجتماع إلى ملاحظات | ailomo",
+      "badge": "اجتماع → ملاحظات",
+      "h1": "حوّل الاجتماعات إلى ملاحظات قابلة للتنفيذ"
+    },
+    "interview-transcript": {
+      "title": "مقابلة إلى نص حرفي | ailomo",
+      "badge": "مقابلة → نص حرفي",
+      "h1": "حوّل المقابلات إلى نصوص حرفية"
+    },
+    "video-content-repurposing": {
+      "title": "إعادة استخدام محتوى الفيديو | ailomo",
+      "badge": "فيديو → جميع المنصات",
+      "h1": "فيديو واحد لجميع المنصات"
+    },
+    "mp4-to-text": {
+      "title": "MP4 إلى نص | ailomo",
+      "badge": "MP4 → نص",
+      "h1": "استخرج النص من فيديوهات MP4"
+    }
+  },
+  "hi": {
+    "youtube-to-blog-post": {
+      "title": "यूट्यूब से ब्लॉग पोस्ट | ailomo",
+      "badge": "यूट्यूब → ब्लॉग पोस्ट",
+      "h1": "यूट्यूब वीडियो को ब्लॉग पोस्ट में बदलें"
+    },
+    "video-to-twitter-thread": {
+      "title": "वीडियो से ट्विटर/एक्स थ्रेड | ailomo",
+      "badge": "वीडियो → ट्विटर थ्रेड",
+      "h1": "वीडियो को ट्विटर/एक्स थ्रेड में बदलें"
+    },
+    "video-to-xiaohongshu": {
+      "title": "वीडियो से शियाओहोंगशू नोट | ailomo",
+      "badge": "वीडियो → शियाओहोंगशू नोट",
+      "h1": "वीडियो को शियाओहोंगशू नोट में बदलें"
+    },
+    "video-to-linkedin-post": {
+      "title": "वीडियो से लिंक्डइन पोस्ट | ailomo",
+      "badge": "वीडियो → लिंक्डइन पोस्ट",
+      "h1": "वीडियो को लिंक्डइन पोस्ट में बदलें"
+    },
+    "podcast-to-article": {
+      "title": "पॉडकास्ट से लेख | ailomo",
+      "badge": "पॉडकास्ट → लेख",
+      "h1": "पॉडकास्ट को लेख में बदलें"
+    },
+    "video-to-seo-article": {
+      "title": "वीडियो से एसईओ लेख | ailomo",
+      "badge": "वीडियो → एसईओ लेख",
+      "h1": "वीडियो को एसईओ लेख में बदलें"
+    },
+    "audio-to-text": {
+      "title": "ऑडियो से टेक्स्ट | ailomo",
+      "badge": "ऑडियो → टेक्स्ट",
+      "h1": "ऑडियो को टेक्स्ट में बदलें"
+    },
+    "video-to-subtitle": {
+      "title": "वीडियो से उपशीर्षक | ailomo",
+      "badge": "वीडियो → उपशीर्षक",
+      "h1": "वीडियो से उपशीर्षक जनरेट करें"
+    },
+    "meeting-to-notes": {
+      "title": "मीटिंग से नोट्स | ailomo",
+      "badge": "मीटिंग → नोट्स",
+      "h1": "मीटिंग को कार्रवाई योग्य नोट्स में बदलें"
+    },
+    "interview-transcript": {
+      "title": "इंटरव्यू से ट्रांसक्रिप्ट | ailomo",
+      "badge": "इंटरव्यू → ट्रांसक्रिप्ट",
+      "h1": "इंटरव्यू को ट्रांसक्रिप्ट में बदलें"
+    },
+    "video-content-repurposing": {
+      "title": "वीडियो सामग्री पुनर्उपयोग | ailomo",
+      "badge": "वीडियो → सभी प्लेटफॉर्म",
+      "h1": "सभी प्लेटफॉर्म के लिए एक वीडियो"
+    },
+    "mp4-to-text": {
+      "title": "एमपी4 से टेक्स्ट | ailomo",
+      "badge": "एमपी4 → टेक्स्ट",
+      "h1": "एमपी4 वीडियो से टेक्स्ट निकालें"
+    }
+  },
+  "id": {
+    "youtube-to-blog-post": {
+      "title": "YouTube ke Posting Blog | ailomo",
+      "badge": "YouTube → Posting Blog",
+      "h1": "Ubah Video YouTube Menjadi Posting Blog"
+    },
+    "video-to-twitter-thread": {
+      "title": "Video ke Thread Twitter/X | ailomo",
+      "badge": "Video → Thread Twitter",
+      "h1": "Ubah Video Menjadi Thread Twitter/X"
+    },
+    "video-to-xiaohongshu": {
+      "title": "Video ke Catatan Xiaohongshu | ailomo",
+      "badge": "Video → Catatan Xiaohongshu",
+      "h1": "Ubah Video Menjadi Catatan Xiaohongshu"
+    },
+    "video-to-linkedin-post": {
+      "title": "Video ke Posting LinkedIn | ailomo",
+      "badge": "Video → Posting LinkedIn",
+      "h1": "Ubah Video Menjadi Posting LinkedIn"
+    },
+    "podcast-to-article": {
+      "title": "Podcast ke Artikel | ailomo",
+      "badge": "Podcast → Artikel",
+      "h1": "Ubah Podcast Menjadi Artikel"
+    },
+    "video-to-seo-article": {
+      "title": "Video ke Artikel SEO | ailomo",
+      "badge": "Video → Artikel SEO",
+      "h1": "Ubah Video Menjadi Artikel SEO"
+    },
+    "audio-to-text": {
+      "title": "Audio ke Teks | ailomo",
+      "badge": "Audio → Teks",
+      "h1": "Konversi Audio ke Teks"
+    },
+    "video-to-subtitle": {
+      "title": "Video ke Subtitle | ailomo",
+      "badge": "Video → Subtitle",
+      "h1": "Hasilkan Subtitle dari Video"
+    },
+    "meeting-to-notes": {
+      "title": "Rapat ke Catatan | ailomo",
+      "badge": "Rapat → Catatan",
+      "h1": "Ubah Rapat Menjadi Catatan yang Dapat Ditindaklanjuti"
+    },
+    "interview-transcript": {
+      "title": "Wawancara ke Transkrip | ailomo",
+      "badge": "Wawancara → Transkrip",
+      "h1": "Ubah Wawancara Menjadi Transkrip"
+    },
+    "video-content-repurposing": {
+      "title": "Penggunaan Ulang Konten Video | ailomo",
+      "badge": "Video → Semua Platform",
+      "h1": "Satu Video untuk Semua Platform"
+    },
+    "mp4-to-text": {
+      "title": "MP4 ke Teks | ailomo",
+      "badge": "MP4 → Teks",
+      "h1": "Ekstrak Teks dari Video MP4"
+    }
+  },
+  "th": {
+    "youtube-to-blog-post": {
+      "title": "YouTube เป็นโพสต์บล็อก | ailomo",
+      "badge": "YouTube → โพสต์บล็อก",
+      "h1": "เปลี่ยนวิดีโอ YouTube เป็นโพสต์บล็อก"
+    },
+    "video-to-twitter-thread": {
+      "title": "วิดีโอเป็นเธรด Twitter/X | ailomo",
+      "badge": "วิดีโอ → เธรด Twitter",
+      "h1": "เปลี่ยนวิดีโอเป็นเธรด Twitter/X"
+    },
+    "video-to-xiaohongshu": {
+      "title": "วิดีโอเป็นโน้ต Xiaohongshu | ailomo",
+      "badge": "วิดีโอ → โน้ต Xiaohongshu",
+      "h1": "เปลี่ยนวิดีโอเป็นโน้ต Xiaohongshu"
+    },
+    "video-to-linkedin-post": {
+      "title": "วิดีโอเป็นโพสต์ LinkedIn | ailomo",
+      "badge": "วิดีโอ → โพสต์ LinkedIn",
+      "h1": "เปลี่ยนวิดีโอเป็นโพสต์ LinkedIn"
+    },
+    "podcast-to-article": {
+      "title": "พอดแคสต์เป็นบทความ | ailomo",
+      "badge": "พอดแคสต์ → บทความ",
+      "h1": "เปลี่ยนพอดแคสต์เป็นบทความ"
+    },
+    "video-to-seo-article": {
+      "title": "วิดีโอเป็นบทความ SEO | ailomo",
+      "badge": "วิดีโอ → บทความ SEO",
+      "h1": "เปลี่ยนวิดีโอเป็นบทความ SEO"
+    },
+    "audio-to-text": {
+      "title": "เสียงเป็นข้อความ | ailomo",
+      "badge": "เสียง → ข้อความ",
+      "h1": "แปลงเสียงเป็นข้อความ"
+    },
+    "video-to-subtitle": {
+      "title": "วิดีโอเป็นคำบรรยาย | ailomo",
+      "badge": "วิดีโอ → คำบรรยาย",
+      "h1": "สร้างคำบรรยายจากวิดีโอ"
+    },
+    "meeting-to-notes": {
+      "title": "การประชุมเป็นบันทึก | ailomo",
+      "badge": "การประชุม → บันทึก",
+      "h1": "เปลี่ยนการประชุมเป็นบันทึกที่นำไปปฏิบัติได้"
+    },
+    "interview-transcript": {
+      "title": "สัมภาษณ์เป็นถอดความ | ailomo",
+      "badge": "สัมภาษณ์ → ถอดความ",
+      "h1": "เปลี่ยนสัมภาษณ์เป็นถอดความ"
+    },
+    "video-content-repurposing": {
+      "title": "การนำเนื้อหาวิดีโอไปใช้ใหม่ | ailomo",
+      "badge": "วิดีโอ → ทุกแพลตฟอร์ม",
+      "h1": "วิดีโอเดียวสำหรับทุกแพลตฟอร์ม"
+    },
+    "mp4-to-text": {
+      "title": "MP4 เป็นข้อความ | ailomo",
+      "badge": "MP4 → ข้อความ",
+      "h1": "แยกข้อความจากวิดีโอ MP4"
+    }
+  },
+  "vi": {
+    "youtube-to-blog-post": {
+      "title": "YouTube sang Bài viết Blog | ailomo",
+      "badge": "YouTube → Bài viết Blog",
+      "h1": "Chuyển đổi Video YouTube thành Bài viết Blog"
+    },
+    "video-to-twitter-thread": {
+      "title": "Video sang Luồng Twitter/X | ailomo",
+      "badge": "Video → Luồng Twitter",
+      "h1": "Chuyển đổi Video thành Luồng Twitter/X"
+    },
+    "video-to-xiaohongshu": {
+      "title": "Video sang Ghi chú Xiaohongshu | ailomo",
+      "badge": "Video → Ghi chú Xiaohongshu",
+      "h1": "Chuyển đổi Video thành Ghi chú Xiaohongshu"
+    },
+    "video-to-linkedin-post": {
+      "title": "Video sang Bài đăng LinkedIn | ailomo",
+      "badge": "Video → Bài đăng LinkedIn",
+      "h1": "Chuyển đổi Video thành Bài đăng LinkedIn"
+    },
+    "podcast-to-article": {
+      "title": "Podcast sang Bài viết | ailomo",
+      "badge": "Podcast → Bài viết",
+      "h1": "Chuyển đổi Podcast thành Bài viết"
+    },
+    "video-to-seo-article": {
+      "title": "Video sang Bài viết SEO | ailomo",
+      "badge": "Video → Bài viết SEO",
+      "h1": "Chuyển đổi Video thành Bài viết SEO"
+    },
+    "audio-to-text": {
+      "title": "Âm thanh sang Văn bản | ailomo",
+      "badge": "Âm thanh → Văn bản",
+      "h1": "Chuyển đổi Âm thanh thành Văn bản"
+    },
+    "video-to-subtitle": {
+      "title": "Video sang Phụ đề | ailomo",
+      "badge": "Video → Phụ đề",
+      "h1": "Tạo Phụ đề từ Video"
+    },
+    "meeting-to-notes": {
+      "title": "Cuộc họp sang Ghi chú | ailomo",
+      "badge": "Cuộc họp → Ghi chú",
+      "h1": "Chuyển đổi Cuộc họp thành Ghi chú Hành động"
+    },
+    "interview-transcript": {
+      "title": "Phỏng vấn sang Bản ghi | ailomo",
+      "badge": "Phỏng vấn → Bản ghi",
+      "h1": "Chuyển đổi Phỏng vấn thành Bản ghi"
+    },
+    "video-content-repurposing": {
+      "title": "Tái sử dụng Nội dung Video | ailomo",
+      "badge": "Video → Tất cả Nền tảng",
+      "h1": "Một Video cho Tất cả Nền tảng"
+    },
+    "mp4-to-text": {
+      "title": "MP4 sang Văn bản | ailomo",
+      "badge": "MP4 → Văn bản",
+      "h1": "Trích xuất Văn bản từ Video MP4"
+    }
+  },
+  "ru": {
+    "youtube-to-blog-post": {
+      "title": "YouTube в блог-пост | ailomo",
+      "badge": "YouTube → Блог-пост",
+      "h1": "Превратите видео YouTube в блог-посты"
+    },
+    "video-to-twitter-thread": {
+      "title": "Видео в тред Twitter/X | ailomo",
+      "badge": "Видео → Тред Twitter",
+      "h1": "Превратите видео в треды Twitter/X"
+    },
+    "video-to-xiaohongshu": {
+      "title": "Видео в заметку Xiaohongshu | ailomo",
+      "badge": "Видео → Заметка Xiaohongshu",
+      "h1": "Превратите видео в заметки Xiaohongshu"
+    },
+    "video-to-linkedin-post": {
+      "title": "Видео в пост LinkedIn | ailomo",
+      "badge": "Видео → Пост LinkedIn",
+      "h1": "Превратите видео в посты LinkedIn"
+    },
+    "podcast-to-article": {
+      "title": "Подкаст в статью | ailomo",
+      "badge": "Подкаст → Статья",
+      "h1": "Превратите подкасты в статьи"
+    },
+    "video-to-seo-article": {
+      "title": "Видео в SEO-статью | ailomo",
+      "badge": "Видео → SEO-статья",
+      "h1": "Превратите видео в SEO-статьи"
+    },
+    "audio-to-text": {
+      "title": "Аудио в текст | ailomo",
+      "badge": "Аудио → Текст",
+      "h1": "Конвертируйте аудио в текст"
+    },
+    "video-to-subtitle": {
+      "title": "Видео в субтитры | ailomo",
+      "badge": "Видео → Субтитры",
+      "h1": "Создайте субтитры из видео"
+    },
+    "meeting-to-notes": {
+      "title": "Встреча в заметки | ailomo",
+      "badge": "Встреча → Заметки",
+      "h1": "Превратите встречи в полезные заметки"
+    },
+    "interview-transcript": {
+      "title": "Интервью в транскрипт | ailomo",
+      "badge": "Интервью → Транскрипт",
+      "h1": "Превратите интервью в транскрипты"
+    },
+    "video-content-repurposing": {
+      "title": "Рерайтинг видео-контента | ailomo",
+      "badge": "Видео → Все платформы",
+      "h1": "Одно видео для всех платформ"
+    },
+    "mp4-to-text": {
+      "title": "MP4 в текст | ailomo",
+      "badge": "MP4 → Текст",
+      "h1": "Извлеките текст из видео MP4"
+    }
+  },
+  "it": {
+    "youtube-to-blog-post": {
+      "title": "YouTube in Articolo del Blog | ailomo",
+      "badge": "YouTube → Articolo del Blog",
+      "h1": "Trasforma Video YouTube in Articoli del Blog"
+    },
+    "video-to-twitter-thread": {
+      "title": "Video in Thread Twitter/X | ailomo",
+      "badge": "Video → Thread Twitter",
+      "h1": "Trasforma Video in Thread Twitter/X"
+    },
+    "video-to-xiaohongshu": {
+      "title": "Video in Nota Xiaohongshu | ailomo",
+      "badge": "Video → Nota Xiaohongshu",
+      "h1": "Trasforma Video in Note Xiaohongshu"
+    },
+    "video-to-linkedin-post": {
+      "title": "Video in Post LinkedIn | ailomo",
+      "badge": "Video → Post LinkedIn",
+      "h1": "Trasforma Video in Post LinkedIn"
+    },
+    "podcast-to-article": {
+      "title": "Podcast in Articolo | ailomo",
+      "badge": "Podcast → Articolo",
+      "h1": "Trasforma Podcast in Articoli"
+    },
+    "video-to-seo-article": {
+      "title": "Video in Articolo SEO | ailomo",
+      "badge": "Video → Articolo SEO",
+      "h1": "Trasforma Video in Articoli SEO"
+    },
+    "audio-to-text": {
+      "title": "Audio in Testo | ailomo",
+      "badge": "Audio → Testo",
+      "h1": "Converti Audio in Testo"
+    },
+    "video-to-subtitle": {
+      "title": "Video in Sottotitoli | ailomo",
+      "badge": "Video → Sottotitoli",
+      "h1": "Genera Sottotitoli dal Video"
+    },
+    "meeting-to-notes": {
+      "title": "Riunione in Appunti | ailomo",
+      "badge": "Riunione → Appunti",
+      "h1": "Trasforma Riunioni in Appunti Azionabili"
+    },
+    "interview-transcript": {
+      "title": "Intervista in Trascrizione | ailomo",
+      "badge": "Intervista → Trascrizione",
+      "h1": "Trasforma Interviste in Trascrizioni"
+    },
+    "video-content-repurposing": {
+      "title": "Riproposizione Contenuti Video | ailomo",
+      "badge": "Video → Tutte le Piattaforme",
+      "h1": "Un Video per Tutte le Piattaforme"
+    },
+    "mp4-to-text": {
+      "title": "MP4 in Testo | ailomo",
+      "badge": "MP4 → Testo",
+      "h1": "Estrai Testo da Video MP4"
+    }
+  },
+  "tr": {
+    "youtube-to-blog-post": {
+      "title": "YouTube'dan Blog Yazısına | ailomo",
+      "badge": "YouTube → Blog Yazısı",
+      "h1": "YouTube Videolarını Blog Yazısına Dönüştür"
+    },
+    "video-to-twitter-thread": {
+      "title": "Videodan Twitter/X Dizisine | ailomo",
+      "badge": "Video → Twitter Dizisi",
+      "h1": "Videoları Twitter/X Dizisine Dönüştür"
+    },
+    "video-to-xiaohongshu": {
+      "title": "Videodan Xiaohongshu Notuna | ailomo",
+      "badge": "Video → Xiaohongshu Notu",
+      "h1": "Videoları Xiaohongshu Notuna Dönüştür"
+    },
+    "video-to-linkedin-post": {
+      "title": "Videodan LinkedIn Gönderisine | ailomo",
+      "badge": "Video → LinkedIn Gönderisi",
+      "h1": "Videoları LinkedIn Gönderisine Dönüştür"
+    },
+    "podcast-to-article": {
+      "title": "Podcast'ten Makaleye | ailomo",
+      "badge": "Podcast → Makale",
+      "h1": "Podcast'leri Makaleye Dönüştür"
+    },
+    "video-to-seo-article": {
+      "title": "Videodan SEO Makalesine | ailomo",
+      "badge": "Video → SEO Makalesi",
+      "h1": "Videoları SEO Makalesine Dönüştür"
+    },
+    "audio-to-text": {
+      "title": "Sesten Metne | ailomo",
+      "badge": "Ses → Metin",
+      "h1": "Sesi Metne Dönüştür"
+    },
+    "video-to-subtitle": {
+      "title": "Videodan Altyazıya | ailomo",
+      "badge": "Video → Altyazı",
+      "h1": "Videodan Altyazı Oluştur"
+    },
+    "meeting-to-notes": {
+      "title": "Toplantıdan Notlara | ailomo",
+      "badge": "Toplantı → Notlar",
+      "h1": "Toplantıları Eyleme Dönüştürülebilir Notlara Dönüştür"
+    },
+    "interview-transcript": {
+      "title": "Röportajdan Transkripte | ailomo",
+      "badge": "Röportaj → Transkript",
+      "h1": "Röportajları Transkripte Dönüştür"
+    },
+    "video-content-repurposing": {
+      "title": "Video İçerik Yeniden Kullanımı | ailomo",
+      "badge": "Video → Tüm Platformlar",
+      "h1": "Tüm Platformlar İçin Tek Video"
+    },
+    "mp4-to-text": {
+      "title": "MP4'ten Metne | ailomo",
+      "badge": "MP4 → Metin",
+      "h1": "MP4 Videolarından Metin Çıkar"
+    }
+  },
+  "pl": {
+    "youtube-to-blog-post": {
+      "title": "YouTube na Post na Blogu | ailomo",
+      "badge": "YouTube → Post na Blogu",
+      "h1": "Zamień filmy z YouTube w posty na blogu"
+    },
+    "video-to-twitter-thread": {
+      "title": "Film na Wątek na Twitterze/X | ailomo",
+      "badge": "Film → Wątek na Twitterze",
+      "h1": "Zamień filmy w wątki na Twitterze/X"
+    },
+    "video-to-xiaohongshu": {
+      "title": "Film na Notatkę Xiaohongshu | ailomo",
+      "badge": "Film → Notatka Xiaohongshu",
+      "h1": "Zamień filmy w notatki Xiaohongshu"
+    },
+    "video-to-linkedin-post": {
+      "title": "Film na Post na LinkedIn | ailomo",
+      "badge": "Film → Post na LinkedIn",
+      "h1": "Zamień filmy w posty na LinkedIn"
+    },
+    "podcast-to-article": {
+      "title": "Podcast na Artykuł | ailomo",
+      "badge": "Podcast → Artykuł",
+      "h1": "Zamień podcasty w artykuły"
+    },
+    "video-to-seo-article": {
+      "title": "Film na Artykuł SEO | ailomo",
+      "badge": "Film → Artykuł SEO",
+      "h1": "Zamień filmy w artykuły SEO"
+    },
+    "audio-to-text": {
+      "title": "Audio na Tekst | ailomo",
+      "badge": "Audio → Tekst",
+      "h1": "Konwertuj audio na tekst"
+    },
+    "video-to-subtitle": {
+      "title": "Film na Napisy | ailomo",
+      "badge": "Film → Napisy",
+      "h1": "Generuj napisy z filmu"
+    },
+    "meeting-to-notes": {
+      "title": "Spotkanie na Notatki | ailomo",
+      "badge": "Spotkanie → Notatki",
+      "h1": "Zamień spotkania w praktyczne notatki"
+    },
+    "interview-transcript": {
+      "title": "Wywiad na Transkrypcję | ailomo",
+      "badge": "Wywiad → Transkrypcja",
+      "h1": "Zamień wywiady w transkrypcje"
+    },
+    "video-content-repurposing": {
+      "title": "Ponowne Wykorzystanie Treści Wideo | ailomo",
+      "badge": "Film → Wszystkie Platformy",
+      "h1": "Jeden film na wszystkie platformy"
+    },
+    "mp4-to-text": {
+      "title": "MP4 na Tekst | ailomo",
+      "badge": "MP4 → Tekst",
+      "h1": "Wyodrębnij tekst z filmów MP4"
+    }
+  },
+  "nl": {
+    "youtube-to-blog-post": {
+      "title": "YouTube naar Blog Post | ailomo",
+      "badge": "YouTube → Blog Post",
+      "h1": "Zet YouTube-video's om in blogberichten"
+    },
+    "video-to-twitter-thread": {
+      "title": "Video naar Twitter/X-thread | ailomo",
+      "badge": "Video → Twitter Thread",
+      "h1": "Zet video's om in Twitter/X-threads"
+    },
+    "video-to-xiaohongshu": {
+      "title": "Video naar Xiaohongshu-notitie | ailomo",
+      "badge": "Video → Xiaohongshu Note",
+      "h1": "Zet video's om in Xiaohongshu-notities"
+    },
+    "video-to-linkedin-post": {
+      "title": "Video naar LinkedIn-bericht | ailomo",
+      "badge": "Video → LinkedIn Post",
+      "h1": "Zet video's om in LinkedIn-berichten"
+    },
+    "podcast-to-article": {
+      "title": "Podcast naar Artikel | ailomo",
+      "badge": "Podcast → Article",
+      "h1": "Zet podcasts om in artikelen"
+    },
+    "video-to-seo-article": {
+      "title": "Video naar SEO-artikel | ailomo",
+      "badge": "Video → SEO Article",
+      "h1": "Zet video's om in SEO-artikelen"
+    },
+    "audio-to-text": {
+      "title": "Audio naar Tekst | ailomo",
+      "badge": "Audio → Text",
+      "h1": "Converteer audio naar tekst"
+    },
+    "video-to-subtitle": {
+      "title": "Video naar Ondertiteling | ailomo",
+      "badge": "Video → Subtitle",
+      "h1": "Genereer ondertiteling uit video"
+    },
+    "meeting-to-notes": {
+      "title": "Vergadering naar Notities | ailomo",
+      "badge": "Meeting → Notes",
+      "h1": "Zet vergaderingen om in bruikbare notities"
+    },
+    "interview-transcript": {
+      "title": "Interview naar Transcript | ailomo",
+      "badge": "Interview → Transcript",
+      "h1": "Zet interviews om in transcripten"
+    },
+    "video-content-repurposing": {
+      "title": "Video-inhoud Hergebruiken | ailomo",
+      "badge": "Video → All Platforms",
+      "h1": "Eén video voor alle platforms"
+    },
+    "mp4-to-text": {
+      "title": "MP4 naar Tekst | ailomo",
+      "badge": "MP4 → Text",
+      "h1": "Extraheer tekst uit MP4-video's"
+    }
+  },
+  "sv": {
+    "youtube-to-blog-post": {
+      "title": "YouTube till blogginlägg | ailomo",
+      "badge": "YouTube → Blogginlägg",
+      "h1": "Förvandla YouTube-videor till blogginlägg"
+    },
+    "video-to-twitter-thread": {
+      "title": "Video till Twitter/X-tråd | ailomo",
+      "badge": "Video → Twitter-tråd",
+      "h1": "Förvandla videor till Twitter/X-trådar"
+    },
+    "video-to-xiaohongshu": {
+      "title": "Video till Xiaohongshu-anteckning | ailomo",
+      "badge": "Video → Xiaohongshu-anteckning",
+      "h1": "Förvandla videor till Xiaohongshu-anteckningar"
+    },
+    "video-to-linkedin-post": {
+      "title": "Video till LinkedIn-inlägg | ailomo",
+      "badge": "Video → LinkedIn-inlägg",
+      "h1": "Förvandla videor till LinkedIn-inlägg"
+    },
+    "podcast-to-article": {
+      "title": "Podcast till artikel | ailomo",
+      "badge": "Podcast → Artikel",
+      "h1": "Förvandla podcaster till artiklar"
+    },
+    "video-to-seo-article": {
+      "title": "Video till SEO-artikel | ailomo",
+      "badge": "Video → SEO-artikel",
+      "h1": "Förvandla videor till SEO-artiklar"
+    },
+    "audio-to-text": {
+      "title": "Ljud till text | ailomo",
+      "badge": "Ljud → Text",
+      "h1": "Konvertera ljud till text"
+    },
+    "video-to-subtitle": {
+      "title": "Video till undertext | ailomo",
+      "badge": "Video → Undertext",
+      "h1": "Generera undertexter från video"
+    },
+    "meeting-to-notes": {
+      "title": "Möte till anteckningar | ailomo",
+      "badge": "Möte → Anteckningar",
+      "h1": "Förvandla möten till användbara anteckningar"
+    },
+    "interview-transcript": {
+      "title": "Intervju till utskrift | ailomo",
+      "badge": "Intervju → Utskrift",
+      "h1": "Förvandla intervjuer till utskrifter"
+    },
+    "video-content-repurposing": {
+      "title": "Videoinnehållsåteranvändning | ailomo",
+      "badge": "Video → Alla plattformar",
+      "h1": "En video för alla plattformar"
+    },
+    "mp4-to-text": {
+      "title": "MP4 till text | ailomo",
+      "badge": "MP4 → Text",
+      "h1": "Extrahera text från MP4-videor"
+    }
+  },
+  "fil": {
+    "youtube-to-blog-post": {
+      "title": "YouTube sa Blog Post | ailomo",
+      "badge": "YouTube → Blog Post",
+      "h1": "Gawing Blog Post ang mga YouTube Video"
+    },
+    "video-to-twitter-thread": {
+      "title": "Video sa Twitter/X Thread | ailomo",
+      "badge": "Video → Twitter Thread",
+      "h1": "Gawing Twitter/X Thread ang mga Video"
+    },
+    "video-to-xiaohongshu": {
+      "title": "Video sa Xiaohongshu Note | ailomo",
+      "badge": "Video → Xiaohongshu Note",
+      "h1": "Gawing Xiaohongshu Note ang mga Video"
+    },
+    "video-to-linkedin-post": {
+      "title": "Video sa LinkedIn Post | ailomo",
+      "badge": "Video → LinkedIn Post",
+      "h1": "Gawing LinkedIn Post ang mga Video"
+    },
+    "podcast-to-article": {
+      "title": "Podcast sa Artikulo | ailomo",
+      "badge": "Podcast → Artikulo",
+      "h1": "Gawing Artikulo ang mga Podcast"
+    },
+    "video-to-seo-article": {
+      "title": "Video sa SEO Artikulo | ailomo",
+      "badge": "Video → SEO Artikulo",
+      "h1": "Gawing SEO Artikulo ang mga Video"
+    },
+    "audio-to-text": {
+      "title": "Audio sa Teksto | ailomo",
+      "badge": "Audio → Teksto",
+      "h1": "I-convert ang Audio sa Teksto"
+    },
+    "video-to-subtitle": {
+      "title": "Video sa Subtitle | ailomo",
+      "badge": "Video → Subtitle",
+      "h1": "Gumawa ng Subtitle mula sa Video"
+    },
+    "meeting-to-notes": {
+      "title": "Pulong sa Mga Tala | ailomo",
+      "badge": "Pulong → Mga Tala",
+      "h1": "Gawing Maaaksyong Tala ang mga Pulong"
+    },
+    "interview-transcript": {
+      "title": "Panayam sa Transcript | ailomo",
+      "badge": "Panayam → Transcript",
+      "h1": "Gawing Transcript ang mga Panayam"
+    },
+    "video-content-repurposing": {
+      "title": "Pag-repurpose ng Video Content | ailomo",
+      "badge": "Video → Lahat ng Platform",
+      "h1": "Isang Video para sa Lahat ng Platform"
+    },
+    "mp4-to-text": {
+      "title": "MP4 sa Teksto | ailomo",
+      "badge": "MP4 → Teksto",
+      "h1": "Kunin ang Teksto mula sa MP4 Video"
+    }
+  }
+}
