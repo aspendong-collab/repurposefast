@@ -240,3 +240,199 @@ export function generateToolMetadata(slug: string): Metadata | null {
 export function getToolConfig(slug: string): ToolPageConfig | undefined {
   return toolPages.find((p) => p.slug === slug)
 }
+
+/**
+ * English tool page configurations — used for PSEO multi-language routes
+ * and as the canonical English version of each tool page.
+ */
+export const toolPagesEn: ToolPageConfig[] = [
+  {
+    slug: 'youtube-to-blog-post',
+    title: 'YouTube to Blog Post - AI One-Click Generator | ailomo',
+    description: 'Convert YouTube videos into high-quality blog posts instantly. AI transcription + rewriting, preserves original meaning while optimizing structure.',
+    h1: 'Turn YouTube Videos Into Blog Posts Instantly',
+    badge: 'YouTube → Blog Post',
+    ogTitle: 'YouTube to Blog Post - AI One-Click Generator',
+    ogDescription: 'Convert YouTube videos into SEO-optimized blog posts with AI transcription and rewriting.',
+    features: [
+      { title: 'AI Rewriting', desc: 'Not just transcription — AI understands content and reorganizes it for blog readability' },
+      { title: 'SEO Optimized', desc: 'Auto-generates SEO-friendly titles, meta descriptions, and keyword-rich content' },
+      { title: 'Multi-Language', desc: 'Detect source language and translate output to 20+ languages' },
+      { title: 'Lightning Fast', desc: '10-minute video transcribed and article generated in under 1 minute' },
+    ],
+  },
+  {
+    slug: 'video-to-twitter-thread',
+    title: 'Video to Twitter/X Thread - AI Auto Generator | ailomo',
+    description: 'Transform video content into engaging Twitter/X threads. AI extracts key insights and creates Hook + points + CTA structure.',
+    h1: 'Turn Videos Into Viral Twitter/X Threads',
+    badge: 'Video → Twitter Thread',
+    ogTitle: 'Video to Twitter/X Thread - AI Auto Generator',
+    ogDescription: 'Transform video content into Twitter/X threads with AI — Hook + insights + CTA.',
+    features: [
+      { title: 'AI Hook Generator', desc: 'Auto-creates attention-grabbing first tweet' },
+      { title: 'Insight Extraction', desc: 'Extracts 6-12 key points under 280 characters each' },
+      { title: 'Auto CTA', desc: 'Ends with engagement-driving call-to-action' },
+      { title: 'Instant Output', desc: 'Paste a link, get a complete thread in 10 seconds' },
+    ],
+  },
+  {
+    slug: 'video-to-xiaohongshu',
+    title: 'Video to Xiaohongshu Note - AI Style Generator | ailomo',
+    description: 'Turn videos into Xiaohongshu-style notes. AI generates emoji-rich review-style content with trending hashtags.',
+    h1: 'Turn Videos Into Xiaohongshu (RED) Notes',
+    badge: 'Video → Xiaohongshu Note',
+    ogTitle: 'Video to Xiaohongshu Note - AI Generator',
+    ogDescription: 'Turn videos into Xiaohongshu notes with emoji style + trending hashtags.',
+    features: [
+      { title: 'Review Style', desc: 'Auto-generates authentic review-style copy that feels personal' },
+      { title: 'Emoji Polish', desc: 'Smart emoji placement for warmth and engagement' },
+      { title: 'Trending Hashtags', desc: 'Auto-matches relevant topic hashtags for visibility' },
+      { title: 'Mobile Format', desc: 'One line per sentence, optimized for phone reading' },
+    ],
+  },
+  {
+    slug: 'video-to-linkedin-post',
+    title: 'Video to LinkedIn Post - Professional Content Generator | ailomo',
+    description: 'Convert video content into professional LinkedIn posts. Maintains key insights while adding personal perspective and engagement hooks.',
+    h1: 'Turn Videos Into LinkedIn Professional Posts',
+    badge: 'Video → LinkedIn Post',
+    ogTitle: 'Video to LinkedIn Post - Professional Generator',
+    ogDescription: 'Convert videos into professional LinkedIn posts with personal insights.',
+    features: [
+      { title: 'Professional Tone', desc: 'Professional yet engaging, with personal perspectives' },
+      { title: 'Paragraph Optimization', desc: 'Line breaks for mobile readability' },
+      { title: 'Engagement Hooks', desc: 'Ends with questions to spark comments' },
+      { title: 'Hashtag Recommendations', desc: 'Auto-adds 3-5 relevant industry hashtags' },
+    ],
+  },
+  {
+    slug: 'podcast-to-article',
+    title: 'Podcast to Article - AI Content Converter | ailomo',
+    description: 'Convert podcast/audio into structured articles. Perfect for newsletters and blog publishing.',
+    h1: 'Turn Podcast Audio Into Structured Articles',
+    badge: 'Podcast → Article',
+    ogTitle: 'Podcast to Article - AI Converter',
+    ogDescription: 'Convert podcast audio into structured articles for newsletters and blogs.',
+    features: [
+      { title: 'Auto Segmentation', desc: 'Segments by conversation rhythm for clear structure' },
+      { title: 'Quote Extraction', desc: 'Auto-identifies and highlights golden quotes' },
+      { title: 'Newsletter Format', desc: 'Outputs in newsletter-friendly format' },
+      { title: 'Multi-Format Export', desc: 'Download as Markdown, PDF, or DOCX' },
+    ],
+  },
+  {
+    slug: 'video-to-seo-article',
+    title: 'Video to SEO Article - AI Search Optimizer | ailomo',
+    description: 'Convert video content into SEO-optimized long-form articles. Auto H2/H3 structure, keyword optimization, and meta descriptions.',
+    h1: 'Turn Videos Into SEO-Optimized Articles',
+    badge: 'Video → SEO Article',
+    ogTitle: 'Video to SEO Article - AI Optimizer',
+    ogDescription: 'Convert video content into SEO-optimized long-form articles with keyword targeting.',
+    features: [
+      { title: 'Keyword Optimization', desc: 'Auto-extracts and integrates long-tail keywords' },
+      { title: 'Structured Content', desc: 'Clear H2/H3 hierarchy for readability' },
+      { title: 'Meta Generation', desc: 'Auto-generates SEO title and meta description' },
+      { title: 'Internal Link Suggestions', desc: 'Recommends relevant internal linking opportunities' },
+    ],
+  },
+  {
+    slug: 'audio-to-text',
+    title: 'Audio to Text - AI Speech Recognition | ailomo',
+    description: 'Free online audio transcription tool. Upload audio files and get AI-powered text conversion in 63+ languages.',
+    h1: 'Convert Audio Files to Text Instantly',
+    badge: 'Audio → Text',
+    ogTitle: 'Audio to Text - AI Speech Recognition',
+    ogDescription: 'Upload audio files for AI-powered text conversion in 63+ languages.',
+    features: [
+      { title: 'Wide Format Support', desc: 'MP3, WAV, M4A, FLAC, OGG, and more' },
+      { title: '63+ Languages', desc: 'English, Chinese, Japanese, Korean, Spanish, French, and more' },
+      { title: 'High Accuracy', desc: '95%+ accuracy with latest AI models' },
+      { title: 'Free Tier', desc: '60 minutes of free transcription per month' },
+    ],
+  },
+  {
+    slug: 'video-to-subtitle',
+    title: 'Video to Subtitle - AI SRT/VTT Generator | ailomo',
+    description: 'Auto-generate subtitle files from video. Supports SRT/VTT export for YouTube, Bilibili, TikTok, and more.',
+    h1: 'Generate SRT/VTT Subtitles From Videos',
+    badge: 'Video → Subtitle',
+    ogTitle: 'Video to Subtitle - AI SRT/VTT Generator',
+    ogDescription: 'Auto-generate SRT/VTT subtitle files compatible with all major video platforms.',
+    features: [
+      { title: 'SRT & VTT Formats', desc: 'Standard subtitle formats, compatible with all platforms' },
+      { title: 'Accurate Timestamps', desc: 'AI auto-aligns timestamps, no manual adjustment needed' },
+      { title: 'Multi-Language Subs', desc: 'Generate subtitles in multiple languages' },
+      { title: 'Online Editor', desc: 'Fine-tune subtitles in the online editor' },
+    ],
+  },
+  {
+    slug: 'meeting-to-notes',
+    title: 'Meeting Recording to Notes - AI Summarizer | ailomo',
+    description: 'Upload meeting recordings and get structured meeting notes. Includes action items extraction, decision tracking, and key discussion summaries.',
+    h1: 'Turn Meeting Recordings Into Actionable Notes',
+    badge: 'Meeting → Notes',
+    ogTitle: 'Meeting Recording to Notes - AI Summarizer',
+    ogDescription: 'Upload meeting recordings for structured notes with action items and decisions.',
+    features: [
+      { title: 'Smart Segmentation', desc: 'Auto-segments by discussion topics' },
+      { title: 'Action Item Extraction', desc: 'Auto-identifies and lists action items' },
+      { title: 'Decision Tracking', desc: 'Highlights key decisions and conclusions' },
+      { title: 'Speaker Recognition', desc: 'Distinguishes between different speakers' },
+    ],
+  },
+  {
+    slug: 'interview-transcript',
+    title: 'Interview Recording to Transcript - AI Structurer | ailomo',
+    description: 'Transcribe interview recordings and get structured Q&A transcripts. Auto-distinguishes interviewer from interviewee.',
+    h1: 'Turn Interview Recordings Into Structured Transcripts',
+    badge: 'Interview → Transcript',
+    ogTitle: 'Interview Recording to Transcript - AI',
+    ogDescription: 'Transcribe interviews into structured Q&A format with speaker distinction.',
+    features: [
+      { title: 'Q&A Format', desc: 'Auto-detects Q&A structure for clean formatting' },
+      { title: 'Speaker Distinction', desc: 'Separates host questions from guest answers' },
+      { title: 'Quote Highlighting', desc: 'Auto-flags standout quotes from the interview' },
+      { title: 'Summary Generation', desc: 'Auto-generates interview summary' },
+    ],
+  },
+  {
+    slug: 'video-content-repurposing',
+    title: 'Video Content Repurposing - One Video, All Platforms | ailomo',
+    description: 'One-stop content repurposing tool. One video generates blog posts, social media content, newsletters, and more simultaneously.',
+    h1: 'One Video → Your Entire Content Matrix',
+    badge: 'Video → All Platforms',
+    ogTitle: 'Video Content Repurposing - Multi-Platform',
+    ogDescription: 'One video generates content for blogs, Twitter, LinkedIn, Xiaohongshu, and more.',
+    features: [
+      { title: '10+ Formats', desc: 'Blog, Twitter, LinkedIn, Xiaohongshu, newsletters & more' },
+      { title: 'One-Click Generation', desc: 'Select formats and generate all at once' },
+      { title: 'Style Adaptation', desc: 'Each format auto-adapts to platform-specific style' },
+      { title: '10x Efficiency', desc: '5 minutes instead of 2 hours of manual work' },
+    ],
+  },
+  {
+    slug: 'mp4-to-text',
+    title: 'MP4 to Text - Extract Text From Video | ailomo',
+    description: 'Upload MP4 video files and extract speech as text. High-quality transcription with text file download.',
+    h1: 'Extract Text From MP4 Video Files',
+    badge: 'MP4 → Text',
+    ogTitle: 'MP4 to Text - Extract Video Text Online',
+    ogDescription: 'Upload MP4 video files and extract speech as text automatically.',
+    features: [
+      { title: 'Large File Support', desc: 'Supports MP4 files up to 500MB' },
+      { title: 'High Accuracy', desc: 'Up to 98% accuracy with clear audio' },
+      { title: 'Fast Processing', desc: '30-minute video processed in under 3 minutes' },
+      { title: 'Multi-Language', desc: 'Auto-detect language, supports 63+ languages' },
+    ],
+  },
+]
+
+/**
+ * Get tool page configs by locale.
+ * Falls back to English for non-Chinese languages (ideal for PSEO routes).
+ */
+export function getToolPagesByLocale(lang: string): ToolPageConfig[] {
+  if (lang === 'zh') return toolPages
+  return toolPagesEn
+}

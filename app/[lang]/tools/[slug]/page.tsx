@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { toolPages, type ToolPageConfig } from '@/app/tools/generate-seo-pages'
+import { getToolPagesByLocale, type ToolPageConfig } from '@/app/tools/generate-seo-pages'
 import { BreadcrumbSchema, HowToSchema, FAQSchema } from '@/components/seo/schemas'
 import { RelatedBlogs } from '@/components/seo/crosslinks'
 import { localeMap, type Locale } from '@/lib/i18n'
@@ -15,9 +15,10 @@ const PSEO_LOCALES: Locale[] = [
 
 export function generateStaticParams() {
   const params: { lang: string; slug: string }[] = []
+  const allSlugs = getToolPagesByLocale('en').map(p => p.slug)
   for (const lang of PSEO_LOCALES) {
-    for (const tool of toolPages) {
-      params.push({ lang, slug: tool.slug })
+    for (const slug of allSlugs) {
+      params.push({ lang, slug })
     }
   }
   return params
@@ -62,6 +63,7 @@ export async function generateMetadata({
   const { lang, slug } = await params
   if (!PSEO_LOCALES.includes(lang as Locale)) notFound()
 
+  const toolPages = getToolPagesByLocale(lang)
   const page = toolPages.find((p) => p.slug === slug)
   if (!page) notFound()
 
@@ -95,6 +97,7 @@ export default async function LangToolPage({
   const { lang, slug } = await params
   if (!PSEO_LOCALES.includes(lang as Locale)) notFound()
 
+  const toolPages = getToolPagesByLocale(lang)
   const page = toolPages.find((p) => p.slug === slug)
   if (!page) notFound()
 
