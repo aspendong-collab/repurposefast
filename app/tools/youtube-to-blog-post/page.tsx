@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { ArrowRight, FileText, Sparkles, TrendingUp, Globe, Zap } from 'lucide-react'
 import Link from 'next/link'
+import { RelatedBlogs } from '@/components/seo/crosslinks'
 
 export const metadata: Metadata = {
   title: 'YouTube 视频转博客文章 - AI 一键生成 | RePurposeFast',
@@ -124,6 +125,7 @@ export default function YouTubeToBlogPage() {
           </Link>
         </div>
       </section>
+      <RelatedBlogs slug="youtube-to-blog-post" />
     </div>
   )
 }

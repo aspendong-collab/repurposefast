@@ -3,6 +3,7 @@ import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import { toolPages, type ToolPageConfig } from '../generate-seo-pages'
 import { BreadcrumbSchema, HowToSchema, FAQSchema } from '@/components/seo/schemas'
+import { RelatedBlogs } from '@/components/seo/crosslinks'
 
 // Generate static params for all tool pages
 export function generateStaticParams() {
@@ -204,7 +205,7 @@ export default async function ToolPage({
       </section>
 
       {/* ── Related Tools (internal linking) ── */}
-      <section className="mx-auto max-w-4xl px-4 pb-20">
+      <section className="mx-auto max-w-4xl px-4 pb-12">
         <h2 className="mb-4 text-lg font-semibold">Explore More Tools</h2>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {toolPages
@@ -223,6 +224,9 @@ export default async function ToolPage({
             ))}
         </div>
       </section>
+
+      {/* ── Related Blog Posts (AI-matched cross-links) ── */}
+      <RelatedBlogs slug={slug} />
     </div>
   )
 }

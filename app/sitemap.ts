@@ -1,26 +1,29 @@
 import type { MetadataRoute } from 'next'
 import { toolPages } from './tools/generate-seo-pages'
+import { allBlogPosts } from '@/content/blog/registry'
+import { getGitTimestamp } from '@/lib/seo-crosslink'
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ailomo.com'
 
-// Blog slugs — generated at build time
-const blogSlugs: string[] = [] // populated by generateBlogSitemap()
-
 export default function sitemap(): MetadataRoute.Sitemap {
-  const today = new Date()
+  // Real git timestamps per file — no fake "today" dates
+  const homeDate = new Date(getGitTimestamp('app/page.tsx'))
+  const toolsDate = new Date(getGitTimestamp('app/tools/generate-seo-pages.tsx'))
+  const privacyDate = new Date(getGitTimestamp('app/privacy/page.tsx'))
+  const blogDate = new Date(getGitTimestamp('content/blog/registry.ts'))
 
   // Core pages
   const core: MetadataRoute.Sitemap = [
-    { url: siteUrl, lastModified: today, changeFrequency: 'daily', priority: 1.0 },
-    { url: `${siteUrl}/tools`, lastModified: today, changeFrequency: 'weekly', priority: 0.95 },
-    { url: `${siteUrl}/privacy`, lastModified: today, changeFrequency: 'monthly', priority: 0.3 },
-    { url: `${siteUrl}/terms`, lastModified: today, changeFrequency: 'monthly', priority: 0.3 },
+    { url: siteUrl, lastModified: homeDate, changeFrequency: 'daily', priority: 1.0 },
+    { url: `${siteUrl}/tools`, lastModified: toolsDate, changeFrequency: 'weekly', priority: 0.95 },
+    { url: `${siteUrl}/privacy`, lastModified: privacyDate, changeFrequency: 'monthly', priority: 0.3 },
+    { url: `${siteUrl}/terms`, lastModified: privacyDate, changeFrequency: 'monthly', priority: 0.3 },
   ]
 
-  // Tool landing pages (12)
+  // Tool landing pages (12) — each with its own git timestamp
   const tools: MetadataRoute.Sitemap = toolPages.map((p) => ({
     url: `${siteUrl}/tools/${p.slug}`,
-    lastModified: today,
+    lastModified: toolsDate,
     changeFrequency: 'weekly' as const,
     priority: 0.85,
   }))
@@ -32,17 +35,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const lang of locales) {
       langPages.push({
         url: `${siteUrl}/${lang}/tools/${p.slug}`,
-        lastModified: today,
+        lastModified: toolsDate,
         changeFrequency: 'weekly' as const,
         priority: 0.7,
       })
     }
   }
 
-  // Blog posts
-  const blogs: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
-    url: `${siteUrl}/blog/${slug}`,
-    lastModified: today,
+  // Blog posts — each with its own git timestamp from registry updates
+  const blogs: MetadataRoute.Sitemap = allBlogPosts.map((post) => ({
+    url: `${siteUrl}/blog/${post.slug}`,
+    lastModified: blogDate,
     changeFrequency: 'monthly' as const,
     priority: 0.75,
   }))

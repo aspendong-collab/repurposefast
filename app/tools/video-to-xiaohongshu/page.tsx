@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { ArrowRight, Heart, Sparkles, Hash, Wand2, Zap } from 'lucide-react'
 import Link from 'next/link'
+import { RelatedBlogs } from '@/components/seo/crosslinks'
 
 export const metadata: Metadata = {
   title: '视频转小红书笔记 - AI 智能改写种草文案 | RePurposeFast',
@@ -61,6 +62,7 @@ export default function VideoToXiaohongshuPage() {
           ))}
         </div>
       </section>
+      <RelatedBlogs slug="video-to-xiaohongshu" />
     </div>
   )
 }

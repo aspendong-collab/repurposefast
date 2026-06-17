@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { allBlogPosts } from '@/content/blog/registry'
 import { BreadcrumbSchema, FAQSchema } from '@/components/seo/schemas'
+import { RelatedTools } from '@/components/seo/crosslinks'
 
 export function generateStaticParams() {
   return allBlogPosts.map((post) => ({ slug: post.slug }))
@@ -142,7 +143,7 @@ export default async function BlogPost({
 
       {/* Related posts */}
       {related.length > 0 && (
-        <section className="mx-auto max-w-3xl px-4 pb-20">
+        <section className="mx-auto max-w-3xl px-4 pb-12">
           <h2 className="mb-6 text-xl font-bold">More in {post.category}</h2>
           <div className="grid gap-4 sm:grid-cols-2">
             {related.map((r) => (
@@ -161,6 +162,9 @@ export default async function BlogPost({
           </div>
         </section>
       )}
+
+      {/* Cross-linked Tools (AI-matched) */}
+      <RelatedTools slug={slug} />
     </div>
   )
 }

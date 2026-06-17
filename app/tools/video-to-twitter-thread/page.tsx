@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { ArrowRight, MessageCircle, Sparkles, Zap, PenLine, Hash } from 'lucide-react'
 import Link from 'next/link'
+import { RelatedBlogs } from '@/components/seo/crosslinks'
 
 export const metadata: Metadata = {
   title: '视频转 Twitter/X 线程 - AI 自动生成推文串 | RePurposeFast',
@@ -78,6 +79,7 @@ export default function VideoToTwitterPage() {
           </Link>
         </div>
       </section>
+      <RelatedBlogs slug="video-to-twitter-thread" />
     </div>
   )
 }
