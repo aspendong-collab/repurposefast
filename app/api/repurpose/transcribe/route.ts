@@ -82,14 +82,13 @@ async function tryYouTubeDataAPI(videoId: string): Promise<{ text: string; langu
   }
 }
 
-// ── Layer 2: youtube-transcript (fast, free, sometimes rate-limited) ───────
+// ── Layer 2: youtube-transcript + Innertube direct fallback ────────────────
 async function tryYoutubeTranscript(videoId: string): Promise<{ text: string; language: string } | null> {
   const { YoutubeTranscript } = await import('youtube-transcript')
   
-  for (let attempt = 0; attempt < 3; attempt++) {
+  for (let attempt = 0; attempt < 2; attempt++) {
     try {
-      // Random jitter to avoid rate limits
-      if (attempt > 0) await new Promise((r) => setTimeout(r, 1000 + Math.random() * 3000))
+      if (attempt > 0) await new Promise((r) => setTimeout(r, 1000 + Math.random() * 2000))
       
       const transcript = await YoutubeTranscript.fetchTranscript(videoId, { lang: 'en' })
       if (!transcript || transcript.length === 0) return null
@@ -106,11 +105,53 @@ async function tryYoutubeTranscript(videoId: string): Promise<{ text: string; la
     } catch (e: any) {
       const msg = e.message || ''
       if (msg.includes('disabled') || msg.includes('not available')) return null
-      // Rate limited — continue retrying
-      if (attempt === 2) return null
     }
   }
-  return null
+
+  // Fallback: direct Innertube API with EMBEDDED_PLAYER context (less rate-limited)
+  try {
+    const res = await fetch('https://www.youtube.com/youtubei/v1/player?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        context: { client: { clientName: 'WEB_EMBEDDED_PLAYER', clientVersion: '2.20231010', hl: 'en', gl: 'US' } },
+        videoId,
+      }),
+      signal: AbortSignal.timeout(10000),
+    })
+    if (!res.ok) return null
+    const data = await res.json() as any
+    const captions = data?.captions?.playerCaptionsTracklistRenderer?.captionTracks
+    if (!captions?.length) return null
+
+    // Pick English track
+    const enTrack = captions.find((t: any) => t.languageCode === 'en') || captions[0]
+    if (!enTrack?.baseUrl) return null
+
+    const trackRes = await fetch(enTrack.baseUrl, { signal: AbortSignal.timeout(8000) })
+    if (!trackRes.ok) return null
+    const xml = await trackRes.text()
+
+    const texts = xml.match(/<text[^>]*>([^<]*)<\/text>/g)
+    if (!texts || texts.length === 0) return null
+
+    const fullText = texts
+      .map((t) => t.replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").trim())
+      .filter(Boolean)
+      .join(' ')
+
+    if (fullText.length < 20) return null
+
+    const lang = enTrack.languageCode === 'zh' || enTrack.languageCode === 'zh-Hans' ? 'zh'
+      : enTrack.languageCode === 'ja' ? 'ja'
+      : enTrack.languageCode === 'ko' ? 'ko'
+      : 'en'
+
+    console.log(`✅ Innertube embed: ${texts.length} segments, ${fullText.length} chars`)
+    return { text: fullText, language: lang }
+  } catch {
+    return null
+  }
 }
 
 // ── Layer 3: Raw timedtext API ─────────────────────────────────────────────
