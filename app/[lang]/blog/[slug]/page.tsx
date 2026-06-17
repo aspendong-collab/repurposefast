@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       publishedTime: pubDate, modifiedTime: pubDate, authors: ['ailomo'],
     },
     alternates: { canonical: `${SITE_URL}/blog/${slug}` },
-    robots: { index: true, follow: true },
+    robots: { index: false, follow: false },
   }
 }
 

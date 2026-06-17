@@ -10,6 +10,7 @@ import { FormatShowcase } from '@/components/landing/format-showcase'
 import { SocialProof } from '@/components/landing/social-proof'
 import { Pricing } from '@/components/landing/pricing'
 import { CTASection } from '@/components/landing/cta-section'
+import { EmailCapture } from '@/components/landing/email-capture'
 import { FAQ } from '@/components/landing/faq'
 import { Footer } from '@/components/landing/footer'
 
@@ -27,6 +28,7 @@ export default function HomePage() {
         <SocialProof d={dict} />
         <Pricing d={dict} />
         <CTASection d={dict} />
+        <EmailCapture />
         <FAQ d={dict} />
       </main>
       <Footer d={dict} />
