@@ -31,7 +31,7 @@ function extractYoutubeId(url: string): string | null {
 
 async function getYouTubeTranscript(videoId: string): Promise<{ text: string; language: string }> {
   const { YoutubeTranscript } = await import('youtube-transcript')
-  const delays = [2000, 6000, 14000]
+  const delays = [2000, 6000]
 
   for (let attempt = 0; attempt < delays.length; attempt++) {
     try {
@@ -48,17 +48,42 @@ async function getYouTubeTranscript(videoId: string): Promise<{ text: string; la
       return { text: fullText, language: lang }
     } catch (e: any) {
       const msg = e.message || ''
-      if (msg.includes('disabled') || msg.includes('not available')) {
+      // Captions genuinely disabled
+      if (msg.includes('disabled') && !msg.includes('rate')) {
         throw new Error('This YouTube video has captions disabled.')
       }
       if (attempt < delays.length - 1) {
         await new Promise((r) => setTimeout(r, delays[attempt]))
         continue
       }
-      throw e
+      // Last attempt failed — try timedtext fallback
     }
   }
-  throw new Error('Failed to fetch YouTube transcript')
+
+  // Fallback: raw YouTube timedtext API (bypasses youtube-transcript rate limits)
+  const langs = ['en', 'zh-Hans', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'ar', 'hi', 'auto']
+  for (const lang of langs) {
+    try {
+      const url = `https://www.youtube.com/api/timedtext?v=${videoId}&lang=${lang}&fmt=srv3`
+      const res = await fetch(url, {
+        headers: { 'User-Agent': 'Mozilla/5.0 (compatible; ailomo-bot/1.0)', 'Accept-Language': 'en-US' },
+        signal: AbortSignal.timeout(8000),
+      })
+      if (!res.ok) continue
+      const xml = await res.text()
+      const texts = xml.match(/<text[^>]*>([^<]*)<\/text>/g)
+      if (!texts || texts.length === 0) continue
+
+      const fullText = texts.map((t: string) => t.replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").trim()).filter(Boolean).join(' ')
+
+      if (fullText.length < 20) continue
+      const langCode = lang.includes('zh') ? 'zh' : lang.includes('ja') ? 'ja' : lang.includes('ko') ? 'ko' : 'en'
+      console.log(`✅ TimedText: ${texts.length} segments, ${fullText.length} chars, lang=${langCode}`)
+      return { text: fullText, language: langCode }
+    } catch { continue }
+  }
+
+  throw new Error('This YouTube video has captions disabled.')
 }
 
 export async function POST(request: NextRequest) {
