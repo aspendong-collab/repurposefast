@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const core: MetadataRoute.Sitemap = [
     { url: siteUrl, lastModified: homeDate, changeFrequency: 'daily', priority: 1.0 },
     { url: `${siteUrl}/tools`, lastModified: toolsDate, changeFrequency: 'weekly', priority: 0.95 },
+    { url: `${siteUrl}/blog`, lastModified: blogDate, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${siteUrl}/privacy`, lastModified: privacyDate, changeFrequency: 'monthly', priority: 0.3 },
     { url: `${siteUrl}/terms`, lastModified: privacyDate, changeFrequency: 'monthly', priority: 0.3 },
   ]
@@ -28,8 +29,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }))
 
-  // Language alternates for tool pages
-  const locales = ['en','zh','ja','ko','es','fr','de','pt','ar','hi','id','th','vi','ru','it']
+  // Language alternates for tool pages (20 languages with PSEO routes)
+  const locales = ['en','zh','ja','ko','es','fr','de','pt','ar','hi','id','th','vi','ru','it','tr','pl','nl','sv','fil']
   const langPages: MetadataRoute.Sitemap = []
   for (const p of toolPages) {
     for (const lang of locales) {

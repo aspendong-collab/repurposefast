@@ -2,8 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { allBlogPosts } from '@/content/blog/registry'
-import { BreadcrumbSchema, FAQSchema } from '@/components/seo/schemas'
+import { BreadcrumbSchema, FAQSchema, ArticleSchema, SpeakableSchema } from '@/components/seo/schemas'
 import { RelatedTools } from '@/components/seo/crosslinks'
+import { getGitTimestamp } from '@/lib/seo-crosslink'
 
 export function generateStaticParams() {
   return allBlogPosts.map((post) => ({ slug: post.slug }))
@@ -19,6 +20,8 @@ export async function generateMetadata({
   if (!post) return { title: 'Not Found' }
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ailomo.com'
 
+  const pubDate = getGitTimestamp('content/blog/registry.ts')
+
   return {
     title: post.title,
     description: post.description,
@@ -29,6 +32,9 @@ export async function generateMetadata({
       type: 'article',
       url: `${siteUrl}/blog/${post.slug}`,
       tags: post.tags,
+      publishedTime: pubDate,
+      modifiedTime: pubDate,
+      authors: ['ailomo'],
     },
     twitter: { card: 'summary_large_image', title: post.title, description: post.description },
     alternates: { canonical: `/blog/${post.slug}` },
@@ -60,7 +66,7 @@ export default async function BlogPost({
         ]}
       />
       <FAQSchema
-        items={[
+        questions={[
           { question: `What is the main topic of ${post.title}?`, answer: post.description },
           {
             question: `What tools or techniques are covered in this ${post.category.toLowerCase()} guide?`,
@@ -68,6 +74,15 @@ export default async function BlogPost({
           },
         ]}
       />
+      <ArticleSchema
+        headline={post.title}
+        description={post.description}
+        datePublished={getGitTimestamp('content/blog/registry.ts')}
+        dateModified={getGitTimestamp('content/blog/registry.ts')}
+        url={`${siteUrl}/blog/${post.slug}`}
+        keywords={[post.targetKeyword, ...post.secondaryKeywords]}
+      />
+      <SpeakableSchema cssSelector="h1, .speakable" />
 
       <article className="mx-auto max-w-3xl px-4 py-16 lg:py-24">
         {/* Breadcrumb */}

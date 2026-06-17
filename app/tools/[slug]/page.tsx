@@ -113,8 +113,12 @@ export default async function ToolPage({
           { name: page.badge, url: `${siteUrl}/tools/${slug}` },
         ]}
       />
-      <HowToSchema name={page.h1} description={page.description} steps={howToSteps} />
-      <FAQSchema items={faqItems} />
+      <HowToSchema name={page.h1} steps={[
+        `Paste your video link or upload a file`,
+        `AI automatically transcribes and processes the content`,
+        `Get your ${page.badge.split('→')[1]?.trim() || 'output'} instantly`,
+      ]} />
+      <FAQSchema questions={faqItems} />
 
       {/* ── Hero ── */}
       <section className="relative overflow-hidden pb-8 pt-16 lg:pt-24">

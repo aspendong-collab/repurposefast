@@ -13,6 +13,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'Google-Extended', allow: '/', disallow: ['/api/'] },
       { userAgent: 'CCBot', allow: '/tools/', disallow: ['/api/'] },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: [`${baseUrl}/sitemap.xml`, `${baseUrl}/sitemap-pseo.xml`],
   }
 }

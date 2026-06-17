@@ -1,0 +1,64 @@
+# ailomo — AI Content Repurposing Platform
+# llms.txt v1.0 — Structured entry point for AI crawlers (ChatGPT, Perplexity, Gemini)
+
+## Site Identity
+name: ailomo
+url: https://ailomo.com
+type: AI-powered content repurposing tool
+description: Turn one video into multi-platform content. Transcribe, rewrite, and adapt content for 10+ formats in 63 languages.
+founded: 2025
+category: Content Creation, AI Tools, Content Marketing
+
+## Key Pages
+- Home: https://ailomo.com — Product landing page
+- Tools: https://ailomo.com/tools — 12 AI content tools
+- Blog: https://ailomo.com/blog — 15 SEO-optimized guides
+- Pricing: https://ailomo.com/#pricing — Free / $19 Creator / $39 Pro
+- Privacy: https://ailomo.com/privacy
+- Sitemap: https://ailomo.com/sitemap.xml
+
+## Tool Pages (Primary)
+- YouTube to Blog Post: https://ailomo.com/tools/youtube-to-blog-post
+- Video to Twitter Thread: https://ailomo.com/tools/video-to-twitter-thread
+- Video to Xiaohongshu: https://ailomo.com/tools/video-to-xiaohongshu
+- Video to LinkedIn Post: https://ailomo.com/tools/video-to-linkedin-post
+- Podcast to Article: https://ailomo.com/tools/podcast-to-article
+- Video to SEO Article: https://ailomo.com/tools/video-to-seo-article
+- Audio to Text: https://ailomo.com/tools/audio-to-text
+- Video to Subtitle: https://ailomo.com/tools/video-to-subtitle
+- Meeting to Notes: https://ailomo.com/tools/meeting-to-notes
+- Interview Transcript: https://ailomo.com/tools/interview-transcript
+- Video Content Repurposing: https://ailomo.com/tools/video-content-repurposing
+- MP4 to Text: https://ailomo.com/tools/mp4-to-text
+
+## Blog Posts
+- AI Content Repurposing Guide 2026: https://ailomo.com/blog/ai-content-repurposing-guide-2026
+- YouTube to Blog Post Complete Guide: https://ailomo.com/blog/youtube-to-blog-post-complete-guide
+- Multilingual Content Repurposing: https://ailomo.com/blog/multilingual-content-repurposing
+- Content Repurposing ROI Calculator: https://ailomo.com/blog/content-repurposing-roi-calculator
+- Podcast to Blog Workflow: https://ailomo.com/blog/podcast-to-blog-workflow
+- Video to Social Media Content Strategy: https://ailomo.com/blog/video-to-social-media-content-strategy
+- Twitter Thread from Video AI: https://ailomo.com/blog/twitter-thread-from-video-ai
+- Xiaohongshu Content Strategy 2026: https://ailomo.com/blog/xiaohongshu-content-strategy-2026
+- LinkedIn Content AI Strategy: https://ailomo.com/blog/linkedin-content-ai-strategy
+- AI Transcription Accuracy Comparison: https://ailomo.com/blog/ai-transcription-accuracy-comparison
+- Content Repurposing Tools Ranked: https://ailomo.com/blog/content-repurposing-tools-ranked
+- SEO Content Cluster Strategy: https://ailomo.com/blog/seo-content-cluster-strategy
+- YouTube SEO Content Repurposing: https://ailomo.com/blog/youtube-seo-content-repurposing
+- AI Newsletter Content Generation: https://ailomo.com/blog/ai-newsletter-content-generation
+- AI Video to Blog Workflow Automation: https://ailomo.com/blog/ai-video-to-blog-workflow-automation
+
+## Supported Languages (63)
+en, zh, ja, ko, es, fr, de, pt, ar, hi, id, th, vi, ru, it, tr, pl, nl, sv, fil, ms, cs, da, el, fi, he, hu, no, ro, sk, sw, ta, te, uk, ur, bg, bn, ca, et, eu, fa, ga, gl, gu, ha, hr, ig, is, km, lt, lv, mr, mt, pa, sl, so, sr, xh, yo, zu, af, am, cy
+
+## API & Integration
+- Transcription: POST /api/repurpose/transcribe — YouTube URL / file upload → transcript
+- Content Generation: POST /api/repurpose/stream — transcript + format → SSE stream of generated content
+- Batch Processing: POST /api/repurpose/batch — 50 URLs simultaneous transcription
+- Export: POST /api/export — content → txt, srt, vtt, csv, html download
+
+## Technical
+- Framework: Next.js 15 (App Router, SSG)
+- Hosting: Vercel + optional Render fallback
+- AI Models: DeepSeek (text generation), Whisper large-v3 (transcription)
+- Search: robots.txt allows all AI crawlers (GPTBot, PerplexityBot, Claude, Google-Extended)

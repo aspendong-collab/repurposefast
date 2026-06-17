@@ -1,0 +1,52 @@
+name: Daily Content Pipeline
+
+on:
+  schedule:
+    - cron: '0 2 * * *'   # 10:00 UTC+8 daily
+  workflow_dispatch:       # manual trigger
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - run: npm ci
+
+      # 1. Generate missing blog posts
+      - name: Generate blog content
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: npx tsx scripts/seo/generate-blog.ts
+
+      # 2. Generate PSEO sitemap
+      - name: Generate PSEO sitemap
+        run: npx tsx scripts/seo/generate-pseo.ts
+
+      # 3. Regenerate PSEO pages to pick up new blog cross-links
+      - name: Rebuild static pages
+        run: npx next build
+
+      # 4. Commit & push if changes exist
+      - name: Commit changes
+        run: |
+          git config user.name "ailomo-bot"
+          git config user.email "bot@ailomo.com"
+          git add content/blog/generated/ public/sitemap-pseo.xml content/seo/ .next/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🤖 auto: daily content refresh [skip ci]"
+            git push
+          fi
