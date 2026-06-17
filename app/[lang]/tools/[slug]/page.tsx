@@ -101,7 +101,12 @@ export default async function LangToolPage({
   const page = toolPages.find((p) => p.slug === slug)
   if (!page) notFound()
 
-  const faqItems = [
+  const faqItems = lang === 'zh' ? [
+    { question: `${page.badge.replace('→', '转')} 工具是什么？`, answer: `ailomo 的 ${page.badge.replace('→', '转')} 工具帮助您使用 AI 自动转化内容。只需粘贴链接，即可获得格式精美的输出。` },
+    { question: '这个工具免费吗？', answer: '是的！可以免费试用，无需信用卡。付费方案为高级用户提供更高的额度和更强大的功能。' },
+    { question: '支持哪些语言？', answer: `ailomo 支持 63 种语言，包括 ${PSEO_LOCALES.map((l) => localeMap[l]?.name).slice(0, 6).join('、')}等。` },
+    { question: 'AI 生成的结果准确度如何？', answer: '我们的 AI 在清晰语音上达到 95% 以上的准确率，内容生成针对每种输出格式进行了优化。' },
+  ] : [
     { question: `What is the ${page.badge.replace('→', 'to')} tool?`, answer: `ailomo's ${page.badge.replace('→', 'to')} tool helps you automatically transform content using AI. Just paste a link and get beautifully formatted output instantly.` },
     { question: 'Is this tool free to use?', answer: 'Yes! You can try it for free with no credit card required. Paid plans offer higher limits and advanced features for power users.' },
     { question: 'What languages does it support?', answer: `ailomo supports 63 languages including ${PSEO_LOCALES.map((l) => localeMap[l]?.name).slice(0, 6).join(', ')} and more.` },
