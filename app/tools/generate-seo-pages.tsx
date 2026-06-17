@@ -428,11 +428,50 @@ export const toolPagesEn: ToolPageConfig[] = [
   },
 ]
 
+// Lazy-load translations to avoid build-time file-not-found errors
+let _translations: Record<string, Record<string, any>> | null = null
+function loadTranslations() {
+  if (_translations) return _translations
+  try {
+    _translations = require('@/content/seo/tool-translations.json') as Record<string, Record<string, any>>
+  } catch {
+    _translations = {}
+  }
+  return _translations
+}
+
 /**
  * Get tool page configs by locale.
- * Falls back to English for non-Chinese languages (ideal for PSEO routes).
+ * Uses DeepSeek translations for non-en/non-zh, falls back to English.
  */
 export function getToolPagesByLocale(lang: string): ToolPageConfig[] {
   if (lang === 'zh') return toolPages
-  return toolPagesEn
+  if (lang === 'en') return toolPagesEn
+
+  // Try to load translated content
+  try {
+    const tl = loadTranslations()
+    const langData = tl?.[lang]
+    if (!langData) return toolPagesEn
+
+    return toolPagesEn.map((page) => {
+      const t = langData[page.slug]
+      if (!t) return page
+      return {
+        ...page,
+        title: t.title || page.title,
+        description: t.description || page.description,
+        h1: t.h1 || page.h1,
+        badge: t.badge || page.badge,
+        ogTitle: t.ogTitle || page.ogTitle,
+        ogDescription: t.ogDescription || page.ogDescription,
+        features: page.features.map((f, i) => ({
+          title: t.features?.[i]?.title || f.title,
+          desc: t.features?.[i]?.desc || f.desc,
+        })),
+      }
+    })
+  } catch {
+    return toolPagesEn
+  }
 }
