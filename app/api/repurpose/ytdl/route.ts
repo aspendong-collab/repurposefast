@@ -10,19 +10,32 @@ export async function POST(req: NextRequest) {
 
     // 1. Download audio via ytdl-core (works on Render, blocked on Vercel)
     const ytdl = await import('@distube/ytdl-core')
-    const stream = (ytdl as any)(url, { quality: 'lowestaudio', filter: 'audioonly' })
+    
+    const info = await ytdl.getInfo(url)
+    const audioFormat = ytdl.chooseFormat(info.formats, { filter: 'audioonly', quality: 'lowestaudio' })
+    if (!audioFormat) throw new Error('No audio format found for this YouTube video')
+    
+    console.log(`Downloading audio: ${audioFormat.container} ${audioFormat.audioBitrate}bps`)
 
     const chunks: Uint8Array[] = []
-    for await (const chunk of stream) {
-      if (chunks.length > 500) break // ~25MB limit
-      chunks.push(chunk)
-    }
+    await new Promise<void>((resolve, reject) => {
+      const stream = ytdl.default(url, { format: audioFormat })
+      stream.on('data', (chunk: Uint8Array) => {
+        if (chunks.length < 800) chunks.push(chunk)
+      })
+      stream.on('end', resolve)
+      stream.on('error', reject)
+    })
     const buffer = Buffer.concat(chunks)
-    console.log(`Downloaded audio: ${(buffer.length / 1024 / 1024).toFixed(1)}MB`)
+    const sizeMB = buffer.length / 1024 / 1024
+    console.log(`Downloaded: ${sizeMB.toFixed(1)}MB`)
+
+    if (sizeMB > 25) throw new Error(`Audio too large (${sizeMB.toFixed(0)}MB > 25MB limit)`)
 
     // 2. Transcribe via HF Whisper API
     const formData = new FormData()
-    formData.append('file', new Blob([buffer], { type: 'audio/mp4' }), 'audio.mp4')
+    const blob = new Blob([buffer], { type: 'audio/mp4' })
+    formData.append('audio', blob, 'audio.mp4')
 
     const whisperRes = await fetch(
       'https://api-inference.huggingface.co/models/openai/whisper-large-v3-turbo',
@@ -30,7 +43,7 @@ export async function POST(req: NextRequest) {
         method: 'POST',
         headers: { Authorization: `Bearer ${HF_TOKEN}` },
         body: formData,
-        signal: AbortSignal.timeout(60000),
+        signal: AbortSignal.timeout(120000),
       }
     )
     if (!whisperRes.ok) {
